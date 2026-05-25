@@ -3041,7 +3041,25 @@ export default function App() {
               })()}
 
               {/* Insight Cards */}
-              {sessionResults.correct < sessionResults.total ? (
+              {(() => {
+                // Calcula o tema com pior desempenho na sessão atual
+                const bySubj: Record<string, { correct: number; total: number }> = {};
+                sessionHistory.forEach((h: { questionId: string; selectedIndex: number }) => {
+                  const q = activeQuestions.find((q: Question) => q.id === h.questionId);
+                  if (!q) return;
+                  if (!bySubj[q.subject]) bySubj[q.subject] = { correct: 0, total: 0 };
+                  bySubj[q.subject].total++;
+                  if (h.selectedIndex === q.correctIndex) bySubj[q.subject].correct++;
+                });
+                const worstEntry = Object.entries(bySubj)
+                  .filter(([, s]) => s.total > 0)
+                  .sort((a, b) => (a[1].correct / a[1].total) - (b[1].correct / b[1].total))[0];
+                const worstSubject = worstEntry ? worstEntry[0] : selectedSubject;
+                const worstRate = worstEntry
+                  ? Math.round(((worstEntry[1].total - worstEntry[1].correct) / worstEntry[1].total) * 100)
+                  : 0;
+                const hasErrors = sessionResults.correct < sessionResults.total;
+                return hasErrors ? (
                 <div className="bg-brand-orange/10 p-8 rounded-[3rem] border border-brand-orange/20 flex flex-col md:flex-row items-center justify-between gap-6 shadow-2xl shadow-brand-orange/5">
                   <div className="flex items-center gap-6">
                     <div className="w-16 h-16 bg-brand-orange/20 rounded-[1.5rem] flex items-center justify-center text-brand-orange shrink-0">
@@ -3049,31 +3067,30 @@ export default function App() {
                     </div>
                     <div>
                       <h3 className="text-lg font-black text-slate-900 uppercase tracking-tighter">Ponto fraco detectado</h3>
-                      <p className="text-slate-500 text-sm font-medium mt-1">Eletrocardiograma: você erra 75% das questões. Revisar agora?</p>
+                      <p className="text-slate-500 text-sm font-medium mt-1">
+                        {worstSubject}: você errou {worstRate}% das questões nesta sessão. Revisar agora?
+                      </p>
                     </div>
                   </div>
-                  <button 
-                    onClick={() => {
-                      setSelectedSubject('Clínica Médica');
-                      setView('revision');
-                    }}
+                  <button
+                    onClick={() => { setSelectedSubject(worstSubject as any); startQuiz(false, worstSubject as any, null); }}
                     className="w-full md:w-auto bg-brand-orange px-8 py-4 rounded-2xl text-black font-black text-sm shadow-xl shadow-brand-orange/20 hover:scale-105 transition-all uppercase tracking-widest whitespace-nowrap"
                   >
                     Revisar
                   </button>
                 </div>
-              ) : (
+                ) : (
                 <div className="bg-brand-green/10 p-8 rounded-[3rem] border border-brand-green/20 flex flex-col md:flex-row items-center justify-between gap-6 shadow-2xl shadow-brand-green/5">
                   <div className="flex items-center gap-6">
                     <div className="w-16 h-16 bg-brand-green/20 rounded-[1.5rem] flex items-center justify-center text-brand-green shrink-0">
                       <Zap size={32} fill="currentColor" />
                     </div>
                     <div>
-                      <h3 className="text-lg font-black text-slate-900 uppercase tracking-tighter">Próximo desafio desbloqueado</h3>
-                      <p className="text-slate-500 text-sm font-medium mt-1">{selectedSubject} nível difícil — questões de prova USP e Einstein.</p>
+                      <h3 className="text-lg font-black text-slate-900 uppercase tracking-tighter">Sessão perfeita! 🎯</h3>
+                      <p className="text-slate-500 text-sm font-medium mt-1">Acertou tudo em {worstSubject}. Continue assim e suba de liga!</p>
                     </div>
                   </div>
-                  <button 
+                  <button
                     onClick={() => {
                       setSelectedSubject(selectedSubject);
                       startQuiz();
@@ -3083,7 +3100,8 @@ export default function App() {
                     Tentar
                   </button>
                 </div>
-              )}
+                );
+              })()}
 
               <div className="bg-slate-900 border border-slate-800 p-8 rounded-[3rem] flex items-center gap-6 shadow-2xl relative overflow-hidden">
                 <div className="bg-slate-800 p-4 rounded-2xl text-brand-orange shadow-inner">
