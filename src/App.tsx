@@ -65,7 +65,8 @@ import {
   ChevronLeft,
   TrendingDown,
   CalendarDays,
-  BarChart2
+  BarChart2,
+  Star
 } from 'lucide-react';
 import { 
   BarChart, 
@@ -395,8 +396,44 @@ const RANKING = [
   { name: 'Dr. Pedro L.', xp: 9800, level: 29, active: false, streak: 2, trend: -2 }
 ];
 
-type LeaguePlayer = { name: string; initials: string; xp: number; level: number; active: boolean; trend: number; currentUser?: boolean };
-const LEAGUE_DATA: Record<string, LeaguePlayer[]> = {
+type LeaguePlayer = { name: string; initials: string; xp: number; level: number; active: boolean; trend: number; currentUser?: boolean; streak?: number };
+type LeagueTier = 'bronze' | 'prata' | 'ouro' | 'platina' | 'diamante';
+const LEAGUE_XP: Record<LeagueTier, number> = { bronze: 0, prata: 1000, ouro: 5000, platina: 10000, diamante: 18000 };
+function getUserLeague(xp: number): LeagueTier {
+  if (xp >= 18000) return 'diamante';
+  if (xp >= 10000) return 'platina';
+  if (xp >= 5000)  return 'ouro';
+  if (xp >= 1000)  return 'prata';
+  return 'bronze';
+}
+const LEAGUE_CONFIG: Record<LeagueTier, { label: string; next: LeagueTier | null; trophyColor: string; gradFrom: string; gradVia: string; gradTo: string }> = {
+  bronze:   { label: 'Liga Bronze',   next: 'prata',    trophyColor: '#CD7F32', gradFrom: 'from-amber-700',  gradVia: 'via-amber-800',  gradTo: 'to-amber-950'  },
+  prata:    { label: 'Liga Prata',    next: 'ouro',     trophyColor: '#CBD5E1', gradFrom: 'from-slate-400',  gradVia: 'via-slate-600',  gradTo: 'to-slate-800'  },
+  ouro:     { label: 'Liga Ouro',     next: 'platina',  trophyColor: '#FCD34D', gradFrom: 'from-amber-500',  gradVia: 'via-blue-700',   gradTo: 'to-amber-800'  },
+  platina:  { label: 'Liga Platina',  next: 'diamante', trophyColor: '#93C5FD', gradFrom: 'from-blue-500',   gradVia: 'via-blue-700',   gradTo: 'to-blue-900'   },
+  diamante: { label: 'Liga Diamante', next: null,       trophyColor: '#67E8F9', gradFrom: 'from-cyan-500',   gradVia: 'via-blue-700',   gradTo: 'to-cyan-900'   },
+};
+const LEAGUE_DATA: Record<LeagueTier, LeaguePlayer[]> = {
+  bronze: [
+    { name: 'Dr. Eduardo M.',   initials: 'EM', xp: 920,  level: 3, active: true,  trend:  2 },
+    { name: 'Dra. Fernanda C.', initials: 'FC', xp: 850,  level: 3, active: true,  trend:  1 },
+    { name: 'Dr. Lucas B.',     initials: 'LB', xp: 780,  level: 2, active: false, trend:  0 },
+    { name: 'Dr. Você',         initials: 'DA', xp: 0,    level: 1, active: true,  trend:  0, currentUser: true },
+    { name: 'Dra. Marina L.',   initials: 'ML', xp: 620,  level: 2, active: true,  trend:  0 },
+    { name: 'Dr. Rafael S.',    initials: 'RS', xp: 540,  level: 1, active: false, trend: -1 },
+    { name: 'Dra. Clara P.',    initials: 'CP', xp: 440,  level: 1, active: true,  trend:  0 },
+    { name: 'Dr. Vítor A.',     initials: 'VA', xp: 310,  level: 1, active: false, trend: -2 },
+  ],
+  prata: [
+    { name: 'Dra. Natalia R.',  initials: 'NR', xp: 4820, level: 10, active: true,  trend:  1 },
+    { name: 'Dr. Bruno S.',     initials: 'BS', xp: 4450, level: 9,  active: true,  trend:  0 },
+    { name: 'Dra. Alice M.',    initials: 'AM', xp: 4100, level: 9,  active: false, trend: -1 },
+    { name: 'Dr. Você',         initials: 'DA', xp: 3800, level: 8,  active: true,  trend:  2, currentUser: true },
+    { name: 'Dr. Daniel F.',    initials: 'DF', xp: 3400, level: 7,  active: true,  trend:  0 },
+    { name: 'Dra. Larissa C.',  initials: 'LC', xp: 2950, level: 6,  active: false, trend: -1 },
+    { name: 'Dr. Vinicius P.',  initials: 'VP', xp: 2500, level: 6,  active: true,  trend:  1 },
+    { name: 'Dra. Priscila M.', initials: 'PM', xp: 1800, level: 4,  active: false, trend:  0 },
+  ],
   ouro: [
     { name: 'Dra. Camila B.',   initials: 'CB', xp: 9820,  level: 22, active: true,  trend:  2 },
     { name: 'Dr. Thiago R.',    initials: 'TR', xp: 9100,  level: 20, active: true,  trend:  0 },
@@ -483,6 +520,100 @@ const SUBJECT_ICONS: Record<string, any> = {
   'Hematologia': { image: '/6176756.png', icon: Droplet, color: 'bg-red-700', ringColor: '#B91C1C', textColor: 'text-white', shadow: 'shadow-red-500/40' },
   'Infectologia': { image: '/10154483.png', icon: Bug, color: 'bg-lime-600', ringColor: '#65A30D', textColor: 'text-white', shadow: 'shadow-lime-500/40' }
 };
+
+// ── MEDQUEST LOGO COMPONENT ──────────────────────────────────────────
+function MedQuestLogoIcon({ size = 40 }: { size?: number }) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="mq-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stopColor="#040B1A"/>
+          <stop offset="100%" stopColor="#0E1D4A"/>
+        </linearGradient>
+        <radialGradient id="mq-ambient" cx="50%" cy="42%" r="56%">
+          <stop offset="0%" stopColor="#2563EB" stopOpacity="0.38"/>
+          <stop offset="100%" stopColor="#2563EB" stopOpacity="0"/>
+        </radialGradient>
+        <linearGradient id="mq-qmark" x1="20%" y1="0%" x2="80%" y2="100%">
+          <stop offset="0%" stopColor="#FFFFFF"/>
+          <stop offset="100%" stopColor="#7DD3FC"/>
+        </linearGradient>
+        <radialGradient id="mq-dot" cx="35%" cy="30%" r="70%">
+          <stop offset="0%" stopColor="#60A5FA"/>
+          <stop offset="100%" stopColor="#1D4ED8"/>
+        </radialGradient>
+        <filter id="mq-qglow" x="-55%" y="-55%" width="210%" height="210%">
+          <feGaussianBlur stdDeviation="3" result="b"/>
+          <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+        </filter>
+        <filter id="mq-dotglow" x="-90%" y="-90%" width="280%" height="280%">
+          <feGaussianBlur stdDeviation="4.5" result="b"/>
+          <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+        </filter>
+      </defs>
+
+      {/* Background */}
+      <rect width="100" height="100" rx="22" fill="url(#mq-bg)"/>
+      <rect width="100" height="100" rx="22" fill="url(#mq-ambient)"/>
+      <rect x="1" y="1" width="98" height="98" rx="21.5"
+            fill="none" stroke="rgba(255,255,255,0.10)" strokeWidth="1.5"/>
+
+      {/* ECG line — subtle medical accent */}
+      <path d="M 6,76 L 18,76 L 21,66 L 24,86 L 27,58 L 30,93 L 34,76 L 66,76 L 69,66 L 72,86 L 75,58 L 78,93 L 82,76 L 94,76"
+            fill="none" stroke="#3B82F6" strokeWidth="1.3"
+            strokeLinecap="round" strokeLinejoin="round" opacity="0.13"/>
+
+      {/* ? soft glow */}
+      <path d="M 36,52 C 36,22 64,22 64,43 C 64,59 51,65 50,70"
+            fill="none" stroke="#3B82F6" strokeWidth="15"
+            strokeLinecap="round" strokeLinejoin="round" opacity="0.28"/>
+
+      {/* ? main stroke */}
+      <path d="M 36,52 C 36,22 64,22 64,43 C 64,59 51,65 50,70"
+            fill="none" stroke="url(#mq-qmark)" strokeWidth="7.5"
+            strokeLinecap="round" strokeLinejoin="round"
+            filter="url(#mq-qglow)"/>
+
+      {/* Dot outer glow */}
+      <circle cx="50" cy="84" r="12" fill="#2563EB" opacity="0.22" filter="url(#mq-dotglow)"/>
+      {/* Dot body */}
+      <circle cx="50" cy="84" r="7" fill="url(#mq-dot)" filter="url(#mq-qglow)"/>
+      <circle cx="50" cy="84" r="7" fill="none" stroke="rgba(255,255,255,0.22)" strokeWidth="1"/>
+      {/* Medical cross */}
+      <line x1="50" y1="79.8" x2="50" y2="88.2" stroke="white" strokeWidth="2.2" strokeLinecap="round"/>
+      <line x1="45.8" y1="84" x2="54.2" y2="84" stroke="white" strokeWidth="2.2" strokeLinecap="round"/>
+      {/* Shine */}
+      <circle cx="47.5" cy="81.5" r="1.4" fill="white" opacity="0.5"/>
+    </svg>
+  );
+}
+
+function MedQuestLogo({ collapsed = false }: { collapsed?: boolean }) {
+  return (
+    <div style={{ display: 'flex', alignItems: 'center', gap: collapsed ? 0 : 10 }}>
+      <MedQuestLogoIcon size={38} />
+      {!collapsed && (
+        <div style={{ lineHeight: 1, userSelect: 'none' }}>
+          <span style={{
+            fontFamily: 'system-ui, -apple-system, sans-serif',
+            fontWeight: 300,
+            fontSize: 18,
+            letterSpacing: '-0.03em',
+            color: '#1E293B',
+          }}>Med</span>
+          <span style={{
+            fontFamily: 'system-ui, -apple-system, sans-serif',
+            fontWeight: 900,
+            fontSize: 18,
+            letterSpacing: '-0.04em',
+            color: '#2563EB',
+          }}>Quest</span>
+        </div>
+      )}
+    </div>
+  );
+}
+// ─────────────────────────────────────────────────────────────────────
 
 interface GamePathNodeProps {
   subject: string;
@@ -818,7 +949,7 @@ export default function App() {
   const [view, setView] = useState<'landing' | 'home' | 'quiz' | 'summary' | 'ranking' | 'profile' | 'progress' | 'revision' | 'residencia-onboarding'>('landing');
   const [chartType, setChartType] = useState<'bar' | 'line'>('bar');
   const [rankingTab, setRankingTab] = useState<'global' | 'friends'>('global');
-  const [activeLeague, setActiveLeague] = useState<'ouro' | 'platina' | 'diamante'>('platina');
+  const [activeLeague, setActiveLeague] = useState<LeagueTier>('bronze');
   const [showAddFriend, setShowAddFriend] = useState(false);
   const [friendSearch, setFriendSearch] = useState('');
   const [selectedTrack, setSelectedTrack] = useState<'estudante' | 'residencia' | null>(null);
@@ -1134,11 +1265,8 @@ export default function App() {
       {/* Header / Stats Bar */}
       <header className="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-200 px-3 py-3 shadow-sm">
         <div className="max-w-4xl mx-auto flex items-center justify-between gap-2">
-          <div className="flex items-center gap-3 cursor-pointer" onClick={() => setView('home')}>
-            <div className="w-10 h-10 bg-brand-primary rounded-xl flex items-center justify-center text-white shadow-lg shadow-blue-500/20 shrink-0">
-              <Zap size={22} strokeWidth={2.5} fill="currentColor" />
-            </div>
-            <h1 className="text-xl font-black tracking-tight text-slate-900 hidden min-[360px]:block uppercase">MedQuest</h1>
+          <div className="cursor-pointer" onClick={() => setView('home')}>
+            <MedQuestLogo />
           </div>
 
           <div className="flex items-center bg-slate-50 px-2 py-1.5 rounded-full border border-slate-200 hide-scrollbar overflow-x-auto max-w-[220px] sm:max-w-none shadow-sm">
@@ -1984,23 +2112,20 @@ export default function App() {
                   {/* Quick links: Liga + Amigos */}
                   <div className="grid grid-cols-2 gap-4">
                     {(() => {
-                      const userLeague = user.xp >= 18000 ? 'diamante' : user.xp >= 10000 ? 'platina' : 'ouro';
-                      const leagueLabel = userLeague === 'diamante' ? 'Liga Diamante' : userLeague === 'platina' ? 'Liga Platina' : 'Liga Ouro';
+                      const userLeague = getUserLeague(user.xp);
+                      const cfg = LEAGUE_CONFIG[userLeague];
                       const peers  = LEAGUE_DATA[userLeague].filter(p => !p.currentUser);
                       const sorted = [...peers, { name: user.name, xp: user.xp, currentUser: true }].sort((a, b) => b.xp - a.xp);
                       const rank   = sorted.findIndex(p => p.currentUser) + 1;
-                      const rankLabel   = user.xp === 0 ? 'Começando' : `${rank}º lugar`;
-                      const trophyColor = userLeague === 'diamante' ? '#67E8F9' : userLeague === 'platina' ? '#CBD5E1' : '#FCD34D';
-                      const gradFrom    = userLeague === 'diamante' ? 'from-cyan-500' : userLeague === 'platina' ? 'from-blue-500' : 'from-amber-500';
-                      const gradTo      = userLeague === 'diamante' ? 'to-cyan-900'   : userLeague === 'platina' ? 'to-blue-900'   : 'to-amber-800';
+                      const rankLabel = user.xp === 0 ? 'Começando' : `${rank}º lugar`;
                       return (
                         <button
                           onClick={() => { setActiveLeague(userLeague); setView('ranking'); }}
-                          className={`bg-gradient-to-br ${gradFrom} via-blue-700 ${gradTo} p-5 rounded-[2rem] flex flex-col gap-3 text-white shadow-lg hover:scale-[1.02] active:scale-95 transition-all text-left`}
+                          className={`bg-gradient-to-br ${cfg.gradFrom} ${cfg.gradVia} ${cfg.gradTo} p-5 rounded-[2rem] flex flex-col gap-3 text-white shadow-lg hover:scale-[1.02] active:scale-95 transition-all text-left`}
                         >
-                          <Trophy size={22} fill="currentColor" style={{ color: trophyColor }} />
+                          <Trophy size={22} fill="currentColor" style={{ color: cfg.trophyColor }} />
                           <div>
-                            <p className="text-[10px] font-black uppercase tracking-widest text-white/60 leading-none mb-1">{leagueLabel}</p>
+                            <p className="text-[10px] font-black uppercase tracking-widest text-white/60 leading-none mb-1">{cfg.label}</p>
                             <p className="text-base font-black leading-none">{rankLabel}</p>
                           </div>
                         </button>
@@ -3157,23 +3282,25 @@ export default function App() {
 
               {/* League Tabs */}
               <div className="px-6 mb-8">
-                <div className="flex bg-white/5 p-1 rounded-2xl border border-white/10">
-                  {[
-                    { id: 'ouro', label: 'Ouro', icon: Trophy },
-                    { id: 'platina', label: 'Platina', icon: Diamond },
-                    { id: 'diamante', label: 'Diamante', icon: Crown }
-                  ].map((league) => (
+                <div className="flex overflow-x-auto bg-white/5 p-1 rounded-2xl border border-white/10 gap-0.5 scrollbar-none">
+                  {([
+                    { id: 'bronze'  as LeagueTier, label: 'Bronze',   icon: Shield  },
+                    { id: 'prata'   as LeagueTier, label: 'Prata',    icon: Star    },
+                    { id: 'ouro'    as LeagueTier, label: 'Ouro',     icon: Trophy  },
+                    { id: 'platina' as LeagueTier, label: 'Platina',  icon: Diamond },
+                    { id: 'diamante'as LeagueTier, label: 'Diamante', icon: Crown   },
+                  ] as { id: LeagueTier; label: string; icon: typeof Trophy }[]).map((league) => (
                     <button
                       key={league.id}
-                      onClick={() => setActiveLeague(league.id as any)}
-                      className={`flex-1 flex items-center justify-center gap-2 py-3 rounded-xl transition-all ${
+                      onClick={() => setActiveLeague(league.id)}
+                      className={`flex-1 min-w-[64px] flex items-center justify-center gap-1.5 py-3 rounded-xl transition-all whitespace-nowrap ${
                         activeLeague === league.id
                         ? 'bg-gradient-to-r from-blue-500 to-blue-700 text-white shadow-lg shadow-blue-600/30 border border-blue-400/20'
                         : 'text-white/40 hover:text-white/60'
                       }`}
                     >
-                      <league.icon size={13} className={activeLeague === league.id ? 'text-white' : 'text-neutral-500'} />
-                      <span className="text-[10px] font-black uppercase tracking-[0.15em]">{league.label}</span>
+                      <league.icon size={12} className={activeLeague === league.id ? 'text-white' : 'text-neutral-500'} />
+                      <span className="text-[9px] font-black uppercase tracking-[0.12em]">{league.label}</span>
                     </button>
                   ))}
                 </div>
@@ -3205,7 +3332,7 @@ export default function App() {
 
               {/* Podium - only for Global first page */}
               {rankingTab === 'global' && (() => {
-                const leaguePlayers = LEAGUE_DATA[activeLeague];
+                const leaguePlayers = LEAGUE_DATA[activeLeague as LeagueTier];
                 const first  = leaguePlayers[0];
                 const second = leaguePlayers[1];
                 const third  = leaguePlayers[2];
@@ -3285,9 +3412,9 @@ export default function App() {
                     className="space-y-3"
                   >
                     {(rankingTab === 'global'
-                      ? LEAGUE_DATA[activeLeague].slice(3)
-                      : LEAGUE_DATA[activeLeague].filter(p => p.currentUser || user.friends.includes(p.name))
-                    ).map((player, idx) => {
+                      ? LEAGUE_DATA[activeLeague as LeagueTier].slice(3)
+                      : LEAGUE_DATA[activeLeague as LeagueTier].filter((p: LeaguePlayer) => p.currentUser || user.friends.includes(p.name))
+                    ).map((player: LeaguePlayer, idx: number) => {
                       const absoluteRank = rankingTab === 'global' ? idx + 4 : idx + 1;
                       return (
                         <div 
@@ -4225,7 +4352,7 @@ export default function App() {
         }`}>
           {[
             { id: 'home', icon: <LayoutDashboard size={24} />, label: 'Início' },
-            { id: 'home-quiz', icon: <BookOpen size={24} />, label: 'Questões', onClick: () => setView('home') },
+            { id: 'home-quiz', icon: <BookOpen size={24} />, label: 'Questões', onClick: () => startQuiz() },
             { id: 'progress', icon: <BarChart3 size={24} />, label: 'Progresso' },
             { id: 'ranking', icon: <Trophy size={24} />, label: 'Liga' },
             { id: 'profile', icon: <User size={24} />, label: 'Perfil' }

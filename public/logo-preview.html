@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MedQuest — Preview da Logo v2</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: #F1F5F9;
+      min-height: 100vh;
+      padding: 40px 24px;
+    }
+    h1 { font-size: 13px; font-weight: 700; color: #64748B; letter-spacing: .1em;
+         text-transform: uppercase; margin-bottom: 8px; }
+    .subtitle { font-size: 12px; color: #94A3B8; margin-bottom: 36px; }
+    section { margin-bottom: 44px; }
+    section h2 { font-size: 11px; font-weight: 600; color: #94A3B8;
+                 letter-spacing: .08em; text-transform: uppercase; margin-bottom: 14px; }
+    .row {
+      display: flex; align-items: center; gap: 28px; flex-wrap: wrap;
+      padding: 32px 28px; border-radius: 20px;
+    }
+    .dark   { background: #060D1F; }
+    .light  { background: #FFFFFF; border: 1px solid #E2E8F0; }
+    .brand  { background: #2563EB; }
+    .slate  { background: #0F172A; }
+
+    label {
+      display: flex; flex-direction: column; align-items: center; gap: 8px;
+      font-size: 11px; font-weight: 500; color: rgba(255,255,255,0.35);
+    }
+    .light label { color: #94A3B8; }
+
+    .logo-h { display: flex; align-items: center; gap: 11px; }
+    .wm { font-size: 24px; font-weight: 800; letter-spacing: -.4px; line-height: 1; }
+    .wm .m  { color: #FFFFFF; }
+    .wm .q  { color: #60A5FA; }
+    .wm.lt .m { color: #0F172A; }
+    .wm.lt .q { color: #2563EB; }
+    .wm.br .m { color: #FFFFFF; }
+    .wm.br .q { color: #BFDBFE; }
+  </style>
+</head>
+<body>
+
+<h1>MedQuest — Preview da Logo v2</h1>
+<p class="subtitle">Conceito: ? bold com linha ECG e cruz médica no ponto</p>
+
+<section>
+  <h2>Ícone — fundo escuro</h2>
+  <div class="row dark">
+    <label><img src="logo-icon.svg" width="160" height="160"/>160 px</label>
+    <label><img src="logo-icon.svg" width="80"  height="80" />80 px</label>
+    <label><img src="logo-icon.svg" width="48"  height="48" />48 px</label>
+    <label><img src="logo-icon.svg" width="36"  height="36" />36 px</label>
+    <label><img src="logo-icon.svg" width="24"  height="24" />24 px</label>
+  </div>
+</section>
+
+<section>
+  <h2>Ícone — fundo claro</h2>
+  <div class="row light">
+    <label><img src="logo-icon.svg" width="160" height="160"/>160 px</label>
+    <label><img src="logo-icon.svg" width="80"  height="80" />80 px</label>
+    <label><img src="logo-icon.svg" width="48"  height="48" />48 px</label>
+    <label><img src="logo-icon.svg" width="36"  height="36" />36 px</label>
+    <label><img src="logo-icon.svg" width="24"  height="24" />24 px</label>
+  </div>
+</section>
+
+<section>
+  <h2>Logo horizontal — fundo escuro</h2>
+  <div class="row dark">
+    <label>
+      <div class="logo-h">
+        <img src="logo-icon.svg" width="52" height="52"/>
+        <span class="wm"><span class="m">Med</span><span class="q">Quest</span></span>
+      </div>Header
+    </label>
+    <label>
+      <div class="logo-h" style="gap:8px">
+        <img src="logo-icon.svg" width="36" height="36"/>
+        <span class="wm" style="font-size:18px"><span class="m">Med</span><span class="q">Quest</span></span>
+      </div>Compacto
+    </label>
+  </div>
+</section>
+
+<section>
+  <h2>Logo horizontal — fundo claro</h2>
+  <div class="row light">
+    <label>
+      <div class="logo-h">
+        <img src="logo-icon.svg" width="52" height="52"/>
+        <span class="wm lt"><span class="m">Med</span><span class="q">Quest</span></span>
+      </div>Header
+    </label>
+    <label>
+      <div class="logo-h" style="gap:8px">
+        <img src="logo-icon.svg" width="36" height="36"/>
+        <span class="wm lt" style="font-size:18px"><span class="m">Med</span><span class="q">Quest</span></span>
+      </div>Compacto
+    </label>
+  </div>
+</section>
+
+<section>
+  <h2>Logo — fundo azul (brand)</h2>
+  <div class="row brand">
+    <label>
+      <div class="logo-h">
+        <img src="logo-icon.svg" width="52" height="52"/>
+        <span class="wm br"><span class="m">Med</span><span class="q">Quest</span></span>
+      </div>Header
+    </label>
+    <label><img src="logo-icon.svg" width="80" height="80"/>80 px</label>
+  </div>
+</section>
+
+</body>
+</html>
