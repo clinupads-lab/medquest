@@ -93,7 +93,7 @@ const LOADING_TEXTS = [
 
 /// --- Types ---
 
-type Cycle = 'Ciclo Básico' | 'Ciclo Clínico';
+type Cycle = 'Ciclo Básico' | 'Ciclo Clínico' | 'Internato';
 
 type Subject = 
   | 'Anatomia' | 'Fisiologia' | 'Bioquímica' | 'Histologia' | 'Embriologia' | 'Microbiologia' | 'Imunologia' | 'Genética' | 'Farmacologia'
@@ -169,6 +169,17 @@ const HIERARCHY: Record<Cycle, Partial<Record<Subject, string[]>>> = {
     'Otorrinolaringologia': [],
     'Medicina de Família/SUS': [],
     'Cirurgia Geral': []
+  },
+  'Internato': {
+    'Clínica Médica': [],
+    'Cirurgia Geral': [],
+    'Pediatria': [],
+    'Ginecologia & Obstetrícia': [],
+    'Medicina de Família/SUS': [],
+    'Psiquiatria': [],
+    'Neurologia': [],
+    'Dermatologia': [],
+    'Infectologia': []
   }
 };
 
@@ -2284,8 +2295,8 @@ export default function App() {
                       <p className="text-[10px] font-black text-slate-400 uppercase tracking-[0.2em] px-1">Estudar por Matéria</p>
 
                       {/* Cycle Toggle */}
-                      <div className="flex bg-slate-100 p-1 rounded-2xl w-fit mx-auto shadow-inner">
-                        {(['Ciclo Básico', 'Ciclo Clínico'] as Cycle[]).map((cycle) => (
+                      <div className="flex bg-slate-100 p-1 rounded-2xl w-fit mx-auto shadow-inner overflow-x-auto">
+                        {(['Ciclo Básico', 'Ciclo Clínico', 'Internato'] as Cycle[]).map((cycle) => (
                           <button
                             key={cycle}
                             onClick={() => {
@@ -2294,7 +2305,7 @@ export default function App() {
                               setSelectedSubject(firstSubj);
                               setSelectedSubSubject(null);
                             }}
-                            className={`px-5 py-2.5 rounded-xl text-xs font-black transition-all ${
+                            className={`px-5 py-2.5 rounded-xl text-xs font-black transition-all whitespace-nowrap ${
                               selectedCycle === cycle ? 'bg-white text-brand-primary shadow-md' : 'text-slate-400 hover:text-slate-600'
                             }`}
                           >
