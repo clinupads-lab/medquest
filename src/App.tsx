@@ -1095,6 +1095,7 @@ export default function App() {
   const [combo, setCombo] = useState(0);
   const [showXpFloat, setShowXpFloat] = useState(false);
   const [summaryXP, setSummaryXP] = useState(0);
+  const [summaryTimer, setSummaryTimer] = useState(0);
   const [loadingTextIdx, setLoadingTextIdx] = useState(0);
   const confettiData = useRef(
     Array.from({ length: 22 }).map((_, i) => ({
@@ -1201,18 +1202,22 @@ export default function App() {
     setSessionHistory(prev => [...prev, { questionId: currentQuestion.id, selectedIndex: index }]);
     
     if (isCorrect) {
-      setCombo((c: number) => c + 1);
+      const newCombo = combo + 1;
+      setCombo(newCombo);
       setShowXpFloat(true);
       setTimeout(() => setShowXpFloat(false), 900);
-      setSessionResults(prev => ({ ...prev, correct: prev.correct + 1, xpGained: prev.xpGained + 50 }));
+      const xpEarned = newCombo >= 5 ? 100 : newCombo >= 3 ? 75 : 50;
+      setSessionResults(prev => ({ ...prev, correct: prev.correct + 1, xpGained: prev.xpGained + xpEarned }));
       setUser(prev => {
         const subj = currentQuestion.subject;
         const attempts = (prev.subjectAttempts[subj] || 0) + 1;
-        const newMastery = Math.round(((prev.mastery[subj] || 0) * (attempts - 1) + 100) / attempts);
+        const currentMastery = prev.mastery[subj] || 0;
+        const newMastery = Math.min(100, Math.round(currentMastery + (100 - currentMastery) * 0.15));
         return {
           ...prev,
           mastery: { ...prev.mastery, [subj]: newMastery },
           subjectAttempts: { ...prev.subjectAttempts, [subj]: attempts },
+          dailyGoalDone: Math.min(prev.dailyGoalTotal, prev.dailyGoalDone + 1),
           missedQuestionIds: isRevisionMode
             ? prev.missedQuestionIds.filter((id: string) => id !== currentQuestion.id)
             : prev.missedQuestionIds,
@@ -1223,7 +1228,8 @@ export default function App() {
       setUser(prev => {
         const subj = currentQuestion.subject;
         const attempts = (prev.subjectAttempts[subj] || 0) + 1;
-        const newMastery = Math.round(((prev.mastery[subj] || 0) * (attempts - 1) + 0) / attempts);
+        const currentMastery = prev.mastery[subj] || 0;
+        const newMastery = Math.max(0, Math.round(currentMastery - currentMastery * 0.08));
         return {
           ...prev,
           hearts: Math.max(0, prev.hearts - 1),
@@ -1251,11 +1257,19 @@ export default function App() {
       setIsFeedbackVisible(false);
     } else {
       // End session
-      setUser(prev => ({
-        ...prev,
-        xp: prev.xp + sessionResults.xpGained,
-        streak: prev.streak + 1 // Simply incrementing for mock demo
-      }));
+      setSummaryTimer(quizTimer);
+      setUser(prev => {
+        const newXp = prev.xp + sessionResults.xpGained;
+        const newLevel = Math.floor(newXp / 1000) + 1;
+        const newWeeklyDone = Math.min(prev.weeklyGoalTotal, prev.weeklyGoalDone + sessionResults.correct);
+        return {
+          ...prev,
+          xp: newXp,
+          level: newLevel,
+          streak: prev.streak + 1,
+          weeklyGoalDone: newWeeklyDone,
+        };
+      });
       setView('summary');
     }
   };
@@ -2880,7 +2894,7 @@ export default function App() {
                 {[
                   { label: 'Acertos', val: sessionResults.correct, color: 'text-brand-green' },
                   { label: 'Erros', val: sessionResults.total - sessionResults.correct, color: 'text-brand-red' },
-                  { label: 'Tempo', val: '8m 42s', color: 'text-slate-900' }
+                  { label: 'Tempo', val: formatTimer(summaryTimer), color: 'text-slate-900' }
                 ].map((stat, i) => (
                   <div key={stat.label} className="bg-white p-6 rounded-[2.5rem] border border-slate-200/80 text-center shadow-lg">
                     <div className={`text-3xl font-black mb-1 ${stat.color}`}>{stat.val}</div>
@@ -2956,34 +2970,50 @@ export default function App() {
               )}
 
               {/* Theme Performance */}
-              <div className="space-y-6">
-                <h4 className="text-[11px] font-black text-slate-500 uppercase tracking-[0.2em] px-4">Desempenho por tema</h4>
-                <div className="bg-slate-900 rounded-[3rem] p-8 border border-slate-800 space-y-8 shadow-2xl">
-                  {[
-                    { name: 'Cardiologia', color: 'bg-brand-primary', progress: (sessionResults.correct/sessionResults.total)*100, label: `${sessionResults.correct}/${sessionResults.total}` },
-                    { name: 'Pneumologia', color: 'bg-blue-400', progress: 66, label: '2/3' },
-                    { name: 'Gastroenterologia', color: 'bg-brand-green', progress: 100, label: '3/3' }
-                  ].map((theme, i) => (
-                    <div key={theme.name} className="space-y-3">
-                      <div className="flex justify-between items-center text-xs font-black uppercase tracking-widest">
-                        <div className="flex items-center gap-3">
-                          <div className={`w-2.5 h-2.5 rounded-full ${theme.color} shadow-[0_0_10px_currentColor]`} />
-                          <span className="text-slate-300">{theme.name}</span>
+              {(() => {
+                const themeColors = ['bg-brand-primary', 'bg-blue-400', 'bg-brand-green', 'bg-amber-400', 'bg-purple-400', 'bg-rose-400'];
+                const bySubject: Record<string, { correct: number; total: number }> = {};
+                sessionHistory.forEach((h: { questionId: string; selectedIndex: number }) => {
+                  const q = activeQuestions.find((q: Question) => q.id === h.questionId);
+                  if (!q) return;
+                  if (!bySubject[q.subject]) bySubject[q.subject] = { correct: 0, total: 0 };
+                  bySubject[q.subject].total++;
+                  if (h.selectedIndex === q.correctIndex) bySubject[q.subject].correct++;
+                });
+                const themes = Object.entries(bySubject).map(([name, s], i) => ({
+                  name,
+                  color: themeColors[i % themeColors.length],
+                  progress: s.total > 0 ? Math.round((s.correct / s.total) * 100) : 0,
+                  label: `${s.correct}/${s.total}`,
+                }));
+                if (themes.length === 0) return null;
+                return (
+                  <div className="space-y-6">
+                    <h4 className="text-[11px] font-black text-slate-500 uppercase tracking-[0.2em] px-4">Desempenho por tema</h4>
+                    <div className="bg-slate-900 rounded-[3rem] p-8 border border-slate-800 space-y-8 shadow-2xl">
+                      {themes.map((theme, i) => (
+                        <div key={theme.name} className="space-y-3">
+                          <div className="flex justify-between items-center text-xs font-black uppercase tracking-widest">
+                            <div className="flex items-center gap-3">
+                              <div className={`w-2.5 h-2.5 rounded-full ${theme.color}`} />
+                              <span className="text-slate-300">{theme.name}</span>
+                            </div>
+                            <span className="text-white">{theme.label}</span>
+                          </div>
+                          <div className="h-4 w-full bg-slate-950 rounded-full overflow-hidden border border-slate-800 p-1">
+                            <motion.div
+                              initial={{ width: 0 }}
+                              whileInView={{ width: `${theme.progress}%` }}
+                              transition={{ duration: 1.5, delay: i * 0.2 }}
+                              className={`h-full ${theme.color} rounded-full`}
+                            />
+                          </div>
                         </div>
-                        <span className="text-white">{theme.label}</span>
-                      </div>
-                      <div className="h-4 w-full bg-slate-950 rounded-full overflow-hidden border border-slate-800 p-1">
-                        <motion.div 
-                          initial={{ width: 0 }}
-                          whileInView={{ width: `${theme.progress}%` }}
-                          transition={{ duration: 1.5, delay: i * 0.2 }}
-                          className={`h-full ${theme.color} rounded-full shadow-lg shadow-${theme.color.split('-')[1]}/20`}
-                        />
-                      </div>
+                      ))}
                     </div>
-                  ))}
-                </div>
-              </div>
+                  </div>
+                );
+              })()}
 
               {/* Insight Cards */}
               {sessionResults.correct < sessionResults.total ? (
@@ -3981,8 +4011,13 @@ export default function App() {
                       <Award size={32} />
                     </div>
                     <div>
-                      <div className="text-lg font-black text-slate-900 uppercase tracking-tighter">Premium MedIA</div>
-                      <div className="text-xs text-slate-500 font-bold uppercase tracking-widest">Renovação em 22/06/2026</div>
+                      <div className="text-lg font-black text-slate-900 uppercase tracking-tighter">MedQuest Premium</div>
+                      <div className="text-xs text-slate-500 font-bold uppercase tracking-widest">
+                        {(() => {
+                          const d = new Date(); d.setFullYear(d.getFullYear() + 1);
+                          return `Renovação em ${d.toLocaleDateString('pt-BR', { day: '2-digit', month: '2-digit', year: 'numeric' })}`;
+                        })()}
+                      </div>
                     </div>
                   </div>
                   <ChevronRight size={20} className="text-slate-400 group-hover:text-brand-primary transition-colors" />
@@ -4247,7 +4282,7 @@ export default function App() {
                       </div>
                       <div className="text-left">
                         <p className="text-[10px] font-black text-blue-400/50 uppercase tracking-widest leading-none mb-1">Copiar Link</p>
-                        <p className="text-xs font-black text-blue-300 truncate max-w-[130px]">med-ia.app/invite/{user.name.toLowerCase().split(' ')[1] || 'dr-andrew'}</p>
+                        <p className="text-xs font-black text-blue-300 truncate max-w-[130px]">medquest.app/invite/{user.name.toLowerCase().replace(/\s+/g, '-') || 'usuario'}</p>
                       </div>
                     </div>
                     <div className="bg-blue-600/20 p-2.5 rounded-xl text-blue-400 group-hover:bg-blue-500/30 group-hover:text-blue-300 transition-all">
