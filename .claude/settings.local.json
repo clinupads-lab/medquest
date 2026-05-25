@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:www.medevo.com.br)",
+      "PowerShell(\\(Get-Content \"c:\\\\Users\\\\Andrew Aguiar\\\\Downloads\\\\medquest_-residência-médica \\(1\\)\\\\src\\\\App.tsx\" | Measure-Object -Line\\).Lines)",
+      "PowerShell(& \"C:\\\\Program Files\\\\Git\\\\bin\\\\git.exe\" --version)",
+      "PowerShell($git = \"C:\\\\Program Files\\\\Git\\\\bin\\\\git.exe\"; cd \"c:\\\\Users\\\\Andrew Aguiar\\\\Downloads\\\\medquest_-residência-médica \\(1\\)\"; & $git init; & $git add .; & $git -c user.email=\"clinup.ads@gmail.com\" -c user.name=\"Andrew Aguiar\" commit -m \"primeiro commit - medquest\")"
+    ]
+  }
+}
