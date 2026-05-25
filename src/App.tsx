@@ -1658,6 +1658,31 @@ export default function App() {
                     </span>
                   </div>
 
+                  {/* Todas as Bancas option */}
+                  {!bancaSearch && bancaUfFilter === 'TODAS' && (
+                    <motion.button
+                      whileTap={{ scale: 0.98 }}
+                      onClick={() => setSelectedBanca(selectedBanca === 'todas' ? null : 'todas')}
+                      className={`w-full flex items-center gap-3 p-3.5 rounded-2xl border-2 transition-all text-left mb-2
+                        ${selectedBanca === 'todas' ? 'bg-blue-50 border-brand-primary shadow-md shadow-blue-500/10' : 'bg-white border-transparent shadow-sm'}`}
+                    >
+                      <div className={`w-9 h-9 rounded-xl flex items-center justify-center shrink-0 transition-colors
+                        ${selectedBanca === 'todas' ? 'bg-brand-primary text-white' : 'bg-slate-100 text-slate-400'}`}>
+                        <BookOpen size={16} />
+                      </div>
+                      <div className="flex-1 min-w-0">
+                        <p className={`text-[11px] font-black uppercase tracking-wide leading-none mb-0.5 ${selectedBanca === 'todas' ? 'text-brand-primary' : 'text-slate-900'}`}>
+                          Todas as Bancas
+                        </p>
+                        <p className="text-[11px] text-slate-500 font-medium">Questões de todas as instituições</p>
+                      </div>
+                      <div className={`shrink-0 w-5 h-5 rounded-full border-2 flex items-center justify-center transition-all
+                        ${selectedBanca === 'todas' ? 'bg-brand-primary border-brand-primary' : 'border-slate-300'}`}>
+                        {selectedBanca === 'todas' && <Check size={10} strokeWidth={3.5} className="text-white" />}
+                      </div>
+                    </motion.button>
+                  )}
+
                   {/* Institution list */}
                   <div className="space-y-2 mb-4">
                     {pageBancas.length === 0 ? (
