@@ -1,0 +1,6 @@
+{
+  "name": "MedQuest",
+  "description": "App de questões diárias gamificado para estudantes de medicina e médicos no Brasil, focado em provas de residência.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
