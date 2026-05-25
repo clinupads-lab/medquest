@@ -2280,74 +2280,42 @@ export default function App() {
                     </div>
 
                     {/* ── ESCOLHA DE MATÉRIA ── */}
-                    <div className="flex flex-col gap-6">
+                    <div className="flex flex-col gap-3">
                       <p className="text-[10px] font-black text-slate-400 uppercase tracking-[0.2em] px-1">Estudar por Matéria</p>
 
-                      {/* ── BLOCO CICLO CLÍNICO ── */}
-                      <div className="flex flex-col gap-3">
-                        {/* Header */}
-                        <div className="flex items-center justify-between px-1">
-                          <div className="flex items-center gap-2.5">
-                            <div className="w-8 h-8 rounded-xl bg-brand-primary flex items-center justify-center shadow-md shadow-blue-500/25">
-                              <Stethoscope size={15} className="text-white" />
-                            </div>
-                            <div>
-                              <p className="text-sm font-black text-slate-900 leading-none">Disciplinas Clínicas</p>
-                              <p className="text-[10px] font-bold text-slate-400 leading-none mt-0.5">Ciclo Clínico</p>
-                            </div>
-                          </div>
-                          <span className="text-[10px] font-black text-brand-primary bg-blue-50 border border-blue-100 px-2.5 py-1 rounded-full">
-                            ~80% das provas
-                          </span>
-                        </div>
-                        {/* Grid */}
-                        <div className="py-8 px-5 flex flex-col items-center bg-white rounded-[2.5rem] border border-slate-200/80 shadow-xl overflow-visible">
-                          <div className="w-full grid grid-cols-2 md:grid-cols-3 gap-y-8 gap-x-4">
-                            {(Object.keys(HIERARCHY['Ciclo Clínico']) as Subject[]).map((subj, idx) => (
-                              <GamePathNode
-                                key={`res-clinico-${subj}-${idx}`}
-                                subject={subj}
-                                progress={Number(user.mastery[subj] || 0)}
-                                index={idx}
-                                isSelected={selectedSubject === subj && selectedCycle === 'Ciclo Clínico'}
-                                onClick={() => { setSelectedCycle('Ciclo Clínico'); setSelectedSubject(subj); setSelectedSubSubject(null); startQuiz(false, subj, null); }}
-                              />
-                            ))}
-                          </div>
-                        </div>
+                      {/* Cycle Toggle */}
+                      <div className="flex bg-slate-100 p-1 rounded-2xl w-fit mx-auto shadow-inner">
+                        {(['Ciclo Básico', 'Ciclo Clínico'] as Cycle[]).map((cycle) => (
+                          <button
+                            key={cycle}
+                            onClick={() => {
+                              setSelectedCycle(cycle);
+                              const firstSubj = Object.keys(HIERARCHY[cycle])[0] as Subject;
+                              setSelectedSubject(firstSubj);
+                              setSelectedSubSubject(null);
+                            }}
+                            className={`px-5 py-2.5 rounded-xl text-xs font-black transition-all ${
+                              selectedCycle === cycle ? 'bg-white text-brand-primary shadow-md' : 'text-slate-400 hover:text-slate-600'
+                            }`}
+                          >
+                            {cycle}
+                          </button>
+                        ))}
                       </div>
 
-                      {/* ── BLOCO CICLO BÁSICO ── */}
-                      <div className="flex flex-col gap-3">
-                        {/* Header */}
-                        <div className="flex items-center justify-between px-1">
-                          <div className="flex items-center gap-2.5">
-                            <div className="w-8 h-8 rounded-xl bg-slate-600 flex items-center justify-center shadow-md shadow-slate-400/25">
-                              <BookOpen size={15} className="text-white" />
-                            </div>
-                            <div>
-                              <p className="text-sm font-black text-slate-900 leading-none">Ciências Básicas</p>
-                              <p className="text-[10px] font-bold text-slate-400 leading-none mt-0.5">Ciclo Básico</p>
-                            </div>
-                          </div>
-                          <span className="text-[10px] font-black text-slate-500 bg-slate-100 border border-slate-200 px-2.5 py-1 rounded-full">
-                            ~20% das provas
-                          </span>
-                        </div>
-                        {/* Grid */}
-                        <div className="py-8 px-5 flex flex-col items-center bg-white rounded-[2.5rem] border border-slate-200/80 shadow-xl overflow-visible">
-                          <div className="w-full grid grid-cols-2 md:grid-cols-3 gap-y-8 gap-x-4">
-                            {(Object.keys(HIERARCHY['Ciclo Básico']) as Subject[]).map((subj, idx) => (
-                              <GamePathNode
-                                key={`res-basico-${subj}-${idx}`}
-                                subject={subj}
-                                progress={Number(user.mastery[subj] || 0)}
-                                index={idx}
-                                isSelected={selectedSubject === subj && selectedCycle === 'Ciclo Básico'}
-                                onClick={() => { setSelectedCycle('Ciclo Básico'); setSelectedSubject(subj); setSelectedSubSubject(null); startQuiz(false, subj, null); }}
-                              />
-                            ))}
-                          </div>
+                      {/* Subject Grid */}
+                      <div className="py-8 px-5 flex flex-col items-center bg-white rounded-[2.5rem] border border-slate-200/80 shadow-xl overflow-visible">
+                        <div className="w-full grid grid-cols-2 md:grid-cols-3 gap-y-8 gap-x-4">
+                          {(Object.keys(HIERARCHY[selectedCycle as Cycle]) as Subject[]).map((subj, idx) => (
+                            <GamePathNode
+                              key={`res-path-${subj}-${idx}`}
+                              subject={subj}
+                              progress={Number(user.mastery[subj] || 0)}
+                              index={idx}
+                              isSelected={selectedSubject === subj}
+                              onClick={() => { setSelectedSubject(subj); setSelectedSubSubject(null); startQuiz(false, subj, null); }}
+                            />
+                          ))}
                         </div>
                       </div>
                     </div>
