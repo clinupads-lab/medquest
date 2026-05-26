@@ -98,7 +98,11 @@ type Cycle = 'Ciclo Básico' | 'Ciclo Clínico' | 'Internato';
 type Subject = 
   | 'Anatomia' | 'Fisiologia' | 'Bioquímica' | 'Histologia' | 'Embriologia' | 'Microbiologia' | 'Imunologia' | 'Genética' | 'Farmacologia'
   | 'Clínica Médica' | 'Clínica Cirúrgica' | 'Ginecologia & Obstetrícia' | 'Pediatria' | 'Psiquiatria' | 'Dermatologia' | 'Oftalmologia' | 'Otorrinolaringologia' | 'Medicina de Família/SUS'
-  | 'Cardiologia' | 'Neurologia' | 'Pneumologia' | 'Gastroenterologia' | 'Endocrinologia' | 'Nefrologia' | 'Reumatologia' | 'Hematologia' | 'Infectologia' | 'Cirurgia Geral';
+  | 'Cardiologia' | 'Neurologia' | 'Pneumologia' | 'Gastroenterologia' | 'Endocrinologia' | 'Nefrologia' | 'Reumatologia' | 'Hematologia' | 'Infectologia' | 'Cirurgia Geral'
+  | 'Urgência e Emergência' | 'Medicina Intensiva' | 'Ortopedia' | 'Neonatologia' | 'Anestesiologia' | 'Traumatologia-Ortopedia'
+  | 'Patologia' | 'Parasitologia' | 'Semiologia' | 'Epidemiologia'
+  | 'Urologia' | 'Geriatria' | 'Radiologia'
+  | 'Cirurgia Vascular' | 'Neurocirurgia';
 
 interface Question {
   id: string;
@@ -145,9 +149,13 @@ const HIERARCHY: Record<Cycle, Partial<Record<Subject, string[]>>> = {
     'Histologia': [],
     'Embriologia': [],
     'Microbiologia': [],
+    'Parasitologia': [],
     'Imunologia': [],
     'Genética': [],
-    'Farmacologia': []
+    'Farmacologia': [],
+    'Patologia': [],
+    'Semiologia': [],
+    'Epidemiologia': []
   },
   'Ciclo Clínico': {
     'Clínica Médica': [],
@@ -168,18 +176,20 @@ const HIERARCHY: Record<Cycle, Partial<Record<Subject, string[]>>> = {
     'Oftalmologia': [],
     'Otorrinolaringologia': [],
     'Medicina de Família/SUS': [],
-    'Cirurgia Geral': []
+    'Cirurgia Geral': [],
+    'Ortopedia': [],
+    'Urologia': [],
+    'Geriatria': [],
+    'Radiologia': []
   },
   'Internato': {
-    'Clínica Médica': [],
-    'Cirurgia Geral': [],
-    'Pediatria': [],
-    'Ginecologia & Obstetrícia': [],
-    'Medicina de Família/SUS': [],
-    'Psiquiatria': [],
-    'Neurologia': [],
-    'Dermatologia': [],
-    'Infectologia': []
+    'Medicina Intensiva': [],
+    'Neonatologia': [],
+    'Urgência e Emergência': [],
+    'Anestesiologia': [],
+    'Traumatologia-Ortopedia': [],
+    'Cirurgia Vascular': [],
+    'Neurocirurgia': []
   }
 };
 
@@ -517,7 +527,7 @@ const SUBJECT_ICONS: Record<string, any> = {
   'Ginecologia & Obstetrícia': { image: '/2885280.png', icon: Baby, color: 'bg-pink-500', ringColor: '#EC4899', textColor: 'text-white', shadow: 'shadow-pink-500/40' },
   'Cirurgia Geral': { image: '/10154417.png', icon: Scissors, color: 'bg-orange-500', ringColor: '#F59E0B', textColor: 'text-white', shadow: 'shadow-orange-500/40' },
   'Clínica Cirúrgica': { image: '/10154417.png', icon: Scissors, color: 'bg-orange-500', ringColor: '#F59E0B', textColor: 'text-white', shadow: 'shadow-orange-500/40' },
-  'Clínica Médica': { icon: Heart, color: 'bg-rose-500', ringColor: '#F43F5E', textColor: 'text-white', shadow: 'shadow-rose-500/40' },
+  'Clínica Médica': { image: '/3028573.png', icon: Heart, color: 'bg-rose-500', ringColor: '#F43F5E', textColor: 'text-white', shadow: 'shadow-rose-500/40' },
   'Medicina de Família/SUS': { image: '/12370055.png', icon: Users, color: 'bg-cyan-500', ringColor: '#06B6D4', textColor: 'text-white', shadow: 'shadow-cyan-500/40' },
   'Psiquiatria': { image: '/12024688.png', icon: Brain, color: 'bg-purple-500', ringColor: '#8B5CF6', textColor: 'text-white', shadow: 'shadow-purple-500/40' },
   'Dermatologia': { image: '/10154433.png', icon: Droplet, color: 'bg-amber-400', ringColor: '#F59E0B', textColor: 'text-white', shadow: 'shadow-amber-500/40' },
@@ -529,7 +539,21 @@ const SUBJECT_ICONS: Record<string, any> = {
   'Nefrologia': { image: '/12024712.png', icon: Stethoscope, color: 'bg-blue-600', ringColor: '#2563EB', textColor: 'text-white', shadow: 'shadow-blue-500/40' },
   'Reumatologia': { image: '/12024718.png', icon: Bone, color: 'bg-slate-500', ringColor: '#64748B', textColor: 'text-white', shadow: 'shadow-slate-500/40' },
   'Hematologia': { image: '/6176756.png', icon: Droplet, color: 'bg-red-700', ringColor: '#B91C1C', textColor: 'text-white', shadow: 'shadow-red-500/40' },
-  'Infectologia': { image: '/10154483.png', icon: Bug, color: 'bg-lime-600', ringColor: '#65A30D', textColor: 'text-white', shadow: 'shadow-lime-500/40' }
+  'Infectologia': { image: '/10154483.png', icon: Bug, color: 'bg-lime-600', ringColor: '#65A30D', textColor: 'text-white', shadow: 'shadow-lime-500/40' },
+  'Urgência e Emergência': { icon: AlertTriangle, color: 'bg-red-600', ringColor: '#DC2626', textColor: 'text-white', shadow: 'shadow-red-600/40' },
+  'Medicina Intensiva': { icon: Activity, color: 'bg-slate-700', ringColor: '#334155', textColor: 'text-white', shadow: 'shadow-slate-700/40' },
+  'Ortopedia': { icon: Bone, color: 'bg-stone-500', ringColor: '#78716C', textColor: 'text-white', shadow: 'shadow-stone-500/40' },
+  'Neonatologia': { icon: Baby, color: 'bg-sky-400', ringColor: '#38BDF8', textColor: 'text-white', shadow: 'shadow-sky-400/40' },
+  'Anestesiologia': { icon: Thermometer, color: 'bg-gray-500', ringColor: '#6B7280', textColor: 'text-white', shadow: 'shadow-gray-500/40' },
+  'Traumatologia-Ortopedia': { icon: Bone, color: 'bg-amber-700', ringColor: '#B45309', textColor: 'text-white', shadow: 'shadow-amber-700/40' },
+  'Patologia': { icon: Microscope, color: 'bg-slate-600', ringColor: '#475569', textColor: 'text-white', shadow: 'shadow-slate-600/40' },
+  'Parasitologia': { icon: Bug, color: 'bg-green-700', ringColor: '#15803D', textColor: 'text-white', shadow: 'shadow-green-700/40' },
+  'Epidemiologia': { icon: BarChart2, color: 'bg-blue-500', ringColor: '#3B82F6', textColor: 'text-white', shadow: 'shadow-blue-500/40' },
+  'Urologia': { icon: Droplets, color: 'bg-yellow-600', ringColor: '#CA8A04', textColor: 'text-white', shadow: 'shadow-yellow-600/40' },
+  'Geriatria': { icon: Users, color: 'bg-orange-500', ringColor: '#F97316', textColor: 'text-white', shadow: 'shadow-orange-500/40' },
+  'Radiologia': { icon: Search, color: 'bg-gray-600', ringColor: '#4B5563', textColor: 'text-white', shadow: 'shadow-gray-600/40' },
+  'Cirurgia Vascular': { icon: Activity, color: 'bg-red-800', ringColor: '#991B1B', textColor: 'text-white', shadow: 'shadow-red-800/40' },
+  'Neurocirurgia': { icon: Brain, color: 'bg-violet-700', ringColor: '#6D28D9', textColor: 'text-white', shadow: 'shadow-violet-700/40' }
 };
 
 // ── MEDQUEST LOGO COMPONENT ──────────────────────────────────────────
@@ -2450,6 +2474,21 @@ export default function App() {
                         { subj: 'Oftalmologia',              emoji: '👁️', short: 'Oftalmologia' },
                         { subj: 'Otorrinolaringologia',      emoji: '👂', short: 'Otorrino' },
                         { subj: 'Cirurgia Geral',            emoji: '🏨', short: 'Cirurgia Geral' },
+                        { subj: 'Urgência e Emergência',     emoji: '🚨', short: 'Urgência' },
+                        { subj: 'Medicina Intensiva',        emoji: '🫀', short: 'UTI' },
+                        { subj: 'Ortopedia',                 emoji: '🦴', short: 'Ortopedia' },
+                        { subj: 'Neonatologia',              emoji: '👼', short: 'Neonatologia' },
+                        { subj: 'Anestesiologia',            emoji: '💉', short: 'Anestesiologia' },
+                        { subj: 'Traumatologia-Ortopedia',   emoji: '🩹', short: 'Traumato-Orto' },
+                        { subj: 'Patologia',                 emoji: '🔬', short: 'Patologia' },
+                        { subj: 'Parasitologia',             emoji: '🦠', short: 'Parasitologia' },
+                        { subj: 'Semiologia',                emoji: '🩺', short: 'Semiologia' },
+                        { subj: 'Epidemiologia',             emoji: '📊', short: 'Epidemiologia' },
+                        { subj: 'Urologia',                  emoji: '💧', short: 'Urologia' },
+                        { subj: 'Geriatria',                 emoji: '👴', short: 'Geriatria' },
+                        { subj: 'Radiologia',                emoji: '🩻', short: 'Radiologia' },
+                        { subj: 'Cirurgia Vascular',         emoji: '🫀', short: 'Cir. Vascular' },
+                        { subj: 'Neurocirurgia',             emoji: '🧠', short: 'Neurocirurgia' },
                       ];
                       const VISIBLE_COUNT = 8;
                       const displayed = showAllSpecialties ? ALL_SPECIALTIES : ALL_SPECIALTIES.slice(0, VISIBLE_COUNT);
