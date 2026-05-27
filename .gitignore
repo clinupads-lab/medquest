@@ -8,3 +8,11 @@ coverage/
 !.env.example
 medquest/
 .claude/
+
+# PDFs baixados pelo scraper (muito grandes para o git)
+pdfs/
+
+# Arquivos de debug de extração
+iamspe_raw.txt
+iamspe_col.txt
+iamspe_questions.ts

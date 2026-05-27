@@ -1,0 +1,1784 @@
+[
+  {
+    "id": "6f7775f2593c",
+    "cycle": "Ciclo Clínico",
+    "subject": "Clínica Médica",
+    "subsubject": "",
+    "banca": "FUNDATEC_AMRIGS",
+    "year": 2023,
+    "enunciado": "– Analise o gráfico abaixo, considerando que a linha horizontal de base corresponda ao tempo de ação e a linha vertical do gráfico corresponda à concentração sérica. No caso de a função renal estar normal, pode-se afirmar que os antibióticos correspondentes ao representado pela linha contínua e ao representado pela linha pontilhada podem ser, respectivamente:",
+    "alternatives": [
+      "Amoxicilina e cefuroxima.",
+      "Ciprofloxacino e meropenem.",
+      "Oxacilina e amicacina.",
+      "Ampicilina e ciprofloxacino."
+    ],
+    "correctIndex": -1,
+    "explanation": "",
+    "difficulty": "medium"
+  },
+  {
+    "id": "9966b2d44ac7",
+    "cycle": "Ciclo Clínico",
+    "subject": "Clínica Médica",
+    "subsubject": "",
+    "banca": "FUNDATEC_AMRIGS",
+    "year": 2023,
+    "enunciado": "– Qual das seguintes situações clínicas apresenta um quadro mais provável de doença reumatológica em um paciente com artralgia?",
+    "alternatives": [
+      "Paciente de 25 anos de idade, cefaleia recorrente, com resultado de Fator Antinuclear (FAN) 1:160,",
+      "Paciente de 60 anos de idade, com histórico de fadiga, com resultado de FAN 1:640, padrão nuclear",
+      "Paciente de 30 anos de idade, em tratamento para acne com isotretinoína, com mialgias e resultado",
+      "Paciente de 45 anos de idade, com histórico de infecção respiratória recente, resultado de"
+    ],
+    "correctIndex": -1,
+    "explanation": "",
+    "difficulty": "medium"
+  },
+  {
+    "id": "e1cd8e8e663f",
+    "cycle": "Ciclo Clínico",
+    "subject": "Clínica Médica",
+    "subsubject": "",
+    "banca": "FUNDATEC_AMRIGS",
+    "year": 2023,
+    "enunciado": "– Analise as assertivas abaixo: I. A síndrome da secreção inadequada do hormônio antidiurético é uma causa de hipernatremia. II. Leucócitos superiores a 100.000 podem causar pseudo-hipercalemia. III. Hiperfosfatemia pode ser causada pela síndrome de realimentação. IV. Hipercalcemia é o distúrbio eletrolítico mais frequente nas síndromes paraneoplásicas. Quais estão corretas?",
+    "alternatives": [
+      "Apenas I e III.",
+      "Apenas II e IV.",
+      "Apenas I, II e III.",
+      "Apenas I, II e IV."
+    ],
+    "correctIndex": -1,
+    "explanation": "",
+    "difficulty": "medium"
+  },
+  {
+    "id": "08886f35dff5",
+    "cycle": "Internato",
+    "subject": "Urgência e Emergência",
+    "subsubject": "",
+    "banca": "FUNDATEC_AMRIGS",
+    "year": 2023,
+    "enunciado": "– Homem, 48 anos, procura emergência com desconforto torácico. Analise o seu eletrocardiograma abaixo: Considerando as informações apresentadas, o tratamento inicial para esse paciente é:",
+    "alternatives": [
+      "Anticoagulação a pleno.",
+      "Dupla antiagregação plaquetária.",
+      "Angioplastia coronária.",
+      "Trombólise."
+    ],
+    "correctIndex": -1,
+    "explanation": "",
+    "difficulty": "medium"
+  },
+  {
+    "id": "b99bf7c70228",
+    "cycle": "Ciclo Clínico",
+    "subject": "Clínica Médica",
+    "subsubject": "",
+    "banca": "FUNDATEC_AMRIGS",
+    "year": 2023,
+    "enunciado": "– Analise a figura abaixo, na qual a imagem da esquerda representa o ambiente intracelular e a da direita representa o ambiente extracelular. Considerando que os itens “A” e “C” tenham maiores concentrações intracelulares e que o item “B” tenha maior concentração extracelular, as letras A, B e C correspondem, respectivamente, aos eletrólitos:",
+    "alternatives": [
+      "Cloro, potássio e sódio.",
+      "Potássio, sódio e magnésio.",
+      "Fosfato, cloro e sódio.",
+      "Potássio, sódio e cloro."
+    ],
+    "correctIndex": -1,
+    "explanation": "",
+    "difficulty": "medium"
+  },
+  {
+    "id": "a7d63fa57afc",
+    "cycle": "Ciclo Clínico",
+    "subject": "Clínica Médica",
+    "subsubject": "",
+    "banca": "FUNDATEC_AMRIGS",
+    "year": 2023,
+    "enunciado": "– Analise as assertivas a seguir em relação à febre maculosa: I. É causada por um vírus transmitido pela picada do carrapato-estrela. II. Os sintomas aparecem entre 2 e 14 dias após a picada. III. O tratamento é feito com medidas de suporte e sintomáticos. Quais estão corretas?",
+    "alternatives": [
+      "Apenas I.",
+      "Apenas II.",
+      "Apenas II e III.",
+      "I, II e III."
+    ],
+    "correctIndex": -1,
+    "explanation": "",
+    "difficulty": "medium"
+  },
+  {
+    "id": "b981d4ffc7a2",
+    "cycle": "Ciclo Clínico",
+    "subject": "Clínica Médica",
+    "subsubject": "",
+    "banca": "FUNDATEC_AMRIGS",
+    "year": 2023,
+    "enunciado": "– Mulher, 78 anos, busca atendimento por quadro de prurido, iniciado há pouco mais de um mês. Nega outras queixas. Histórico de perda não intencional de 2 kg nos últimos 3 meses. Nega comorbidades e uso de medicamentos de maneira contínua. Traz exames solicitados por um médico amigo da família. Entre os exames, destacam-se: Hemoglobina – 13,1 g/dL; Hematócrito – 39%; Leucócitos – 13.500, com 1% bastões, 52% neutrófilos, 2% eosinófilos, 5% monócitos e 40% linfócitos; Plaquetas – 128.000; Ferro – 58; Ferritina – 340; B12 – superior a 2000UI; TSH – 0,8 um/L. Considerando o exposto, assinale a alternativa que apresenta a melhor conduta no caso apresentado.",
+    "alternatives": [
+      "Prosseguir com a investigação, pois o quadro clínico é sugestivo de doença linfoproliferativa.",
+      "Tranquilizar a paciente e orientar uso de creme hidratante para alívio do prurido.",
+      "Repetir os exames, pois alguns achados estão incompatíveis com o caso.",
+      "Orientar o uso de anti-histamínicos para alívio dos sintomas e avaliar a resposta."
+    ],
+    "correctIndex": -1,
+    "explanation": "",
+    "difficulty": "medium"
+  },
+  {
+    "id": "96f29479468e",
+    "cycle": "Ciclo Clínico",
+    "subject": "Clínica Médica",
+    "subsubject": "",
+    "banca": "FUNDATEC_AMRIGS",
+    "year": 2023,
+    "enunciado": "– Em relação aos aspectos nutricionais da população em geral, analise as assertivas abaixo: I. O uso de polivitamínicos na população idosa deve ser incentivado em todos os casos, objetivando atingir níveis séricos supraterapêuticos nas dosagens de vitaminas, melhorando a qualidade de vida e reduzindo o número de internações hospitalares. II. A dosagem sérica de albumina é o marcador ideal para avaliar o status nutricional em pacientes hospitalizados com quadro prolongado de inflamação sistêmica. III. Pacientes politraumatizados e grandes queimados necessitam um aporte calórico em torno de 35 a 40 kcal/kg quando da fase aguda da doença. Quais estão corretas?",
+    "alternatives": [
+      "Apenas I.",
+      "Apenas III.",
+      "Apenas I e II.",
+      "I, II e III."
+    ],
+    "correctIndex": -1,
+    "explanation": "",
+    "difficulty": "medium"
+  },
+  {
+    "id": "544cc6a94d52",
+    "cycle": "Ciclo Clínico",
+    "subject": "Clínica Médica",
+    "subsubject": "",
+    "banca": "FUNDATEC_AMRIGS",
+    "year": 2023,
+    "enunciado": "– Considerando o esquema vacinal do adulto e do idoso, segundo as orientações do Ministério da Saúde (calendário vacinal de 2022, conforme atualização em 18/08/2022), assinale a alternativa correta.",
+    "alternatives": [
+      "A vacina pneumocócica 23 valente está indicada para todos a partir dos 60 anos de idade e deve",
+      "As vacinas contra difteria, tétano e febre amarela são compostas por vírus vivos atenuados.",
+      "A vacina para febre amarela deve ser feita em 2 doses com intervalo de 10 anos, até os 59 anos.",
+      "A vacina contra difteria e tétano deve ser feita em 3 doses iniciais, com intervalo de 60 dias entre"
+    ],
+    "correctIndex": -1,
+    "explanation": "",
+    "difficulty": "medium"
+  },
+  {
+    "id": "b90ef2088fed",
+    "cycle": "Ciclo Clínico",
+    "subject": "Clínica Médica",
+    "subsubject": "",
+    "banca": "FUNDATEC_AMRIGS",
+    "year": 2023,
+    "enunciado": "– As anormalidades no pulso venoso jugular são úteis para a detecção de insuficiência cardíaca e alterações na pressão arterial pulmonar. Sobre esse assunto, analise a imagem a seguir, que apresenta ondas de pulsos venosos normais. Relacione a Coluna 1 à Coluna 2, associando as alterações nas ondas do pulso venoso às suas respectivas correspondências clínicas. Coluna 1 1. Onda A aumentada. 2. Onda V gigante. 3. Descenso Y proeminente. 4. Descenso Y ausente. Coluna 2 ( ) Tamponamento cardíaco. ( ) Estenose tricúspide. ( ) Insuficiência tricúspide. ( ) Pericardite constritiva. A ordem correta de preenchimento dos parênteses, de cima para baixo, é:",
+    "alternatives": [
+      "3 – 2 – 1 – 4.",
+      "2 – 4 – 3 – 1.",
+      "4 – 2 – 3 – 1.",
+      "4 – 1 – 2 – 3."
+    ],
+    "correctIndex": -1,
+    "explanation": "",
+    "difficulty": "medium"
+  },
+  {
+    "id": "da54918fc68d",
+    "cycle": "Ciclo Clínico",
+    "subject": "Clínica Médica",
+    "subsubject": "",
+    "banca": "FUNDATEC_AMRIGS",
+    "year": 2023,
+    "enunciado": "– São sinais de alarme relacionados aos pacientes com dengue grupo C, EXCETO:",
+    "alternatives": [
+      "Derrame pericárdico, ascite e derrame pleural.",
+      "Hepatomegalia e lipotimia.",
+      "Queda do hematócrito e dor abdominal em cólica.",
+      "Sangramento de mucosa e irritabilidade."
+    ],
+    "correctIndex": -1,
+    "explanation": "",
+    "difficulty": "medium"
+  },
+  {
+    "id": "fd30c45f4480",
+    "cycle": "Ciclo Clínico",
+    "subject": "Clínica Médica",
+    "subsubject": "",
+    "banca": "FUNDATEC_AMRIGS",
+    "year": 2023,
+    "enunciado": "– Em relação à ascite, analise as assertivas abaixo: I. Restrição de sal e água é medida fundamental para o manejo de todos os pacientes com ascite. II. A espironolactona é mais eficiente que os diuréticos de alça no seu manejo. III. Pacientes com ascite secundária à carcinomatose peritoneal devem receber reposição de albumina quando o volume da paracentese for superior a 5 litros. Quais estão corretas?",
+    "alternatives": [
+      "Apenas I.",
+      "Apenas II.",
+      "Apenas I e III.",
+      "I, II e III."
+    ],
+    "correctIndex": -1,
+    "explanation": "",
+    "difficulty": "medium"
+  },
+  {
+    "id": "354e14727320",
+    "cycle": "Ciclo Clínico",
+    "subject": "Clínica Médica",
+    "subsubject": "",
+    "banca": "FUNDATEC_AMRIGS",
+    "year": 2023,
+    "enunciado": "– Analise as assertivas abaixo e assinale a alternativa correta. I. A regulação da maioria dos hormônios da adeno-hipófise depende de sinais estimulantes do hipotálamo; apenas a prolactina é regulada por estímulos inibitórios. II. Se a haste hipofisária for lesionada, a liberação de prolactina aumenta, ao passo que a liberação dos outros hormônios da adeno-hipófise diminui.",
+    "alternatives": [
+      "Todas as assertivas estão corretas.",
+      "Todas as assertivas estão incorretas.",
+      "Apenas a assertiva I está correta.",
+      "Apenas a assertiva II está correta."
+    ],
+    "correctIndex": -1,
+    "explanation": "",
+    "difficulty": "medium"
+  },
+  {
+    "id": "5104c4edd42f",
+    "cycle": "Ciclo Clínico",
+    "subject": "Clínica Médica",
+    "subsubject": "",
+    "banca": "FUNDATEC_AMRIGS",
+    "year": 2023,
+    "enunciado": "– A dupla antiagregação plaquetária deve ser mantida: I. Indefinidamente para pacientes com doença arterial periférica aterosclerótica. II. Por pelo menos 12 meses após episódio de infarto agudo do miocárdio com angioplastia percutânea primária. III. Indefinidamente em pacientes diabéticos que tiveram um episódio cerebrovascular isquêmico. Quais estão corretas?",
+    "alternatives": [
+      "Apenas I.",
+      "Apenas II.",
+      "Apenas I e II.",
+      "I, II e III."
+    ],
+    "correctIndex": -1,
+    "explanation": "",
+    "difficulty": "medium"
+  },
+  {
+    "id": "27ea6bd93175",
+    "cycle": "Ciclo Clínico",
+    "subject": "Clínica Médica",
+    "subsubject": "",
+    "banca": "FUNDATEC_AMRIGS",
+    "year": 2023,
+    "enunciado": "– Nos casos de asma brônquica em que o corticoide inalatório não está sendo suficiente para controle dos sintomas, deve-se fazer uso de:",
+    "alternatives": [
+      "Corticoide oral.",
+      "Montelucaste.",
+      "Beta-2-agonista de longa duração.",
+      "Tiotrópio."
+    ],
+    "correctIndex": -1,
+    "explanation": "",
+    "difficulty": "medium"
+  },
+  {
+    "id": "8de5695758b8",
+    "cycle": "Ciclo Clínico",
+    "subject": "Clínica Médica",
+    "subsubject": "",
+    "banca": "FUNDATEC_AMRIGS",
+    "year": 2023,
+    "enunciado": "– Recomenda-se que as pessoas com risco médio para câncer colorretal iniciem o rastreamento regular aos ____ anos. As pessoas em bom estado geral de saúde e expectativa de vida de mais de 10 anos devem manter o rastreamento do câncer colorretal regularmente até os ____ anos de idade. Assinale a alternativa que preenche, correta e respectivamente, as lacunas do trecho acima.",
+    "alternatives": [
+      "40 – 75",
+      "45 – 75",
+      "45 – 70",
+      "50 – 75"
+    ],
+    "correctIndex": -1,
+    "explanation": "",
+    "difficulty": "medium"
+  },
+  {
+    "id": "a1a9866ea91c",
+    "cycle": "Ciclo Clínico",
+    "subject": "Clínica Médica",
+    "subsubject": "",
+    "banca": "FUNDATEC_AMRIGS",
+    "year": 2023,
+    "enunciado": "– Em relação à terapia antirretroviral para o tratamento do HIV, os pacientes que apresentam febre ou exantema durante exposição prévia podem desenvolver reações de hipersensibilidade intensa e potencialmente fatal caso ocorra a reexposição ao medicamento:",
+    "alternatives": [
+      "Abacavir.",
+      "Dolutegravir.",
+      "Efavirenz.",
+      "Rilpivirina."
+    ],
+    "correctIndex": -1,
+    "explanation": "",
+    "difficulty": "medium"
+  },
+  {
+    "id": "9049760cab20",
+    "cycle": "Ciclo Clínico",
+    "subject": "Clínica Médica",
+    "subsubject": "",
+    "banca": "FUNDATEC_AMRIGS",
+    "year": 2023,
+    "enunciado": "– O quelante recomendado para ser utilizado quando houver envenenamento crônico por mercúrio em adultos é:",
+    "alternatives": [
+      "Deferoxamina.",
+      "Azul da Prússia.",
+      "Ácido dimercaptossuccínico.",
+      "Ácido etilenodiaminotetracético."
+    ],
+    "correctIndex": -1,
+    "explanation": "",
+    "difficulty": "medium"
+  },
+  {
+    "id": "87cc0e7cb46b",
+    "cycle": "Ciclo Clínico",
+    "subject": "Clínica Médica",
+    "subsubject": "",
+    "banca": "FUNDATEC_AMRIGS",
+    "year": 2023,
+    "enunciado": "– Analise as assertivas a seguir: I. Condições médicas gerais, como esclerose múltipla e hipertireoidismo, podem induzir ou mimetizar sintomas de humor. II. A farmacoterapia é a principal modalidade terapêutica no transtorno bipolar. III. TSH, prolactina e creatinina sérica fazem parte da avaliação clínico-laboratorial no transtorno bipolar prévia ao se introduzir psicofármacos. Quais estão corretas?",
+    "alternatives": [
+      "Apenas I.",
+      "Apenas II.",
+      "Apenas I e III.",
+      "I, II e III."
+    ],
+    "correctIndex": -1,
+    "explanation": "",
+    "difficulty": "medium"
+  },
+  {
+    "id": "3c22de698081",
+    "cycle": "Ciclo Clínico",
+    "subject": "Clínica Médica",
+    "subsubject": "",
+    "banca": "FUNDATEC_AMRIGS",
+    "year": 2023,
+    "enunciado": "– Homem, 66 anos, apresenta quadro demencial com flutuações cognitivas, quedas, fraqueza de membros, alucinações visuais vívidas, inversão do ciclo sono-vigília com sono agitado e presença de distúrbio comportamental do sono REM. A descrição apresentada refere-se a qual tipo de demência?",
+    "alternatives": [
+      "Alzheimer.",
+      "Com corpúsculos de Lewy.",
+      "Frontotemporal.",
+      "Parkinson."
+    ],
+    "correctIndex": -1,
+    "explanation": "",
+    "difficulty": "medium"
+  },
+  {
+    "id": "56e22e3e0cbe",
+    "cycle": "Ciclo Clínico",
+    "subject": "Clínica Médica",
+    "subsubject": "",
+    "banca": "FUNDATEC_AMRIGS",
+    "year": 2023,
+    "enunciado": "– Sobre a classificação de Mascarenhas da acalásia do esôfago, assinale a alternativa correta.",
+    "alternatives": [
+      "Tem subclassificação em seis subtipos e sua variação é conforme a pressão de fechamento do",
+      "Independentemente da classificação, o tratamento cirúrgico é a primeira opção de escolha.",
+      "A classe II é caracterizada por dilatação entre 4 e 7 centímetros.",
+      "O diagnóstico etiológico mais comum no Brasil é acalásia secundária à doença de Chagas."
+    ],
+    "correctIndex": -1,
+    "explanation": "",
+    "difficulty": "medium"
+  },
+  {
+    "id": "6ccca45726af",
+    "cycle": "Ciclo Clínico",
+    "subject": "Clínica Médica",
+    "subsubject": "",
+    "banca": "FUNDATEC_AMRIGS",
+    "year": 2023,
+    "enunciado": "– Em relação aos critérios de Ranson para pancreatite aguda biliar, assinale a alternativa INCORRETA.",
+    "alternatives": [
+      "Após 48 horas de internação do paciente, os critérios são diferentes dos avaliados na chegada do",
+      "Durante avaliação na chegada, critérios clínicos/laboratoriais como idade, leucograma e glicemia",
+      "Fatores como PaO2, Desidrogenase Láctica (LDH) e Transaminase Pirúvica (TGP) são avaliados",
+      "Não incluem avaliação por exame de imagem."
+    ],
+    "correctIndex": -1,
+    "explanation": "",
+    "difficulty": "medium"
+  },
+  {
+    "id": "60216d60f3ad",
+    "cycle": "Ciclo Clínico",
+    "subject": "Clínica Médica",
+    "subsubject": "",
+    "banca": "FUNDATEC_AMRIGS",
+    "year": 2023,
+    "enunciado": "– NÃO é um fator de risco para câncer gástrico:",
+    "alternatives": [
+      "Cirurgia gástrica prévia.",
+      "Tipo sanguíneo A.",
+      "Diabetes melito.",
+      "Tabagismo."
+    ],
+    "correctIndex": -1,
+    "explanation": "",
+    "difficulty": "medium"
+  },
+  {
+    "id": "2d74a4784c98",
+    "cycle": "Ciclo Clínico",
+    "subject": "Clínica Médica",
+    "subsubject": "",
+    "banca": "FUNDATEC_AMRIGS",
+    "year": 2023,
+    "enunciado": "– Conforme a localização de uma úlcera gástrica, podemos classificá-la e correlacioná-la com a produção de cloro. Sobre a classificação da doença ulcerosa péptica, assinale a alternativa correta.",
+    "alternatives": [
+      "Tipo I: úlcera de qualquer localização associada ao uso de AINE.",
+      "Tipo III: úlcera de localização pré-pilórica e está relacionada à hipercloridria.",
+      "Tipo IV: úlcera próxima à cárdia, e está associada à hipercloridria.",
+      "Tipo V: úlcera de localização de pequena curvatura e está associada ao uso de AINE."
+    ],
+    "correctIndex": -1,
+    "explanation": "",
+    "difficulty": "medium"
+  },
+  {
+    "id": "1c17b3a8a144",
+    "cycle": "Ciclo Clínico",
+    "subject": "Clínica Médica",
+    "subsubject": "",
+    "banca": "FUNDATEC_AMRIGS",
+    "year": 2023,
+    "enunciado": "– Em relação ao divertículo de Zenker, assinale a alternativa correta.",
+    "alternatives": [
+      "É encontrado no esôfago distal.",
+      "É o segundo divertículo mais comum na topografia esofágica.",
+      "Divertículos pequenos, principalmente menores que 1-2 cm, costumam ser assintomáticos.",
+      "A ressecção do divertículo é opção cirúrgica adotada em casos assintomáticos."
+    ],
+    "correctIndex": -1,
+    "explanation": "",
+    "difficulty": "medium"
+  },
+  {
+    "id": "a1e7662dbb50",
+    "cycle": "Ciclo Clínico",
+    "subject": "Clínica Médica",
+    "subsubject": "",
+    "banca": "FUNDATEC_AMRIGS",
+    "year": 2023,
+    "enunciado": "– NÃO são fatores de risco de infecção em mordedura por animal:",
+    "alternatives": [
+      "Paciente com idade menor do que quatorze anos, hiperesplenismo e hipocolesterolemia.",
+      "Ocorrência em locais como mãos, pés e punhos.",
+      "Paciente com idade acima de cinquenta anos, insuficiência vascular periférica e alcoolismo crônico.",
+      "Doenças metabólicas e asplenismo."
+    ],
+    "correctIndex": -1,
+    "explanation": "",
+    "difficulty": "medium"
+  },
+  {
+    "id": "7bdf40148cd4",
+    "cycle": "Ciclo Clínico",
+    "subject": "Clínica Médica",
+    "subsubject": "",
+    "banca": "FUNDATEC_AMRIGS",
+    "year": 2023,
+    "enunciado": "– Sobre o diagnóstico de abdome agudo, assinale a alternativa INCORRETA.",
+    "alternatives": [
+      "É classificado em cinco subtipos: inflamatório, hemorrágico, isquêmico, obstrutivo e perfurativo.",
+      "Na prática clínica, se não diagnosticado em tempo hábil, evolui para abdome agudo perfurativo,",
+      "Entre as causas cirúrgicas de abdome agudo, está a úlcera péptica perfurada em paciente instável",
+      "O abdome agudo obstrutivo por causa benigna tem como etiologia mais comum bridas intestinais,"
+    ],
+    "correctIndex": -1,
+    "explanation": "",
+    "difficulty": "medium"
+  },
+  {
+    "id": "d93330e74540",
+    "cycle": "Ciclo Clínico",
+    "subject": "Clínica Médica",
+    "subsubject": "",
+    "banca": "FUNDATEC_AMRIGS",
+    "year": 2023,
+    "enunciado": "– Assinale a alternativa correta em relação aos sinais apresentados durante o exame físico abdominal.",
+    "alternatives": [
+      "Sinal de Murphy: dor à inspiração profunda durante a palpação abdominal, localizado em",
+      "Sinal de Courvoisier: vesícula biliar palpável em paciente com icterícia.",
+      "Sinal de Cullen: equimose em região de abdome superior ao diagnóstico de úlcera péptica",
+      "Sinal de Ten Horn: dor à tração suave de bolsa testicular esquerda em suspeita de urolitíase."
+    ],
+    "correctIndex": -1,
+    "explanation": "",
+    "difficulty": "medium"
+  },
+  {
+    "id": "8d42ae62caa1",
+    "cycle": "Ciclo Clínico",
+    "subject": "Clínica Médica",
+    "subsubject": "",
+    "banca": "FUNDATEC_AMRIGS",
+    "year": 2023,
+    "enunciado": "– Em relação à doença ulcerosa péptica, assinale a alternativa correta com base na classificação de Forrest.",
+    "alternatives": [
+      "IIb: aqueles que têm coágulo aderente à ulceração e possuem risco intermediário de novo",
+      "Ia: aqueles que têm lesão ulcerosa limpa, com baixa possibilidade de sangramento.",
+      "IIc: aqueles que apresentam vaso visível, porém não sangrante e têm alto risco de sangramento.",
+      "III: aqueles que têm hemorragia ativa e apresentam alto risco de novo episódio de sangramento"
+    ],
+    "correctIndex": -1,
+    "explanation": "",
+    "difficulty": "medium"
+  },
+  {
+    "id": "ba2ea55182fa",
+    "cycle": "Ciclo Clínico",
+    "subject": "Clínica Médica",
+    "subsubject": "",
+    "banca": "FUNDATEC_AMRIGS",
+    "year": 2023,
+    "enunciado": "– Sobre a hemorragia digestiva baixa, assinale a alternativa INCORRETA.",
+    "alternatives": [
+      "É um diagnóstico menos frequente do que a hemorragia digestiva alta.",
+      "A causa mais comum de hemorragia digestiva baixa colônica é a diverticulite aguda.",
+      "A causa mais comum de sangramento de intestino delgado é a doença de Crohn.",
+      "Colite, ou proctite secundária à radioterapia, constitui uma das causas mais incomuns de"
+    ],
+    "correctIndex": -1,
+    "explanation": "",
+    "difficulty": "medium"
+  },
+  {
+    "id": "83fab0261b61",
+    "cycle": "Ciclo Clínico",
+    "subject": "Clínica Médica",
+    "subsubject": "",
+    "banca": "FUNDATEC_AMRIGS",
+    "year": 2023,
+    "enunciado": "– Em relação à resposta hormonal ao estresse cirúrgico, é INCORRETO afirmar que:",
+    "alternatives": [
+      "A drenagem de cortisol está aumentada.",
+      "A drenagem de insulina está aumentada.",
+      "A drenagem de aldosterona está aumentada.",
+      "A drenagem de glucagon está aumentada."
+    ],
+    "correctIndex": -1,
+    "explanation": "",
+    "difficulty": "medium"
+  },
+  {
+    "id": "89b7693a843b",
+    "cycle": "Ciclo Clínico",
+    "subject": "Clínica Médica",
+    "subsubject": "",
+    "banca": "FUNDATEC_AMRIGS",
+    "year": 2023,
+    "enunciado": "– Considera-se um fator de risco associado à ventilação mecânica pós-operatória:",
+    "alternatives": [
+      "Nível de albumina <2,2 mg/dl.",
+      "Idade maior ou igual a 80 anos.",
+      "Insuficiência renal aguda.",
+      "Ventilação mecânica por uma semana."
+    ],
+    "correctIndex": -1,
+    "explanation": "",
+    "difficulty": "medium"
+  },
+  {
+    "id": "6e96d2906ae2",
+    "cycle": "Ciclo Clínico",
+    "subject": "Clínica Médica",
+    "subsubject": "",
+    "banca": "FUNDATEC_AMRIGS",
+    "year": 2023,
+    "enunciado": "– São antibióticos que exigem ajuste de dose por insuficiência hepática ou renal, EXCETO:",
+    "alternatives": [
+      "Meropenem.",
+      "Metronidazol.",
+      "Vancomicina.",
+      "Azitromicina."
+    ],
+    "correctIndex": -1,
+    "explanation": "",
+    "difficulty": "medium"
+  },
+  {
+    "id": "0e23a090a81e",
+    "cycle": "Ciclo Clínico",
+    "subject": "Clínica Médica",
+    "subsubject": "",
+    "banca": "FUNDATEC_AMRIGS",
+    "year": 2023,
+    "enunciado": "– O retroperitônio é dividido em três zonas. Assinale a alternativa correta sobre a divisão do retroperitônio observada na cirurgia laparotômica.",
+    "alternatives": [
+      "A zona um compreende as estruturas vasculares centrais.",
+      "A zona dois é a que compreende a vascularização pélvica.",
+      "A zona dois compreende o arco duodenal e a cabeça pancreática.",
+      "A zona três é a que compreende a loja renal bilateral."
+    ],
+    "correctIndex": -1,
+    "explanation": "",
+    "difficulty": "medium"
+  },
+  {
+    "id": "5794b19109cc",
+    "cycle": "Ciclo Clínico",
+    "subject": "Clínica Médica",
+    "subsubject": "",
+    "banca": "FUNDATEC_AMRIGS",
+    "year": 2023,
+    "enunciado": "– São fatores perioperatórios que influenciam a rejeição de tela inabsorvível durante a reconstrução de uma parede abdominal em cirurgias de hérnias complexas, EXCETO:",
+    "alternatives": [
+      "Utilização de fios absorvíveis, como de polipropileno, para fixação da tela.",
+      "Interrupção do tabagismo.",
+      "Antissépticos utilizados para higiene de sítio cirúrgico.",
+      "Evitar contato da tela com a pele."
+    ],
+    "correctIndex": -1,
+    "explanation": "",
+    "difficulty": "medium"
+  },
+  {
+    "id": "ac59022add6e",
+    "cycle": "Ciclo Básico",
+    "subject": "Histologia",
+    "subsubject": "",
+    "banca": "FUNDATEC_AMRIGS",
+    "year": 2023,
+    "enunciado": "– A classificação de Spigelman é utilizada para melhor avaliação da adenomatose duodenal. Sobre esse assunto, assinale a alternativa correta.",
+    "alternatives": [
+      "A classificação tem cinco parâmetros, sendo um deles o número de adenomas encontrados.",
+      "O tamanho do pólipo é medido em milímetros, sendo um pólipo maior que 10 mm classificado como",
+      "A classificação pode variar entre 0 e 25 pontos.",
+      "A histologia do adenoma não é considerada, diferentemente do avaliado no cólon, por exemplo."
+    ],
+    "correctIndex": -1,
+    "explanation": "",
+    "difficulty": "medium"
+  },
+  {
+    "id": "fc0348206abf",
+    "cycle": "Ciclo Clínico",
+    "subject": "Clínica Médica",
+    "subsubject": "",
+    "banca": "FUNDATEC_AMRIGS",
+    "year": 2023,
+    "enunciado": "– Sobre o sistema TNM de classificação dos tumores malignos encontrados no intestino delgado, é correto afirmar que:",
+    "alternatives": [
+      "Uma lesão classificada como T3 tem tamanho entre cinco e dez centímetros.",
+      "Uma lesão considerada N0 tem linfonodos regionais positivos.",
+      "Uma lesão classificada como T4 tem menos de dez centímetros.",
+      "Uma lesão classificada como N1 tem linfonodos positivos a distância."
+    ],
+    "correctIndex": -1,
+    "explanation": "",
+    "difficulty": "medium"
+  },
+  {
+    "id": "5e243f6df276",
+    "cycle": "Ciclo Básico",
+    "subject": "Anatomia",
+    "subsubject": "",
+    "banca": "FUNDATEC_AMRIGS",
+    "year": 2023,
+    "enunciado": "– Assinale a alternativa correta sobre a anatomia vascular do cólon.",
+    "alternatives": [
+      "O cólon sigmoide é vascularizado pela artéria mesentérica superior.",
+      "O cólon ascendente é vascularizado pela artéria mesentérica superior.",
+      "O cólon direito é vascularizado pela artéria cólica direita, que existe em todos os pacientes.",
+      "O cólon esquerdo é vascularizado pela artéria cólica esquerda, ramo da artéria mesentérica"
+    ],
+    "correctIndex": -1,
+    "explanation": "",
+    "difficulty": "medium"
+  },
+  {
+    "id": "bf5abdbf3f50",
+    "cycle": "Ciclo Clínico",
+    "subject": "Clínica Médica",
+    "subsubject": "",
+    "banca": "FUNDATEC_AMRIGS",
+    "year": 2023,
+    "enunciado": "– O cirurgião deve ser muito criterioso na indicação de procedimento cirúrgico para a doença de Crohn. São motivos de indicação de cirurgia, EXCETO:",
+    "alternatives": [
+      "Fístula.",
+      "Obstrução intestinal.",
+      "Megacólon tóxico.",
+      "Hemorragia controlada com tratamento conservador."
+    ],
+    "correctIndex": -1,
+    "explanation": "",
+    "difficulty": "medium"
+  },
+  {
+    "id": "1a3b7fc7a070",
+    "cycle": "Ciclo Clínico",
+    "subject": "Clínica Médica",
+    "subsubject": "",
+    "banca": "FUNDATEC_AMRIGS",
+    "year": 2023,
+    "enunciado": "– Sobre os diagnósticos diferenciais na elucidação diagnóstica das massas ovarianas, é INCORRETO afirmar que:",
+    "alternatives": [
+      "Entre as patologias malignas, encontra-se carcinoma invasivo de células claras, carcinoma invasivo",
+      "Entre as patologias benignas do ovário, encontra-se o corpo lúteo hemorrágico e o endometrioma,",
+      "Entre as metástases, podemos encontrar do câncer de cólon, de estômago, linfoma, entre outros.",
+      "Quando realizado o diagnóstico de gravidez ectópica, o tratamento optado sempre será o cirúrgico."
+    ],
+    "correctIndex": -1,
+    "explanation": "",
+    "difficulty": "medium"
+  },
+  {
+    "id": "55fcd09cf549",
+    "cycle": "Ciclo Clínico",
+    "subject": "Clínica Médica",
+    "subsubject": "",
+    "banca": "FUNDATEC_AMRIGS",
+    "year": 2023,
+    "enunciado": "– São causas incomuns (<12%) de sangramento pós-menopausa: I. Atrofia endometrial. II. Pólipos endometriais. III. Câncer de endométrio. Quais estão corretas?",
+    "alternatives": [
+      "Apenas I.",
+      "Apenas II.",
+      "Apenas II e III.",
+      "I, II e III."
+    ],
+    "correctIndex": -1,
+    "explanation": "",
+    "difficulty": "medium"
+  },
+  {
+    "id": "2c59c15873b8",
+    "cycle": "Ciclo Clínico",
+    "subject": "Clínica Médica",
+    "subsubject": "",
+    "banca": "FUNDATEC_AMRIGS",
+    "year": 2023,
+    "enunciado": "– Deve-se investigar a amenorreia primária nos seguintes casos: I. Em meninas com mais de 15 anos de idade, com caráteres sexuais secundários presentes. II. Na ausência de menarca após 5 anos do início da telarca. III. Em meninas com 13 anos de idade sem caracteres secundários. Quais estão corretos?",
+    "alternatives": [
+      "Apenas I.",
+      "Apenas II.",
+      "Apenas I e II.",
+      "I, II e III."
+    ],
+    "correctIndex": -1,
+    "explanation": "",
+    "difficulty": "medium"
+  },
+  {
+    "id": "bfa3a91fd257",
+    "cycle": "Ciclo Clínico",
+    "subject": "Clínica Médica",
+    "subsubject": "",
+    "banca": "FUNDATEC_AMRIGS",
+    "year": 2023,
+    "enunciado": "– Gestante, 22 semanas, vem para consulta na unidade de Atenção Básica. Ela não apresenta queixas e o exame físico não apresenta anormalidades. A próxima consulta do pré-natal deve ser marcada em:",
+    "alternatives": [
+      "7 dias.",
+      "15 dias.",
+      "20 dias.",
+      "30 dias."
+    ],
+    "correctIndex": -1,
+    "explanation": "",
+    "difficulty": "medium"
+  },
+  {
+    "id": "ad12cac8e26a",
+    "cycle": "Ciclo Clínico",
+    "subject": "Clínica Médica",
+    "subsubject": "",
+    "banca": "FUNDATEC_AMRIGS",
+    "year": 2023,
+    "enunciado": "– Nulípara de 25 anos vem à consulta porque parou de usar anticoncepcional há 6 meses e ainda não conseguiu engravidar. Apresenta ciclos menstruais a cada 26 e 30 dias. Nega internações, cirurgias e tratamentos prévios para doenças como clamídia, gonococo ou sífilis. Informa que faz uso de maconha para relaxar no final do dia, pois o seu trabalho é muito cansativo. Toma pelo menos 5 xícaras de café (575 mg de cafeína) ao dia para ficar alerta. No exame físico, sua pressão arterial era 110/70 mmHg e o índice de massa corporal (IMC) era 28. Os demais achados estavam dentro da normalidade. O médico tranquilizou a paciente e disse que ela deveria esperar 1 ano para iniciar a investigação da infertilidade, e que poderia continuar a vida como estava levando, sem se preocupar. Considerando essas informações, pode-se afirmar que a conduta do médico está:",
+    "alternatives": [
+      "Correta em todos os aspectos.",
+      "Parcialmente correta, pois ele deveria ter recomendado a redução do peso, iniciar terapias",
+      "Parcialmente correta, pois deveria tê-la aconselhado a buscar um IMC de 24, a cessar o uso da",
+      "Incorreta em todos os aspectos, pois ele deveria ter encaminhado a paciente para um serviço de"
+    ],
+    "correctIndex": -1,
+    "explanation": "",
+    "difficulty": "medium"
+  },
+  {
+    "id": "76e3bdab730f",
+    "cycle": "Ciclo Clínico",
+    "subject": "Clínica Médica",
+    "subsubject": "",
+    "banca": "FUNDATEC_AMRIGS",
+    "year": 2023,
+    "enunciado": "– A posição da JEC (Junção Escamocolunar), em relação ao eixo longitudinal do colo do útero, depende da idade e do status hormonal da mulher. Um colo no qual a JEC se encontra mais internalizada no canal cervical é típico de uma mulher com:",
+    "alternatives": [
+      "12 anos (puberdade).",
+      "21 anos (menacme, nulípara).",
+      "21 anos (menacme, multípara).",
+      "50 anos ou mais (menopausa)."
+    ],
+    "correctIndex": -1,
+    "explanation": "",
+    "difficulty": "medium"
+  },
+  {
+    "id": "57cdbcad7649",
+    "cycle": "Ciclo Clínico",
+    "subject": "Clínica Médica",
+    "subsubject": "",
+    "banca": "FUNDATEC_AMRIGS",
+    "year": 2023,
+    "enunciado": "– Mulher, 23 anos, vem à consulta porque notou, há 1 semana, uma lesão não pruriginosa na vulva. Ao exame físico, a lesão apresenta uma pápula única, rosada com uma depressão central semelhante a um umbigo, não dolorosa. O diagnóstico mais provável é:",
+    "alternatives": [
+      "Molusco contagioso.",
+      "Pediculose.",
+      "Condiloma.",
+      "Cancro duro."
+    ],
+    "correctIndex": -1,
+    "explanation": "",
+    "difficulty": "medium"
+  },
+  {
+    "id": "8b64f1318373",
+    "cycle": "Ciclo Clínico",
+    "subject": "Clínica Médica",
+    "subsubject": "",
+    "banca": "FUNDATEC_AMRIGS",
+    "year": 2023,
+    "enunciado": "– Após o desprendimento do feto, a ligadura do cordão é realizada. A recomendação correta da ligadura inclui:",
+    "alternatives": [
+      "Realizar o clampeamento cerca de 1 cm do abdome fetal ou menos, usando duas pinças.",
+      "Utilizar somente uma pinça de clampeamento e seccionar na posição a jusante do feto.",
+      "Utilizar somente uma pinça de clampeamento e seccionar na posição a montante do feto.",
+      "Postergar o clampeamento cerca de 30 a 60 segundos após o parto em recém-nascidos vigorosos"
+    ],
+    "correctIndex": -1,
+    "explanation": "",
+    "difficulty": "medium"
+  },
+  {
+    "id": "0878bfee6e9e",
+    "cycle": "Ciclo Clínico",
+    "subject": "Clínica Médica",
+    "subsubject": "",
+    "banca": "FUNDATEC_AMRIGS",
+    "year": 2023,
+    "enunciado": "– Em 2014, um grupo de pesquisadores investigou se a endometriose era uma doença progressiva. A sua hipótese era de que haveria uma correlação positiva entre idade e grau do estadiamento da endometriose. Após analisar uma coorte com 500 casos, eles encontraram o gráfico (dotplot) abaixo, com um teste de ANOVA, p = 0.9 e uma correlação com teste de Spearman (r) = -0,023 (IC95% = -0,12 a 0,08, n = 364). Com base nesses dados, assinale a alternativa correta.",
+    "alternatives": [
+      "Os resultados confirmaram que a endometriose é uma doença progressiva. O estadiamento da",
+      "O estadiamento da endometriose reduz com o aumento da idade, pois a paciente está mais próxima",
+      "Foi possível demonstrar a correlação positiva em 90% (p = 0,9), e confirmado no curto intervalo",
+      "Não foi possível demonstrar a correlação positiva entre a idade e o estadiamento da endometriose."
+    ],
+    "correctIndex": -1,
+    "explanation": "",
+    "difficulty": "medium"
+  },
+  {
+    "id": "b85054f6e9d8",
+    "cycle": "Ciclo Clínico",
+    "subject": "Clínica Médica",
+    "subsubject": "",
+    "banca": "FUNDATEC_AMRIGS",
+    "year": 2023,
+    "enunciado": "– Paciente de 45 anos foi submetida à histerectomia total por miomatose. No pós-operatório imediato, o médico residente prescreveu para a analgesia quetamina, cetorolaco, ibuprofeno e 1 mg de morfina intravenosa até de 3/3 horas em caso de dor forte. Após algumas horas, a paciente começou a ter alucinações na sala de recuperação. Para corrigir essa prescrição, o médico deve: I. Suspender ou reduzir a dose de quetamina, provável causa das alucinações. II. Escolher apenas uma das drogas anti-inflamatórias, pois há sobreposição de cetorolaco e ibuprofeno. III. Acrescentar gabapentina para reduzir a necessidade de opioides. Quais estão corretas?",
+    "alternatives": [
+      "Apenas I.",
+      "Apenas II.",
+      "Apenas I e III.",
+      "I, II e III."
+    ],
+    "correctIndex": -1,
+    "explanation": "",
+    "difficulty": "medium"
+  },
+  {
+    "id": "9bde2ede06ca",
+    "cycle": "Ciclo Clínico",
+    "subject": "Clínica Médica",
+    "subsubject": "",
+    "banca": "FUNDATEC_AMRIGS",
+    "year": 2023,
+    "enunciado": "– Uma mãe traz a sua filha de 12 anos para a consulta ginecológica para saber se ela precisa tomar a vacina para o Papilomavírus Humano (HPV). Sua filha ainda não iniciou atividade sexual. O médico deve, segundo o Programa Nacional de Imunização do Ministério da Saúde do Brasil, recomendar:",
+    "alternatives": [
+      "Uma dose da vacina para a filha, após um resultado negativo para pesquisa do HPV.",
+      "Três doses entre 9 e 14 anos, uma a cada ano.",
+      "Uma dose da vacina quadrivalente no dia da consulta e outra em 6 meses.",
+      "Que use preservativo em todas as relações, pois a sua filha já passou da época de receber a vacina"
+    ],
+    "correctIndex": -1,
+    "explanation": "",
+    "difficulty": "medium"
+  },
+  {
+    "id": "2f039c4afc21",
+    "cycle": "Ciclo Clínico",
+    "subject": "Clínica Médica",
+    "subsubject": "",
+    "banca": "FUNDATEC_AMRIGS",
+    "year": 2023,
+    "enunciado": "– O gráfico abaixo representa os níveis de hormônio da gonadotrofina coriônica (hCG) após um evento em que um saco gestacional foi identificado dentro do útero. A linha do hCG representa, mais provavelmente, um caso de:",
+    "alternatives": [
+      "Aborto em curso.",
+      "Aborto incompleto.",
+      "Aborto completo.",
+      "Gravidez ectópica."
+    ],
+    "correctIndex": -1,
+    "explanation": "",
+    "difficulty": "medium"
+  },
+  {
+    "id": "1b031fa9884a",
+    "cycle": "Ciclo Clínico",
+    "subject": "Clínica Médica",
+    "subsubject": "",
+    "banca": "FUNDATEC_AMRIGS",
+    "year": 2023,
+    "enunciado": "– O critério diagnóstico para pré-eclâmpsia é “pressão sistólica maior ou igual a 140 mmHg e/ou pressão arterial igual ou superior a 90 mmHg, verificada em 2 tomadas (intervalo de pelo menos 4 horas), após a 20a semana de gestação e em mulheres com pressão arterial prévia normal” e associado a: I. Proteinúria acima de 300 mg em 24 horas. II. Creatinina no soro maior que 1,1 mg/dl. III. Elevação das transaminases em duas vezes a sua concentração. Quais estão corretas?",
+    "alternatives": [
+      "Apenas I.",
+      "Apenas II.",
+      "Apenas I e III.",
+      "I, II e III."
+    ],
+    "correctIndex": -1,
+    "explanation": "",
+    "difficulty": "medium"
+  },
+  {
+    "id": "0a4f164c0666",
+    "cycle": "Ciclo Clínico",
+    "subject": "Clínica Médica",
+    "subsubject": "",
+    "banca": "FUNDATEC_AMRIGS",
+    "year": 2023,
+    "enunciado": "– Em relação à incontinência ou insuficiência cervical, pode-se afirmar que a cerclagem está indicada nos casos a seguir, EXCETO:",
+    "alternatives": [
+      "Após uma perda fetal, com o quadro clínico de insuficiência cervical; o exame transvaginal do colo",
+      "Até 24 semanas da gestação, em pacientes com dilatação cervical <4 cm e herniação das",
+      "Quando a técnica transabdominal puder ser realizada como alternativa à técnica transvaginal e",
+      "Com história de uma ou mais perdas gestacionais, com quadro clínico de insuficiência cervical,"
+    ],
+    "correctIndex": -1,
+    "explanation": "",
+    "difficulty": "medium"
+  },
+  {
+    "id": "5a726d54d817",
+    "cycle": "Ciclo Clínico",
+    "subject": "Clínica Médica",
+    "subsubject": "",
+    "banca": "FUNDATEC_AMRIGS",
+    "year": 2023,
+    "enunciado": "– O suplemento de ácido fólico previne os defeitos decorrentes do processo de fusão do tubo neural. Essas malformações decorrem da falência do processo normal de fusão do tubo neural que ocorre:",
+    "alternatives": [
+      "14 a 21 dias pós-concepção.",
+      "21 a 28 dias pós-concepção.",
+      "28 a 35 dias pós-concepção.",
+      "35 a 42 dias pós-concepção."
+    ],
+    "correctIndex": -1,
+    "explanation": "",
+    "difficulty": "medium"
+  },
+  {
+    "id": "06294b145a1e",
+    "cycle": "Ciclo Clínico",
+    "subject": "Clínica Médica",
+    "subsubject": "",
+    "banca": "FUNDATEC_AMRIGS",
+    "year": 2023,
+    "enunciado": "– Qual tipo de fórceps é indicado para a correção do assinclitismo?",
+    "alternatives": [
+      "Simpson.",
+      "Kielland.",
+      "Barton.",
+      "Piper."
+    ],
+    "correctIndex": -1,
+    "explanation": "",
+    "difficulty": "medium"
+  },
+  {
+    "id": "cf6cc0987898",
+    "cycle": "Ciclo Clínico",
+    "subject": "Clínica Médica",
+    "subsubject": "",
+    "banca": "FUNDATEC_AMRIGS",
+    "year": 2023,
+    "enunciado": "– No exame pélvico bimanual, a posição do útero é identificada conforme figura a seguir: A figura acima apresenta um:",
+    "alternatives": [
+      "Toque retal com o útero na posição anteversofletida.",
+      "Toque vaginal com o útero na posição antevertida.",
+      "Toque vaginal com o útero na posição retroversofletida.",
+      "Toque vaginal com o útero na posição antefletida."
+    ],
+    "correctIndex": -1,
+    "explanation": "",
+    "difficulty": "medium"
+  },
+  {
+    "id": "0b4d97b0bc88",
+    "cycle": "Internato",
+    "subject": "Urgência e Emergência",
+    "subsubject": "",
+    "banca": "FUNDATEC_AMRIGS",
+    "year": 2023,
+    "enunciado": "– Em relação ao acretismo placentário diagnosticado na cesariana de emergência, analise as assertivas a seguir: I. A histerotomia deve ser realizada fora da área placentária. II. A dequitação manual cuidadosa está indicada. III. A histerectomia será realizada com a placenta in situ. Quais estão corretas?",
+    "alternatives": [
+      "Apenas I.",
+      "Apenas II.",
+      "Apenas I e III.",
+      "I, II e III."
+    ],
+    "correctIndex": -1,
+    "explanation": "",
+    "difficulty": "medium"
+  },
+  {
+    "id": "193dcc02d94c",
+    "cycle": "Ciclo Clínico",
+    "subject": "Clínica Médica",
+    "subsubject": "",
+    "banca": "FUNDATEC_AMRIGS",
+    "year": 2023,
+    "enunciado": "– Sobre as condições oferecidas pelo modelo fullPIERS, agora sob validação externa, assinale a alternativa correta.",
+    "alternatives": [
+      "Não diferencia o alto risco e baixo risco materno para complicações.",
+      "Determina a interrupção da gestação por mais de 7 dias.",
+      "Identifica corretamente o risco de complicações individual de uma gestante com pré-eclâmpsia.",
+      "Diminui o risco da prematuridade causada pela patologia."
+    ],
+    "correctIndex": -1,
+    "explanation": "",
+    "difficulty": "medium"
+  },
+  {
+    "id": "dfa0bba57c31",
+    "cycle": "Ciclo Clínico",
+    "subject": "Clínica Médica",
+    "subsubject": "",
+    "banca": "FUNDATEC_AMRIGS",
+    "year": 2023,
+    "enunciado": "– O tratamento das incoordenações uterinas de 1º e 2 º graus e da inversão do gradiente uterino no trabalho de parto é: I. Colocação da paciente em decúbito lateral. II. Perfusão de ocitocina e/ou amniorrexe. III. Administração de analgésicos e sedativos. Quais estão corretas?",
+    "alternatives": [
+      "Apenas I.",
+      "Apenas II.",
+      "Apenas I e III.",
+      "I, II e III."
+    ],
+    "correctIndex": -1,
+    "explanation": "",
+    "difficulty": "medium"
+  },
+  {
+    "id": "d26039c3215f",
+    "cycle": "Ciclo Clínico",
+    "subject": "Clínica Médica",
+    "subsubject": "",
+    "banca": "FUNDATEC_AMRIGS",
+    "year": 2023,
+    "enunciado": "– Paciente de 4 anos de idade, previamente hígido, apresenta quadro clínico compatível com meningite aguda. A análise inicial de seu liquor, obtido por punção lombar, mostrou pressão de abertura de 210 mm H O, celularidade de 1.100/μL com predomínio de neutrófilos, glicorraquia de 15 2 mg/dL (glicemia é de 90 mg/dL) e proteína de 200 mg/dL. Trata-se de um caso de meningite:",
+    "alternatives": [
+      "Bacteriana aguda.",
+      "Viral.",
+      "Química.",
+      "Fúngica."
+    ],
+    "correctIndex": -1,
+    "explanation": "",
+    "difficulty": "medium"
+  },
+  {
+    "id": "ce6518733a93",
+    "cycle": "Ciclo Clínico",
+    "subject": "Clínica Médica",
+    "subsubject": "",
+    "banca": "FUNDATEC_AMRIGS",
+    "year": 2023,
+    "enunciado": "– Em relação ao Transtorno de Déficit de Atenção e Hiperatividade (TDAH), analise as seguintes assertivas: I. O metilfenidato é agente farmacológico de primeira linha no tratamento do TDAH. II. Os benzodiazepínicos são fármacos indicados no tratamento do TDAH. III. A sua sintomatologia pode persistir inclusive na vida adulta. Quais estão corretas?",
+    "alternatives": [
+      "Apenas I e II.",
+      "Apenas I e III.",
+      "Apenas II e III.",
+      "I, II e III."
+    ],
+    "correctIndex": -1,
+    "explanation": "",
+    "difficulty": "medium"
+  },
+  {
+    "id": "274e2f66f1b5",
+    "cycle": "Ciclo Clínico",
+    "subject": "Clínica Médica",
+    "subsubject": "",
+    "banca": "FUNDATEC_AMRIGS",
+    "year": 2023,
+    "enunciado": "– São evidências clínicas de hipertensão intracraniana: I. Papiledema. II. Depressão da consciência. III. Déficits neurológicos focais. Quais estão corretas?",
+    "alternatives": [
+      "Apenas I e II.",
+      "Apenas I e III.",
+      "Apenas II e III.",
+      "I, II e III."
+    ],
+    "correctIndex": -1,
+    "explanation": "",
+    "difficulty": "medium"
+  },
+  {
+    "id": "db7f2a874aac",
+    "cycle": "Ciclo Clínico",
+    "subject": "Clínica Médica",
+    "subsubject": "",
+    "banca": "FUNDATEC_AMRIGS",
+    "year": 2023,
+    "enunciado": "– Um paciente com hemianopsia bitemporal apresenta comprometimento no:",
+    "alternatives": [
+      "Lobo temporal.",
+      "Quiasma óptico.",
+      "Trato óptico.",
+      "Lobo parietal."
+    ],
+    "correctIndex": -1,
+    "explanation": "",
+    "difficulty": "medium"
+  },
+  {
+    "id": "c2878cc5b4b9",
+    "cycle": "Ciclo Clínico",
+    "subject": "Clínica Médica",
+    "subsubject": "",
+    "banca": "FUNDATEC_AMRIGS",
+    "year": 2023,
+    "enunciado": "– Neonato com 39 semanas de idade gestacional apresenta desde o nascimento mancha de coloração vinhosa intensa, homogênea, acometendo parte da hemiface esquerda, incluindo região periorbitária. Restante do corpo sem alterações. Com base na possibilidade de associação com síndrome de Sturge-Weber, qual exame complementar é o mais indicado para elucidação diagnóstica?",
+    "alternatives": [
+      "Biópsia da lesão.",
+      "Eletroencefalograma de amplitude integrada.",
+      "Tomografia de crânio.",
+      "Angioressonância de crânio."
+    ],
+    "correctIndex": -1,
+    "explanation": "",
+    "difficulty": "medium"
+  },
+  {
+    "id": "42bea47bcf87",
+    "cycle": "Ciclo Clínico",
+    "subject": "Pediatria",
+    "subsubject": "",
+    "banca": "FUNDATEC_AMRIGS",
+    "year": 2023,
+    "enunciado": "– Segundo a Sociedade Brasileira de Pediatria, o recém-nascido deve ter alta do alojamento conjunto com sua mãe após 48 horas de vida desde que apresente: I. Sinais vitais estáveis por no mínimo 4 horas. II. Eliminações fisiológicas presentes. III. Peso na alta de 2.000 g ou mais. IV. Testes de triagem auditiva, do olhinho e do coraçãozinho já realizados. Quais estão corretas?",
+    "alternatives": [
+      "Apenas I e III.",
+      "Apenas II e IV.",
+      "Apenas II, III e IV.",
+      "I, II, III e IV."
+    ],
+    "correctIndex": -1,
+    "explanation": "",
+    "difficulty": "medium"
+  },
+  {
+    "id": "6700d47abe65",
+    "cycle": "Ciclo Clínico",
+    "subject": "Clínica Médica",
+    "subsubject": "",
+    "banca": "FUNDATEC_AMRIGS",
+    "year": 2023,
+    "enunciado": "– Qual das alternativas abaixo apresenta um fator de risco para hiperbilirrubinemia mais acentuada no período neonatal?",
+    "alternatives": [
+      "Icterícia com início nas primeiras 30 horas de vida.",
+      "Aleitamento materno misto com perda de peso de mais de 6% no momento da alta.",
+      "Idade gestacional menor que 38 semanas ao nascimento.",
+      "História de filho anterior que necessitou de fototerapia."
+    ],
+    "correctIndex": -1,
+    "explanation": "",
+    "difficulty": "medium"
+  },
+  {
+    "id": "2cc401e521a9",
+    "cycle": "Ciclo Clínico",
+    "subject": "Clínica Médica",
+    "subsubject": "",
+    "banca": "FUNDATEC_AMRIGS",
+    "year": 2023,
+    "enunciado": "– Um recém-nascido do sexo masculino tem idade gestacional de 38 semanas e 2 dias e, ao nascer, apresenta as seguintes medidas: peso de 2350 g, comprimento de 46 cm e perímetro cefálico de 32 cm. Ao classificar o peso quanto à adaptação para a idade gestacional, você utiliza as tabelas do projeto INTERGROWTH-21, e os achados de escore-z e percentis estão demonstrados na figura abaixo: Com base nos resultados apresentados, qual a classificação que você daria a esse neonato?",
+    "alternatives": [
+      "Pré-termo.",
+      "Adequado para a idade gestacional.",
+      "Pequeno para idade gestacional, simétrico.",
+      "Pequeno para a idade gestacional, assimétrico."
+    ],
+    "correctIndex": -1,
+    "explanation": "",
+    "difficulty": "medium"
+  },
+  {
+    "id": "250afde9ea53",
+    "cycle": "Ciclo Clínico",
+    "subject": "Clínica Médica",
+    "subsubject": "",
+    "banca": "FUNDATEC_AMRIGS",
+    "year": 2023,
+    "enunciado": "– São sinais de irritação meningorradicular encontrados em pacientes, EXCETO:",
+    "alternatives": [
+      "Rigidez de nuca.",
+      "Kernig.",
+      "Brudzinki.",
+      "Lázaro."
+    ],
+    "correctIndex": -1,
+    "explanation": "",
+    "difficulty": "medium"
+  },
+  {
+    "id": "023b99af4e99",
+    "cycle": "Ciclo Clínico",
+    "subject": "Clínica Médica",
+    "subsubject": "",
+    "banca": "FUNDATEC_AMRIGS",
+    "year": 2023,
+    "enunciado": "– Em relação aos acidentes na infância, analise as assertivas a seguir: I. No Brasil, acidentes são a causa mais frequente de morte em crianças a partir dos 12 meses de idade. II. Os acidentes variam em sua frequência com idade, ambiente e desenvolvimento da criança. III. Do nascimento aos 9 meses e com peso de até 10 kg, a criança pode ser transportada em assentos especiais, de frente para o painel do automóvel, usando cinto de segurança, semi-reclinada. IV. Os andadores, apesar do alto custo e de serem prejudiciais para o desenvolvimento, são aprovados como protetores de acidentes durante o primeiro ano de vida. Quais estão corretas?",
+    "alternatives": [
+      "Apenas I e II.",
+      "Apenas II e III.",
+      "Apenas III e IV.",
+      "I, II, III e IV."
+    ],
+    "correctIndex": -1,
+    "explanation": "",
+    "difficulty": "medium"
+  },
+  {
+    "id": "c17062862868",
+    "cycle": "Ciclo Clínico",
+    "subject": "Clínica Médica",
+    "subsubject": "",
+    "banca": "FUNDATEC_AMRIGS",
+    "year": 2023,
+    "enunciado": "– Lactente de 2 meses com história de vômitos, recusa alimentar e irritabilidade é levado ao pronto-socorro. O exame físico mostra palidez, febre e abaulamento da fontanela anterior. A coleta de líquido cefalorraquidiano mostrou como resultados: celularidade – 340 com 82% de polimorfonucleares; proteínas – 280 mg/dL; glicose – 26 mg/dL. A glicemia no momento da punção lombar foi 284 mg/dL. Qual é o agente etiológico mais provável dessa meningite?",
+    "alternatives": [
+      "Escherichia coli.",
+      "Streptococcus pneumoniae.",
+      "Citomegalovírus.",
+      "Staphylococcus aureus."
+    ],
+    "correctIndex": -1,
+    "explanation": "",
+    "difficulty": "medium"
+  },
+  {
+    "id": "3ee45f489b7b",
+    "cycle": "Ciclo Clínico",
+    "subject": "Clínica Médica",
+    "subsubject": "",
+    "banca": "FUNDATEC_AMRIGS",
+    "year": 2023,
+    "enunciado": "– Considerando a importância de triagem, diagnóstico e gestão sistemática da sepse na criança, analise as assertivas abaixo e assinale V, se verdadeiras, ou F, se falsas. ( ) Recomenda-se a coleta de hemoculturas antes do tratamento, desde que não atrase a administração de antimicrobianos. ( ) Na prática clínica, a hiperlactatemia é um marcador imprescindível para a suspeita diagnóstica. ( ) A monitorização da saturação O e do débito urinário é um importante procedimento da primeira 2 hora. ( ) As respostas endócrinas e metabólicas decorrentes da liberação de citocinas são as principais responsáveis pelas manifestações clínicas e gravidade dos casos. A ordem correta de preenchimento dos parênteses, de cima para baixo, é:",
+    "alternatives": [
+      "V – F – V – V.",
+      "F – V – F – V.",
+      "F – V – V – F.",
+      "V – F – V – F."
+    ],
+    "correctIndex": -1,
+    "explanation": "",
+    "difficulty": "medium"
+  },
+  {
+    "id": "61cbc97a18ce",
+    "cycle": "Ciclo Clínico",
+    "subject": "Clínica Médica",
+    "subsubject": "",
+    "banca": "FUNDATEC_AMRIGS",
+    "year": 2023,
+    "enunciado": "– Em relação à Parada Cardiorrespiratória (PCR) na faixa etária pediátrica, analise as assertivas abaixo e assinale V, se verdadeiras, ou F, se falsas. ( ) As causas cardiológicas primárias são as que mais comumente levam à PCR em crianças. ( ) As vias de acesso preferenciais para a administração de medicamentos são as vias endovenosa e intraóssea. ( ) A epinefrina é a droga padrão a ser utilizada. ( ) Controle da hipertermia e hipoxemia são medidas importantes no tratamento pós-ressuscitação. A ordem correta de preenchimento dos parênteses, de cima para baixo, é:",
+    "alternatives": [
+      "F – V – V – V.",
+      "V – V – V – F.",
+      "F – F – V – V.",
+      "V – V – F – F."
+    ],
+    "correctIndex": -1,
+    "explanation": "",
+    "difficulty": "medium"
+  },
+  {
+    "id": "b43f7d940371",
+    "cycle": "Ciclo Clínico",
+    "subject": "Clínica Médica",
+    "subsubject": "",
+    "banca": "FUNDATEC_AMRIGS",
+    "year": 2023,
+    "enunciado": "– Lactente de 2 meses de idade é trazido pela mãe para a consulta de puericultura. Como queixa, a mãe refere “vômitos” após as mamadas. Nasceu a termo, sem apresentar fatores de risco e está em aleitamento materno exclusivo. Apresenta crescimento e desenvolvimento adequados e ausência de eventos clínicos significativos desde o nascimento. Em relação à queixa da mãe, o procedimento indicado é:",
+    "alternatives": [
+      "Tranquilizar a mãe e manter o aleitamento materno exclusivo.",
+      "Prescrever fórmula antirrefluxo.",
+      "Prescrever ranitidina.",
+      "Solicitar pHmetria esofágica."
+    ],
+    "correctIndex": -1,
+    "explanation": "",
+    "difficulty": "medium"
+  },
+  {
+    "id": "f9785b3fafd8",
+    "cycle": "Ciclo Clínico",
+    "subject": "Clínica Médica",
+    "subsubject": "",
+    "banca": "FUNDATEC_AMRIGS",
+    "year": 2023,
+    "enunciado": "– Considerando o instrumento para a vigilância do desenvolvimento da Caderneta da Criança do Ministério da Saúde, é esperado que durante o primeiro ano de vida uma criança desenvolva habilidades de buscar ativamente objetos, transferir objetos de uma mão para outra, fazer pinça completa e produzir jargão, respectivamente, entre as faixas etárias de:",
+    "alternatives": [
+      "4 e 6 meses; 6 e 9 meses; 9 e 12 meses; 6 e 9 meses.",
+      "6 e 9 meses; 4 e 6 meses; 6 e 9 meses; 9 e 12 meses.",
+      "6 e 9 meses; 4 e 6 meses; 6 e 9 meses; 6 e 9 meses.",
+      "4 e 6 meses; 6 e 9 meses; 9 e 12 meses; 9 e 12 meses."
+    ],
+    "correctIndex": -1,
+    "explanation": "",
+    "difficulty": "medium"
+  },
+  {
+    "id": "6b30be28e37e",
+    "cycle": "Internato",
+    "subject": "Urgência e Emergência",
+    "subsubject": "",
+    "banca": "FUNDATEC_AMRIGS",
+    "year": 2023,
+    "enunciado": "– Criança de 5 anos, residente em área com alta prevalência de dengue, consulta por febre, náuseas, vômitos, dor abdominal, cefaleia e mialgias. Apresenta prova do laço positivo e o exame físico revela abdome doloroso à palpação e fígado palpável 4 cm abaixo do rebordo costal direito, sendo feita hipótese diagnóstica de dengue. Considerando a hipótese diagnóstica e as informações apresentadas, a conduta recomendada é o acompanhamento:",
+    "alternatives": [
+      "Ambulatorial.",
+      "Em leito de observação.",
+      "Em leito de internação.",
+      "Em leito de emergência."
+    ],
+    "correctIndex": -1,
+    "explanation": "",
+    "difficulty": "medium"
+  },
+  {
+    "id": "b9c0529166df",
+    "cycle": "Ciclo Clínico",
+    "subject": "Clínica Médica",
+    "subsubject": "",
+    "banca": "FUNDATEC_AMRIGS",
+    "year": 2023,
+    "enunciado": "– No atraso puberal secundário às síndromes de Turner e Klinefelter, temos hipogonadismo, respectivamente:",
+    "alternatives": [
+      "Hipogonadotrófico e hipergonadotrófico.",
+      "Hipergonadotrófico e hipergonadotrófico.",
+      "Hipergonadotrófico e hipogonadotrófico.",
+      "Hipogonadotrófico e hipogonadotrófico."
+    ],
+    "correctIndex": -1,
+    "explanation": "",
+    "difficulty": "medium"
+  },
+  {
+    "id": "e96786f49044",
+    "cycle": "Internato",
+    "subject": "Urgência e Emergência",
+    "subsubject": "",
+    "banca": "FUNDATEC_AMRIGS",
+    "year": 2023,
+    "enunciado": "– Criança de 12 meses dá entrada na emergência pediátrica em coma afebril. Mãe informa que há 3 dias apresenta-se mais irritada e com redução da aceitação da dieta. História patológica pregressa negativa para agravos importantes. Ao exame está hidratada, corada, respiração típica de Kussmaul, sem déficit perfusional, hemoglicoteste 600 mg/dL. Sua gasometria evidencia acidemia metabólica, anion gap aumentado. Sobre o manejo dessa emergência na infância, cuidados devem ser tomados especialmente no sentido de evitar baixo débito culminando com parada cardiorrespiratória pela hipofosfatemia decorrente de:",
+    "alternatives": [
+      "Hipoinsulinismo primário do coma hiperosmolar diabético, já que cetoacidose não pode ser definida",
+      "Hiperinsulinismo induzido pelo tratamento, à semelhança do que ocorre na síndrome de",
+      "Correção da acidemia severa com bicarbonato intravenoso, fármaco esse utilizado",
+      "Hipercalcemia comum na cetoacidose diabética, especialmente se a criança apresentar sinal de"
+    ],
+    "correctIndex": -1,
+    "explanation": "",
+    "difficulty": "medium"
+  },
+  {
+    "id": "33b6c1e54039",
+    "cycle": "Ciclo Clínico",
+    "subject": "Clínica Médica",
+    "subsubject": "",
+    "banca": "FUNDATEC_AMRIGS",
+    "year": 2023,
+    "enunciado": "– A insuficiência respiratória na sepse por Epstein-Barr na infância pode se apresentar em decorrência de:",
+    "alternatives": [
+      "Hipoxemia inicial com hipercapnia, secundárias especialmente à obstrução extrínseca de vias",
+      "Hipercapnia sem hipoxemia, pois existe comprometimento parenquimatoso pulmonar, dificultando",
+      "Hipoxemia isolada sem risco de restrição de caixa torácica, já que essa situação não cursa com",
+      "Aumento da relação ventilação/perfusão por obstrução brônquica, fenômeno conhecido por efeito"
+    ],
+    "correctIndex": -1,
+    "explanation": "",
+    "difficulty": "medium"
+  },
+  {
+    "id": "5d72bf897a2b",
+    "cycle": "Ciclo Clínico",
+    "subject": "Clínica Médica",
+    "subsubject": "",
+    "banca": "FUNDATEC_AMRIGS",
+    "year": 2023,
+    "enunciado": "– Criança de 30 meses vem à consulta da Unidade Básica de Saúde (UBS) por febre, cerca de 37,8-38,2°C de temperatura axilar há 4 dias, com sinais de prostração apenas durante os picos, os quais ocorrem cerca de 2 vezes ao dia, sem outros sinais ou sintomas observados pela mãe. Previamente hígida, imunitários do Programa Nacional de Imunizações atualizados, ao exame físico minucioso não apresenta foco topográfico sugestivo de infecção. A conduta nessa situação, considerando a faixa etária da criança, é:",
+    "alternatives": [
+      "Solicitar painel viral respiratório, sem necessidade de urocultura por método confiável em função",
+      "Investigar causas não infecciosas de febre de origem indefinida, já que o exame físico minucioso",
+      "Administrar antitérmicos que atuarão na inibição de prostaglandina (PGE-2) para a redução da",
+      "Solicitar hemocultura já que o quadro clínico é fortemente sugestivo de bacteremia oculta."
+    ],
+    "correctIndex": -1,
+    "explanation": "",
+    "difficulty": "medium"
+  },
+  {
+    "id": "d1f55bcf2193",
+    "cycle": "Ciclo Clínico",
+    "subject": "Clínica Médica",
+    "subsubject": "",
+    "banca": "FUNDATEC_AMRIGS",
+    "year": 2023,
+    "enunciado": "– Em relação aos princípios do SUS, analise as seguintes assertivas: I. Descentralização refere-se a níveis de complexidade tecnológica crescente. II. Participação social refere-se à participação da população no processo de formulação das políticas de saúde. III. Complementação do setor privado refere-se à contratação de serviços privados, quando o setor público não for suficiente. Quais estão corretas?",
+    "alternatives": [
+      "Apenas I e II.",
+      "Apenas I e III.",
+      "Apenas II e III.",
+      "I, II e III."
+    ],
+    "correctIndex": -1,
+    "explanation": "",
+    "difficulty": "medium"
+  },
+  {
+    "id": "3b5e4b28053b",
+    "cycle": "Ciclo Clínico",
+    "subject": "Medicina de Família/SUS",
+    "subsubject": "",
+    "banca": "FUNDATEC_AMRIGS",
+    "year": 2023,
+    "enunciado": "– Analise as seguintes assertivas em relação à Equipe de Saúde da Família, conforme a Política de Atenção Básica: I. É considerada como estratégia de expansão, qualificação e consolidação da Atenção Básica, por favorecer uma reorientação do processo de trabalho com maior potencial de ampliar a resolutividade e impactar na situação de saúde das pessoas e coletividades, além de propiciar uma importante relação custo-efetividade. II. O número de agentes comunitários de saúde por equipe deverá ser definido de acordo com base populacional, critérios demográficos, epidemiológicos e socioeconômicos, de acordo com definição local e, em áreas de grande dispersão territorial, áreas de risco e vulnerabilidade social, recomendando-se a cobertura de 100% da população com número máximo de 750 pessoas por agente comunitário de saúde. III. É composta no mínimo por médico, preferencialmente da especialidade medicina de família e comunidade, enfermeiro, preferencialmente especialista em saúde da família, auxiliar e/ou técnico de enfermagem, cirurgião-dentista, preferencialmente especialista em saúde da família, auxiliar ou técnico em saúde bucal e agente comunitário de saúde. Quais estão corretas?",
+    "alternatives": [
+      "Apenas I e II.",
+      "Apenas I e III.",
+      "Apenas II e III.",
+      "I, II e III."
+    ],
+    "correctIndex": -1,
+    "explanation": "",
+    "difficulty": "medium"
+  },
+  {
+    "id": "1bdf65aa6e3c",
+    "cycle": "Ciclo Clínico",
+    "subject": "Clínica Médica",
+    "subsubject": "",
+    "banca": "FUNDATEC_AMRIGS",
+    "year": 2023,
+    "enunciado": "– São atribuições comuns a todos os membros das equipes de saúde que atuam na Atenção Básica:",
+    "alternatives": [
+      "Realizar estratificação de risco e elaborar plano de cuidados para as pessoas que têm condições",
+      "Participar do processo de territorialização e mapeamento da área de atuação da equipe,",
+      "Encaminhar, quando necessário, usuários a outros pontos de atenção, respeitando fluxos locais,",
+      "Realizar e/ou supervisionar acolhimento com escuta qualificada e classificação de risco, de acordo"
+    ],
+    "correctIndex": -1,
+    "explanation": "",
+    "difficulty": "medium"
+  },
+  {
+    "id": "46e5f511c586",
+    "cycle": "Ciclo Clínico",
+    "subject": "Clínica Médica",
+    "subsubject": "",
+    "banca": "FUNDATEC_AMRIGS",
+    "year": 2023,
+    "enunciado": "– Assinale a alternativa que apresenta casos que se enquadram em situação de notificação compulsória imediata no Brasil.",
+    "alternatives": [
+      "Tuberculose e leishmaniose visceral.",
+      "Doença de Chagas crônica e esquistossomose.",
+      "Febre amarela e botulismo.",
+      "Hanseníase e hepatites virais."
+    ],
+    "correctIndex": -1,
+    "explanation": "",
+    "difficulty": "medium"
+  },
+  {
+    "id": "412bb637f526",
+    "cycle": "Ciclo Clínico",
+    "subject": "Clínica Médica",
+    "subsubject": "",
+    "banca": "FUNDATEC_AMRIGS",
+    "year": 2023,
+    "enunciado": "– Analise as seguintes assertivas em relação à Portaria nº 373/2002 que aprova a Norma Operacional da Assistência à Saúde (NOAS-SUS 01/2002): I. Amplia as responsabilidades dos municípios na Atenção Básica. II. Estabelece o processo de regionalização como estratégia de hierarquização dos serviços de saúde e de busca de maior equidade. III. Cria mecanismos para o fortalecimento da capacidade de gestão do Sistema Único de Saúde. Quais estão corretas?",
+    "alternatives": [
+      "Apenas I e II.",
+      "Apenas I e III.",
+      "Apenas II e III.",
+      "I, II e III."
+    ],
+    "correctIndex": -1,
+    "explanation": "",
+    "difficulty": "medium"
+  },
+  {
+    "id": "4fc2cea5c4d7",
+    "cycle": "Ciclo Clínico",
+    "subject": "Clínica Médica",
+    "subsubject": "",
+    "banca": "FUNDATEC_AMRIGS",
+    "year": 2023,
+    "enunciado": "– Homem de 56 anos, previamente hígido, deseja fazer consulta de revisão periódica na UBS do seu bairro. Entretanto, como trabalha formalmente de segunda à sexta-feira das 8h às 17h, não consegue ir, pois a UBS não tem horário estendido. Qual dos atributos da Atenção Primária à Saúde (APS) não está sendo ofertado nessa situação?",
+    "alternatives": [
+      "Longitudinalidade.",
+      "Acessibilidade.",
+      "Integralidade.",
+      "Coordenação."
+    ],
+    "correctIndex": -1,
+    "explanation": "",
+    "difficulty": "medium"
+  },
+  {
+    "id": "1cfb652fa560",
+    "cycle": "Ciclo Clínico",
+    "subject": "Clínica Médica",
+    "subsubject": "",
+    "banca": "FUNDATEC_AMRIGS",
+    "year": 2023,
+    "enunciado": "– Analise as seguintes assertivas em relação à APS: I. Tem a função de servir e coordenar todas as necessidades de saúde da pessoa, assumindo a responsabilidade pela continuidade e pelo acompanhamento individual da pessoa e por problemas de saúde da comunidade. II. A coordenação do cuidado pode ser verificada, por exemplo, quando a equipe da APS faz contato com a equipe de um hospital terciário para saber sobre as internações de pacientes da comunidade por Covid-19 e as previsões de alta para iniciar atenção domiciliar. III. Taxas elevadas de internações hospitalares por condições sensíveis podem indicar baixo acesso aos serviços de APS por parte da população ou oferta de uma APS de baixa qualidade. Quais estão corretas?",
+    "alternatives": [
+      "Apenas I e II.",
+      "Apenas I e III.",
+      "Apenas II e III.",
+      "I, II e III."
+    ],
+    "correctIndex": -1,
+    "explanation": "",
+    "difficulty": "medium"
+  },
+  {
+    "id": "8ab252868be1",
+    "cycle": "Ciclo Clínico",
+    "subject": "Clínica Médica",
+    "subsubject": "",
+    "banca": "FUNDATEC_AMRIGS",
+    "year": 2023,
+    "enunciado": "– Assinale a alternativa correta em relação ao diagnóstico e tratamento da sífilis na APS.",
+    "alternatives": [
+      "O VDRL (Venereal Disease Research Laboratory) é um exame treponêmico e serve para o",
+      "O VDRL passa a ser positivo após a 2a semana do aparecimento do cancro duro e costuma atingir",
+      "A aplicação da penicilina benzatina não deve ser realizada na UBS, pelo risco da reação anafilática",
+      "O tratamento da sífilis latente tardia, com mais de um ano de evolução (ou latente com duração"
+    ],
+    "correctIndex": -1,
+    "explanation": "",
+    "difficulty": "medium"
+  },
+  {
+    "id": "9906b4da9fac",
+    "cycle": "Ciclo Clínico",
+    "subject": "Clínica Médica",
+    "subsubject": "",
+    "banca": "FUNDATEC_AMRIGS",
+    "year": 2023,
+    "enunciado": "– Analise as seguintes assertivas em relação ao sofrimento psíquico: I. Estudos avaliando a saúde mental da população LGBTQIA+, negros e mulheres demonstram que esses indivíduos têm risco elevado para desenvolver sofrimento psíquico e transtornos mentais. II. Sofrimento psíquico em questões relacionadas à raça, gênero, indígenas e refugiados deve ser avaliado em serviços especializados. III. É fundamental manter-se alerta em situações de sofrimento mental, queixas somáticas inespecíficas e atrasos para consultas ou dificuldade de acesso diante do impacto dos papéis de gênero e da violência doméstica na saúde mental dos pacientes. Quais estão corretas?",
+    "alternatives": [
+      "Apenas I e II.",
+      "Apenas I e III.",
+      "Apenas II e III.",
+      "I, II e III."
+    ],
+    "correctIndex": -1,
+    "explanation": "",
+    "difficulty": "medium"
+  },
+  {
+    "id": "444755bece7c",
+    "cycle": "Ciclo Clínico",
+    "subject": "Clínica Médica",
+    "subsubject": "",
+    "banca": "FUNDATEC_AMRIGS",
+    "year": 2023,
+    "enunciado": "– Analise as seguintes assertivas no que se refere às ações de controle da tuberculose a serem realizadas: I. Compete à instância municipal, entre outras ações, assegurar a realização dos exames diagnósticos, conforme preconizado nas normas, identificar e organizar a rede de laboratórios locais e suas referências municipais, regionais e estaduais. II. A organização da assistência farmacêutica no âmbito da APS e o uso racional de medicamentos devem ser objeto de integração, trabalhando-se além do acesso aos medicamentos, a atenção farmacêutica, o uso de novos medicamentos e as ações de farmacovigilância. III. Deve haver registro periódico e sistematizado da dispensação/entrega dos medicamentos para cada paciente, uma vez que registros referentes à retirada de medicamentos da farmácia podem ser utilizados como método indireto de controle de adesão. Quais estão corretas?",
+    "alternatives": [
+      "Apenas I e II.",
+      "Apenas I e III.",
+      "Apenas II e III.",
+      "I, II e III."
+    ],
+    "correctIndex": -1,
+    "explanation": "",
+    "difficulty": "medium"
+  },
+  {
+    "id": "add238d3c74f",
+    "cycle": "Ciclo Clínico",
+    "subject": "Clínica Médica",
+    "subsubject": "",
+    "banca": "FUNDATEC_AMRIGS",
+    "year": 2023,
+    "enunciado": "– Sobre o Transtorno do Espectro Autista (TEA), pode-se afirmar que:",
+    "alternatives": [
+      "Evidências científicas apontam a presença de um biomarcador específico.",
+      "O mercúrio presente nas vacinas é um importante fator de risco para o desenvolvimento do TEA.",
+      "O diagnóstico é essencialmente clínico, feito a partir das observações da criança, entrevistas com",
+      "A presença de estereotipias e afeto restrito causam pouco prejuízo no processo de socialização."
+    ],
+    "correctIndex": -1,
+    "explanation": "",
+    "difficulty": "medium"
+  },
+  {
+    "id": "d107d66fb916",
+    "cycle": "Ciclo Clínico",
+    "subject": "Clínica Médica",
+    "subsubject": "",
+    "banca": "FUNDATEC_AMRIGS",
+    "year": 2023,
+    "enunciado": "– Para identificar indivíduos com taquicardia (FC>100 bpm), um pesquisador está utilizando um monitor cardíaco de pulso que está com defeito, e sempre mostra valores menores que 100 bpm, medindo corretamente apenas os indivíduos com frequência cardíaca normal. Considerando essas informações, a sensibilidade desse monitor cardíaco é:",
+    "alternatives": [
+      "De 100%, e a especificidade é zero.",
+      "De 50%, e a especificidade é 50%.",
+      "De zero, e a especificidade é 100%.",
+      "De zero, e a especificidade também é zero."
+    ],
+    "correctIndex": -1,
+    "explanation": "",
+    "difficulty": "medium"
+  },
+  {
+    "id": "2600692326ac",
+    "cycle": "Ciclo Clínico",
+    "subject": "Clínica Médica",
+    "subsubject": "",
+    "banca": "FUNDATEC_AMRIGS",
+    "year": 2023,
+    "enunciado": "– No livro “Preparados para o risco: como tomar boas decisões”, o autor Gerd Gigerenzer afirma que “As faculdades de medicina devem tomar providências imediatas, antes que os pacientes se deem conta de que os médicos não compreendem os exames e tratamentos que recomendam” e cita um estudo britânico que fez a seguinte pergunta para especialistas médicos: Considere que o risco de uma mãe de 40 anos ter um bebê com síndrome de Down seja de 1%, que a sensibilidade de um teste feito no trimestre inicial da gestação seja de 90%, ou seja, o teste detecta 90% dos bebês com síndrome de Down e deixa escapar o resto, e a taxa de falsos positivos seja de 5%, significando que o exame identifica corretamente 95% de bebês sem síndrome de Down e falha nos 5% restantes, e supondo um resultado positivo nesse teste, qual é a probabilidade de que o bebê realmente tenha síndrome de Down?",
+    "alternatives": [
+      "Entre 10% e 20%.",
+      "Entre 45% e 55%.",
+      "Entre 85% e 95%.",
+      "Entre 95% e 100%."
+    ],
+    "correctIndex": -1,
+    "explanation": "",
+    "difficulty": "medium"
+  },
+  {
+    "id": "16688adb612b",
+    "cycle": "Ciclo Clínico",
+    "subject": "Clínica Médica",
+    "subsubject": "",
+    "banca": "FUNDATEC_AMRIGS",
+    "year": 2023,
+    "enunciado": "– Um estudo avaliou a associação entre o sedentarismo e algumas condições de saúde entre homens e mulheres. A Tabela 1 abaixo apresenta os principais resultados observados. Homens Mulheres Risco relativo (IC95%) Risco relativo (IC95%) Obesidade 1,22 (1,05 – 1,39) 1,28 (1,13 – 1,43) Diabetes 0,98 (0,90 – 1,06) 1,03 (0,91 – 1,15) Hipertensão 1,07 (1,01 – 1,13) 0,99 (0,87 – 1,11) Osteoporose 1,12 (0,97 – 1,27) 1,21 (0,99 – 1,43) Depressão 1,16 (1,04 – 1,28) 1,10 (1,01 – 1,19) Tabela 1 – Sedentarismo e ocorrência de obesidade, diabetes, hipertensão, osteoporose e depressão entre homens e mulheres Considerando as informações apresentadas, podemos afirmar que nesse estudo o sedentarismo está significativamente associado ao risco de:",
+    "alternatives": [
+      "Obesidade e diabetes em homens e mulheres.",
+      "Hipertensão somente em mulheres.",
+      "Osteoporose em homens e mulheres.",
+      "Depressão em homens e mulheres."
+    ],
+    "correctIndex": -1,
+    "explanation": "",
+    "difficulty": "medium"
+  },
+  {
+    "id": "180ac39fcf77",
+    "cycle": "Ciclo Clínico",
+    "subject": "Clínica Médica",
+    "subsubject": "",
+    "banca": "FUNDATEC_AMRIGS",
+    "year": 2023,
+    "enunciado": "– A medida que expressa quantas vezes mais (ou menos) é provável encontrar um resultado em pessoas doentes, em comparação com as não doentes e seu resultado influencia a probabilidade pós-teste é chamada de:",
+    "alternatives": [
+      "Especificidade.",
+      "Razão de verossimilhança.",
+      "Sensibilidade.",
+      "Valor preditivo."
+    ],
+    "correctIndex": -1,
+    "explanation": "",
+    "difficulty": "medium"
+  },
+  {
+    "id": "125253e3f9e6",
+    "cycle": "Ciclo Clínico",
+    "subject": "Clínica Médica",
+    "subsubject": "",
+    "banca": "FUNDATEC_AMRIGS",
+    "year": 2023,
+    "enunciado": "– Qual dos resultados abaixo apresenta a maior precisão?",
+    "alternatives": [
+      "Média: 3.050 g; desvio-padrão: 200 g.",
+      "Média: 3.150 g; desvio-padrão: 350 g.",
+      "Média: 3.200 g; desvio-padrão: 100 g.",
+      "Média: 3.300 g; desvio-padrão: 250 g."
+    ],
+    "correctIndex": -1,
+    "explanation": "",
+    "difficulty": "medium"
+  },
+  {
+    "id": "9c0f1bd0e0dc",
+    "cycle": "Ciclo Clínico",
+    "subject": "Clínica Médica",
+    "subsubject": "",
+    "banca": "FUNDATEC_AMRIGS",
+    "year": 2023,
+    "enunciado": "– Um pesquisador pretende estudar a prevalência de uma doença comum e uma doença rara na mesma população. Como deve ser a amostra?",
+    "alternatives": [
+      "Para estudar a doença comum, a amostra deve ser menor do que a utilizada para estudar a doença",
+      "Para estudar a doença comum, a amostra deve ser maior do que a utilizada para estudar a doença",
+      "Para estudar a doença comum, a amostra deve ser igual à utilizada para estudar a doença rara.",
+      "Não é possível definir com as informações fornecidas."
+    ],
+    "correctIndex": -1,
+    "explanation": "",
+    "difficulty": "medium"
+  },
+  {
+    "id": "1daab21267b5",
+    "cycle": "Ciclo Clínico",
+    "subject": "Clínica Médica",
+    "subsubject": "",
+    "banca": "FUNDATEC_AMRIGS",
+    "year": 2023,
+    "enunciado": "– Assinale a alternativa correta em relação a ataques de pânico.",
+    "alternatives": [
+      "São extremamente comuns na população em geral, podendo não necessitar de tratamento.",
+      "Ocorrem exclusivamente em casos de transtorno do pânico.",
+      "Uma das técnicas orientadas a utilizar é a hiperventilação.",
+      "Em geral, são duradouros e deve ser feito o uso de benzodiazepínico de ação longa."
+    ],
+    "correctIndex": -1,
+    "explanation": "",
+    "difficulty": "medium"
+  },
+  {
+    "id": "b21db1c2a0b7",
+    "cycle": "Ciclo Clínico",
+    "subject": "Clínica Médica",
+    "subsubject": "",
+    "banca": "FUNDATEC_AMRIGS",
+    "year": 2023,
+    "enunciado": "– De acordo com as normas de publicidade médica do Código de Ética Médica nº 2.217/2018, é vedado ao médico: I. Permitir que sua participação na divulgação de assuntos médicos, em qualquer meio de comunicação de massa, deixe de ter caráter exclusivamente de esclarecimento e educação da sociedade. II. Divulgar informação sobre assunto médico de forma sensacionalista, promocional ou de conteúdo inverídico. III. Divulgar, fora do meio científico, processo de tratamento ou descoberta cujo valor ainda não esteja expressamente reconhecido cientificamente por órgão competente. IV. Participar de anúncios de empresas comerciais, qualquer que seja sua natureza, valendo-se de sua profissão. Quais estão corretas?",
+    "alternatives": [
+      "Apenas I e II.",
+      "Apenas II e III.",
+      "Apenas III e IV.",
+      "I, II, III e IV."
+    ],
+    "correctIndex": -1,
+    "explanation": "",
+    "difficulty": "medium"
+  },
+  {
+    "id": "a2f9af208271",
+    "cycle": "Ciclo Clínico",
+    "subject": "Clínica Médica",
+    "subsubject": "",
+    "banca": "FUNDATEC_AMRIGS",
+    "year": 2023,
+    "enunciado": "– Analise as seguintes assertivas em relação à saúde mental e às doenças orgânicas: I. O hipotireoidismo causa sintomas comuns à depressão, como cansaço, alteração do sono, ganho de peso, desânimo e fraqueza. II. Pacientes com dor crônica apresentam frequentemente comorbidade psiquiátrica. III. A doença de Parkinson pode apresentar comorbidade com depressão em até 50% dos pacientes acometidos. Quais estão corretas?",
+    "alternatives": [
+      "Apenas I e II.",
+      "Apenas I e III.",
+      "Apenas II e III.",
+      "I, II e III."
+    ],
+    "correctIndex": -1,
+    "explanation": "",
+    "difficulty": "medium"
+  }
+]
