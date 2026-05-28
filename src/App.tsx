@@ -317,9 +317,6 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'q3',
-    cycle: 'Ciclo Clínico',
-    subject: 'Clínica Médica',
-    subSubject: 'Endocrinologia',
     text: 'Paciente de 55 anos, obeso, com poliúria, polidipsia e glicemia de jejum de 132 mg/dL em duas ocasiões. Qual o diagnóstico?',
     options: [
       'Pré-diabetes',
@@ -361,9 +358,6 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'q8',
-    cycle: 'Ciclo Clínico',
-    subject: 'Clínica Médica',
-    subSubject: 'Cardiologia',
     text: 'Sobre a classificação de Killip no IAM, o que caracteriza o estágio III?',
     options: [
       'Ausência de sinais de insuficiência cardíaca esquerda',
@@ -391,9 +385,6 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'q10',
-    cycle: 'Ciclo Clínico',
-    subject: 'Clínica Médica',
-    subSubject: 'Gastroenterologia',
     text: 'Qual a conduta inicial prioritária em um paciente com hemorragia digestiva alta varicosa?',
     options: [
       'Endoscopia digestiva imediata',
@@ -984,7 +975,7 @@ const MEDICAL_AVATARS = [
   {
     id: 'iamspe_2024_001',
     cycle: 'Ciclo Clínico',
-    subject: 'Clínica Médica',
+    subject: 'Pneumologia',
     text: "Um paciente de 28 anos procura atendimento com queixas de dispneia aos esforços, sibilos e tosse seca. Ao exame físico, não há alterações relevantes. Qual o exame complementar mais indicado para confirmar o diagnóstico de asma nesse caso?",
     options: ["Radiografia de tórax", "Tomografia computadorizada de tórax", "Teste de broncoprovocação com metacolina", "Ecocardiograma", "Espirometria com prova broncodilatadora"],
     correctIndex: 4,
@@ -993,7 +984,7 @@ const MEDICAL_AVATARS = [
   {
     id: 'iamspe_2024_002',
     cycle: 'Ciclo Clínico',
-    subject: 'Clínica Médica',
+    subject: 'Gastroenterologia',
     text: "Qual das seguintes afirmações descreve corretamente o Sinal de Fox e sua relevância no exame físico para diagnóstico diferencial em emergência?",
     options: ["O Sinal de Fox é caracterizado por equimoses na região inguinal, indicando pancreatite aguda com possível complicação de hemorragia retroperitoneal", "O Sinal de Fox é caracterizado por dor intensa à palpação do quadrante inferior direito do abdômen, sugerindo apendicite aguda", "O Sinal de Fox é identificado como uma alteração na pupila, indicando lesão cerebral ou aumento da pressão intracraniana", "O Sinal de Fox é uma descoloração azulada ao redor do umbigo, associada a gravidez ectópica rota", "O Sinal de Fox é caracterizado por dor ao levantamento do braço contra resistência, sugerindo tendinite do manguito rotador"],
     correctIndex: 0,
@@ -1002,7 +993,7 @@ const MEDICAL_AVATARS = [
   {
     id: 'iamspe_2024_003',
     cycle: 'Ciclo Clínico',
-    subject: 'Clínica Médica',
+    subject: 'Cardiologia',
     text: "Um homem de 55 anos sofre uma parada cardiorrespiratória durante esforço físico. Após o atendimento inicial, o eletrocardiograma mostra fibrilação ventricular como ritmo inicial. Qual é a causa cardíaca mais provável dessa parada cardiorrespiratória?",
     options: ["Miocardite viral, frequentemente associada a bloqueios cardíacos completos", "Infarto agudo do miocárdio, levando a isquemia miocárdica severa e arritmias malignas", "Taponamento cardíaco, causando colapso hemodinâmico por compressão do coração", "Dissecção aguda de aorta, resultando em tamponamento e colapso circulatório", "Síndrome do QT longo, predispondo à taquiarritmia polimórfica"],
     correctIndex: 1,
@@ -1020,7 +1011,7 @@ const MEDICAL_AVATARS = [
   {
     id: 'iamspe_2024_005',
     cycle: 'Ciclo Clínico',
-    subject: 'Clínica Médica',
+    subject: 'Cardiologia',
     text: "O BNP é um biomarcador amplamente utilizado na prática clínica para o diagnóstico e manejo da insuficiência cardíaca. Qual das seguintes afirmações sobre o uso do BNP é correta?",
     options: ["Níveis de BNP inferiores a 100 pg/mL praticamente excluem o diagnóstico de insuficiência cardíaca em pacientes com dispneia aguda", "O BNP é um marcador exclusivo para insuficiência cardíaca, não sendo relevante em outras condições cardiovasculares", "Níveis elevados de BNP não têm correlação com a gravidade da insuficiência cardíaca ou com desfechos clínicos", "O BNP deve ser utilizado isoladamente para o diagnóstico da insuficiência cardíaca, sem considerar outros exames clínicos", "A dosagem de BNP é irrelevante para o acompanhamento da resposta ao tratamento em pacientes com insuficiência cardíaca"],
     correctIndex: 0,
@@ -1029,7 +1020,7 @@ const MEDICAL_AVATARS = [
   {
     id: 'iamspe_2024_006',
     cycle: 'Ciclo Clínico',
-    subject: 'Clínica Médica',
+    subject: 'Cardiologia',
     text: "O mecanismo de ação da nitroglicerina como vasodilatador em doenças vasculares, incluindo sua aplicação clínica, é descrito corretamente por:",
     options: ["A nitroglicerina é um antagonista dos receptores de angiotensina II, reduzindo a resistência vascular periférica e a pressão arterial", "A nitroglicerina atua como um bloqueador dos canais de cálcio, diminuindo a entrada de cálcio nas células musculares lisas e causando vasodilatação", "A nitroglicerina é um inibidor da enzima fosfodiesterase-5 (PDE-5), aumentando os níveis de GMPc e promovendo a vasodilatação nas artérias coronárias", "A nitroglicerina é um doador de óxido nítrico (NO), que estimula a produção de GMPc nas células musculares lisas, levando à relaxação e vasodilatação dos vasos sanguíneos", "A nitroglicerina atua como um bloqueador dos receptores beta-adrenérgicos, reduzindo a frequência cardíaca e promovendo a vasodilatação"],
     correctIndex: 3,
@@ -1038,7 +1029,7 @@ const MEDICAL_AVATARS = [
   {
     id: 'iamspe_2024_007',
     cycle: 'Ciclo Clínico',
-    subject: 'Clínica Médica',
+    subject: 'Cardiologia',
     text: "O efeito anti-hipertensivo da Candesartana é mediado por:",
     options: ["Inibição da enzima conversora de angiotensina", "Bloqueio competitivo dos receptores AT1", "Estimulação dos receptores de bradicinina", "Redução da expressão do gene da proteína Gq/11", "Aumento da atividade da enzima vasopeptidase"],
     correctIndex: 1,
@@ -1047,7 +1038,7 @@ const MEDICAL_AVATARS = [
   {
     id: 'iamspe_2024_008',
     cycle: 'Ciclo Clínico',
-    subject: 'Clínica Médica',
+    subject: 'Endocrinologia',
     text: "Na fisiopatogenia do Diabetes Tipo 2, qual das seguintes afirmações descreve corretamente os mecanismos que levam à resistência à insulina?",
     options: ["A resistência à insulina no Diabetes Tipo 2 é mediada pela inflamação crônica e aumento dos níveis de citocinas inflamatórias, como TNF-α e IL-6, que interferem na sinalização da insulina nos tecidos periféricos", "A resistência à insulina é primariamente causada por uma mutação genética no receptor de insulina, resultando em uma resposta imune que destrói as células β pancreáticas", "A resistência à insulina é um processo autoimune onde os anticorpos atacam diretamente as células produtoras de insulina, levando à deficiência absoluta de insulina", "O aumento da síntese de glicose hepática devido à hiperatividade da via de gluconeogênese é o único fator contribuinte para a resistência à insulina no Diabetes Tipo 2", "A resistência à insulina é exclusivamente resultado de uma deficiência na secreção de insulina pelas células β pancreáticas, sem influência de fatores periféricos"],
     correctIndex: 0,
@@ -1056,7 +1047,7 @@ const MEDICAL_AVATARS = [
   {
     id: 'iamspe_2024_009',
     cycle: 'Ciclo Clínico',
-    subject: 'Clínica Médica',
+    subject: 'Pneumologia',
     text: "No diagnóstico da Doença Pulmonar Obstrutiva Crônica (DPOC), a espirometria é considerada o exame padrão-ouro porque:",
     options: ["Identifica o grau de hiperinsuflação pulmonar pela medida da capacidade residual funcional", "Diferencia o padrão obstrutivo do padrão restritivo, com base no comportamento dos volumes", "Avalia a capacidade vital forçada (CVF) e o volume expiratório forçado no 1º segundo (VEF1)", "Mensura a resistência das vias aéreas e a complacência pulmonar, característicos da DPOC", "Quantifica a reversibilidade do distúrbio ventilatório após broncodilatador, confirmando o diagnóstico"],
     correctIndex: 2,
@@ -1065,7 +1056,7 @@ const MEDICAL_AVATARS = [
   {
     id: 'iamspe_2024_010',
     cycle: 'Ciclo Clínico',
-    subject: 'Clínica Médica',
+    subject: 'Pneumologia',
     text: "Paciente de 50 anos, com histórico de dispneia progressiva aos esforços, apresenta pressão arterial pulmonar média de 35 mmHg em repouso, medida por cateterismo cardíaco direito. Após investigação, é diagnosticada com Hipertensão Arterial Pulmonar (HAP) idiopática. Qual dos seguintes mecanismos fisiopatológicos é o principal responsável pela elevação da pressão arterial pulmonar na HAP?",
     options: ["Aumento da pressão venosa pulmonar por disfunção ventricular esquerda", "Aumento do débito cardíaco por shunt intracardíaco esquerda-direita", "Obstrução mecânica da vasculatura pulmonar por êmbolos", "Hipoventilação alveolar com hipoxemia crônica", "Vasoconstrição e remodelamento vascular pulmonar"],
     correctIndex: 4,
@@ -1074,7 +1065,7 @@ const MEDICAL_AVATARS = [
   {
     id: 'iamspe_2024_011',
     cycle: 'Ciclo Clínico',
-    subject: 'Clínica Médica',
+    subject: 'Infectologia',
     text: "Paciente masculino, 45 anos, portador de pneumonia adquirida na comunidade com isolamento de Streptococcus pneumoniae resistente à penicilina (MIC >2μg/mL) em hemocultura, inicia tratamento com levofloxacino 750mg/dia. Após 72 horas, evolui com piora clínica e nova hemocultura evidencia aumento da MIC para levofloxacino de 0,5 para 4μg/mL. Na análise dos mecanismos moleculares de resistência às fluoroquinolonas e suas implicações terapêuticas, selecione a afirmativa correta:",
     options: ["A mutação isolada no gene parC da topoisomerase IV confere resistência de alto nível à levofloxacino por ser seu alvo primário em gram-positivos, mantendo sensibilidade à delafloxacino", "O desenvolvimento de resistência durante terapia sugere seleção de subpopulação com mutação prévia em gyrA, sendo improvável mutação de novo em parC no período de 72 horas", "A presença de bomba de efluxo PmrA aumenta a CIM em 4 vezes quando associada à mutação em parC, mantendo atividade bactericida da moxifloxacino pela maior afinidade à DNA girase", "O mecanismo stepwise de resistência inicia com mutação em gyrA seguida de parC em gram- positivos, exigindo dupla mutação para CIM >4μg/mL em isolados selvagens", "A resistência por proteína Qnr plasmidial protege tanto a topoisomerase IV quanto a DNA girase, conferindo resistência cruzada a todas as quinolonas independente da geração"],
     correctIndex: 3,
@@ -1083,7 +1074,7 @@ const MEDICAL_AVATARS = [
   {
     id: 'iamspe_2024_012',
     cycle: 'Ciclo Clínico',
-    subject: 'Clínica Médica',
+    subject: 'Infectologia',
     text: "No tratamento de infecção do trato urinário em gestantes, o antibiótico de escolha é considerado seguro em boa parte da gestação, mas deve ser evitado próximo ao termo devido ao risco de anemia hemolítica neonatal é:",
     options: ["Cefalexina", "Ciprofloxacino", "Sulfametoxazol-trimetoprima", "Doxiciclina", "Nitrofurantoína"],
     correctIndex: 4,
@@ -1092,7 +1083,7 @@ const MEDICAL_AVATARS = [
   {
     id: 'iamspe_2024_013',
     cycle: 'Ciclo Clínico',
-    subject: 'Clínica Médica',
+    subject: 'Infectologia',
     text: "Na abordagem clínica da gonorreia em adultos jovens, preencha corretamente as lacunas com os métodos diagnósticos e tratamentos indicados: _____ 1: O diagnóstico da infecção por Neisseria gonorrhoeae é confirmado principalmente pelo método laboratorial que utiliza amplificação de ácidos nucleicos. ______ 2: O tratamento de primeira linha para gonorreia não complicada é realizado com o uso de um antibiótico de terceira geração, administrado por via intramuscular em dose única. As lacunas são corretamente preenchidas, respectivamente, por:",
     options: ["PCR, Ceftriaxona", "Cultura bacteriana, Azitromicina", "Teste rápido imunocromatográfico, Doxiciclina", "PCR, Amoxicilina", "Cultura bacteriana, Cefixima"],
     correctIndex: 0,
@@ -1101,7 +1092,7 @@ const MEDICAL_AVATARS = [
   {
     id: 'iamspe_2024_014',
     cycle: 'Ciclo Clínico',
-    subject: 'Clínica Médica',
+    subject: 'Psiquiatria',
     text: "Paciente feminina, 25 anos, com diagnóstico de Transtorno Depressivo Maior, inicia tratamento com Fluoxetina 20mg/dia. Qual o principal mecanismo de ação da Fluoxetina na melhora dos sintomas depressivos?",
     options: ["Inibição da recaptação de serotonina na fenda sináptica, aumentando sua disponibilidade", "Bloqueio dos receptores dopaminérgicos D2, reduzindo a atividade dopaminérgica", "Aumento da liberação de noradrenalina na fenda sináptica, promovendo efeito estimulante", "Inibição da enzima monoaminoxidase (MAO), aumentando a disponibilidade de neurotransmissores", "Potencialização da ação do GABA, principal neurotransmissor inibitório do sistema nervoso central"],
     correctIndex: 0,
@@ -1110,7 +1101,7 @@ const MEDICAL_AVATARS = [
   {
     id: 'iamspe_2024_015',
     cycle: 'Ciclo Clínico',
-    subject: 'Clínica Médica',
+    subject: 'Reumatologia',
     text: "Preencha corretamente as lacunas com os nomes dos fármacos associados às seguintes descrições: _____ 1: Este medicamento é um potente inibidor da ciclooxigenase-1 (COX-1), reduzindo a síntese de prostaglandinas, sendo especialmente indicado em crises agudas de gota devido à sua ação anti-inflamatória de rápida resposta. ______ 2: Este fármaco inibe ambas as isoformas da ciclooxigenase (COX-1 e COX-2) de forma não seletiva, possuindo uma longa meia-vida que o torna ideal para condições inflamatórias crônicas como artrite reumatoide e osteoartrite. As lacunas são corretamente preenchidas, respectivamente, por:",
     options: ["Piroxicam, Indometacina", "Celecoxibe, Indometacina", "Naproxeno, Piroxicam", "Indometacina, Piroxicam", "Diclofenaco, Naproxeno"],
     correctIndex: 3,
@@ -1119,7 +1110,7 @@ const MEDICAL_AVATARS = [
   {
     id: 'iamspe_2024_016',
     cycle: 'Ciclo Clínico',
-    subject: 'Clínica Médica',
+    subject: 'Gastroenterologia',
     text: "No diagnóstico de insuficiência hepática aguda, o exame laboratorial que fornece uma medida direta da capacidade sintética do fígado e é fundamental para avaliar o prognóstico é:",
     options: ["Dosagem do tempo de protrombina (TP) e cálculo do INR", "Dosagem de bilirrubina direta e indireta", "Níveis séricos de aspartato aminotransferase (AST) e alanina aminotransferase (ALT)", "Albumina sérica", "Ultrassonografia abdominal com Doppler de vasos hepáticos"],
     correctIndex: 0,
@@ -1128,7 +1119,7 @@ const MEDICAL_AVATARS = [
   {
     id: 'iamspe_2024_017',
     cycle: 'Ciclo Clínico',
-    subject: 'Clínica Médica',
+    subject: 'Gastroenterologia',
     text: "O paciente de 35 anos apresenta gastrite crônica associada à infecção por Helicobacter pylori. Qual é o regime terapêutico recomendado?",
     options: ["Claritromicina 500mg + Metronidazol 500mg + Lansoprazol 30mg, durante 10 dias", "Amoxicilina 1g + Metronidazol 500mg + Pantoprazol 40mg, durante 14 dias", "Levofloxacino 500mg + Amoxicilina 1g + Esomeprazol 40mg, durante 10 dias", "Claritromicina 500mg + Amoxicilina 1g + Omeprazol 20mg, durante 7 dias", "Amoxicilina 1g + Claritromicina 500mg + Omeprazol 20mg, durante 14 dias"],
     correctIndex: 4,
@@ -1137,7 +1128,7 @@ const MEDICAL_AVATARS = [
   {
     id: 'iamspe_2024_018',
     cycle: 'Ciclo Clínico',
-    subject: 'Clínica Médica',
+    subject: 'Endocrinologia',
     text: "Na administração de insulina Lantus (glargina) em pacientes com Diabetes Tipo 1, qual das seguintes afirmações descreve corretamente seu mecanismo de ação e aplicação clínica?",
     options: ["A insulina Lantus é uma insulina de ação rápida que atinge seu pico de ação em 30 minutos, sendo ideal para controle glicêmico pós-prandial imediato", "A insulina Lantus é uma insulina basal de ação prolongada que fornece níveis constantes de insulina por aproximadamente 24 horas, sem picos pronunciados, auxiliando no controle glicêmico basal", "A insulina Lantus é uma insulina de ação intermediária que deve ser administrada duas vezes ao dia para manter o controle glicêmico basal", "A insulina Lantus é um análogo de insulina que deve ser misturado com insulina de ação rápida para alcançar um efeito prolongado e um controle glicêmico pós-prandial", "A insulina Lantus é uma insulina de ação ultra-rápida que atinge seu pico de ação em menos de 15 minutos, sendo ideal para correção rápida de hiperglicemia"],
     correctIndex: 1,
@@ -1146,7 +1137,7 @@ const MEDICAL_AVATARS = [
   {
     id: 'iamspe_2024_019',
     cycle: 'Ciclo Clínico',
-    subject: 'Clínica Médica',
+    subject: 'Nefrologia',
     text: "Na avaliação clínica de um paciente com doença renal crônica, a presença de anemia está associada à/ao:",
     options: ["Déficit de ferro decorrente de perda sanguínea oculta", "Elevação dos níveis de ureia e creatinina séricos", "Redução da produção de eritropoietina pelo rim", "Distúrbios eletrolíticos, como hipercalemia e hiponatremia", "Aumento da pressão arterial sistêmica e risco cardiovascular"],
     correctIndex: 2,
@@ -1155,7 +1146,7 @@ const MEDICAL_AVATARS = [
   {
     id: 'iamspe_2024_020',
     cycle: 'Ciclo Clínico',
-    subject: 'Clínica Médica',
+    subject: 'Pneumologia',
     text: "Na fisiopatogenia da asma brônquica, diversos mecanismos imunológicos e inflamatórios contribuem para a obstrução das vias aéreas. Qual das seguintes afirmações melhor descreve um dos principais mecanismos envolvidos na resposta asmática?",
     options: ["A ativação de linfócitos T CD4+ do tipo Th1 é predominante e leva à produção de citocinas inflamatórias que causam broncoconstrição", "A liberação de mediadores inflamatórios pelos mastócitos, como histamina e leucotrienos, resulta em broncoconstrição e aumento da permeabilidade vascular", "A presença de neutrófilos é a principal característica da inflamação nas vias aéreas, contribuindo para a remodelação crônica das mesmas", "A produção de IgG em resposta a alérgenos é o principal fator que desencadeia a hiperresponsividade brônquica", "O aumento da secreção de muco é exclusivamente causado pela ativação de linfócitos T CD4+ do tipo Th17"],
     correctIndex: 1,
