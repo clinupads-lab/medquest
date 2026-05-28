@@ -143,50 +143,55 @@ interface SessionResult {
 
 const HIERARCHY: Record<Cycle, Partial<Record<Subject, string[]>>> = {
   'Ciclo Básico': {
+    // Com questões
     'Anatomia': [],
     'Fisiologia': [],
     'Bioquímica': [],
     'Histologia': [],
     'Embriologia': [],
     'Microbiologia': [],
-    'Parasitologia': [],
     'Imunologia': [],
     'Genética': [],
     'Farmacologia': [],
+    // Em breve
     'Patologia': [],
+    'Parasitologia': [],
     'Semiologia': [],
     'Epidemiologia': []
   },
   'Ciclo Clínico': {
-    'Clínica Médica': [],
-    'Clínica Cirúrgica': [],
-    'Cardiologia': [],
-    'Neurologia': [],
-    'Pneumologia': [],
-    'Gastroenterologia': [],
-    'Endocrinologia': [],
-    'Nefrologia': [],
-    'Reumatologia': [],
-    'Hematologia': [],
-    'Infectologia': [],
+    // Grandes blocos (≥20 questões)
     'Ginecologia & Obstetrícia': [],
     'Pediatria': [],
+    'Medicina de Família/SUS': [],
+    'Cirurgia Geral': [],
+    // Especialidades com questões
+    'Cardiologia': [],
+    'Pneumologia': [],
+    'Gastroenterologia': [],
+    'Infectologia': [],
+    'Endocrinologia': [],
+    'Clínica Médica': [],
+    'Clínica Cirúrgica': [],
     'Psiquiatria': [],
+    'Reumatologia': [],
+    'Nefrologia': [],
+    // Em breve
+    'Neurologia': [],
+    'Hematologia': [],
     'Dermatologia': [],
     'Oftalmologia': [],
     'Otorrinolaringologia': [],
-    'Medicina de Família/SUS': [],
-    'Cirurgia Geral': [],
     'Ortopedia': [],
     'Urologia': [],
     'Geriatria': [],
     'Radiologia': []
   },
   'Internato': {
-    'Medicina Intensiva': [],
-    'Neonatologia': [],
     'Urgência e Emergência': [],
+    'Medicina Intensiva': [],
     'Anestesiologia': [],
+    'Neonatologia': [],
     'Traumatologia-Ortopedia': [],
     'Cirurgia Vascular': [],
     'Neurocirurgia': []
