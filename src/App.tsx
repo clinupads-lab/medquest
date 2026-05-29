@@ -3004,6 +3004,7 @@ export default function App() {
   const [selectedTrack, setSelectedTrack] = useState<'estudante' | 'residencia' | null>(null);
   const [showBenefits, setShowBenefits] = useState(false);
   const [selectedBanca, setSelectedBanca] = useState<string | null>(null);
+  const [quizBancaFilter, setQuizBancaFilter] = useState<string | null>(null);
   const [bancaSearch, setBancaSearch] = useState('');
   const [bancaPage, setBancaPage] = useState(0);
   const [bancaUfFilter, setBancaUfFilter] = useState<string>('TODAS');
@@ -3220,9 +3221,9 @@ export default function App() {
       if (activeSubSubject) {
         filtered = filtered.filter(q => q.subSubject === activeSubSubject);
       }
-      // Filter by banca if one is selected
-      if (selectedBanca) {
-        const bancaFiltered = filtered.filter(q => q.banca === selectedBanca);
+      // Filter by banca if one is selected in the quiz banca filter
+      if (quizBancaFilter) {
+        const bancaFiltered = filtered.filter(q => q.banca === quizBancaFilter);
         if (bancaFiltered.length > 0) filtered = bancaFiltered;
       }
     }
@@ -4103,17 +4104,17 @@ export default function App() {
                     {['IAMSPE', 'CERMAM'].map(b => (
                       <button
                         key={b}
-                        onClick={() => setSelectedBanca(selectedBanca === b ? null : b)}
+                        onClick={() => setQuizBancaFilter(quizBancaFilter === b ? null : b)}
                         className={`px-3 py-1 rounded-lg text-[10px] font-black transition-all border ${
-                          selectedBanca === b
+                          quizBancaFilter === b
                             ? 'bg-brand-primary text-white border-brand-primary shadow'
                             : 'bg-white text-slate-500 border-slate-200 hover:border-brand-primary/40'
                         }`}
                       >
-                        {b} {selectedBanca === b && '✕'}
+                        {b} {quizBancaFilter === b && '✕'}
                       </button>
                     ))}
-                    {selectedBanca && (
+                    {quizBancaFilter && (
                       <span className="text-[9px] text-slate-400 italic">clique novamente para remover</span>
                     )}
                   </div>
@@ -4123,8 +4124,8 @@ export default function App() {
                     <div className="w-full grid grid-cols-2 md:grid-cols-3 gap-y-10 gap-x-4">
                       {(Object.keys(HIERARCHY[selectedCycle]) as Subject[]).map((subj, idx) => {
                         const allQs = QUESTIONS.filter(q => q.subject === subj);
-                        const qCount = selectedBanca
-                          ? allQs.filter(q => q.banca === selectedBanca).length
+                        const qCount = quizBancaFilter
+                          ? (allQs.filter(q => q.banca === quizBancaFilter).length || allQs.length)
                           : allQs.length;
                         return (
                           <GamePathNode
