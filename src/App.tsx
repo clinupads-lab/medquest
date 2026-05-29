@@ -2111,7 +2111,7 @@ export default function App() {
     if (revision) {
       filtered = QUESTIONS.filter(q => user.missedQuestionIds.includes(q.id));
       if (filtered.length === 0) filtered = [...QUESTIONS].slice(0, 5);
-    } else if (selectedTrack === 'estudante') {
+    } else if (selectedTrack === 'estudante' || selectedTrack === 'residencia') {
       filtered = filtered.filter(q => q.cycle === selectedCycle && q.subject === activeSubject);
       if (activeSubSubject) {
         filtered = filtered.filter(q => q.subSubject === activeSubSubject);
