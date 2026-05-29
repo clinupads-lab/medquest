@@ -3204,6 +3204,24 @@ export default function App() {
     setView('home');
   };
 
+  const startQuizWithPool = (pool: Question[]) => {
+    setIsThinking(true);
+    setIsRevisionMode(false);
+    const selected = [...pool].sort(() => Math.random() - 0.5).slice(0, 10);
+    setTimeout(() => {
+      setIsThinking(false);
+      setActiveQuestions(selected);
+      setSessionResults({ correct: 0, total: selected.length, xpGained: 0 });
+      setSessionHistory([]);
+      setCurrentQuestionIndex(0);
+      setSelectedOption(null);
+      setCombo(0);
+      setQuizTimer(0);
+      setIsFeedbackVisible(false);
+      setView('quiz');
+    }, 800);
+  };
+
   const startQuiz = (revision: boolean = false, overrideSubject?: Subject, overrideSubSubject?: string | null) => {
     setIsThinking(true);
     setIsRevisionMode(revision);
@@ -4124,9 +4142,8 @@ export default function App() {
                     <div className="w-full grid grid-cols-2 md:grid-cols-3 gap-y-10 gap-x-4">
                       {(Object.keys(HIERARCHY[selectedCycle]) as Subject[]).map((subj, idx) => {
                         const allQs = QUESTIONS.filter(q => q.subject === subj);
-                        const qCount = quizBancaFilter
-                          ? (allQs.filter(q => q.banca === quizBancaFilter).length || allQs.length)
-                          : allQs.length;
+                        const bancaQs = quizBancaFilter ? allQs.filter(q => q.banca === quizBancaFilter) : allQs;
+                        const pool = bancaQs.length > 0 ? bancaQs : allQs;
                         return (
                           <GamePathNode
                             key={`path-${subj}-${idx}`}
@@ -4134,11 +4151,13 @@ export default function App() {
                             progress={Number(user.mastery[subj] || 0)}
                             index={idx}
                             isSelected={selectedSubject === subj}
-                            questionCount={qCount}
+                            questionCount={pool.length}
                             onClick={() => {
-                              setSelectedSubject(subj);
-                              setSelectedSubSubject(null);
-                              if (qCount > 0) startQuiz(false, subj, null);
+                              if (pool.length > 0) {
+                                setSelectedSubject(subj);
+                                setSelectedSubSubject(null);
+                                startQuizWithPool(pool);
+                              }
                             }}
                           />
                         );
@@ -4395,7 +4414,7 @@ export default function App() {
                       <div className="py-8 px-5 flex flex-col items-center bg-white rounded-[2.5rem] border border-slate-200/80 shadow-xl overflow-visible">
                         <div className="w-full grid grid-cols-2 md:grid-cols-3 gap-y-8 gap-x-4">
                           {(Object.keys(HIERARCHY[selectedCycle as Cycle]) as Subject[]).map((subj, idx) => {
-                            const qc = QUESTIONS.filter(q => q.subject === subj).length;
+                            const pool2 = QUESTIONS.filter(q => q.subject === subj);
                             return (
                               <GamePathNode
                                 key={`res-path-${subj}-${idx}`}
@@ -4403,8 +4422,8 @@ export default function App() {
                                 progress={Number(user.mastery[subj] || 0)}
                                 index={idx}
                                 isSelected={selectedSubject === subj}
-                                questionCount={qc}
-                                onClick={() => { if (qc > 0) { setSelectedSubject(subj); setSelectedSubSubject(null); startQuiz(false, subj, null); } }}
+                                questionCount={pool2.length}
+                                onClick={() => { if (pool2.length > 0) { setSelectedSubject(subj); setSelectedSubSubject(null); startQuizWithPool(pool2); } }}
                               />
                             );
                           })}
