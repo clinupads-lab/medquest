@@ -652,15 +652,17 @@ interface GamePathNodeProps {
   index: number;
   isSelected: boolean;
   onClick: () => void;
+  questionCount?: number;
   key?: string | number;
 }
 
-const GamePathNode = ({ 
-  subject, 
-  progress, 
-  index, 
-  isSelected, 
-  onClick 
+const GamePathNode = ({
+  subject,
+  progress,
+  index,
+  isSelected,
+  onClick,
+  questionCount = 0,
 }: GamePathNodeProps) => {
   const iconData = SUBJECT_ICONS[subject] || { icon: BookOpen, color: 'bg-slate-400', ringColor: '#CBD5E1' };
   const Icon = iconData.icon;
@@ -746,12 +748,21 @@ const GamePathNode = ({
       </div>
       
       {/* Label - Below the icon */}
-      <div className="text-center">
+      <div className="text-center flex flex-col items-center gap-1">
         <h4 className={`text-[10px] sm:text-[11px] font-black uppercase tracking-tight leading-tight max-w-[110px] break-words ${
           isSelected ? 'text-slate-900 scale-105' : 'text-slate-500'
         } transition-all`}>
           {subject}
         </h4>
+        {questionCount > 0 ? (
+          <span className="text-[9px] font-black px-2 py-0.5 rounded-full bg-brand-primary/10 text-brand-primary border border-brand-primary/20">
+            {questionCount} {questionCount === 1 ? 'questão' : 'questões'}
+          </span>
+        ) : (
+          <span className="text-[9px] font-bold px-2 py-0.5 rounded-full bg-slate-100 text-slate-400 border border-slate-200">
+            em breve
+          </span>
+        )}
       </div>
     </motion.div>
   );
@@ -2959,7 +2970,7 @@ export default function App() {
 
                   {/* Cycle Toggle */}
                   <div className="flex bg-slate-100 p-1 rounded-2xl w-fit mx-auto shadow-inner">
-                    {(['Ciclo Básico', 'Ciclo Clínico'] as Cycle[]).map((cycle) => (
+                    {(['Ciclo Básico', 'Ciclo Clínico', 'Internato'] as Cycle[]).map((cycle) => (
                       <button
                         key={cycle}
                         onClick={() => {
@@ -2968,7 +2979,7 @@ export default function App() {
                           setSelectedSubject(firstSubj);
                           setSelectedSubSubject(null);
                         }}
-                        className={`px-6 py-2.5 rounded-xl text-xs font-black transition-all ${
+                        className={`px-5 py-2.5 rounded-xl text-xs font-black transition-all whitespace-nowrap ${
                           selectedCycle === cycle ? 'bg-white text-brand-primary shadow-md' : 'text-slate-400 hover:text-slate-600'
                         }`}
                       >
@@ -2980,16 +2991,24 @@ export default function App() {
                   {/* Subject Grid */}
                   <div className="py-10 px-6 flex flex-col items-center bg-white rounded-[3rem] border border-slate-200/80 shadow-xl overflow-visible">
                     <div className="w-full grid grid-cols-2 md:grid-cols-3 gap-y-10 gap-x-4">
-                      {(Object.keys(HIERARCHY[selectedCycle]) as Subject[]).map((subj, idx) => (
-                        <GamePathNode
-                          key={`path-${subj}-${idx}`}
-                          subject={subj}
-                          progress={Number(user.mastery[subj] || 0)}
-                          index={idx}
-                          isSelected={selectedSubject === subj}
-                          onClick={() => { setSelectedSubject(subj); setSelectedSubSubject(null); startQuiz(false, subj, null); }}
-                        />
-                      ))}
+                      {(Object.keys(HIERARCHY[selectedCycle]) as Subject[]).map((subj, idx) => {
+                        const qCount = QUESTIONS.filter(q => q.cycle === selectedCycle && q.subject === subj).length;
+                        return (
+                          <GamePathNode
+                            key={`path-${subj}-${idx}`}
+                            subject={subj}
+                            progress={Number(user.mastery[subj] || 0)}
+                            index={idx}
+                            isSelected={selectedSubject === subj}
+                            questionCount={qCount}
+                            onClick={() => {
+                              setSelectedSubject(subj);
+                              setSelectedSubSubject(null);
+                              if (qCount > 0) startQuiz(false, subj, null);
+                            }}
+                          />
+                        );
+                      })}
                     </div>
                   </div>
 
