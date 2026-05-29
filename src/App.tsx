@@ -109,6 +109,7 @@ interface Question {
   cycle: Cycle;
   subject: Subject;
   subSubject?: string;
+  banca?: string;
   text: string;
   options: string[];
   correctIndex: number;
@@ -990,6 +991,7 @@ const MEDICAL_AVATARS = [
   // -- IAMSPE 02/2024 --
   {
     id: 'iamspe_2024_001',
+    banca: 'IAMSPE',
     cycle: 'Ciclo Clínico',
     subject: 'Pneumologia',
     text: "Um paciente de 28 anos procura atendimento com queixas de dispneia aos esforços, sibilos e tosse seca. Ao exame físico, não há alterações relevantes. Qual o exame complementar mais indicado para confirmar o diagnóstico de asma nesse caso?",
@@ -999,6 +1001,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'iamspe_2024_002',
+    banca: 'IAMSPE',
     cycle: 'Ciclo Clínico',
     subject: 'Gastroenterologia',
     text: "Qual das seguintes afirmações descreve corretamente o Sinal de Fox e sua relevância no exame físico para diagnóstico diferencial em emergência?",
@@ -1008,6 +1011,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'iamspe_2024_003',
+    banca: 'IAMSPE',
     cycle: 'Ciclo Clínico',
     subject: 'Cardiologia',
     text: "Um homem de 55 anos sofre uma parada cardiorrespiratória durante esforço físico. Após o atendimento inicial, o eletrocardiograma mostra fibrilação ventricular como ritmo inicial. Qual é a causa cardíaca mais provável dessa parada cardiorrespiratória?",
@@ -1017,6 +1021,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'iamspe_2024_004',
+    banca: 'IAMSPE',
     cycle: 'Ciclo Clínico',
     subject: 'Clínica Médica',
     text: "O propofol é um dos agentes anestésicos intravenosos mais utilizados atualmente. Qual o principal mecanismo de ação do propofol que explica seu efeito hipnótico?",
@@ -1026,6 +1031,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'iamspe_2024_005',
+    banca: 'IAMSPE',
     cycle: 'Ciclo Clínico',
     subject: 'Cardiologia',
     text: "O BNP é um biomarcador amplamente utilizado na prática clínica para o diagnóstico e manejo da insuficiência cardíaca. Qual das seguintes afirmações sobre o uso do BNP é correta?",
@@ -1035,6 +1041,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'iamspe_2024_006',
+    banca: 'IAMSPE',
     cycle: 'Ciclo Clínico',
     subject: 'Cardiologia',
     text: "O mecanismo de ação da nitroglicerina como vasodilatador em doenças vasculares, incluindo sua aplicação clínica, é descrito corretamente por:",
@@ -1044,6 +1051,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'iamspe_2024_007',
+    banca: 'IAMSPE',
     cycle: 'Ciclo Clínico',
     subject: 'Cardiologia',
     text: "O efeito anti-hipertensivo da Candesartana é mediado por:",
@@ -1053,6 +1061,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'iamspe_2024_008',
+    banca: 'IAMSPE',
     cycle: 'Ciclo Clínico',
     subject: 'Endocrinologia',
     text: "Na fisiopatogenia do Diabetes Tipo 2, qual das seguintes afirmações descreve corretamente os mecanismos que levam à resistência à insulina?",
@@ -1062,6 +1071,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'iamspe_2024_009',
+    banca: 'IAMSPE',
     cycle: 'Ciclo Clínico',
     subject: 'Pneumologia',
     text: "No diagnóstico da Doença Pulmonar Obstrutiva Crônica (DPOC), a espirometria é considerada o exame padrão-ouro porque:",
@@ -1071,6 +1081,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'iamspe_2024_010',
+    banca: 'IAMSPE',
     cycle: 'Ciclo Clínico',
     subject: 'Pneumologia',
     text: "Paciente de 50 anos, com histórico de dispneia progressiva aos esforços, apresenta pressão arterial pulmonar média de 35 mmHg em repouso, medida por cateterismo cardíaco direito. Após investigação, é diagnosticada com Hipertensão Arterial Pulmonar (HAP) idiopática. Qual dos seguintes mecanismos fisiopatológicos é o principal responsável pela elevação da pressão arterial pulmonar na HAP?",
@@ -1080,6 +1091,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'iamspe_2024_011',
+    banca: 'IAMSPE',
     cycle: 'Ciclo Clínico',
     subject: 'Infectologia',
     text: "Paciente masculino, 45 anos, portador de pneumonia adquirida na comunidade com isolamento de Streptococcus pneumoniae resistente à penicilina (MIC >2μg/mL) em hemocultura, inicia tratamento com levofloxacino 750mg/dia. Após 72 horas, evolui com piora clínica e nova hemocultura evidencia aumento da MIC para levofloxacino de 0,5 para 4μg/mL. Na análise dos mecanismos moleculares de resistência às fluoroquinolonas e suas implicações terapêuticas, selecione a afirmativa correta:",
@@ -1089,6 +1101,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'iamspe_2024_012',
+    banca: 'IAMSPE',
     cycle: 'Ciclo Clínico',
     subject: 'Infectologia',
     text: "No tratamento de infecção do trato urinário em gestantes, o antibiótico de escolha é considerado seguro em boa parte da gestação, mas deve ser evitado próximo ao termo devido ao risco de anemia hemolítica neonatal é:",
@@ -1098,6 +1111,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'iamspe_2024_013',
+    banca: 'IAMSPE',
     cycle: 'Ciclo Clínico',
     subject: 'Infectologia',
     text: "Na abordagem clínica da gonorreia em adultos jovens, preencha corretamente as lacunas com os métodos diagnósticos e tratamentos indicados: _____ 1: O diagnóstico da infecção por Neisseria gonorrhoeae é confirmado principalmente pelo método laboratorial que utiliza amplificação de ácidos nucleicos. ______ 2: O tratamento de primeira linha para gonorreia não complicada é realizado com o uso de um antibiótico de terceira geração, administrado por via intramuscular em dose única. As lacunas são corretamente preenchidas, respectivamente, por:",
@@ -1107,6 +1121,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'iamspe_2024_014',
+    banca: 'IAMSPE',
     cycle: 'Ciclo Clínico',
     subject: 'Psiquiatria',
     text: "Paciente feminina, 25 anos, com diagnóstico de Transtorno Depressivo Maior, inicia tratamento com Fluoxetina 20mg/dia. Qual o principal mecanismo de ação da Fluoxetina na melhora dos sintomas depressivos?",
@@ -1116,6 +1131,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'iamspe_2024_015',
+    banca: 'IAMSPE',
     cycle: 'Ciclo Clínico',
     subject: 'Reumatologia',
     text: "Preencha corretamente as lacunas com os nomes dos fármacos associados às seguintes descrições: _____ 1: Este medicamento é um potente inibidor da ciclooxigenase-1 (COX-1), reduzindo a síntese de prostaglandinas, sendo especialmente indicado em crises agudas de gota devido à sua ação anti-inflamatória de rápida resposta. ______ 2: Este fármaco inibe ambas as isoformas da ciclooxigenase (COX-1 e COX-2) de forma não seletiva, possuindo uma longa meia-vida que o torna ideal para condições inflamatórias crônicas como artrite reumatoide e osteoartrite. As lacunas são corretamente preenchidas, respectivamente, por:",
@@ -1125,6 +1141,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'iamspe_2024_016',
+    banca: 'IAMSPE',
     cycle: 'Ciclo Clínico',
     subject: 'Gastroenterologia',
     text: "No diagnóstico de insuficiência hepática aguda, o exame laboratorial que fornece uma medida direta da capacidade sintética do fígado e é fundamental para avaliar o prognóstico é:",
@@ -1134,6 +1151,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'iamspe_2024_017',
+    banca: 'IAMSPE',
     cycle: 'Ciclo Clínico',
     subject: 'Gastroenterologia',
     text: "O paciente de 35 anos apresenta gastrite crônica associada à infecção por Helicobacter pylori. Qual é o regime terapêutico recomendado?",
@@ -1143,6 +1161,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'iamspe_2024_018',
+    banca: 'IAMSPE',
     cycle: 'Ciclo Clínico',
     subject: 'Endocrinologia',
     text: "Na administração de insulina Lantus (glargina) em pacientes com Diabetes Tipo 1, qual das seguintes afirmações descreve corretamente seu mecanismo de ação e aplicação clínica?",
@@ -1152,6 +1171,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'iamspe_2024_019',
+    banca: 'IAMSPE',
     cycle: 'Ciclo Clínico',
     subject: 'Nefrologia',
     text: "Na avaliação clínica de um paciente com doença renal crônica, a presença de anemia está associada à/ao:",
@@ -1161,6 +1181,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'iamspe_2024_020',
+    banca: 'IAMSPE',
     cycle: 'Ciclo Clínico',
     subject: 'Pneumologia',
     text: "Na fisiopatogenia da asma brônquica, diversos mecanismos imunológicos e inflamatórios contribuem para a obstrução das vias aéreas. Qual das seguintes afirmações melhor descreve um dos principais mecanismos envolvidos na resposta asmática?",
@@ -1170,6 +1191,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'iamspe_2024_021',
+    banca: 'IAMSPE',
     cycle: 'Ciclo Clínico',
     subject: 'Cirurgia Geral',
     text: "Uma paciente de 73 anos apresentou dor abdominal no hipocôndrio direito há seis dias, associada a mudança no padrão alimentar e perda de peso. Ao dar entrada no pronto-socorro, os exames laboratoriais mostraram os seguintes resultados: Hemoglobina 12,3 g/dL, leucócitos 12.630/mm³, bilirrubina total 1,3 mg/dL, bilirrubina direta 0,94 mg/dL, INR 1,0, fosfatase alcalina 215 U/L, GGT 748 U/L, amilase 97 U/L, ALT (TGP) 676 U/L, AST (TGO) 349 U/L, PCR 13,7 mg/L (VR<1,0), ureia 50 mg/dL e creatinina 1,25 mg/dL. Foi submetida à colecistectomia videolaparoscópica e optou-se por realizar uma colangiografia intraoperatória que resultou na imagem a seguir. Assinale a alternativa que corresponde ao diagnóstico encontrado:",
@@ -1179,6 +1201,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'iamspe_2024_022',
+    banca: 'IAMSPE',
     cycle: 'Ciclo Clínico',
     subject: 'Cirurgia Geral',
     text: "Conhecimento da anatomia da região inguinal é crucial para a realização de uma cirurgia segura e efetiva. Reconhecer e evitar lesão de estruturas nervosas no canal inguinal é a chave para evitar as chamadas inguinodínias. Qual nervo que, após cruzar o músculo oblíquo interno, passa pelo canal inguinal ao lado do cordão emergindo normalmente pelo orifício interno e terminando no orifício externo onde distribui fibras para inervação sensorial de raiz do pênis e escroto no homem e grandes lábios nas mulheres?",
@@ -1188,6 +1211,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'iamspe_2024_023',
+    banca: 'IAMSPE',
     cycle: 'Ciclo Clínico',
     subject: 'Cirurgia Geral',
     text: "Paciente masculino, 88 anos, portador de hipertensão e diabetes, com histórico de cateterismo e colocação de stent há 2 anos, em uso de anticoagulante oral, foi trazido pelo cuidador após queda da própria altura em casa. Não apresentou perda de consciência desde a queda até a chegada ao hospital. Ao exame físico, apresenta hematoma subgaleal frontal à esquerda, sem alterações no exame respiratório e sem dor abdominal. Qual deve ser a conduta inicial?",
@@ -1197,6 +1221,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'iamspe_2024_024',
+    banca: 'IAMSPE',
     cycle: 'Ciclo Clínico',
     subject: 'Cirurgia Geral',
     text: "Um paciente masculino de 85 anos deu entrada no pronto atendimento com queixa de icterícia há cerca de 5 dias e queda do estado geral. Relata perda ponderal de 1 kg na última semana, nega alteração das fezes, mas refere urina mais escura. Ao exame físico, o paciente está lúcido, orientado, ictérico (2+/4+), desidratado (1+/4+), com frequência cardíaca de 64 bpm. O abdome é globoso, flácido e indolor à palpação profunda, e o sinal de Murphy é negativo. Os exames laboratoriais mostraram os seguintes resultados: hemoglobina 15,1 g/dL, leucócitos 6040/mm³, plaquetas 175000/mm³, GGT 225 U/L, amilase 61 U/L, TGP 252 U/L, TGO 147 U/L, bilirrubina total 10,01 mg/dL, bilirrubina direta 7,68 mg/dL, bilirrubina indireta 2,33 mg/dL, PCR 0,9 mg/dL, ureia 36 mg/dL, potássio 4,2 mEq/L, creatinina 0,91 mg/dL e fosfatase alcalina 189 U/L. A ultrassonografia abdominal revelou vesícula biliar de forma e dimensões normais, paredes finas e regulares, com imagens calculosas em seu interior, móveis a mudança de decúbito medindo 0,6 a 0,9cm e discreta dilatação da vias biliares intra-hepáticas, sem visualização do fator obstrutivo. Com base nas informações acima, qual exame de imagem deve ser solicitado na sequência para melhor avaliação do quadro clínico do paciente?",
@@ -1206,6 +1231,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'iamspe_2024_025',
+    banca: 'IAMSPE',
     cycle: 'Ciclo Clínico',
     subject: 'Cirurgia Geral',
     text: "Paciente feminino de 72 anos com queixa de perda ponderal de 7% do seu peso em 2 meses sem mudança do padrão alimentar, dor abdominal, adinamia, deu entrada no pronto atendimento com quadro obstrutivo agudo e foi diagnosticada com tumor de sigmóide. Foi submetida a retossigmoidectomia na urgência com anastomose primária e durante pós operatório evoluiu com quadro de íleo mais prolongado. Considerando a doença de base, o porte da cirurgia e o quadro atual, assinale a alternativa incorreta:",
@@ -1215,6 +1241,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'iamspe_2024_026',
+    banca: 'IAMSPE',
     cycle: 'Ciclo Clínico',
     subject: 'Cirurgia Geral',
     text: "Paciente masculino, 54 anos, apresenta dor abdominal intensa irradiada para o tórax e dorso, com intensidade 10/10, associada a náuseas, porém sem vômitos. Ao exame físico, encontra-se afebril, anictérico, com PA 166x121 mmHg, FC 78 bpm, abdome globoso, tenso, doloroso difusamente, com ruídos hidroaéreos diminuídos. Exames laboratoriais: Hb19,4 g/dL, leucócitos 21.930/mm³, creatinina 2,81 mg/dL, ureia 92 mg/dL; bilirrubina total 1,45 mg/dL, bilirrubina direta 0,38 mg/dL, fosfatase alcalina 49 U/L, GGT 37 U/L, amilase 2234 U/L, lipase 2984 U/L, PCR 44 mg/L (VR<1,0). Aferida pressão intrabdominal 17mmHg. Realizada tomografia computadorizada para diagnóstico diferencial e obtida a imagem abaixo: Considerando o diagnóstico do paciente, a conduta imediata deve ser:",
@@ -1224,6 +1251,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'iamspe_2024_027',
+    banca: 'IAMSPE',
     cycle: 'Ciclo Clínico',
     subject: 'Cirurgia Geral',
     text: "Paciente masculino, 68 anos, chega ao pronto-socorro com dor abdominal epigástrica intensa e súbita, associada a distensão abdominal há 1 dia. Relata um episódio de vômito, mas nega sangramentos, febre ou perda ponderal. Relata histórico de AVC hemorrágico há 10 anos e hipertensão, em uso de losartana. Ao exame físico apresentava abdome distendido, doloroso difusamente, DB positivo. Exames laboratoriais: Hemoglobina: 10,7 g/dL, Leucócitos: 8.880/mm³, Plaquetas: 197.000/mm³, Creatinina: 1,9 mg/dL, Ureia: 64 mg/dL, Sódio: 134 mEq/L, Potássio: 3,7 mEq/L, TGO: 28 U/L, TGP: 29 U/L, Amilase: 96 U/L, PCR: 13,4 mg/L (VR<1,0), Magnésio: 1,7 mg/dL. Realizou RX de abdome agudo com a imagem abaixo: Qual deve ser a conduta imediata?",
@@ -1233,6 +1261,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'iamspe_2024_028',
+    banca: 'IAMSPE',
     cycle: 'Ciclo Clínico',
     subject: 'Cirurgia Geral',
     text: "Durante uma hemicolectomia direita, existe a demanda por ligadura vascular, anastomose intestinal, e fechamento da aponeurose da parede abdominal. Aponte a alternativa que contém os fios de sutura mais adequados para esses tempos cirúrgicos, respectivamente:",
@@ -1242,6 +1271,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'iamspe_2024_029',
+    banca: 'IAMSPE',
     cycle: 'Ciclo Clínico',
     subject: 'Cirurgia Geral',
     text: "Paciente feminina, 18 anos, procurou atendimento em UPA com queixa de dor abdominal em baixo ventre há 2 dias e recebeu antibioticoterapia com ciprofloxacina para infecção do trato urinário. Sem melhora dos sintomas após 3 dias de tratamento, procurou um hospital de referência apresentando piora da dor abdominal, além de náuseas e vômitos. Ao exame físico, a paciente estava descorada (1+/4+), desidratada (2+/4+), afebril ao toque, com abdome tenso e doloroso à palpação em flanco e fossa ilíaca direita, com sinal de Giordano negativo. Exames laboratoriais: Hemoglobina: 12,6 g/dL, Leucócitos: 16.260/mm³, Plaquetas: 260.000/mm³, Creatinina: 1,01 mg/dL, Ureia: 21,8 mg/dL, INR: 1,15, PCR: 23,9 mg/L (VR<1,0). Realizou tomografia computadorizada de abdome com contraste venoso para investigação que apresentou o seguinte achado. Dentre os diagnósticos diferenciais para esse caso, qual dos seguintes é o mais provável?",
@@ -1251,6 +1281,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'iamspe_2024_030',
+    banca: 'IAMSPE',
     cycle: 'Ciclo Clínico',
     subject: 'Cirurgia Geral',
     text: "Paciente feminina, 21 anos, após confraternização de fim de ano, apresenta sensação de alimento preso na garganta, odinofagia, sialorréia, regurgitação e náuseas (sem vômito). Compareceu ao pronto- socorro onde realizou exames laboratoriais e de imagem. Exames laboratoriais: Hemoglobina 11,1 g/dL, Leucócitos 6.730/mm³, Plaquetas 151.000/mm³, PCR 1,23 mg/L (VR<1,0), Creatinina 0,65 mg/dL, Ureia 24 mg/dL, Sódio 139 mEq/L, Potássio 4,0 mEq/L, Bilirrubina Total 0,23 mg/dL, Amilase 62 U/L, INR1,14. Endoscopia laudava esôfago com mucosa conservada até 20cm da ADS com laceração profunda onde encontra-se corpo estranho impactado. Retirado com auxílio de Roth Net sem intercorrências. Realizada também tomografia computadorizada de pescoço. Vide imagens abaixo. Qual deve ser a conduta imediata?",
@@ -1260,6 +1291,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'iamspe_2024_031',
+    banca: 'IAMSPE',
     cycle: 'Ciclo Clínico',
     subject: 'Cirurgia Geral',
     text: "Homem, 47 anos, se apresenta ao Pronto Socorro com dor em fossa ilíaca esquerda há 1 dia sem febre ou demais sintomas. Nega episódios semelhantes ou cirurgias prévias. No exame físico, está em bom estado geral, normocárdico, afebril, abdome flácido, com dor localizada em fossa ilíaca esquerda, sem dor à descompressão brusca. Hemoglobina 14,8 g/dL (normal 12-16g/dL), Leucócitos 8750 s/ desvio (normal 6-10 mil), Proteína C Reativa 9 mg/L (normal até 5 mg/L). Realizada Tomografia, que observou a seguinte imagem. Aponte o tratamento mais adequado:",
@@ -1269,6 +1301,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'iamspe_2024_032',
+    banca: 'IAMSPE',
     cycle: 'Ciclo Clínico',
     subject: 'Cirurgia Geral',
     text: "Mulher, 67 anos, deu entrada no Pronto Socorro com dor e edema de membro inferior direito associada a leve dispnéia. Tem antecedente de histerectomia com salpingo-ooforectomia bilateral videolaparoscópica por neoplasia de ovário há 6 dias, com alta hospitalar há 3 com medicação sintomática. À admissão, estava eupneica em ar ambiente, Sat O2 97%, PA 130 x 80 mmHg, Pulso 82 bpm. Ausculta pulmonar e cardíaca limpas. Abdome flácido, indolor, cicatrizes de bom aspecto. Edema de perna direita com dor à palpação dessa panturrilha, sem outras peculiaridades. Qual a primeira medida mais adequada para realização ainda no Pronto Socorro?",
@@ -1278,6 +1311,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'iamspe_2024_033',
+    banca: 'IAMSPE',
     cycle: 'Ciclo Clínico',
     subject: 'Cirurgia Geral',
     text: "Mulher, 52 anos, com dor abdominal e tumefação epigástrica há 4 horas, associada a náusea sem vômitos. Histórico de histerectomia laparotômica, herniorrafias umbilical e incisional suprapúbica. Ao exame físico, Regular estado geral, normocárdica, normotensa, desidratada 2+/4+. Abdome pouco distendido, com nodulação subcutânea dolorosa à meia distância entre cicatriz umbilical e apêndice xifóide, sem edema ou hiperemia, com alguma mobilidade sobre seu eixo em linha média da parede abdominal, compatível com hérnia não redutível. Com tal achado, assinale o tipo da hérnia referida, a complicação apresentada por sua clínica e sua respectiva conduta no Pronto Socorro:",
@@ -1287,6 +1321,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'iamspe_2024_034',
+    banca: 'IAMSPE',
     cycle: 'Ciclo Clínico',
     subject: 'Cirurgia Geral',
     text: "Sobre as herniorrafias inguinais não-laparoscópicas, assinale a alternativa que aponte a técnica cirúrgica com seu respectivo nome:",
@@ -1296,6 +1331,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'iamspe_2024_035',
+    banca: 'IAMSPE',
     cycle: 'Ciclo Clínico',
     subject: 'Cirurgia Geral',
     text: "Sexo feminino, 86 anos, hipertensa, diabética insulinodependente e com histórico de coronariopatia, é admitida no Pronto Socorro com história de dor em hipocôndrio direito há 4 dias, com piora progressiva associada a febre. À entrada, estava anictérica, hidratada, contactuante, plastrão doloroso em hipocôndrio direito, sinal de Murphy positivo. Ultrassonografia mostrou vesícula hiperdistendida, com cálculo impactado no infundíbulo e paredes delaminadas, e líquido pericolecístico, sem coleções ou dilatação de vias biliares. Exames laboratoriais com 21 mil leucócitos sem desvio, Plaquetas 95 mil, Proteína C Reativa 40mg/dL (VR<1,0). Bilirrubinas totais 1,5, Creatinina 1,8 mg/dL. Aponte o fator mais importante para considerar como Colecistite Aguda Grave segundo critérios de Tokyo 2018, e a conduta preconizada neste caso:",
@@ -1305,6 +1341,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'iamspe_2024_036',
+    banca: 'IAMSPE',
     cycle: 'Ciclo Clínico',
     subject: 'Cirurgia Geral',
     text: "A respeito das hemorragias gastrintestinais, aponte a alternativa correta:",
@@ -1314,6 +1351,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'iamspe_2024_037',
+    banca: 'IAMSPE',
     cycle: 'Ciclo Clínico',
     subject: 'Cirurgia Geral',
     text: "Mulher de 87 anos é trazida por cuidadora à UPA onde você está de plantão após escorregar em tapete e cair com sua bengala sobre mesa de centro da sala de sua casa. A profissional nega trauma de crânio, porém a paciente tem dor intensa sobre parede torácica direita à inspiração. Ao exame físico, ela se apresenta em bom estado geral, fascies dolorosa, eupneica em ar ambiente, acianótica, PA 130 x 90 mmHg, pulso 82 bpm, frequência respiratória 14 incursões/minuto, Sat O2 94%. Inspeção do tórax mostra hematoma em linha axilar anterior direita, à altura do 6º arco costal, com mobilização adequada do arcabouço aos movimentos respiratórios; palpando, a paciente tem dor intensa e crepitação nesse osso. Ausculta pulmonar sem alterações. Diante do quadro apresentado, aponte a alternativa mais adequada no momento:",
@@ -1323,6 +1361,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'iamspe_2024_038',
+    banca: 'IAMSPE',
     cycle: 'Ciclo Clínico',
     subject: 'Cirurgia Geral',
     text: "Eviscerações e eventrações são complicações potencialmente graves de procedimentos cirúrgicos por via laparotômica. Assinale a alternativa correta sobre esses eventos:",
@@ -1332,6 +1371,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'iamspe_2024_039',
+    banca: 'IAMSPE',
     cycle: 'Ciclo Clínico',
     subject: 'Cirurgia Geral',
     text: "Homem, 42 anos, queixa de dor em fossa ilíaca direita de forte intensidade de início súbito associada a náusea sem vômitos há 2 horas, com irradiação para região inguinal ipsilateral, sem fatores de piora ou melhora. Ao exame físico, abdome flácido, leve desconforto à palpação de fossa ilíaca direita, sem plastrão palpável ou tumefações subcutâneas. Sinais de Blumberg e Giordano negativos. Foi medicado e apresentou alívio da dor. Hemograma com Hb 14,3 g/dL, Leucócitos 9580 s/ desvio. Proteína C Reativa 1,2 g/dL (normal <1,0). Urina I com hemácias 12 mil (normal <10 mil) e leucócitos 11 mil (normal < 10 mil), sem outros achados. Após ver a tomografia e confirmar a hipótese diagnóstica mais provável para este caso, cite o próximo passo para o tratamento:",
@@ -1341,6 +1381,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'iamspe_2024_040',
+    banca: 'IAMSPE',
     cycle: 'Ciclo Clínico',
     subject: 'Cirurgia Geral',
     text: "Paciente masculino de 56 anos, sabidamente portador de doença diverticular dos cólons, apresenta dor abdominal tipo cólica há 5 dias, com diminuição do apetite e procurou atendimento para investigação. Ao exame físico apresentava dor à palpação profunda em fossa ilíaca esquerda, sem massas palpáveis, com DB negativo. Foram realizados exames laboratoriais: Hemoglobina: 12,6 g/dL, Leucócitos: 16.260/mm³, Plaquetas: 260.000/mm³, Creatinina: 1,2 mg/dL, Ureia: 21,8 mg/dL, PCR: 23,9 mg/L (VR: <1,0 mg/L). Realizada tomografia computadorizada de abdome com contraste, mostrando imagem de coleção de 5,6cm de tamanho justa-cólico, sem pneumoperitônio livre, conforme imagem abaixo: Qual deve ser a conduta inicial para esse paciente?",
@@ -1350,6 +1391,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'iamspe_2024_041',
+    banca: 'IAMSPE',
     cycle: 'Ciclo Clínico',
     subject: 'Ginecologia & Obstetrícia',
     text: "Paciente de 34 anos, nuligesta com desejo reprodutivo, apresenta sangramento uterino anormal há 3 anos, refratário ao tratamento clínico medicamentoso. Realizou ressonância nuclear magnética de pelve e histeroscopia diagnóstica evidenciando: útero pouco aumentado de volume, com mioma submucoso classificação da FIGO tipo 1, medindo 3,5cm, manto externo até a serosa com 1,5cm de espessura. A base do nódulo ocupa 2/3 da cavidade endometrial e está localizada na parede fúndica anterior. Segundo a classificação proposta por Lasmar conhecida como STEP - W (Size, Topography, Extension, Penetration - lateral Wall), qual é a melhor conduta para essa paciente:",
@@ -1359,6 +1401,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'iamspe_2024_042',
+    banca: 'IAMSPE',
     cycle: 'Ciclo Clínico',
     subject: 'Ginecologia & Obstetrícia',
     text: "Paciente de 16 anos apresenta caracteres sexuais secundários externos normais associados à amenorréia primária. Realizou RNM de pelve que demonstra agenesia do terço superior da vagina e ausência da imagem do útero, ovários sem alterações. Qual a principal hipótese diagnóstica?",
@@ -1368,6 +1411,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'iamspe_2024_043',
+    banca: 'IAMSPE',
     cycle: 'Ciclo Clínico',
     subject: 'Ginecologia & Obstetrícia',
     text: "Paciente com queixa de corrimento vaginal amarelado, de odor fétido e prurido vaginal. Referia ainda que o odor piorava após manter relações sexuais. O exame bacterioscópico do conteúdo vaginal revelou a presença de “clue cells”. Qual o provável agente etiológico desta vaginite?",
@@ -1377,6 +1421,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'iamspe_2024_044',
+    banca: 'IAMSPE',
     cycle: 'Ciclo Clínico',
     subject: 'Ginecologia & Obstetrícia',
     text: "Paciente de 43 anos com 3 filhos vivos foi submetida a colposcopia e biópsia de colo uterino por colpocitologia oncótica NIC 3. A biópsia revelou carcinoma epidermóide in situ. O exame ginecológico era normal e os paramétrios livres. Foi submetida a histerectomia total abdominal. O exame anatomopatológico revelou corpo uterino normal e colo com carcinoma epidermóide invasivo com mais de 5mm de profundidade. Pode-se concluir que:",
@@ -1386,6 +1431,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'iamspe_2024_045',
+    banca: 'IAMSPE',
     cycle: 'Ciclo Clínico',
     subject: 'Ginecologia & Obstetrícia',
     text: "Paciente de 58 anos, apresentou sangramento pós menopausa e procurou seu ginecologista. Ao exame clínico foi observado pequeno sangramento escuro exteriorizando-se pelo orifício externo do colo, sem outras alterações. Qual a principal hipótese diagnóstica e qual exame complementar deve ser solicitado?",
@@ -1395,6 +1441,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'iamspe_2024_046',
+    banca: 'IAMSPE',
     cycle: 'Ciclo Clínico',
     subject: 'Ginecologia & Obstetrícia',
     text: "Uma mulher de 55 anos, assintomática, sem histórico familiar de câncer de mama e sem outros fatores de risco, procura atendimento para realizar seu check-up anual. Sobre o rastreamento mamográfico no Brasil, segundo o protocolo do Ministério da Saúde, assinale a alternativa correta:",
@@ -1404,6 +1451,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'iamspe_2024_047',
+    banca: 'IAMSPE',
     cycle: 'Ciclo Clínico',
     subject: 'Ginecologia & Obstetrícia',
     text: "Paciente de 46 anos previamente hígida procura assistência médica devido à aumento do volume abdominal, associado à dor e constipação há 1 mês. Nega febre ou outros sintomas. Ao exame físico apresenta abdômen distendido, endurecido, doloroso à palpação difusa, sinal de piparote positivo. USG transvaginal com complementação abdominal evidenciando grande quantidade de líquido livre na cavidade, tumorações complexas bilateralmente em região de anexos, medindo 7cm à direita e 11cm à esquerda, septos grosseiros com vascularização com baixo índice de resistência, exibindo vegetações parietais no seu interior, útero de tamanho e morfologia dentro da normalidade. Traz exames de rotina ginecológica realizada 6 meses antes, sem alterações. Qual a hipótese diagnóstica e a conduta mais adequada?",
@@ -1413,6 +1461,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'iamspe_2024_048',
+    banca: 'IAMSPE',
     cycle: 'Ciclo Clínico',
     subject: 'Ginecologia & Obstetrícia',
     text: "O câncer do colo do útero é o segundo tipo de câncer mais frequente em mulheres que vivem em regiões em desenvolvimento. Como prevenção a Organização Mundial de Saúde (OMS) recomenda a prática sexual segura, incluindo educação para jovens e promoção do uso e fornecimento de preservativos para pessoas que já iniciaram atividade sexual. Contudo, a prevenção mais eficaz eficiente – indicada pela OMS – é a vacinação contra o HPV. A recomendação do Programa Nacional de Imunizações é:",
@@ -1422,6 +1471,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'iamspe_2024_049',
+    banca: 'IAMSPE',
     cycle: 'Ciclo Clínico',
     subject: 'Ginecologia & Obstetrícia',
     text: "Qual dos exames abaixo não faz parte da rotina de exames laboratoriais solicitados na primeira consulta, realizada no primeiro trimestre do pré- natal?",
@@ -1431,6 +1481,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'iamspe_2024_050',
+    banca: 'IAMSPE',
     cycle: 'Ciclo Clínico',
     subject: 'Ginecologia & Obstetrícia',
     text: "Paciente de 33 anos com dor pélvica cíclica limitante, associada à dispareunia de profundidade, tentando engravidar há 2 anos sem sucesso. Investigação de infertilidade do parceiro sem alterações. Procurou o ginecologista que solicitou RNM de pelve evidenciando sinais de endometriose profunda em ligamentos útero sacros e fundo de saco posterior, aderências fixas entre útero e ovários na face posterior da pelve (“kissing ovaries”), além de imagens sugestivas de hidrossalpinge bilateralmente. Histerossalpingografia com teste de Cottè negativo. Dosagens hormonais dentro da normalidade, sugerindo manutenção da ovulação. A melhor conduta no caso seria:",
@@ -1440,6 +1491,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'iamspe_2024_051',
+    banca: 'IAMSPE',
     cycle: 'Ciclo Clínico',
     subject: 'Ginecologia & Obstetrícia',
     text: "A síndrome de transfusão feto-fetal é evento raro em gestações gemelares e pode ser letal para ambos os fetos, tanto para o dito receptor, como para o chamado de doador. Essa condição pode ocorrer:",
@@ -1449,6 +1501,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'iamspe_2024_052',
+    banca: 'IAMSPE',
     cycle: 'Ciclo Clínico',
     subject: 'Ginecologia & Obstetrícia',
     text: "Sobre a estática fetal, assinale a alternativa verdadeira:",
@@ -1458,6 +1511,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'iamspe_2024_053',
+    banca: 'IAMSPE',
     cycle: 'Ciclo Clínico',
     subject: 'Ginecologia & Obstetrícia',
     text: "Não é considerado fator de risco para trabalho de parto prematuro:",
@@ -1467,6 +1521,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'iamspe_2024_054',
+    banca: 'IAMSPE',
     cycle: 'Ciclo Clínico',
     subject: 'Ginecologia & Obstetrícia',
     text: "Em relação à sífilis na gestação, está correto afirmar:",
@@ -1476,6 +1531,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'iamspe_2024_055',
+    banca: 'IAMSPE',
     cycle: 'Ciclo Clínico',
     subject: 'Ginecologia & Obstetrícia',
     text: "Qual das associações abaixo caracteriza melhor o fenômeno da centralização no feto à dopplervelocimetria?",
@@ -1485,6 +1541,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'iamspe_2024_056',
+    banca: 'IAMSPE',
     cycle: 'Ciclo Clínico',
     subject: 'Ginecologia & Obstetrícia',
     text: "O partograma abaixo evidencia:",
@@ -1494,6 +1551,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'iamspe_2024_057',
+    banca: 'IAMSPE',
     cycle: 'Ciclo Clínico',
     subject: 'Ginecologia & Obstetrícia',
     text: "Paciente de 23 anos, dá entrada no PS de Ginecologia com quadro de dor em baixo ventre de forte intensidade associada a um pico febril de 38,5˚ hoje. Última menstruação há 2 semanas, não utiliza método anticoncepcional no momento, vida sexual ativa. Sinais vitais normais na admissão, ao exame físico apresenta no toque bimanual dor à mobilização de colo uterino e ao especular cervicite mucopurulenta. USG transvaginal assim como exames laboratoriais realizados não mostraram alterações significativas, exceto leucocitúria de 30.000 na urina tipo 1. Qual a principal hipótese diagnóstica e a melhor conduta nesse caso?",
@@ -1503,6 +1561,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'iamspe_2024_058',
+    banca: 'IAMSPE',
     cycle: 'Ciclo Clínico',
     subject: 'Ginecologia & Obstetrícia',
     text: "Sobre a cardiotocografia ante parto abaixo, pode-se afirmar:",
@@ -1512,6 +1571,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'iamspe_2024_059',
+    banca: 'IAMSPE',
     cycle: 'Ciclo Clínico',
     subject: 'Ginecologia & Obstetrícia',
     text: "A ligadura bilateral de artéria hipogástrica é um método seguro e eficaz para controlar hemorragias em pacientes com alto risco de sangramento obstétrico, podendo ser definitiva não só para a preservação uterina, mas também para controle efetivo de sangramento em pacientes já histerectomizadas. Sua realização deve ser feita 2cm abaixo da bifurcação das artérias ilíacas comuns, com o objetivo de preservar 3 ramos posteriores importantes desses vasos. Quais são esses ramos?",
@@ -1521,6 +1581,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'iamspe_2024_060',
+    banca: 'IAMSPE',
     cycle: 'Ciclo Clínico',
     subject: 'Ginecologia & Obstetrícia',
     text: "As recentes diretrizes da Organização Mundial da Saúde (OMS) e dos principais protocolos de manejo de Diabetes Mellitus (DM) recomendam que a hiperglicemia inicialmente detectada em qualquer momento da gravidez deve ser categorizada e diferenciada em DM diagnosticado na gestação (do inglês Overt Diabetes) ou em Diabetes Mellitus Gestacional. Assinale a alternativa correta:",
@@ -1530,6 +1591,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'iamspe_2024_061',
+    banca: 'IAMSPE',
     cycle: 'Ciclo Clínico',
     subject: 'Pediatria',
     text: "O reflexo de Moro é avaliado rotineiramente no exame neurológico do recém-nascido. Qual achado observado durante a avaliação desse reflexo sugere anormalidade neurológica?",
@@ -1539,6 +1601,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'iamspe_2024_062',
+    banca: 'IAMSPE',
     cycle: 'Ciclo Clínico',
     subject: 'Pediatria',
     text: "Em relação ao uso de ambroxol em pediatria, a indicação clínica mais fundamentada pelo seu mecanismo de ação é:",
@@ -1548,6 +1611,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'iamspe_2024_063',
+    banca: 'IAMSPE',
     cycle: 'Ciclo Clínico',
     subject: 'Pediatria',
     text: "A característica que justifica a escolha da técnica de lavagem nasal com baixo volume e alta pressão em crianças está relacionada a/à:",
@@ -1557,6 +1621,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'iamspe_2024_064',
+    banca: 'IAMSPE',
     cycle: 'Ciclo Clínico',
     subject: 'Pediatria',
     text: "No Brasil, a vacina contra o rotavírus faz parte do Programa Nacional de Imunizações (PNI). Considerando as diretrizes do Ministério da Saúde, qual das seguintes afirmações sobre a vacinação contra o rotavírus em crianças está CORRETA?",
@@ -1566,6 +1631,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'iamspe_2024_065',
+    banca: 'IAMSPE',
     cycle: 'Ciclo Clínico',
     subject: 'Pediatria',
     text: "No contexto do diagnóstico de sarampo em pediatria, a característica que melhor descreve os sinais de Koplik é:",
@@ -1575,6 +1641,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'iamspe_2024_066',
+    banca: 'IAMSPE',
     cycle: 'Ciclo Clínico',
     subject: 'Pediatria',
     text: "O vírus sincicial respiratório (VSR) é uma causa frequente de infecções respiratórias em crianças, especialmente nos primeiros anos de vida. Considerando as características clínicas e epidemiológicas da infecção pelo VSR em pediatria, qual das seguintes afirmações está INCORRETA?",
@@ -1584,6 +1651,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'iamspe_2024_067',
+    banca: 'IAMSPE',
     cycle: 'Ciclo Clínico',
     subject: 'Pediatria',
     text: "A característica clínica dos guinchos respiratórios (\"whoop\") na coqueluche em crianças está relacionada:",
@@ -1593,6 +1661,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'iamspe_2024_068',
+    banca: 'IAMSPE',
     cycle: 'Ciclo Clínico',
     subject: 'Pediatria',
     text: "A escabiose é uma infestação cutânea causada pelo ácaro Sarcoptes scabiei, que pode acometer pessoas de todas as idades, incluindo crianças. Em relação ao tratamento da escabiose em crianças menores de 6 meses, qual das seguintes alternativas está CORRETA, de acordo com as recomendações do Ministério da Saúde do Brasil?",
@@ -1602,6 +1671,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'iamspe_2024_069',
+    banca: 'IAMSPE',
     cycle: 'Ciclo Clínico',
     subject: 'Pediatria',
     text: "A leucemia linfoide aguda (LLA) é a neoplasia maligna mais comum na infância. Qual dos seguintes achados clínicos NÃO é frequentemente encontrado em crianças com LLA na fase inicial da doença?",
@@ -1611,6 +1681,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'iamspe_2024_070',
+    banca: 'IAMSPE',
     cycle: 'Ciclo Clínico',
     subject: 'Pediatria',
     text: "O Ministério da Saúde do Brasil preconiza o aleitamento materno exclusivo até os seis meses de idade. Considerando as recomendações do Ministério da Saúde sobre amamentação, qual das seguintes afirmações está INCORRETA?",
@@ -1620,6 +1691,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'iamspe_2024_071',
+    banca: 'IAMSPE',
     cycle: 'Ciclo Clínico',
     subject: 'Pediatria',
     text: "Entre os marcos do desenvolvimento infantil até os 6 meses de idade, qual característica é esperada e indicativa de desenvolvimento neuropsicomotor adequado?",
@@ -1629,6 +1701,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'iamspe_2024_072',
+    banca: 'IAMSPE',
     cycle: 'Ciclo Clínico',
     subject: 'Pediatria',
     text: "Sopros cardíacos são frequentemente auscultados em crianças, sendo a maioria deles inocentes (funcionais). Qual das seguintes características NÃO é típica de um sopro inocente em crianças?",
@@ -1638,6 +1711,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'iamspe_2024_073',
+    banca: 'IAMSPE',
     cycle: 'Ciclo Clínico',
     subject: 'Pediatria',
     text: "A síndrome do lactente chiador é uma condição comum em crianças pequenas, caracterizada por episódios recorrentes de sibilância. A avaliação radiológica pode auxiliar no diagnóstico diferencial e no manejo dessa síndrome. Qual das seguintes afirmações sobre o papel da radiografia de tórax na síndrome do lactente chiador está CORRETA?",
@@ -1647,6 +1721,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'iamspe_2024_074',
+    banca: 'IAMSPE',
     cycle: 'Ciclo Clínico',
     subject: 'Pediatria',
     text: "Os achados semiológicos característicos na síndrome do bebê azul em neonatos estão associados principalmente à/ao:",
@@ -1656,6 +1731,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'iamspe_2024_075',
+    banca: 'IAMSPE',
     cycle: 'Ciclo Clínico',
     subject: 'Pediatria',
     text: "Entre os achados laboratoriais no hemograma sugestivos de anemia ferropriva em crianças, qual é característico dessa condição?",
@@ -1665,6 +1741,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'iamspe_2024_076',
+    banca: 'IAMSPE',
     cycle: 'Ciclo Clínico',
     subject: 'Pediatria',
     text: "Entre as indicações para o uso de ibuprofeno em pediatria, aquela respaldada por sua ação farmacológica é:",
@@ -1674,6 +1751,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'iamspe_2024_077',
+    banca: 'IAMSPE',
     cycle: 'Ciclo Clínico',
     subject: 'Pediatria',
     text: "O tratamento da tuberculose pulmonar em crianças apresenta particularidades em relação ao tratamento em adultos. Considerando as diretrizes do Ministério da Saúde do Brasil, qual das seguintes afirmações sobre o tratamento da tuberculose pulmonar em crianças está INCORRETA?",
@@ -1683,6 +1761,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'iamspe_2024_078',
+    banca: 'IAMSPE',
     cycle: 'Ciclo Clínico',
     subject: 'Pediatria',
     text: "A síndrome mão-pé-boca é uma doença viral comum na infância, caracterizada por lesões cutâneas e mucosas. Qual das seguintes alternativas NÃO descreve um achado típico da síndrome mão-pé-boca?",
@@ -1692,6 +1771,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'iamspe_2024_079',
+    banca: 'IAMSPE',
     cycle: 'Ciclo Clínico',
     subject: 'Pediatria',
     text: "Os parâmetros avaliados no índice de Apgar ao nascimento incluem:",
@@ -1701,6 +1781,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'iamspe_2024_080',
+    banca: 'IAMSPE',
     cycle: 'Ciclo Clínico',
     subject: 'Pediatria',
     text: "No Programa Nacional de Imunizações (PNI), a substituição da vacina oral poliomielite (VOP) pela vacina inativada poliomielite (VIP) no esquema básico infantil foi baseada principalmente na justificativa de:",
@@ -1710,6 +1791,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'iamspe_2024_081',
+    banca: 'IAMSPE',
     cycle: 'Ciclo Clínico',
     subject: 'Medicina de Família/SUS',
     text: "Na aplicação prática da Teoria da Hierarquia das Necessidades de Abraham Maslow em saúde pública, qual das seguintes afirmações descreve corretamente a relação entre as necessidades básicas e a promoção da saúde?",
@@ -1719,6 +1801,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'iamspe_2024_082',
+    banca: 'IAMSPE',
     cycle: 'Ciclo Clínico',
     subject: 'Medicina de Família/SUS',
     text: "Determinantes sociais da saúde, conforme proposto por Thomas McKeown, são mais bem caracterizados por:",
@@ -1728,6 +1811,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'iamspe_2024_083',
+    banca: 'IAMSPE',
     cycle: 'Ciclo Clínico',
     subject: 'Medicina de Família/SUS',
     text: "Hans Rosling, em suas análises sobre saúde global e desenvolvimento sustentável, enfatiza a importância de dados estatísticos na compreensão das desigualdades sociais. Qual das seguintes afirmações reflete corretamente um princípio central da teoria de Rosling sobre saúde global?",
@@ -1737,6 +1821,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'iamspe_2024_084',
+    banca: 'IAMSPE',
     cycle: 'Ciclo Clínico',
     subject: 'Medicina de Família/SUS',
     text: "No modelo teórico proposto por Hugh Leavell e Edwin Clark, o foco da Medicina Preventiva é dividido em níveis de prevenção. O nível de prevenção que inclui a detecção precoce de doenças e a aplicação de medidas para limitar a progressão do agravo é denominado:",
@@ -1746,6 +1831,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'iamspe_2024_085',
+    banca: 'IAMSPE',
     cycle: 'Ciclo Clínico',
     subject: 'Medicina de Família/SUS',
     text: "Segundo a teoria do Modelo de Crenças em Saúde, proposta por Rosenstock, Hochbaum e Becker, o principal fator que influencia a adoção de hábitos saudáveis e a prevenção de doenças é:",
@@ -1755,6 +1841,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'iamspe_2024_086',
+    banca: 'IAMSPE',
     cycle: 'Ciclo Clínico',
     subject: 'Medicina de Família/SUS',
     text: "Sir Geoffrey Rose, renomado epidemiologista e estatístico britânico, desenvolveu a teoria da \"estratégia de alto risco\" e a \"estratégia populacional\" para prevenção de doenças. Qual das alternativas abaixo descreve o princípio fundamental da estratégia populacional proposta por Geoffrey Rose?",
@@ -1764,6 +1851,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'iamspe_2024_087',
+    banca: 'IAMSPE',
     cycle: 'Ciclo Clínico',
     subject: 'Medicina de Família/SUS',
     text: "Paciente feminina, 52 anos, tabagista de 30 anos- maço, sem comorbidades, apresenta score de Fagerström 8 (dependência elevada), três tentativas prévias de cessação com recaída em até 60 dias, último cigarro há 12 horas. Refere forte fissura, irritabilidade e ansiedade. Estágio motivacional de ação, CO exalado de 18ppm, sem contraindicações medicamentosas. Na estratégia terapêutica baseada em evidências para cessação do tabagismo, considerando características individuais e preditores de resposta, selecione a afirmativa correta:",
@@ -1773,6 +1861,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'iamspe_2024_088',
+    banca: 'IAMSPE',
     cycle: 'Ciclo Clínico',
     subject: 'Medicina de Família/SUS',
     text: "Na saúde coletiva, o estudo epidemiológico que avalia a relação entre exposição e desfecho em um único momento, fornecendo uma fotografia da frequência e distribuição das condições de saúde em uma população, é denominado:",
@@ -1782,6 +1871,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'iamspe_2024_089',
+    banca: 'IAMSPE',
     cycle: 'Ciclo Clínico',
     subject: 'Medicina de Família/SUS',
     text: "Paciente masculino, 43 anos, apresenta mancha hipocrômica em face posterior do antebraço direito com 8cm de diâmetro, bordas mal definidas e alteração de sensibilidade térmica à avaliação com tubos de água quente/fria, sem alteração de sensibilidade dolorosa ou tátil. Teste de histamina evidencia resposta ausente na lesão e presente na pele normal. Baciloscopia de raspado dérmico negativa nos 6 sítios. Na avaliação diagnóstica complementar e classificação operacional da hanseníase, selecione a afirmativa correta:",
@@ -1791,6 +1881,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'iamspe_2024_090',
+    banca: 'IAMSPE',
     cycle: 'Ciclo Clínico',
     subject: 'Medicina de Família/SUS',
     text: "Paciente masculino, 45 anos, procura a Unidade Básica de Saúde queixando-se de desânimo, fadiga e dificuldade de concentração há cerca de 2 meses. Ele relata perda de interesse em atividades que antes lhe davam prazer, além de insônia e perda de apetite. Para auxiliar no diagnóstico e avaliação da gravidade dos sintomas, o médico de família e comunidade decide aplicar a escala PHQ-9. O paciente obtém escore 12 na escala. Qual a interpretação deste resultado e a conduta mais adequada?",
@@ -1800,6 +1891,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'iamspe_2024_091',
+    banca: 'IAMSPE',
     cycle: 'Ciclo Clínico',
     subject: 'Medicina de Família/SUS',
     text: "O princípio da longitudinalidade, essencial para a efetividade da Estratégia Saúde da Família, compreende:",
@@ -1809,6 +1901,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'iamspe_2024_092',
+    banca: 'IAMSPE',
     cycle: 'Ciclo Clínico',
     subject: 'Medicina de Família/SUS',
     text: "O método PRACTICE é uma abordagem sistemática que visa facilitar a avaliação das famílias em contextos de saúde. Qual das seguintes opções descreve corretamente os componentes do acrônimo PRACTICE e suas respectivas funções na avaliação familiar?",
@@ -1818,6 +1911,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'iamspe_2024_093',
+    banca: 'IAMSPE',
     cycle: 'Ciclo Clínico',
     subject: 'Medicina de Família/SUS',
     text: "Na atenção primária em saúde, o método diagnóstico de escolha para confirmar a tuberculose pulmonar em pacientes com suspeita clínica é:",
@@ -1827,6 +1921,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'iamspe_2024_094',
+    banca: 'IAMSPE',
     cycle: 'Ciclo Clínico',
     subject: 'Medicina de Família/SUS',
     text: "Na prática da medicina de família, qual das seguintes afirmações descreve corretamente o conceito de \"notificação compulsória\" em vigilância epidemiológica?",
@@ -1836,6 +1931,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'iamspe_2024_095',
+    banca: 'IAMSPE',
     cycle: 'Ciclo Clínico',
     subject: 'Medicina de Família/SUS',
     text: "O Projeto Terapêutico Singular (PTS) na Medicina da Família é composto por:",
@@ -1845,6 +1941,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'iamspe_2024_096',
+    banca: 'IAMSPE',
     cycle: 'Ciclo Clínico',
     subject: 'Medicina de Família/SUS',
     text: "Na Saúde Coletiva, diferentes teóricos contribuíram com abordagens teóricas específicas que influenciaram a compreensão do processo saúde-doença. Preencha corretamente as lacunas com os nomes dos autores associados às seguintes descrições: ________ 1: Este autor é conhecido por abordar o habitus e os capitais (cultural, social, econômico e simbólico), evidenciando como as estruturas sociais influenciam o acesso à saúde e os determinantes sociais do adoecimento. ________ 2: Este teórico propõe a análise das práticas de saúde como práticas sociais, destacando a interdisciplinaridade e a interação entre saberes biomédicos e sociais. ________ 3: Este autor destaca a importância da abordagem crítica na Saúde Coletiva, enfatizando o papel das desigualdades estruturais e da determinação social da saúde no Brasil. As lacunas são corretamente preenchidas, respectivamente, por:",
@@ -1854,6 +1951,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'iamspe_2024_097',
+    banca: 'IAMSPE',
     cycle: 'Ciclo Clínico',
     subject: 'Medicina de Família/SUS',
     text: "Uma das estratégias preventivas mais eficazes para reduzir a incidência de gravidez na adolescência, recomendada pela Organização Mundial da Saúde, é:",
@@ -1863,6 +1961,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'iamspe_2024_098',
+    banca: 'IAMSPE',
     cycle: 'Ciclo Clínico',
     subject: 'Medicina de Família/SUS',
     text: "Em estudo ecológico realizado em município de grande porte, analisou-se a distribuição espacial da mortalidade infantil e seus determinantes sociais utilizando dados do último censo demográfico e sistemas de informação em saúde. Na análise multinível por setores censitários, controlada por variáveis individuais (idade materna, escolaridade e paridade), observou-se associação independente entre mortalidade infantil pós-neonatal e índice de privação social composto (IPS). Na interpretação da análise hierarquizada dos determinantes sociais e suas implicações para políticas públicas, selecione a afirmativa correta:",
@@ -1872,6 +1971,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'iamspe_2024_099',
+    banca: 'IAMSPE',
     cycle: 'Ciclo Clínico',
     subject: 'Medicina de Família/SUS',
     text: "Um estudo epidemiológico buscou analisar a prevalência de transtornos mentais comuns, como depressão e ansiedade, em diferentes grupos populacionais. Os resultados evidenciaram maior prevalência desses transtornos em indivíduos com baixa renda, menor escolaridade e em situação de desemprego. Considerando os determinantes sociais da saúde mental, qual a principal conclusão que pode ser inferida a partir desses resultados?",
@@ -1881,6 +1981,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'iamspe_2024_100',
+    banca: 'IAMSPE',
     cycle: 'Ciclo Clínico',
     subject: 'Medicina de Família/SUS',
     text: "Na saúde pública, a análise de bases de dados para o diagnóstico de saúde da comunidade utiliza indicadores epidemiológicos para identificar padrões e necessidades. Um exemplo de indicador derivado de bases de dados que permite mensurar a carga de doenças e avaliar o impacto de intervenções é:",
@@ -1892,6 +1993,7 @@ const MEDICAL_AVATARS = [
   // -- CERMAM AM 2009 --
   {
     id: 'cermam_am_2009_001',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Nefrologia',
     text: "Um homem de 63 anos portador de coronariopatia, dislipidemia e hipertensão arterial inicia uso de enalapril 20mg/dia por recomendação do seu cardiologista. Sua creatinina basal é 1,4mg/dl e rapidamente aumentou para 3,5mg/dl. Esse dado sugere a necessidade de investigação para:",
@@ -1901,6 +2003,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'cermam_am_2009_002',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Pneumologia',
     text: "A Embolia Pulmonar tem uma frequência que varia de 20 a 25 por 100.000 pacientes hospitalizados nos E.U.A. São causas de tromboembolia pulmonar, exceto:",
@@ -1910,6 +2013,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'cermam_am_2009_003',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Nefrologia',
     text: "Das substâncias abaixo listadas secretadas pelo rim qual tem efetiva participação em mecanismos hipertensivos?",
@@ -1919,6 +2023,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'cermam_am_2009_004',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Reumatologia',
     text: "Com relação às artrites reativas, assinale a afirmativa CORRETA:",
@@ -1928,6 +2033,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'cermam_am_2009_005',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Medicina de Família/SUS',
     text: "Você é médico residente e está atendendo no Ambulatório de Clínica Médica, para o qual foi encaminhado um paciente com 78 anos, que necessitava submeter-se a uma fundoscopia e por quatro vezes já havia tentado marcar uma consulta no Ambulatório de Oftalmologia do SUS, sem sucesso, devido à existência de um sistema irregular de privilégios no agendamento. Você, que tomou conhecimento acerca deste fato:",
@@ -1937,6 +2043,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'cermam_am_2009_006',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Endocrinologia',
     text: "Entre as alterações laboratoriais abaixo, assinale aquela que NÃO ocorre em portadores de hipotireoidismo primário:",
@@ -1946,6 +2053,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'cermam_am_2009_007',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Gastroenterologia',
     text: "O adenoma hepático tem sua principal importância porque pode ser confundido com o carcinoma hepatocelular. Assinale dentre as alternativas abaixo a situação que não tem relação com o adenoma hepático:",
@@ -1955,6 +2063,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'cermam_am_2009_008',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Gastroenterologia',
     text: "O helicobacter pylori é um bastonete gram-negativo que se adaptou à mucosa gástrica. Reconhecidamente a infecção crônica por ele está associada às seguintes patologias, exceto:",
@@ -1964,6 +2073,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'cermam_am_2009_009',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Gastroenterologia',
     text: "Das condições citadas abaixo qual a considerada com menor potencial para causar câncer gástrico?",
@@ -1973,6 +2083,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'cermam_am_2009_010',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Endocrinologia',
     text: "Assinale a alternativa INCORRETA em relação à cetoacidose diabética (CAD):",
@@ -1982,6 +2093,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'cermam_am_2009_011',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Infectologia',
     text: "A infecção ascendente é a via de contaminação mais comum nos casos de pielonefrite aguda. Nesses casos o agente etiológico em mais de 85% dos casos é:",
@@ -1991,6 +2103,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'cermam_am_2009_012',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Neurologia',
     text: "Com relação à hemorragia subaracnoidea analise as afirmativas abaixo e identifique qual não é verdadeira:",
@@ -2000,6 +2113,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'cermam_am_2009_013',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Clínica Médica',
     text: "A rápida expansão do conhecimento no que diz respeito a variabilidade nas ações dos fármacos torna o processo de prescrever medicamento cada vez mais complexo. Contudo, alguns princípios devem nortear a prescrição. Todos os abaixo devem ser considerados ao se fazer uma receita, exceto:",
@@ -2009,6 +2123,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'cermam_am_2009_014',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Cardiologia',
     text: "Em idosos, a lesão valvar mais frequente e a sua etiologia principal são, respectivamente:",
@@ -2018,6 +2133,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'cermam_am_2009_015',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Hematologia',
     text: "Um Patologista estava fazendo um estudo de revisão de 145 casos de linfomas não-Hodgkin nodais e extra-nodais. Utilizou a técnica de imunofenotipagem. Tinha cinco frascos de anticorpos monoclonais que marcavam células específicas: anti-CD45 (todos os linfócitos); anti-CD20 (expressos em células B); anti-CD2 (todas as células T tímicas e periféricas e células natural killer); anti-CD33 (todos os progenitores mieloides e monócitos); anti-CD4 (células T auxiliares periféricas). Na bateria de exames, qual letra estaria mais correta para estar de acordo com a incidência mundial de linfomas?",
@@ -2027,6 +2143,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'cermam_am_2009_016',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Neurologia',
     text: "Das alternativas abaixo, qual a que melhor define o perfil da dor da cefaleia tensional?",
@@ -2036,6 +2153,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'cermam_am_2009_017',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Infectologia',
     text: "Em relação aos pacientes com infecção pelo HIV, assinale a alternativa INCORRETA:",
@@ -2045,6 +2163,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'cermam_am_2009_018',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Hematologia',
     text: "O diagnóstico de anemia ferropriva é indicado pelos seguintes parâmetros séricos: I- ferro baixo. II- ferritina baixa. III- ferritina normal. IV- saturação de transferrina baixa. V- saturação de transferrina alta. Estão corretos os parâmetros:",
@@ -2054,6 +2173,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'cermam_am_2009_019',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Infectologia',
     text: "Você está de plantão no pronto-socorro e recebe um homem, 49 anos, com história de febre alta (até 40°C) contínua, há quatro dias, acompanhada de tosse produtiva e grande queda de estado geral. Há um dia tornou-se dispneico e há cerca de 12 horas, encontra-se sonolento e confuso. Ao exame físico: T=39,7°, FR=32/min, com estridores crepitantes em metade inferior do hemitórax direito e terço inferior do hemitórax esquerdo. Nota-se um ferimento em região dorsal do pé esquerdo, drenando material purulento em grande quantidade e bolhas disseminadas em membros inferiores. Qual seria sua hipótese diagnóstica e principais medidas terapêuticas iniciais?",
@@ -2063,6 +2183,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'cermam_am_2009_020',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Pneumologia',
     text: "Sobre o diagnóstico da asma, assinale a alternativa INCORRETA:",
@@ -2072,6 +2193,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'cermam_am_2009_021',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Medicina de Família/SUS',
     text: "A organização Mundial de Saúde, criada em 1948, tem o objetivo de elevar o nível da saúde global, reduzindo as taxas de mortalidade, doenças e enfermidades em determinadas regiões. Possui 192 países membros e fica localizada em:",
@@ -2081,6 +2203,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'cermam_am_2009_022',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Medicina de Família/SUS',
     text: "Pelas leis brasileiras, o aborto induzido é considerado crime exceto quando:",
@@ -2090,6 +2213,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'cermam_am_2009_023',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Medicina de Família/SUS',
     text: "Entre as estratégias para redução do problema da mortalidade materna uma das ações preconizadas tem sido a implantação e implementação de um sistema de vigilância do óbito materno. Assim sendo, o óbito materno passou a ser um evento de notificação compulsória através de Resolução do Ministério da Saúde. Qual é esta resolução?",
@@ -2099,6 +2223,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'cermam_am_2009_024',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Medicina de Família/SUS',
     text: "A lei nº 8.142/90 dispõe sobre a participação da comunidade na gestão do Sistema Único de Saúde (SUS). Referente à participação da comunidade:",
@@ -2108,6 +2233,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'cermam_am_2009_025',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Medicina de Família/SUS',
     text: "A Organização Mundial de Saúde estabeleceu as contraindicações para vacinação com BCG: classificando-as em absoluta e relativa. Abaixo estão citadas várias dessas situações. Qual a contraindicação absoluta relacionada abaixo?",
@@ -2117,6 +2243,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'cermam_am_2009_026',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Infectologia',
     text: "No Brasil, os trabalhos têm mostrado que o principal agente responsável pelos casos de Endocardite Infecciosa é:",
@@ -2126,6 +2253,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'cermam_am_2009_027',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Ortopedia',
     text: "A LER, atualmente conhecida como DORT - Distúrbio Osteomuscular Relacionado ao Trabalho, têm as seguintes características, exceto:",
@@ -2135,6 +2263,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'cermam_am_2009_028',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Medicina de Família/SUS',
     text: "A finalidade dos Serviços de Verificação de Óbitos (S.V.O) é determinar a causa de:",
@@ -2144,6 +2273,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'cermam_am_2009_029',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Medicina de Família/SUS',
     text: "Qual das opções abaixo melhor define o significado do Princípio de Integralidade na Atenção Primária à Saúde?",
@@ -2153,6 +2283,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'cermam_am_2009_030',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Medicina de Família/SUS',
     text: "De acordo com a Lei 8.080/90 que institui o S.U.S o responsável pela execução dos serviços de saneamento básico é/são:",
@@ -2162,6 +2293,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'cermam_am_2009_031',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Medicina de Família/SUS',
     text: "A declaração de Alma-Ata que esse ano completa 30 anos preconiza:",
@@ -2171,6 +2303,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'cermam_am_2009_032',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Medicina de Família/SUS',
     text: "Para a construção do coeficiente de mortalidade materna, o denominador usado é:",
@@ -2180,6 +2313,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'cermam_am_2009_033',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Cardiologia',
     text: "Para um homem idoso, com um infarto do miocárdio pregresso, foi indicado o uso de ácido acetilsalicílico para prevenção secundária de novas síndromes coronarianas. Dentre as seguintes, a dose diária que melhor une as características de prevenção e menor custo é:",
@@ -2189,6 +2323,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'cermam_am_2009_034',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Medicina de Família/SUS',
     text: "Em relação à estratégia de atenção primária do Ministério da Saúde, é verdadeiro afirmar, sobre o Programa Saúde da Família (PSF):",
@@ -2198,6 +2333,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'cermam_am_2009_035',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Medicina de Família/SUS',
     text: "A lei 8.080, de setembro de 1990, definiu os objetivos, as atribuições e as competências do Sistema Único de Saúde. O conjunto de ações capazes de eliminar, diminuir ou prevenir os riscos à saúde e de intervir nos problemas sanitários decorrentes do meio ambiente, da produção e circulação de bens e da prestação de serviços de interesse da saúde, constitui-se o que se denomina vigilância:",
@@ -2207,6 +2343,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'cermam_am_2009_036',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Medicina de Família/SUS',
     text: "Considerando o modelo dos níveis de prevenção - Leavel & Clark - a imunização e o pré-natal são classificados como medidas de:",
@@ -2216,6 +2353,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'cermam_am_2009_037',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Infectologia',
     text: "Homem de 24 anos, chega ao pronto-socorro após acidente automobilístico apresentando politraumatismos com diversos ferimentos de risco para tétano. Tem esquema de vacinação atualizado, sendo que há dois anos fez o reforço de toxoide tetânico. Como profilaxia do tétano, a melhor conduta é:",
@@ -2225,6 +2363,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'cermam_am_2009_038',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Infectologia',
     text: "Uma pessoa de 32 anos que viaja pela América do Sul várias vezes ao ano, por necessidade profissional, consulta o médico quanto à vacinação contra febre amarela. Diz que a última vez que tomou a vacina foi em agosto de 2000. A melhor recomendação é:",
@@ -2234,6 +2373,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'cermam_am_2009_039',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Infectologia',
     text: "Algumas doenças infecciosas, como tuberculose e hanseníase, são afecções que têm acumulado um grande conhecimento na medicina e que têm diagnóstico e tratamento conhecidos amplamente. Por outro lado, têm uma incidência considerada alta no Brasil, sendo doenças complexas do ponto de vista epidemiológico porque:",
@@ -2243,6 +2383,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'cermam_am_2009_040',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Medicina de Família/SUS',
     text: "A portaria n° 5/2006, da secretaria da vigilância Epidemiológica, do Ministério da Saúde, lista as doenças e agravos de notificação compulsória em todo o território nacional. Qual das listadas abaixo contêm apenas doenças dessa natureza?",
@@ -2252,6 +2393,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'cermam_am_2009_041',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Pediatria',
     text: "Lactente de 7 meses de idade, com bom estado nutricional e alimentado ao seio, subitamente apresentou crises de choro identificadas como cólicas abdominais. No intervalo das crises, passava bem, chegando a brincar e sorrir. Com o passar do tempo, as crises foram-se amiudando e observou-se a eliminação de fezes mucossanguinolentas. Ao exame: afebril, massa palpável ao nível hipocôndrio direito; o toque retal deu saída a fezes tipo 'geleia de morango'. Qual o provável diagnóstico?",
@@ -2261,6 +2403,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'cermam_am_2009_042',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Pediatria',
     text: "A doença de Hirschsprung ou (X), ocorre em 1:5000 recém-nascidos, mais comumente no sexo (Y) em 80% dos casos. Em 15-20% dos afetados após os cinco anos de idade, a doença manifesta-se por (Z). Escolha a alternativa que melhor completa as letras 'X', 'Y' e 'Z'.",
@@ -2270,6 +2413,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'cermam_am_2009_043',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Pediatria',
     text: "Lactente de 5 meses de idade, 6 kg, com quadro de diarreia, dá entrada no PS com desidratação compatível com perda de 10% do peso corporal. O soro endovenoso de reparação deverá ter a seguinte composição:",
@@ -2279,6 +2423,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'cermam_am_2009_044',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Pediatria',
     text: "Nas adolescentes, em nosso meio, a principal causa da anemia é:",
@@ -2288,6 +2433,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'cermam_am_2009_045',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Pediatria',
     text: "O agente etiológico mais frequente nas osteomielites em crianças com anemia falciforme é:",
@@ -2297,6 +2443,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'cermam_am_2009_046',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Pediatria',
     text: "Recém-nascido com 72 horas de vida, sem intercorrências no período neonatal, receberá alta da maternidade em algumas horas. Em relação ao teste de triagem neonatal (teste do pezinho) pode-se afirmar que, de acordo com o Estatuto da Criança e do Adolescente, a responsabilidade pela sua realização compete:",
@@ -2306,6 +2453,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'cermam_am_2009_047',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Pediatria',
     text: "Pré-escolar de três anos é atendido com história de febre alta há horas. Constata-se toxemia, sialorreia, estridor e dispneia progressiva. Além da internação hospitalar, está indicado realização imediata de:",
@@ -2315,6 +2463,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'cermam_am_2009_048',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Pediatria',
     text: "Em caso de criança com suspeita clínica de hepatite viral, os marcadores virais séricos a serem solicitados para definição do agente etiológico são:",
@@ -2324,6 +2473,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'cermam_am_2009_049',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Pediatria',
     text: "No desenvolvimento neuropsicomotor de um lactente observa-se em torno dos 6 meses a aquisição da capacidade de:",
@@ -2333,6 +2483,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'cermam_am_2009_050',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Pediatria',
     text: "Considere as seguintes alterações clínicas relacionadas com a desnutrição proteico-energética grave e marque a letra onde estão as características do marasmo na criança. I. hepatomegalia acentuada; II. atrofia muscular; III. edema de membros inferiores; IV. ausência de gordura subcutânea.",
@@ -2342,6 +2493,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'cermam_am_2009_051',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Pediatria',
     text: "Abaixo são descritas as dermatopatias mais comuns na infância - assinale a alternativa que corresponde ao diagnóstico das quatro lesões descritas, respectivamente: 1- Lesões eritematodescamativas, papulosas, não pruriginosas, em couro cabeludo, face, pescoço, axilas e área de fralda, podendo ocorrer desde o primeiro mês de vida. 2- Doença eczematosa, crônica recorrente, pruriginosa, com períodos de acalmia e exacerbação. 3- Lesão eritematopapulosa encimada por vesícula, pruriginosa, localizada em áreas expostas, túnel sinuoso levemente saliente com conteúdo seroso. 4- Pápulas arredondadas, peroladas, firmes, com umbilicação central, sem sinais inflamatórios ao redor, distribuídas por toda a pele.",
@@ -2351,6 +2503,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'cermam_am_2009_052',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Pediatria',
     text: "Derrame pleural com quadro evolutivo rápido, exame radiológico de pneumatoceles, derrame pleural e abscesso pulmonar, em lactente de 6 meses, com broncopneumonia e estado geral comprometido; trata-se de infecção causada mais provavelmente por:",
@@ -2360,6 +2513,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'cermam_am_2009_053',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Pediatria',
     text: "Assinale a afirmativa ERRADA sobre o calendário básico de vacinação da criança preconizado pelo Ministério da Saúde:",
@@ -2369,6 +2523,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'cermam_am_2009_054',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Pediatria',
     text: "Uma primípara está com dificuldades em amamentar seu filho, pois seus mamilos estão fissurados. A principal causa da fissura mamilar é:",
@@ -2378,6 +2533,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'cermam_am_2009_055',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Pediatria',
     text: "O achado de retinocoroidite, hidrocefalia, calcificações intracranianas grosseiras a par de convulsões em recém-nascidos constituem a clássica tétrade de Sabin e caracteriza infecção congênita grave em quadro de:",
@@ -2387,6 +2543,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'cermam_am_2009_056',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Pediatria',
     text: "Artrite Reumatoide Juvenil (A.R.J.) associada à uveíte ocorre principalmente em pacientes com:",
@@ -2396,6 +2553,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'cermam_am_2009_057',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Pediatria',
     text: "Os eventos habituais no desenvolvimento puberal feminino normal em ordem de surgimento são:",
@@ -2405,6 +2563,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'cermam_am_2009_058',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Pediatria',
     text: "A causa metabólica mais comum condicionante de crise convulsiva em RN é:",
@@ -2414,6 +2573,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'cermam_am_2009_059',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Pediatria',
     text: "A Endoscopia Digestiva Alta (E.D.A.) é um procedimento amplamente usado em crianças para diagnóstico de patologias do Tubo Digestivo Superior. São indicações para a EDA em crianças, exceto:",
@@ -2423,6 +2583,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'cermam_am_2009_060',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Pediatria',
     text: "Você está de plantão no PS Infantil e uma mãe o procura para saber quanto tempo o leite materno ordenhado pode ser guardado no congelador/freezer. Você responderá 'por um período de até:",
@@ -2432,6 +2593,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'cermam_am_2009_061',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Ginecologia & Obstetrícia',
     text: "Adolescente de 16 anos queixa-se de nódulos vulvares. Relata vida sexual com parceiro fixo há um ano e utilização de contraceptivo oral, sem uso de preservativo. Exame físico: pequenas úlceras localizadas confluentes, no introito vaginal e na região perianal, com reação supurativa em gânglios inguinais. O médico faz um esfregaço do material das lesões e requisita a cultura do material. O agente etiológico mais provável a ser encontrado na cultura é:",
@@ -2441,6 +2603,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'cermam_am_2009_062',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Ginecologia & Obstetrícia',
     text: "Paciente G3P2A0 (2 partos vaginais), 38 semanas de gestação, é admitida na sala de parto com diagnóstico de descolamento prematuro de placenta. Ao exame: PA 90 x 50 mmHg, pulso 98 bpm e FR 18 mrp. Toque: colo dilatado 5 cm, bolsa íntegra, +1 de De Lee, cefálico em 'ODP', BCF 102 bpm. A melhor conduta materno-fetal para resolução da gestação é:",
@@ -2450,6 +2613,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'cermam_am_2009_063',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Ginecologia & Obstetrícia',
     text: "Quanto às anemias na gravidez podemos afirmar:",
@@ -2459,6 +2623,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'cermam_am_2009_064',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Ginecologia & Obstetrícia',
     text: "Cistos de Naboth são encontrados em paciente que previamente apresentou:",
@@ -2468,6 +2633,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'cermam_am_2009_065',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Ginecologia & Obstetrícia',
     text: "Paciente no curso da 33ª semana de gravidez, apresentando níveis tensionais elevados (150/105 mm Hg) acompanhado de sangramento transvaginal de coloração escura e de início abrupto, ausculta fetal duvidosa. O diagnóstico mais provável é:",
@@ -2477,6 +2643,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'cermam_am_2009_066',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Ginecologia & Obstetrícia',
     text: "Alguns medicamentos anti-hipertensivos em mulheres não-grávidas são mais úteis em condições específicas. Qual destas combinações está contraindicada?",
@@ -2486,6 +2653,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'cermam_am_2009_067',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Ginecologia & Obstetrícia',
     text: "Mulher de 25 anos chega ao serviço de emergência cinco horas depois de ser atacada sexualmente. O agressor ejaculou em sua vagina. Qual dos regimes antibióticos a seguir seria mais efetivo para tratar doenças sexualmente transmitidas (DSTs) que a paciente pode ter adquirido durante o ataque?",
@@ -2495,6 +2663,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'cermam_am_2009_068',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Ginecologia & Obstetrícia',
     text: "São indicações absolutas de cesárea, exceto:",
@@ -2504,6 +2673,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'cermam_am_2009_069',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Ginecologia & Obstetrícia',
     text: "Os subtipos mais comuns de papilomavírus humano (HPV), associados a verrugas genitais, são:",
@@ -2513,6 +2683,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'cermam_am_2009_070',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Ginecologia & Obstetrícia',
     text: "Mulher de 30 anos, não lactante, apresenta-se com queixa de secreção papilar sanguinolenta há dois meses na mama esquerda. Ao exame físico observa-se um diminuto nódulo subaureolar. Qual a conduta a ser tomada?",
@@ -2522,6 +2693,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'cermam_am_2009_071',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Ginecologia & Obstetrícia',
     text: "Mulher 38 anos, apresentando nos últimos seis meses lesão eczematoide no mamilo de mama esquerda que se estende à aréola. Fez tratamento dermatológico sem resultado - a lesão continua com pele avermelhada, espessada e crostas úmidas descamativas. A biópsia é mandatória na possibilidade de tratar-se de:",
@@ -2531,6 +2703,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'cermam_am_2009_072',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Ginecologia & Obstetrícia',
     text: "Paciente gesta 2, duas cesareanas, compareceu ao ambulatório de ginecologia e refere que há quatro anos está tentando engravidar novamente, sem sucesso. Há dois anos queixa-se de dor em baixo ventre, progressiva, no período menstrual. No último ano diminuiu a atividade sexual devido à intensa dispareunia. Em relação ao diagnóstico provável, em que você pensaria?",
@@ -2540,6 +2713,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'cermam_am_2009_073',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Ginecologia & Obstetrícia',
     text: "Paciente saudável de 23 anos, G1P1, está no terceiro mês de contracepção com acetato de depomedroxiprogesterona (DMPA). Ela relata spotting e sangramento moderado quase diariamente. Qual a melhor conduta?",
@@ -2549,6 +2723,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'cermam_am_2009_074',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Ginecologia & Obstetrícia',
     text: "Dos fatores abaixo citados qual não exibe correlação com a diabetes gestacional?",
@@ -2558,6 +2733,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'cermam_am_2009_075',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Ginecologia & Obstetrícia',
     text: "Assinale a alternativa INCORRETA com relação ao Estadiamento do Câncer Cervical:",
@@ -2567,6 +2743,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'cermam_am_2009_076',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Ginecologia & Obstetrícia',
     text: "Primigesta com 32 semanas de idade gestacional foi internada com pressão arterial de 160/110 mmHg (após 30 minutos de repouso) e sintomas de cefaleia e escotomas. Trouxe exame de proteinúria de 3 g em 24 horas. À cardiotocografia, o feto mostrou-se reativo. Foi realizada amniocentese, a qual revelou teste de Clements positivo. Qual a conduta mais adequada?",
@@ -2576,6 +2753,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'cermam_am_2009_077',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Ginecologia & Obstetrícia',
     text: "Clinicamente níveis aumentados de prolactina estão associados à:",
@@ -2585,6 +2763,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'cermam_am_2009_078',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Ginecologia & Obstetrícia',
     text: "Com relação à etiologia das fístulas gênito-urinárias, o uso de fórcipe, colporrafias anteriores e irradiação pélvica, são causas de:",
@@ -2594,6 +2773,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'cermam_am_2009_079',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Ginecologia & Obstetrícia',
     text: "Gestante apresentando corrimento vaginal e disúria. Os exames complementares indicaram infecção por Chlamydia trachomatis. O tratamento adequado, consiste no uso por 10 dias de:",
@@ -2603,6 +2783,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'cermam_am_2009_080',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Ginecologia & Obstetrícia',
     text: "As mulheres adultas sobreviventes de abuso sexual na infância, quando comparadas a mulheres que não sofreram abuso sexual, estão sob maior risco de desenvolver todos os distúrbios abaixo, exceto:",
@@ -2612,6 +2793,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'cermam_am_2009_081',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Cirurgia Geral',
     text: "A doença diverticular dos cólons, uma condição rara antes dos 30 anos, mas que se torna comum com o avançar da idade, de modo geral, é assintomática. Os sintomas costumam se apresentar com as complicações. Qual dos abaixo NÃO faz parte das principais complicações?",
@@ -2621,6 +2803,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'cermam_am_2009_082',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Cirurgia Geral',
     text: "Uma mulher de 23 anos é admitida no pronto-socorro com história de atropelamento. Ela se encontra comatosa (Glasgow 7 pontos), francamente dispneica, porém o murmúrio vesicular é audível em todo o campo pulmonar. Seu pulso é filiforme, numa frequência de 140 bpm, e sua P.A é de 70x10. O abdome está distendido, com peristalse abolida. Após garantir vias aéreas através de entubação orotraqueal e infundir 2 L de Ringer lactato, seu pulso é 130 bpm e sua pressão é 80x20 mmHg. O próximo passo deverá ser:",
@@ -2630,6 +2813,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'cermam_am_2009_083',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Cirurgia Geral',
     text: "A sequência correta no processo de cicatrização padrão é:",
@@ -2639,6 +2823,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'cermam_am_2009_084',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Cirurgia Geral',
     text: "Nas obstruções intestinais altas a consequência imediata mais importante é:",
@@ -2648,6 +2833,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'cermam_am_2009_085',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Cirurgia Geral',
     text: "A fadiga vocal e a perda do timbre da voz após uma tireoidectomia levam à suspeição de:",
@@ -2657,6 +2843,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'cermam_am_2009_086',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Cirurgia Geral',
     text: "São sinais de certeza (objetivos) de fraturas de face:",
@@ -2666,6 +2853,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'cermam_am_2009_087',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Cirurgia Geral',
     text: "Paciente do sexo masculino, 55 anos, usuário de álcool e tabaco há 38 anos, apresenta tumoração em cavidade oral, irregular, endurada, fixa, dolorosa, que causa disfagia e sensação de corpo estranho. Informa emagrecimento de 10 Kg nos últimos 2 meses. Foi submetido à biópsia da tumoração cujo histopatológico concluiu tratar-se de lesão maligna, a mais frequente nesta topografia. Qual o provável tipo histológico?",
@@ -2675,6 +2863,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'cermam_am_2009_088',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Cirurgia Geral',
     text: "O tabagismo está presente na carcinogênese de vários tumores. Nas sequências abaixo qual a que contém apenas órgão/sedes em que o fumo é fator determinante no aparecimento de cânceres?",
@@ -2684,6 +2873,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'cermam_am_2009_089',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Cirurgia Geral',
     text: "Considerando que a população está atingindo idades mais avançadas alguns tipos de cânceres tendem a se tornar mais frequentes. É o que vem acontecendo com o câncer de próstata, cuja abordagem inaugural deve ser:",
@@ -2693,6 +2883,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'cermam_am_2009_090',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Cirurgia Geral',
     text: "É considerado Shunt portossistêmico seletivo, empregado para o tratamento da hipertensão porta:",
@@ -2702,6 +2893,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'cermam_am_2009_091',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Ginecologia & Obstetrícia',
     text: "A ultrassonografia morfológica fetal tem sido muito usada no diagnóstico pré-natal. As malformações mais comumente encontradas são de que sistema?",
@@ -2711,6 +2903,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'cermam_am_2009_092',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Neurologia',
     text: "Desgarrado da torcida organizada de seu clube, um rapaz viu-se cercado por admiradores do time adversário e acabou recebendo forte paulada na cabeça. Sangrando muito no coro cabeludo, foi removido para uma clínica particular, onde disse estar bem e 'pronto para outra'. Não havia TC disponível, mas uma radiografia simples do crânio mostrou uma linha de fratura na têmpora direita. Horas depois, ele ficou desorientado, torporoso e, por fim, comatoso. Essa clássica evolução, com progressiva deterioração neurológica em casos de TCE, mais comumente decorre de:",
@@ -2720,6 +2913,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'cermam_am_2009_093',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Cirurgia Geral',
     text: "Com relação à anestesia local podemos afirmar, exceto:",
@@ -2729,6 +2923,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'cermam_am_2009_094',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Cirurgia Geral',
     text: "As indicações de hospitalização em pacientes queimados são, exceto:",
@@ -2738,6 +2933,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'cermam_am_2009_095',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Oftalmologia',
     text: "Um homem de 42 anos notou nódulo levemente doloroso na pálpebra superior há 3 semanas. Ao exame físico o nódulo é firme, sem ulceração. A conjuntiva e a córnea estão aparentemente normais. O exame histopatológico evidenciou 'processo inflamatório constituído por linfócitos de permeio a células epitelioides e células gigantes'. Qual é o provável diagnóstico?",
@@ -2747,6 +2943,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'cermam_am_2009_096',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Neurologia',
     text: "Em traumatismo raquimedular, o quadro clássico de hemissecção medular manifesta-se clinicamente por:",
@@ -2756,6 +2953,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'cermam_am_2009_097',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Ortopedia',
     text: "Sobre as fraturas de membro inferior em crianças assinale a afirmativa INCORRETA:",
@@ -2765,6 +2963,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'cermam_am_2009_098',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Ortopedia',
     text: "As fraturas de clavícula podem ser localizadas no 1/3 externo, no 1/3 médio e no 1/3 interno. As fraturas do 1/3 médio quando apresentam desvio, o fragmento proximal é tracionado pela ação de qual músculo? Assinale a afirmativa verdadeira:",
@@ -2774,6 +2973,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'cermam_am_2009_099',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Cirurgia Geral',
     text: "A Resolução CFM Nº. 1.766/05 de 11/07/05 normatiza o tratamento cirúrgico da obesidade mórbida. De acordo com essa resolução as indicações são as abaixo citadas, exceto:",
@@ -2783,6 +2983,7 @@ const MEDICAL_AVATARS = [
   },
   {
     id: 'cermam_am_2009_100',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Medicina de Família/SUS',
     text: "Você está de plantão no PS e chega pré-escolar de 3 anos de idade que está em tratamento de leucemia linfoblástica aguda e encontrava-se profundamente anêmica, com insuficiência cardíaca congestiva. Os pais são Testemunhas de Jeová e repetidamente lhe dizem que em hipótese alguma a criança deveria receber transfusão de sangue. Você diz aos pais que se a criança não for transfundida imediatamente poderá morrer. Mesmo assim, os pais recusam-se a autorizar a transfusão. A conduta correta neste caso é:",
@@ -3014,15 +3215,21 @@ export default function App() {
       filtered = QUESTIONS.filter(q => user.missedQuestionIds.includes(q.id));
       if (filtered.length === 0) filtered = [...QUESTIONS].slice(0, 5);
     } else if (selectedTrack === 'estudante' || selectedTrack === 'residencia') {
-      filtered = QUESTIONS.filter(q => q.cycle === selectedCycle && q.subject === activeSubject);
+      // Filter by subject (subject names are unique per cycle, so no need to also filter cycle)
+      filtered = QUESTIONS.filter(q => q.subject === activeSubject);
       if (activeSubSubject) {
         filtered = filtered.filter(q => q.subSubject === activeSubSubject);
+      }
+      // Filter by banca if one is selected
+      if (selectedBanca) {
+        const bancaFiltered = filtered.filter(q => q.banca === selectedBanca);
+        if (bancaFiltered.length > 0) filtered = bancaFiltered;
       }
     }
 
     const selected = filtered.length > 0
       ? filtered.sort(() => Math.random() - 0.5).slice(0, 10)
-      : [...QUESTIONS].filter(q => q.cycle === selectedCycle).sort(() => Math.random() - 0.5).slice(0, 10);
+      : [...QUESTIONS].filter(q => q.subject === activeSubject).sort(() => Math.random() - 0.5).slice(0, 10);
 
     setTimeout(() => {
       setIsThinking(false);
@@ -3890,11 +4097,35 @@ export default function App() {
                     ))}
                   </div>
 
+                  {/* Banca Filter */}
+                  <div className="flex items-center gap-2 flex-wrap justify-center">
+                    <span className="text-[9px] font-black text-slate-400 uppercase tracking-[0.2em]">Filtrar por banca:</span>
+                    {['IAMSPE', 'CERMAM'].map(b => (
+                      <button
+                        key={b}
+                        onClick={() => setSelectedBanca(selectedBanca === b ? null : b)}
+                        className={`px-3 py-1 rounded-lg text-[10px] font-black transition-all border ${
+                          selectedBanca === b
+                            ? 'bg-brand-primary text-white border-brand-primary shadow'
+                            : 'bg-white text-slate-500 border-slate-200 hover:border-brand-primary/40'
+                        }`}
+                      >
+                        {b} {selectedBanca === b && '✕'}
+                      </button>
+                    ))}
+                    {selectedBanca && (
+                      <span className="text-[9px] text-slate-400 italic">clique novamente para remover</span>
+                    )}
+                  </div>
+
                   {/* Subject Grid */}
                   <div className="py-10 px-6 flex flex-col items-center bg-white rounded-[3rem] border border-slate-200/80 shadow-xl overflow-visible">
                     <div className="w-full grid grid-cols-2 md:grid-cols-3 gap-y-10 gap-x-4">
                       {(Object.keys(HIERARCHY[selectedCycle]) as Subject[]).map((subj, idx) => {
-                        const qCount = QUESTIONS.filter(q => q.cycle === selectedCycle && q.subject === subj).length;
+                        const allQs = QUESTIONS.filter(q => q.subject === subj);
+                        const qCount = selectedBanca
+                          ? allQs.filter(q => q.banca === selectedBanca).length
+                          : allQs.length;
                         return (
                           <GamePathNode
                             key={`path-${subj}-${idx}`}
