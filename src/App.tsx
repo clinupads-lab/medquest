@@ -2112,14 +2112,23 @@ export default function App() {
       filtered = QUESTIONS.filter(q => user.missedQuestionIds.includes(q.id));
       if (filtered.length === 0) filtered = [...QUESTIONS].slice(0, 5);
     } else if (selectedTrack === 'estudante' || selectedTrack === 'residencia') {
-      filtered = filtered.filter(q => q.cycle === selectedCycle && q.subject === activeSubject);
+      let subjectQs = filtered.filter(q => q.cycle === selectedCycle && q.subject === activeSubject);
       if (activeSubSubject) {
-        filtered = filtered.filter(q => q.subSubject === activeSubSubject);
+        subjectQs = subjectQs.filter(q => q.subSubject === activeSubSubject);
+      }
+      if (subjectQs.length >= 10) {
+        filtered = subjectQs;
+      } else {
+        // Completa até 10 com questões do mesmo ciclo
+        const needed = 10 - subjectQs.length;
+        const fillerPool = QUESTIONS.filter(q => q.cycle === selectedCycle && q.subject !== activeSubject);
+        const filler = fillerPool.sort(() => Math.random() - 0.5).slice(0, needed);
+        filtered = [...subjectQs, ...filler];
       }
     }
-    
-    const selected = filtered.length > 0 
-      ? filtered.sort(() => Math.random() - 0.5).slice(0, 10) 
+
+    const selected = filtered.length > 0
+      ? filtered.sort(() => Math.random() - 0.5).slice(0, 10)
       : [...QUESTIONS].sort(() => Math.random() - 0.5).slice(0, 5);
 
     setTimeout(() => {
