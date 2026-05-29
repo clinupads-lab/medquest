@@ -4340,7 +4340,7 @@ export default function App() {
                         {/* Main CTA */}
                         <motion.button
                           whileTap={{ scale: 0.97 }}
-                          onClick={startQuiz}
+                          onClick={() => { setQuizBancaFilter(selectedBanca && ['IAMSPE','CERMAM'].includes(selectedBanca) ? selectedBanca : null); startQuiz(false, selectedSubject, null); }}
                           className="group w-full relative overflow-hidden rounded-2xl py-4 flex items-center justify-between px-5"
                           style={{ background: 'linear-gradient(135deg, #2563EB 0%, #1D4ED8 100%)', boxShadow: '0 8px 32px rgba(37,99,235,0.40)' }}
                         >
@@ -4394,16 +4394,20 @@ export default function App() {
                       {/* Subject Grid */}
                       <div className="py-8 px-5 flex flex-col items-center bg-white rounded-[2.5rem] border border-slate-200/80 shadow-xl overflow-visible">
                         <div className="w-full grid grid-cols-2 md:grid-cols-3 gap-y-8 gap-x-4">
-                          {(Object.keys(HIERARCHY[selectedCycle as Cycle]) as Subject[]).map((subj, idx) => (
-                            <GamePathNode
-                              key={`res-path-${subj}-${idx}`}
-                              subject={subj}
-                              progress={Number(user.mastery[subj] || 0)}
-                              index={idx}
-                              isSelected={selectedSubject === subj}
-                              onClick={() => { setSelectedSubject(subj); setSelectedSubSubject(null); startQuiz(false, subj, null); }}
-                            />
-                          ))}
+                          {(Object.keys(HIERARCHY[selectedCycle as Cycle]) as Subject[]).map((subj, idx) => {
+                            const qc = QUESTIONS.filter(q => q.subject === subj).length;
+                            return (
+                              <GamePathNode
+                                key={`res-path-${subj}-${idx}`}
+                                subject={subj}
+                                progress={Number(user.mastery[subj] || 0)}
+                                index={idx}
+                                isSelected={selectedSubject === subj}
+                                questionCount={qc}
+                                onClick={() => { if (qc > 0) { setSelectedSubject(subj); setSelectedSubSubject(null); startQuiz(false, subj, null); } }}
+                              />
+                            );
+                          })}
                         </div>
                       </div>
                     </div>
