@@ -8335,6 +8335,7 @@ export default function App() {
     } else {
       // End session
       setSummaryTimer(quizTimer);
+      setIsThinking(false);
       setUser(prev => {
         const newXp = prev.xp + sessionResults.xpGained;
         const newLevel = Math.floor(newXp / 1000) + 1;
