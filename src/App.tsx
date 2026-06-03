@@ -9971,12 +9971,12 @@ export default function App() {
 
           {/* SUMMARY VIEW */}
           {view === 'summary' && (
-            <motion.div 
+            <motion.div
               key="summary"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -20 }}
-              className="flex flex-col gap-10 pb-24 px-4"
+              className="flex flex-col gap-10 pb-24 px-4 min-h-screen"
             >
               {/* Header Section */}
               <div className="bg-gradient-to-br from-blue-500 via-blue-600 to-blue-900 rounded-[3rem] p-10 text-white text-center relative overflow-hidden shadow-2xl shadow-blue-500/30">
