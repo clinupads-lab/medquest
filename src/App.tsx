@@ -9978,6 +9978,20 @@ export default function App() {
               exit={{ opacity: 0, y: -20 }}
               className="flex flex-col gap-10 pb-24 px-4 min-h-screen"
             >
+              {/* Fallback if data is missing */}
+              {!sessionResults.total ? (
+                <div className="w-full p-10 bg-white rounded-[3rem] border border-slate-200 shadow-xl text-center mt-10">
+                  <h2 className="text-3xl font-black text-slate-900 mb-4">Sessão Concluída! 🎉</h2>
+                  <p className="text-slate-500 mb-6">Carregando resultados...</p>
+                  <button
+                    onClick={() => setView('home')}
+                    className="px-8 py-3 bg-blue-600 text-white rounded-xl font-black"
+                  >
+                    Voltar para Home
+                  </button>
+                </div>
+              ) : null}
+
               {/* Header Section */}
               <div className="bg-gradient-to-br from-blue-500 via-blue-600 to-blue-900 rounded-[3rem] p-10 text-white text-center relative overflow-hidden shadow-2xl shadow-blue-500/30">
                 {/* decorative blobs */}
