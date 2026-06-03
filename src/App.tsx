@@ -7890,7 +7890,7 @@ export default function App() {
     if (revision) {
       filtered = QUESTIONS.filter(q => user.missedQuestionIds.includes(q.id));
       if (filtered.length === 0) filtered = [...QUESTIONS].slice(0, 5);
-    } else if (selectedTrack === 'estudante' || selectedTrack === 'residencia') {
+    } else {
       // Filter by subject (subject names are unique per cycle, so no need to also filter cycle)
       filtered = QUESTIONS.filter(q => q.subject === activeSubject);
       if (activeSubSubject) {
