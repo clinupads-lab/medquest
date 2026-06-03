@@ -30,7 +30,12 @@
       "PowerShell(npm run lint 2>&1)",
       "Bash(xargs grep -l \"BASE_DIR\\\\|Path\\(\")",
       "Bash(git push *)",
-      "Bash(git pull *)"
+      "Bash(git pull *)",
+      "Bash(timeout 30 bash -c 'until curl -s http://localhost:3000 > /dev/null 2>&1; do sleep 1; done; echo \"Server ready\"')",
+      "Bash(npx playwright *)",
+      "Bash(node test-fix.js)",
+      "Bash(npm install *)",
+      "Bash(powershell -Command \"Start-Process 'http://localhost:3000'\")"
     ]
   }
 }

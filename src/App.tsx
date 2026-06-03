@@ -9049,7 +9049,7 @@ export default function App() {
 
                       {/* Cycle Toggle */}
                       <div className="flex bg-slate-100 p-1 rounded-2xl w-fit mx-auto shadow-inner overflow-x-auto">
-                        {(['Ciclo Básico', 'Ciclo Clínico', 'Internato'] as Cycle[]).map((cycle) => (
+                        {(['Ciclo Clínico', 'Internato'] as Cycle[]).map((cycle) => (
                           <button
                             key={cycle}
                             onClick={() => {
