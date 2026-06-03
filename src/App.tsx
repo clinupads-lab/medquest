@@ -409,6 +409,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam25_01',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Cardiologia',
     text: 'Qual é o principal fator que define uma Emergência Hipertensiva de acordo com as diretrizes brasileiras que deve estar associado a definição arbitrária da PAS >= 180mmHg e/ou PAD >=110mmhg ou até mesmo com valores menores?',
@@ -422,6 +423,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam25_02',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Cardiologia',
     text: 'Homem de 58 anos, hipertenso e tabagista, chega ao pronto-socorro com dor torácica em aperto há 40 minutos, irradiando para o braço esquerdo e mandíbula. ECG mostra supradesnivelamento de ST em DII, DIII e aVF. Qual é a conduta inicial imediata mais indicada?',
@@ -435,6 +437,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam25_03',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Cardiologia',
     text: 'Paciente de 76 anos, sexo masculino, com histórico de HAS e Diabetes Mellitus tipo 2 e Insuficiência Cardíaca com FEVE 35%, apresenta Fibrilação Atrial (FA) persistente. Qual a conduta antitrombótica recomendada para uso ambulatorial, baseada no escore CHA2DS2-VASc?',
@@ -448,6 +451,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam25_04',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Endocrinologia',
     text: 'Qual dos seguintes achados é mais característico do hipertireoidismo por Doença de Graves?',
@@ -461,6 +465,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam25_05',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Endocrinologia',
     text: 'Uma paciente de 42 anos, IMC 35 kg/m², sem comorbidades aparentes, procura atendimento para manejo da obesidade. Após avaliação multiprofissional, decide-se iniciar terapia farmacológica. Segundo diretrizes atuais, qual das seguintes opções é CORRETA com relação ao tratamento medicamentoso da obesidade?',
@@ -474,6 +479,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam25_06',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Endocrinologia',
     text: 'Paciente com diabetes mellitus tipo 2 e HbA1c 9,8% após metformina em dose máxima. Próxima medida mais indicada:',
@@ -487,6 +493,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam25_07',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Gastroenterologia',
     text: 'Qual é a conduta profilática secundária de primeira linha para prevenir o ressangramento em pacientes cirróticos com hemorragia digestiva alta HDA por varizes esofágicas?',
@@ -500,6 +507,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam25_08',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Gastroenterologia',
     text: 'Homem de 49 anos com cirrose alcoólica descompensada (ascite, encefalopatia). Nesse caso, qual marcador tem maior valor prognóstico?',
@@ -513,6 +521,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam25_09',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Geriatria',
     text: 'Qual das seguintes condições é considerada um componente fundamental do conceito de Fragilidade ou Síndrome da Fragilidade no idoso Critérios de Fried?',
@@ -526,6 +535,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam25_10',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Hematologia',
     text: 'Segundo a Associação Brasileira de Hematologia, Hemoterapia e Terapia Celular (ABHH) no Consenso PBM-ABHH e no Guia para o uso de hemocomponentes do Ministério da Saúde, em circunstâncias clínicas em que não há sangramento ativo grave, qual das alternativas abaixo reflete a prática recomendada para a transfusão de concentrado de hemácias?',
@@ -539,6 +549,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam25_11',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Infectologia',
     text: 'Paciente com HIV (CD4 = 38) evolui com perda visual bilateral progressiva. Fundoscopia mostra lesões algodonosas e hemorragias em chama de vela. Sobre o caso, assinale a VERDADEIRA :',
@@ -552,6 +563,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam25_12',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Infectologia',
     text: 'Sobre sepse e choque séptico, analise as afirmações a seguir: I. O aumento de lactato é marcador de hipoperfusão tecidual. II. A noradrenalina é o vasopressor de primeira escolha. III. O uso de antibiótico pode ser postergado até o resultado da cultura. IV. A reposição volêmica inicial recomendada é de 30 mL/kg. Assinale a alternativa correta:',
@@ -565,6 +577,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam25_13',
+    banca: 'CERMAM',
     cycle: 'Internato',
     subject: 'Urgência e Emergência',
     text: 'Um homem de 42 anos é encontrado inconsciente após ingerir bebida alcoólica artesanal de origem duvidosa. No pronto-socorro, apresenta taquipneia, confusão mental e visão borrada. O exame físico mostra hipotensão leve, respiração de Kussmaul e dor abdominal difusa. A gasometria revela: pH = 7,05; HCO ₃⁻ = 8 mEq/L; pCO ₂ = 22 mmHg; lactato = 3 mmol/L; Ânion Gap 20. Com base nas informações acima, qual é a conduta inicial mais adequada?',
@@ -578,6 +591,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam25_14',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Nefrologia',
     text: 'De acordo com a Diretriz Brasileira para Diagnóstico e Tratamento Clínico da Nefrolitíase (SBN, 2024– 2025), qual das condutas abaixo está CORRETAMENTE indicada para a prevenção de recorrência de cálculos renais de oxalato de cálcio?',
@@ -591,6 +605,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam25_15',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Nefrologia',
     text: 'Um paciente de 68 anos, hipertenso e diabético, é internado por pneumonia comunitária grave. No terceiro dia de internação, apresenta queda da diurese e elevação da creatinina sérica de 1,0 mg/dL para 2,1 mg/dL em 48 horas. Ao exame, está levemente hipotenso e com turgor diminuído. Sódio urinário: 8 mEq/L; fração de excreção de sódio (FENa): 0,4%; osmolaridade urinária: 520 mOsm/kg. Qual é o diagnóstico e a conduta inicial mais adequados?',
@@ -604,6 +619,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam25_17',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Neurologia',
     text: 'A epilepsia é considerada refratária quando:',
@@ -617,6 +633,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam25_18',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Neurologia',
     text: 'Paciente de 68 anos apresenta sintomas de Acidente Vascular Cerebral Isquêmico (AVCI) há 2horas. Tomografia de Crânio (TC) sem sinais de hemorragia. Qual o principal critério de inclusão para trombólise endovenosa com Alteplase(t-PA)?',
@@ -630,6 +647,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam25_19',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Psiquiatria',
     text: 'Homem de 19 anos é trazido à emergência após postar nas redes sociais que iria \'dar fim à própria vida\'. Relata sentimento de desesperança, mas nega ter tentado o suicídio. A conduta imediata mais adequada é:',
@@ -643,6 +661,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam25_20',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Psiquiatria',
     text: 'Homem de 32 anos, em uso de haloperidol 10 mg/dia por esquizofrenia, chega à UPA com rigidez muscular intensa, febre de 39°C e confusão mental. PA: 150 × 90 mmHg, FC: 120 bpm. Qual é a conduta inicial mais adequada?',
@@ -656,6 +675,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam25_21',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Cirurgia Geral',
     text: 'Paciente do sexo masculino, 48 anos, é atendido no pronto atendimento com quadro de dor epigástrica, tipo cólica, que migrou para a FID há cerca de 7 dias. Havia tido diagnóstico prévio de infecção do trato urinário e estava em tratamento domiciliar com antibióticos orais e sintomáticos, porém o quadro evoluiu com febre e vômitos e decidiu buscar uma nova reavaliação. No momento o paciente se encontra em BEG, febril (38 o C), FR: 20irpm, FC: 80bpm. P.A.: 120x80mmHg. Seu abdome é plano, flácido, com abaulamento doloroso à palpação em FID. Sua avaliação laboratorial evidenciou leucograma com 16.000 e desvio à esquerda e PCR: 120mg/dl. Foi submetido a tomografia computadorizada que evidenciou apêndice cecal de paredes espessadas e perfurado, espessamento de ceco e coleção líquida adjacente de cerca de 6cm, bloqueada. Sobre o caso acima, assinale a alternativa CORRETA :',
@@ -669,6 +689,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam25_22',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Cirurgia Geral',
     text: 'Paciente do sexo masculino, 62 anos, sem comorbidades, é transferido de hospital do Interior do Estado para avaliação de quadro de dor abdominal há 5 dias. Paciente refere que apresentou dor tipo cólica, em FIE, com aumento progressivo de intensidade, associada a astenia, náuseas, vômitos e constipação. Fez uso de sintomáticos no domicílio, mas percebeu piora do quadro após 3 dias, com piora da dor e início de febre, procurando assistência médica, sendo internado para antibioticoterapia e transferido para Manaus. Neste momento, seu exame físico evidencia BEG, lúcido e orientado, FC: 98bpm, FR: 26irpm, P.A.: 120x80mHg. Seu abdome é globoso, algo distendido, doloroso à palpação em FIE e hipogástrio, com sinais claros de irritação peritoneal. Leucograma: 22.000 com 96% de neutrófilos. PCR: 150mg/dl. Foi submetido a tomografia de abdome que revelou presença de divertículos em sigmoide e quadro agudo compatível com Hinchey Modificado classe III/IV. Sobre o caso acima, assinale a alternativa INCORRETA :',
@@ -682,6 +703,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam25_23',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Gastroenterologia',
     text: 'Paciente do sexo masculino, 42 anos, com história de abuso crônico de álcool, é levado pela família para avaliação médica devido a quadro de emagrecimento e distensão abdominal, sem demais queixas. O paciente refere estar em tratamento para o alcoolismo e pretende cuidar da sua saúde. Ao exame físico, o paciente se apresenta emagrecido, porém em BEG, lúcido e orientado, eupneico, afebril, anictérico e hemodinamicamente estável. Seu abdome é semigloboso, indolor à palpação, com discreta circulação colateral visível e baço palpável. Ausência de edema de membros inferiores. Traz consigo ultrassonografia que evidencia fígado de tamanho reduzido, de contorno irregular e serrilhado, de textura ecográfica heterogênea, associada a moderada ascite e esplenomegalia. Sobre o caso acima, assinale a alternativa INCORRETA :',
@@ -695,6 +717,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam25_24',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Cirurgia Geral',
     text: 'Paciente do sexo feminino, 72 anos, hipertensa, diabética e cardiopata, é trazida por familiares em serviço de pronto socorro com quadro de dor tipo cólica, aguda, em HD, irradiada para o dorso, associada a vômitos, há 2 dias (SIC). As informações colhidas podem não ser precisas, uma vez que a paciente tem sequelas de AVC isquêmico há 5 anos e se expressa com dificuldade. Ao exame físico, a paciente se apresenta emagrecida, desidratada, anictérica, FC: 82bpm, FR: 22irpm, P.A.: 100x70mmHg. A paciente apresenta fascies de dor à palpação profunda do HD e há a impressão de palpação de plastrão local. Leucograma: 11.000 e PCR: 80mg/dl. Submetida a USG à beira leito, observou- se vesícula biliar túrgida, de paredes espessadas, contendo cálculos. Após discussão do caso com a Clínica Médica, optou-se por iniciar tratamento clínico com ceftriaxona, metronidazol e sintomáticos. Após 48 horas, a paciente evoluiu de forma insatisfatória, apresentando sonolência e oligúria, mantendo dor em HD, com plastrão palpável e iniciando febre baixa (1 episódio). A reavaliação laboratorial evidenciou piora da leucocitose (agora 14.000), plaquetas 80.000 e PCR de 120mg/dl. Uma nova USG à beira leito evidenciou discreta infiltração de gás na parede da vesícula biliar. Sobre o caso acima, assinale a alternativa CORRETA :',
@@ -708,6 +731,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam25_25',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Cirurgia Geral',
     text: 'Paciente do sexo feminino, 72 anos, dá entrada no pronto socorro queixando sangramento vermelho vivo durante as defecações há cerca de 2 dias. O quadro iniciou com hematoquezia e no momento a paciente apresentou uma média de 5 episódios de enterorragia e episódio de síncope no domicílio. A paciente é hipertensa e faz uso de AAS e clopidogrel. Refere que foi submetida a colonoscopia para rastreio de neoplasia de cólon há 2 anos que evidenciou apenas presença de divertículos no sigmoide. Nega dor abdominal e alteração significativa do hábito alimentar recentemente. Ao exame físico, a paciente se encontra pálida ++/4, lúcida e orientada, FC: 100bpm, FR: 27irpm e P.A.: 110x70mmHg. Seu abdome é plano, flácido, simétrico e indolor à palpação, sem massas palpáveis. Toque retal sem alterações, exceto por sangue em dedo de luva. Seu hemograma revelou Hb: 8mg/dl e contagem de plaquetas: 90.000/ μ L. Sobre o caso, assinale a alternativa INCORRETA :',
@@ -721,6 +745,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam25_26',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Gastroenterologia',
     text: 'Você é chamado para avaliar um paciente na enfermaria da clínica médica, sob o diagnóstico de pancreatite aguda biliar. O paciente tem história de dor contínua, em barra, intensa, associado a vômitos e sinais de hipovolemia iniciado há cerca de 3 semanas, evoluindo com choque refratário às condutas iniciais e insuficiência renal, sendo encaminhado a UTI. Ao fim da primeira semana, obteve estabilização do status hemodinâmico e melhora dos níveis séricos das escórias nitrogenadas, no entanto mantinha dor epigástrica irradiada para o dorso, náuseas e vômitos ocasionais e baixa tolerância a alimentação pela via oral. O tratamento clínico de suporte foi mantido, iniciada dieta enteral e realizada tomografia computadorizada que evidenciou necrose de 30 a 50% do pâncreas e coleção fluida retroperitoneal peripancreática. Neste momento, após 3 semanas de tratamento, o paciente encontra-se hemodinamicamente estável, com função renal normal, ausência de febre, dor controlável sem morfina e aceitando dieta oral. Sua tomografia de controle evidencia organização da coleção peripancreática e manutenção do grau de necrose pancreática. Sobre os próximos passos da conduta desta paciente, assinale a alternativa CORRETA :',
@@ -734,6 +759,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam25_27',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Cirurgia Geral',
     text: 'Paciente do sexo masculino, obeso, 58 anos, apresenta quadro de dor tipo cólica em HD, irradiada para o dorso, associada a náuseas e vômitos, após ingesta de alimento rico em gordura. Traz consigo USG de abdome, realizada há 1 ano, que evidencia vesícula biliar contendo cálculos. Está internado há 3 dias, sob tratamento clínico e evoluiu neste período com presença de icterícia. No momento o paciente se encontra em BEG, lúcido e orientado, eupneico, afebril e normotenso. Seu abdome é plano, flácido, pouco doloroso à palpação profunda no HD, sem plastrão palpável. Aceita dieta oral. Sua avaliação laboratorial evidenciou leucograma com 11.000 leucócitos, PCR: 45mg/dl, bilirrubinas totais: 4,2mg/dl, bilirrubina direta: 3.4mg/dl, fosfatase alcalina: 250mg/dl e gamaGT: 380mg/dl. Sobre o caso, assinale a alternativa CORRETA:',
@@ -747,6 +773,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam25_28',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Urologia',
     text: 'Paciente do sexo masculino, 16 anos de idade, vem ao pronto socorro queixando dor ínguino-escrotal, contínua, intensa, de início súbito logo após esforço físico, há cerca 2 horas, associada a vômitos. Ao exame físico, o paciente se encontrava em BEG, eupneico, afebril e hemodinamicamente estável. Observa-se abaulamento ínguino-escrotal à direita, irredutível, bastante doloroso à palpação, com calor e rubor local. O paciente refere que apresenta esse tipo de abaulamento desde a infância, mas que reduzia facilmente à palpação ou durante o decúbito. Sobre o caso acima, assinale a alternativa CORRETA :',
@@ -760,6 +787,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam25_29',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Cirurgia Geral',
     text: 'Paciente do sexo feminino, 28 anos, está no terceiro trimestre de gravidez do segundo filho (o primeiro filho nasceu de parto natural há 4 anos), busca atendimento médico devido a dor anal. A paciente refere que há cerca de 1 dia, após defecação dificultada por fezes endurecidas. Nega sangramento pelo ânus. Refere constipação crônica, com evacuação de fezes endurecidas, sob esforço, 2 vezes por semana, que piorou durante a gravidez. Ao exame físico, a paciente apresenta lesão nodular em borda anal, de coloração violácea, consistência firme, localizada às 9:00, abaixo da linha pectínea, bastante dolorosa à palpação. Sobre o caso, assinale a alternativa CORRETA :',
@@ -773,6 +801,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam25_30',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Ginecologia & Obstetrícia',
     text: 'Paciente do sexo feminino, 15 anos, apresenta quadro de dor em FID, de início súbito, progressiva, de intensidade moderada a intensa, há cerca de 8 horas, acompanhada de náuseas e vômitos. Fez uso de sintomáticos no domicílio, sem sucesso. Menarca aos 11 anos, com ciclos irregulares. Última menstruação há 1 mês. Nega leucorreia. Ao exame físico, a paciente se encontra em BEG, normocorada, FC: 80bpm, FR: 16irpm, P.A.: 110x70mmHg. Seu abdome é plano, flácido, doloroso à palpação profunda em FID, sem sinais claros de irritação peritoneal. Foi submetida a ultrassom à beira leito que evidenciou ovário direito aumentado de volume às custas de massa cística de cerca de 8cm, deslocado para a linha média em posição retrouterina e pequena quantidade de líquido na pelve. Sobre o caso, assinale a alternativa CORRETA :',
@@ -786,6 +815,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam25_31',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Cirurgia Geral',
     text: 'Paciente do sexo masculino, 45 anos, agricultor, apresenta história de dor abdominal intensa, que iniciou subitamente no epigástrio e migrou para todo o abdome, irradiando par o pescoço e ombro esquerdo após algumas horas. Procurou o atendimento de urgência da sua comunidade rural, sendo transferido para Manaus após 9 horas de evolução. No momento se encontra em REG, com fascies de dor, afebril, taquicardico, taquipneico e normotenso. Seu abdome é difusamente tenso, doloroso à palpação superficial, com sinais claros de irritação peritoneal. Sobre o caso, assinale a alternativa INCORRETA :',
@@ -799,6 +829,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam25_32',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Cirurgia Geral',
     text: 'Paciente de sexo masculino, 18 anos, é atendido em pronto-socorro, vítima de ferimento abdominal penetrante por arma de fogo em mesogástrio e HD, sendo submetido a laparotomia exploradora que evidenciou moderada quantidade de sangue livre na cavidade, lesões transfixantes no estômago e cólon transverso e 3 ferimentos no intestino delgado e no seu mesentério. Demais vísceras abdominais sem evidência de lesão. A conduta tomada foi a lavagem da cavidade e – 2025/2026_1',
@@ -812,6 +843,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam25_33',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Pediatria',
     text: 'Paciente do sexo feminino, 8 anos, é trazida pela mãe para avaliação médica devido a dor e distensão abdominal associada a vômitos, há 2 dias. A dor parece ser intermitente, tipo cólica, progressiva, de média intensidade. Refere ainda parada de eliminação de gases e fezes e que a paciente não urina há 6 horas. Ao exame físico a paciente se encontra em REG, hipoativa, com fascies de dor, taquicárdica, taquipneica e levemente hipotensa. Seu abdome se apresenta distendido, hipertimpânico, com RHA de luta, difusamente doloroso à palpação, sem sinais de irritação peritoneal, com cicatriz em FID devido a apendicectomia prévia há 2 anos. Sobre o caso, assinale a alternativa CORRETA :',
@@ -825,6 +857,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam25_34',
+    banca: 'CERMAM',
     cycle: 'Internato',
     subject: 'Urgência e Emergência',
     text: 'Paciente do sexo feminino, 10 anos, é trazida ao hospital pelos familiares devido a extensa queimadura por incêndio no seu domicílio. Há relato de a paciente ter ficado presa em ambiente fechado durante o acidente. A paciente apresenta queimadura de face, tórax e abdome anterior, face anterior do ombro e braço esquerdo e ambas as pernas, circunferencialmente. Durante a avaliação da face, você observa queimadura das sobrancelhas e vibices nasais, além de hiperemia e edema de lábios, língua e hipofaringe. A paciente apresenta desconforto respiratório, sialorreia e dificuldade para deglutir. A paciente se encontra confusa, pouco cooperativa, queixando dor e náuseas, com FC: 110bpm, FR: 26irpm e P.A.: 100x50mmHg. Sobre as condutas iniciais para esta paciente, assinale a alternativa INCORRETA :',
@@ -838,6 +871,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam25_35',
+    banca: 'CERMAM',
     cycle: 'Internato',
     subject: 'Cirurgia Vascular',
     text: 'Paciente do sexo masculino, 75 anos, tabagista, hipertenso e diabético, apresenta quadro de dor abdominal de início súbito, bastante intensa, rapidamente progressiva, no mesogástrio, há 2 horas, seguido de episódios de vômito. Nega febre, diarréia e sintomas urinários. Sua esposa refere que há alguns meses o paciente sente dor mesogástrica semelhante, mas de leve intensidade, algumas horas após as refeições, o que fez com que o paciente perdesse peso. Ao exame físico, o paciente se encontra emagrecido, com fascies de dor, taquicárdico, taquipneico e normotenso. Apesar da queixa de dor intensa, seu abdome é plano, flácido à palpação, sem sinais de irritação peritoneal. Sobre a avaliação e conduta deste paciente, assinale a alternativa CORRETA :',
@@ -851,6 +885,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam25_36',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Clínica Médica',
     text: 'Você é chamado para avaliar um paciente idoso e emagrecido na enfermaria da Clínica Médica, acamado por sequela de AVC prévio e internado para tratamento de uma pneumonia. Durante a visita de rotina, a enfermagem identificou uma lesão na região sacral e solicitou seu parecer. Ao exame físico, observa-se área ulcerada superficial, de cerca de 5cm de diâmetro, com perda parcial da pele e exposição da derme, de coloração rosada, com pouca umidade, sem presença de tecido desvitalizado. Não há flutuação, drenagem de secreção ou odor fétido. Não há exposição de tecidos profundos. A borda da lesão é bem definida e a pele ao redor está íntegra e sem sinais flogísticos. Sobre o caso, assinale a alternativa INCORRETA :',
@@ -864,6 +899,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam25_37',
+    banca: 'CERMAM',
     cycle: 'Internato',
     subject: 'Urgência e Emergência',
     text: 'Um homem de 28 anos é trazido ao pronto-socorro após ferimento penetrante por arma branca na face medial da coxa direita durante assalto. Ele chega carregado por terceiros, sem imobilização, visivelmente pálido e agitado. Na admissão, apresenta com pele fria e pegajosa, FC 148 bpm, P.A. não mensurável no braço direito; 70×40 mmHg no braço esquerdo, tempo de enchimento capilar > 4 segundos, FR 32 irpm e SpO ₂ 90% em ar ambiente. O ferimento apresenta sangramento pulsátil ativo, encharcando roupas e macas. O paciente está consciente, porém confuso e sonolento, repetindo que “não consegue respirar direito”. A equipe de plantão prepara material para intubação orotraqueal imediata, considerando a taquipneia e a instabilidade hemodinâmica. Sobre o caso descrito, qual deve ser a próxima conduta?',
@@ -877,6 +913,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam25_38',
+    banca: 'CERMAM',
     cycle: 'Internato',
     subject: 'Urgência e Emergência',
     text: 'Um motociclista de 34 anos chega ao pronto- socorro após colisão frontal com automóvel. Refere que usava capacete. Ele está consciente, ansioso, diaforético e queixa-se de forte dor abdominal. Ao exame, apresenta FC: 136 bpm, PA: 88 × 50 mmHg, FR: 28 irpm, SatO ₂ 97%, pele fria e úmida. Seu abdome é distendido, doloroso difusamente. Extremidades sem deformidades. TEP > 3 segundos. Não há sinais de hemorragia externa. Foi realizado FAST na sala de trauma mostra líquido livre em fundo de saco, sem tamponamento cardíaco e sem pneumotórax. A equipe prepara 2 L de Ringer Lactato aquecido para reposição volêmica imediata. De acordo com os dados apresentados, qual deve ser a melhor conduta inicial? – 2025/2026_1',
@@ -890,6 +927,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam25_39',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Gastroenterologia',
     text: 'Um homem de 62 anos, tabagista há 40 anos e etilista inveterado, procura atendimento por disfagia progressiva para sólidos há 2 meses, acompanhada de perda ponderal de 6 kg. Nega dor torácica, hematêmese ou febre. Ao exame físico, o paciente se apresenta emagrecido, hidratado, sem linfonodos cervicais palpáveis, ausculta pulmonar normal, abdome sem ascite, massas ou visceromegalias. Diante do quadro clínico, o médico solicita endoscopia digestiva alta (EDA) e exames laboratoriais iniciais. A equipe discute quais exames adicionais seriam necessários, caso a endoscopia confirme lesão suspeita de neoplasia. Sobre o caso acima, é INCORRETO afirmar que:',
@@ -903,6 +941,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam25_40',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Nefrologia',
     text: 'Um homem de 42 anos, previamente saudável, apresenta dor lombar esquerda súbita, intensa, em cólica, irradiada para fossa ilíaca, associada a náuseas e vômitos. Nega febre. Ao exame, está taquicárdico (FC 104 bpm), PA 135×80 mmHg, afebril, sem sinais de irritação peritoneal. Seus exames iniciais revelam hematúria +++, sem nitrito, sem leucocitúria importante no EAS, creatinina: 1,0 mg/dL e PCR normal. Foi submetido a ultrassom realizado na emergência que evidencia discreta hidronefrose esquerda, cálculo hiperecogênico no ureter proximal, sem sinais de obstrução grave ou complicação. A equipe cogita solicitar tomografia e questiona se é necessário ampliar a investigação laboratorial antes de definir a conduta. Sobre o caso descrito, qual deve ser o próximo passo na condução do caso?',
@@ -916,6 +955,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam25_41',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Ginecologia & Obstetrícia',
     text: 'De acordo com os critérios de elegibilidade da OMS (2015), o uso de métodos contraceptivos injetáveis mensais NÃO deve ser indicado em mulheres que fazem uso de:',
@@ -929,6 +969,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam25_42',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Ginecologia & Obstetrícia',
     text: 'Considerando a fisiologia de um ciclo menstrual regular, o hormônio identificado pela seta na Figura, refere-se a:',
@@ -942,6 +983,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam25_43',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Ginecologia & Obstetrícia',
     text: 'Paciente de 63 anos vai à consulta por sangramento vaginal, em pequena quantidade, com duração de dois dias. Nega outros episódios prévios desde a menopausa aos 53 anos. Nega uso de terapia hormonal e outras queixas. Foi solicitada ultrassonografia transvaginal que evidenciou endométrio homogêneo com 5,4 mm de espessura. Qual a conduta mais adequada nesse caso?',
@@ -955,6 +997,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam25_44',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Ginecologia & Obstetrícia',
     text: 'Paciente de 30 anos, compareceu para consulta ginecológica referindo “corrimento vaginal” com prurido, sem odor, principalmente no período pré- menstrual desde a adolescência. A microscopia está representada na figura. Qual o diagnóstico e a conduta?',
@@ -968,6 +1011,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam25_45',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Ginecologia & Obstetrícia',
     text: 'Qual o método considerado padrão ouro no diagnóstico de pólipo endometrial?',
@@ -981,6 +1025,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam25_46',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Ginecologia & Obstetrícia',
     text: 'Paciente com sangramento uterino anormal, foi ao ginecologista com resultado de ultrassonografia transvaginal com diagnostico de mioma FIGO 0 (zero) de 18 mm. Qual o melhor método para a ressecção da lesão?',
@@ -994,6 +1039,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam25_47',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Ginecologia & Obstetrícia',
     text: 'Uma mulher vítima de violência sexual procura atendimento emergencial, mas não possui carteira vacinal e não se recorda de ter recebido vacina contra hepatite B anteriormente. Sobre a profilaxia pós-exposição ao vírus da hepatite B (VHB), qual das condutas a seguir está CORRETA , considerando a situação em que não se conhece o estado sorológico do agressor?',
@@ -1007,6 +1053,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam25_48',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Ginecologia & Obstetrícia',
     text: 'Em relação à evolução natural da sífilis adquirida, qual das afirmações abaixo está CORRETA ?',
@@ -1020,6 +1067,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam25_49',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Ginecologia & Obstetrícia',
     text: 'Uma mulher de 29 anos, nuligesta, procura atendimento por dismenorreia progressiva, dispareunia profunda e dor pélvica cíclica há 18 meses. Exame físico revela sensibilidade à palpação dos ligamentos uterossacros, mas sem massas anexiais palpáveis. A paciente realizou ultrassonografia transvaginal no 14º dia do ciclo, com profissional experiente, segundo protocolo IDEA, que não identificou endometrioma ou nódulos profundos evidentes. Ela está muito ansiosa. Qual é a conduta mais adequada nesse caso?',
@@ -1033,6 +1081,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam25_50',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Ginecologia & Obstetrícia',
     text: 'Uma paciente de 26 anos apresenta nódulo mamário único, móvel, fibroelástico, medindo 1,82 cm. A ultrassonografia evidencia lesão oval, paralela à pele, circunscrita e hipoecogênica, compatível com BI-RADS 3. Qual é a conduta mais adequada? – 2025/2026_1',
@@ -1046,6 +1095,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam25_51',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Ginecologia & Obstetrícia',
     text: 'Gestante sem comorbidades, na triagem do 1º trimestre, apresenta teste rápido treponêmico para sífilis (TR) reagente. Refere nunca ter recebido tratamento prévio. Qual a conduta inicial mais adequada?',
@@ -1059,6 +1109,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam25_53',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Ginecologia & Obstetrícia',
     text: 'Gestante na 20ª semana, foi diagnosticada com oligodrâmnio acentuado na ultrassonografia obstétrica. Nesse caso, qual a causa provável para esse diagnóstico?',
@@ -1072,6 +1123,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam25_54',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Ginecologia & Obstetrícia',
     text: 'No primeiro trimestre, o amolecimento do istmo uterino, perceptível ao exame físico, corresponde a qual sinal clássico?',
@@ -1085,6 +1137,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam25_55',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Ginecologia & Obstetrícia',
     text: 'Primigesta, gestação gemelar, 30 anos, IMC de 31 kg/m², na 12ª semana de gestação, realizou Doppler de artéria uterina com índice de pulsatilidade no percentil 60. Qual a melhor conduta segundo o Manual da Rede Brasileira de Hipertensão e o Ministério da Saúde?',
@@ -1098,6 +1151,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam25_56',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Ginecologia & Obstetrícia',
     text: 'Gestante de 26 semanas com glicemia de jejum inicial 81 mg/dL realiza TOTG 75 g com resultados: → Jejum: 84 mg/dL → 1 h: 178 mg/dL → 2 h: 139 mg/dL. Qual o diagnóstico?',
@@ -1111,6 +1165,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam25_57',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Ginecologia & Obstetrícia',
     text: 'Gestante aloimunizada, 28 semanas, sem hidropisia. Doppler da artéria cerebral média com pico de velocidade sistólica= 1,65 MoM. De acordo com o MS, qual é a conduta CORRETA ?',
@@ -1124,6 +1179,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam25_58',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Ginecologia & Obstetrícia',
     text: 'De acordo com o Manual de Gestação de Alto Risco do Ministério da Saúde, qual das condições a seguir é considerada fator de alto risco para hemorragia pós-parto imediata?',
@@ -1137,6 +1193,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam25_59',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Ginecologia & Obstetrícia',
     text: 'Puérpera com tuberculose pulmonar bacilífera, em tratamento rifampicina, isoniazida, pirazinamida e etambutol, acompanhado de piridoxina. O recém- nascido é saudável. Segundo o Ministério da Saúde, qual é a conduta CORRETA quanto ao aleitamento? – 2025/2026_1',
@@ -1150,6 +1207,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam25_60',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Ginecologia & Obstetrícia',
     text: 'Qual a melhor conduta segundo o Manual da Rede Brasileira de Hipertensão e o Ministério da Saúde?',
@@ -1163,6 +1221,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam25_61',
+    banca: 'CERMAM',
     cycle: 'Internato',
     subject: 'Neonatologia',
     text: 'Você é o pediatra da rotina na UTI e a enfermeira vem avisar sobre recém-nascido de 30 horas de vida que nasceu prematuro de 36 semanas, AIG, portador de Síndrome de Down. No pré-natal, mãe teve história de polidrâmnio. RN ainda não evacuou e somente eliminou pouca quantidade de mecônio ao toque retal. Vômitos biliosos e desidratado. Exame físico sem outras alterações. RX simples de abdome evidencia o sinal da dupla bolha. Este quadro indica:',
@@ -1176,6 +1235,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam25_62',
+    banca: 'CERMAM',
     cycle: 'Internato',
     subject: 'Neonatologia',
     text: 'Recém-nascido de mãe com sorologia realizada com 9 semanas de gestação para toxoplasmose IgM e IgG reagentes e avidez para IgG alta, não realizou seguimento e nem tratamento durante a gestação. O parto foi a termo, sem intercorrências. O RN apresenta bom estado geral, sem alterações clínicas aparentes. Considerando as diretrizes nacionais para o manejo da toxoplasmose congênita, assinale a conduta CORRETA :',
@@ -1189,6 +1249,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam25_63',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Pediatria',
     text: 'Durante seu plantão em um hospital regional, você é chamado para avaliar João, 7 anos, internado há três dias por quadro de inchaço corporal e diminuição do volume urinário iniciado há cinco dias. No exame físico, a criança encontra-se pálida, com edema generalizado, frequência cardíaca de 120 bpm e pressão arterial de 120 × 80 mmHg (acima do percentil 95 para idade, sexo e estatura). Os resultados laboratoriais disponíveis são: Hemoglobina: 9,5 g/dL; leucócitos e plaquetas normais; ureia: 36 mg/dL; creatinina: 0,8 mg/dL; sódio: 134 mEq/L; potássio: 4,8 mEq/L. EAS: pH 6,0; densidade 1.020; hemoglobina +++; proteína ++; hemácias >100.000/mm³; leucócitos 20.000/mm³. Com base nesse quadro clínico-laboratorial, qual a hipótese diagnóstica principal e os exames complementares mais indicados para elucidar a etiologia?',
@@ -1202,6 +1263,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam25_65',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Pediatria',
     text: 'Pré-escolar, 3 anos, que com 11 meses iniciou tratamento para Leucemia Linfoide aguda, iniciou há quatro dias quadro de febre alta (39,5 ºC), tosse seca, coriza intensa e conjuntivite. No segundo dia de febre surgiram pequenas manchas esbranquiçadas com halo avermelhado em mucosa jugal, na altura dos molares. No terceiro dia, aparece exantema maculopapular – 2025/2026_1',
@@ -1215,6 +1277,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam25_67',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Pediatria',
     text: 'Durante consulta pediátrica, um lactente de 10 meses é trazido pelos pais devido a inchaço progressivo nos joelhos há cerca de 30 dias, percebido após o início do engatinhar. A criança não apresenta febre, dor intensa ou limitação importante dos movimentos. Ao exame físico, observa-se edema bilateral de joelhos, sem calor ou rubor, e demais sistemas sem alterações. Os exames laboratoriais mostram: Hemograma: normal. TAP: normal. TTPa: prolongado. Com base nesses achados, qual o diagnóstico mais provável?',
@@ -1228,6 +1291,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam25_68',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Pediatria',
     text: 'Você é médico de família em uma unidade básica de saúde do interior do Amazonas e atende uma criança de 3 anos trazida pela mãe com queixa de atraso na fala. A criança ainda não fala, compreende comandos verbais simples e, por vezes, aponta ou conduz o responsável pela mão para expressar suas vontades. Os marcos motores foram adquiridos dentro da normalidade. Na creche, tende ao isolamento, irrita-se com mudanças na rotina, apresenta hipersensibilidade a sons, episódios de agitação e irritabilidade, além de movimentos repetitivos das mãos. Diante do quadro descrito, qual é a principal hipótese diagnóstica?',
@@ -1241,6 +1305,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam25_69',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Pediatria',
     text: 'Durante atendimento no CAIC, um menino de 8 anos, branco é trazido pelos pais com queixa de inchaço no joelho esquerdo há quase dois meses. A mãe relata que o menino acorda com rigidez e dificuldade para andar pela manhã, mas melhora ao longo do dia. Ao exame físico, o paciente apresenta marcha claudicante, edema e limitação de movimentos no joelho direito, sem sinais de infecção ou outras alterações sistêmicas. Os exames laboratoriais mostram: FAN positivo (1:320) ASLO = 800 U Todd (normal até 300 U) Demais exames sem alterações relevantes. Com base nesses achados, qual é a hipótese diagnóstica mais provável?',
@@ -1254,6 +1319,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam25_70',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Pediatria',
     text: 'Um menino de 6 anos é trazido ao consultório por apresentar episódios recorrentes de tosse seca, especialmente à noite, e sibilância ocasional há cerca de seis meses. Nas últimas semanas, os sintomas se intensificaram, com dispneia leve aos esforços. Nega febre e refere expectoração mucosa eventual. Há histórico familiar de asma. Ao exame, notam-se sibilos expiratórios bilaterais. Considerando o manejo clínico dessa criança, qual dos critérios a seguir é mais útil para avaliar, a longo prazo, o controle e a eficácia do tratamento?',
@@ -1267,6 +1333,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam25_71',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Pediatria',
     text: 'Com base no caso clínico, indique o grau mais provável de desidratação que a criança apresenta:',
@@ -1280,6 +1347,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam25_72',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Pediatria',
     text: 'Com base no grau provável de desidratação, indique o tratamento preconizado no primeiro momento no Pronto Atendimento:',
@@ -1293,6 +1361,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam25_73',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Pediatria',
     text: 'Para prevenir futuros episódios de desidratação como o descrito no caso em crianças, a mais eficaz entre as seguintes medidas é:',
@@ -1306,6 +1375,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam25_74',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Pediatria',
     text: 'Entre as manifestações clínicas para o diagnóstico da Doença de Kawasaki, sempre há presença de febre com duração igual ou superior a cinco dias, associada a critérios maiores como:',
@@ -1319,6 +1389,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam25_75',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Pediatria',
     text: 'Lactente de 8 meses procura consulta pediátrica com história de irritabilidade, vômitos e diarreia com sangue há 15 dias, desde o início da alimentação complementar com fórmulas, papas de frutas e legumes. Exame físico: bom estado geral, hidratado, com eczema em couro cabeludo e face. Peso: 8 kg (score Z+2). Provável diagnóstico:',
@@ -1332,6 +1403,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam25_76',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Pediatria',
     text: 'Lactente de 3 meses, residente no interior, é levado à Unidade de Saúde por apresentar manchas café com leite, hiperpigmentação cutânea, atraso de crescimento, ausência de polegares e microcefalia → Hemograma: Pancitopenia. Provável diagnóstico:',
@@ -1345,6 +1417,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam25_77',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Pediatria',
     text: 'Lactente de 5 meses, sexo masculino, é levado inconsciente ao SPA após episódio de crise convulsiva. A mãe relata que o quadro ocorreu após sua irmã, de 2 anos, arremessar uma boneca com força contra o corpo do lactente. Fundoscopia: hemorragia retiniana bilateral. Hipótese mais provável:',
@@ -1358,6 +1431,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam25_78',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Pediatria',
     text: 'Menina de 6 anos é trazida pela mãe ao ambulatório com rinorreia purulenta há 21 dias. Há 15 dias foi avaliada e prescrito soro nasal e amoxicilina. Terminou o tratamento e o quadro persiste. Ao exame físico está em bom estado geral, sem febre com presença de rinorreia purulenta e fétida na fossa nasal direita. Diagnóstico e conduta são:',
@@ -1371,6 +1445,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam25_79',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Pediatria',
     text: 'Pré-escolar, desnutrido, indígena Ticuna, é levado a uma consulta ambulatorial devido ao surgimento de manchas escamosas, ressecadas e hiperceratóticas nos braços, pernas e nádegas. Ainda relata dificuldade de enxergar à noite ou em locais com pouca claridade. A hipótese diagnóstica mais provável é deficiência de:',
@@ -1384,6 +1459,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam25_80',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Pediatria',
     text: 'São critérios maiores para o diagnóstico de febre reumática, EXCETO :',
@@ -1397,6 +1473,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam25_81',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Medicina de Família/SUS',
     text: 'Uma mulher de 45 anos, assintomática, procura o posto de saúde após ver um vídeo de um médico em uma rede social contendo uma lista de exames laboratoriais e de imagem que toda mulher deveria realizar. Ela deseja realizá-los “para ter certeza de que está tudo bem”. A médica da unidade, após anamnese e exame físico sem fatores de risco relevantes, orienta a paciente sobre riscos e benefícios da solicitação de exames desnecessários. Com base nos níveis de prevenção em saúde, a conduta da médica exemplifica:',
@@ -1410,6 +1487,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam25_82',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Medicina de Família/SUS',
     text: 'Durante a reunião de equipe em uma Unidade de Saúde da Família, o médico relata que a comunidade tem buscado o serviço apenas para obter encaminhamentos para especialistas, e que muitos desconhecem a carta de serviços da UBS. Ele propõe ações educativas para reforçar a importância do vínculo dos comunitários com a equipe e o acompanhamento longitudinal. Qual atributo da Atenção Primária à Saúde está sendo mais diretamente abordado na proposta do médico?',
@@ -1423,6 +1501,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam25_83',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Medicina de Família/SUS',
     text: 'Ao receber o resultado de uma biópsia que confirmou neoplasia gástrica avançada, um médico de família prepara-se para comunicar o diagnóstico ao paciente. Em consulta reservada, ele inicia a conversa buscando entender o que o paciente compreende sobre sua condição e quais preocupações tem naquele momento. No protocolo SPIKES, essa conduta se insere predominantemente em qual componente da abordagem?',
@@ -1436,6 +1515,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam25_84',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Medicina de Família/SUS',
     text: 'Mulher de 55 anos, previamente submetida à histerectomia total por miomatose uterina benigna, comparece à unidade básica de saúde solicitando agendamento de exame preventivo. Segundo as Diretrizes Brasileiras para o Rastreamento do Câncer do Colo do Útero (2025), qual deve ser a conduta?',
@@ -1449,6 +1529,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam25_85',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Medicina de Família/SUS',
     text: 'Conforme Lopes e Dias (2019) destacam no Tratado de Medicina de Família e Comunidade, o Método Clínico Centrado na Pessoa (MCCP) é um modelo derivado da abordagem centrada na pessoa que considera que a consulta deva atender às necessidades e expectativas de médicos e pessoas, tornando esses encontros adequados para a Atenção Primária à Saúde. Considerando a atualização por Moira Stewart e colaboradores em 2017 dos componentes interativos do MCCP no livro “Medicina Centrada na Pessoa - transformando o encontro clínico", assinale a alternativa que CORRETAMENTE contenha estes componentes:',
@@ -1462,6 +1543,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam25_86',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Medicina de Família/SUS',
     text: 'Considerando as recomendações atuais, conforme Nota Técnica conjunta de 2023 do Ministério da Saúde e Instituto Nacional do Câncer (INCA), bem como princípios da Prevenção Quaternária de sobrediagnóstico e sobretratamento, assinale a alternativa que contenha orientação CORRETA acerca do rastreamento populacional do Câncer de Próstata:',
@@ -1475,6 +1557,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam25_87',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Medicina de Família/SUS',
     text: 'A Atenção Primária à Saúde (APS) se desenvolve a partir de princípios nucleares e derivados que foram cunhados coletivamente e formalizados na Declaração de Alma-Ata de 1978. Assinale a alternativa que contenha os princípios DERIVADOS da APS:',
@@ -1488,6 +1571,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam25_88',
+    banca: 'CERMAM',
     cycle: 'Ciclo Básico',
     subject: 'Epidemiologia',
     text: 'A respeito dos níveis de prevenção e sobre os critérios de Wilson e Jungner (1968) para a justificação ética e operacional de um programa de rastreamento populacional ( screening ), qual das seguintes afirmações é VERDADEIRA ?',
@@ -1501,6 +1585,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam25_89',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Medicina de Família/SUS',
     text: 'Em uma comunidade indígena atendida pela equipe de Saúde da Família, qual atuação da equipe promove a competência cultural e o cuidado efetivo?',
@@ -1514,6 +1599,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam25_90',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Medicina de Família/SUS',
     text: 'Qual das seguintes vacinas é recomendada pela rotina do Calendário Nacional de Vacinação para crianças com 2 meses de idade?',
@@ -1527,6 +1613,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam25_91',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Medicina de Família/SUS',
     text: 'Na organização da Rede de Atenção Psicossocial (RAPS), qual serviço da Atenção Primária deve atuar como porta de entrada e coordenador do cuidado para pessoas com sofrimento mental?',
@@ -1540,6 +1627,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam25_92',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Medicina de Família/SUS',
     text: 'Maria, 68 anos, procura a Unidade Básica de Saúde relatando episódios de tontura nos últimos dias. Ela descreve que “tudo gira ao seu redor” quando deita ou vira a cabeça para o lado direito. Os episódios duram menos de 1 minuto, são recorrentes e vêm acompanhados de náusea, mas sem perda auditiva ou zumbido. Diante desse quadro, qual é a hipótese diagnóstica mais provável?',
@@ -1553,6 +1641,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam25_93',
+    banca: 'CERMAM',
     cycle: 'Ciclo Básico',
     subject: 'Epidemiologia',
     text: 'Você estava lendo uma diretriz estrangeira de dislipidemias e chamou a sua atenção os resultados da redução de desfechos cardiovasculares entre pacientes que utilizaram a droga evolocumab, um medicamento hipolipemiante de uso injetável indicado para reduzir os níveis de LDL-colesterol. Ao ler o resultado do trial , você identifica que, no grupo de pacientes que utilizaram o evolocumabe, o risco de um evento cardiovascular foi de 9,8%, enquanto no grupo placebo este risco foi de 11,3%. Este resultado pareceu interessante para você, contudo o Número Necessário para Tratar (NNT) não estava disponível no texto e você precisaria calculá-lo. Considerando os dados expostos, qual seria o valor do NNT do evolocumabe para este estudo? (Desconsidere casas decimais).',
@@ -1566,6 +1655,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam25_94',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Medicina de Família/SUS',
     text: 'T., mulher, 52 anos, auxiliar de serviços gerais, moradora de bairro da periferia de Manaus, procura o acolhimento da UBS queixando-se de lombalgia recorrente, que piorou há um dia e causando limitação importante. Durante o acolhimento, o ACS informa ao enfermeiro da UBS que o filho mais novo da paciente está preso há cerca de 4 meses. Durante a conversa inicial a paciente conta que a piora da dor coincide com o tempo no qual o filho está preso sentindo também vergonha e culpa. Ela relata tê-lo visitado recentemente e solicita à médica que providencie uma receita de antibiótico para o filho preso, que estaria com uma lesão de pele. Considerando o Código de Ética Médica, o que o profissional de saúde deveria responder à paciente em relação à demanda de emissão de receita de antibiótico?',
@@ -1579,6 +1669,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam25_95',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Medicina de Família/SUS',
     text: 'O., 32 anos, homem cisgênero, vive com HIV há 5 anos, com carga viral indetectável devido à terapia antiretroviral (TARV) a qual possui boa adesão. Seu monitoramento de carga viral e níveis de CD4 estão estáveis e dentro das faixas normais. Ele está atualmente em um relacionamento monogâmico com sua parceira T., mulher cis, 28 anos soronegativa para HIV, sem comorbidades. Ambos estão juntos há 1 ano e têm um relacionamento estável. O casal decidiu buscar aconselhamento médico sobre a possibilidade de iniciar a PrEP como uma medida adicional de proteção contra a transmissão do HIV. Embora ele tenha uma carga viral indetectável e seu tratamento seja correto, o casal deseja aumentar sua segurança. Qual é a alternativa CORRETA no que se refere à introdução de PrEP, para a paciente T.?',
@@ -1592,6 +1683,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam25_96',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Medicina de Família/SUS',
     text: 'Ana é médica de uma UBS na zona sul de Manaus e tem o hábito de revisar periodicamente a farmacoterapia de seus pacientes com doenças crônicas, especialmente idosos e pessoas com multimorbidades. Durante a consulta de acompanhamento de um paciente de 74 anos em uso de sete medicamentos contínuos, ela avalia a possibilidade de desprescrição. Considerando as melhores evidências e recomendações sobre o tema, qual é a conduta mais adequada?',
@@ -1605,6 +1697,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam25_97',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Medicina de Família/SUS',
     text: 'Em uma revisão de registros clínicos, observa-se o seguinte SOAP feito durante atendimento em uma UBS a um paciente de 38 anos com dor abdominal: S: Dor abdominal difusa há 24h, piora após refeições, sem vômitos. O: Abdome flácido, dor à palpação em epigástrio “devido dispepsia funcional”, ruídos hidroaéreos presentes, sem sinais de abdome agudo. A: Dispepsia funcional. P: Orientada dieta leve, iniciado IBP por 4 semanas, retorno em 30 dias ou antes se piora. Qual é a avaliação CORRETA sobre esse registro?',
@@ -1618,6 +1711,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam25_98',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Medicina de Família/SUS',
     text: 'Durante uma visita domiciliar, a equipe avalia uma idosa de 84 anos, acamada, com limitação funcional grave, dependente para todas as atividades de vida diária, portadora de demência avançada e com necessidade de curativos semanais. A família não consegue levá-la à UBS. Segundo a Política Nacional de Atenção Domiciliar (PNAD), qual é o tipo de atenção mais adequado?',
@@ -1631,6 +1725,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam25_99',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Medicina de Família/SUS',
     text: 'Durante auditoria em uma Secretaria Municipal de Saúde, identificou-se que determinada UBS passou a restringir o atendimento de pessoas sem comprovante de residência da área adscrita. Visitantes, trabalhadores da região e pessoas em trânsito eram orientados a procurar a UBS do bairro de origem. Essa prática contraria diretamente qual princípio doutrinário do SUS, conforme a Lei 8.080/90?',
@@ -1644,6 +1739,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam25_100',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Medicina de Família/SUS',
     text: 'Durante o acolhimento à demanda espontânea na UBS, chegam simultaneamente quatro situações. A equipe precisa identificar quais delas exigem notificação compulsória imediata. I. Mulher de 26 anos relata que foi forçada a ter relação sexual pelo parceiro na noite anterior e apresenta lesões compatíveis com violência sexual. II. Homem de 18 anos chega acompanhado da mãe após ingerir grande quantidade de comprimidos em uma tentativa de suicídio . Está clinicamente estável. III. Criança de 7 anos apresenta febre e tosse há 48h, sem sinais de gravidade. IV. Idoso de 72 anos procura a UBS para ajuste de medicação da hipertensão. Considerando a legislação vigente, qual situação exige notificação compulsória IMEDIATA pela equipe da APS?',
@@ -1658,6 +1754,7 @@ const QUESTIONS: Question[] = [
 ,
   {
     id: 'cermam23_01',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Infectologia',
     text: 'Paciente de 38 anos, do sexo masculino relata febre, odinofagia tontura e mialgia há 2 dias. Está em tratamento de LMA há 7 dias. Sem outras comorbidades. Sinais vitais: PA 70x50 mmHg, FC: 128 bpm, FR: 26rpm, TAx: 36,1ºC, satO2: 98% ar ambiente. Exame físico: enantema difuso em pilares amigdalianos sem abscessos com raras placas esbranquiçadas em área lateral da língua. Esplenomegalia não dolorosa. Exames complementares em andamento. Iniciada ressuscitação volêmica com ringer 1000ml. A conduta imediata é:',
@@ -1671,6 +1768,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam23_02',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Hematologia',
     text: 'Durante atividade na UBS, você se depara com dois pacientes com astenia há 2 semanas e anemia grave. Paciente 1: homem de 21 anos, Hb = 8,6 g/dl, VCM = 106, leucócitos = 920 mm3, neutrófilos = 210 mm3 e plaquetas 24.000 mm3. Paciente 2: homem de 67 anos, Hb = 9,5 g/dl, VCM = 94, leucócitos = 220.000 mm3, neutrófilos = 4.500 mm3, linfócitos = 215.000 mm3 e plaquetas = 64.000 mm3. Qual paciente deve ter prioridade no encaminhamento para a unidade de urgência e por qual motivo?',
@@ -1684,6 +1782,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam23_03',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Infectologia',
     text: 'Paciente durante exames de rotina teve os seguintes resultados: HBsAg Negativo; Anti-HBs positivo; anti-HBc IgG positivo; anti-HBc IgM negativo. Qual o significado dos seguintes exames?',
@@ -1697,6 +1796,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam23_04',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Gastroenterologia',
     text: 'Qual a manifestação extra-intestinal mais comum na doença de Crohn?',
@@ -1710,6 +1810,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam23_05',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Reumatologia',
     text: 'Jovem de 15 anos, morador de Parintins procurou o hospital da cidade queixando de falta de ar, mal-estar geral, febre e dores em grandes articulações de início há 1 semana. Ao exame físico, paciente se encontrava taquicárdica FC 130 bpm, com temperatura de 38,5º C. A ausculta cardíaca, sopro sistólico 3+/6 em foco mitral irradiando para região axilar, joelho direito com hiperemia e calor local com critérios para artrite e nódulos firmes, móveis e indolores em região de coluna vertebral. Foi realizado exames laboratoriais que demonstrou velocidade de hemossedimentação (VHS) de 55 mm. Segundo os critérios de Jones revisado para o diagnóstico de febre reumática, este paciente apresenta:',
@@ -1723,6 +1824,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam23_06',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Cardiologia',
     text: 'A principal terminologia usada para definir o diagnóstico de Insuficiência Cardíaca baseia-se na fração de ejeção do ventrículo esquerdo (FEVE). Assinale a alternativa CORRETA:',
@@ -1736,6 +1838,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam23_07',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Neurologia',
     text: 'Uma mulher de 29 anos apresenta-se com episódios recorrentes de cefaleia que duram de 4 a 72 horas quando não tratados. As dores de cabeça são frequentemente unilaterais, pulsáteis, de intensidade moderada a severa, e agravadas pela atividade física rotineira. Ela também relata náuseas e fotofobia durante os episódios. Qual é o tratamento abortivo mais apropriado para os episódios de cefaleia desta paciente?',
@@ -1749,6 +1852,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam23_08',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Neurologia',
     text: 'Um paciente de 37 anos de idade engenheiro bem-sucedido, casado, com epilepsia bem controlada por medicamentos, apresenta-se ao pronto-socorro após uma convulsão tônico-clônica generalizada que durou 5 minutos. Ele relata que esqueceu de tomar sua medicação antiepiléptica nos últimos dois dias. Qual é a conduta mais apropriada?',
@@ -1762,6 +1866,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam23_09',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Neurologia',
     text: 'Uma estudante de 20 anos apresenta ptose palpebral, diplopia e fraqueza muscular que piora com o esforço e melhora com o repouso. A eletroneuromiografia mostra uma diminuição da amplitude do potencial de ação muscular com estimulação repetitiva. Qual é o diagnóstico mais provável?',
@@ -1775,6 +1880,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam23_10',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Reumatologia',
     text: 'Doença inflamatória crônica que acomete, preferencialmente, a coluna vertebral. É mais frequente no sexo masculino, no adulto jovem e HLA-B27. Quadro clínico de dor lombar de ritmo inflamatório. A evolução costuma ser ascendente, acometendo progressivamente a coluna dorsal e cervical. Assinale a alternativa que corresponde CORRETAMENTE à doença caracterizada anteriormente.',
@@ -1788,6 +1894,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam23_11',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Reumatologia',
     text: 'Homem de 67 anos vem à consulta com queixa de dor intensa em joelho direito há 8 dias. Refere episódios semelhantes autolimitados acometendo punho direito e joelhos, bem como artralgia mecânica recorrente de joelhos bilateralmente há cerca de 2 anos. Ao exame, apresenta dor, calor, edema e eritema de joelho direito. Sem outros dados clínicos relevantes. Qual o diagnóstico mais provável?',
@@ -1801,6 +1908,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam23_12',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Infectologia',
     text: 'Qual alternativa NÃO corresponde ao uso do antimalárico tafenoquina?',
@@ -1814,6 +1922,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam23_13',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Endocrinologia',
     text: 'Paciente de 34 anos, sexo feminino, apresentou-se ao Departamento de Emergência com confusão mental, letargia e episódios de síncope ao permanecer de pé. Ela também teve episódios de vômitos ao longo do dia. Glicemia capilar mensurada na entrada do Hospital era de 55mg/dl, porém seu estado mental não melhorou após administração de glicose hipertônica EV em bolus. PA: 80/40mmhg apesar do uso de 2 litros de solução isotônica EV. A pele das palmas das mãos e da mucosa bucal se mostravam escurecidas. Na+: 128mmol/l, K+: 5,8mmol/l. Qual a terapêutica poderia ser iniciada nesta paciente precocemente?',
@@ -1827,6 +1936,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam23_14',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Endocrinologia',
     text: 'Paciente, sexo feminino, 36 anos de idade, recebeu diagnóstico de Doença de Graves há dois anos com orbitopatia, proptose unilateral, bócio difuso, taquicardia e tremor de extremidades. TSH suprimido e T4 livre três vezes o limite superior da normalidade. Iniciou metimazol. Atualmente em uso de 5 mg/dia. Os últimos exames demonstraram função tireoidiana normal e TRAb 12,0 UI/L (VR: < 1,75). Glândula heterogênea, volume total de 32,7 mL. Tabagista há oito anos. Em relação ao caso clínico, assinale a alternativa CORRETA:',
@@ -1840,6 +1950,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam23_15',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Endocrinologia',
     text: 'Mulher, 55 anos de idade, em amenorreia há 2 anos, encaminhada ao ambulatório de endocrinologia por alteração da função tireoidiana e perda de campo visual. TSH 0,94 mUI/mL, T4 livre 0,72 ng/dL, FSH 2,5 mUI/mL (VR: 3,6 a 16,6), LH 2,0 mUI/mL, Cortisol 7,0 mcg/dL, ACTH 13,1 pg/mL, IGF-1 62 ng/mL (VR: 83 a 241), Prolactina 88 ng/dL (VR: 5 a 25). Ressonância magnética da sela túrcica evidenciou lesão hipofisária de 4,0 x 2,5 x 2,9 cm. Assinale a alternativa CORRETA sobre o caso acima:',
@@ -1853,6 +1964,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam23_16',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Nefrologia',
     text: 'Para o diagnóstico das glomerulopatias qual a melhor estratégia/ferramenta?',
@@ -1866,6 +1978,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam23_17',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Nefrologia',
     text: 'É considerada uma indicação dialítica de urgência:',
@@ -1879,6 +1992,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam23_18',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Clínica Médica',
     text: 'Sobre o diurético Furosemida de uso frequente na conduta do paciente edemaciado e/ou com hiperpotassemia, é correto afirmar que:',
@@ -1892,6 +2006,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam23_19',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Pneumologia',
     text: 'Marta tem 39 anos e há 5 dias iniciou quadro de febre alta, associada a dor em hemitórax direito e tosse produtiva. Ao exame físico encontra-se consciente e orientada. Apresenta frêmito toracovocal aumentado em base direita e ausculta de crepitações finas em terço inferior de hemitórax direito. FC 85 bpm. FR 19 irpm. Pressão arterial 110x80 mmHg e SpO2 96% a.a. Radiografia de tórax evidenciando opacidades acinares em lobo inferior direito com presença de broncograma aéreo. Paciente sem comorbidades clínicas conhecidas. Ureia 22, Leucócitos 16563 com 85% de segmentados. Qual a conduta mais apropriada para o caso?',
@@ -1905,6 +2020,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam23_20',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Pneumologia',
     text: 'Genesio tem 58 anos, é hipertenso, diabético e ex-tabagista com uma carga tabágica de 40 maços-ano. Parou de fumar há 5 anos. Mesmo depois de parar de fumar nota que segue com tosse e pigarro e que no último ano começou a apresentar dispnéia aos esforços. Ecocardiograma transtorácico sem evidências de remodelamento, com fração de ejeção normal. A radiografia de tórax evidenciou sinais de hiperinsuflação e espirometria evidenciou distúrbio obstrutivo moderado com VEF1 pós broncodilatador de 52% do previsto. Ao longo dos últimos 12 meses apresentou 3 exacerbações respiratórias necessitando fazer uso de antibióticos e corticoide oral, mas não precisou de internações hospitalares. Eosinófilos 385/mm³. Qual seria sua estratégia terapêutica para tratar esse quadro?',
@@ -1918,6 +2034,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam23_21',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Cirurgia Geral',
     text: 'Paciente do sexo masculino, 65 anos, portador de doença diverticular de sigmoide, teve indicação de sigmoidectomia laparoscópica eletiva após repetidas crises de diverticulite aguda. O paciente não apresenta comorbidades. Não foi submetido a preparo do cólon com manitol. Dieta líquida sem resíduos rica em carboidratos 2 horas antes da anestesia. Anestesia geral sem opióides de ação longa associada a bloqueio peridural. Ceftriaxona e Metronidazol administrados em dose única na indução anestésica. Cirurgia sem intercorrências com duração de 2 horas. Alta para enfermaria com sonda nasogástrica aberta. No primeiro dia pós-operatório paciente foi estimulado a deambulação precoce e submetido a fisioterapia respiratória, porém a sonda nasogástrica foi mantida porque os ruídos hidroaéreos eram débeis. Sobre o caso descrito, assinale a alternativa CORRETA:',
@@ -1931,6 +2048,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam23_22',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Cirurgia Geral',
     text: 'Paciente do sexo masculino, 32 anos, sobrepeso, comparece ao pronto atendimento apresentando quadro de dor tipo cólica, mesogástrica, que migrou para FID e aumentou de intensidade, há cerca de 24hs. Apresentou também vários episódios de vômito. Nega febre, diarreia e sintomas urinários. Encontra-se em BEG, eupneico, afebril, estável. Abdome plano, flácido, doloroso à palpação profunda na FID, com descompressão súbita levemente positiva. Leucograma 11.000, com 90% de segmentados e PCR 36g/l. Ultrassonografia evidenciou apêndice cecal espessado e discretamente aumentado de volume, com hipervascularização da parede ao doppler, sem fecalito ou líquido livre na cavidade. Sobre o caso descrito acima, assinale a alternativa CORRETA:',
@@ -1944,6 +2062,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam23_23',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Gastroenterologia',
     text: 'Paciente do sexo masculino, 48 anos, diabético, é internado com quadro de dor em peso em quadrante superior direito do abdome acompanhado de febre noturna com calafrios, náuseas e vômitos há cerca de 2 semanas. Refere ser portador de colelitíase e relata internação há 1 mês com quadro de colecistite acompanhada de icterícia e febre, sendo tratado clinicamente. Ao exame físico, levemente ictérico, hemodinamicamente estável. Abdome doloroso à palpação em quadrante superior direito, com sinal de Murphy ausente e hepatomegalia palpável. Leucograma de 18.000, elevação de transaminases e fosfatase alcalina. Ultrassonografia evidenciou lesão hipoecoica bem definida em lobo direito do fígado, contendo debris, sem fluxo interno ao doppler, com cerca de 8cm de diâmetro. Sobre o caso descrito, assinale a alternativa INCORRETA:',
@@ -1957,6 +2076,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam23_24',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Gastroenterologia',
     text: 'Paciente do sexo feminino, 48 anos, deu entrada no pronto socorro queixando dor intensa, de início súbito, em região epigástrica e que irradiava para o dorso, associada a vômitos, com evolução de 8 horas. Normotensa, abdome bastante doloroso à palpação em todo o andar superior, sem sinais de irritação peritoneal. Leucócitos 12.000 com desvio à esquerda, fosfatase alcalina 250U/l, amilase 2.300mg/dl e ultrassonografia com colelitíase. No 5º dia de internação, tomografia evidenciou vesícula biliar tópica, normodistendida, com cálculos e aumento do volume e heterogeneidade pancreática com formação de coleção de cerca de 9,0 x 4,0cm ao longo do corpo do pâncreas e densificação da gordura adjacente, sem sinais de compressão gástrica. Sobre o caso descrito, assinale a alternativa CORRETA:',
@@ -1970,6 +2090,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam23_25',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Cirurgia Geral',
     text: 'Paciente do sexo feminino, 48 anos, vem ao pronto socorro queixando dor anal de início súbito há 24 horas, após episódio de defecação dificultada por fezes endurecidas. A dor era inicialmente moderada e evoluiu com piora progressiva e aparecimento de nodulação local. Durante a inspeção anal, observou-se nódulo arroxeado, em borda anal, não endurecido, bastante doloroso à palpação. Sobre o caso descrito, assinale a alternativa CORRETA:',
@@ -1983,6 +2104,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam23_26',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Clínica Médica',
     text: 'Paciente do sexo masculino, 21 anos, procura atendimento médico referindo tosse seca persistente, associada a dispneia progressiva aos grandes esforços e perda de cerca de 10kg. Evolução de 2 meses. Nega febre no período. Ao exame físico, chamava a atenção face pletórica e edemaciada. A radiografia simples de tórax evidenciou volumoso alargamento de mediastino superior, sendo indicada a tomografia computadorizada. Esta evidenciou massa sólida em mediastino superior e anterior, com infiltração de hilo pulmonar e grandes vasos da base cardíaca. Sobre o caso acima, assinale a alternativa CORRETA:',
@@ -1996,6 +2118,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam23_27',
+    banca: 'CERMAM',
     cycle: 'Internato',
     subject: 'Urgência e Emergência',
     text: 'Você é plantonista de uma unidade secundária de pronto atendimento e recebe paciente do sexo masculino, 18 anos de idade, vítima de queimadura de segundo grau em tórax anterior, abdome anterior, região genital e braço esquerdo, por água quente, ocorrido há 15 minutos. Queixa muita dor local. Peso: 60kg. Ao exame físico observamos a presença de bolhas já rôtas. Sobre os cuidados iniciais que devem ser tomadas na conduta deste paciente, assinale a alternativa INCORRETA:',
@@ -2009,6 +2132,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam23_28',
+    banca: 'CERMAM',
     cycle: 'Internato',
     subject: 'Urgência e Emergência',
     text: 'Paciente do sexo masculino, 28 anos de idade, profissional da construção civil, é atendido no pronto socorro após queda de laje há cerca de 3 horas, queixando dor abdominal. Ao exame físico, o paciente apresenta-se em BEG, discretamente hipocorado, FR: 22irpm, FC: 90bpm e P.A.: 100x70mmHg. O FAST foi positivo para líquido no hipocôndrio esquerdo. Foi realizada expansão volêmica com 500ml de ringer lactato, o que estabilizou seus sinais vitais. Hematócrito 30% e Hemoglobina 10g/dl. Tomografia computadorizada com contraste venoso observada laceração esplênica de 5cm, sem extravasamento de contraste, com líquido livre periesplênico em moderada quantidade. Sobre o caso descrito acima, assinale a alternativa CORRETA:',
@@ -2022,6 +2146,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam23_29',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Gastroenterologia',
     text: 'Paciente do sexo feminino, 45 anos, obesa, vem ao consultório queixando história de pirose crônica. Evolui há cerca de 2 meses com aumento da frequência da pirose, associada a dor retroesternal, regurgitação e perda de peso. Traz consigo endoscopia digestiva que evidenciou duas erosões de 75mm em esôfago distal, não coalescentes. Sobre o caso, assinale a alternativa CORRETA:',
@@ -2035,6 +2160,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam23_30',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Cirurgia Geral',
     text: 'Paciente do sexo feminino, 35 anos, é transferida de Manacapuru para investigação diagnóstica e continuidade de tratamento. Estava internada por 3 dias com história de dor tipo cólica em HD associada a vômitos, após alimentação rica em gordura, sendo tratada clinicamente. À admissão em Manaus, encontrava-se em BEG, lúcida, eupneica, ictérica +/4, normotensa. Seu abdome era globoso, doloroso à palpação profunda em HD, sem irritação peritoneal. Bilirrubina total 3,5mg/dl, bilirrubina direta 3,2mg/dl, fosfatase alcalina 350mg/dl, Gama GT 680mg/dl e amilase 120mg/dl. Ultrassom à beira do leito evidenciou vesícula de paredes finas contendo microcálculos e via biliar principal de 1cm de diâmetro. Sobre o caso descrito, assinale a alternativa INCORRETA:',
@@ -2048,6 +2174,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam23_31',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Gastroenterologia',
     text: 'Paciente do sexo masculino, 57 anos, vem ao atendimento médico queixando dor tipo cólica em FIE com piora progressiva, associada a vômitos e constipação há 48 horas. Hábito intestinal inadequado, com eliminação de fezes endurecidas e ressecadas, sob esforço, cerca de uma vez por semana, há muitos anos. Nega febre e episódios anteriores de dor semelhante. Leucograma: 12.000 e Proteína C reativa: 63mg/l. Tomografia de abdome evidenciou presença de divertículos em sigmoide de parede espessada, com borramento da gordura adjacente, sem coleções ou líquido livre na cavidade abdominal. Sobre o caso descrito, assinale a alternativa CORRETA:',
@@ -2061,6 +2188,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam23_32',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Cirurgia Geral',
     text: 'Paciente do sexo feminino, 49 anos, dá entrada no pronto atendimento queixando dor abdominal tipo cólica, difusa, progressiva, há 3 dias, associada a vários episódios de vômitos. Refere parada de eliminação de gases e fezes desde o início do quadro. Encontra-se desidratada, FR: 28irpm, FC: 90bpm, P.A.: 100x70mmHg. Abdome é distendido, sem cicatrizes ou circulação colateral, hipertimpânico, com RHA aumentados em frequência e intensidade, difusamente doloroso à palpação, sem sinais de irritação peritoneal e sem massas palpáveis. Radiografia simples de abdome evidenciou volumosa distensão de intestino delgado, com sinal de empilhamento de moeda e vários níveis hidroaéreos, sem distensão do cólon e sem pneumoperitôneo. Sobre o caso acima, assinale a alternativa INCORRETA:',
@@ -2074,6 +2202,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam23_33',
+    banca: 'CERMAM',
     cycle: 'Internato',
     subject: 'Urgência e Emergência',
     text: 'Paciente do sexo masculino, 24 anos, é trazido ao pronto socorro por terceiros devido a ferimento por arma branca no tórax. O paciente é admitido desacordado, bradipneico e pálido, com lesão traumática identificada em precórdio. FC: 50bpm e P.A.: 60x30mmHg. O exame físico evidenciou distensão de veias jugulares, murmúrio vesicular fisiológico bilateralmente e abafamento de bulhas cardíacas. Sobre o caso, assinale a alternativa INCORRETA:',
@@ -2087,6 +2216,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam23_34',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Cirurgia Geral',
     text: 'Paciente do sexo masculino, 10 anos de idade, apresentando quadro de dor aguda e progressiva em FID, associada a vômitos e febre e sinais de irritação peritoneal. Foi indicada a laparotomia pela hipótese diagnóstica de apendicite aguda, porém durante a exploração cirúrgica foi observado abscesso bloqueado em FID secundário a processo inflamatório e perfuração em estrutura saculiforme de 5cm de diâmetro localizado em íleo distal, há cerca de 50cm da vávula íleo-cecal. O apêndice não tinha sinais patológicos. Optou-se por enterectomia do segmento ileal acometido, enteroanastomose e apendicectomia incidental. As seguintes orientações são adequadas para o caso, EXCETO:',
@@ -2100,6 +2230,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam23_35',
+    banca: 'CERMAM',
     cycle: 'Internato',
     subject: 'Urgência e Emergência',
     text: 'Você foi convidado para discutir o desfecho insatisfatório de um caso clínico de um paciente politraumatizado. O paciente, do sexo masculino, 60 anos, hipertenso e diabético, foi vítima de agressão física com trauma torácico e abdominal contuso e fratura exposta de fêmur, apresentando sinais clínicos de choque grave. O tratamento definitivo das lesões compreendeu drenagem fechada de tórax por hemopneumotórax, laparotomia exploradora com hepatorrafia devido a extensa laceração hepática e desbridamento cirúrgico com estabilização do foco de fratura. O paciente foi transferido para a UTI para cuidados intensivos, porém evoluiu com pneumonia, infecção no foco de fratura, sepse e óbito após 14 dias. A respeito das implicações imunológicas referentes ao caso acima, assinale a alternativa INCORRETA:',
@@ -2113,6 +2244,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam23_36',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Cirurgia Geral',
     text: 'Paciente do sexo masculino, 2 anos de idade, é trazido pela mãe ao pronto socorro, queixando dor inguinal intensa à direita há cerca de 4 horas. Refere aparecimento de "caroço" em região inguinal quando a criança chora, desde o nascimento, e que desaparece quando a criança dorme. Ao exame físico, observamos abaulamento inguino-escrotal volumoso, doloroso à palpação, irredutível, sem sinais flogísticos. Sobre o caso clínico, assinale a alternativa CORRETA:',
@@ -2126,6 +2258,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam23_37',
+    banca: 'CERMAM',
     cycle: 'Internato',
     subject: 'Urgência e Emergência',
     text: 'Paciente do sexo feminino, 58 anos, diabética e obesa, apresenta quadro de dor intensa em membro inferior esquerdo. Refere que há 2 dias iniciou quadro de edema e eritema em perna esquerda, acompanhado de bolhas e áreas de parestesia. Procurou atendimento médico na UBS, sendo prescrita cefalexina e orientações para tratamento domiciliar. Evoluiu hoje com aumento importante da intensidade da dor e piora do aspecto do membro. Nega febre. Ao exame físico, a paciente apresenta-se em REG, pálida, taquicárdica, levemente dispneica, afebril e normotensa. Perna e pé esquerdo com edema com cacifo, eritema, áreas enegrecidas na pele, bolhas hemorrágicas, algumas estouradas drenando conteúdo turvo e fétido. Leucograma: 15.000, Hemoglobina: 9g/dl, PCR: 120mg/dl, glicemia capilar: 350mg/dl, creatinina: 2,5mg/dl. Sobre o caso acima, assinale a alternativa CORRETA:',
@@ -2139,6 +2272,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam23_38',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Gastroenterologia',
     text: 'Paciente do sexo masculino, 45 anos, é achado desmaiado no banheiro da sua residência e trazido para o pronto socorro. Apresenta-se hipocorado +++/4, FC: 120bpm, FR: 28irpm, P.A.: 80x60mmHg e débito urinário reduzido. Foi infundido inicialmente 1.000ml de ringer lactato durante ressuscitação volêmica e transfundidos 2 concentrados de hemácias após hemograma revelar hemoglobina 7g/dl. Após as medidas iniciais, o paciente apresentou estabilização dos sinais clínicos e referiu estar apresentando fezes enegrecidas de odor fétido há vários dias. Nega hematêmese e quadro febril. Sobre o caso descrito, assinale a alternativa INCORRETA:',
@@ -2152,6 +2286,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam23_39',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Gastroenterologia',
     text: 'Paciente do sexo feminino, 62 anos, tabagista e diabética, apresenta quadro de icterícia progressiva há cerca de 1 mês, associada a prurido cutâneo e emagrecimento, sendo internada para investigação diagnóstica. Icterícia +++/4 e massa palpável, indolor, de contornos bem definidos em HD. Bilirrubina total: 12mg/dl, bilirrubina direta: 11,5mg/dl, fosfatase alcalina: 840mg/dl, gama GT: 1.200mg/dl e CA 19-9: 250U/ml. Tomografia computadorizada com contraste venoso evidenciou volumosa dilatação da vesícula biliar e das vias biliares intra e extra-hepáticas, além de massa sólida de 5cm em cabeça do pâncreas que invade colédoco distal e tem íntima relação com os vasos mesentéricos. Sobre o caso, assinale a alternativa CORRETA:',
@@ -2165,6 +2300,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam23_40',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Gastroenterologia',
     text: 'Paciente do sexo masculino, 32 anos, portador de Retocolite Ulcerativa procura atendimento médico por dor abdominal. Teve o diagnóstico fechado após crises de diarreia sanguinolenta. Desde então vem sendo tratado por aminossalicilatos orais, porém refere uso irregular da medicação. A crise atual iniciou há 3 dias, com cólica abdominal difusa progressiva associada a quadro de diarreia com sangue. Evoluiu com piora do estado geral, iniciando febre diária, piora da frequência e volume sanguinolento da diarreia (cerca de 10 episódios ao dia), anorexia e queda do estado geral. Leucograma: 16.000, Hb: 9g/dl, PCR: 68mg/dl e VHS: 75mm/h. Sobre o caso descrito, assinale a alternativa CORRETA:',
@@ -2178,6 +2314,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam23_41',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Ginecologia & Obstetrícia',
     text: 'O rastreamento de HIV/Sífilis em gestantes, além do exame na primeira consulta, deve ser realizado:',
@@ -2191,6 +2328,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam23_42',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Ginecologia & Obstetrícia',
     text: 'A Donovanose é causada por qual agente etiológico?',
@@ -2204,6 +2342,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam23_43',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Ginecologia & Obstetrícia',
     text: 'Qual das alternativas abaixo é manifestação da sífilis secundária?',
@@ -2217,6 +2356,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam23_44',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Ginecologia & Obstetrícia',
     text: 'Paciente 28 anos foi ao ginecologista com queixa de corrimento vaginal. O PH vaginal foi 5 e o teste de KOH positivo. Baseado na conduta do Ministério da Saúde, qual a melhor conduta?',
@@ -2230,6 +2370,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam23_45',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Ginecologia & Obstetrícia',
     text: 'Paciente foi ao ginecologista no interior do Amazonas, referindo úlcera genital que apareceu há 2 semanas. Ao exame físico, observou-se lesão ulcerada vulvar, cuja causa provável é uma infecção sexualmente transmissível. Não há laboratório disponível no local. De acordo com o Ministério da Saúde, como o médico assistente deve proceder para o melhor cuidado da paciente?',
@@ -2243,6 +2384,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam23_46',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Ginecologia & Obstetrícia',
     text: 'Paciente 38 anos foi ao mastologista com resultado de ultrassonografia, evidenciando nódulo complexo sólido cístico, de forma oval, margens circunscritas, medindo 12 x 10 mm, localizado em quadrante supero-lateral da mama direita. Qual classificação Bi Rads e conduta recomendada?',
@@ -2256,6 +2398,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam23_47',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Ginecologia & Obstetrícia',
     text: 'Paciente 40 anos foi ao mastologista com resultado de ultrassonografia evidenciando imagem cística, de forma oval, margens circunscritas, com conteúdo espesso, medindo 18 x 12 mm, localizado em quadrante supero lateral da mama direita. Qual classificação Bi Rads e conduta recomendada?',
@@ -2269,6 +2412,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam23_48',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Ginecologia & Obstetrícia',
     text: 'Paciente 36 anos foi ao ginecologista com queixa de dor aguda, em pontada, em fossa ilíaca direita. Trouxe Ultrassonografia evidenciando cisto hemorrágico que mede 40 mm. Qual a conduta adequada para esse caso?',
@@ -2282,6 +2426,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam23_49',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Ginecologia & Obstetrícia',
     text: 'Assinale a alternativa CORRETA sobre drenagem venosa da veia ovariana:',
@@ -2295,6 +2440,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam23_50',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Ginecologia & Obstetrícia',
     text: 'A falha de fusão dos ductos de Muller originam:',
@@ -2308,6 +2454,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam23_51',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Ginecologia & Obstetrícia',
     text: 'Primipara, 24 horas após parto cesariano, apresentou temperatura axilar de 39 com hipertermia importante na incisão cirúrgica. Qual o agente etiológico mais provável?',
@@ -2321,6 +2468,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam23_52',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Ginecologia & Obstetrícia',
     text: 'Gestante, 37 semanas, foi a maternidade com sangramento vaginal discreto. Ao exame as mucosas estavam descoradas ++/4+, útero hipertônico colo com dilatação de 3,0 cm. Não foi identificado batimento cardíaco fetal. Realizada ultrassonografia que diagnosticou óbito fetal. Qual a conduta adequada?',
@@ -2334,6 +2482,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam23_53',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Ginecologia & Obstetrícia',
     text: 'Gestante, 22 semanas, foi ao pré-natal com ultrassonografia realizada na 21ª semana, evidenciando oligodramnia acentuada. Qual a provável causa para a redução do líquido?',
@@ -2347,6 +2496,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam23_54',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Ginecologia & Obstetrícia',
     text: 'Após a administração de ocitocina venosa 6mUI/min em uma gestante com 39 semanas em trabalho de parto, foi observado à cardiotocografia desacelerações tardias. Qual a conduta deve ser adotada inicialmente:',
@@ -2360,6 +2510,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam23_55',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Ginecologia & Obstetrícia',
     text: 'Gestante, 37 semanas, foi a maternidade com sangramento vaginal abundante, vermelho rutilante. Ao exame as mucosas estavam descoradas ++/4+, útero com tônus normal, sem atividade uterina, colo com dilatação de 3,0 cm. Batimento cardíaco fetal 144 bpm. Realizada ultrassonografia que identificou placenta ocluindo o orifício interno cervical. Qual a conduta adequada?',
@@ -2373,6 +2524,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam23_56',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Ginecologia & Obstetrícia',
     text: 'Qual complicação pode ocorrer na gestação gemelar dicoriônica?',
@@ -2386,6 +2538,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam23_57',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Ginecologia & Obstetrícia',
     text: 'Gestante, 24 semanas, foi ao pré-natal com ultrassonografia realizada na 22ª semana, evidenciando polidramnia acentuada. Qual a provável causa para o aumento do líquido?',
@@ -2399,6 +2552,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam23_58',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Ginecologia & Obstetrícia',
     text: 'Primigesta, 8 semanas, Rh negativo foi submetida a um procedimento de esvaziamento uterino pós aborto. Informa que o cônjuge é Rh positivo homozigoto. Qual a conduta a ser adotada?',
@@ -2412,6 +2566,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam23_59',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Ginecologia & Obstetrícia',
     text: 'Gestante, IMC 35, na 12ª Semana de gestação foi a primeira consulta pré-natal. Quanto a profilaxia da pré-eclampsia nessa paciente, é correto afirmar que:',
@@ -2425,6 +2580,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam23_60',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Ginecologia & Obstetrícia',
     text: 'Secundigesta, 24 semanas, com relato de parto prematuro anteriormente, foi a consulta de pré-natal levando ultrassonografia transvaginal realizada com 20 semanas que referia cervicometria de 22 mm. Assinale a alternativa CORRETA referente ao colo e a conduta.',
@@ -2438,6 +2594,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam23_61',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Pediatria',
     text: 'Lactente de quatro meses de vida é trazida pela mãe à UBS por apresentar estridor persistente há 2 meses. Segundo a mãe, a criança melhora quando colocada em posição pronada. O diagnóstico mais provável seria:',
@@ -2451,6 +2608,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam23_62',
+    banca: 'CERMAM',
     cycle: 'Internato',
     subject: 'Neonatologia',
     text: 'A afecção respiratória que acomete mais frequentemente recém-nascidos prematuros com menos de 28 semanas de gestação, do sexo masculino, em filhos de mães diabéticas, e que sofreram asfixia ao nascimento, chama-se:',
@@ -2464,6 +2622,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam23_63',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Pediatria',
     text: 'Gestante adquiriu tuberculose pulmonar durante a gestação. Persiste bacilífera mesmo após o nascimento do bebê. Em relação ao recém-nascido dessa mãe, é CORRETO afirmar que:',
@@ -2477,6 +2636,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam23_64',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Pediatria',
     text: 'O sobrepeso e a obesidade são definidos pela OMS como uma epidemia mundial. 80% das crianças com sobrepeso ou obesidade tornam-se adultos obesos. Sobre a obesidade infantil, é INCORRETO afirmar que:',
@@ -2490,6 +2650,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam23_65',
+    banca: 'CERMAM',
     cycle: 'Internato',
     subject: 'Neonatologia',
     text: 'Pedro, RN a termo, adequado para idade gestacional, PN 3400g, filho de mãe com pré-natal adequado. Sorologia de toxoplasmose com 7 semanas de gestação: IgM (método Elisa) positivo, IgG positivo, com alta avidez. Exame clínico normal ao nascimento. A conduta recomendada é:',
@@ -2503,6 +2664,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam23_66',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Pediatria',
     text: 'Você recebe uma mãe de 23 anos, primeiro filho, para avaliação do recém-nascido que está com 7 dias de vida. Os pais estão cansados e cheios de dúvida, principalmente com relação à amamentação. Você pede que a mãe ponha o bebê para mamar, para avaliar a técnica e dar suporte àquela família. São sinais de posicionamento adequado do bebê na hora da amamentação todas as alternativas, EXCETO:',
@@ -2516,6 +2678,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam23_67',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Pediatria',
     text: 'Márcia irá retornar ao trabalho daqui duas semanas e está com medo de que seu filho desmame, pois ficará muitas horas longe de casa. Quais das seguintes orientações quanto à conservação do leite materno estão CORRETAS:',
@@ -2529,6 +2692,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam23_68',
+    banca: 'CERMAM',
     cycle: 'Internato',
     subject: 'Neonatologia',
     text: 'Gestante em acompanhamento pré-natal fez diagnóstico de HIV com 29 semanas. Iniciou TARV e fez uso regular até o nascimento do bebê. A Carga viral (CV) com 38 semanas era de 1400 cópias. Com relação ao manejo do RN, qual deverá ser a conduta no alojamento conjunto:',
@@ -2542,6 +2706,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam23_69',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Pediatria',
     text: 'Na cetoacidose diabética, qual é a principal alteração de eletrólitos que pode ocorrer durante o tratamento?',
@@ -2555,6 +2720,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam23_70',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Pediatria',
     text: 'Lactente de 7 meses, reside em um grande centro urbano, foi levado pela mãe a um pronto-socorro, com história de queda do berço ao pular por cima da grade. Ao exame apresenta hematoma em tronco e fratura em metáfise proximal da tíbia esquerda. A conduta indicada, além dos cuidados relacionados ao quadro clínico:',
@@ -2568,6 +2734,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam23_71',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Pediatria',
     text: 'Lactente de 5 meses, em aleitamento materno exclusivo, deu entrada no serviço de emergência com quadro de lesões papuloeritematosa em todo o corpo, edema periorbitário a esquerda e labial. A mãe refere início do quadro, a aproximadamente 15 minutos, após ter ofertado leite de vaca ao lactante. Ao exame: Lactante ativa, hidratada, boa perfusão capilar, placas papuloeritematosas difusas, broncoespasmo leve, edema em pálpebras, orelhas e lábios. Abdômen sem alterações. Diante do quadro acima, qual a 1ª opção de tratamento:',
@@ -2581,6 +2748,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam23_72',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Pediatria',
     text: 'Escolar de 8 anos, é atendido no setor de emergência com história de tosse e coriza há 24h, evoluindo com dispneia nas últimas 6 h. Mãe relata que criança tem asma controlada, não faz uso de corticoide inalatório ou oral e nunca necessitou de internação. Ao exame físico: Escolar dispneico, tiragem subcostal, FR 40 rpm, FC 144 bpm, Sat O2 de 89%, comunica-se apenas com frases curtas. Segundo as Diretrizes Brasileiras para Manejo da ASMA, essa crise pode ser classificada como:',
@@ -2594,6 +2762,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam23_73',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Pediatria',
     text: 'Adolescente de 15 anos, sexo feminino, vem ao consultório para consulta de rotina, relata ser vegetariana há 3 anos. Ao exame: Adolescente com índice de massa corporal baixo, TANNER M4P4, ciclo menstrual normal, observa-se no exame laboratorial: colesterol baixo. Diante do quadro acima a paciente deve ser orientada quanto ao risco de deficiência de:',
@@ -2607,6 +2776,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam23_74',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Pediatria',
     text: 'Lactante de 10 meses é levado ao Pronto Socorro, com quadro de diarreia liquida, várias evacuações ao dia, vômito, anorexia, temperatura não aferida há 3 dias. Ao exame físico: BEG, irritado, inquieto, olhos fundos e sinal de prega com desaparecimento lento, bebendo avidamente a água ofertada. Pela recomendação do Ministério da Saúde, o diagnóstico e conduta neste caso é:',
@@ -2620,6 +2790,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam23_75',
+    banca: 'CERMAM',
     cycle: 'Internato',
     subject: 'Neonatologia',
     text: 'A princípio, qual a orientação na conduta de recém-nascido em boas condições de vitalidade, idade gestacional de 34 semanas e peso de 2.450g:',
@@ -2633,6 +2804,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam23_76',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Pediatria',
     text: 'Escolar de 9 anos, sexo masculino, é admitido no serviço de emergência após acidente automobilístico torporoso e pouco reativo aos estímulos. Ao exame físico: dor em hemitórax direito, FC 150 bpm, PA 110 x 70 mmHg, enchimento capilar 3,5 segundos. Após garantir a permeabilidade da via aérea, aporte de oxigênio e observado diurese de 0,2 ml/kg/h, deve-se administrar:',
@@ -2646,6 +2818,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam23_77',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Pediatria',
     text: 'Escolar de 8 anos, sexo masculino, sofreu acidente de bicicleta. Ao ser atendido na via pública, queixava de dor no ombro esquerdo e respondia as solicitações do médico do serviço de urgência móvel. Na admissão escolar apresenta quadro de choque, sendo a etiologia mais provável:',
@@ -2659,6 +2832,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam23_78',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Pediatria',
     text: 'Adolescente de 13 anos, é levado a consulta por apresentar febre alta há 10 dias. Ao exame físico: Dor de garganta com faringite moderada, petéquias palatais, edema de palpebral, adenomegalia cervical anterior e posterior, epitrocleares e hepatoesplenomegalia. Qual o exame para confirmação diagnostica a ser solicitado:',
@@ -2672,6 +2846,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam23_79',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Pediatria',
     text: 'Recém-nascido sexo feminino, caracterizado por uma monossomia completa ou parcial do cromossomo "X", ao exame apresenta: linfedema no dorso dos pés e das mãos, ausência de pulsos nos membros inferiores e deslocamento patelar. Ecocardiograma detectado: Coarctação da Aorta. USG visualizado: Rins em ferradura. O diagnóstico mais provável deste recém-nascido, é de Síndrome de:',
@@ -2685,6 +2860,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam23_80',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Pediatria',
     text: 'Lactente de 15 meses, portador de doença multissistêmica hereditária, um traço genético recessivo, comum entre a população branca. Frequentemente chega ao setor de emergência com tosse crônica e respiração sibilante desde o primeiro mês de vida. Foi internado a primeira vez aos 4 meses de vida com bronquiolite viral aguda grave por 7 dias, necessitando de ventilação mecânica pulmonar invasiva. Precisou de internação por desidratação grave com hiponatremia por duas vezes. Nasceu com APGAR 9/10 e alta com a mãe no terceiro dia de vida. A hipótese diagnostica mais provável é:',
@@ -2698,6 +2874,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam23_81',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Medicina de Família/SUS',
     text: 'Em uma manhã de atendimento na UBS você atendeu diversos pacientes com situações de glicemia elevada. Assinale a alternativa a qual descreve, dentre os casos abaixo, aquela que possui indicação para introdução de insulinoterapia:',
@@ -2711,6 +2888,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam23_82',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Medicina de Família/SUS',
     text: 'A., 30 anos, comparece para iniciar seu pré-natal na UBS. Ela se encontra na 10a. semana de gestação e realizou os testes rápidos para infecções sexualmente transmissíveis com o seguinte resultado: Teste Rápido para HIV: não reagente; Teste Rápido para sífilis: reagente; Teste Rápido para Hepatite B e C: não reagente. A gestante relatou nunca ter feito tratamentos prévios com Penicilina Benzatina e nunca percebeu lesões genitais, mas há cerca de um ano e meio teve lesões na pele, inclusive na palma das mãos, não pruriginosas e que sumiram depois de um tempo. Considerando o caso, a melhor conduta ser tomada seria:',
@@ -2724,6 +2902,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam23_83',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Medicina de Família/SUS',
     text: 'No Registro de Saúde Orientado por Problemas, o item O do SOAP refere-se a(o):',
@@ -2737,6 +2916,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam23_84',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Medicina de Família/SUS',
     text: 'Assinale a alternativa onde estão relacionados somente os Atributos Derivados da Atenção Primária descritos por Bárbara Starfield:',
@@ -2750,6 +2930,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam23_85',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Medicina de Família/SUS',
     text: 'As crises do ciclo de vida familiar podem ser previsíveis, esperadas, ou acidentais, inesperadas, por isso é importante conhecer as fases do ciclo de vida familiar. Assinale a alternativa onde tem somente fases do ciclo de vida familiar da classe popular.',
@@ -2763,6 +2944,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam23_86',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Medicina de Família/SUS',
     text: 'Assinale a alternativa que traz a definição de Prevenção Quaternária:',
@@ -2776,6 +2958,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam23_87',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Medicina de Família/SUS',
     text: 'J.B.S, 23 anos iniciou o tratamento com esquema básico para tuberculose pulmonar confirmada por meio do teste rápido molecular (TRM-TB) há 7 dias. Dentre os contatos intradomiciliares está L.B.S, irmã de J.B.S, de 17 anos, que está com 11 semanas de uma gestação sem intercorrências até aqui. L.B.S demonstrou bastante preocupação quanto a manifestar a doença do irmão, embora não tenha nenhum sintoma respiratório no momento. Posteriormente, a mesma retorna com o exame de PPD que acusa o resultado de 5mm. Diante desse resultado, a enfermeira da equipe deve:',
@@ -2789,6 +2972,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam23_88',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Medicina de Família/SUS',
     text: 'O Sr. F., 94 anos, é acompanhado há mais de 10 anos pela equipe de saúde da UBS. O histórico de saúde incluía Insuficiência Cardíaca Crônica, Diabetes Mellitus tipo 2 e há 3 anos sequelas de uma fratura de fêmur que o deixou permanentemente acamado. A filha do Sr. F. contacta a equipe para informar que o mesmo acabara de falecer em casa. Sabendo que o município não possui Serviço de Verificação de Óbito (SVO), mas conta com Instituto Médico Legal (IML), o médico da equipe de saúde deve decidir pela seguinte conduta:',
@@ -2802,6 +2986,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam23_89',
+    banca: 'CERMAM',
     cycle: 'Ciclo Básico',
     subject: 'Epidemiologia',
     text: 'As medidas de rendimento de testes diagnósticos são habitualmente analisadas por meio do quadro "2x2" que relaciona a presença ou não de uma doença com o resultado de um teste (Doentes/Não Doentes x Teste Positivo/Negativo = A, B, C, D). Qual das fórmulas abaixo descreve corretamente o cálculo da ESPECIFICIDADE de um teste diagnóstico?',
@@ -2815,6 +3000,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam23_90',
+    banca: 'CERMAM',
     cycle: 'Ciclo Básico',
     subject: 'Epidemiologia',
     text: 'Você é médico de uma equipe de Estratégia Saúde da Família de uma cidade interiorana e, em certo dia, o secretário de saúde do município o convocou para avaliar a implantação de um programa de rastreamento para uma determinada doença cardíaca. Durante a revisão da literatura sobre o tema você constata que de cada 2000 pessoas com essa doença que não fazem o rastreamento, 400 morrem, enquanto com o rastreamento, o número de mortes é de 200. Considerando os dados, qual das alternativas descreve CORRETAMENTE o número de pessoas a serem rastreadas para se evitar um óbito?',
@@ -2828,6 +3014,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam23_91',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Medicina de Família/SUS',
     text: 'O Método Clínico Centrado na Pessoa (MCCP) surgiu das demandas das pessoas por um atendimento que contemplasse de maneira integral suas necessidades, preocupações e vivências relacionadas à saúde ou às doenças. O componente do MCCP que realiza o entendimento integrado da pessoa inteira, resultando das informações que, ao longo do tempo, o médico acumula sobre aqueles que atende, significando que vai além de diagnosticar doenças ou assistir resposta a doenças é:',
@@ -2841,6 +3028,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam23_92',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Medicina de Família/SUS',
     text: 'A organização dos serviços da Atenção Primária no Brasil ocorre por meio da Estratégia Saúde da Família (ESF), organizada com base no conceito de território e de equipe multiprofissional. Segundo a lógica da organização da ESF, qual das alternativas abaixo descreve CORRETAMENTE a unidade territorial do Agente Comunitário de Saúde?',
@@ -2854,6 +3042,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam23_93',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Medicina de Família/SUS',
     text: 'A imagem abaixo representa uma ferramenta de abordagem familiar que mostra a família e suas conexões com outros sistemas (família estendida, trabalho, escola, saúde, religião etc.). Qual ferramenta é essa?',
@@ -2867,6 +3056,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam23_94',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Medicina de Família/SUS',
     text: 'A cidade de Manaus tem sofrido, nos últimos meses, efeitos do fenômeno "El Niño". A escassez de chuvas e o tempo seco tem favorecido a proliferação de queimadas, estando a cidade coberta de fumaça durante vários dias. Este fenômeno climático tem intensificado a ocorrência de problemas respiratórios, como a tosse. Em uma manhã de atendimento em sua UBS você atendeu vários pacientes com queixa de tosse, entretanto apenas UM destes pacientes possui tosse com SINAL DE ALERTA para causas subjacentes de maior gravidade que deve ser encaminhado ao especialista focal para cuidado compartilhado. Qual?',
@@ -2880,6 +3070,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam23_95',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Medicina de Família/SUS',
     text: 'De acordo com a Política Nacional de Atenção Básica (PNAB) de 2017, a Equipe de Saúde da Família (eSF) é composta minimamente por:',
@@ -2893,6 +3084,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam23_96',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Medicina de Família/SUS',
     text: 'De acordo com as indicações de Cuidados Paliativos, qual desses pacientes NÃO preenche os critérios para receber os serviços?',
@@ -2906,6 +3098,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam23_97',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Medicina de Família/SUS',
     text: 'Josiane, 32 anos, encontra-se na 27ª. Semana de sua segunda gravidez. Josiane compareceu à sua consulta de pré-natal sem queixas relativas ao ciclo gravídico-puerperal, contudo relatou que há duas semanas vem apresentando prurido intenso nas costas e na região glútea durante à noite. Ao examinar a pele de Josiane, o Dr. Maurício constatou a presença de diversas pápulas eritematosas com túneis e marcas de escoriação. Josiane disse que na sua casa residem além dela, do filho de 4 anos e de seu atual marido, a família de sua irmã, incluindo bebê de quatro meses. Considerando o provável diagnóstico de escabiose, as afirmações abaixo fazem parte do manejo do caso com EXCEÇÃO de:',
@@ -2919,6 +3112,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam23_98',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Medicina de Família/SUS',
     text: 'Jaime, 57 anos, morador de cidade com epidemia de dengue, procura a UBS com quadro de febre de até 39 °C há 3 dias associado à dor retro orbital de forte intensidade e mialgia. Sem quaisquer outras queixas. Apresenta diabetes mellitus em uso de metformina 850mg/dia – última hemoglobina glicada: 7,2%. Nega outras doenças. No exame físico, bom estado geral, hidratado, corado, eupneico. Temperatura axilar: 38,2 °C, frequência cardíaca: 104 bpm, pressão arterial: 128/80 mmHg. Ausculta cardíaca e pulmonar normais. Abdômen com dor discreta à palpação difusamente, sem dor à descompressão súbita. Prova do laço negativa. Depois da avaliação, Jaime é notificado como caso suspeito de dengue. Seguindo o fluxograma mais recente de classificação de risco para dengue do Ministério da Saúde, a conduta mais adequada é iniciar:',
@@ -2932,6 +3126,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam23_99',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Medicina de Família/SUS',
     text: 'Sobre a Atenção Primária à Saúde (APS) e seus princípios, assinale a alternativa CORRETA:',
@@ -2945,6 +3140,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam23_100',
+    banca: 'CERMAM',
     cycle: 'Ciclo Básico',
     subject: 'Epidemiologia',
     text: 'Supondo que a taxa de mortalidade anual de câncer de pulmão numa dada comunidade seja de 20 por 100.000 nos fumantes e de 2 por 100.000 nos não fumantes, qual o risco relativo e o risco absoluto dos fumantes em relação aos não fumantes, de morrer por câncer de pulmão, respectivamente:',
@@ -2959,6 +3155,7 @@ const QUESTIONS: Question[] = [
 ,
   {
     id: 'cermam09_01',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Psiquiatria',
     text: 'Uma mulher de 66 anos, portadora de câncer de mama, com metástases ósseas, está em tratamento quimioterápico há seis meses. Para controle das dores, faz uso de anti-inflamatórios não-esteroidais, codeína em doses moderadas e bisfosfonatos. Foi trazida para consulta pelos familiares porque há um mês apresenta-se sem interesse pelas tarefas do dia-a-dia, diz que está sem esperança, só pensa em morrer e quer interromper o tratamento oncológico. A conduta apropriada nesse caso é:',
@@ -2973,6 +3170,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam09_02',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Ginecologia & Obstetrícia',
     text: 'A Endometriose está associada a todos os processos/situações abaixo. Das citadas qual a que tem pouca ou nenhuma correlação com a endometriose?',
@@ -2987,6 +3185,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam09_03',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Ginecologia & Obstetrícia',
     text: 'Paciente de 30 anos, G3A3 provocados, com curetagens uterinas subsequentes procura Serviço de Infertilidade com queixa de amenorreia há 12 meses. Dentro da propedêutica do casal infértil foi realizada uma histerossalpingografia que apresenta falha de enchimento na região endometrial compatível com sinéquia. Qual a síndrome compatível com o caso?',
@@ -3001,6 +3200,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam09_04',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Ginecologia & Obstetrícia',
     text: 'Marque a que não constitui contraindicação absoluta para a terapia de reposição hormonal-TRH no climatério:',
@@ -3015,6 +3215,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam09_05',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Ginecologia & Obstetrícia',
     text: 'Os fatores de risco para carcinoma do colo uterino incluem, exceto:',
@@ -3029,6 +3230,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam09_06',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Ginecologia & Obstetrícia',
     text: 'No acervo de peças do Departamento de Patologia da UFAM, a peça da coleção de ovários de número 09.29 é um tumor ovariano que apresenta as seguintes características: tumor globoso, cístico, contendo em seu inferior pelos, sebo e fragmento que simula dente. Algumas vezes podemos encontrar ainda nestes tumores esboços organoides. Podemos dizer que se trata de:',
@@ -3043,6 +3245,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam09_07',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Ginecologia & Obstetrícia',
     text: 'Baseando-se na regra de Naegele, uma secundigesta que tem sua última menstruação em 22/06/2008, terá sua data provável de parto estimada para?',
@@ -3057,6 +3260,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam09_08',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Ginecologia & Obstetrícia',
     text: 'Mulher jovem com 23 anos, gestante pela 1ª vez, 36 semanas, apresenta-se com Pressão Arterial = 170 x 110 mmHg na Emergência Obstétrica e queixa-se de cefaleia, visão turva, diplopia e dor epigástrica. Diante desse quadro qual a hipótese mais provável?',
@@ -3071,6 +3275,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam09_09',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Ginecologia & Obstetrícia',
     text: 'Qual das alternativas a seguir não é considerada causa de abortamento espontâneo precoce recorrente?',
@@ -3085,6 +3290,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam09_10',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Ginecologia & Obstetrícia',
     text: 'Os fatores de risco para osteoporose na pós-menopausa incluem todos os abaixo, exceto:',
@@ -3099,6 +3305,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam09_11',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Medicina de Família/SUS',
     text: 'No acolhimento de uma Unidade Básica de Saúde (UBS), chegou uma mulher de 47 anos, trêmula, com tontura, sudorética, com palidez perioral, náusea e sensação de urgência evacuatória. Apresenta taquicardia e taquipneia, porém, o restante dos sinais vitais está sem alteração. O diagnóstico mais provável é ansiedade. Diante do caso a conduta médica deve ser: I. encaminhar o paciente ao psiquiatra. II. prescrever tratamento farmacológico inicial. III. solicitar exames para tranquilizar a paciente. IV. avaliar a correlação dos sintomas como desencadeante para o quadro clínico. Quais estão corretas?',
@@ -3113,6 +3320,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam09_12',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Medicina de Família/SUS',
     text: 'O SUS incorpora o referencial do controle social em seus princípios. Marque a alternativa que corresponde à sua aplicabilidade.',
@@ -3127,6 +3335,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam09_13',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Medicina de Família/SUS',
     text: 'Médico de Família e Comunidade é chamado para atender um caso de urgência na escola próxima à Unidade de Saúde da Família. Ao chegar, vê uma jovem de 25 anos convulsionando, que, logo a seguir, perde a consciência. Fora atropelada por um automóvel que fugiu do local. Ele constata o óbito no mesmo instante em que chega a equipe do Serviço de Atendimento Móvel de Urgência (SAMU). Considere as afirmações: I. A declaração de óbito pode ser emitida tanto pelo SAMU, quanto pelo MFC. II. A declaração de óbito deve ser emitida pelo MFC. III. A declaração de óbito deve ser emitida pelo médico legista/IML. Qual(is) está(ão) correta(s)?',
@@ -3141,6 +3350,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam09_14',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Ginecologia & Obstetrícia',
     text: 'Em uma situação em que não há disponibilidade de ultrassonografia, uma mulher apresentou-se ao Médico de Família e Comunidade com dor pélvica, mas sem sinais de irritação peritoneal. Qual dos grupos de achados abaixo apoiaria integralmente o diagnóstico de doença inflamatória pélvica aguda?',
@@ -3155,6 +3365,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam09_15',
+    banca: 'CERMAM',
     cycle: 'Ciclo Básico',
     subject: 'Epidemiologia',
     text: 'Segundo os dados estatísticos disponíveis no Ministério da Saúde, a 1ª causa de mortalidade entre crianças e adolescentes de 5 a 19 anos é:',
@@ -3169,6 +3380,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam09_16',
+    banca: 'CERMAM',
     cycle: 'Ciclo Básico',
     subject: 'Epidemiologia',
     text: 'A mortalidade infantil é subdividida em períodos neonatal e pós-neonatal em função principalmente de:',
@@ -3183,6 +3395,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam09_17',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Medicina de Família/SUS',
     text: 'Uma empresa de ônibus de transporte escolar submete seus motoristas a uma avaliação médica geral, que inclui a coleta de sangue e urina para exames laboratoriais. Sem informar os funcionários, a direção da empresa orienta o médico responsável para incluir, nos exames de rotina, as dosagens de álcool, cocaína e maconha. Do ponto de vista ético, o médico deve:',
@@ -3197,6 +3410,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam09_18',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Pediatria',
     text: 'Criança de 01 ano de idade chega ao Posto de Saúde para receber a vacina tríplice viral (S&C). Conforme calendário de vacinação recomendado pelo Ministério da Saúde (Brasil), espera-se que tenha recebido anteriormente as seguintes vacinas:',
@@ -3211,6 +3425,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam09_19',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Pediatria',
     text: 'Você é chamado para investigar um surto de diarreia aguda em uma creche. Qual o agente etiológico mais provável nessa condição?',
@@ -3225,6 +3440,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam09_20',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Medicina de Família/SUS',
     text: 'No modelo de gestão plena de atenção básica, o município recebe recursos do Fundo Nacional de Saúde para o financiamento:',
@@ -3239,6 +3455,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam09_21',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Pediatria',
     text: 'Menino de 05 anos de idade, bem nutrido, sem nenhum sinal ou sintoma prévio, voltando de uma festa, apresenta leve quadro diarreico, seguido de dor abdominal que começou em torno da cicatriz umbilical e agora migra para baixo e para a direita. Temperatura axilar, 37,9 graus e retal, 39°. Não quer comer. À palpação, há sensibilidade maior no flanco e fossa ilíaca direitos. A radiografia simples do abdome é inexpressiva, exceto pela presença de fecalito no limite inferior do flanco direito. O toque retal revelou apenas presença de muco. Diante deste quadro clínico, o diagnóstico mais provável é:',
@@ -3253,6 +3470,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam09_22',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Pediatria',
     text: 'A fim de evitar a desnutrição em lactente com 4 meses de idade, o melhor conselho que você daria a uma mãe nutriz, em um país em desenvolvimento, quando ela descobre que está novamente grávida é:',
@@ -3267,6 +3485,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam09_23',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Pediatria',
     text: 'Lactente de 6 meses, desnutrido, com clínica de broncopneumonia e estado geral comprometido, apresenta-se no pronto-socorro infantil onde foi requisitado Raio X de tórax. A presença, no exame radiológico, de pneumatoceles, derrame pleural e abscesso pulmonar são indicativos de infecção causada mais provavelmente por:',
@@ -3281,6 +3500,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam09_24',
+    banca: 'CERMAM',
     cycle: 'Internato',
     subject: 'Neonatologia',
     text: 'Os critérios clínicos avaliados no recém-nascido após os passos iniciais na sala de parto são:',
@@ -3295,6 +3515,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam09_25',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Pediatria',
     text: 'Criança com 4 anos de idade, não vacinada com BCG, apresenta-se com teste de PPD = reator forte 12mm, assintomática, Rx do tórax sem anormalidades. Pai e mãe são tuberculosos, baciliferos e iniciaram uso do Esquema I há dez dias. A conduta correta em relação à criança é:',
@@ -3309,6 +3530,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam09_26',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Pediatria',
     text: 'Você atende um recém-nascido na sala de parto e suspeita de síndrome de Down. Assinale abaixo qual alteração não estará associada com esta patologia:',
@@ -3323,6 +3545,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam09_27',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Pediatria',
     text: 'Uma menina de 12 anos de idade com repetidas crises de faringite estreptocócica desenvolveu outro episódio de amigdalite. O teste rápido para Estrepto foi positivo e foi iniciado ampicilina oral, a primeira dose no consultório. Uma hora mais tarde, ela desenvolveu uma sensação estranha e um formigamento perilabial. Em seguida, ficou apreensiva, com dificuldade de deglutir e manifestando voz rouca. Na chegada ao pronto-socorro, a criança apresentava urticária gigante e mostrava os seguintes sinais vitais: Pulso 130bpm, FR32, PA 70/30, temperatura axilar 37,5°C. Qual dos abaixo é mais apropriado para o caso?',
@@ -3337,6 +3560,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam09_28',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Pediatria',
     text: 'Lactente de 1 ano de idade, pesando 8,0Kg, baixo nível socioeconômico e condição ambiental precária, apresenta há um dia quadro diarreico com três evacuações líquidas, de coloração esverdeada e presença de muco, acompanhada de vômito pós-alimentar, dor abdominal intermitente e febre. No exame físico apresentava-se apática, choro fraco, palidez cutânea, mucosas secas e olhos encovados. A melhor conduta, neste caso, é:',
@@ -3351,6 +3575,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam09_29',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Ortopedia',
     text: 'Osteocondroses também denominada osteocondrite juvenil ou osteonecrose asséptica juvenil constitui uma necrose asséptica que afeta principalmente as epífises e as apófises dos ossos em crescimento. Correlacione: I. Doença de Köhler. II. Doença de Osgood-Schlatter. III. Doença de Legg-Perthes. IV. Doença de Sever. ( ) Necrose vascular da cabeça e do fêmur. ( ) Apofisite do calcâneo. ( ) Necrose asséptica do tubérculo da tíbia. ( ) Necrose asséptica da escafoide társico.',
@@ -3365,6 +3590,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam09_30',
+    banca: 'CERMAM',
     cycle: 'Ciclo Básico',
     subject: 'Parasitologia',
     text: 'Menina com 6 anos de idade, apresentou quadro importante de tosse. O médico residente achou o quadro clínico sugestivo de síndrome de Löeffler. Em quais verminoses há uma fase larvária pulmonar obrigatória?',
@@ -3379,6 +3605,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam09_31',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Endocrinologia',
     text: 'Homem de 44 anos apresentando sintomas compatíveis com hipoglicemia há cerca de 20 dias. Nega uso de qualquer medicamento. Os exames realizados revelaram: Glicemia de jejum = 38, 45 e 48 mg/dl, as insulinemias basais foram de 16, 10 e 8 um/ml (N - até 6) e a dosagem de Peptídeo C foi de 8,2 ng/ml (N = 0,3 - 3,5). A hipótese diagnóstica mais provável é:',
@@ -3393,6 +3620,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam09_32',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Pneumologia',
     text: 'As evidências indicam que as formas de carcinoma broncogênico mais associados ao tabagismo são:',
@@ -3407,6 +3635,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam09_33',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Infectologia',
     text: 'A infecção microbiana da superfície endotelial do coração resulta em síndrome da endocardite infecciosa. Com muita frequência, nos usuários de drogas injetáveis, a valva tricúspide é acometida. Nesta situação, qual o agente infeccioso mais comumente isolado?',
@@ -3421,6 +3650,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam09_34',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Hematologia',
     text: 'Homem, com 60 anos, afrodescendente, apresenta anemia, pneumonia bacteriana de repetição, dor lombar e osteopenia difusa com fratura patológica de corpos vertebrais. Foi detectada ainda uma insuficiência renal com proteína de Bence Jones no sedimento urinário. Aponte a hipótese diagnóstica mais provável para o caso:',
@@ -3435,6 +3665,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam09_35',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Hematologia',
     text: 'Quanto à transfusão de concentrado de plaquetas, pode-se afirmar que:',
@@ -3449,6 +3680,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam09_36',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Nefrologia',
     text: 'Existem determinados achados que, especialmente quando surgem associados, permitem estabelecer com mais convicção o diagnóstico diferencial entre uma infecção do trato urinário baixo e uma pielonefrite aguda. Assinale a opção que os apresenta:',
@@ -3463,6 +3695,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam09_37',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Reumatologia',
     text: 'Paciente tem diagnóstico de lúpus eritematoso sistêmico há 4 anos, com acometimento renal hematológico, neurológico e cutâneo, dependente de corticoide. Nos últimos 6 meses usou 10 gramas de corticoide e 6 gramas de ciclofosfamida. Há dois meses vem queixando-se de dor na região do quadril direito, principalmente no final do dia após longas caminhadas. A provável causa da dor é:',
@@ -3477,6 +3710,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam09_38',
+    banca: 'CERMAM',
     cycle: 'Internato',
     subject: 'Urgência e Emergência',
     text: 'Infecção secundária é uma importante complicação em pacientes queimados que perderam a epiderme e a sepse resultante é responsável por um número significativo de mortes nesses pacientes. Qual a etiologia mais frequente de um quadro de sepse em grande queimado?',
@@ -3491,6 +3725,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam09_39',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Psiquiatria',
     text: 'Deu entrada no pronto-socorro às 3 horas da manhã, um paciente do sexo masculino, 35 anos de idade, presidiário, trazido por agentes penitenciários informando que o paciente estava com diarreia, febre, cãimbras musculares e dificuldade para dormir. Os policiais relataram que o mesmo está preso há 10 dias, por uso e tráfico de drogas. Ao exame foi observado: taquicardia, hipertensão arterial, febril, agitação, miose, creção de pelos, lacrimejamento e rinorreia. Qual o provável diagnóstico?',
@@ -3505,6 +3740,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam09_40',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Geriatria',
     text: 'Mulher de 78 anos, aposentada como professora de ensino médio, portadora de doença arterial coronariana, diabetes e insuficiência renal crônica, é submetida a uma avaliação geriátrica ampla, face a crescente necessidade de ajuda para realizar atividades do dia-a-dia. Desde que teve um acidente vascular cerebral há dois anos, se movimenta com a ajuda de um andador. No Mini-Exame do Estado Mental (MEEM), apresentou escore de 23/30. Vive só desde que o marido morreu há 1 ano. Qual o dado apresentado que deve ser considerado como maior fator de risco para mortalidade, independente de outros, nesse caso?',
@@ -3519,6 +3755,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam09_41',
+    banca: 'CERMAM',
     cycle: 'Internato',
     subject: 'Urgência e Emergência',
     text: 'Vítima de agressão por arma branca no sexto espaço intercostal esquerdo, na linha hemiclavicular, chega a sala de emergência com pulso de 140bpm, PA = 60X30mmHg e FR = 28mov/min. Não há desvio de traqueia, o murmúrio vesicular é dimétrico bilateralmente. O quadro é mais compatível com:',
@@ -3533,6 +3770,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam09_42',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Pneumologia',
     text: 'A associação de anidrose + ptose palpebral + miose + enoftalmia caracterizam a Síndrome (X) e está relacionada com (Y). Quais palavras completam corretamente?',
@@ -3547,6 +3785,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam09_43',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Gastroenterologia',
     text: 'A imensa maioria dos tumores carcinoides tem origem intestinal. A localização responsável pela disseminação de metástases desses tumores ocorre, com mais frequência, no:',
@@ -3561,6 +3800,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam09_44',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Ortopedia',
     text: 'Paciente com lombalgia, sem história de trauma, atendido no pronto-socorro, com exame neurológico normal e contratura da musculatura paravertebral. A suspeita diagnóstica mais provável se o paciente tiver, respectivamente, 10, 30 e 60 anos de idade, é:',
@@ -3575,6 +3815,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam09_45',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Ortopedia',
     text: 'Nas osteomielite piogênica que acomete mais frequentemente uma criança, entende-se por Sequestro:',
@@ -3589,6 +3830,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam09_46',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Clínica Médica',
     text: 'Os marcadores séricos tumorais, como a alfafetoproteina e o antígeno carcinoembrionário são cada vez mais usados na propedêutica das massas neoplásticas. De modo geral, ainda que não sejam usados no diagnóstico inaugural, seu uso atinge a que objetivo?',
@@ -3603,6 +3845,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam09_47',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Oftalmologia',
     text: 'Paciente com 45 anos portador de miopia (- 1,00 D/E), refere que, atualmente, necessita tirar os óculos para ler. A melhor hipótese é:',
@@ -3617,6 +3860,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam09_48',
+    banca: 'CERMAM',
     cycle: 'Internato',
     subject: 'Medicina Intensiva',
     text: 'Mulher de 65 anos, internada na U.T.I. com diagnóstico de pancreatite grave, é portadora de miocardiopatia e hipertensão. O exame físico revela paciente com confusão mental. PA= 100x70mmHg; FC= 100bpm e diurese normal. Gasometria arterial com máscara de O2 10L/min: pH = 7,15; PaCO2 = 39; PaO2 = 47; HCO3 = 13, BE = -15,3; saturação arterial de O2 = 72%. Assinale a correta:',
@@ -3631,6 +3875,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam09_49',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Nefrologia',
     text: 'Homem de 28 anos é trazido ao PS após queda de aproximadamente 3 metros de altura um dia antes. Notou que sua urina tornou-se mais escura, semelhante a chá. Apresentava marca na dobra do cotovelo, sugestiva de droga injetável. Ao exame físico, apresentava-se normotenso, euvolêmico, afebril e eupneico. Sua coxa e parte da nádega esquerdas estão empastadas. Os exames colhidos revelam: creatinina = 3,0mg/dL, potássio = 6,0mEq/L, cálcio = 7,5mg/dL, fósforo = 7,5mg/dL, urina tipo 1 = proteína++, hemácias++ e presença de muitos cilindros granulares. O diagnóstico para esse paciente é de insuficiência renal (X) devida à/ao (Y). Qual das abaixo completa melhor as lacunas?',
@@ -3645,6 +3890,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam09_50',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Pneumologia',
     text: 'Homem de 25 anos, previamente hígido, apresentou quadro súbito de dor torácica esquerda, seguida de dispneia, o que o motivou a procurar o P.S. Ao exame físico, chama a atenção o murmúrio vesicular diminuído no lado esquerdo, frequência respiratória = 18 e à percussão som claro pulmonar. O provável diagnóstico é:',
@@ -3660,6 +3906,7 @@ const QUESTIONS: Question[] = [
 ,
   {
     id: 'cermam12_01',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Cirurgia Geral',
     text: 'O delírio pós-operatório ocorre numa proporção de 11 a 25%, com maiores índices registrados em idosos. Entre os diagnósticos abaixo, o que NÃO é fator causal do delírio:',
@@ -3674,6 +3921,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam12_02',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Gastroenterologia',
     text: 'Disfagia com perda da peristalse esofagiana, ocasionado por perda ou diminuição de células ganglionares no plexo mioentérico, o que ocasiona relaxamento ineficaz do esfíncter esofagiano inferior:',
@@ -3688,6 +3936,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam12_03',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Cirurgia Geral',
     text: 'A ruptura esofagiana espontânea, promovida por vômitos com aumento da pressão intraluminal:',
@@ -3702,6 +3951,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam12_04',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Cirurgia Geral',
     text: 'O triângulo dos Gastrinomas tem por limites:',
@@ -3716,6 +3966,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam12_05',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Cirurgia Geral',
     text: 'São causas de obstrução intestinal funcional, EXCETO:',
@@ -3730,6 +3981,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam12_06',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Cirurgia Geral',
     text: 'Tumores de interesse clínico e experimental recente, devido identificação da ativação do receptor c-Kit (mutação oncogênica), e o desenvolvimento de um agente terapêutico que suprime o crescimento tumoral (mesilato de imatinibe):',
@@ -3744,6 +3996,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam12_07',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Gastroenterologia',
     text: 'A síndrome Carcinoide ocorre em 10% dos tumores carcinoides, que se localizam nos órgãos abaixo, EXCETO:',
@@ -3758,6 +4011,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam12_08',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Cirurgia Geral',
     text: 'A fáscia transversalis representa:',
@@ -3772,6 +4026,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam12_09',
+    banca: 'CERMAM',
     cycle: 'Ciclo Básico',
     subject: 'Bioquímica',
     text: 'A gliconeogênese processada no fígado e no rim é ativada utilizando-se a (____________) derivada do músculo.',
@@ -3786,6 +4041,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam12_10',
+    banca: 'CERMAM',
     cycle: 'Ciclo Básico',
     subject: 'Bioquímica',
     text: 'A albumina plasmática é um método excelente para a mensuração do estado nutricional. Sua vida média é de:',
@@ -3800,6 +4056,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam12_11',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Clínica Médica',
     text: 'Na desnutrição do tipo marasmo somente uma das alternativas é correta:',
@@ -3814,6 +4071,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam12_12',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Cirurgia Geral',
     text: 'Em qualquer caso de interrupção abrupta da infusão venosa das soluções de hiperalimentação parenteral (retirada, saída acidental do cateter, término da etapa sem continuidade da infusão etc.), qual o cuidado imediato a ser tomado?',
@@ -3828,6 +4086,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam12_13',
+    banca: 'CERMAM',
     cycle: 'Internato',
     subject: 'Urgência e Emergência',
     text: 'Homem, 25 anos, é trazido ao serviço de emergência após ter sofrido acidente de trânsito. Sua respiração é difícil e ele se mostra cianótico. Murmúrio vesicular inaudível, mesmo no campo do pulmão direito, que é ressonante à percussão. O primeiro passo na conduta terapêutica deverá ser:',
@@ -3842,6 +4101,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam12_14',
+    banca: 'CERMAM',
     cycle: 'Internato',
     subject: 'Cirurgia Vascular',
     text: 'Mulher, 67 anos, edema de coxa há 2 semanas com características linfáticas, o que investigar?',
@@ -3856,6 +4116,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam12_15',
+    banca: 'CERMAM',
     cycle: 'Internato',
     subject: 'Cirurgia Vascular',
     text: 'Em um paciente com isquemia crônica de membros inferiores, a realização da arteriografia tem como principal objetivo:',
@@ -3870,6 +4131,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam12_16',
+    banca: 'CERMAM',
     cycle: 'Internato',
     subject: 'Cirurgia Vascular',
     text: 'Um paciente com quadro de obstrução arterial aguda é visto numa localidade onde não existem condições para cirurgia arterial, devendo ser removido para outra cidade. Qual seria a medicação de escolha a ser utilizada para tentar impedir o agravamento do quadro isquêmico?',
@@ -3884,6 +4146,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam12_17',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Cirurgia Geral',
     text: 'Em relação à apendicite aguda, assinale a alternativa CORRETA:',
@@ -3898,6 +4161,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam12_18',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Otorrinolaringologia',
     text: 'Sobre o Câncer de Nasofaringe, qual o sintoma mais comum de apresentação inicial:',
@@ -3912,6 +4176,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam12_19',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Neurologia',
     text: 'A síndrome de Claude Bernard-Horner consiste em:',
@@ -3926,6 +4191,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam12_20',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Cirurgia Geral',
     text: 'Qual dos fatores abaixo não é indicação formal de cirurgia bariátrica?',
@@ -3940,6 +4206,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam12_21',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Endocrinologia',
     text: 'Uma mulher de 40 anos, não fumante e sem histórico familiar de doenças coronarianas, fez exames: Colesterol total = 290; LDL = 210; HDL = 45; Triglicerídeos = 160; Glicemia jejum = 98. IMC 26. Orientada a dieta hipolipídica e atividade física. Três meses após, IMC 24,8: Colesterol total = 253; LDL = 180; HDL = 45; Triglicerídeos = 140. Função tireoidiana: TSH = 16 mcUI/ml (VN 0,3-5) e T4 livre = 0,6 ng/dl (VN 0,8-1,9). Qual a melhor conduta para este caso?',
@@ -3954,6 +4221,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam12_22',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Endocrinologia',
     text: 'Menina de 12 anos, diabetes tipo 1, deu entrada com Cetoacidose Diabética (CAD). Após insulinoterapia (infusão contínua) e correção da desidratação, houve redução importante da glicemia e normalização do pH sanguíneo, mas a cetonúria, medida por fita reagente, acentuou-se. Qual a conduta mais apropriada?',
@@ -3968,6 +4236,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam12_23',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Endocrinologia',
     text: 'Qual a principal medida preventiva contra o pé diabético?',
@@ -3982,6 +4251,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam12_24',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Reumatologia',
     text: 'São Fatores de Risco Modificáveis na Osteoporose, EXCETO:',
@@ -3996,6 +4266,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam12_25',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Reumatologia',
     text: 'Quanto à Artrite Reumatoide (AR) é INCORRETO afirmar:',
@@ -4010,6 +4281,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam12_26',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Reumatologia',
     text: 'Quanto ao Lúpus Eritematoso Sistêmico (LES), podemos afirmar:',
@@ -4024,6 +4296,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam12_27',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Gastroenterologia',
     text: 'Uma mulher de 50 anos, procedente de Manaus, chega ao Pronto-Socorro relatando hematêmese e melena, iniciada 1 hora antes da admissão. No exame físico (decúbito dorsal), não se verifica sinais de hepatopatia crônica, mas se encontra hipocorada, orientada e discretamente pálida. FC 110 bpm, PA 110 x 70 mmHg. Sobre o caso, marque a alternativa verdadeira:',
@@ -4038,6 +4311,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam12_28',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Gastroenterologia',
     text: 'Homem de 60 anos é admitido por aumento importante do volume abdominal à custa de ascite e perda ponderal significativa e sem motivo aparente. Nega patologias crônicas ou uso de medicamentos. Sobre o caso, marque a alternativa verdadeira:',
@@ -4052,6 +4326,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam12_29',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Gastroenterologia',
     text: 'Sobre a diarreia crônica é correto afirmar que:',
@@ -4066,6 +4341,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam12_30',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Gastroenterologia',
     text: 'Um jovem de 20 anos chega à consulta para investigar icterícia iniciada 05 dias antes. No exame físico, não há sinais de hepatopatia crônica ou encefalopatia hepática. AST = 500 (VR 4-30), ALT = 580 (VR 10-40), bilirrubina total = 4,0 (VR < 1,2), bilirrubina direta = 3,0 (VR < 4,0). Sobre o caso, marque a alternativa verdadeira:',
@@ -4080,6 +4356,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam12_31',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Pneumologia',
     text: 'Sobre a asma, marque a alternativa CORRETA:',
@@ -4094,6 +4371,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam12_32',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Pneumologia',
     text: 'Em relação aos achados no paciente com DPOC, é CORRETO afirmar que:',
@@ -4108,6 +4386,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam12_33',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Cardiologia',
     text: 'Nas afirmativas é CORRETO afirmar em relação à Síndrome de Eisenmenger somente que:',
@@ -4122,6 +4401,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam12_34',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Cardiologia',
     text: 'No tratamento da Insuficiência Cardíaca com Fração de Ejeção reduzida é INCORRETO afirmar que:',
@@ -4136,6 +4416,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam12_35',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Cardiologia',
     text: 'Paciente é atendido no PS e internado com diagnóstico de IAM. Após uma semana, paciente apresenta novo episódio de dor de forte intensidade com duração de mais de 20 minutos. Que marcador cardíaco seria fundamental para confirmar o diagnóstico de novo IAM?',
@@ -4150,6 +4431,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam12_36',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Cardiologia',
     text: 'Paciente de 72 anos dá entrada em Pronto-Socorro com história de episódios de síncope e dor torácica. Ao exame físico, apresenta sopro sistólico mais audível na área aórtica que desaparece sobre o esterno e reaparece sobre o ápice do VE (fenômeno de Gallavardin). Seu diagnóstico mais provável é:',
@@ -4164,6 +4446,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam12_37',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Neurologia',
     text: 'Homem de 18 anos, estudante, há oito meses vem apresentando episódios de movimentos mastigatórios e automatismos, constando de gestos desajeitados de mexer na roupa, agarrar ou manusear objetos ao seu redor. Ao ser agarrado por familiar fica agitado. O quadro dura alguns minutos e desde o início apresenta consciência alterada com confusão após a crise e amnésia para o fato. Marque a alternativa que melhor caracteriza o tipo de crise epiléptica e a topografia de origem mais frequente.',
@@ -4178,6 +4461,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam12_38',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Neurologia',
     text: 'Mulher de 68 anos, professora aposentada, iniciou declínio de memória, sobretudo para fatos recentes e desorientação espacial. Esses sintomas se instalaram de forma insidiosa e foram lentamente progredindo. Alterações de linguagem, distúrbios de planejamento (funções executivas) e de habilidades visuoespaciais surgiram com a evolução do quadro há 18 meses. Diagnosticada como tendo demência primária cortical e medicada com um inibidor da acetilcolinesterase. Qual foi o provável diagnóstico clínico?',
@@ -4192,6 +4476,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam12_39',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Hematologia',
     text: 'Analise as afirmativas quanto às Hemofilias e assinale a CORRETA:',
@@ -4206,6 +4491,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam12_40',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Hematologia',
     text: 'Analise as afirmativas quanto à Anemia Ferropriva e assinale a INCORRETA:',
@@ -4220,6 +4506,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam12_41',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Pediatria',
     text: 'Escolar, com sete anos, retorna ao Ambulatório quatro dias depois de ter sido atendido com quadro de febre, dor na garganta, hiperemia intensa de orofaringe, hipertrofia de amígdalas, com exsudato e petéquias em palato, linfadenopatia cervical anterior e posterior e submandibular bilateral. Na primeira consulta, foi prescrito ceftriaxona por sete dias. A mãe relata exantema com três dias de tratamento, sem melhora do quadro clínico. Penso:',
@@ -4234,6 +4521,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam12_42',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Pediatria',
     text: 'Mãe comparece ao Ambulatório com lactente de dois meses apresentando há um mês estridor inspiratório que piora com decúbito dorsal. Qual o provável diagnóstico?',
@@ -4248,6 +4536,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam12_43',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Pediatria',
     text: 'Escolar é trazida ao Ambulatório por sua mãe. É portadora de retardo mental e apresenta sangramento vaginal de pequena monta, secreção fétida e amarelada abundante. No exame da genitália, não apresenta qualquer anormalidade na coloração da mucosa; o hímen está íntegro. Provável diagnóstico:',
@@ -4262,6 +4551,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam12_44',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Pediatria',
     text: 'Escolar com sete anos vem ao endocrinologista, pois sua mãe está preocupada com seu crescimento, pois está menor do que seus colegas de escola. Qual dado deverá ser considerado no momento da avaliação?',
@@ -4276,6 +4566,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam12_45',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Pediatria',
     text: 'Pré-escolar com quatro anos vai a sua pediatra, trazido pela sua genitora, com história de palidez. A criança está com bom estado geral, a alimentação é adequada e a família é de bom nível socioeconômico. O pai é de origem portuguesa e a mãe é italiana. Exame laboratorial: Hb 10 g/dl; VCM 60; SEM ANISOCITOSE. Não houve alteração de laboratórios após tratamento com ferro por um mês. O resultado mais provável da eletroforese de hemoglobina é:',
@@ -4290,6 +4581,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam12_46',
+    banca: 'CERMAM',
     cycle: 'Ciclo Básico',
     subject: 'Parasitologia',
     text: 'Os microrganismos multiplicam e disseminam-se lateralmente abaixo do epitélio intestinal, produzindo as características de ÚLCERA "em forma de botão de camisa". Qual o parasita que produz isso?',
@@ -4304,6 +4596,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam12_47',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Pediatria',
     text: 'Lactente, nove meses, apresenta diarreia há 10 dias, sendo confirmado Campylobacter na identificação do microrganismo em cultura (Skirrow ou Butzler). Qual o tratamento?',
@@ -4318,6 +4611,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam12_48',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Pediatria',
     text: 'Pré-escolar de três anos, hospitalizado, encontra-se desnutrido do 2º grau, está em investigação por tosse crônica, febre intermitente, dispneia, sibilância e, ocasionalmente, dor abdominal e erupção cutânea. RX de tórax com infiltrados intersticiais, alveolares, inespecíficos ou mistos. Qual o diagnóstico provável?',
@@ -4332,6 +4626,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam12_49',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Pediatria',
     text: 'Pré-escolar, cinco anos, sexo masculino, procurou ambulatório de Oftalmologia, pois a mãe observou discreto desvio do olho esquerdo. Nasceu de parto prematuro, IG 36 semanas, Peso 2540 g. Permaneceu em oxigenoterapia (CPAP) por 7 horas devido a taquipneia transitória. Gravidez sem intercorrência. Exame físico: estrabismo com esotropia à esquerda e reflexo pupilar branco (leucocoria). Hipótese diagnóstica:',
@@ -4346,6 +4641,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam12_50',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Pediatria',
     text: 'Adolescente, quinze anos, sexo feminino, apresenta tosse, febre, perda de peso, dispneia, palidez, dor torácica, disfagia, derrame pleural, linfadenopatia cervical e axilar. RX de tórax: massa mediastinal estendendo-se para hemitórax superior direito e comprimindo a carina. A hipótese diagnóstica:',
@@ -4360,6 +4656,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam12_51',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Pediatria',
     text: 'Que suplementação deve receber um filho de mãe vegetariana que não ingere produtos animais, quando este estiver em aleitamento materno?',
@@ -4374,6 +4671,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam12_52',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Pediatria',
     text: 'Nutriz portadora de citomegalovirose confirmada no pré-natal. Qual a orientação a ser dada relacionada ao aleitamento materno, já que seu recém-nascido é de termo?',
@@ -4388,6 +4686,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam12_53',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Pediatria',
     text: 'Pré-escolar de cinco anos tem histórico de pica e exposição a filhotes de animais domésticos. Os achados clínicos incluem: anemia, febre, sibilância, broncopneumonia, hepatomegalia, leucocitose, importante eosinofilia. O diagnóstico provável é:',
@@ -4402,6 +4701,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam12_54',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Pediatria',
     text: 'Lactente de sete meses do sexo masculino é levado ao Pronto-Socorro por sua mãe, com quadro de diarreia aguda sem sinais de desidratação grave. Qual a conduta?',
@@ -4416,6 +4716,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam12_55',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Pediatria',
     text: 'Lactente de quatro meses, com quadro de anemia microcítica, crise convulsiva mioclônica de difícil controle desde o nascimento. O EEG mostra padrão hipsarritmia. Qual a deficiência vitamínica?',
@@ -4430,6 +4731,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam12_56',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Pediatria',
     text: 'Lactente de cinco meses apresenta na área de fralda pústulas satélites, aquelas que salpicam a pele contígua. A conduta é:',
@@ -4444,6 +4746,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam12_57',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Pediatria',
     text: 'Recém-nascido apresenta genitália ambígua, destaca-se a possibilidade de tratar-se de uma menina virilizada, devido hiperplasia congênita de suprarrenal. O nível sérico de 17-hidroxiprogesterona encontra-se elevado. Neste caso, espera-se como principal complicação:',
@@ -4458,6 +4761,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam12_58',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Pediatria',
     text: 'A associação que indica um pior prognóstico para desnutrição proteico-calórica grave é:',
@@ -4472,6 +4776,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam12_59',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Pediatria',
     text: 'Em uma menina de 18 meses ao exame físico você observa sinéquia dos pequenos lábios vaginais. Qual sua orientação para com sua mãe?',
@@ -4486,6 +4791,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam12_60',
+    banca: 'CERMAM',
     cycle: 'Ciclo Básico',
     subject: 'Parasitologia',
     text: 'Foram encontrados nas fezes de um escolar de quatro anos, trofozoítos de Giardia lamblia e Entamoeba histolytica. Qual o tratamento?',
@@ -4500,6 +4806,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam12_61',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Medicina de Família/SUS',
     text: 'Referente às linhas de cuidado no setor saúde, assinale a alternativa INCORRETA:',
@@ -4514,6 +4821,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam12_62',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Medicina de Família/SUS',
     text: 'Sobre os Modelos de Atenção à Saúde (MAS), você orienta de forma correta:',
@@ -4528,6 +4836,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam12_63',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Medicina de Família/SUS',
     text: 'Referente às Conferências de Saúde (CS), assinale a alternativa CORRETA:',
@@ -4542,6 +4851,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam12_64',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Medicina de Família/SUS',
     text: 'Para a efetivação do SUS, o Movimento da Reforma Sanitária (MRS) defendeu princípios e diretrizes da prestação de saúde à população brasileira. Assinale o princípio/diretriz que NÃO corresponde aos defendidos pelo MRS:',
@@ -4556,6 +4866,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam12_65',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Medicina de Família/SUS',
     text: 'Com relação à Atenção Primária à Saúde (APS), podemos afirmar:',
@@ -4570,6 +4881,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam12_66',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Medicina de Família/SUS',
     text: 'Referente às bases legais do Pacto pela Saúde, assinale a alternativa CORRETA:',
@@ -4584,6 +4896,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam12_67',
+    banca: 'CERMAM',
     cycle: 'Ciclo Básico',
     subject: 'Epidemiologia',
     text: 'Considerando a vigilância epidemiológica (VE) como instância de "inteligência do sistema de saúde", considere as afirmativas: I. A retroalimentação do sistema na VE corresponde ao compromisso de responder aos informantes de forma adequada e oportuna. II. Dentre as funções da VE há a coleta de dados, que ocorre prioritariamente na Atenção Básica à Saúde. III. A imprensa e a população são fontes importantes de dados, devendo ser sempre consideradas para a realização da investigação pertinente. Marque a alternativa correta:',
@@ -4598,6 +4911,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam12_68',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Medicina de Família/SUS',
     text: 'A lei nº 8.142/90 dispõe sobre a participação da comunidade na gestão do SUS. Referente à participação da comunidade:',
@@ -4612,6 +4926,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam12_69',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Medicina de Família/SUS',
     text: 'Considerando o planejamento no Sistema Único de Saúde (PlanejaSUS), assinale a correta:',
@@ -4626,6 +4941,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam12_70',
+    banca: 'CERMAM',
     cycle: 'Ciclo Básico',
     subject: 'Epidemiologia',
     text: 'Referente ao processo saúde e doença nas sociedades modernas, NÃO são fatores condicionantes e determinantes:',
@@ -4640,6 +4956,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam12_71',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Medicina de Família/SUS',
     text: 'De acordo com Ministério da Saúde, o Programa Saúde na Escola (PSE) tem como objetivo reforçar a prevenção à saúde dos alunos brasileiros e construir uma cultura de paz nas escolas. São atribuições do PSE, EXCETO:',
@@ -4654,6 +4971,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam12_72',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Medicina de Família/SUS',
     text: 'Ana teve bebê há três meses e vem à consulta solicitando orientações de como proceder no seu retorno ao trabalho, em um mês. Considere as afirmações: I. Se a empresa em que trabalha tiver mais de 30 funcionárias, ela tem direito a creche para o bebê. II. A mãe deve ser educada para a técnica de ordenha manual das mamas para que realize esse procedimento durante a jornada de trabalho. III. A legislação brasileira prevê dois intervalos de 30 minutos cada durante a jornada de trabalho para que a mãe amamente o seu filho até que ele complete 4 meses de vida. Marque a alternativa correta:',
@@ -4668,6 +4986,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam12_73',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Pediatria',
     text: 'Você é médico de família e deve orientar as mães sobre vacinas. Correlacione VACINAS: (1) BCG, (2) Rotavírus, (3) Hepatite B, (4) tríplice bacteriana (DTP) e poliomielite, (5) H1N1, (6) pneumococo 10. IDADE: ( ) IM ao nascer, com 1 e 6 meses. ( ) intradérmica ao nascer. ( ) aos 2, 4, 6 e 15 meses. ( ) a partir dos seis meses. ( ) oral aos 2 e 4 meses. ( ) IM a intervalos de 60 dias com 2, 4, 6 e 15 meses. Marque a sequência correta:',
@@ -4682,6 +5001,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam12_74',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Ginecologia & Obstetrícia',
     text: 'Raimunda tem 23 anos e vai casar em um mês. Pede orientação sobre exames antes de engravidar. Tem vida sexual ativa e parou a pílula este mês. Em relação à conduta médica na consulta pré-concepcional, é correto afirmar, EXCETO:',
@@ -4696,6 +5016,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam12_75',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Pediatria',
     text: 'Em relação ao aleitamento materno é INCORRETO afirmar:',
@@ -4710,6 +5031,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam12_76',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Medicina de Família/SUS',
     text: 'Em relação aos Núcleos de Apoio à Saúde da Família (NASF), podemos afirmar, EXCETO:',
@@ -4724,6 +5046,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam12_77',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Infectologia',
     text: 'Simão, de 27 anos, vem à consulta referindo caroço no pescoço e febre há 4 anos. Trabalhou num garimpo por 15 meses. Ao exame físico, apresenta adenomegalia cervical anterior à esquerda, sem sinais flogísticos. A punção do gânglio cervical resulta em bacilo álcool-ácido resistente (BAAR). Em relação ao acompanhamento do paciente com tuberculose, é mais correto afirmar que:',
@@ -4738,6 +5061,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam12_78',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Medicina de Família/SUS',
     text: 'Dentre as atribuições do Médico de Família e Comunidade que atua na estratégia Saúde da Família, estão:',
@@ -4752,6 +5076,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam12_79',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Medicina de Família/SUS',
     text: 'A Política Nacional de Atenção Integral à Saúde do Homem tem como diretrizes, EXCETO:',
@@ -4766,6 +5091,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam12_80',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Medicina de Família/SUS',
     text: 'Em relação ao Plano de Ações para Enfrentamento das Doenças Crônicas não Transmissíveis (DCNT), podemos afirmar:',
@@ -4780,6 +5106,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam12_81',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Ginecologia & Obstetrícia',
     text: 'A gravidez impõe ao organismo materno profundas modificações no metabolismo glicídico, que em pacientes saudáveis se caracterizam por:',
@@ -4794,6 +5121,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam12_82',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Ginecologia & Obstetrícia',
     text: 'Em relação à gravidez de alto risco, se a cardiotocografia anteparto ou repouso apresenta-se alterada, devemos:',
@@ -4808,6 +5136,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam12_83',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Ginecologia & Obstetrícia',
     text: 'Alguns cuidados devem ser considerados durante a abordagem de pacientes vítimas de violência sexual, dentre eles a profilaxia de algumas doenças. Marque a alternativa que NÃO contém a doença e tratamento adequados:',
@@ -4822,6 +5151,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam12_84',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Ginecologia & Obstetrícia',
     text: 'O útero em geral está em posição mediana de anteversoflexão. Ele dispõe de um complexo sistema de fixação, representado pelos aparelhos de sustentação, suspensão e contenção, que se caracteriza respectivamente por:',
@@ -4836,6 +5166,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam12_85',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Ginecologia & Obstetrícia',
     text: 'Em relação ao ciclo menstrual é correto afirmar:',
@@ -4850,6 +5181,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam12_86',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Ginecologia & Obstetrícia',
     text: 'Com relação ao câncer de mama podemos afirmar:',
@@ -4864,6 +5196,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam12_87',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Ginecologia & Obstetrícia',
     text: 'Sobre o câncer de colo uterino podemos afirmar:',
@@ -4878,6 +5211,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam12_88',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Ginecologia & Obstetrícia',
     text: 'Paciente procura unidade básica de saúde com colpocitologia mostrando lesão intraepitelial de baixo grau do efeito citopático do papilomavírus humano. Qual deverá ser a conduta indicada pelo médico?',
@@ -4892,6 +5226,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam12_89',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Ginecologia & Obstetrícia',
     text: 'Com relação à flora vaginal podemos afirmar:',
@@ -4906,6 +5241,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam12_90',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Ginecologia & Obstetrícia',
     text: 'Na mama, o papiloma intraductal solitário é uma lesão de ductos proximais, que clinicamente tem como sintoma mais comum:',
@@ -4920,6 +5256,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam12_91',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Ginecologia & Obstetrícia',
     text: 'Em relação à anatomia do colo uterino podemos afirmar:',
@@ -4934,6 +5271,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam12_92',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Ginecologia & Obstetrícia',
     text: 'Pode ser considerado diagnóstico obstétrico de apresentação defletida de primeiro grau quando através do toque se identificam:',
@@ -4948,6 +5286,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam12_93',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Pediatria',
     text: 'São contraindicações absolutas de aleitamento materno, EXCETO:',
@@ -4962,6 +5301,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam12_94',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Infectologia',
     text: 'Em relação às Doenças Sexualmente Transmissíveis, assinale a alternativa INCORRETA:',
@@ -4976,6 +5316,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam12_95',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Infectologia',
     text: 'No diagnóstico sindrômico das Doenças Sexualmente Transmissíveis:',
@@ -4990,6 +5331,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam12_96',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Ginecologia & Obstetrícia',
     text: 'Sobre a mortalidade materna, marque a alternativa INCORRETA:',
@@ -5004,6 +5346,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam12_97',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Ginecologia & Obstetrícia',
     text: 'Com relação à assistência Pré-Natal e Puerperal, é INCORRETO dizer:',
@@ -5018,6 +5361,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam12_98',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Ginecologia & Obstetrícia',
     text: 'São recomendações do Ministério da Saúde para uma assistência pré-natal adequada, EXCETO:',
@@ -5032,6 +5376,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam12_99',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Ginecologia & Obstetrícia',
     text: 'Em relação aos exames complementares realizados no pré-natal:',
@@ -5046,6 +5391,7 @@ const QUESTIONS: Question[] = [
   },
   {
     id: 'cermam12_100',
+    banca: 'CERMAM',
     cycle: 'Ciclo Clínico',
     subject: 'Ginecologia & Obstetrícia',
     text: 'Sobre o climatério, pode-se dizer:',
