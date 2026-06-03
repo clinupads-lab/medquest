@@ -30,7 +30,9 @@
       "PowerShell(npm run lint 2>&1)",
       "Bash(xargs grep -l \"BASE_DIR\\\\|Path\\(\")",
       "Bash(git push *)",
-      "Bash(git pull *)"
+      "Bash(git pull *)",
+      "Bash(netstat -ano)",
+      "WebFetch(domain:www.flaticon.com)"
     ]
   }
 }
