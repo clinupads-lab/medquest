@@ -8336,6 +8336,7 @@ export default function App() {
       // End session
       setSummaryTimer(quizTimer);
       setIsThinking(false);
+      console.log('Quiz ended - switching to summary. XP Gained:', sessionResults.xpGained);
       setUser(prev => {
         const newXp = prev.xp + sessionResults.xpGained;
         const newLevel = Math.floor(newXp / 1000) + 1;
@@ -8348,7 +8349,7 @@ export default function App() {
           weeklyGoalDone: newWeeklyDone,
         };
       });
-      setView('summary');
+      setTimeout(() => setView('summary'), 100);
     }
   };
 
