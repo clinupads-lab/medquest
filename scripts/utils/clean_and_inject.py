@@ -3,8 +3,9 @@ import re
 import json
 from pathlib import Path
 
-JSON_PATH = Path("iamspe_questions.json")
-APP_PATH  = Path("src/App.tsx")
+BASE_DIR  = Path(__file__).parent.parent.parent
+JSON_PATH = BASE_DIR / "data" / "processed" / "iamspe_questions.json"
+APP_PATH  = BASE_DIR / "src" / "App.tsx"
 
 # Hard stop patterns: cut off the string at any of these
 HARD_STOPS = [

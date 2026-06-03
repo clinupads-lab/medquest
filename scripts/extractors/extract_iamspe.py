@@ -197,7 +197,10 @@ def main():
             'correctIndex': CORRECT_ANSWERS[q_num - 1],
         })
 
-    with open("iamspe_questions.json", "w", encoding="utf-8") as f:
+    output_dir = Path(__file__).parent.parent.parent / "data" / "processed"
+    output_dir.mkdir(parents=True, exist_ok=True)
+
+    with open(output_dir / "iamspe_questions.json", "w", encoding="utf-8") as f:
         json.dump(output, f, ensure_ascii=False, indent=2)
     print(f"\niamspe_questions.json written ({len(output)} questions)")
 
@@ -223,7 +226,7 @@ def main():
             f'  }},'
         )
 
-    with open("iamspe_questions.ts", "w", encoding="utf-8") as f:
+    with open(output_dir / "iamspe_questions.ts", "w", encoding="utf-8") as f:
         f.write("\n".join(ts_lines))
     print(f"iamspe_questions.ts written")
 

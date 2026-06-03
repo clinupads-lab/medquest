@@ -6,13 +6,12 @@ coverage/
 *.log
 .env*
 !.env.example
-medquest/
-.claude/
+__pycache__/
 
-# PDFs baixados pelo scraper (muito grandes para o git)
-pdfs/
+# Data folders (PDFs, raw data, extraction outputs)
+data/raw/
+data/processed/*.json
+data/processed/*.ts
 
-# Arquivos de debug de extração
-iamspe_raw.txt
-iamspe_col.txt
-iamspe_questions.ts
+# Local script outputs
+scripts/utils/scraper.log

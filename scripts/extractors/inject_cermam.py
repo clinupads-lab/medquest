@@ -3,7 +3,8 @@ import re
 from pathlib import Path
 from cermam_data import QUESTIONS
 
-APP_PATH = Path("src/App.tsx")
+BASE_DIR = Path(__file__).parent.parent.parent
+APP_PATH = BASE_DIR / "src" / "App.tsx"
 
 def esc(s):
     return s.replace('\\', '\\\\').replace('"', '\\"').replace('\n', ' ')

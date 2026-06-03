@@ -41,9 +41,9 @@ logging.basicConfig(
 )
 log = logging.getLogger(__name__)
 
-BASE_DIR   = Path(__file__).parent
-PDF_DIR    = BASE_DIR / "pdfs"
-OUTPUT_DIR = BASE_DIR / "output"
+BASE_DIR   = Path(__file__).parent.parent.parent
+PDF_DIR    = BASE_DIR / "data" / "raw" / "pdfs"
+OUTPUT_DIR = BASE_DIR / "data" / "raw" / "output"
 PDF_DIR.mkdir(parents=True, exist_ok=True)
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 

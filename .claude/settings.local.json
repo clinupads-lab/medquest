@@ -5,7 +5,30 @@
       "PowerShell(\\(Get-Content \"c:\\\\Users\\\\Andrew Aguiar\\\\Downloads\\\\medquest_-residência-médica \\(1\\)\\\\src\\\\App.tsx\" | Measure-Object -Line\\).Lines)",
       "PowerShell(& \"C:\\\\Program Files\\\\Git\\\\bin\\\\git.exe\" --version)",
       "PowerShell($git = \"C:\\\\Program Files\\\\Git\\\\bin\\\\git.exe\"; cd \"c:\\\\Users\\\\Andrew Aguiar\\\\Downloads\\\\medquest_-residência-médica \\(1\\)\"; & $git init; & $git add .; & $git -c user.email=\"clinup.ads@gmail.com\" -c user.name=\"Andrew Aguiar\" commit -m \"primeiro commit - medquest\")",
-      "PowerShell($git = \"C:\\\\Program Files\\\\Git\\\\bin\\\\git.exe\"; cd \"c:\\\\Users\\\\Andrew Aguiar\\\\Downloads\\\\medquest_-residência-médica \\(1\\)\"; & $git branch -M main; & $git remote add origin https://github.com/clinupads-lab/medquest.git; & $git push -u origin main)"
+      "PowerShell($git = \"C:\\\\Program Files\\\\Git\\\\bin\\\\git.exe\"; cd \"c:\\\\Users\\\\Andrew Aguiar\\\\Downloads\\\\medquest_-residência-médica \\(1\\)\"; & $git branch -M main; & $git remote add origin https://github.com/clinupads-lab/medquest.git; & $git push -u origin main)",
+      "PowerShell(cd \"c:\\\\Users\\\\Andrew Aguiar\\\\Downloads\\\\medquest_-residência-médica \\(1\\)\"; npx tsc --noEmit 2>&1 | Select-String -Pattern \"error TS\" | Where-Object { $_ -notmatch \"TS7016|TS7026\" } | Select-Object -First 20)",
+      "Bash(npm run *)",
+      "Bash(curl -s http://localhost:5173)",
+      "Read(//tmp/**)",
+      "PowerShell(\\(Get-Content \"c:\\\\Users\\\\Andrew Aguiar\\\\Downloads\\\\medquest_-residência-médica \\(1\\)\\\\output\\\\questions.json\" | ConvertFrom-Json\\).Count)",
+      "Bash(python extract_iamspe.py)",
+      "PowerShell(cd \"c:\\\\Users\\\\Andrew Aguiar\\\\Downloads\\\\medquest_-residência-médica \\(1\\)\"; $env:PYTHONIOENCODING=\"utf-8\"; python extract_iamspe.py 2>&1)",
+      "PowerShell(cd \"c:\\\\Users\\\\Andrew Aguiar\\\\Downloads\\\\medquest_-residência-médica \\(1\\)\"; $env:PYTHONIOENCODING=\"utf-8\"; python clean_and_inject.py 2>&1)",
+      "PowerShell(cd \"c:\\\\Users\\\\Andrew Aguiar\\\\Downloads\\\\medquest_-residência-médica \\(1\\)\"; $env:PYTHONIOENCODING=\"utf-8\"; python fix_dup.py 2>&1)",
+      "PowerShell(cd \"c:\\\\Users\\\\Andrew Aguiar\\\\Downloads\\\\medquest_-residência-médica \\(1\\)\"; $env:PYTHONIOENCODING=\"utf-8\"; python clean_and_inject.py 2>&1 | Select-Object -Last 5)",
+      "PowerShell(cd \"c:\\\\Users\\\\Andrew Aguiar\\\\Downloads\\\\medquest_-residência-médica \\(1\\)\"; npx tsc --noEmit 2>&1 | Where-Object { $_ -notmatch \"iamspe_questions.ts\" } | Select-Object -First 20)",
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)",
+      "Bash(awk -F\"'\" '{print $2 \" | \" $4}')",
+      "PowerShell(cd \"c:\\\\Users\\\\Andrew Aguiar\\\\Downloads\\\\medquest_-residência-médica \\(1\\)\"; $env:PYTHONIOENCODING=\"utf-8\"; python reclassify.py 2>&1)",
+      "PowerShell(cd \"c:\\\\Users\\\\Andrew Aguiar\\\\Downloads\\\\medquest_-residência-médica \\(1\\)\"; $env:PYTHONIOENCODING=\"utf-8\"; python inject_cermam.py 2>&1)",
+      "PowerShell(cd \"c:\\\\Users\\\\Andrew Aguiar\\\\Downloads\\\\medquest_-residência-médica \\(1\\)\"; $env:PYTHONIOENCODING=\"utf-8\"; python add_banca.py 2>&1)",
+      "PowerShell(cd \"c:\\\\Users\\\\Andrew Aguiar\\\\Downloads\\\\medquest_-residência-médica \\(1\\)\"; $env:PYTHONIOENCODING=\"utf-8\"; python count_subjects.py 2>&1)",
+      "PowerShell(Get-ChildItem -Recurse | Where-Object { -not $_.FullName.Contains\\(\"node_modules\"\\) -and -not $_.FullName.Contains\\(\".git\"\\) -and -not $_.FullName.Contains\\(\"__pycache__\"\\) } | Select-Object @{N=\"Path\";E={$_.FullName.Replace\\(\\(Get-Location\\).Path, \"\"\\).TrimStart\\(\"\\\\\"\\)}} | Select-Object -First 80 | Format-Table -AutoSize)",
+      "PowerShell(Get-ChildItem -Path \"medquest\\\\src\" -Recurse -Depth 2 | Where-Object { $_.PSIsContainer -eq $true } | Select-Object -ExpandProperty Name)",
+      "Bash(grep -E \"\\\\.\\(py|json|txt\\)$\")",
+      "PowerShell(npm run lint 2>&1)",
+      "Bash(xargs grep -l \"BASE_DIR\\\\|Path\\(\")"
     ]
   }
 }

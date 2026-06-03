@@ -2,7 +2,8 @@
 import re
 from pathlib import Path
 
-APP_PATH = Path("src/App.tsx")
+BASE_DIR = Path(__file__).parent.parent.parent
+APP_PATH = BASE_DIR / "src" / "App.tsx"
 
 # Map question ID → new subject (and whether to clear subSubject)
 RECLASSIFY = {
