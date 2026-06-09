@@ -6905,6 +6905,1141 @@ const QUESTIONS: Question[] = [
     ],
     correctIndex: 0,
   },
+  // ===== CERMAM 2019 (Acesso Direto R1) =====
+  {
+    id: 'cermam19_18',
+    banca: 'CERMAM',
+    cycle: 'Ciclo Clínico',
+    subject: 'Hematologia',
+    text: 'Uma paciente de quarenta anos de idade, previamente hígida, relatou metrorragia de grande intensidade, acompanhada do surgimento de petéquias e equimoses disseminadas pelo corpo, com início há cerca de duas semanas, mas há um mês já apresentava fadiga e seus pais notaram palidez cutâneo-mucosa. Na admissão, o exame físico mostrou, além dos sinais previamente citados, hepatomegalia discreta, hemorragias conjuntivais e na mucosa oral. A radiografia de tórax não revelou sinais de alargamento mediastinal. O hemograma apresentou os seguintes resultados: hemoglobina = 7,0 g/dl; plaquetas = 50.000; leucócitos = 40.000 céls/mm³. A análise citológica do esfregaço do sangue periférico indicou presença de cerca de 20% de leucócitos de tamanho aumentado e citoplasma com grânulos e bastonetes de Auer. A hipótese diagnóstica mais provável para esse quadro clínico é a de:',
+    options: [
+      'Leucemia linfoide aguda.',
+      'Leucemia linfoide crônica.',
+      'Síndrome mielodisplásica.',
+      'Leucemia mieloide aguda.',
+    ],
+    correctIndex: 3,
+  },
+  {
+    id: 'cermam19_19',
+    banca: 'CERMAM',
+    cycle: 'Ciclo Clínico',
+    subject: 'Hematologia',
+    text: 'A doença falciforme é uma alteração genética caracterizada por um tipo de hemoglobina mutante designada por hemoglobina S (ou Hb S) que provoca a distorção dos eritrócitos, fazendo-os tomar a forma de "foice" ou "meia-lua". Avalie se as afirmativas a seguir são falsas (F) ou verdadeiras (V): I. O exame diagnóstico é a eletroforese de hemoglobina em acetato de celulose ou em agarose. II. A crise vaso-oclusiva é a principal característica da doença, resulta de um conjunto de interações do endotélio, fatores plasmáticos, leucócitos, falcização e rigidez eritrocitária. III. As úlceras de perna podem estar presentes nos portadores de doença falciforme. Assinale a alternativa CORRETA:',
+    options: [
+      'F, V e F.',
+      'V, V e F.',
+      'V, V e V.',
+      'F, V e V.',
+    ],
+    correctIndex: 2,
+  },
+  {
+    id: 'cermam19_20',
+    banca: 'CERMAM',
+    cycle: 'Ciclo Clínico',
+    subject: 'Nefrologia',
+    text: 'Qual das nefropatias a seguir pode levar à cronificação de uma insuficiência renal aguda?',
+    options: [
+      'Glomerulonefrite rapidamente progressiva.',
+      'Doença renal por lesão mínima.',
+      'Glomeruloesclerose segmentar e focal.',
+      'Glomerulonefrite membranosa.',
+    ],
+    correctIndex: 0,
+  },
+  {
+    id: 'cermam19_21',
+    banca: 'CERMAM',
+    cycle: 'Ciclo Clínico',
+    subject: 'Cirurgia Geral',
+    text: 'Os limites constituídos por músculo retoabdominal (medial), músculos oblíquo interno e transverso (superior), músculo iliopsoas (lateral) e pelo ligamento de Cooper e a sínfise de púbis (inferior). Corresponde ao:',
+    options: [
+      'Espaço de Retzius.',
+      'Triângulo de Hasselbach.',
+      'Orifício miopectíneo de Fruchaud.',
+      'Espaço de Bogros.',
+    ],
+    correctIndex: 2,
+  },
+  {
+    id: 'cermam19_22',
+    banca: 'CERMAM',
+    cycle: 'Ciclo Clínico',
+    subject: 'Cirurgia Geral',
+    text: 'Malformação congênita, localizada na borda antimesentérica do íleo terminal refere-se a:',
+    options: [
+      'Bandas de Ladd.',
+      'Divertículo de Meckel.',
+      'Onfalocele.',
+      'Cisto mesentérico.',
+    ],
+    correctIndex: 1,
+  },
+  {
+    id: 'cermam19_23',
+    banca: 'CERMAM',
+    cycle: 'Ciclo Clínico',
+    subject: 'Urgência e Emergência',
+    text: 'Considera-se Via Aérea Definitiva:',
+    options: [
+      'Cricotireoidotomia.',
+      'Máscara laríngea.',
+      'Ventilação transtraqueal percutânea.',
+      'Instalação da cânula de Guedel.',
+    ],
+    correctIndex: 0,
+  },
+  {
+    id: 'cermam19_24',
+    banca: 'CERMAM',
+    cycle: 'Ciclo Clínico',
+    subject: 'Urgência e Emergência',
+    text: 'Paciente com Trauma Crânio Encefálico apresenta abertura ocular a comandos verbais, responde com palavras inapropriadas e localiza dor; tem o escore na Escala de Coma de Glasgow:',
+    options: [
+      '10.',
+      '9.',
+      '11.',
+      '12.',
+    ],
+    correctIndex: 2,
+  },
+  {
+    id: 'cermam19_25',
+    banca: 'CERMAM',
+    cycle: 'Ciclo Clínico',
+    subject: 'Cirurgia Geral',
+    text: 'A classificação de Hinchey é utilizada:',
+    options: [
+      'No cisto de colédoco.',
+      'Na hérnia inguinal.',
+      'Na pancreatite.',
+      'Na diverticulite.',
+    ],
+    correctIndex: 3,
+  },
+  {
+    id: 'cermam19_26',
+    banca: 'CERMAM',
+    cycle: 'Ciclo Clínico',
+    subject: 'Cirurgia Geral',
+    text: 'Paciente alcoólatra, com vários episódios eméticos prévios, apresenta hematêmese. Na Endoscopia Digestiva Alta evidencia-se lacerações tipo fissuras na mucosa e submucosa do esôfago, próximo à junção gástrica. Corresponde a qual patologia?',
+    options: [
+      'Úlcera de Marjolin.',
+      'Síndrome de Mallory-Weiss.',
+      'Esôfago de Barrett.',
+      'Lesão de Dieulafoy.',
+    ],
+    correctIndex: 1,
+  },
+  {
+    id: 'cermam19_27',
+    banca: 'CERMAM',
+    cycle: 'Ciclo Clínico',
+    subject: 'Cirurgia Geral',
+    text: 'A Tríade de Beck é encontrada em:',
+    options: [
+      'Tamponamento cardíaco.',
+      'Colangite.',
+      'Tumor de pulmão (Pancoast).',
+      'Aneurisma dissecante de aorta abdominal.',
+    ],
+    correctIndex: 0,
+  },
+  {
+    id: 'cermam19_28',
+    banca: 'CERMAM',
+    cycle: 'Ciclo Clínico',
+    subject: 'Ortopedia',
+    text: 'O sinal de Terry Thomas está presente em:',
+    options: [
+      'Fratura distal do rádio.',
+      'Fratura distal da ulna.',
+      'Deslocamento escafosemilunar.',
+      'Fratura do escafoide.',
+    ],
+    correctIndex: 2,
+  },
+  {
+    id: 'cermam19_29',
+    banca: 'CERMAM',
+    cycle: 'Ciclo Clínico',
+    subject: 'Cirurgia Geral',
+    text: 'A melhor conduta para minimizar os efeitos da translocação bacteriana do grande queimado:',
+    options: [
+      'Instituir precocemente nutrição parenteral.',
+      'Administrar antibiótico de amplo espectro.',
+      'Administrar albumina.',
+      'Instituir precocemente nutrição enteral.',
+    ],
+    correctIndex: 3,
+  },
+  {
+    id: 'cermam19_30',
+    banca: 'CERMAM',
+    cycle: 'Ciclo Clínico',
+    subject: 'Urologia',
+    text: 'Marcelo, 19 anos, é admitido no Pronto-Socorro com relato de acidente motociclístico, com instabilidade hemodinâmica. Apresenta dor pélvica e uretrorragia. Ao Raio X: fratura de bacia, e na uretrocistografia foi evidenciado ruptura completa da uretra anterior. A melhor conduta urológica a ser tomada é:',
+    options: [
+      'Cistostomia por punção e reconstrução uretral posterior.',
+      'Cateterismo vesical com sonda de Foley, antes de qualquer procedimento mais invasivo.',
+      'Cirurgia imediata com anastomose término-terminal dos cotos uretrais por via suprapúbica.',
+      'Cirurgia imediata com anastomose término-terminal dos cotos uretrais por via perineal.',
+    ],
+    correctIndex: 0,
+  },
+  {
+    id: 'cermam19_31',
+    banca: 'CERMAM',
+    cycle: 'Ciclo Clínico',
+    subject: 'Cirurgia Geral',
+    text: 'Paciente do sexo feminino, 44 anos, diabética, deu entrada no pronto-socorro com quadro de dor intensa, de início súbito, em todo o andar superior do abdome associada à discreta icterícia e vômitos. À admissão, observou-se hiperamilasemia de 2.500 g/dl. A paciente evoluiu desfavoravelmente e após 48h encontra-se taquicárdica, taquipneica, hipotensa, hipocorada, oligúrica. Após 10 dias sem melhora satisfatória, tomografia computadorizada de abdome revelou necrose de 50% do pâncreas e volumosa coleção peripancreática. Há 24h há nova piora, com febre, leucocitose (20.000 neutrófilos com 8% de bastões), taquicardia, taquipneia e hipotensão. Assinale a alternativa CORRETA:',
+    options: [
+      'Os elevados níveis da amilasemia já permitiram verificar a gravidade do caso, indicando transferência para a UTI desde a admissão.',
+      'O próximo passo na conduta desta paciente é a punção da coleção guiada por TC para coleta de material e confirmação do processo infeccioso.',
+      'Os dados permitem concluir que a paciente evoluiu com infecção da coleção necrótica, devendo ser submetida a desbridamento cirúrgico urgente.',
+      'O tratamento de escolha é a antibioticoterapia de largo espectro, devendo ser iniciada empiricamente e reavaliada após 72h de acordo com a melhora clínica.',
+    ],
+    correctIndex: 1,
+  },
+  {
+    id: 'cermam19_32',
+    banca: 'CERMAM',
+    cycle: 'Ciclo Clínico',
+    subject: 'Cirurgia Geral',
+    text: 'Paciente do sexo masculino, 36 anos, refere quadro de dor em virilha direita, aguda, durante uma partida de futebol, com evolução de 24h. Nega episódios semelhantes prévios e quaisquer comorbidades. Ao exame da região inguinal direita observa-se massa de cerca de 4cm de diâmetro, dolorosa à palpação, não redutível, sem sinais flogísticos, que se projetava abaixo do ligamento inguinal em direção da raiz da coxa direita. Assinale a alternativa CORRETA:',
+    options: [
+      'A ultrassonografia é método adequado para efetuar o diagnóstico diferencial com linfadenite.',
+      'Por tratar-se de hérnia 3C de Nyhus, o reparo laparoscópico está contraindicado.',
+      'Por tratar-se de hérnia de Richter complicada, há indicação de reparo à Lichtenstein urgente.',
+      'Já que não há sinais flogísticos, a melhor conduta para o caso é a alta hospitalar com analgesia oral, compressas mornas e acompanhamento ambulatorial.',
+    ],
+    correctIndex: 0,
+  },
+  {
+    id: 'cermam19_33',
+    banca: 'CERMAM',
+    cycle: 'Ciclo Clínico',
+    subject: 'Cirurgia Geral',
+    text: 'Paciente do sexo masculino, 65 anos, diabético, é transferido do interior do Estado, com história de dor tipo cólica em hipocôndrio direito, irradiada para o dorso, associada a vômitos, após alimentação rica em gordura. Esteve internado por 6 dias, sem resposta ao tratamento clínico, evoluindo com febre alta e leucocitose. É admitido em regular estado geral, anictérico, taquicárdico, pálido +/4 e desidratado, eupneico e normotenso. Palpa-se plastrão em hipocôndrio direito e a ultrassonografia revelou cálculos na vesícula, com infiltração de gás na sua parede. Sobre a avaliação e conduta deste paciente, assinale a alternativa INCORRETA:',
+    options: [
+      'Já havia indicação de abordagem cirúrgica urgente desde o segundo dia de internação sem melhora clínica.',
+      'Esperamos observar leucocitose, elevação de transaminases e bilirrubinas normais na avaliação laboratorial deste paciente.',
+      'Caso não seja tratado adequadamente, o caso pode evoluir com perfuração da vesícula e peritonite.',
+      'O paciente está evoluindo com quadro séptico de origem biliar, estando indicado o início de antibióticos de largo espectro, transferência para a UTI e reavaliação clínica após 48h.',
+    ],
+    correctIndex: 3,
+  },
+  {
+    id: 'cermam19_34',
+    banca: 'CERMAM',
+    cycle: 'Ciclo Clínico',
+    subject: 'Cirurgia Geral',
+    text: 'Uma paciente do sexo feminino, 55 anos, entra no seu consultório com queixa dispéptica crônica. Por ser procedente de município do interior do estado, o único exame que pôde ser realizado foi radiografia contrastada de esôfago, estômago e duodeno. O exame evidencia imagem que sugere lesão ulcerada em região antral, com dificuldade de passagem de contraste para o duodeno. Assinale a alternativa CORRETA:',
+    options: [
+      'Há indicação precisa de endoscopia digestiva alta com biópsia para definição do caráter (benigno ou maligno) da lesão.',
+      'Os dados acima são suficientes para afirmar a necessidade de gastrectomia total para esta paciente.',
+      'Vômitos contendo alimentos não digeridos, melena e perda de peso são elementos que provavelmente estarão presentes na história detalhada desta paciente.',
+      'A observação de ascite, prateleira de Blumer e esplenomegalia ao exame físico indicam prognóstico ruim para esta paciente.',
+    ],
+    correctIndex: 0,
+  },
+  {
+    id: 'cermam19_35',
+    banca: 'CERMAM',
+    cycle: 'Ciclo Clínico',
+    subject: 'Cirurgia Geral',
+    text: 'Paciente do sexo masculino, 55 anos, foi submetido a colectomia direita há 1 ano para tratamento de adenocarcinoma de cólon ascendente. Durante seu acompanhamento, o cirurgião observou elevação das titulações de CEA e solicitou ultrassonografia que evidenciou 3 nódulos sólidos em segmentos V e VI do fígado. Assinale a alternativa INCORRETA:',
+    options: [
+      'História de alcoolismo, doenças hepáticas e sintomatologia neurológica, assim como a investigação de ascite, dosagens de bilirrubina, albumina e TAP estão indicados para o caso.',
+      'Os dados acima nos permitem concluir que não há curabilidade possível para o caso, restando o tratamento cirúrgico paliativo como melhor opção terapêutica.',
+      'A tomografia com contraste venoso e a ressonância magnética com estudo dinâmico com contraste hepatobiliar são os exames de imagem pré-operatórios de escolha para a avaliação da ressecabilidade das lesões hepáticas.',
+      'O paciente deve se beneficiar com a associação de quimioterapia adjuvante após a ressecção das lesões hepáticas.',
+    ],
+    correctIndex: 1,
+  },
+  {
+    id: 'cermam19_36',
+    banca: 'CERMAM',
+    cycle: 'Ciclo Clínico',
+    subject: 'Gastroenterologia',
+    text: 'Paciente do sexo feminino, 46 anos, vem à avaliação médica com história de pirose há muitos anos, frequentemente associada a alimentação copiosa rica em gordura, refrigerantes e café. Foi submetida a endoscopia digestiva alta que evidenciou áreas de epitélio avermelhado em esôfago distal, medindo 5 cm acima da linha Z. A biópsia revelou tratar-se de metaplasia colunar e áreas de displasia de alto grau. Qual das seguintes orientações a esta paciente é inadequada?',
+    options: [
+      'A senhora apresenta um quadro de doença do refluxo gastroesofágico bastante complicada que se não for tratado adequadamente pode evoluir para um câncer.',
+      'As chances dessa metaplasia no esôfago que apareceu na sua endoscopia melhorar apenas com remédios é muito baixa.',
+      'Seu exame demonstra que a cirurgia de fundoplicatura evitará que a sua lesão do esôfago se transforme em câncer.',
+      'A senhora tem indicação de tratamento cirúrgico, mas antes deveremos iniciar tratamento com medicações em dose máxima por 3 meses e repetir a endoscopia para ver se a displasia melhorou.',
+    ],
+    correctIndex: 2,
+  },
+  {
+    id: 'cermam19_37',
+    banca: 'CERMAM',
+    cycle: 'Ciclo Clínico',
+    subject: 'Cirurgia Geral',
+    text: 'Paciente do sexo masculino, 70 anos, hipertenso e cardiopata, dá entrada no serviço de pronto atendimento com quadro de hematoquezia e evoluiu com vários episódios de enterorragia, há 24 horas. O paciente se encontra hipocorado ++/4, FC: 100 bpm, FR: 26 irpm, PA: 110 x 60 mmHg. Seu exame físico do abdome não revelou alterações. Realizou um hemograma que demonstrou hematócrito de 27% e hemoglobina 9 g/dL. Assinale a alternativa INCORRETA:',
+    options: [
+      'Uma vez que o paciente apresenta instabilidade hemodinâmica, a abordagem mais efetiva para o caso é a laparotomia urgente para a definição do foco do sangramento e sua resolução.',
+      'Há uma incidência crescente das hemorragias digestivas baixas no mundo devido ao aumento da idade da população associado ao uso crônico de anticoagulantes.',
+      'A principal hipótese etiológica para o caso é o sangramento de divertículo no cólon direito, porém a angiodisplasia e a neoplasia de cólon são diagnósticos diferenciais.',
+      'A endoscopia digestiva alta e a tomografia com contraste venoso podem fazer parte do organograma de investigação deste paciente.',
+    ],
+    correctIndex: 0,
+  },
+  {
+    id: 'cermam19_38',
+    banca: 'CERMAM',
+    cycle: 'Ciclo Clínico',
+    subject: 'Cirurgia Geral',
+    text: 'Paciente do sexo masculino, 16 anos, dá entrada no pronto atendimento com quadro de dor tipo cólica em epigástrio, que migrou para a fossa ilíaca direita, associada a vômitos, com evolução de 3 dias. Refere 1 episódio de febre baixa hoje. Nega diarreia e sintomas urinários. Abdome plano, flácido, doloroso à palpação profunda em FID, com discreto plastrão palpável. Sinal de Blumberg positivo. Leucograma: 14.000 mil/mm³. USG prejudicada por excesso de gases, evidenciando apenas pequena quantidade de líquido livre em FID e pelve. Assinale a alternativa CORRETA:',
+    options: [
+      'A abordagem cirúrgica laparoscópica é factível para o caso acima mesmo em situação de peritonite purulenta.',
+      'Por tratar-se de paciente jovem, imunocompetente, hemodinamicamente estável, afebril e com doença em fase inicial de evolução, o tratamento exclusivo com antibióticos pode ser tentado.',
+      'Já que a USG não foi adequada para o diagnóstico e estadiamento da doença, o próximo passo na conduta deste paciente é a realização de tomografia.',
+      'A observação de níveis hidroaéreos à radiografia de abdome confirmaria a necessidade de tratamento cirúrgico.',
+    ],
+    correctIndex: 0,
+  },
+  {
+    id: 'cermam19_39',
+    banca: 'CERMAM',
+    cycle: 'Ciclo Clínico',
+    subject: 'Urgência e Emergência',
+    text: 'Paciente do sexo masculino, 32 anos, é vítima de atropelamento em via pública. À admissão, refere não conseguir respirar adequadamente além de apresentar considerável dor torácica. Ao exame físico, observa-se marca de pneu sobre o tórax, com respiração de padrão paradoxal. A palpação do hemitórax direito é bastante dolorosa, identificando-se áreas com crepitações. O murmúrio vesicular é diminuído à direita. FC: 100 bpm, FR: 30 irpm, PA: 130 x 90 mmHg. Sem sangramentos externos. FAST negativo. Glasgow 15 pts. Assinale a alternativa CORRETA:',
+    options: [
+      'A drenagem fechada do hemitórax direito reestabelecerá a dinâmica respiratória adequada deste paciente.',
+      'Os dados fornecidos acima nos permitem afirmar que há indicação de toracotomia para a correção da lesão pulmonar presente.',
+      'Analgesia potente, suplementação de O₂ e possível necessidade de entubação orotraqueal devem fazer parte do tratamento deste paciente.',
+      'Uma vez que o padrão respiratório descrito é secundário a choque hemorrágico, a ressuscitação volêmica com solução salina é suficiente para compensar sua frequência respiratória.',
+    ],
+    correctIndex: 2,
+  },
+  {
+    id: 'cermam19_40',
+    banca: 'CERMAM',
+    cycle: 'Ciclo Clínico',
+    subject: 'Pediatria',
+    text: 'Paciente do sexo masculino, 4 anos, cuja mãe refere que sua urina estava avermelhada, levando-a à consulta médica. Nega história recente de trauma abdominal. O paciente está em bom estado geral, eupneico, afebril, normocorado e normotenso. Ao exame físico, observou-se massa sólida, imóvel e indolor, de cerca de 15 cm, localizada em flanco direito. Nega alterações do hábito intestinal, demais sintomas urinários e icterícia. Hemograma e ionograma são normais. O EAS revelou 50 hemácias por campo. Assinale a alternativa CORRETA:',
+    options: [
+      'A presença de calcificações à radiografia simples de abdome já indica tratamento cirúrgico sem a necessidade de outros exames de imagem.',
+      'Apesar da ultrassonografia ser o primeiro exame de imagem indicado, a tomografia de abdome e tórax poderá fechar o diagnóstico e estadiar o caso.',
+      'A ureterolitotomia endoscópica deve ser realizada em caráter urgente para esse paciente, indicada pela iminente perda da função do rim direito.',
+      'A nefrectomia é o tratamento curativo de escolha para este paciente já que nem a quimioterapia nem a radioterapia são tratamentos coadjuvantes com resposta satisfatória.',
+    ],
+    correctIndex: 1,
+  },
+  {
+    id: 'cermam19_41',
+    banca: 'CERMAM',
+    cycle: 'Ciclo Clínico',
+    subject: 'Ginecologia & Obstetrícia',
+    text: 'A sequência e a velocidade de maturação puberal variam entre os indivíduos, porém os eventos sentinelas da puberdade, em geral, seguem um padrão previsível. Assinale o CORRETO:',
+    options: [
+      'Gonadarca - pubarca - adrenarca - telarca - menarca.',
+      'Pubarca - telarca - adrenarca - gonadarca - menarca.',
+      'Gonadarca - adrenarca - pubarca - telarca - menarca.',
+      'Adrenarca - pubarca - gonadarca - telarca - menarca.',
+    ],
+    correctIndex: 3,
+  },
+  {
+    id: 'cermam19_42',
+    banca: 'CERMAM',
+    cycle: 'Ciclo Clínico',
+    subject: 'Ginecologia & Obstetrícia',
+    text: 'O carcinoma cervical é a terceira malignidade ginecológica no mundo. Sobre essa neoplasia, assinale a opção CORRETA:',
+    options: [
+      'O Papanicolau não é um exame sensível para o diagnóstico do subtipo do adenocarcinoma de células claras.',
+      'A disseminação ocorre principalmente pela via hematogênica.',
+      'O câncer cervical se origina no epitélio escamoso maduro, propagando-se para a endocérvice após anos do seu aparecimento.',
+      'O mais importante preditor de recorrência da doença é o estado dos linfonodos para-aórticos.',
+    ],
+    correctIndex: 0,
+  },
+  {
+    id: 'cermam19_43',
+    banca: 'CERMAM',
+    cycle: 'Ciclo Clínico',
+    subject: 'Ginecologia & Obstetrícia',
+    text: 'A artéria uterina se origina mais frequentemente de qual artéria:',
+    options: [
+      'Pudenda interna.',
+      'Ilíaca externa.',
+      'Obturatória.',
+      'Ilíaca interna.',
+    ],
+    correctIndex: 3,
+  },
+  {
+    id: 'cermam19_44',
+    banca: 'CERMAM',
+    cycle: 'Ciclo Clínico',
+    subject: 'Ginecologia & Obstetrícia',
+    text: 'O pico pré-ovulatório de LH é estimulado pelo rápido aumento dos níveis foliculares de:',
+    options: [
+      'Estriol.',
+      'Estradiol.',
+      'Estrona.',
+      'Progesterona.',
+    ],
+    correctIndex: 1,
+  },
+  {
+    id: 'cermam19_45',
+    banca: 'CERMAM',
+    cycle: 'Ciclo Clínico',
+    subject: 'Ginecologia & Obstetrícia',
+    text: 'Paciente de 54 anos, menopausada há 5 anos, sem uso de reposição hormonal, refere sangramento vaginal. Trouxe na consulta uma ultrassonografia com diagnóstico de pólipo endometrial. Qual a conduta a ser adotada:',
+    options: [
+      'Histerectomia.',
+      'Progestágeno contínuo.',
+      'Histeroscopia com biópsia.',
+      'Estrogenioterapia contínua.',
+    ],
+    correctIndex: 2,
+  },
+  {
+    id: 'cermam19_46',
+    banca: 'CERMAM',
+    cycle: 'Ciclo Clínico',
+    subject: 'Ginecologia & Obstetrícia',
+    text: 'Paciente foi ao ginecologista com queixa de corrimento vaginal. Ao exame foi observada secreção vaginal homogênea, acinzentada, com odor desagradável. Assinale a alternativa correta quanto ao agente etiológico e achados no exame com KOH:',
+    options: [
+      'Candidíase - hifas.',
+      'Trichomonas - células de Amsel.',
+      'Chlamydia - células Gummy Ster.',
+      'Vaginose bacteriana - clue cells.',
+    ],
+    correctIndex: 3,
+  },
+  {
+    id: 'cermam19_47',
+    banca: 'CERMAM',
+    cycle: 'Ciclo Clínico',
+    subject: 'Ginecologia & Obstetrícia',
+    text: 'Paciente de 32 anos, foi ao consultório pois está tentando engravidar há 2 anos. Assintomática. No dia da consulta estava no 24º dia do ciclo. O exame ginecológico estava normal. No mesmo dia, o ginecologista realizou uma biópsia endometrial cujo diagnóstico foi: endométrio proliferativo. A hipótese diagnóstica é:',
+    options: [
+      'Ciclo anovulatório.',
+      'Hiperplasia endometrial.',
+      'Infertilidade de origem masculina.',
+      'Sinéquia uterina.',
+    ],
+    correctIndex: 0,
+  },
+  {
+    id: 'cermam19_48',
+    banca: 'CERMAM',
+    cycle: 'Ciclo Clínico',
+    subject: 'Ginecologia & Obstetrícia',
+    text: 'Paciente, 23 anos, foi ao ginecologista com úlcera genital que teve início há 1 semana. Ao exame físico, observou-se úlcera sem a presença de vesículas. Segundo o manual do Ministério da Saúde, a conduta a ser adotada na abordagem sindrômica referente ao tratamento presuntivo é tratar:',
+    options: [
+      'Herpes genital.',
+      'Donovanose e sífilis.',
+      'Clamídia e gonorreia.',
+      'Sífilis e cancro mole.',
+    ],
+    correctIndex: 3,
+  },
+  {
+    id: 'cermam19_49',
+    banca: 'CERMAM',
+    cycle: 'Ciclo Clínico',
+    subject: 'Ginecologia & Obstetrícia',
+    text: 'Paciente de 18 anos procurou serviço médico com queixa de dor intensa ao urinar, queimação vaginal e coceira. Há 10 dias percebeu vesículas em suas partes íntimas. Foi prescrita pomada que usou por sete dias sem melhora. Essa era a primeira vez que apresentava esse quadro. Vida sexual ativa desde os 13 anos com oito parceiros, realizou tratamento para verruga genital há 2 anos quando estava grávida. Marque a alternativa INCORRETA:',
+    options: [
+      'O diagnóstico desse caso é herpes genital primoinfecção. Pode ser tratado com valaciclovir 500 mg via oral de 12 em 12 horas, por cinco dias, 1 g dose única diária, por cinco dias.',
+      'Nos EUA, a maioria das mulheres com úlceras genitais tem infecção pelo Herpes Simples Viral (HSV) ou sífilis e o cancroide é a terceira causa mais comum de úlceras genitais.',
+      'A primoinfecção ocorre entre quatro a sete dias após a exposição, em indivíduos não expostos previamente ao herpes-vírus.',
+      'No HSV primoinfecção nem todos os expostos desenvolverão manifestação clínica exuberante, podendo haver infecção subclínica com evolução para a fase de portador.',
+    ],
+    correctIndex: 0,
+  },
+  {
+    id: 'cermam19_50',
+    banca: 'CERMAM',
+    cycle: 'Ciclo Clínico',
+    subject: 'Ginecologia & Obstetrícia',
+    text: 'Cerca de 75% dos ovos fertilizados são abortados e em mais da metade deles isso ocorre antes da ausência da menstruação. Sobre os abortamentos, assinale a opção INCORRETA:',
+    options: [
+      'Aproximadamente 80% das trissomias do 21 terminam em abortamento.',
+      'Os fatores de riscos mais comuns identificáveis em mulheres com abortamento precoce são a idade avançada e a história de perda anterior.',
+      'A antibioticoprofilaxia antes do esvaziamento cirúrgico não está indicada.',
+      'A progesterona vaginal não está recomendada no abortamento episódico.',
+    ],
+    correctIndex: 2,
+  },
+  {
+    id: 'cermam19_51',
+    banca: 'CERMAM',
+    cycle: 'Ciclo Clínico',
+    subject: 'Ginecologia & Obstetrícia',
+    text: 'Paciente recebe diagnóstico de gestação molar. No seguimento laboratorial após esvaziamento uterino, o diagnóstico de neoplasia trofoblástica gestacional apresenta-se, EXCETO:',
+    options: [
+      'Estabilização de 4 valores (aproximadamente 10%) de hCG dosados após período de 3 semanas.',
+      'Aumento do nível de hCG (>10%) a partir de 3 valores obtidos no período de 2 semanas.',
+      'Diagnóstico histopatológico de coriocarcinoma.',
+      'Persistência de hCG detectável por 6 meses após o esvaziamento molar.',
+    ],
+    correctIndex: 3,
+  },
+  {
+    id: 'cermam19_52',
+    banca: 'CERMAM',
+    cycle: 'Ciclo Clínico',
+    subject: 'Ginecologia & Obstetrícia',
+    text: 'Paciente com 72 anos de idade, casada, professora aposentada, veio ao ambulatório de ginecologia encaminhada pelo clínico por apresentar perda de urina há 10 meses ao tossir ou espirrar, caminhar rapidamente e ao realizar atividade física. Nega urgência, urgeincontinência e noctúria. Três partos cesáreas, sendo o último há 40 anos com maior RN pesando 4 kg. Menopausa aos 50 anos sem terapia hormonal. Ao exame físico: obesidade grau I, IMC: 31 kg/m², e perda de urina sincrônica pelo meato uretral à manobra de Valsalva em posição ginecológica. Estudo urodinâmico: ausência de contração involuntária do detrusor com ALPP: 40 cmH₂O. Em relação ao caso, qual o diagnóstico e conduta:',
+    options: [
+      'Incontinência Urinária de Esforço (IUE) por defeito esfincteriano e obesidade grau I. O tratamento é cirúrgico - SLING e orientar a perda de peso.',
+      'IUE por defeito esfincteriano e obesidade grau I. O tratamento é fisioterapia do assoalho pélvico e cirurgia de Burch com orientação para a perda de peso.',
+      'IUE por hipermobilidade do colo vesical e obesidade grau I. O tratamento é cirúrgico - SLING e orientar perda de peso.',
+      'IUE por hipermobilidade do colo vesical e obesidade grau I. O tratamento é fisioterapia do assoalho pélvico e cirurgia de Burch com orientação para a perda de peso.',
+    ],
+    correctIndex: 0,
+  },
+  {
+    id: 'cermam19_53',
+    banca: 'CERMAM',
+    cycle: 'Ciclo Clínico',
+    subject: 'Ginecologia & Obstetrícia',
+    text: 'Num parto distócico apresentando ao exame o Sinal de Bandl e o Sinal de Frommel, qual a melhor conduta a ser realizada:',
+    options: [
+      'Iniciar ocitocina.',
+      'Parto cesariano.',
+      'Indicar fórcipes de Simpson.',
+      'Rompimento da bolsa das águas.',
+    ],
+    correctIndex: 1,
+  },
+  {
+    id: 'cermam19_54',
+    banca: 'CERMAM',
+    cycle: 'Ciclo Clínico',
+    subject: 'Ginecologia & Obstetrícia',
+    text: 'Paciente evolui num pós-parto imediato com hemorragia vaginal intensa. Baseando-se no primeiro diagnóstico a ser aventado, qual medicação não pode ser considerada como a primeira escolha:',
+    options: [
+      'Ocitocina.',
+      'Misoprostol.',
+      'Terbutalina.',
+      'Metilergonovina.',
+    ],
+    correctIndex: 2,
+  },
+  {
+    id: 'cermam19_55',
+    banca: 'CERMAM',
+    cycle: 'Ciclo Clínico',
+    subject: 'Ginecologia & Obstetrícia',
+    text: 'Gestante foi à primeira consulta de pré-natal dia 07/12/2018. A última menstruação foi dia 04/08/2018. Calcule a idade gestacional no dia da consulta:',
+    options: [
+      '18 semanas e 6 dias.',
+      '15 semanas e 6 dias.',
+      '19 semanas e 6 dias.',
+      '17 semanas e 6 dias.',
+    ],
+    correctIndex: 3,
+  },
+  {
+    id: 'cermam19_56',
+    banca: 'CERMAM',
+    cycle: 'Ciclo Clínico',
+    subject: 'Ginecologia & Obstetrícia',
+    text: 'Gestante de 18 anos na 12ª semana de gestação foi realizar ultrassonografia morfológica que evidenciou translucência nucal medindo 3,5 mm, osso nasal não visibilizado, regurgito da válvula tricúspide e onda A reversa do ducto venoso. Assinale a alternativa CORRETA:',
+    options: [
+      'Os achados estão normais e a próxima conduta será a ultrassonografia morfológica com 20 semanas.',
+      'Os achados podem estar associados a cromossomopatias e deve ser oferecido à paciente o cariótipo fetal.',
+      'Os achados diagnosticam cromossomopatia e a paciente deve ser encaminhada para maternidade terciária.',
+      'Os achados são normais e a paciente deve ser encaminhada ao pré-natal de risco habitual.',
+    ],
+    correctIndex: 1,
+  },
+  {
+    id: 'cermam19_57',
+    banca: 'CERMAM',
+    cycle: 'Ciclo Clínico',
+    subject: 'Ginecologia & Obstetrícia',
+    text: 'Gestante de 37 semanas foi à maternidade com queixa de perda de líquido. Assinale a alternativa CORRETA:',
+    options: [
+      'O diagnóstico é dado pelo exame clínico.',
+      'O diagnóstico é dado pela ultrassonografia.',
+      'O diagnóstico é dado pelo leucograma.',
+      'O diagnóstico é dado pelo pH acima de 7,5.',
+    ],
+    correctIndex: 0,
+  },
+  {
+    id: 'cermam19_58',
+    banca: 'CERMAM',
+    cycle: 'Ciclo Clínico',
+    subject: 'Ginecologia & Obstetrícia',
+    text: 'Qual das vacinas abaixo, apesar de não fazer parte do calendário vacinal, pode ser realizada na gestante em situações especiais:',
+    options: [
+      'Sarampo.',
+      'BCG.',
+      'Meningocócica (ACWY).',
+      'Rubéola (MPSV4).',
+    ],
+    correctIndex: 2,
+  },
+  {
+    id: 'cermam19_59',
+    banca: 'CERMAM',
+    cycle: 'Ciclo Clínico',
+    subject: 'Ginecologia & Obstetrícia',
+    text: 'Você está de plantão quando é chamado para atender a uma primigesta, 24 anos, com 37 semanas e 2/7 pela DUM (38 semanas e 2/7 pela USG de 8ª semana), em trabalho de parto. Nas apresentações cefálicas, na maioria das vezes, o mento se aproxima do externo, o que constitui apresentação:',
+    options: [
+      'Defletida de 1º grau.',
+      'Defletida de 2º grau.',
+      'Defletida de 3º grau.',
+      'Cefálica fletida.',
+    ],
+    correctIndex: 3,
+  },
+  {
+    id: 'cermam19_60',
+    banca: 'CERMAM',
+    cycle: 'Ciclo Clínico',
+    subject: 'Ginecologia & Obstetrícia',
+    text: 'A distocia biacromial é uma situação grave nas apresentações cefálicas. São fatores de risco para essa distocia, EXCETO:',
+    options: [
+      'Doença hipertensiva específica da gestação.',
+      'Obesidade.',
+      'Período expulsivo prolongado.',
+      'Distocia biacromial prévia.',
+    ],
+    correctIndex: 0,
+  },
+  {
+    id: 'cermam19_61',
+    banca: 'CERMAM',
+    cycle: 'Ciclo Clínico',
+    subject: 'Pediatria',
+    text: 'Pré-escolar de 5 anos é levado ao atendimento médico com lesão em pele que iniciou com placa descamativa seca, ligeiramente eritematosa e elevada que disseminou centrifugamente. Qual o diagnóstico provável?',
+    options: [
+      'Estrófulo.',
+      'Impetigo bolhoso.',
+      'Tinea corporis.',
+      'Psoríase.',
+    ],
+    correctIndex: 2,
+  },
+  {
+    id: 'cermam19_62',
+    banca: 'CERMAM',
+    cycle: 'Ciclo Clínico',
+    subject: 'Pediatria',
+    text: 'A Fibrose Cística é:',
+    options: [
+      'Uma doença que não leva a insuficiência pancreática.',
+      'Herdada como traço autossômico dominante.',
+      'Comum em negros.',
+      'Uma doença multissistêmica hereditária que pode se manifestar em crianças e adultos.',
+    ],
+    correctIndex: 3,
+  },
+  {
+    id: 'cermam19_63',
+    banca: 'CERMAM',
+    cycle: 'Ciclo Clínico',
+    subject: 'Pediatria',
+    text: 'Criança com 6 anos de vida está em investigação para diarreia crônica. Coletamos exame de fezes onde foi observada a presença de giárdia em grande quantidade. Qual a droga mais adequada para o tratamento?',
+    options: [
+      'Albendazol ou mebendazol.',
+      'Tinidazol ou nitazoxanida.',
+      'Paromomicina ou mebendazol.',
+      'Mebendazol ou tinidazol.',
+    ],
+    correctIndex: 1,
+  },
+  {
+    id: 'cermam19_64',
+    banca: 'CERMAM',
+    cycle: 'Ciclo Clínico',
+    subject: 'Pediatria',
+    text: 'Como faço a avaliação clínica de desidratação leve:',
+    options: [
+      'Perda de peso 5% em lactentes, menor que 3% em crianças maiores ou adultos, podendo o pulso estar normal ou aumentado e ter diminuição do débito urinário e sede.',
+      'Perda de peso 5% a 10% em lactentes; 3% a 6% em crianças maiores ou adultos, taquicardia, olhos e fontanelas encovados e muita lágrima.',
+      'Perda de peso 10% em lactentes, maior que 6% em crianças maiores ou adultos, pulso rápido e fraco, débito urinário zero e sem lágrima.',
+      'Perda de peso 5% em lactentes, maior que 6% em crianças maiores ou adultos, pulso piriforme, fraco, diurese diminuída, sem lágrima, mucosa ressecada e enchimento capilar maior que 3.',
+    ],
+    correctIndex: 0,
+  },
+  {
+    id: 'cermam19_65',
+    banca: 'CERMAM',
+    cycle: 'Ciclo Clínico',
+    subject: 'Pediatria',
+    text: 'Adolescente de 15 anos procurou o serviço de emergência devido à lesão perfurante em pé esquerdo, ocorrida há 48h em zona rural. Sua genitora não sabe informar sobre a situação vacinal. A conduta neste caso é:',
+    options: [
+      'Penicilina benzatina.',
+      'Vacina dupla tipo adulto.',
+      'Vacina dupla tipo adulto e imunoglobulina antitetânica.',
+      'Eritromicina.',
+    ],
+    correctIndex: 2,
+  },
+  {
+    id: 'cermam19_66',
+    banca: 'CERMAM',
+    cycle: 'Ciclo Clínico',
+    subject: 'Pediatria',
+    text: 'Pré-escolar de 3 anos, sexo masculino, é levado para consulta pediátrica pois sua genitora observou que ele tem apresentado desordem no desenvolvimento da linguagem, dificuldade nas relações sociais recíprocas, limitação na capacidade de desenvolver brincadeiras funcionais simbólicas ou de faz de conta e necessidade obsessiva de uniformidade e resistência a mudanças. A principal hipótese diagnóstica é:',
+    options: [
+      'Esquizofrenia.',
+      'Surdez sensorial.',
+      'Transtorno oposicional desafiante.',
+      'Autismo infantil.',
+    ],
+    correctIndex: 3,
+  },
+  {
+    id: 'cermam19_67',
+    banca: 'CERMAM',
+    cycle: 'Ciclo Clínico',
+    subject: 'Pediatria',
+    text: 'Lactente de 11 meses, sexo feminino, foi atendida no serviço de ambulatório pois a mãe queixa de quadro de irritabilidade, anorexia, letargia e palidez. Ao exame, observamos palidez nas palmas das mãos, nos vincos palmares, unhas e conjuntiva. Tem exames laboratoriais com os seguintes resultados: hemoglobina = 9 g/dl; VCM < 70 mg/l; saturação da transferrina < 16%, RDW aumentado e ferritina sérica diminuída. Qual o diagnóstico desta anemia?',
+    options: [
+      'Anemia megaloblástica.',
+      'Anemia ferropriva.',
+      'Anemia falciforme.',
+      'Anemia da doença crônica.',
+    ],
+    correctIndex: 1,
+  },
+  {
+    id: 'cermam19_68',
+    banca: 'CERMAM',
+    cycle: 'Ciclo Clínico',
+    subject: 'Pediatria',
+    text: 'João, escolar de 07 anos, sexo masculino, é admitido no serviço de emergência após acidente automobilístico. Na admissão está torporoso e pouco reativo aos estímulos. Ao exame físico: dor em hemotórax direito, FC 160 bpm, PA 110 x 70 mmHg, enchimento capilar 3,5 segundos e diurese 0,2 ml/kg/h. Após garantir a permeabilidade da via aérea e o aporte de oxigênio, devo administrar:',
+    options: [
+      'Solução isotônica 0,9% endovenosa 20 ml/kg.',
+      'Sangue 10 ml/kg.',
+      'Solução coloide 20 ml/kg.',
+      'Albumina 5% - 2 ml/kg.',
+    ],
+    correctIndex: 0,
+  },
+  {
+    id: 'cermam19_69',
+    banca: 'CERMAM',
+    cycle: 'Ciclo Clínico',
+    subject: 'Neonatologia',
+    text: 'Recém-nascido no 14º dia de vida apresenta secreção ocular unilateral não purulenta, com início há dois dias, nasceu de parto vaginal, a termo. Mãe não fez pré-natal e relata disúria e corrimento vaginal há 20 dias. O provável diagnóstico para esse recém-nascido é:',
+    options: [
+      'Infecção por adenovírus.',
+      'Infecção por Staphylococcus epidermidis.',
+      'Infecção por Chlamydia trachomatis.',
+      'Reativa ao uso de nitrato de prata.',
+    ],
+    correctIndex: 2,
+  },
+  {
+    id: 'cermam19_70',
+    banca: 'CERMAM',
+    cycle: 'Ciclo Clínico',
+    subject: 'Pediatria',
+    text: 'O sarampo é uma doença infecciosa exantemática aguda, transmissível e extremamente contagiosa. As manchas de Koplik são o sinal patognomônico do sarampo, aparecendo no período de:',
+    options: [
+      '3 a 7 dias antes do início da erupção.',
+      '1 a 4 dias antes do início da erupção.',
+      '2 a 4 dias antes do início da erupção.',
+      '1 a 10 dias antes do início da erupção.',
+    ],
+    correctIndex: 1,
+  },
+  {
+    id: 'cermam19_71',
+    banca: 'CERMAM',
+    cycle: 'Ciclo Clínico',
+    subject: 'Neonatologia',
+    text: 'Gestante de 39 semanas deu entrada na maternidade em trabalho de parto. Apresentou VDRL do 3º trimestre da gestação reagente com titulação 1:4 e relata ter feito tratamento com eritromicina porque a paciente referia "alergia a penicilina". O recém-nascido nasceu vigoroso e assintomático. VDRL no sangue periférico do recém-nascido resultou reagente 1:2. Qual é a alternativa que melhor descreve o estado clínico e a conduta para o recém-nascido?',
+    options: [
+      'Não haveria necessidade de investigação sorológica no RN, pois a eritromicina é droga de escolha no caso de história de alergia à penicilina.',
+      'Não é portador de sífilis congênita, pois seu valor do VDRL é menor que o valor do exame da mãe. Alta com orientações.',
+      'Portador de sífilis congênita. Utilizar ceftriaxona devido à possibilidade de alergia à penicilina no recém-nascido.',
+      'Portador de sífilis congênita. Utilizar penicilina cristalina.',
+    ],
+    correctIndex: 3,
+  },
+  {
+    id: 'cermam19_72',
+    banca: 'CERMAM',
+    cycle: 'Ciclo Clínico',
+    subject: 'Pediatria',
+    text: 'Escolar de sete anos, cujos pais referiram início súbito de febre e dor abdominal há um dia. Hoje relata estar com dificuldade para engolir. Ao exame físico apresenta-se febril (39°C), com aumento de linfonodos próximos ao ângulo da mandíbula e na oroscopia apresenta petéquias em palato mole junto com exsudato em tonsilas palatinas. Assinale a alternativa com a hipótese diagnóstica e a conduta mais adequada:',
+    options: [
+      'Faringotonsilite estreptocócica. Utilizar penicilina benzatina.',
+      'Faringotonsilite estreptocócica. Utilizar associação de amoxicilina com clavulanato de potássio.',
+      'Faringotonsilite viral. Utilizar medicações sintomáticas.',
+      'Abscesso peritonsiliano. Utilizar ceftriaxona e solicitar avaliação especializada.',
+    ],
+    correctIndex: 0,
+  },
+  {
+    id: 'cermam19_74',
+    banca: 'CERMAM',
+    cycle: 'Ciclo Clínico',
+    subject: 'Pediatria',
+    text: 'Recém-nascido de termo, sexo feminino, pesou 3.250 gramas ao nascimento. O exame físico na sala de parto evidenciou face achatada, fenda palpebral oblíqua, epicanto, pele abundante no pescoço, sulco entre o hálux e o segundo artelho, hipotonia muscular generalizada e reflexo de Moro débil. Entre os exames complementares rotineiramente indicados para o melhor acompanhamento desse paciente estão:',
+    options: [
+      'Ecocardiograma e dosagem sérica de cortisol.',
+      'Tomografia computadorizada de crânio e cariótipo.',
+      'Audiometria de tronco cerebral e dosagem sérica de TSH, T4 e T3.',
+      'Eletroneuromiografia e fundo de olho.',
+    ],
+    correctIndex: 2,
+  },
+  {
+    id: 'cermam19_75',
+    banca: 'CERMAM',
+    cycle: 'Ciclo Clínico',
+    subject: 'Neonatologia',
+    text: 'Recém-nascido a termo, filho de mãe com diabetes gestacional, com peso de nascimento de 4350 g. Exame físico com 1 hora de vida: neurológico normal, com capacidade de sucção ativa. Exames laboratoriais: glicemia capilar = 35 mg/dl; hematócrito = 55%. Após coletar sangue para dosagem de glicose, a melhor conduta é:',
+    options: [
+      'Infusão rápida de glicose intravenosa a 10% e repetir a dosagem de glicose.',
+      'Colocar o recém-nascido para aleitamento materno e repetir glicemia capilar.',
+      'Aguardar o resultado para a decisão de como proceder.',
+      'Administrar fórmula láctea por sonda gástrica e repetir a glicemia capilar.',
+    ],
+    correctIndex: 1,
+  },
+  {
+    id: 'cermam19_76',
+    banca: 'CERMAM',
+    cycle: 'Ciclo Clínico',
+    subject: 'Neonatologia',
+    text: 'Os pais de um recém-nascido prematuro, nascido com 1.000 g, querem saber o motivo pelo qual o médico recomendou o uso de palivizumabe ao seu filho. O médico orienta que a indicação é:',
+    options: [
+      'Controle do processo inflamatório da displasia broncopulmonar.',
+      'Prevenção da infecção pelo citomegalovírus.',
+      'Prevenção da infecção pelo vírus respiratório sincicial.',
+      'Controle do processo inflamatório da retinopatia da prematuridade.',
+    ],
+    correctIndex: 2,
+  },
+  {
+    id: 'cermam19_77',
+    banca: 'CERMAM',
+    cycle: 'Ciclo Clínico',
+    subject: 'Pediatria',
+    text: 'Suelen está de licença maternidade, porém terá que voltar ao trabalho no próximo mês. Mantém aleitamento materno exclusivo e está preocupada. Ela leu na internet que poderá ordenhar e guardar seu leite ordenhado cru (não pasteurizado) em um congelador (freezer), podendo oferecê-lo com segurança a seu filho em período após a coleta de até, no máximo:',
+    options: [
+      '15 dias.',
+      '30 dias.',
+      '2 meses.',
+      '24 horas.',
+    ],
+    correctIndex: 0,
+  },
+  {
+    id: 'cermam19_78',
+    banca: 'CERMAM',
+    cycle: 'Ciclo Clínico',
+    subject: 'Pediatria',
+    text: 'Assinale a alternativa que apresenta as alterações causadas pela deficiência de zinco:',
+    options: [
+      'Diarreia, hipogonadismo hipogonadotrófico, demência.',
+      'Alopécia, dermatite periorificial, infecção bacteriana de repetição.',
+      'Demência, diarreia, coiloníquia.',
+      'Coiloníquia, dermatite em áreas fotossensíveis, diarreia.',
+    ],
+    correctIndex: 1,
+  },
+  {
+    id: 'cermam19_79',
+    banca: 'CERMAM',
+    cycle: 'Ciclo Clínico',
+    subject: 'Infectologia',
+    text: 'Como se apresenta a análise do líquido cefalorraquidiano compatível com neurotuberculose?',
+    options: [
+      'Pleocitose com predomínio de linfomononucleares; concentrações de proteína e glicose normais.',
+      'Pleocitose com predomínio de linfomononucleares; elevação da concentração de proteínas e redução da glicose.',
+      'Pleocitose com predomínio de neutrófilos; redução da concentração de proteína e da glicose.',
+      'Pleocitose com predomínio de neutrófilos; concentrações de proteína e glicose normais.',
+    ],
+    correctIndex: 1,
+  },
+  {
+    id: 'cermam19_80',
+    banca: 'CERMAM',
+    cycle: 'Ciclo Clínico',
+    subject: 'Pediatria',
+    text: 'Lactente com nove meses vem ao pronto-socorro acompanhado de sua mãe. O filho apresentou febre de 39°C, discreto edema periorbitário e irritabilidade por 3 dias e foi liberado com sintomáticos. No quinto dia de evolução, surgiu exantema maculopapular na face e tronco, porém, já não há mais febre no período do exantema. A etiologia mais provável para o caso é:',
+    options: [
+      'Coxsackievírus.',
+      'Parvovírus B19.',
+      'Herpesvírus humano tipo 6.',
+      'Estreptococos do grupo A.',
+    ],
+    correctIndex: 2,
+  },
+  {
+    id: 'cermam19_81',
+    banca: 'CERMAM',
+    cycle: 'Ciclo Clínico',
+    subject: 'Medicina de Família/SUS',
+    text: 'Em 2017, a Política Nacional de Atenção Básica (PNAB) foi reformulada, estabelecendo que:',
+    options: [
+      'Há outras estratégias de ABS além da Estratégia Saúde da Família (ESF), que devem atuar em caráter permanente.',
+      'Apenas as Unidades Básicas de Saúde do modelo ESF são campo de ensino em potencial.',
+      'Será composta por uma equipe mínima: médico, enfermeiro, técnico de enfermagem e agente de endemias.',
+      'Os termos Atenção Primária à Saúde e Atenção Básica à Saúde (ABS) são equivalentes, passando a serem usados como sinônimos.',
+    ],
+    correctIndex: 3,
+  },
+  {
+    id: 'cermam19_82',
+    banca: 'CERMAM',
+    cycle: 'Ciclo Clínico',
+    subject: 'Medicina de Família/SUS',
+    text: 'A Política Nacional de Atenção Básica (PNAB 2017) conceitua Atenção Básica à Saúde como:',
+    options: [
+      'Atenção à saúde ofertada de forma integral e gratuita a todos que necessitem e de acordo com os princípios do Sistema Único de Saúde.',
+      'A porta preferencial de entrada da Rede de Atenção à Saúde (RAS) e um dos pontos periféricos de comunicação desta rede.',
+      'Ponto da RAS com responsabilidade sanitária de cuidados essencialmente individuais e de promoção da saúde.',
+      'Atenção realizada por equipe multiprofissional e em território não-adscrito.',
+    ],
+    correctIndex: 0,
+  },
+  {
+    id: 'cermam19_83',
+    banca: 'CERMAM',
+    cycle: 'Ciclo Clínico',
+    subject: 'Medicina de Família/SUS',
+    text: 'Em 2018, vivenciamos um surto de sarampo em alguns estados do Brasil, doença considerada erradicada do país há anos, o que tornou imperativo o reforço no esquema vacinal da população. As doses de vacina recomendadas para este agravo são, EXCETO:',
+    options: [
+      'Duas doses de tríplice viral entre 5 e 9 anos de idade.',
+      'Duas doses de tríplice viral para menores de 5 anos.',
+      'Não vacinar pessoas gestantes ou menores de 6 meses de idade.',
+      'Casos suspeitos da doença não devem ser vacinados.',
+    ],
+    correctIndex: 1,
+  },
+  {
+    id: 'cermam19_85',
+    banca: 'CERMAM',
+    cycle: 'Ciclo Clínico',
+    subject: 'Medicina de Família/SUS',
+    text: 'Considerando as especificidades da Atenção Básica à Saúde no Brasil e nossa enorme diversidade populacional, podemos afirmar que:',
+    options: [
+      'Arranjos organizacionais especiais como as Equipes Saúde da Família Fluviais (ESFF) são voltados para populações da Amazônia Legal e do Pantanal Sul-Mato-Grossense.',
+      'Outro arranjo organizacional especial são as Equipes Saúde da Família Ribeirinhas (ESFR), unidades construídas à beira de rios, lagos ou mares para atender suas populações adscritas.',
+      'A equipe mínima nas ESFF é composta por médico, enfermeiro, odontólogo, técnico em saúde bucal, farmacêutico, técnico de enfermagem, microscopista, agente de endemias e agente comunitário de saúde.',
+      'A ESFR deve prestar atendimento a sua população no mínimo durante 20 dias por mês e podem contar com o apoio ocasional de embarcações menores, se custeadas pelo gestor municipal.',
+    ],
+    correctIndex: 0,
+  },
+  {
+    id: 'cermam19_86',
+    banca: 'CERMAM',
+    cycle: 'Ciclo Clínico',
+    subject: 'Medicina de Família/SUS',
+    text: 'A Estratégia Saúde da Família (ESF) é responsável pelo acompanhamento da população em vários momentos de vida. Referente às atribuições da ESF em relação aos idosos, o Cadernos de Atenção Básica n°.19 preconiza que, EXCETO:',
+    options: [
+      'Compete à equipe o preenchimento e atualização da caderneta de Saúde da Pessoa Idosa, registrando as medicações em uso.',
+      'Compete à equipe o gerenciamento do cuidado ao idoso, exceto quando em internação domiciliar, cabendo esta ação à atenção especializada.',
+      'Compete à equipe a avaliação do grau de sobrecarga do cuidador e a avaliação da funcionalidade familiar, através do Apgar familiar.',
+      'Compete à equipe a elaboração das redes de cuidado ao idoso através dos instrumentos Genograma e Ecomapa.',
+    ],
+    correctIndex: 1,
+  },
+  {
+    id: 'cermam19_87',
+    banca: 'CERMAM',
+    cycle: 'Ciclo Clínico',
+    subject: 'Medicina de Família/SUS',
+    text: 'A Política Nacional de Saúde Integral das Populações do Campo e da Floresta (PNSIPCF) está regulamentada pela Portaria n° 2.866, de 2011. Tal portaria traz como avanços, EXCETO:',
+    options: [
+      'Incentivar a pesquisa e a produção de conhecimento sobre os riscos, a qualidade de vida e a saúde das populações do campo e da floresta, respeitando as especificidades de geração, raça/cor, gênero, etnia e orientação sexual.',
+      'Incentivar o desenvolvimento das ações de educação permanente para os trabalhadores de saúde, voltadas para as especificidades de saúde das populações do campo e da floresta.',
+      'Contribuir para a melhoria da qualidade de vida das populações do campo e da floresta, incluindo articulações intersetoriais para promover a saúde, envolvendo ações de saneamento e meio ambiente.',
+      'Discernir as práticas biomédicas das de conhecimentos tradicionais, valorizando e fortalecendo aquelas, prevendo que sejam mais presentes na vida coletiva e social destas populações.',
+    ],
+    correctIndex: 3,
+  },
+  {
+    id: 'cermam19_88',
+    banca: 'CERMAM',
+    cycle: 'Ciclo Clínico',
+    subject: 'Medicina de Família/SUS',
+    text: 'As Práticas Integrativas e Complementares (PICS) já estão devidamente normatizadas por portarias do Ministério da Saúde. Referente às PICS e aos seus objetivos delineados, assinale a CORRETA:',
+    options: [
+      'Estimular as ações referentes ao controle/participação social, promovendo o envolvimento responsável e continuado dos usuários, gestores e trabalhadores nas diferentes instâncias de efetivação das políticas de saúde.',
+      'Promover com forte ênfase a racionalização das ações de saúde, estimulando alternativas inovadoras e socialmente contributivas ao desenvolvimento sustentável de comunidades.',
+      'Contribuir para o aumento da resolubilidade do sistema e ampliação do acesso à Política Nacional de Práticas Integrativas e Complementares (PNPIC), garantindo qualidade, eficácia, eficiência e segurança no uso.',
+      'Incorporar e implementar a PNPIC no SUS, na perspectiva da prevenção de agravos e da promoção e recuperação da saúde, com ênfase na atenção especializada, voltada para o cuidado continuado, humanizado e integral em saúde.',
+    ],
+    correctIndex: 0,
+  },
+  {
+    id: 'cermam19_89',
+    banca: 'CERMAM',
+    cycle: 'Ciclo Clínico',
+    subject: 'Medicina de Família/SUS',
+    text: 'O controle social no Sistema Único de Saúde (SUS) é representativo das lutas por espaços mais democráticos, dialogados e construídos com inúmeras representatividades da sociedade civil. Assinale a alternativa CORRETA:',
+    options: [
+      'As reuniões dos Conselhos de Saúde são abertas ao público, obrigatoriamente acontecendo semanalmente, nas secretarias de saúde.',
+      'Os Conselhos de Saúde atuam exclusivamente no controle da execução das políticas públicas de saúde.',
+      'Os conselhos de saúde são instâncias do Sistema Único de Saúde (SUS), deliberativas, colegiadas e permanentes.',
+      'As vagas para os Conselhos de Saúde deverão ser distribuídas: trabalhadores da saúde (50%), usuários (25%) e representantes do governo e prestadores privados (25%).',
+    ],
+    correctIndex: 2,
+  },
+  {
+    id: 'cermam19_90',
+    banca: 'CERMAM',
+    cycle: 'Ciclo Clínico',
+    subject: 'Medicina de Família/SUS',
+    text: 'Em ano eleitoral, alguns candidatos e partidos políticos colocam em pauta a saúde do país. Nessa conjuntura, além do uso da epidemiologia, algumas bases do SUS podem ajudar a pensar em planos de governo condizentes. O que você recomendaria?',
+    options: [
+      'Que a Lei 8.080/90 ressalta que as ações e serviços de saúde executados pelo setor privado e contratado pelo SUS não precisam obedecer aos princípios organizativos previstos nesta Lei.',
+      'A Constituição Federal nos remete à saúde como um direito fundamental do ser humano, devendo o Estado prover as condições indispensáveis ao seu pleno exercício.',
+      'Que a Lei 8.142/90 versa sobre os recursos para a área da saúde e para receberem os recursos os Municípios devem contar com: Fundo de Saúde e a Vigilância Epidemiológica implantada.',
+      'Que a Lei 8.080, em seu art. 7, versa sobre os princípios e diretrizes do SUS, sendo entendido que a rede de saúde deverá ser regionalizada e centralizada.',
+    ],
+    correctIndex: 1,
+  },
+  {
+    id: 'cermam19_91',
+    banca: 'CERMAM',
+    cycle: 'Ciclo Clínico',
+    subject: 'Medicina de Família/SUS',
+    text: 'Helena, 68 anos, comparece à consulta na UBS trazendo resultado de exames laboratoriais. Ela é diabética, em uso de insulina NPH, com glicemia de jejum de 212 mg/dL e hemoglobina glicada de 8,7 mg/dL. Considerando que na Atenção Primária à Saúde utiliza-se o Registro de Saúde Orientado por Problemas (RCOP), os resultados dos exames laboratoriais devem ser anotados no item:',
+    options: [
+      'Subjetivo.',
+      'Avaliação.',
+      'Plano.',
+      'Objetivo.',
+    ],
+    correctIndex: 3,
+  },
+  {
+    id: 'cermam19_92',
+    banca: 'CERMAM',
+    cycle: 'Ciclo Clínico',
+    subject: 'Medicina de Família/SUS',
+    text: 'São características da atenção primária à saúde, EXCETO:',
+    options: [
+      'Municipalidade.',
+      'Coordenação do cuidado.',
+      'Cuidado de primeiro contato.',
+      'Integralidade.',
+    ],
+    correctIndex: 0,
+  },
+  {
+    id: 'cermam19_93',
+    banca: 'CERMAM',
+    cycle: 'Ciclo Clínico',
+    subject: 'Medicina de Família/SUS',
+    text: 'Quando médico e paciente estabelecem conjuntamente um plano de manejo dos problemas de saúde do indivíduo podemos concluir que foram utilizados princípios da:',
+    options: [
+      'Estratégia Saúde da Família.',
+      'Abordagem Centrada na Pessoa.',
+      'Política Nacional da Atenção Básica.',
+      'Abordagem Comunitária.',
+    ],
+    correctIndex: 1,
+  },
+  {
+    id: 'cermam19_94',
+    banca: 'CERMAM',
+    cycle: 'Ciclo Clínico',
+    subject: 'Ginecologia & Obstetrícia',
+    text: 'Luiza, 19 anos, primigesta na 38ª semana de gravidez, comparece a uma consulta na UBS com queixa de disúria e polaciúria. Traz exame de urina realizado no dia anterior com incontáveis piócitos. Podemos recomendar o uso dos seguintes antibióticos no tratamento da cistite aguda nesta paciente, EXCETO:',
+    options: [
+      'Ampicilina.',
+      'Cefalexina.',
+      'Nitrofurantoína.',
+      'Amoxicilina/clavulanato.',
+    ],
+    correctIndex: 2,
+  },
+  {
+    id: 'cermam19_95',
+    banca: 'CERMAM',
+    cycle: 'Ciclo Clínico',
+    subject: 'Medicina de Família/SUS',
+    text: 'Criança, sexo feminino, três anos de idade, é levada pela mãe para consulta na UBS. Apresentava lesões verrucosas em região perineal e corrimento purulento. A criança vive com os pais. Durante as manhãs fica sob os cuidados da avó materna. A conduta neste caso é:',
+    options: [
+      'Aguardar resultado de exame pericial confirmatório para realizar a notificação.',
+      'Realizar coleta de biópsia para confirmação diagnóstica e, posteriormente, realizar a notificação.',
+      'Encaminhar a criança para atenção secundária para que nesse nível seja realizada a notificação.',
+      'Realizar a notificação de caso suspeito de violência.',
+    ],
+    correctIndex: 3,
+  },
+  {
+    id: 'cermam19_96',
+    banca: 'CERMAM',
+    cycle: 'Ciclo Clínico',
+    subject: 'Medicina de Família/SUS',
+    text: 'Mariana traz o seu filho Mateus, de 1 mês e 3 dias, para a consulta de puericultura na UBS. Ela está preocupada porque no local onde foi administrada a vacina BCG surgiu uma pústula e a criança sente dor à manipulação do membro. Sobre o plano de manejo deste problema, qual a alternativa que contempla a conduta adequada?',
+    options: [
+      'Tranquilizar Mariana, informando que se trata da evolução esperada para a lesão vacinal, orientando a limpeza com água e sabão.',
+      'Administrar mupirocina tópico por se tratar de um quadro de infecção bacteriana secundária.',
+      'Prescrever isoniazida até a regressão completa da lesão.',
+      'Notificar o caso como evento adverso da vacina.',
+    ],
+    correctIndex: 0,
+  },
+  {
+    id: 'cermam19_97',
+    banca: 'CERMAM',
+    cycle: 'Ciclo Clínico',
+    subject: 'Medicina de Família/SUS',
+    text: 'Um dos princípios que deve nortear a implementação de um programa de rastreamento de doenças é:',
+    options: [
+      'Se a doença tiver uma evolução rápida e alta taxa de mortalidade, o programa deve ser instituído pela magnitude do problema, independente de outros fatores.',
+      'Os programas de rastreamento, em geral, têm o potencial de trazer mais benefícios que danos às populações submetidas aos testes.',
+      'A história natural da doença ou do problema clínico deve ser bem conhecida.',
+      'O teste de rastreamento deve detectar alteração na fase clínica da doença.',
+    ],
+    correctIndex: 2,
+  },
+  {
+    id: 'cermam19_98',
+    banca: 'CERMAM',
+    cycle: 'Ciclo Clínico',
+    subject: 'Medicina de Família/SUS',
+    text: 'De acordo com a Portaria N° 2.436, de 21 de setembro de 2017, que regulamenta a Política Nacional de Atenção Básica, são atribuições comuns a todos os membros das Equipes que atuam na Atenção Básica, EXCETO:',
+    options: [
+      'Participar do processo de territorialização e mapeamento da área de atuação da equipe, identificando grupos, famílias e indivíduos expostos a riscos e vulnerabilidades.',
+      'Indicar a necessidade de internação hospitalar ou domiciliar, mantendo a responsabilização pelo acompanhamento da pessoa.',
+      'Cadastrar e manter atualizado o cadastramento e outros dados de saúde das famílias e dos indivíduos no sistema de informação da Atenção Básica vigente.',
+      'Realizar o cuidado integral à saúde da população adscrita, prioritariamente no âmbito da Unidade Básica de Saúde, e quando necessário, no domicílio e demais espaços comunitários.',
+    ],
+    correctIndex: 1,
+  },
+  {
+    id: 'cermam19_99',
+    banca: 'CERMAM',
+    cycle: 'Ciclo Clínico',
+    subject: 'Ginecologia & Obstetrícia',
+    text: 'Adriana, 29 anos, G2 A0 P1, IG = 17s, vem para consulta de pré-natal na UBS, trazendo seu cartão de vacina onde se observa três doses de vacina antitetânica aplicadas na gestação anterior há sete anos. Em relação à profilaxia do tétano neonatal, deve-se:',
+    options: [
+      'Reiniciar o esquema vacinal com três doses, devido ao tempo desde a última vacina.',
+      'Orientar que a mesma está imunizada, não sendo necessária dose de reforço.',
+      'Aplicar reforço após o parto, a fim de proteger a próxima gestação.',
+      'Orientar a necessidade de dose de dTpa a partir da 20ª semana de gestação, o mais precocemente possível.',
+    ],
+    correctIndex: 3,
+  },
+  {
+    id: 'cermam19_100',
+    banca: 'CERMAM',
+    cycle: 'Ciclo Clínico',
+    subject: 'Medicina de Família/SUS',
+    text: 'Em relação aos atributos da atenção primária à saúde (segundo Bárbara Starfield), marque a resposta que está corretamente associada ao atributo com o conceito:',
+    options: [
+      'Integralidade - atuação de forma biopsicossocial e espiritual.',
+      'Longitudinalidade - percepção probabilística de um futuro.',
+      'Universalidade - assistência para todos como dever do Estado.',
+      'Municipalização - transferência da responsabilidade da APS para os municípios.',
+    ],
+    correctIndex: 0,
+  },
   // ===== CERMAM 2021/2022 (Acesso Direto R1) =====
   {
     id: 'cermam21_01',
@@ -15359,6 +16494,8 @@ export default function App() {
   const [dragConstraints, setDragConstraints] = useState({ left: 0, right: 0 });
   const carouselRef = useRef<HTMLDivElement>(null);
   const contentRef = useRef<HTMLDivElement>(null);
+  const ufFilterRef = useRef<HTMLDivElement>(null);
+  const ufDragRef = useRef({ isDown: false, startX: 0, scrollLeft: 0 });
 
   useEffect(() => {
     const updateConstraints = () => {
@@ -15610,28 +16747,30 @@ export default function App() {
   };
 
   const nextQuestion = () => {
-    if (user.hearts <= 0) {
-      if (user.streak > 0) {
-        setLostStreakCount(user.streak);
-        setUser((prev: typeof user) => ({ ...prev, streak: 0 }));
-        setShowStreakLostModal(true);
-      }
-      setView('home');
-      return;
-    }
     if (currentQuestionIndex < activeQuestions.length - 1) {
+      if (user.hearts <= 0) {
+        if (user.streak > 0) {
+          setLostStreakCount(user.streak);
+          setUser((prev: typeof user) => ({ ...prev, streak: 0 }));
+          setShowStreakLostModal(true);
+        }
+        setView('home');
+        return;
+      }
       setCurrentQuestionIndex(prev => prev + 1);
       setSelectedOption(null);
       setIsFeedbackVisible(false);
     } else {
-      // End session
+      // End session — always show summary regardless of hearts
       setSummaryTimer(quizTimer);
       setIsThinking(false);
-      console.log('Quiz ended - switching to summary. XP Gained:', sessionResults.xpGained);
+      setIsFeedbackVisible(false);
+      const xpGained = sessionResults.xpGained;
+      const correct = sessionResults.correct;
       setUser(prev => {
-        const newXp = prev.xp + sessionResults.xpGained;
+        const newXp = prev.xp + xpGained;
         const newLevel = Math.floor(newXp / 1000) + 1;
-        const newWeeklyDone = Math.min(prev.weeklyGoalTotal, prev.weeklyGoalDone + sessionResults.correct);
+        const newWeeklyDone = Math.min(prev.weeklyGoalTotal, prev.weeklyGoalDone + correct);
         return {
           ...prev,
           xp: newXp,
@@ -15640,7 +16779,7 @@ export default function App() {
           weeklyGoalDone: newWeeklyDone,
         };
       });
-      setTimeout(() => setView('summary'), 100);
+      setView('summary');
     }
   };
 
@@ -16002,7 +17141,24 @@ export default function App() {
                   </div>
 
                   {/* UF Filters */}
-                  <div className="flex gap-2 overflow-x-auto hide-scrollbar pb-2 mb-4">
+                  <div
+                    ref={ufFilterRef}
+                    className="flex gap-2 overflow-x-auto hide-scrollbar pb-2 mb-4 cursor-grab active:cursor-grabbing select-none"
+                    onMouseDown={e => {
+                      const el = ufFilterRef.current;
+                      if (!el) return;
+                      ufDragRef.current = { isDown: true, startX: e.pageX - el.offsetLeft, scrollLeft: el.scrollLeft };
+                    }}
+                    onMouseLeave={() => { ufDragRef.current.isDown = false; }}
+                    onMouseUp={() => { ufDragRef.current.isDown = false; }}
+                    onMouseMove={e => {
+                      const el = ufFilterRef.current;
+                      if (!ufDragRef.current.isDown || !el) return;
+                      e.preventDefault();
+                      const x = e.pageX - el.offsetLeft;
+                      el.scrollLeft = ufDragRef.current.scrollLeft - (x - ufDragRef.current.startX);
+                    }}
+                  >
                     {['Todas', 'BR', 'SP', 'RJ', 'RS', 'PR', 'MG', 'SC', 'BA', 'CE', 'PE', 'DF', 'GO', 'MS', 'AM', 'PA'].map(uf => {
                       const key = uf === 'Todas' ? 'TODAS' : uf;
                       const active = bancaUfFilter === key;
