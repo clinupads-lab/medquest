@@ -35,7 +35,25 @@
       "Bash(npx playwright *)",
       "Bash(node test-fix.js)",
       "Bash(npm install *)",
-      "Bash(powershell -Command \"Start-Process 'http://localhost:3000'\")"
+      "Bash(powershell -Command \"Start-Process 'http://localhost:3000'\")",
+      "Bash(git stash *)",
+      "Skill(run)",
+      "Skill(run:*)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3000)",
+      "WebSearch",
+      "WebFetch(domain:mapa-vagas-enare-ebserh.conhecimento.fgv.br)",
+      "WebFetch(domain:site-medway.s3.sa-east-1.amazonaws.com)",
+      "WebFetch(domain:www.medway.com.br)",
+      "WebFetch(domain:med.estrategia.com)",
+      "WebFetch(domain:sanarmed.com)",
+      "Bash(python3 -c ' *)",
+      "WebFetch(domain:lp.grupomedcof.com.br)",
+      "WebFetch(domain:storage.googleapis.com)",
+      "WebFetch(domain:www.bitprep.com.br)",
+      "Bash(where python *)",
+      "Bash(where python3 *)",
+      "Bash(python -c \"import pip; print\\('pip ok'\\)\")",
+      "Bash(python -m pip list)"
     ]
   }
 }

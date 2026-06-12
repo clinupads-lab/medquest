@@ -15470,6 +15470,568 @@ const QUESTIONS: Question[] = [
     ],
     correctIndex: 4,
   },
+
+  // ─── ENARE 2023 ────────────────────────────────────────────────────────────
+  {
+    id: 'enare_2023_001',
+    banca: 'ENARE',
+    cycle: 'Ciclo Clínico',
+    subject: 'Clínica Médica',
+    text: 'Um homem de 54 anos procura atendimento médico com queixa de dor ao urinar e urgência miccional. O diagnóstico de prostatite é estabelecido e a urocultura mostra crescimento de Pseudomonas aeruginosa. Diante do exposto, assinale a alternativa correta.',
+    options: [
+      'A Pseudomonas aeruginosa é responsável pela maioria dos casos de prostatite bacteriana aguda.',
+      'O quadro clínico geralmente é pouco sintomático.',
+      'A incidência de neoplasia de próstata é comum nesses casos.',
+      'A macrodantina é o antimicrobiano de escolha nesses casos.',
+      'O uso de ertapenem está contraindicado.',
+    ],
+    correctIndex: 4,
+    explanation: 'O ertapenem não possui atividade contra Pseudomonas aeruginosa, sendo portanto contraindicado nesse caso. A Pseudomonas é uma causa incomum de prostatite bacteriana aguda (E. coli é a mais frequente). O quadro costuma ser sintomático. Nitrofurantoína (macrodantina) não penetra adequadamente no tecido prostático.',
+  },
+  {
+    id: 'enare_2023_002',
+    banca: 'ENARE',
+    cycle: 'Ciclo Clínico',
+    subject: 'Cirurgia Geral',
+    text: 'Um paciente foi submetido a uma cirurgia abdominal, e o anestesista introduziu um cateter peridural para analgesia. O paciente se encontra na UTI utilizando heparina de baixo peso molecular como anticoagulação profilática, e a enfermeira questiona o médico plantonista se pode retirar o cateter. Nesse caso, qual é a conduta mais adequada e a respectiva justificativa?',
+    options: [
+      'Retirar o cateter, pois a anticoagulação profilática não interfere no risco para hematoma epidural.',
+      'Manter o cateter e solicitar orientação ao anestesista quanto ao momento da retirada, devido ao risco de hematoma epidural.',
+      'O cateter poderá ser removido se a última dose de heparina tiver sido realizada há mais de 3h.',
+      'Manter o cateter e aguardar, pelo menos, 48h após a última dose da heparina para remover o cateter.',
+      'Manter o cateter por, pelo menos, 24h após a última dose de heparina devido ao risco de hematoma subdural.',
+    ],
+    correctIndex: 1,
+    explanation: 'A retirada do cateter peridural em paciente anticoagulado exige cuidado para evitar hematoma epidural, complicação grave. A conduta correta é solicitar orientação ao anestesista, que irá definir o momento ideal: aguardar 12h após a última dose profilática de HBPM e administrar a próxima dose 4h após a retirada do cateter.',
+  },
+  {
+    id: 'enare_2023_003',
+    banca: 'ENARE',
+    cycle: 'Ciclo Clínico',
+    subject: 'Pediatria',
+    text: 'As infecções sexualmente transmissíveis são um grave problema de saúde pública no Brasil, devendo-se ter especial atenção à população adolescente. Considerando somente as infecções adquiridas, qual das seguintes pode ser transmitida de outras formas além da sexual?',
+    options: [
+      'Sífilis.',
+      'Hepatite B.',
+      'Gonorreia.',
+      'Linfogranuloma venéreo.',
+      'Cancro mole.',
+    ],
+    correctIndex: 1,
+    explanation: 'A hepatite B pode ser transmitida por via sexual, parenteral (sangue, compartilhamento de agulhas) e vertical (mãe para filho). As demais opções (sífilis, gonorreia, LGV e cancro mole) são transmitidas exclusivamente ou predominantemente pela via sexual.',
+  },
+  {
+    id: 'enare_2023_004',
+    banca: 'ENARE',
+    cycle: 'Ciclo Clínico',
+    subject: 'Ginecologia & Obstetrícia',
+    text: 'Gestante de 22 semanas comparece ao consultório referindo disúria e polaciúria há 3 dias. A urocultura evidenciou E. coli sensível a: nitrofurantoína, ampicilina, ciprofloxacino e norfloxacino. Refere que já é o terceiro quadro de infecção do trato urinário durante essa gestação. A conduta mais adequada é prescrever:',
+    options: [
+      'Ciprofloxacino 500 mg de 12/12 horas por 7 dias.',
+      'Norfloxacino 400 mg uma vez ao dia por 3 dias.',
+      'Nitrofurantoína 100 mg de 6/6 horas por 5 dias.',
+      'Ampicilina 500 mg de 6/6 horas por 7 dias seguido de nitrofurantoína profilática uma vez ao dia.',
+      'Nitrofurantoína 100 mg de 6/6 horas por 7 dias.',
+    ],
+    correctIndex: 3,
+    explanation: 'Fluoroquinolonas (ciprofloxacino, norfloxacino) são contraindicadas na gestação. Por ser o terceiro episódio de ITU, após o tratamento do episódio agudo com ampicilina (segura na gestação), está indicada antibioticoprofilaxia contínua com nitrofurantoína em dose única noturna para prevenir novas recorrências.',
+  },
+  {
+    id: 'enare_2023_005',
+    banca: 'ENARE',
+    cycle: 'Ciclo Clínico',
+    subject: 'Medicina de Família/SUS',
+    text: 'Gestante, 27 anos, com parto prematuro de 34 semanas gestacionais. Após alta para casa, evolui com infecção uterina, sepse e tem óbito confirmado 60 dias após o parto. Diante do exposto, qual é o tipo de morte?',
+    options: [
+      'Morte materna direta.',
+      'Morte obstétrica direta.',
+      'Morte não materna, pois ocorreu 60 dias após o parto.',
+      'Morte materna tardia.',
+      'Morte pós-materna.',
+    ],
+    correctIndex: 3,
+    explanation: 'Morte materna tardia é aquela que ocorre entre 42 dias e 1 ano após o término da gestação, resultante de causa obstétrica direta ou indireta. Como o óbito ocorreu 60 dias após o parto por causa obstétrica direta (infecção uterina/sepse), classifica-se como morte materna tardia.',
+  },
+
+  // ─── ENARE 2022 ─────────────────────────────────────────────────────────────
+  { id:'enare_2022_001', banca:'ENARE', cycle:'Ciclo Clínico', subject:'Cardiologia',
+    text:'Paciente de 70 anos, hipertenso, diabético e com insuficiência cardíaca com FE reduzida, é diagnosticado com fibrilação atrial não valvar. Sem história de AVC/TIA. Qual a conduta mais adequada em relação à anticoagulação?',
+    options:['Não anticoagular pois escore CHA₂DS₂-VASc < 2','Anticoagular com DOAC ou warfarina pois escore CHA₂DS₂-VASc ≥ 2','Usar apenas aspirina 100 mg/dia','Aguardar cardioversão antes de iniciar anticoagulação','Anticoagular somente após episódio tromboembólico'],
+    correctIndex:1, explanation:'Escore CHA₂DS₂-VASc: ICC(1)+HAS(1)+Idade 70(1)+DM(1) = 4 → anticoagulação indicada em todos os homens com escore ≥ 2.' },
+
+  { id:'enare_2022_002', banca:'ENARE', cycle:'Ciclo Clínico', subject:'Cardiologia',
+    text:'Homem de 58 anos chega ao PS com dor precordial intensa há 2h. ECG mostra supradesnivelamento de ST em DII, DIII e aVF. Hospital com hemodinâmica disponível. Qual a estratégia de reperfusão preferencial?',
+    options:['Trombólise com tenecteplase em todos os casos','ICP primária se tempo porta-balão ≤ 90 min','Aguardar segundo ECG para confirmar diagnóstico','Iniciar heparina e agendar cateterismo eletivo','Trombólise seguida obrigatoriamente de ICP imediata'],
+    correctIndex:1, explanation:'ICP primária é a estratégia de reperfusão preferencial no IAM com supra se tempo porta-balão ≤ 90 min com hemodinâmica disponível.' },
+
+  { id:'enare_2022_003', banca:'ENARE', cycle:'Ciclo Clínico', subject:'Pneumologia',
+    text:'Paciente de 65 anos, tabagista, com dispneia (mMRC 3) e 2 exacerbações no último ano. VEF1/CVF pós-BD = 0,59; VEF1 = 43% do previsto. Qual classificação GOLD e tratamento de primeira linha?',
+    options:['GOLD 2 grupo A – SABA de resgate','GOLD 3 grupo E – LAMA + LABA + CI inalatório','GOLD 2 grupo B – LAMA isolado','GOLD 4 grupo D – roflumilaste','GOLD 1 grupo A – sem broncodilatador regular'],
+    correctIndex:1, explanation:'VEF1 43% = GOLD 3 (grave); mMRC ≥ 2 e ≥ 2 exacerbações = grupo E → terapia tripla LAMA+LABA+CI.' },
+
+  { id:'enare_2022_004', banca:'ENARE', cycle:'Ciclo Clínico', subject:'Pneumologia',
+    text:'Paciente 10 dias pós-operatório de artroplastia de joelho apresenta dispneia súbita, taquicardia e SpO₂ = 91%. Score de Wells = 5. Qual exame confirma o diagnóstico de TEP?',
+    options:['ECG – padrão S1Q3T3 é patognomônico','Ecocardiograma transtorácico','Angio-TC de tórax','Cintilografia ventilação-perfusão','D-dímero elevado isolado'],
+    correctIndex:2, explanation:'Angio-TC de tórax é o exame padrão-ouro para diagnóstico de TEP. Com alta probabilidade pré-teste (Wells 5), deve ser realizado imediatamente.' },
+
+  { id:'enare_2022_005', banca:'ENARE', cycle:'Ciclo Clínico', subject:'Nefrologia',
+    text:'Adulto de 30 anos com edema generalizado, proteinúria de 4,8 g/24h e albumina de 2,1 g/dL. Biópsia renal: fusão difusa dos processos podocitários sem depósitos imunes. Qual o diagnóstico e tratamento inicial?',
+    options:['Nefropatia por IgA – IECA','Glomeruloesclerose focal e segmentar – ciclosporina','Doença de lesões mínimas – corticoterapia','Nefropatia membranosa – observação','Nefrite lúpica – micofenolato'],
+    correctIndex:2, explanation:'Fusão de podócitos sem depósitos imunes é característico da doença de lesões mínimas (nil disease), tratada com prednisona.' },
+
+  { id:'enare_2022_006', banca:'ENARE', cycle:'Ciclo Clínico', subject:'Endocrinologia',
+    text:'Paciente de 22 anos, DM1, chega ao PS com náuseas, vômitos e confusão. Glicemia 440 mg/dL, pH 7,17, HCO₃ 9 mEq/L, K⁺ = 3,0 mEq/L. Qual a conduta correta?',
+    options:['Insulina IV imediata sem esperar K+','Repor potássio IV até K⁺ ≥ 3,5 mEq/L, depois iniciar insulina + hidratação','Bicarbonato IV para corrigir acidose antes de qualquer outra medida','Insulina SC e hidratação oral','Apenas hidratação venosa sem insulina'],
+    correctIndex:1, explanation:'Em CAD, com K+ < 3,5 mEq/L, deve-se repor potássio antes de iniciar insulina para evitar hipocalemia grave. Hidratação com SF 0,9% é iniciada concomitantemente.' },
+
+  { id:'enare_2022_007', banca:'ENARE', cycle:'Ciclo Clínico', subject:'Infectologia',
+    text:'Adulto de 25 anos com febre, cefaleia intensa, rigidez de nuca e petéquias. LCR: leucócitos 2.800 (98% neutrófilos), proteína 180 mg/dL, glicose 28 mg/dL. Qual o esquema antimicrobiano de primeira escolha?',
+    options:['Ampicilina + gentamicina','Ceftriaxona + dexametasona','Metronidazol + ciprofloxacino','Vancomicina isolada','Penicilina G cristalina + dexametasona'],
+    correctIndex:1, explanation:'Meningite bacteriana comunitária em adulto jovem: ceftriaxona (cobertura para N. meningitidis e S. pneumoniae) + dexametasona (reduz inflamação e sequelas).' },
+
+  { id:'enare_2022_008', banca:'ENARE', cycle:'Ciclo Clínico', subject:'Neurologia',
+    text:'Paciente de 62 anos apresenta hemiplegia direita e afasia com início há 2h30min. TC sem contraste normal. PA = 168/98 mmHg. Sem contraindicações. Qual a conduta?',
+    options:['Aguardar TC de perfusão','Iniciar AAS 300 mg e observar','Trombolítico IV (alteplase) – dentro da janela de 4,5h','Trombectomia mecânica sem alteplase','Anti-hipertensivo imediato e observação'],
+    correctIndex:2, explanation:'AVC isquêmico com início < 4,5h, TC sem hemorragia e sem contraindicações: alteplase IV (0,9 mg/kg) é a conduta padrão.' },
+
+  { id:'enare_2022_009', banca:'ENARE', cycle:'Ciclo Clínico', subject:'Reumatologia',
+    text:'Mulher de 45 anos com artrite simétrica de pequenas articulações, rigidez matinal > 1h há 7 semanas, FR e anti-CCP positivos. Escore ACR/EULAR 2010 = 7 pontos. Qual o tratamento de base inicial?',
+    options:['Apenas AINE até completar 12 semanas de sintomas','Metotrexato (DMARD convencional)','Imunobiológico anti-TNF de imediato','Prednisona em dose plena indefinidamente','Hidroxicloroquina isolada'],
+    correctIndex:1, explanation:'Artrite reumatoide confirmada (≥6 pontos ACR/EULAR): metotrexato é o DMARD convencional de primeira escolha pela eficácia e custo-benefício.' },
+
+  { id:'enare_2022_010', banca:'ENARE', cycle:'Ciclo Clínico', subject:'Hematologia',
+    text:'Mulher de 35 anos, vegetariana estrita, com fadiga e palidez. Hemoglobina 9,2 g/dL, VCM 72 fL, ferritina 6 ng/mL. Qual o diagnóstico e tratamento?',
+    options:['Anemia megaloblástica – vitamina B12 IM','Anemia de doença crônica – tratar doença base','Anemia ferropriva – sulfato ferroso VO','Talassemia minor – sem tratamento','Anemia hemolítica – corticóide'],
+    correctIndex:2, explanation:'Anemia microcítica hipocrômica com ferritina baixa = anemia ferropriva. Tratamento: sulfato ferroso 150-200 mg/dia de ferro elementar VO por 3-6 meses.' },
+
+  { id:'enare_2022_011', banca:'ENARE', cycle:'Ciclo Clínico', subject:'Infectologia',
+    text:'Paciente de 33 anos com diagnóstico recente de HIV. CD4 = 420 cel/mm³, carga viral = 25.000 cópias/mL, assintomático. Quando iniciar TARV?',
+    options:['Somente se CD4 < 200 cel/mm³','Somente se carga viral > 100.000 cópias/mL','Imediatamente, independente de CD4 ou carga viral','Aguardar segundo CD4 < 350 cel/mm³','Somente após surgir doença oportunista'],
+    correctIndex:2, explanation:'O PCDT brasileiro recomenda TARV para todos os pacientes HIV+, independente do CD4 ou carga viral, pois o tratamento precoce reduz morbimortalidade e transmissão.' },
+
+  { id:'enare_2022_012', banca:'ENARE', cycle:'Ciclo Clínico', subject:'Gastroenterologia',
+    text:'Paciente cirrótico com bilirrubina 3,5 mg/dL, albumina 2,6 g/dL, TAP 40%, encefalopatia grau II e ascite moderada. Qual a classificação Child-Pugh?',
+    options:['Child A – bom prognóstico','Child B – prognóstico intermediário','Child C – mau prognóstico','Child D – indicação imediata de TIPS','Child B – indicar transplante imediato'],
+    correctIndex:2, explanation:'Child-Pugh: Bili >3(3pts) + Alb<2.8(3pts) + TAP<40%(3pts) + Enc II(2pts) + Ascite mod(2pts) = 13 pts = Child C, associado a sobrevida de ~45% em 1 ano.' },
+
+  { id:'enare_2022_013', banca:'ENARE', cycle:'Ciclo Clínico', subject:'Clínica Médica',
+    text:'Paciente de 60 anos com febre, hipotensão (PA 88/56), taquicardia (FC 120), confusão mental e lactato = 3,8 mmol/L. Suspeita de foco pulmonar. O que compõe o bundle de 1 hora do Surviving Sepsis Campaign 2018?',
+    options:['Hemocultura, antibiótico, 30 mL/kg SF e vasopressor se necessário','Apenas antibiótico de amplo espectro e observação','Hidratação agressiva sem antibiótico até identificar agente','Corticóide IV e antibiótico','Furosemida IV para prevenir sobrecarga hídrica'],
+    correctIndex:0, explanation:'Bundle de 1 hora: (1) medir lactato, (2) coletar hemoculturas, (3) antibiótico amplo espectro, (4) 30 mL/kg cristaloide se hipotensão/lactato≥4, (5) vasopressor se PA não responder.' },
+
+  { id:'enare_2022_014', banca:'ENARE', cycle:'Ciclo Clínico', subject:'Endocrinologia',
+    text:'Mulher de 42 anos com fadiga, ganho de peso, constipação e intolerância ao frio. TSH = 18 mUI/L, T4 livre = 0,5 ng/dL. Qual o tratamento?',
+    options:['Levotiroxina com dose ajustada pelo TSH','Metimazol para suprimir TSH','Iodo radioativo','Tireoidectomia total','Apenas mudança de hábitos alimentares'],
+    correctIndex:0, explanation:'Hipotireoidismo primário (TSH elevado + T4 livre baixo): levotiroxina VO em dose única matinal em jejum, ajustada para manter TSH no alvo (0,5-4,5 mUI/L).' },
+
+  { id:'enare_2022_015', banca:'ENARE', cycle:'Ciclo Clínico', subject:'Nefrologia',
+    text:'Paciente de 55 anos, HAS e DM2, com creatinina 2,4 mg/dL, TFGe 38 mL/min/1,73m² e albuminúria 280 mg/g. Qual a classificação KDIGO e o pilar terapêutico principal?',
+    options:['DRC G3b A2 – IECA/BRA + controle glicêmico e pressórico','DRC G4 A3 – iniciar diálise imediatamente','DRC G2 A1 – sem tratamento específico','DRC G5 – transplante renal','DRC G3a A3 – iniciar eritropoetina'],
+    correctIndex:0, explanation:'TFGe 38 = G3b; ACR 280 = A2. Pilares: IECA ou BRA (reduz progressão), controle rigoroso da PA (<130/80) e glicemia, SGLT2i com benefício néfro-protetor comprovado.' },
+
+  { id:'enare_2022_016', banca:'ENARE', cycle:'Ciclo Clínico', subject:'Infectologia',
+    text:'Paciente de 28 anos com febre há 4 dias, mialgia, cefaleia e exantema. NS1 reagente. Plaquetas 95.000/mm³, sem sinais de alarme, sem comorbidades. Qual a classificação e conduta?',
+    options:['Dengue grave – internação em UTI','Dengue com sinais de alarme – hidratação venosa hospitalar','Dengue sem sinais de alarme grupo A – alta com orientações domiciliares','Dengue sem sinais de alarme grupo B – hidratação oral supervisionada com retorno diário','Chikungunya – anti-inflamatório'],
+    correctIndex:3, explanation:'Dengue sem sinais de alarme com plaquetas < 100.000 classifica-se no grupo B → acompanhamento ambulatorial supervisionado, hidratação oral e retorno diário para reavaliação.' },
+
+  { id:'enare_2022_017', banca:'ENARE', cycle:'Ciclo Clínico', subject:'Cardiologia',
+    text:'Paciente de 62 anos com IC, FE 28% (ICFEr), em uso de furosemida. Qual terapia farmacológica tem mortalidade comprovadamente reduzida na ICFEr?',
+    options:['Digoxina + furosemida','IECA (ou BRA) + betabloqueador + antagonista da aldosterona','Apenas diuréticos em altas doses','Amiodarona + IECA','Bloqueador de canal de cálcio + betabloqueador'],
+    correctIndex:1, explanation:'Na ICFEr, a terapia com IECA/BRA + betabloqueador + antagonista de aldosterona (espironolactona) reduz mortalidade (CONSENSUS, MERIT-HF, RALES). SGLT2i também reduz mortalidade (DAPA-HF).' },
+
+  { id:'enare_2022_018', banca:'ENARE', cycle:'Ciclo Clínico', subject:'Infectologia',
+    text:'Homem de 40 anos com tosse produtiva há 3 semanas, febre vespertina, sudorese noturna e perda de 8 kg. BAAR positivo no escarro (2+). Qual o esquema de tratamento?',
+    options:['Isoniazida + rifampicina por 6 meses','RHZE (rifampicina + isoniazida + pirazinamida + etambutol) por 2 meses, depois RH por 4 meses','Apenas isoniazida por 9 meses','Claritromicina + etambutol por 12 meses','Levofloxacino + rifampicina por 6 meses'],
+    correctIndex:1, explanation:'Tuberculose pulmonar: esquema básico RHZE por 2 meses (fase intensiva) seguido de RH por 4 meses (fase de manutenção) = 6 meses no total.' },
+
+  { id:'enare_2022_019', banca:'ENARE', cycle:'Ciclo Clínico', subject:'Gastroenterologia',
+    text:'Paciente de 28 anos com diarreia mucossanguinolenta contínua, tenesmo e colonoscopia mostrando acometimento do reto e cólon esquerdo de forma contínua, úlceras rasas e friabilidade. Histologia: inflamação restrita à mucosa. Diagnóstico e tratamento de primeira linha?',
+    options:['Doença de Crohn – mesalazina + corticóide','Retocolite ulcerativa leve a moderada – mesalazina oral e/ou tópica','Colite isquêmica – revascularização','Síndrome do intestino irritável – antiespasmódico','Amebíase colônica – metronidazol'],
+    correctIndex:1, explanation:'Acometimento contínuo a partir do reto, úlceras rasas, inflamação apenas na mucosa = Retocolite ulcerativa. Mesalazina (5-ASA) oral ± tópica é o tratamento de primeira linha na forma leve a moderada.' },
+
+  { id:'enare_2022_020', banca:'ENARE', cycle:'Ciclo Clínico', subject:'Pneumologia',
+    text:'Paciente de 70 anos com febre, tosse produtiva, dispneia, confusão mental e PA = 90/60 mmHg. Radiografia com infiltrado em lobo inferior direito. CURB-65 = 4. Qual a conduta?',
+    options:['Alta com amoxicilina oral','Internação em enfermaria com azitromicina IV','Internação em UTI com antibioticoterapia de amplo espectro','Aguardar cultura de escarro antes de antibiótico','TC de tórax antes de qualquer conduta'],
+    correctIndex:2, explanation:'CURB-65 ≥ 3 indica internação; ≥ 4-5 internação em UTI. Confusão + BUN elevado + PA < 90/60 + idade ≥ 65 = alta mortalidade → UTI + antibioticoterapia empírica de amplo espectro.' },
+
+  // Cirurgia Geral
+  { id:'enare_2022_021', banca:'ENARE', cycle:'Ciclo Clínico', subject:'Cirurgia Geral',
+    text:'Homem de 22 anos com dor em fossa ilíaca direita há 12 horas, anorexia, febre 38,2°C, dor à descompressão brusca e leucocitose 15.000. Escore de Alvarado = 8. Qual a conduta?',
+    options:['Antibioticoterapia isolada e observação','Apendicectomia laparoscópica','Enema e dieta laxante','TC de abdome antes de qualquer intervenção','Alta com AINEs e retorno em 48h'],
+    correctIndex:1, explanation:'Escore de Alvarado ≥ 7 tem alta sensibilidade para apendicite aguda. Com diagnóstico clínico e escore ≥ 7, apendicectomia laparoscópica é o tratamento padrão.' },
+
+  { id:'enare_2022_022', banca:'ENARE', cycle:'Ciclo Clínico', subject:'Cirurgia Geral',
+    text:'Mulher de 52 anos com dor em hipocôndrio direito há 24h, febre, Murphy positivo, leucocitose. Ultrassom: espessamento da parede vesicular, líquido perivesicular e cálculo impactado no colo. Qual a conduta?',
+    options:['Alta com analgésicos e antibióticos orais','Colecistectomia laparoscópica precoce (≤ 72h)','Drenagem percutânea isolada','Observação hospitalar por 7 dias antes de cirurgia','Colecistostomia percutânea definitiva'],
+    correctIndex:1, explanation:'Colecistite aguda calculosa: colecistectomia laparoscópica precoce (nas primeiras 72h) é o padrão-ouro, com menor morbidade e menor conversão para aberta.' },
+
+  { id:'enare_2022_023', banca:'ENARE', cycle:'Ciclo Clínico', subject:'Cirurgia Geral',
+    text:'Paciente de 65 anos com distensão abdominal progressiva, náuseas, vômitos e parada de eliminação de gases há 48h. Cirurgia prévia de apendicectomia. Raio-X: níveis hidroaéreos escalonados. Qual o diagnóstico mais provável e conduta inicial?',
+    options:['Íleo paralítico – sonda nasogástrica e observação','Obstrução intestinal por bridas – descompressão nasogástrica + hidratação + avaliação cirúrgica','Volvulus de sigmóide – colonoscopia descompressiva imediata','Tumor obstrutivo – colonoscopia e biópsia','Constipação grave – laxantes'],
+    correctIndex:1, explanation:'Histórico de cirurgia abdominal + obstrução mecânica = bridas/aderências. Conduta: SNG + hidratação + avaliação; cirurgia se não melhorar em 24-48h ou sinais de estrangulamento.' },
+
+  { id:'enare_2022_024', banca:'ENARE', cycle:'Ciclo Clínico', subject:'Cirurgia Geral',
+    text:'Homem de 45 anos com abaulamento em região inguinal direita que se reduz ao deitar, sem sinais de encarceramento. Qual a conduta?',
+    options:['Observação – apenas operar se incarcerada','Herniorrafia inguinal eletiva (Lichtenstein ou laparoscópica)','Uso de cinta abdominal indefinidamente','Antibioticoterapia e dieta','Alta sem tratamento – hernia inguinal não tem risco'],
+    correctIndex:1, explanation:'Hérnia inguinal redutível em adulto: herniorrafia eletiva é indicada para evitar complicações (encarceramento, estrangulamento). Técnica de Lichtenstein (tela) é o padrão.' },
+
+  { id:'enare_2022_025', banca:'ENARE', cycle:'Ciclo Clínico', subject:'Cirurgia Geral',
+    text:'Vítima de acidente automobilístico com trauma abdominal fechado, instabilidade hemodinâmica (PA 80/50) e FAST positivo (líquido livre perihepático). Qual a conduta imediata?',
+    options:['TC de abdome antes de qualquer intervenção','Laparotomia exploradora de urgência (damage control)','Arteriografia seletiva','Internação e observação com suporte clínico','Paracentese diagnóstica'],
+    correctIndex:1, explanation:'Trauma abdominal fechado + instabilidade hemodinâmica + FAST positivo = laparotomia de urgência (damage control surgery). TC é contraindicada no paciente instável.' },
+
+  { id:'enare_2022_026', banca:'ENARE', cycle:'Ciclo Clínico', subject:'Cirurgia Geral',
+    text:'Homem de 50 anos com dor epigástrica de início súbito (em facada), defesa generalizada e pneumoperitônio ao Raio-X. Qual a conduta?',
+    options:['IBP IV e observação','Endoscopia digestiva alta de urgência','Laparotomia exploradora de urgência','Antibioticoterapia e jejum por 48h','TC de abdome para confirmar diagnóstico'],
+    correctIndex:2, explanation:'Pneumoperitônio + abdome agudo com defesa generalizada = perfuração de víscera oca. Laparotomia de urgência é mandatória. Úlcera péptica perfurada é a causa mais comum.' },
+
+  { id:'enare_2022_027', banca:'ENARE', cycle:'Ciclo Clínico', subject:'Cirurgia Geral',
+    text:'Paciente com hematêmese volumosa, PA 90/60, FC 120. Endoscopia mostra úlcera duodenal com vaso visível. Qual a conduta endoscópica e farmacológica?',
+    options:['Alta com IBP oral','IBP IV em bolus + hemostasia endoscópica (injeção de adrenalina + clipping)','Cirurgia imediata sem tentar hemostasia endoscópica','Apenas transfusão de concentrado de hemácias','Tamponamento com balão de Sengstaken'],
+    correctIndex:1, explanation:'HDA por úlcera com vaso visível (Forrest Ia/Ib/IIa): hemostasia endoscópica combinada (injeção + método mecânico/térmico) + IBP IV em infusão contínua (ou bolus) reduz ressangramento.' },
+
+  { id:'enare_2022_028', banca:'ENARE', cycle:'Ciclo Clínico', subject:'Cirurgia Geral',
+    text:'Paciente com pancreatite aguda grave, BISAP = 3, febre persistente após 10 dias e TC com áreas necróticas. Qual a conduta?',
+    options:['Cirurgia imediata na primeira semana','Antibiótico profilático IV de rotina por 4 semanas','Aguardar 3-4 semanas para necrosectomia (step-up approach) se infecção confirmada','Drenagem percutânea imediata mesmo sem infecção','Alta com dieta líquida'],
+    correctIndex:2, explanation:'Necrose pancreática infectada: step-up approach (drenagem percutânea mínima → necrosectomia endoscópica/cirúrgica se necessário) após 3-4 semanas de organização da necrose.' },
+
+  { id:'enare_2022_029', banca:'ENARE', cycle:'Ciclo Clínico', subject:'Cirurgia Geral',
+    text:'Homem de 60 anos com sangramento retal, alteração do hábito intestinal e emagrecimento. Colonoscopia: tumor em sigmóide. TC: sem metástases. CEA = 8 ng/mL. Estadiamento T3N1M0. Qual a conduta?',
+    options:['Quimioterapia isolada sem cirurgia','Ressecção cirúrgica + quimioterapia adjuvante','Radioterapia isolada','Colostomia paliativa definitiva','Observação clínica'],
+    correctIndex:1, explanation:'CCR de sigmóide estádio III (T3N1M0): ressecção cirúrgica com margem + quimioterapia adjuvante (FOLFOX ou CAPOX) é o tratamento padrão.' },
+
+  { id:'enare_2022_030', banca:'ENARE', cycle:'Ciclo Clínico', subject:'Cirurgia Geral',
+    text:'Paciente de 55 anos com dor em fossa ilíaca esquerda, febre e leucocitose. TC: espessamento da parede do sigmóide, densificação da gordura pericolônica e pequeno abscesso de 2 cm. Classificação de Hinchey e conduta?',
+    options:['Hinchey I – cirurgia de urgência','Hinchey II – antibioticoterapia IV + drenagem percutânea do abscesso','Hinchey III – antibióticos orais ambulatoriais','Hinchey IV – laparotomia de urgência (Hartmann)','Hinchey I – alta com antibiótico oral'],
+    correctIndex:1, explanation:'Diverticulite Hinchey II (abscesso pericólico/pélvico): antibioticoterapia IV + drenagem percutânea guiada por imagem para abscessos > 3 cm; abscessos menores podem responder só a antibióticos.' },
+
+  { id:'enare_2022_031', banca:'ENARE', cycle:'Internato', subject:'Urgência e Emergência',
+    text:'Vítima de trauma torácico com dispneia progressiva, hipotensão, desvio de traqueia para a esquerda, ausência de MV no hemitórax direito e turgência jugular. Qual o diagnóstico e conduta imediata?',
+    options:['Hemotórax – toracocentese','Pneumotórax hipertensivo – descompressão com agulha no 2º EIC na linha hemiclavicular direita','Tamponamento cardíaco – pericardiocentese','Pneumotórax simples – observação','Contusão pulmonar – O₂ suplementar'],
+    correctIndex:1, explanation:'Tríade: hipotensão + ausência de MV unilateral + desvio de traqueia = pneumotórax hipertensivo. Tratamento imediato: descompressão com agulha (2º EIC linha hemiclavicular) antes de confirmar com Rx.' },
+
+  { id:'enare_2022_032', banca:'ENARE', cycle:'Ciclo Clínico', subject:'Cirurgia Geral',
+    text:'Paciente de 50 anos com dor, edema e eritema em panturrilha esquerda após voo de 12h. Ultrassom com doppler: trombo em veia poplítea. Sem contraindicação à anticoagulação. Qual o tratamento?',
+    options:['Apenas meias compressivas','Anticoagulação (DOAC ou HBPM + AVK) por pelo menos 3 meses','Filtro de veia cava inferior imediato','Trombectomia cirúrgica','AAS 100 mg/dia'],
+    correctIndex:1, explanation:'TVP proximal: anticoagulação por 3 meses (DOAC – rivaroxabana ou apixabana – é preferível por facilidade posológica e sem necessidade de monitorização de INR).' },
+
+  { id:'enare_2022_033', banca:'ENARE', cycle:'Ciclo Clínico', subject:'Cirurgia Geral',
+    text:'Paciente cirrótico com ascite desenvolve febre, dor abdominal e piora da encefalopatia. Paracentese: PMN > 250 cel/mm³. Qual o diagnóstico e tratamento?',
+    options:['Peritonite bacteriana secundária – laparotomia','Peritonite bacteriana espontânea – cefotaxima IV','Ascite refratária – TIPS','Síndrome hepatorrenal – diálise','Encefalopatia hepática – rifaximina isolada'],
+    correctIndex:1, explanation:'PBE: PMN ascítico ≥ 250 cel/mm³ sem foco infeccioso abdominal = PBE. Tratamento: cefotaxima IV 2g 8/8h por 5 dias + albumina IV para prevenir síndrome hepatorrenal.' },
+
+  { id:'enare_2022_034', banca:'ENARE', cycle:'Ciclo Clínico', subject:'Cirurgia Geral',
+    text:'Homem de 65 anos com disfagia progressiva para sólidos, perda de 10 kg e endoscopia com lesão ulcerada em corpo gástrico. Biópsia: adenocarcinoma. TC sem metástases. Qual a conduta?',
+    options:['Quimioterapia paliativa','Gastrectomia com linfadenectomia D2 ± quimioterapia perioperatória','Radioterapia isolada','Apenas IBP de alto dose','Gastrostomia paliativa'],
+    correctIndex:1, explanation:'Câncer gástrico ressecável: gastrectomia com linfadenectomia D2 é o padrão no Brasil; quimioterapia perioperatória (FLOT) está indicada para tumores ≥ T2 ou N+.' },
+
+  { id:'enare_2022_035', banca:'ENARE', cycle:'Ciclo Clínico', subject:'Cirurgia Geral',
+    text:'Paciente de 70 anos com dor abdominal intensa pós-prandial, perda de peso e sopro abdominal. Arteriografia: estenose de 80% do tronco celíaco e mesentérica superior. Qual o diagnóstico?',
+    options:['Síndrome do intestino irritável','Isquemia mesentérica crônica','Úlcera péptica perfurada','Pancreatite crônica','Tumor carcinoide'],
+    correctIndex:1, explanation:'Angina abdominal (dor pós-prandial + emagrecimento + sopro abdominal) com estenose em > 2 vasos = isquemia mesentérica crônica. Tratamento: revascularização endovascular ou cirúrgica.' },
+
+  { id:'enare_2022_036', banca:'ENARE', cycle:'Internato', subject:'Urgência e Emergência',
+    text:'Paciente em pós-operatório de colecistectomia desenvolve febre, icterícia progressiva e dor em hipocôndrio direito. Tríade de Charcot presente. Qual o diagnóstico e conduta?',
+    options:['Pancreatite aguda – jejum e hidratação','Colangite aguda – antibioticoterapia + descompressão biliar endoscópica (CPRE)','Fístula biliar – reoperação imediata','Hepatite A – suporte clínico','Coledocolitíase assintomática – observação'],
+    correctIndex:1, explanation:'Tríade de Charcot (febre + icterícia + dor em HCD) = colangite aguda. Tratamento: antibióticos + drenagem biliar urgente por CPRE. Pêntade de Reynolds (+ hipotensão + confusão) indica choque séptico.' },
+
+  { id:'enare_2022_037', banca:'ENARE', cycle:'Ciclo Clínico', subject:'Cirurgia Geral',
+    text:'Paciente com câncer colorretal avançado e peritonite carcinomatosa. Exame revela obstrução intestinal. PA estável. Qual a principal decisão terapêutica?',
+    options:['Quimioterapia de urgência IV','Colostomia de derivação ou stent colônico para descompressão','Laparotomia com ressecção extensa do tumor primário e implantes','Alta para cuidados paliativos sem procedimento','Antibioticoterapia e suporte'],
+    correctIndex:1, explanation:'Obstrução colônica por tumor com peritonite carcinomatosa: descompressão com colostomia de derivação (procedimento de Hartmann) ou stent colônico paliativo é a conduta mais adequada.' },
+
+  { id:'enare_2022_038', banca:'ENARE', cycle:'Ciclo Clínico', subject:'Cirurgia Geral',
+    text:'Lactente de 10 meses apresenta crise de choro intenso, vômito bilioso e eliminação de fezes mucossanguinolentas ("geléia de groselha"). Ao exame: massa palpável em flancos. Qual o diagnóstico e tratamento de primeira linha?',
+    options:['Hérnia inguinal encarcerada – redução manual','Intussuscepção intestinal – enema hidrostático ou pneumático','Estenose hipertrófica do piloro – piloromiotomia','Volvo intestinal – laparotomia de urgência','Divertículo de Meckel sangrante – cirurgia'],
+    correctIndex:1, explanation:'Intussuscepção: tríade clássica de choro paroxístico + vômito bilioso + fezes em geleia de groselha em lactente. Tratamento de primeira linha: enema hidrostático/pneumático. Cirurgia se falha ou peritonite.' },
+
+  { id:'enare_2022_039', banca:'ENARE', cycle:'Ciclo Clínico', subject:'Cirurgia Geral',
+    text:'Paciente de 40 anos, obeso, com dor em hipocôndrio direito, febre baixa e icterícia leve. Ultrassom: múltiplos cálculos na vesícula, dilatação de via biliar principal (12 mm) e imagem sugestiva de cálculo no colédoco. Qual a conduta?',
+    options:['Colecistectomia isolada e observação da coledocolitíase','CPRE para retirada do cálculo do colédoco seguida de colecistectomia laparoscópica','Apenas antibioticoterapia','Colangiopancreatografia por RM (CPRMN) e alta','Derivação biliodigestiva (coledocojejunostomia)'],
+    correctIndex:1, explanation:'Coledocolitíase sintomática: CPRE para extração do cálculo biliar + colecistectomia laparoscópica (preferencialmente na mesma internação) é o padrão-ouro.' },
+
+  { id:'enare_2022_040', banca:'ENARE', cycle:'Ciclo Clínico', subject:'Cirurgia Geral',
+    text:'Homem de 25 anos com secreção purulenta perianal crônica, abertura de óstio externo na pele perianal e antecedente de abscesso perianal drenado. Qual o diagnóstico e conduta?',
+    options:['Doença de Crohn perianal – imunossupressor','Fístula anorretal – fistulotomia ou colocação de seton','Hemorroida grau IV – hemorroidectomia','Cisto pilonidal – excisão','Abscesso perianal recorrente – antibiótico prolongado'],
+    correctIndex:1, explanation:'Fístula anorretal: comunicação entre o canal anal e a pele perianal, sequela frequente de abscesso. Tratamento cirúrgico: fistulotomia (para fístulas superficiais) ou seton (para fístulas altas, preservando esfíncter).' },
+
+  // Pediatria
+  { id:'enare_2022_041', banca:'ENARE', cycle:'Ciclo Clínico', subject:'Pediatria',
+    text:'RN a termo, 36h de vida, ictérico desde as 24h. Bilirrubina total = 12 mg/dL. Fototipo materno e neonatal compatíveis. Coombs direto negativo. Qual a conduta?',
+    options:['Alta hospitalar – icterícia fisiológica normal','Fototerapia convencional','Exsanguineotransfusão imediata','Fenobarbital para acelerar conjugação','Apenas observação e aleitamento materno'],
+    correctIndex:1, explanation:'Icterícia com início < 24h ou BT ≥ nível de fototerapia (conforme nomograma de Bhutani) = indicação de fototerapia. Início em 24h + BT 12 mg/dL em RN a termo requer fototerapia.' },
+
+  { id:'enare_2022_042', banca:'ENARE', cycle:'Ciclo Clínico', subject:'Pediatria',
+    text:'RN de 12 horas de vida, filho de mãe com corioamnionite, apresenta taquipneia (FR 72 irpm), gemência e temperatura axilar 38,2°C. Qual a conduta?',
+    options:['Alta se mãe assintomática','Hemograma e PCR; se normais, observar','Antibioticoterapia empírica IV (ampicilina + gentamicina) após culturas','Apenas oxigenioterapia','Aguardar 48h antes de iniciar antibiótico'],
+    correctIndex:2, explanation:'Sepse neonatal precoce: fatores de risco (corioamnionite) + sintomas clínicos em < 72h = iniciar antibioticoterapia empírica com ampicilina + gentamicina após coleta de culturas.' },
+
+  { id:'enare_2022_043', banca:'ENARE', cycle:'Ciclo Clínico', subject:'Pediatria',
+    text:'Prematuro de 28 semanas com gemência, batimento de asa do nariz, retrações subcostais e SpO₂ = 82% ao nascimento. Qual o tratamento de primeira linha?',
+    options:['VPP sem intubação','Surfactante exógeno intratraqueal + suporte ventilatório','Apenas O₂ suplementar por máscara','Antibioticoterapia empírica','Alta com monitorização ambulatorial'],
+    correctIndex:1, explanation:'SDR do prematuro por deficiência de surfactante: tratamento com surfactante exógeno intratraqueal reduz mortalidade e complicações. Suporte ventilatório (CPAP nasal ou VM) é indispensável.' },
+
+  { id:'enare_2022_044', banca:'ENARE', cycle:'Ciclo Clínico', subject:'Pediatria',
+    text:'Criança de 12 meses, alimentada ao seio materno exclusivo até 6 meses, complementação adequada. Qual marco do desenvolvimento é esperado nessa idade?',
+    options:['Andar sem apoio com segurança','Falar frases de 2 palavras','Ficar em pé com apoio e dar primeiros passos com suporte','Pular com os dois pés','Copiar um círculo'],
+    correctIndex:2, explanation:'Marcos aos 12 meses: ficar em pé com apoio, dar primeiros passos segurando em móveis ou mãos. Andar independente ocorre tipicamente aos 12-15 meses; falar frases de 2 palavras aos 24 meses.' },
+
+  { id:'enare_2022_045', banca:'ENARE', cycle:'Ciclo Clínico', subject:'Pediatria',
+    text:'Mãe de lactente de 4 meses pergunta se deve introduzir alimentos. Qual a orientação correta conforme o Ministério da Saúde do Brasil?',
+    options:['Introduzir papas de frutas a partir de 4 meses','Manter aleitamento materno exclusivo até 6 meses e iniciar complementação a partir de então','Introduzir cereal aos 3 meses para melhorar ganho de peso','Oferecer água e sucos a partir de 2 meses','Introduzir proteína animal apenas após 12 meses'],
+    correctIndex:1, explanation:'O MS e a OMS recomendam aleitamento materno exclusivo (AME) até 6 meses completos, seguido de alimentos complementares adequados mantendo o aleitamento até 2 anos ou mais.' },
+
+  { id:'enare_2022_046', banca:'ENARE', cycle:'Ciclo Clínico', subject:'Pediatria',
+    text:'Criança de 3 anos com febre alta (39,5°C), cefaleia intensa, vômitos e rigidez de nuca. Petéquias em membros inferiores. Qual o tratamento imediato?',
+    options:['Aguardar resultado de hemograma antes de antibiótico','Ceftriaxona IV imediatamente (sem esperar punção lombar se instável)','Penicilina oral e observação domiciliar','Dexametasona isolada e reavaliação','Punção lombar antes de qualquer outro procedimento'],
+    correctIndex:1, explanation:'Meningite bacteriana com suspeita de meningococcemia (petéquias) em criança: antibioticoterapia IMEDIATA com ceftriaxona é prioritária, mesmo antes da punção lombar em paciente instável.' },
+
+  { id:'enare_2022_047', banca:'ENARE', cycle:'Ciclo Clínico', subject:'Pediatria',
+    text:'Lactente de 8 meses com diarreia há 3 dias, mucosa oral seca, olhos fundos, sem lágrimas, turgor de pele com retorno > 2 segundos, irritado. Qual o grau de desidratação e conduta?',
+    options:['Sem desidratação – manter hidratação oral domiciliar','Desidratação leve – SRO 50 mL/kg em 4h','Desidratação moderada – SRO 100 mL/kg em 4h','Desidratação grave – SF 20 mL/kg IV em bolus, repetir se necessário','Hipernatremia – SF 0,45% IV lento'],
+    correctIndex:3, explanation:'Desidratação grave em criança (seco + olhos fundos + turgor alterado + irritado com letargia): expansão volumétrica IV com SF 0,9% 20 mL/kg em 15-30 min, repetindo conforme resposta.' },
+
+  { id:'enare_2022_048', banca:'ENARE', cycle:'Ciclo Clínico', subject:'Pediatria',
+    text:'Criança de 2 anos com febre (39°C), taquipneia (FR 52 irpm), batimento de asa do nariz e SpO₂ 93%. Radiografia: consolidação em lobo superior direito. Qual a conduta?',
+    options:['Alta com amoxicilina oral','Internação com amoxicilina IV (ou penicilina cristalina IV)','Azitromicina ambulatorial','Apenas antitérmico e nebulização','TC de tórax e broncoscopia'],
+    correctIndex:1, explanation:'Pneumonia bacteriana com hipoxemia (SpO₂ < 95%) e taquipneia grave em lactente = critério de internação. Amoxicilina IV (ou penicilina cristalina) é a primeira linha.' },
+
+  { id:'enare_2022_049', banca:'ENARE', cycle:'Ciclo Clínico', subject:'Pediatria',
+    text:'Criança de 7 anos com crise de broncoespasmo grave: SpO₂ 87%, pulso paradoxal, sem resposta a 3 doses de SABA. Qual a conduta?',
+    options:['Alta com salbutamol inalatório e retorno se piora','SABA + ipratrópio + corticóide sistêmico + sulfato de magnésio IV + considerar intubação','Apenas corticóide oral e observação por 30 min','Xantinas IV isoladas','Adrenalina IM e alta'],
+    correctIndex:1, explanation:'Crise de asma grave/quase fatal refratária a SABA: broncodilatadores inalatórios (SABA+ipratrópio) + corticóide sistêmico + MgSO₄ IV (broncodilatador adjuvante) + suporte ventilatório se necessário.' },
+
+  { id:'enare_2022_050', banca:'ENARE', cycle:'Ciclo Clínico', subject:'Pediatria',
+    text:'RN a termo recebe BCG ao nascer. Com que idade deve receber a primeira dose da vacina pentavalente (DTP + Hib + HB)?',
+    options:['Ao nascer','2 meses','4 meses','6 meses','12 meses'],
+    correctIndex:1, explanation:'O Calendário Nacional de Vacinação do MS preconiza a primeira dose da vacina pentavalente (DTPa-Hib-HB) aos 2 meses de vida.' },
+
+  { id:'enare_2022_051', banca:'ENARE', cycle:'Ciclo Clínico', subject:'Pediatria',
+    text:'Criança de 18 meses com palidez progressiva, irritabilidade e atraso do DNPM. Hb = 7,8 g/dL, VCM = 64 fL, ferritina < 12 ng/mL. Qual o diagnóstico e tratamento?',
+    options:['Talassemia – observação','Anemia por doença crônica – tratar doença base','Anemia ferropriva – sulfato ferroso VO 3-6 mg/kg/dia de ferro elementar','Anemia megaloblástica – ácido fólico','Anemia hemolítica – corticóide'],
+    correctIndex:2, explanation:'Anemia microcítica com ferritina baixa em criança < 2 anos = anemia ferropriva. Tratamento: sulfato ferroso 3-6 mg/kg/dia de ferro elementar por 3-6 meses; investigar causa.' },
+
+  { id:'enare_2022_052', banca:'ENARE', cycle:'Ciclo Clínico', subject:'Pediatria',
+    text:'Criança de 2 anos com convulsão tônico-clônica generalizada de 2 min durante febre de 38,8°C, sem foco neurológico, retorno completo da consciência, sem antecedente de epilepsia. Qual o diagnóstico e conduta?',
+    options:['Epilepsia – iniciar anticonvulsivante de manutenção','Convulsão febril simples – orientar pais, não indicar anticonvulsivante profilático','Meningite bacteriana – punção lombar e antibiótico','Encefalite viral – aciclovir','Crise de ausência – valproato'],
+    correctIndex:1, explanation:'Convulsão febril simples (< 15 min, generalizada, única, sem foco): não há indicação de anticonvulsivante de manutenção. Risco de epilepsia é pequeno (2-3%). Orientação familiar é suficiente.' },
+
+  { id:'enare_2022_053', banca:'ENARE', cycle:'Ciclo Clínico', subject:'Pediatria',
+    text:'Lactente de 6 meses com quadro de chiado no peito, tosse sibilante, taquipneia e febre baixa durante inverno. Primeiro episódio. Sem história familiar de atopia. Qual o diagnóstico mais provável?',
+    options:['Asma brônquica','Bronquiolite viral aguda (VSR)','Pneumonia bacteriana','Laringotraqueobronquite','Corpo estranho nas vias aéreas'],
+    correctIndex:1, explanation:'Bronquiolite viral aguda: primeiro episódio de sibilância em lactente < 12 meses durante inverno, com pródromo de IVAS. VSR é o principal agente. Tratamento: suporte (O₂, hidratação).' },
+
+  { id:'enare_2022_054', banca:'ENARE', cycle:'Ciclo Clínico', subject:'Pediatria',
+    text:'Criança de 4 anos com febre, odinofagia, exsudato amigdaliano e ausência de tosse. Escore de Centor modificado (FeverPAIN) = 4. Qual a conduta?',
+    options:['Apenas analgésico/antitérmico sem antibiótico','Antibiótico sem testar – amoxicilina 50 mg/kg/dia por 10 dias','Azitromicina por 3 dias sem teste','Alta sem tratamento','Corticóide para reduzir tamanho das amígdalas'],
+    correctIndex:1, explanation:'Escore de Centor ≥ 3 indica alta probabilidade de GABS. Tratamento: amoxicilina (ou penicilina benzatina IM) por 10 dias para erradicação do estreptococo e prevenção de febre reumática.' },
+
+  { id:'enare_2022_055', banca:'ENARE', cycle:'Ciclo Clínico', subject:'Pediatria',
+    text:'Criança de 2 anos com marasmo grave: peso muito abaixo do esperado, emagrecimento acentuado, sem edema. Qual a fase inicial do tratamento hospitalar?',
+    options:['Iniciar alimentação hipercalórica imediatamente para ganho de peso rápido','Fase de estabilização: tratar hipoglicemia, hipotermia, desidratação e infecções; dieta hipocalórica inicial','Suplementação de vitamina A e alta','Transfusão de albumina IV','Dieta zero por 48h'],
+    correctIndex:1, explanation:'Desnutrição grave: fase de estabilização (1-2 semanas) – corrigir distúrbios metabólicos, tratar infecções, alimentação F-75 (75 kcal/100mL) para estabilização. Fase de reabilitação com F-100 após estabilização.' },
+
+  { id:'enare_2022_056', banca:'ENARE', cycle:'Ciclo Clínico', subject:'Pediatria',
+    text:'Criança de 3 anos com hematúria macroscópica, edema palpebral matinal e hipertensão. Urina: proteinúria 1+, hematúria maciça, cilindros hemáticos. C3 baixo, ASLO elevado. Qual o diagnóstico?',
+    options:['Síndrome nefrótica – corticóide','Glomerulonefrite pós-estreptocócica – suporte clínico e antibiótico se infecção ativa','Síndrome hemolítico-urêmica – plasmaférese','IRA pré-renal – hidratação vigorosa','Nefropatia por IgA – IECA'],
+    correctIndex:1, explanation:'GNDA pós-estreptocócica: criança com hematúria + edema + HAS + C3 baixo + ASLO elevado. Tratamento: suporte (restrição hídrica e de sódio, anti-hipertensivo); antibiótico se infecção ativa.' },
+
+  { id:'enare_2022_057', banca:'ENARE', cycle:'Ciclo Clínico', subject:'Pediatria',
+    text:'Criança de 2 anos com estridor inspiratório, tosse com som metálico ("crupe"), febre baixa e ausência de odinofagia ou sialorreia. Radiografia com sinal da "torre de sino". Qual o tratamento?',
+    options:['Adrenalina nebulizada + corticóide sistêmico (dexametasona IM/VO)','Penicilina IV','Intubação imediata','Apenas umidificação do ar domiciliar','Ceftriaxona + clindamicina'],
+    correctIndex:0, explanation:'Crupe viral (laringotraqueobronquite): dexametasona (0,6 mg/kg, máx 16 mg) dose única ± adrenalina nebulizada em casos moderados/graves. Sinal da "torre de sino" confirma o diagnóstico.' },
+
+  { id:'enare_2022_058', banca:'ENARE', cycle:'Ciclo Clínico', subject:'Pediatria',
+    text:'Menino de 5 anos com celulite periorbitária (pré-septal): edema e eritema de pálpebra superior sem proptose, sem dor à movimentação ocular, sem febre alta. Qual a conduta?',
+    options:['Internação + ceftriaxona IV + avaliação oftalmológica urgente','Antibiótico oral (amoxicilina-clavulanato) + reavaliação em 24-48h','Alta sem antibiótico','Incisão e drenagem imediata','Corticóide tópico ocular'],
+    correctIndex:1, explanation:'Celulite periorbitária (pré-septal): sem sinais de celulite orbitária (proptose, oftalmoplegia, redução de AV). Tratamento ambulatorial com antibiótico oral + retorno em 24-48h.' },
+
+  { id:'enare_2022_059', banca:'ENARE', cycle:'Ciclo Clínico', subject:'Pediatria',
+    text:'RN de 36h com icterícia progressiva, BT = 22 mg/dL, BD = 0,8 mg/dL, Coombs direto positivo, Hb = 11 g/dL e reticulócitos = 8%. Mãe tipo O, RN tipo A. Qual o diagnóstico?',
+    options:['Icterícia fisiológica','Doença hemolítica perinatal por incompatibilidade ABO','Colestase neonatal','Sepse neonatal','Deficiência de G6PD'],
+    correctIndex:1, explanation:'Incompatibilidade ABO: mãe O (anti-A e anti-B naturais) + filho A. Coombs direto + + anemia hemolítica + hiperbilirrubinemia precoce. Tratamento: fototerapia intensiva ± exsanguineotransfusão.' },
+
+  { id:'enare_2022_060', banca:'ENARE', cycle:'Ciclo Clínico', subject:'Pediatria',
+    text:'Adolescente de 14 anos, 6 meses após 3ª dose da vacina HPV, apresenta papiloma em genitália. Qual a orientação correta sobre a vacinação?',
+    options:['A vacina HPV não tem indicação para meninos','A vacina HPV quadrivalente protege contra HPV 6, 11, 16 e 18; a infecção pode ter ocorrido antes da vacinação','Reiniciar esquema vacinal completo','A vacina tem 100% de eficácia após 3 doses','Sorotipo não coberto – indicar reforço em 6 meses'],
+    correctIndex:1, explanation:'A vacina HPV quadrivalente protege contra os sorotipos 6, 11, 16 e 18. Infecção pós-vacinação pode ocorrer se exposição prévia ao sorotipo ou outro sorotipo não coberto.' },
+
+  // Ginecologia & Obstetrícia
+  { id:'enare_2022_061', banca:'ENARE', cycle:'Ciclo Clínico', subject:'Ginecologia & Obstetrícia',
+    text:'Gestante de 32 semanas com PA = 160/110 mmHg, cefaleia intensa, escotomas e proteinúria 3+ (fita). Qual o diagnóstico e conduta imediata?',
+    options:['Hipertensão gestacional – anti-hipertensivo oral e retorno em 1 semana','Pré-eclâmpsia com sinais de gravidade – sulfato de magnésio + anti-hipertensivo IV + resolução oportuna','Crise hipertensiva não gestacional – captopril SL','Eclâmpsia – apenas diazepam','Pré-eclâmpsia leve – repouso e dieta'],
+    correctIndex:1, explanation:'PE com sinais de gravidade (PA ≥ 160/110, cefaleia, escotomas, proteinúria maciça): MgSO₄ (anticonvulsivante/prevenção eclâmpsia) + anti-hipertensivo IV (hidralazina ou labetalol) + resolução conforme IG.' },
+
+  { id:'enare_2022_062', banca:'ENARE', cycle:'Ciclo Clínico', subject:'Ginecologia & Obstetrícia',
+    text:'Gestante de 37 semanas em crise convulsiva tônico-clônica generalizada, sem diagnóstico prévio de epilepsia. Qual o diagnóstico e conduta?',
+    options:['Epilepsia gestacional – fenitoína IV','Eclâmpsia – MgSO₄ IV + controle da PA + resolução da gestação','Hipoglicemia – glicose IV','AVC hemorrágico – TC de crânio urgente','Síncope vasovagal – decúbito lateral'],
+    correctIndex:1, explanation:'Eclâmpsia: convulsão em gestante sem causa neurológica. Tratamento: MgSO₄ (ataque 4-6g IV lento + manutenção 1-2g/h) + anti-hipertensivo + resolução da gestação após estabilização.' },
+
+  { id:'enare_2022_063', banca:'ENARE', cycle:'Ciclo Clínico', subject:'Ginecologia & Obstetrícia',
+    text:'Gestante de 24-28 semanas, obesa, sem DM prévio. Qual o método de rastreamento para Diabetes Mellitus Gestacional preconizado no Brasil?',
+    options:['Glicemia de jejum ≥ 126 mg/dL em qualquer momento','TOTG 75g com coleta em 0, 1h e 2h (critérios IADPSG/OMS 2013)','Hemoglobina glicada isolada','Glicemia pós-prandial de 1h','Urina tipo I com glicosúria'],
+    correctIndex:1, explanation:'O TOTG 75g (critérios IADPSG) entre 24-28 semanas é o padrão para rastreamento/diagnóstico do DMG: jejum ≥ 92, 1h ≥ 180 ou 2h ≥ 153 mg/dL (qualquer valor = diagnóstico).' },
+
+  { id:'enare_2022_064', banca:'ENARE', cycle:'Ciclo Clínico', subject:'Ginecologia & Obstetrícia',
+    text:'Paciente de 30 anos com amenorreia há 8 semanas, β-hCG = 4.500 mUI/mL e ecografia transvaginal sem saco gestacional intrauterino. Dor em fossa ilíaca direita e sangramento leve. Hemodinamicamente estável. Qual o diagnóstico e conduta mais adequada?',
+    options:['Aborto incompleto – curetagem uterina','Gravidez ectópica íntegra – metotrexato 50 mg/m² IM (dose única) se critérios','Gravidez ectópica rota – laparotomia de emergência','Mola hidatiforme – esvaziamento uterino','Gestação de localização desconhecida – aguardar'],
+    correctIndex:1, explanation:'Gravidez ectópica sem sinais de rotura + β-hCG < 5.000 + hemodinâmica estável + critérios para MTX: metotrexato IM em dose única é a primeira linha conservadora.' },
+
+  { id:'enare_2022_065', banca:'ENARE', cycle:'Ciclo Clínico', subject:'Ginecologia & Obstetrícia',
+    text:'Puérpera de 36h com febre (38,5°C), útero amolecido e doloroso, lóquios fétidos. Ausência de outros focos infecciosos. Qual o diagnóstico e tratamento?',
+    options:['Mastite puerperal – amoxicilina-clavulanato','Endometrite puerperal – clindamicina + gentamicina IV','Infecção de ferida operatória – cefazolina','Tromboflebite pélvica – heparina','ITU pós-parto – nitrofurantoína'],
+    correctIndex:1, explanation:'Endometrite puerperal: útero subinvoluído, doloroso e amolecido + febre + lóquios fétidos. Tratamento padrão: clindamicina + gentamicina IV (cobertura polimicrobiana).' },
+
+  { id:'enare_2022_066', banca:'ENARE', cycle:'Ciclo Clínico', subject:'Ginecologia & Obstetrícia',
+    text:'Mulher de 35 anos nulípara com mioma submucoso de 3 cm, sangramento uterino anormal e desejo de engravidar. Qual o tratamento de escolha?',
+    options:['Histerectomia total','Miomectomia histeroscópica','Embolização de artéria uterina','Análogo de GnRH por 6 meses indefinidamente','Apenas anticoncepcional oral'],
+    correctIndex:1, explanation:'Mioma submucoso sintomático em mulher com desejo de fertilidade: miomectomia histeroscópica é o padrão, preservando o útero e melhorando as taxas de concepção.' },
+
+  { id:'enare_2022_067', banca:'ENARE', cycle:'Ciclo Clínico', subject:'Ginecologia & Obstetrícia',
+    text:'Mulher de 28 anos com dispareunia profunda, dismenorreia progressiva e infertilidade. Laparoscopia: implantes endometrióticos no peritônio e fundo de saco de Douglas. Qual o diagnóstico e tratamento inicial?',
+    options:['Síndrome dos ovários policísticos – metformina','Endometriose – ablação laparoscópica dos implantes + anticoncepcional contínuo','Doença inflamatória pélvica – antibióticos','Adenomiose – histerectomia','Cisto folicular – esperar regressão'],
+    correctIndex:1, explanation:'Endometriose: tratamento cirúrgico (ablação/excisão laparoscópica) + tratamento hormonal pós-operatório (AO contínuo ou gestrinona) para controle de sintomas e redução de recidiva.' },
+
+  { id:'enare_2022_068', banca:'ENARE', cycle:'Ciclo Clínico', subject:'Ginecologia & Obstetrícia',
+    text:'Gestante de 35 semanas com sangramento vaginal indolor, volumoso, sem contrações. Cervix fechado. Ultrassom: placenta baixa cobrindo o OI. Qual a conduta?',
+    options:['Parto normal imediato','Internação, corticoide se < 34 semanas, cesárea eletiva ao redor de 37 semanas','Ocitocina para amadurecimento cervical','Alta com repouso domiciliar sem cuidados especiais','Amniocentese para confirmar maturidade pulmonar'],
+    correctIndex:1, explanation:'Placenta prévia total: sangramento + placenta cobrindo o OI. Conduta: internação, manter gestação até 36-37 semanas se estável, cesárea eletiva (parto vaginal contraindicado).' },
+
+  { id:'enare_2022_069', banca:'ENARE', cycle:'Ciclo Clínico', subject:'Ginecologia & Obstetrícia',
+    text:'Paciente de 32 anos com citologia oncótica: ASC-H. Qual a conduta?',
+    options:['Repetir citologia em 1 ano','Colposcopia imediata com biópsia das lesões suspeitas','Tratamento com ácido tricloroacético','Histerectomia preventiva','Alta sem investigação'],
+    correctIndex:1, explanation:'ASC-H (células escamosas atípicas, não podendo excluir HSIL): alto risco de HSIL/NIC 2-3. Colposcopia imediata com biópsia é mandatória.' },
+
+  { id:'enare_2022_070', banca:'ENARE', cycle:'Ciclo Clínico', subject:'Ginecologia & Obstetrícia',
+    text:'Mulher de 35 anos com SOP, IMC 32, ciclos menstruais irregulares (30-90 dias) e hirsutismo. Deseja contracepção e melhora dos sintomas. Qual o tratamento mais adequado?',
+    options:['Metformina isolada','Anticoncepcional oral combinado (progestogênio anti-androgênico) + perda de peso','Clomifeno imediatamente','Ciproterona em dose alta indefinidamente','Apenas dieta e exercício sem medicação'],
+    correctIndex:1, explanation:'SOP em mulher sem desejo de gestação: ACO combinado (de preferência com progestogênio anti-androgênico como ciproterona ou drospirenona) + mudança de estilo de vida. Metformina é adjuvante.' },
+
+  { id:'enare_2022_071', banca:'ENARE', cycle:'Ciclo Clínico', subject:'Ginecologia & Obstetrícia',
+    text:'Paciente de 22 anos solicita contracepção de emergência após relação sexual desprotegida há 36h. Qual o método mais eficaz?',
+    options:['DIU de cobre (até 5 dias após) – maior eficácia','Levonorgestrel 1,5 mg em dose única (até 72h)','Mifepristona 200mg','AO combinado em esquema de Yuzpe','Apenas esperar o próximo ciclo'],
+    correctIndex:0, explanation:'DIU de cobre, inserido até 5 dias após relação desprotegida, é o método de contracepção de emergência mais eficaz (>99%). Levonorgestrel (opção B) tem eficácia de ~85% dentro de 72h.' },
+
+  { id:'enare_2022_072', banca:'ENARE', cycle:'Ciclo Clínico', subject:'Ginecologia & Obstetrícia',
+    text:'Parturiente com parto vaginal completo há 30 minutos, sangramento de 700 mL. Útero amolecido e volumoso à palpação, placenta expulsa íntegra. Qual a causa e conduta?',
+    options:['Retenção placentária – exploração manual do útero','Atonia uterina – ocitocina IV + massagem uterina + outros uterotônicos se necessário','Laceração de canal de parto – sutura imediata','Coagulopatia – plasma fresco congelado','Inversão uterina – reposicionamento manual'],
+    correctIndex:1, explanation:'Atonia uterina é a causa mais comum de HPP (placenta expulsa + útero amolecido). Tratamento escalonado: ocitocina IV + massagem uterina → misoprostol + metilergonovina → balão de Bakri → cirurgia.' },
+
+  { id:'enare_2022_073', banca:'ENARE', cycle:'Ciclo Clínico', subject:'Ginecologia & Obstetrícia',
+    text:'Gestante de 33 semanas com rotura prematura de membranas (RPM) confirmada por pooling e fern test positivo. Sem infecção, sem contração, sem sofrimento fetal. Qual a conduta?',
+    options:['Parto imediato por cesárea','Indução de parto imediata com ocitocina','Conduta expectante: corticoide + antibiótico profilático (ampicilina) + monitoração','Tocólise agressiva por 7 dias','Alta com repouso domiciliar sem antibiótico'],
+    correctIndex:2, explanation:'RPM pré-termo (33 semanas) sem infecção: conduta expectante com internação, corticoide (betametasona) para maturação pulmonar, antibiótico (ampicilina IV) para prolongar latência e monitoração fetal contínua.' },
+
+  { id:'enare_2022_074', banca:'ENARE', cycle:'Ciclo Clínico', subject:'Ginecologia & Obstetrícia',
+    text:'Mulher de 25 anos com aborto completo (ECO: útero vazio, colo fechado) e sangramento leve há 2 dias. Estável hemodinamicamente. Qual a conduta?',
+    options:['Curetagem uterina de urgência','Conduta expectante ou ocitócico para auxiliar a contração uterina; seguimento ambulatorial','Laparotomia exploradora','Internação por 48h obrigatoriamente','Anti-Rh independente do tipo sanguíneo'],
+    correctIndex:1, explanation:'Aborto completo com útero vazio ao ECO e paciente estável: não há indicação de esvaziamento cirúrgico. Conduta expectante ou misoprostol oral + acompanhamento ambulatorial. Anti-Rh se Rh negativo.' },
+
+  { id:'enare_2022_075', banca:'ENARE', cycle:'Ciclo Clínico', subject:'Ginecologia & Obstetrícia',
+    text:'Gestante de 29 semanas com dor abdominal súbita, hipertonia uterina, sangramento vaginal escuro e FCF com desacelerações tardias. PA = 150/100 mmHg. Qual o diagnóstico mais provável?',
+    options:['Placenta prévia central total','Descolamento prematuro de placenta (DPPNI)','Coriamnionite','Ameaça de parto prematuro','Rotura uterina'],
+    correctIndex:1, explanation:'DPPNI: dor abdominal súbita + hipertonia uterina + sangramento escuro + sofrimento fetal em gestante hipertensa. Conduta: resolução da gestação (cesárea de urgência ou parto normal acelerado).' },
+
+  { id:'enare_2022_076', banca:'ENARE', cycle:'Ciclo Clínico', subject:'Ginecologia & Obstetrícia',
+    text:'Mola hidatiforme completa confirmada histologicamente. Após esvaziamento uterino, qual o seguimento obrigatório?',
+    options:['Alta após cirurgia, sem seguimento específico','Dosagem seriada de β-hCG semanalmente até negativação por 3 semanas consecutivas, depois mensal por 6 meses','Quimioterapia profilática imediata em todos os casos','Histerectomia profilática','Contracepção hormonal contraindicada pós-mola'],
+    correctIndex:1, explanation:'Pós-mola: monitorar β-hCG semanalmente até 3 dosagens negativas consecutivas, depois mensalmente por 6 meses (mola completa) ou 3 meses (parcial). Anticoncepção hormonal é indicada durante o seguimento.' },
+
+  { id:'enare_2022_077', banca:'ENARE', cycle:'Ciclo Clínico', subject:'Ginecologia & Obstetrícia',
+    text:'Mulher de 28 anos com DIP (febre, dor à mobilização do colo, leucocitose). Hemodinamicamente estável, sem abscesso. Qual o esquema antibiótico ambulatorial recomendado pelo MS Brasil?',
+    options:['Penicilina G + metronidazol por 7 dias','Ceftriaxona IM dose única + doxiciclina + metronidazol VO por 14 dias','Azitromicina isolada por 5 dias','Ciprofloxacino + amoxicilina por 10 dias','Clindamicina + gentamicina VO por 7 dias'],
+    correctIndex:1, explanation:'DIP ambulatorial (PCDT MS): ceftriaxona 500mg IM dose única + doxiciclina 100mg VO 12/12h + metronidazol 500mg VO 12/12h por 14 dias (cobertura para Neisseria, Chlamydia e anaeróbios).' },
+
+  { id:'enare_2022_078', banca:'ENARE', cycle:'Ciclo Clínico', subject:'Ginecologia & Obstetrícia',
+    text:'Gestante de 38 semanas com edema bilateral de MMII, PA 148/92 mmHg, sem proteinúria, sem sintomas. Exames laboratoriais normais. Qual o diagnóstico?',
+    options:['Pré-eclâmpsia leve','Hipertensão gestacional','Eclâmpsia','Hipertensão arterial crônica descompensada','Edema fisiológico da gestação'],
+    correctIndex:1, explanation:'Hipertensão gestacional: PA ≥ 140/90 após 20 semanas SEM proteinúria e SEM sinais de gravidade, com exames laboratoriais normais. Diferencia-se da PE pela ausência de proteinúria/sinais de dano de órgão-alvo.' },
+
+  { id:'enare_2022_079', banca:'ENARE', cycle:'Ciclo Clínico', subject:'Ginecologia & Obstetrícia',
+    text:'Gestante de 30 semanas com ameaça de parto prematuro (contrações rítmicas + modificação cervical). Qual o benefício comprovado da administração de corticoide?',
+    options:['Tocolítico de segunda linha','Redução da incidência de SDR neonatal por indução da maturidade pulmonar fetal','Prevenção de DPPNI','Melhora do crescimento fetal','Redução do risco de infecção neonatal'],
+    correctIndex:1, explanation:'Corticoide antenatal (betametasona 12 mg IM 24/24h, 2 doses) entre 24-34 semanas reduz SDR neonatal, HIV, enterocolite necrosante e mortalidade perinatal.' },
+
+  { id:'enare_2022_080', banca:'ENARE', cycle:'Ciclo Clínico', subject:'Ginecologia & Obstetrícia',
+    text:'Mulher de 50 anos com rastreamento de câncer de colo uterino. Citologia oncótica normal. Qual o intervalo de rastreamento recomendado pelo INCA/MS Brasil?',
+    options:['Anualmente indefinidamente','A cada 3 anos, após dois exames anuais consecutivos negativos','A cada 5 anos','Uma única vez na vida após 50 anos','Citologia + HPV co-teste anual'],
+    correctIndex:1, explanation:'Rastreamento de CCU (INCA/MS): iniciar aos 25 anos, realizar dois exames anuais consecutivos; se negativos, intervalo de 3 anos até os 64 anos.' },
+
+  // Medicina Preventiva
+  { id:'enare_2022_081', banca:'ENARE', cycle:'Ciclo Clínico', subject:'Medicina de Família/SUS',
+    text:'Quais são os princípios doutrinários e os princípios organizativos do SUS, respectivamente?',
+    options:['Universalidade, integralidade, equidade / descentralização, hierarquização, regionalização, participação popular','Equidade, integralidade, solidariedade / descentralização, horizontalidade','Universalidade, gratuidade, resolutividade / municipalização, privatização','Universalidade, equidade / regionalização isolada','Solidariedade, reciprocidade / descentralização'],
+    correctIndex:0, explanation:'Princípios doutrinários do SUS (Lei 8.080): universalidade, integralidade e equidade. Princípios organizativos: descentralização, regionalização, hierarquização e participação da comunidade.' },
+
+  { id:'enare_2022_082', banca:'ENARE', cycle:'Ciclo Clínico', subject:'Medicina de Família/SUS',
+    text:'Qual atributo da Atenção Primária à Saúde garante que o usuário seja o ponto de entrada preferencial no sistema de saúde?',
+    options:['Longitudinalidade','Integralidade','Acesso de primeiro contato (porta de entrada)','Coordenação do cuidado','Orientação comunitária'],
+    correctIndex:2, explanation:'Acesso de primeiro contato (Starfield): a APS deve ser o primeiro recurso utilizado pelo usuário ao buscar atenção a saúde, funcionando como porta de entrada no sistema.' },
+
+  { id:'enare_2022_083', banca:'ENARE', cycle:'Ciclo Clínico', subject:'Medicina de Família/SUS',
+    text:'Em um estudo, um teste diagnóstico para tuberculose apresenta sensibilidade de 95% e especificidade de 80%. O que significa a especificidade de 80%?',
+    options:['80% dos doentes serão corretamente identificados como positivos','80% dos não-doentes serão corretamente identificados como negativos','O teste tem 80% de chance de o resultado positivo ser verdadeiro','O teste erra em 80% dos casos','80% dos positivos têm a doença'],
+    correctIndex:1, explanation:'Especificidade: proporção de indivíduos SEM a doença que o teste classifica corretamente como negativos (verdadeiros negativos). Alta especificidade → poucos falsos positivos.' },
+
+  { id:'enare_2022_084', banca:'ENARE', cycle:'Ciclo Clínico', subject:'Medicina de Família/SUS',
+    text:'Conforme o Calendário Nacional de Vacinação do MS (2023), qual é o esquema vacinal para a vacina meningocócica C conjugada?',
+    options:['Dose única aos 12 meses','3 meses, 5 meses e reforço aos 12 meses','2 doses: 3 meses e 5 meses + reforço entre 12-15 meses','Apenas adolescentes','Dose única aos 15 meses'],
+    correctIndex:2, explanation:'Vacina meningocócica C conjugada (MenC): doses aos 3 e 5 meses + reforço entre 12-15 meses, conforme Calendário Nacional de Vacinação 2023.' },
+
+  { id:'enare_2022_085', banca:'ENARE', cycle:'Ciclo Clínico', subject:'Medicina de Família/SUS',
+    text:'Qual a composição mínima da equipe da Estratégia de Saúde da Família (eSF) conforme a PNAB 2017?',
+    options:['Médico, enfermeiro, técnico de enfermagem, 3 agentes comunitários de saúde (ACS)','Médico, enfermeiro, técnico de enfermagem e ACS (máx 12 por equipe, mín 4)','Médico, dentista, enfermeiro e 2 ACS','Médico, farmacêutico, enfermeiro e ACS','Apenas médico e enfermeiro'],
+    correctIndex:1, explanation:'Equipe mínima da eSF (PNAB 2017): médico generalista/especialista em MFC + enfermeiro + técnico de enfermagem + ACS (máximo 12 por equipe, mínimo 4). Responsabilidade máxima 4.000 pessoas.' },
+
+  { id:'enare_2022_086', banca:'ENARE', cycle:'Ciclo Clínico', subject:'Medicina de Família/SUS',
+    text:'O Índice de Apgar avaliado no 1º e 5º minuto de vida avalia qual conjunto de parâmetros?',
+    options:['FC, FR, tônus, irritabilidade reflexa, coloração','FC, FR, peso, comprimento, temperatura','Reflexo de Moro, reflexo de Babinski, FR, coloração, tônus','Glicemia, gasometria, FC, FR, temperatura','Tônus, coloração, perfusão, peso, FR'],
+    correctIndex:0, explanation:'Índice de Apgar: frequência cardíaca, frequência respiratória (ou esforço), tônus muscular, irritabilidade reflexa (resposta à estimulação) e cor da pele/mucosas. Pontuação 0-2 em cada item.' },
+
+  { id:'enare_2022_087', banca:'ENARE', cycle:'Ciclo Clínico', subject:'Medicina de Família/SUS',
+    text:'A Lei 8.142/1990 que complementa a Lei 8.080/1990 trata principalmente de qual aspecto do SUS?',
+    options:['Organização e funcionamento do SUS','Participação da comunidade na gestão e transferências intergovernamentais de recursos','Regulamentação dos planos de saúde privados','Criação do CONASS e CONASEMS','Controle de medicamentos e alimentos (ANVISA)'],
+    correctIndex:1, explanation:'Lei 8.142/1990: regulamenta a participação da comunidade (Conferências e Conselhos de Saúde) e as transferências intergovernamentais de recursos financeiros na área da saúde.' },
+
+  { id:'enare_2022_088', banca:'ENARE', cycle:'Ciclo Clínico', subject:'Medicina de Família/SUS',
+    text:'Paciente com diagnóstico de meningite meningocócica. Qual a conduta do médico em relação à vigilância epidemiológica?',
+    options:['Notificar em até 7 dias ao SINAN','Notificação compulsória imediata (em até 24h) à autoridade de saúde','Notificar apenas após confirmação laboratorial','Notificar somente se óbito','Não é doença de notificação compulsória'],
+    correctIndex:1, explanation:'Meningite meningocócica é doença de notificação compulsória imediata (DNCI) – deve ser notificada à autoridade de saúde em até 24 horas após diagnóstico clínico suspeito, mesmo sem confirmação laboratorial.' },
+
+  { id:'enare_2022_089', banca:'ENARE', cycle:'Ciclo Clínico', subject:'Medicina de Família/SUS',
+    text:'Em um estudo de caso-controle sobre câncer de pulmão e tabagismo, calculou-se OR = 12,5. Qual a interpretação correta?',
+    options:['Fumantes têm 12,5 vezes mais risco absoluto de câncer de pulmão','A probabilidade de o tabagismo causar câncer é de 12,5%','Fumantes têm chance 12,5 vezes maior de ter sido expostos ao fator de risco em comparação com não-fumantes, indicando associação forte','O tabagismo reduz a incidência em 12,5 vezes','A especificidade do tabagismo para câncer é 12,5%'],
+    correctIndex:2, explanation:'Odds Ratio em caso-controle: OR 12,5 indica que os casos (com câncer) têm 12,5 vezes mais chance de ter a exposição (tabagismo) em comparação com os controles (sem câncer). Indica forte associação.' },
+
+  { id:'enare_2022_090', banca:'ENARE', cycle:'Ciclo Clínico', subject:'Medicina de Família/SUS',
+    text:'O conceito de prevenção quaternária (P4) está relacionado a qual situação?',
+    options:['Prevenção de doenças em populações sadias','Reabilitação após doença instalada','Ação que protege o paciente de intervenções médicas desnecessárias e seus danos (sobrediagnóstico e sobretratamento)','Quimioprofilaxia em massa','Vacinação em grupos de risco'],
+    correctIndex:2, explanation:'Prevenção quaternária (Jamoulle): conjunto de ações que protegem o paciente de procedimentos médicos iatrogênicos, evitando sobrediagnóstico, sobretratamento e medicalização desnecessária.' },
+
+  { id:'enare_2022_091', banca:'ENARE', cycle:'Ciclo Clínico', subject:'Medicina de Família/SUS',
+    text:'Qual componente da RAPS (Rede de Atenção Psicossocial) é responsável pelo cuidado intensivo e transitório para pessoas em crise, funcionando 24h?',
+    options:['CAPS I','Leito de retaguarda em hospital geral','CAPS III','Unidade de Referência Especializada (URE)','Consultório na rua'],
+    correctIndex:2, explanation:'CAPS III: atende adultos com transtornos mentais graves e persistentes + crises; funciona 24h, 7 dias por semana, com até 5 vagas de acolhimento noturno transitório (leitos de observação).' },
+
+  { id:'enare_2022_092', banca:'ENARE', cycle:'Ciclo Clínico', subject:'Medicina de Família/SUS',
+    text:'Na triagem neonatal (Teste do Pezinho), quais doenças são obrigatoriamente rastreadas conforme o Programa Nacional de Triagem Neonatal fase III no Brasil?',
+    options:['Apenas PKU e hipotireoidismo congênito','PKU, hipotireoidismo, doença falciforme e hemoglobinopatias, fibrose cística e hiperplasia adrenal congênita','PKU, Diabetes tipo 1 e hipotireoidismo','Apenas doença falciforme','Apenas PKU'],
+    correctIndex:1, explanation:'PNTN fase III: fenilcetonúria (PKU), hipotireoidismo congênito, hemoglobinopatias (doença falciforme), fibrose cística e hiperplasia adrenal congênita. Fase IV adiciona deficiência de biotinidase e galactosemia.' },
+
+  { id:'enare_2022_093', banca:'ENARE', cycle:'Ciclo Clínico', subject:'Medicina de Família/SUS',
+    text:'Em um ensaio clínico randomizado duplo-cego, qual é a principal vantagem em relação a estudos observacionais?',
+    options:['Maior rapidez de execução e menor custo','Controle da exposição e aleatorização, reduzindo confundimento e vieses de seleção','Permite estudar doenças raras','Não requer aprovação de comitê de ética','Melhor para estimar prevalência'],
+    correctIndex:1, explanation:'ECR: a randomização distribui equitativamente fatores de confundimento conhecidos e desconhecidos entre os grupos, permitindo estabelecer relação de causalidade – padrão-ouro para avaliar intervenções.' },
+
+  { id:'enare_2022_094', banca:'ENARE', cycle:'Ciclo Clínico', subject:'Medicina de Família/SUS',
+    text:'Paciente de 80 anos com demência avançada tem familiar solicitando "todos os recursos disponíveis". O médico avalia que os procedimentos invasivos seriam fúteis e causariam sofrimento. Qual princípio bioético embasa a recusa ao tratamento desproporcionado?',
+    options:['Autonomia absoluta do familiar','Beneficência e não maleficência – evitar tratamento fútil que apenas prolonga o sofrimento','Justiça – outros pacientes precisam mais dos recursos','Sigilo médico','Fidelidade'],
+    correctIndex:1, explanation:'Beneficência (fazer o bem) e não maleficência (não causar dano): tratamentos desproporcionais em pacientes sem capacidade de recuperação violam esses princípios. Cuidados paliativos e ortotanásia são eticamente adequados.' },
+
+  { id:'enare_2022_095', banca:'ENARE', cycle:'Ciclo Clínico', subject:'Medicina de Família/SUS',
+    text:'Médico atende paciente menor de idade (15 anos) que solicita sigilo sobre comportamento sexual, sem risco de vida imediato. Qual a conduta ética?',
+    options:['Informar os pais imediatamente sem consentimento do paciente','Manter o sigilo, pois o adolescente tem direito à privacidade; comunicar pais somente se risco de vida','Recusar o atendimento sem a presença dos pais','Denunciar ao conselho tutelar sem critério','Publicar o caso em revista médica com fins educativos'],
+    correctIndex:1, explanation:'Pelo Código de Ética Médica e ECA: o adolescente tem direito ao sigilo médico. O médico pode e deve respeitar a privacidade do menor, informando os responsáveis apenas se houver risco de vida ou saúde grave.' },
 ];
 
 const RANKING = [
@@ -19451,7 +20013,7 @@ export default function App() {
                         {/* Main CTA */}
                         <motion.button
                           whileTap={{ scale: 0.97 }}
-                          onClick={() => { setQuizBancaFilter(selectedBanca && ['IAMSPE','CERMAM'].includes(selectedBanca) ? selectedBanca : null); startQuiz(false, selectedSubject, null); }}
+                          onClick={() => { setQuizBancaFilter(selectedBanca && ['IAMSPE','CERMAM','ENARE'].includes(selectedBanca) ? selectedBanca : null); startQuiz(false, selectedSubject, null); }}
                           className="group w-full relative overflow-hidden rounded-2xl py-4 flex items-center justify-between px-5"
                           style={{ background: 'linear-gradient(135deg, #2563EB 0%, #1D4ED8 100%)', boxShadow: '0 8px 32px rgba(37,99,235,0.40)' }}
                         >
