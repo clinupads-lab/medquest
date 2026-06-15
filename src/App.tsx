@@ -17520,591 +17520,6 @@ const QUESTIONS: Question[] = [
     correctIndex: 0,
   },
 
-];
-
-const RANKING = [
-  { name: 'Dr. Ricardo M.', xp: 15420, level: 42, active: true, trend: 0 },
-  { name: 'Dra. Luana S.', xp: 14800, level: 39, active: false, trend: 0 },
-  { name: 'Dr. Felipe', xp: 13240, level: 37, active: true, trend: 0 },
-  { name: 'Dr. Você', xp: 12800, level: 38, active: true, currentUser: true, streak: 14, trend: 2 },
-  { name: 'Dra. Ana S.', xp: 11950, level: 35, active: true, streak: 7, trend: -1 },
-  { name: 'Dr. Marcos B.', xp: 11200, level: 33, active: false, trend: 3 },
-  { name: 'Dra. Julia C.', xp: 10400, level: 31, active: true, streak: 5, trend: 0 },
-  { name: 'Dr. Pedro L.', xp: 9800, level: 29, active: false, streak: 2, trend: -2 }
-];
-
-type LeaguePlayer = { name: string; initials: string; xp: number; level: number; active: boolean; trend: number; currentUser?: boolean; streak?: number };
-type LeagueTier = 'bronze' | 'prata' | 'ouro' | 'platina' | 'diamante';
-const LEAGUE_XP: Record<LeagueTier, number> = { bronze: 0, prata: 1000, ouro: 5000, platina: 10000, diamante: 18000 };
-function getUserLeague(xp: number): LeagueTier {
-  if (xp >= 18000) return 'diamante';
-  if (xp >= 10000) return 'platina';
-  if (xp >= 5000)  return 'ouro';
-  if (xp >= 1000)  return 'prata';
-  return 'bronze';
-}
-const LEAGUE_CONFIG: Record<LeagueTier, { label: string; next: LeagueTier | null; trophyColor: string; gradFrom: string; gradVia: string; gradTo: string }> = {
-  bronze:   { label: 'Liga Bronze',   next: 'prata',    trophyColor: '#CD7F32', gradFrom: 'from-amber-700',  gradVia: 'via-amber-800',  gradTo: 'to-amber-950'  },
-  prata:    { label: 'Liga Prata',    next: 'ouro',     trophyColor: '#CBD5E1', gradFrom: 'from-slate-400',  gradVia: 'via-slate-600',  gradTo: 'to-slate-800'  },
-  ouro:     { label: 'Liga Ouro',     next: 'platina',  trophyColor: '#FCD34D', gradFrom: 'from-amber-500',  gradVia: 'via-blue-700',   gradTo: 'to-amber-800'  },
-  platina:  { label: 'Liga Platina',  next: 'diamante', trophyColor: '#93C5FD', gradFrom: 'from-blue-500',   gradVia: 'via-blue-700',   gradTo: 'to-blue-900'   },
-  diamante: { label: 'Liga Diamante', next: null,       trophyColor: '#67E8F9', gradFrom: 'from-cyan-500',   gradVia: 'via-blue-700',   gradTo: 'to-cyan-900'   },
-};
-const LEAGUE_DATA: Record<LeagueTier, LeaguePlayer[]> = {
-  bronze: [
-    { name: 'Dr. Eduardo M.',   initials: 'EM', xp: 920,  level: 3, active: true,  trend:  2 },
-    { name: 'Dra. Fernanda C.', initials: 'FC', xp: 850,  level: 3, active: true,  trend:  1 },
-    { name: 'Dr. Lucas B.',     initials: 'LB', xp: 780,  level: 2, active: false, trend:  0 },
-    { name: 'Dr. Você',         initials: 'DA', xp: 0,    level: 1, active: true,  trend:  0, currentUser: true },
-    { name: 'Dra. Marina L.',   initials: 'ML', xp: 620,  level: 2, active: true,  trend:  0 },
-    { name: 'Dr. Rafael S.',    initials: 'RS', xp: 540,  level: 1, active: false, trend: -1 },
-    { name: 'Dra. Clara P.',    initials: 'CP', xp: 440,  level: 1, active: true,  trend:  0 },
-    { name: 'Dr. Vítor A.',     initials: 'VA', xp: 310,  level: 1, active: false, trend: -2 },
-  ],
-  prata: [
-    { name: 'Dra. Natalia R.',  initials: 'NR', xp: 4820, level: 10, active: true,  trend:  1 },
-    { name: 'Dr. Bruno S.',     initials: 'BS', xp: 4450, level: 9,  active: true,  trend:  0 },
-    { name: 'Dra. Alice M.',    initials: 'AM', xp: 4100, level: 9,  active: false, trend: -1 },
-    { name: 'Dr. Você',         initials: 'DA', xp: 3800, level: 8,  active: true,  trend:  2, currentUser: true },
-    { name: 'Dr. Daniel F.',    initials: 'DF', xp: 3400, level: 7,  active: true,  trend:  0 },
-    { name: 'Dra. Larissa C.',  initials: 'LC', xp: 2950, level: 6,  active: false, trend: -1 },
-    { name: 'Dr. Vinicius P.',  initials: 'VP', xp: 2500, level: 6,  active: true,  trend:  1 },
-    { name: 'Dra. Priscila M.', initials: 'PM', xp: 1800, level: 4,  active: false, trend:  0 },
-  ],
-  ouro: [
-    { name: 'Dra. Camila B.',   initials: 'CB', xp: 9820,  level: 22, active: true,  trend:  2 },
-    { name: 'Dr. Thiago R.',    initials: 'TR', xp: 9100,  level: 20, active: true,  trend:  0 },
-    { name: 'Dr. Paulo M.',     initials: 'PM', xp: 8650,  level: 19, active: false, trend: -1 },
-    { name: 'Dr. Você',         initials: 'DA', xp: 8200,  level: 18, active: true,  trend:  1, currentUser: true },
-    { name: 'Dra. Rebeca L.',   initials: 'RL', xp: 7900,  level: 17, active: true,  trend:  0 },
-    { name: 'Dr. Caio S.',      initials: 'CS', xp: 7300,  level: 16, active: false, trend: -2 },
-    { name: 'Dra. Nathalia P.', initials: 'NP', xp: 6800,  level: 15, active: true,  trend:  3 },
-    { name: 'Dr. Henrique V.',  initials: 'HV', xp: 6100,  level: 13, active: false, trend:  0 },
-  ],
-  platina: [
-    { name: 'Dr. Ricardo M.',   initials: 'RM', xp: 15420, level: 42, active: true,  trend:  0 },
-    { name: 'Dra. Luana S.',    initials: 'LS', xp: 14800, level: 39, active: false, trend:  0 },
-    { name: 'Dr. Felipe C.',    initials: 'FC', xp: 13240, level: 37, active: true,  trend:  0 },
-    { name: 'Dr. Você',         initials: 'DA', xp: 12800, level: 38, active: true,  trend:  2, currentUser: true },
-    { name: 'Dra. Ana S.',      initials: 'AS', xp: 11950, level: 35, active: true,  trend: -1 },
-    { name: 'Dr. Marcos B.',    initials: 'MB', xp: 11200, level: 33, active: false, trend:  3 },
-    { name: 'Dra. Julia C.',    initials: 'JC', xp: 10400, level: 31, active: true,  trend:  0 },
-    { name: 'Dr. Pedro L.',     initials: 'PL', xp:  9800, level: 29, active: false, trend: -2 },
-  ],
-  diamante: [
-    { name: 'Dra. Isabela F.',  initials: 'IF', xp: 24800, level: 68, active: true,  trend:  1 },
-    { name: 'Dr. Gabriel M.',   initials: 'GM', xp: 23500, level: 65, active: true,  trend:  0 },
-    { name: 'Dra. Sofia K.',    initials: 'SK', xp: 21200, level: 60, active: false, trend: -1 },
-    { name: 'Dr. Leonardo R.',  initials: 'LR', xp: 20800, level: 58, active: true,  trend:  2 },
-    { name: 'Dra. Beatriz A.',  initials: 'BA', xp: 19500, level: 55, active: true,  trend:  0 },
-    { name: 'Dr. Mateus C.',    initials: 'MC', xp: 18900, level: 53, active: false, trend: -2 },
-    { name: 'Dra. Valentina S.',initials: 'VS', xp: 18200, level: 51, active: true,  trend:  1 },
-    { name: 'Dr. Rafael B.',    initials: 'RB', xp: 17600, level: 49, active: false, trend:  0 },
-  ],
-};
-
-const CHART_DATA: Record<string, Array<{name: string; value: number}>> = {
-  '7d': [
-    { name: 'Seg', value: 72 }, { name: 'Ter', value: 68 }, { name: 'Qua', value: 75 },
-    { name: 'Qui', value: 80 }, { name: 'Sex', value: 74 }, { name: 'Sáb', value: 70 }, { name: 'Dom', value: 74 }
-  ],
-  '30d': [
-    { name: 'Sem 1', value: 58 }, { name: 'Sem 2', value: 65 },
-    { name: 'Sem 3', value: 70 }, { name: 'Sem 4', value: 74 }
-  ],
-  'total': [
-    { name: 'Jan', value: 50 }, { name: 'Fev', value: 55 }, { name: 'Mar', value: 61 },
-    { name: 'Abr', value: 68 }, { name: 'Mai', value: 74 }
-  ]
-};
-
-// --- Components ---
-
-// Update SUBJECT_ICONS keys to match
-const SUBJECT_ICONS: Record<string, any> = {
-  // Básicos
-  'Anatomia': { image: 'https://cdn-icons-png.flaticon.com/512/2867/2867197.png', icon: Skull, color: 'bg-emerald-500', ringColor: '#10B981', textColor: 'text-white', shadow: 'shadow-emerald-500/40' },
-  'Fisiologia': { image: 'https://cdn-icons-png.flaticon.com/512/4964/4964056.png', icon: Heart, color: 'bg-rose-500', ringColor: '#F43F5E', textColor: 'text-white', shadow: 'shadow-rose-500/40' },
-  'Bioquímica': { image: 'https://cdn-icons-png.flaticon.com/512/4507/4507090.png', icon: FlaskConical, color: 'bg-blue-500', ringColor: '#3B82F6', textColor: 'text-white', shadow: 'shadow-blue-500/40' },
-  'Histologia': { image: 'https://cdn-icons-png.flaticon.com/512/4068/4068596.png', icon: Microscope, color: 'bg-indigo-500', ringColor: '#6366F1', textColor: 'text-white', shadow: 'shadow-indigo-500/40' },
-  'Embriologia': { image: 'https://cdn-icons-png.flaticon.com/512/9091/9091638.png', icon: Baby, color: 'bg-pink-500', ringColor: '#EC4899', textColor: 'text-white', shadow: 'shadow-pink-500/40' },
-  'Microbiologia': { image: 'https://cdn-icons-png.flaticon.com/512/8986/8986435.png', icon: Bug, color: 'bg-amber-500', ringColor: '#F59E0B', textColor: 'text-white', shadow: 'shadow-amber-500/40' },
-  'Imunologia': { image: 'https://cdn-icons-png.flaticon.com/512/15192/15192824.png', icon: Shield, color: 'bg-indigo-600', ringColor: '#4F46E5', textColor: 'text-white', shadow: 'shadow-indigo-600/40' },
-  'Farmacologia': { image: 'https://cdn-icons-png.flaticon.com/512/18383/18383210.png', icon: Pill, color: 'bg-purple-500', ringColor: '#8B5CF6', textColor: 'text-white', shadow: 'shadow-purple-500/40' },
-  'Patologia Geral': { icon: Microscope, color: 'bg-slate-500/20', ringColor: '#64748B', textColor: 'text-slate-500', shadow: 'shadow-slate-500/20' },
-  'Genética': { image: 'https://cdn-icons-png.flaticon.com/512/8986/8986421.png', icon: Dna, color: 'bg-teal-500', ringColor: '#14B8A6', textColor: 'text-white', shadow: 'shadow-teal-500/40' },
-
-  // Clínicos e Especialidades - Duolingo Aesthetics
-  'Cardiologia Clínica': { image: '/6176500.png', icon: Heart, color: 'bg-rose-500', ringColor: '#F43F5E', textColor: 'text-white', shadow: 'shadow-rose-500/40' },
-  'Cardiologia': { image: '/6176500.png', icon: Heart, color: 'bg-rose-500', ringColor: '#F43F5E', textColor: 'text-white', shadow: 'shadow-rose-500/40' },
-  'Neurologia': { image: '/11666655.png', icon: Brain, color: 'bg-indigo-500', ringColor: '#6366F1', textColor: 'text-white', shadow: 'shadow-indigo-500/40' },
-  'Pediatria': { image: '/10154448.png', icon: Baby, color: 'bg-emerald-500', ringColor: '#10B981', textColor: 'text-white', shadow: 'shadow-emerald-500/40' },
-  'Ginecologia & Obstetrícia': { image: '/2885280.png', icon: Baby, color: 'bg-pink-500', ringColor: '#EC4899', textColor: 'text-white', shadow: 'shadow-pink-500/40' },
-  'Cirurgia Geral': { image: '/10154417.png', icon: Scissors, color: 'bg-orange-500', ringColor: '#F59E0B', textColor: 'text-white', shadow: 'shadow-orange-500/40' },
-  'Clínica Cirúrgica': { image: '/10154417.png', icon: Scissors, color: 'bg-orange-500', ringColor: '#F59E0B', textColor: 'text-white', shadow: 'shadow-orange-500/40' },
-  'Clínica Médica': { image: '/3028573.png', icon: Heart, color: 'bg-rose-500', ringColor: '#F43F5E', textColor: 'text-white', shadow: 'shadow-rose-500/40' },
-  'Medicina de Família/SUS': { image: '/12370055.png', icon: Users, color: 'bg-cyan-500', ringColor: '#06B6D4', textColor: 'text-white', shadow: 'shadow-cyan-500/40' },
-  'Psiquiatria': { image: '/12024688.png', icon: Brain, color: 'bg-purple-500', ringColor: '#8B5CF6', textColor: 'text-white', shadow: 'shadow-purple-500/40' },
-  'Dermatologia': { image: '/10154433.png', icon: Droplet, color: 'bg-amber-400', ringColor: '#F59E0B', textColor: 'text-white', shadow: 'shadow-amber-500/40' },
-  'Oftalmologia': { image: '/2007207.png', icon: Eye, color: 'bg-teal-500', ringColor: '#14B8A6', textColor: 'text-white', shadow: 'shadow-teal-500/40' },
-  'Otorrinolaringologia': { image: '/9340044.png', icon: Ear, color: 'bg-violet-500', ringColor: '#8B5CF6', textColor: 'text-white', shadow: 'shadow-violet-500/40' },
-  'Pneumologia': { image: '/10154419.png', icon: Wind, color: 'bg-sky-500', ringColor: '#0EA5E9', textColor: 'text-white', shadow: 'shadow-sky-500/40' },
-  'Gastroenterologia': { image: '/6490965.png', icon: Activity, color: 'bg-green-600', ringColor: '#16A34A', textColor: 'text-white', shadow: 'shadow-green-500/40' },
-  'Endocrinologia': { image: '/15192810.png', icon: Pill, color: 'bg-yellow-500', ringColor: '#EAB308', textColor: 'text-white', shadow: 'shadow-yellow-500/40' },
-  'Nefrologia': { image: '/12024712.png', icon: Stethoscope, color: 'bg-blue-600', ringColor: '#2563EB', textColor: 'text-white', shadow: 'shadow-blue-500/40' },
-  'Reumatologia': { image: '/12024718.png', icon: Bone, color: 'bg-slate-500', ringColor: '#64748B', textColor: 'text-white', shadow: 'shadow-slate-500/40' },
-  'Hematologia': { image: '/6176756.png', icon: Droplet, color: 'bg-red-700', ringColor: '#B91C1C', textColor: 'text-white', shadow: 'shadow-red-500/40' },
-  'Infectologia': { image: '/10154483.png', icon: Bug, color: 'bg-lime-600', ringColor: '#65A30D', textColor: 'text-white', shadow: 'shadow-lime-500/40' },
-  'Urgência e Emergência': { image: 'https://cdn-icons-png.flaticon.com/512/3914/3914688.png', icon: AlertTriangle, color: 'bg-red-600', ringColor: '#DC2626', textColor: 'text-white', shadow: 'shadow-red-600/40' },
-  'Medicina Intensiva': { image: 'https://cdn-icons-png.flaticon.com/512/978/978957.png', icon: Activity, color: 'bg-slate-700', ringColor: '#334155', textColor: 'text-white', shadow: 'shadow-slate-700/40' },
-  'Ortopedia': { image: '/ORTOP.png', icon: Bone, color: 'bg-stone-500', ringColor: '#78716C', textColor: 'text-white', shadow: 'shadow-stone-500/40' },
-  'Neonatologia': { image: 'https://cdn-icons-png.flaticon.com/512/14365/14365115.png', icon: Baby, color: 'bg-sky-400', ringColor: '#38BDF8', textColor: 'text-white', shadow: 'shadow-sky-400/40' },
-  'Anestesiologia': { image: 'https://cdn-icons-png.flaticon.com/512/5793/5793712.png', icon: Thermometer, color: 'bg-gray-500', ringColor: '#6B7280', textColor: 'text-white', shadow: 'shadow-gray-500/40' },
-  'Traumatologia-Ortopedia': { image: 'https://cdn-icons-png.flaticon.com/512/11071/11071552.png', icon: Bone, color: 'bg-amber-700', ringColor: '#B45309', textColor: 'text-white', shadow: 'shadow-amber-700/40' },
-  'Patologia': { image: 'https://cdn-icons-png.flaticon.com/512/9340/9340149.png', icon: Microscope, color: 'bg-slate-600', ringColor: '#475569', textColor: 'text-white', shadow: 'shadow-slate-600/40' },
-  'Parasitologia': { image: 'https://cdn-icons-png.flaticon.com/512/8099/8099004.png', icon: Bug, color: 'bg-green-700', ringColor: '#15803D', textColor: 'text-white', shadow: 'shadow-green-700/40' },
-  'Semiologia': { image: 'https://cdn-icons-png.flaticon.com/512/2666/2666112.png', icon: Stethoscope, color: 'bg-cyan-500', ringColor: '#06B6D4', textColor: 'text-white', shadow: 'shadow-cyan-500/40' },
-  'Epidemiologia': { image: 'https://cdn-icons-png.flaticon.com/512/1753/1753380.png', icon: BarChart2, color: 'bg-blue-500', ringColor: '#3B82F6', textColor: 'text-white', shadow: 'shadow-blue-500/40' },
-  'Urologia': { image: 'https://cdn-icons-png.flaticon.com/512/4006/4006204.png', icon: Droplets, color: 'bg-yellow-600', ringColor: '#CA8A04', textColor: 'text-white', shadow: 'shadow-yellow-600/40' },
-  'Geriatria': { image: 'https://cdn-icons-png.flaticon.com/512/978/978915.png', icon: Users, color: 'bg-orange-500', ringColor: '#F97316', textColor: 'text-white', shadow: 'shadow-orange-500/40' },
-  'Radiologia': { image: '/RADIOLOIA.png', icon: Search, color: 'bg-gray-600', ringColor: '#4B5563', textColor: 'text-white', shadow: 'shadow-gray-600/40' },
-  'Cirurgia Vascular': { image: 'https://cdn-icons-png.flaticon.com/512/8670/8670744.png', icon: Activity, color: 'bg-red-800', ringColor: '#991B1B', textColor: 'text-white', shadow: 'shadow-red-800/40' },
-  'Neurocirurgia': { image: 'https://cdn-icons-png.flaticon.com/512/9710/9710955.png', icon: Brain, color: 'bg-violet-700', ringColor: '#6D28D9', textColor: 'text-white', shadow: 'shadow-violet-700/40' }
-};
-
-// ── MEDQUEST LOGO COMPONENT ──────────────────────────────────────────
-function MedQuestLogoIcon({ size = 40 }: { size?: number }) {
-  return (
-    <svg width={size} height={size} viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-      <defs>
-        <linearGradient id="mq-bg" x1="0%" y1="0%" x2="100%" y2="100%">
-          <stop offset="0%" stopColor="#040B1A"/>
-          <stop offset="100%" stopColor="#0E1D4A"/>
-        </linearGradient>
-        <radialGradient id="mq-ambient" cx="50%" cy="42%" r="56%">
-          <stop offset="0%" stopColor="#2563EB" stopOpacity="0.38"/>
-          <stop offset="100%" stopColor="#2563EB" stopOpacity="0"/>
-        </radialGradient>
-        <linearGradient id="mq-qmark" x1="20%" y1="0%" x2="80%" y2="100%">
-          <stop offset="0%" stopColor="#FFFFFF"/>
-          <stop offset="100%" stopColor="#7DD3FC"/>
-        </linearGradient>
-        <radialGradient id="mq-dot" cx="35%" cy="30%" r="70%">
-          <stop offset="0%" stopColor="#60A5FA"/>
-          <stop offset="100%" stopColor="#1D4ED8"/>
-        </radialGradient>
-        <filter id="mq-qglow" x="-55%" y="-55%" width="210%" height="210%">
-          <feGaussianBlur stdDeviation="3" result="b"/>
-          <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
-        </filter>
-        <filter id="mq-dotglow" x="-90%" y="-90%" width="280%" height="280%">
-          <feGaussianBlur stdDeviation="4.5" result="b"/>
-          <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
-        </filter>
-      </defs>
-
-      {/* Background */}
-      <rect width="100" height="100" rx="22" fill="url(#mq-bg)"/>
-      <rect width="100" height="100" rx="22" fill="url(#mq-ambient)"/>
-      <rect x="1" y="1" width="98" height="98" rx="21.5"
-            fill="none" stroke="rgba(255,255,255,0.10)" strokeWidth="1.5"/>
-
-      {/* ECG line — subtle medical accent */}
-      <path d="M 6,76 L 18,76 L 21,66 L 24,86 L 27,58 L 30,93 L 34,76 L 66,76 L 69,66 L 72,86 L 75,58 L 78,93 L 82,76 L 94,76"
-            fill="none" stroke="#3B82F6" strokeWidth="1.3"
-            strokeLinecap="round" strokeLinejoin="round" opacity="0.13"/>
-
-      {/* ? soft glow */}
-      <path d="M 36,52 C 36,22 64,22 64,43 C 64,59 51,65 50,70"
-            fill="none" stroke="#3B82F6" strokeWidth="15"
-            strokeLinecap="round" strokeLinejoin="round" opacity="0.28"/>
-
-      {/* ? main stroke */}
-      <path d="M 36,52 C 36,22 64,22 64,43 C 64,59 51,65 50,70"
-            fill="none" stroke="url(#mq-qmark)" strokeWidth="7.5"
-            strokeLinecap="round" strokeLinejoin="round"
-            filter="url(#mq-qglow)"/>
-
-      {/* Dot outer glow */}
-      <circle cx="50" cy="84" r="12" fill="#2563EB" opacity="0.22" filter="url(#mq-dotglow)"/>
-      {/* Dot body */}
-      <circle cx="50" cy="84" r="7" fill="url(#mq-dot)" filter="url(#mq-qglow)"/>
-      <circle cx="50" cy="84" r="7" fill="none" stroke="rgba(255,255,255,0.22)" strokeWidth="1"/>
-      {/* Medical cross */}
-      <line x1="50" y1="79.8" x2="50" y2="88.2" stroke="white" strokeWidth="2.2" strokeLinecap="round"/>
-      <line x1="45.8" y1="84" x2="54.2" y2="84" stroke="white" strokeWidth="2.2" strokeLinecap="round"/>
-      {/* Shine */}
-      <circle cx="47.5" cy="81.5" r="1.4" fill="white" opacity="0.5"/>
-    </svg>
-  );
-}
-
-function MedQuestLogo({ collapsed = false }: { collapsed?: boolean }) {
-  return (
-    <div style={{ display: 'flex', alignItems: 'center', gap: collapsed ? 0 : 10 }}>
-      <MedQuestLogoIcon size={38} />
-      {!collapsed && (
-        <div style={{ lineHeight: 1, userSelect: 'none' }}>
-          <span style={{
-            fontFamily: 'system-ui, -apple-system, sans-serif',
-            fontWeight: 300,
-            fontSize: 18,
-            letterSpacing: '-0.03em',
-            color: '#1E293B',
-          }}>Med</span>
-          <span style={{
-            fontFamily: 'system-ui, -apple-system, sans-serif',
-            fontWeight: 900,
-            fontSize: 18,
-            letterSpacing: '-0.04em',
-            color: '#2563EB',
-          }}>Quest</span>
-        </div>
-      )}
-    </div>
-  );
-}
-// ─────────────────────────────────────────────────────────────────────
-
-interface GamePathNodeProps {
-  subject: string;
-  progress: number;
-  index: number;
-  isSelected: boolean;
-  onClick: () => void;
-  questionCount?: number;
-  key?: string | number;
-}
-
-const GamePathNode = ({
-  subject,
-  progress,
-  index,
-  isSelected,
-  onClick,
-  questionCount = 0,
-}: GamePathNodeProps) => {
-  const iconData = SUBJECT_ICONS[subject] || { icon: BookOpen, color: 'bg-slate-400', ringColor: '#CBD5E1' };
-  const Icon = iconData.icon;
-
-  return (
-    <motion.div 
-      initial={{ opacity: 0, scale: 0.9 }}
-      whileInView={{ opacity: 1, scale: 1 }}
-      viewport={{ once: true }}
-      transition={{ delay: index * 0.05, duration: 0.4 }}
-      className="flex flex-col items-center gap-3 relative py-4 group cursor-pointer"
-      onClick={onClick}
-    >
-      <div className="relative">
-        {/* Progress outer ring - Duolingo Style */}
-        <div className={`relative w-24 h-24 rounded-full flex items-center justify-center p-2 transition-all duration-300 ${
-          isSelected ? 'bg-slate-200 shadow-lg' : 'bg-slate-100 hover:bg-slate-200'
-        }`}>
-          {/* Progress Circular Stroke */}
-          <svg className="absolute inset-0 w-full h-full -rotate-90 z-10">
-            <circle
-              cx="48"
-              cy="48"
-              r="44"
-              fill="transparent"
-              stroke="#E2E8F0"
-              strokeWidth="8"
-            />
-            <motion.circle
-              cx="48"
-              cy="48"
-              r="44"
-              fill="transparent"
-              stroke={iconData.ringColor || "#10B981"}
-              strokeWidth="8"
-              strokeDasharray="276.46"
-              initial={{ strokeDashoffset: 276.46 }}
-              animate={{ strokeDashoffset: 276.46 - (276.46 * progress) / 100 }}
-              transition={{ duration: 1.5, ease: "easeOut" }}
-              strokeLinecap="round"
-            />
-          </svg>
-
-          {/* Icon Bubble */}
-          <div className={`relative z-20 w-16 h-16 rounded-full flex items-center justify-center transition-all duration-300 overflow-hidden ${
-            isSelected 
-              ? `scale-110 shadow-lg border-b-4 border-black/10` 
-              : `hover:scale-105 border-b-4 border-black/20`
-          } ${iconData.color || 'bg-brand-primary'}`}>
-             {iconData.image ? (
-               <img 
-                 src={iconData.image} 
-                 alt={subject} 
-                 className={`w-12 h-12 object-contain aspect-square ${subject === 'Anatomia' ? '-translate-y-1' : ''}`} 
-                 referrerPolicy="no-referrer"
-               />
-             ) : (
-               <Icon size={26} className="text-white" strokeWidth={3} />
-             )}
-          </div>
-
-          {/* Level Crown Badge - Duolingo Style */}
-          {(() => {
-            const lv = Math.floor(progress / 20); // 0–5 conforme mastery
-            const badgeBg  = lv === 0 ? '#94A3B8' : lv < 3 ? '#F59E0B' : lv < 5 ? '#3B82F6' : '#8B5CF6';
-            const badgePip = lv === 0 ? '#64748B' : lv < 3 ? '#D97706' : lv < 5 ? '#2563EB' : '#7C3AED';
-            return (
-              <div
-                className="absolute bottom-0 right-0 z-30 w-8 h-8 rounded-xl flex items-center justify-center shadow-lg border-2 border-white transform rotate-12 group-hover:rotate-0 transition-transform"
-                style={{ background: badgeBg }}
-              >
-                <Trophy size={14} className="text-white" fill="currentColor" />
-                <span
-                  className="absolute -top-3 -right-1 text-white text-[8px] font-black px-1.5 rounded-full border border-white"
-                  style={{ background: badgePip }}
-                >
-                  LV.{lv}
-                </span>
-              </div>
-            );
-          })()}
-        </div>
-      </div>
-      
-      {/* Label - Below the icon */}
-      <div className="text-center flex flex-col items-center gap-1">
-        <h4 className={`text-[10px] sm:text-[11px] font-black uppercase tracking-tight leading-tight max-w-[110px] break-words ${
-          isSelected ? 'text-slate-900 scale-105' : 'text-slate-500'
-        } transition-all`}>
-          {subject}
-        </h4>
-        {questionCount > 0 ? (
-          <span className="text-[9px] font-black px-2 py-0.5 rounded-full bg-brand-primary/10 text-brand-primary border border-brand-primary/20">
-            {questionCount} {questionCount === 1 ? 'questão' : 'questões'}
-          </span>
-        ) : (
-          <span className="text-[9px] font-bold px-2 py-0.5 rounded-full bg-slate-100 text-slate-400 border border-slate-200">
-            em breve
-          </span>
-        )}
-      </div>
-    </motion.div>
-  );
-};
-
-const MascotHeart = ({ mood = 'happy', size = 110 }: { mood?: 'happy' | 'sad' | 'excited'; size?: number }) => {
-  const [isBlinking, setIsBlinking] = useState(false);
-  useEffect(() => {
-    let t: ReturnType<typeof setTimeout>;
-    const schedule = () => {
-      t = setTimeout(() => {
-        setIsBlinking(true);
-        setTimeout(() => setIsBlinking(false), 130);
-        schedule();
-      }, 2400 + Math.floor(Math.random() * 2600));
-    };
-    schedule();
-    return () => clearTimeout(t);
-  }, []);
-
-  return (
-    <motion.div
-      style={{ width: size, height: size * 1.22, flexShrink: 0 }}
-      animate={{ y: [0, -5, 0] }}
-      transition={{ duration: 3, repeat: Infinity, ease: 'easeInOut' }}
-    >
-      <svg viewBox="0 0 200 244" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ width: '100%', height: '100%' }}>
-
-        {/* ── SHADOW ── */}
-        <ellipse cx="100" cy="238" rx="46" ry="6" fill="rgba(0,0,0,0.13)" />
-
-        {/* ── SHOES ── */}
-        <ellipse cx="80"  cy="226" rx="29" ry="14" fill="#C4782A" />
-        <ellipse cx="120" cy="226" rx="29" ry="14" fill="#C4782A" />
-        <ellipse cx="71"  cy="220" rx="12" ry="5" fill="rgba(255,255,255,0.28)" transform="rotate(-8 71 220)" />
-        <ellipse cx="111" cy="220" rx="12" ry="5" fill="rgba(255,255,255,0.28)" transform="rotate(-8 111 220)" />
-        {/* Shoe outline */}
-        <ellipse cx="80"  cy="226" rx="29" ry="14" fill="none" stroke="#A05E1A" strokeWidth="1.5" opacity="0.5" />
-        <ellipse cx="120" cy="226" rx="29" ry="14" fill="none" stroke="#A05E1A" strokeWidth="1.5" opacity="0.5" />
-
-        {/* ── LEGS ── */}
-        <rect x="68"  y="184" width="24" height="46" rx="12" fill="#6290B8" />
-        <rect x="108" y="184" width="24" height="46" rx="12" fill="#6290B8" />
-        <rect x="68"  y="184" width="24" height="46" rx="12" fill="none" stroke="#3A5A7A" strokeWidth="1.5" opacity="0.35" />
-        <rect x="108" y="184" width="24" height="46" rx="12" fill="none" stroke="#3A5A7A" strokeWidth="1.5" opacity="0.35" />
-
-        {/* ── LEFT COAT PANEL (behind heart) ── */}
-        <path d="M 40,82 C 32,96 6,118 2,140 L 2,208 C 2,210 4,212 6,212 L 46,212 C 44,194 42,168 40,138 C 39,116 39,98 40,82 Z"
-          fill="white" stroke="#4A6886" strokeWidth="2.5" strokeLinejoin="round" />
-        {/* Left coat fold / inner shadow */}
-        <path d="M 40,82 C 34,96 10,118 4,140 L 4,168 L 22,156 C 28,138 34,116 40,98 Z"
-          fill="#CCDFF0" opacity="0.9" />
-        {/* Left lapel crease line */}
-        <path d="M 40,82 C 40,100 40,122 42,144"
-          stroke="#4A6886" strokeWidth="1.5" fill="none" strokeLinecap="round" opacity="0.6" />
-
-        {/* ── RIGHT COAT PANEL (behind heart, mirror) ── */}
-        <path d="M 160,82 C 168,96 194,118 198,140 L 198,208 C 198,210 196,212 194,212 L 154,212 C 156,194 158,168 160,138 C 161,116 161,98 160,82 Z"
-          fill="white" stroke="#4A6886" strokeWidth="2.5" strokeLinejoin="round" />
-        {/* Right coat fold */}
-        <path d="M 160,82 C 166,96 190,118 196,140 L 196,168 L 178,156 C 172,138 166,116 160,98 Z"
-          fill="#CCDFF0" opacity="0.9" />
-        {/* Right lapel crease */}
-        <path d="M 160,82 C 160,100 160,122 158,144"
-          stroke="#4A6886" strokeWidth="1.5" fill="none" strokeLinecap="round" opacity="0.6" />
-
-        {/* ── LEFT ARM — junto ao corpo, pendurado verticalmente ── */}
-        <path d="M 22,138 Q 16,156 18,174 Q 20,186 30,186 Q 38,186 38,174 Q 38,158 32,140 Z"
-          fill="#6290B8" stroke="#3A5A7A" strokeWidth="1.5" strokeLinejoin="round" />
-        <ellipse cx="28" cy="188" rx="11" ry="8" fill="#6290B8" stroke="#3A5A7A" strokeWidth="1.5" transform="rotate(-8 28 188)" />
-        <path d="M 20,182 Q 18,175 23,173" stroke="#3A5A7A" strokeWidth="1.2" fill="none" strokeLinecap="round" />
-        <path d="M 25,185 Q 23,178 28,176" stroke="#3A5A7A" strokeWidth="1.2" fill="none" strokeLinecap="round" />
-        <path d="M 31,185 Q 29,178 34,176" stroke="#3A5A7A" strokeWidth="1.2" fill="none" strokeLinecap="round" />
-
-        {/* ── RIGHT ARM — mirror ── */}
-        <path d="M 178,138 Q 184,156 182,174 Q 180,186 170,186 Q 162,186 162,174 Q 162,158 168,140 Z"
-          fill="#6290B8" stroke="#3A5A7A" strokeWidth="1.5" strokeLinejoin="round" />
-        <ellipse cx="172" cy="188" rx="11" ry="8" fill="#6290B8" stroke="#3A5A7A" strokeWidth="1.5" transform="rotate(8 172 188)" />
-        <path d="M 180,182 Q 182,175 177,173" stroke="#3A5A7A" strokeWidth="1.2" fill="none" strokeLinecap="round" />
-        <path d="M 175,185 Q 177,178 172,176" stroke="#3A5A7A" strokeWidth="1.2" fill="none" strokeLinecap="round" />
-        <path d="M 169,185 Q 171,178 166,176" stroke="#3A5A7A" strokeWidth="1.2" fill="none" strokeLinecap="round" />
-
-        {/* ── STETHOSCOPE — tubo curto do pescoço ao peito ── */}
-        <line x1="60" y1="94" x2="56" y2="83" stroke="#1C2E45" strokeWidth="2.8" strokeLinecap="round" />
-        <line x1="60" y1="94" x2="50" y2="88" stroke="#1C2E45" strokeWidth="2.8" strokeLinecap="round" />
-
-        {/* ── HEART BODY ── */}
-        <path d="M 100,36 C 100,26 91,14 78,14 C 54,14 38,38 38,64 C 38,100 100,192 100,192 C 100,192 162,100 162,64 C 162,38 146,14 122,14 C 109,14 100,26 100,36 Z"
-          fill="#6290B8" />
-        <path d="M 100,36 C 100,26 91,14 78,14 C 54,14 38,38 38,64 C 38,100 100,192 100,192 C 100,192 162,100 162,64 C 162,38 146,14 122,14 C 109,14 100,26 100,36 Z"
-          fill="none" stroke="#3A5A7A" strokeWidth="2.5" />
-
-        {/* Heart glossy highlight (3 layers) */}
-        <ellipse cx="72" cy="44" rx="24" ry="15" fill="rgba(255,255,255,0.22)" transform="rotate(-25 72 44)" />
-        <ellipse cx="68" cy="40" rx="11" ry="6.5" fill="rgba(255,255,255,0.38)" transform="rotate(-25 68 40)" />
-        <circle  cx="60" cy="29" r="5" fill="rgba(255,255,255,0.50)" />
-
-        {/* ── STETHOSCOPE on chest (loop visible over heart) ── */}
-        <path d="M 60,94 Q 52,110 56,126 Q 60,142 74,146 Q 90,150 96,136 Q 100,124 90,118"
-          stroke="#1C2E45" strokeWidth="3.5" fill="none" strokeLinecap="round" />
-        <circle cx="91" cy="116" r="7.5" fill="#1C2E45" />
-        <circle cx="91" cy="116" r="4.5" fill="#7AAAD4" />
-
-        {/* ── EYES ── */}
-        <circle cx="80"  cy="78" r="23" fill="white" stroke="#3A5070" strokeWidth="1.8" />
-        <circle cx="120" cy="78" r="23" fill="white" stroke="#3A5070" strokeWidth="1.8" />
-        <circle cx="82"  cy="80" r="14.5" fill="#4478A8" />
-        <circle cx="122" cy="80" r="14.5" fill="#4478A8" />
-        <circle cx="83"  cy="81" r="9"  fill="#192A3E" />
-        <circle cx="123" cy="81" r="9"  fill="#192A3E" />
-        {/* Shine */}
-        <circle cx="89"  cy="74" r="5.5" fill="white" />
-        <circle cx="129" cy="74" r="5.5" fill="white" />
-        <circle cx="77"  cy="87" r="2.8" fill="rgba(255,255,255,0.55)" />
-        <circle cx="117" cy="87" r="2.8" fill="rgba(255,255,255,0.55)" />
-
-        {/* ── EYEBROWS ── */}
-        <path d={mood === 'sad' ? "M 62,57 Q 76,53 90,57" : "M 63,54 Q 76,46 90,50"}
-          stroke="#1C2E45" strokeWidth="3.2" fill="none" strokeLinecap="round" />
-        <path d={mood === 'sad' ? "M 110,57 Q 124,53 138,57" : "M 110,50 Q 124,46 137,54"}
-          stroke="#1C2E45" strokeWidth="3.2" fill="none" strokeLinecap="round" />
-
-        {/* ── MOUTH ── */}
-        {mood === 'sad' ? (
-          <path d="M 85,117 Q 100,107 115,117" stroke="#1C2E45" strokeWidth="3" fill="none" strokeLinecap="round" />
-        ) : (
-          <>
-            <path d="M 85,115 Q 100,131 115,115" stroke="#1C2E45" strokeWidth="3" fill="none" strokeLinecap="round" />
-            <path d="M 87,117 Q 100,131 113,117 L 111,121 Q 100,133 89,121 Z" fill="#D46060" />
-            <path d="M 91,119 Q 100,124 109,119 Q 107,117 100,117 Q 93,117 91,119 Z" fill="white" />
-          </>
-        )}
-
-        {/* ── MEDICAL CROSS ── */}
-        <rect x="93" y="152" width="14" height="5"  rx="2.5" fill="#3A5A7A" opacity="0.82" />
-        <rect x="97" y="148" width="6"  height="13" rx="3"   fill="#3A5A7A" opacity="0.82" />
-
-        {/* ── SPARKLES ── */}
-        <path d="M 120,143 L 121.5,139 L 123,143 L 127,144.5 L 123,146 L 121.5,150 L 120,146 L 116,144.5 Z" fill="rgba(255,255,255,0.92)" />
-        <path d="M  74,158 L  75,155.5 L  76,158 L 78.5,159 L  76,160 L  75,162.5 L  74,160 L 71.5,159 Z" fill="rgba(255,255,255,0.72)" />
-        <path d="M 128,162 L 129,160 L 130,162 L 132,163 L 130,164 L 129,166 L 128,164 L 126,163 Z" fill="rgba(255,255,255,0.62)" />
-
-        {/* ── BLINK ── */}
-        {isBlinking && (
-          <g>
-            <ellipse cx="80"  cy="78" rx="24" ry="10" fill="#6290B8" />
-            <ellipse cx="120" cy="78" rx="24" ry="10" fill="#6290B8" />
-          </g>
-        )}
-      </svg>
-    </motion.div>
-  );
-};
-
-const BANCAS = [
-  { id: 'enare',       short: 'ENARE',          name: 'Exame Nacional de Residência Médica',               uf: 'BR' },
-  { id: 'usp',         short: 'USP',             name: 'Universidade de São Paulo',                        uf: 'SP' },
-  { id: 'unifesp',     short: 'UNIFESP',         name: 'Universidade Federal de São Paulo',                uf: 'SP' },
-  { id: 'einstein',    short: 'Einstein',        name: 'Hospital Israelita Albert Einstein',               uf: 'SP' },
-  { id: 'hcor',        short: 'HCor',            name: 'Hospital do Coração',                              uf: 'SP' },
-  { id: 'siriolib',    short: 'Sírio-Libanês',   name: 'Hospital Sírio-Libanês',                          uf: 'SP' },
-  { id: 'sussp',       short: 'SUS-SP',          name: 'Secretaria Estadual de Saúde de São Paulo',       uf: 'SP' },
-  { id: 'santacasa',   short: 'Santa Casa SP',   name: 'Santa Casa de Misericórdia de São Paulo',         uf: 'SP' },
-  { id: 'unicamp',     short: 'UNICAMP',         name: 'Universidade Estadual de Campinas',                uf: 'SP' },
-  { id: 'unesp',       short: 'UNESP',           name: 'Universidade Estadual Paulista',                   uf: 'SP' },
-  { id: 'hcfmusp',     short: 'HC-FMUSP',        name: 'Hospital das Clínicas da FMUSP',                  uf: 'SP' },
-  { id: 'barretos',    short: 'Barretos',        name: 'Hospital de Câncer de Barretos',                  uf: 'SP' },
-  { id: 'claretiano',  short: 'Claretiano',      name: 'Centro Universitário de Rio Claro',               uf: 'SP' },
-  { id: 'ufrj',        short: 'UFRJ',            name: 'Universidade Federal do Rio de Janeiro',          uf: 'RJ' },
-  { id: 'uerj',        short: 'UERJ',            name: 'Universidade Estadual do Rio de Janeiro',         uf: 'RJ' },
-  { id: 'inca',        short: 'INCA',            name: 'Instituto Nacional do Câncer',                    uf: 'RJ' },
-  { id: 'afamci',      short: 'AFAMCI',          name: 'Hospital dos Plantadores de Cana',                uf: 'RJ' },
-  { id: 'chn',         short: 'CHN',             name: 'Complexo Hospitalar de Niterói',                  uf: 'RJ' },
-  { id: 'ufrgs',       short: 'UFRGS',           name: 'Universidade Federal do Rio Grande do Sul',       uf: 'RS' },
-  { id: 'amrigs',      short: 'AMRIGS',          name: 'Associação Médica do Rio Grande do Sul',          uf: 'RS' },
-  { id: 'hcpa',        short: 'HCPA',            name: 'Hospital de Clínicas de Porto Alegre',            uf: 'RS' },
-  { id: 'moinhos',     short: 'Moinhos',         name: 'Hospital Moinhos de Vento',                       uf: 'RS' },
-  { id: 'ufpr',        short: 'UFPR',            name: 'Universidade Federal do Paraná',                  uf: 'PR' },
-  { id: 'amp',         short: 'AMP',             name: 'Associação Médica do Paraná',                     uf: 'PR' },
-  { id: 'ams',         short: 'AMS',             name: 'Autarquia Municipal de Saúde de Apucarana',       uf: 'PR' },
-  { id: 'ufmg',        short: 'UFMG',            name: 'Universidade Federal de Minas Gerais',            uf: 'MG' },
-  { id: 'hcufmg',      short: 'HC-UFMG',         name: 'Hospital das Clínicas da UFMG',                  uf: 'MG' },
-  { id: 'ufsc',        short: 'UFSC',            name: 'Universidade Federal de Santa Catarina',          uf: 'SC' },
-  { id: 'ufba',        short: 'UFBA',            name: 'Universidade Federal da Bahia',                   uf: 'BA' },
-  { id: 'saorafael',   short: 'São Rafael',      name: 'Hospital São Rafael',                             uf: 'BA' },
-  { id: 'ufc',         short: 'UFC',             name: 'Universidade Federal do Ceará',                   uf: 'CE' },
-  { id: 'ufpe',        short: 'UFPE',            name: 'Universidade Federal de Pernambuco',              uf: 'PE' },
-  { id: 'ufpb',        short: 'UFPB',            name: 'Universidade Federal da Paraíba',                 uf: 'PB' },
-  { id: 'unb',         short: 'UnB',             name: 'Universidade de Brasília',                        uf: 'DF' },
-  { id: 'ufg',         short: 'UFG',             name: 'Universidade Federal de Goiás',                   uf: 'GO' },
-  { id: 'ufms',        short: 'UFMS',            name: 'Universidade Federal de Mato Grosso do Sul',      uf: 'MS' },
-  { id: 'cerem',       short: 'CEREM-MS',        name: 'Comissão Estadual de Residência Médica do MS',   uf: 'MS' },
-  { id: 'cermam',      short: 'CERMAM',          name: 'Comissão Estadual de Residência Médica do AM',   uf: 'AM' },
-  { id: 'ufam',        short: 'UFAM',            name: 'Universidade Federal do Amazonas',               uf: 'AM' },
-  { id: 'ufpa',        short: 'UFPA',            name: 'Universidade Federal do Pará',                    uf: 'PA' },
-  { id: 'cesupa',      short: 'CESUPA',          name: 'Centro Universitário do Estado do Pará',          uf: 'PA' },
-  { id: 'ufmt',        short: 'UFMT',            name: 'Universidade Federal do Mato Grosso',             uf: 'MT' },
-];
-
-const BANCAS_PER_PAGE = 6;
-
-const MEDICAL_AVATARS = [
-  { id: 'stethoscope', emoji: '🩺', label: 'Clínica Geral',    bg: '#EFF6FF', ring: '#3B82F6' },
-  { id: 'heart',       emoji: '🫀', label: 'Cardiologia',      bg: '#FEE2E2', ring: '#DC2626' },
-  { id: 'brain',       emoji: '🧠', label: 'Neurologia',       bg: '#EDE9FE', ring: '#7C3AED' },
-  { id: 'lungs',       emoji: '🫁', label: 'Pneumologia',      bg: '#DBEAFE', ring: '#2563EB' },
-  { id: 'bone',        emoji: '🦴', label: 'Ortopedia',        bg: '#FEF3C7', ring: '#D97706' },
-  { id: 'eye',         emoji: '👁️', label: 'Oftalmologia',    bg: '#DCFCE7', ring: '#16A34A' },
-  { id: 'baby',        emoji: '👶', label: 'Pediatria',        bg: '#FDF4FF', ring: '#A855F7' },
-  { id: 'pill',        emoji: '💊', label: 'Farmacologia',     bg: '#ECFDF5', ring: '#059669' },
-  { id: 'scope',       emoji: '🔬', label: 'Patologia',        bg: '#FFF7ED', ring: '#EA580C' },
-  { id: 'xray',        emoji: '🩻', label: 'Radiologia',       bg: '#F0F9FF', ring: '#0369A1' },
-  { id: 'syringe',     emoji: '💉', label: 'Anestesiologia',   bg: '#FFF1F2', ring: '#E11D48' },
-  { id: 'dna',         emoji: '🧬', label: 'Genética',         bg: '#F0FDF4', ring: '#22C55E' },
-  { id: 'tooth',       emoji: '🦷', label: 'Odontologia',      bg: '#F0F9FF', ring: '#0284C7' },
-  { id: 'flask',       emoji: '🧪', label: 'Pesquisa Clínica', bg: '#FDF2F8', ring: '#EC4899' },
-  { id: 'hospital',    emoji: '🏥', label: 'Saúde Pública',    bg: '#ECFDF5', ring: '#10B981' },
-  { id: 'scalpel',     emoji: '🩹', label: 'Cirurgia Geral',   bg: '#F8FAFC', ring: '#475569' },
-  { id: 'kidneys',     emoji: '🫘', label: 'Nefrologia',       bg: '#FFF7ED', ring: '#C2410C' },
-  { id: 'stomach',     emoji: '🫃', label: 'Gastroenterologia',bg: '#FEF9C3', ring: '#CA8A04' },
-  { id: 'skin',        emoji: '🌡️', label: 'Infectologia',    bg: '#FFF1F2', ring: '#BE123C' },
-  { id: 'psychiatry',  emoji: '🧘', label: 'Psiquiatria',      bg: '#FAF5FF', ring: '#9333EA' },
 
 
   // -- IAMSPE 02/2024 --
@@ -20110,7 +19525,591 @@ const MEDICAL_AVATARS = [
     correctIndex: 3,
     explanation: '',
   },
+];
 
+const RANKING = [
+  { name: 'Dr. Ricardo M.', xp: 15420, level: 42, active: true, trend: 0 },
+  { name: 'Dra. Luana S.', xp: 14800, level: 39, active: false, trend: 0 },
+  { name: 'Dr. Felipe', xp: 13240, level: 37, active: true, trend: 0 },
+  { name: 'Dr. Você', xp: 12800, level: 38, active: true, currentUser: true, streak: 14, trend: 2 },
+  { name: 'Dra. Ana S.', xp: 11950, level: 35, active: true, streak: 7, trend: -1 },
+  { name: 'Dr. Marcos B.', xp: 11200, level: 33, active: false, trend: 3 },
+  { name: 'Dra. Julia C.', xp: 10400, level: 31, active: true, streak: 5, trend: 0 },
+  { name: 'Dr. Pedro L.', xp: 9800, level: 29, active: false, streak: 2, trend: -2 }
+];
+
+type LeaguePlayer = { name: string; initials: string; xp: number; level: number; active: boolean; trend: number; currentUser?: boolean; streak?: number };
+type LeagueTier = 'bronze' | 'prata' | 'ouro' | 'platina' | 'diamante';
+const LEAGUE_XP: Record<LeagueTier, number> = { bronze: 0, prata: 1000, ouro: 5000, platina: 10000, diamante: 18000 };
+function getUserLeague(xp: number): LeagueTier {
+  if (xp >= 18000) return 'diamante';
+  if (xp >= 10000) return 'platina';
+  if (xp >= 5000)  return 'ouro';
+  if (xp >= 1000)  return 'prata';
+  return 'bronze';
+}
+const LEAGUE_CONFIG: Record<LeagueTier, { label: string; next: LeagueTier | null; trophyColor: string; gradFrom: string; gradVia: string; gradTo: string }> = {
+  bronze:   { label: 'Liga Bronze',   next: 'prata',    trophyColor: '#CD7F32', gradFrom: 'from-amber-700',  gradVia: 'via-amber-800',  gradTo: 'to-amber-950'  },
+  prata:    { label: 'Liga Prata',    next: 'ouro',     trophyColor: '#CBD5E1', gradFrom: 'from-slate-400',  gradVia: 'via-slate-600',  gradTo: 'to-slate-800'  },
+  ouro:     { label: 'Liga Ouro',     next: 'platina',  trophyColor: '#FCD34D', gradFrom: 'from-amber-500',  gradVia: 'via-blue-700',   gradTo: 'to-amber-800'  },
+  platina:  { label: 'Liga Platina',  next: 'diamante', trophyColor: '#93C5FD', gradFrom: 'from-blue-500',   gradVia: 'via-blue-700',   gradTo: 'to-blue-900'   },
+  diamante: { label: 'Liga Diamante', next: null,       trophyColor: '#67E8F9', gradFrom: 'from-cyan-500',   gradVia: 'via-blue-700',   gradTo: 'to-cyan-900'   },
+};
+const LEAGUE_DATA: Record<LeagueTier, LeaguePlayer[]> = {
+  bronze: [
+    { name: 'Dr. Eduardo M.',   initials: 'EM', xp: 920,  level: 3, active: true,  trend:  2 },
+    { name: 'Dra. Fernanda C.', initials: 'FC', xp: 850,  level: 3, active: true,  trend:  1 },
+    { name: 'Dr. Lucas B.',     initials: 'LB', xp: 780,  level: 2, active: false, trend:  0 },
+    { name: 'Dr. Você',         initials: 'DA', xp: 0,    level: 1, active: true,  trend:  0, currentUser: true },
+    { name: 'Dra. Marina L.',   initials: 'ML', xp: 620,  level: 2, active: true,  trend:  0 },
+    { name: 'Dr. Rafael S.',    initials: 'RS', xp: 540,  level: 1, active: false, trend: -1 },
+    { name: 'Dra. Clara P.',    initials: 'CP', xp: 440,  level: 1, active: true,  trend:  0 },
+    { name: 'Dr. Vítor A.',     initials: 'VA', xp: 310,  level: 1, active: false, trend: -2 },
+  ],
+  prata: [
+    { name: 'Dra. Natalia R.',  initials: 'NR', xp: 4820, level: 10, active: true,  trend:  1 },
+    { name: 'Dr. Bruno S.',     initials: 'BS', xp: 4450, level: 9,  active: true,  trend:  0 },
+    { name: 'Dra. Alice M.',    initials: 'AM', xp: 4100, level: 9,  active: false, trend: -1 },
+    { name: 'Dr. Você',         initials: 'DA', xp: 3800, level: 8,  active: true,  trend:  2, currentUser: true },
+    { name: 'Dr. Daniel F.',    initials: 'DF', xp: 3400, level: 7,  active: true,  trend:  0 },
+    { name: 'Dra. Larissa C.',  initials: 'LC', xp: 2950, level: 6,  active: false, trend: -1 },
+    { name: 'Dr. Vinicius P.',  initials: 'VP', xp: 2500, level: 6,  active: true,  trend:  1 },
+    { name: 'Dra. Priscila M.', initials: 'PM', xp: 1800, level: 4,  active: false, trend:  0 },
+  ],
+  ouro: [
+    { name: 'Dra. Camila B.',   initials: 'CB', xp: 9820,  level: 22, active: true,  trend:  2 },
+    { name: 'Dr. Thiago R.',    initials: 'TR', xp: 9100,  level: 20, active: true,  trend:  0 },
+    { name: 'Dr. Paulo M.',     initials: 'PM', xp: 8650,  level: 19, active: false, trend: -1 },
+    { name: 'Dr. Você',         initials: 'DA', xp: 8200,  level: 18, active: true,  trend:  1, currentUser: true },
+    { name: 'Dra. Rebeca L.',   initials: 'RL', xp: 7900,  level: 17, active: true,  trend:  0 },
+    { name: 'Dr. Caio S.',      initials: 'CS', xp: 7300,  level: 16, active: false, trend: -2 },
+    { name: 'Dra. Nathalia P.', initials: 'NP', xp: 6800,  level: 15, active: true,  trend:  3 },
+    { name: 'Dr. Henrique V.',  initials: 'HV', xp: 6100,  level: 13, active: false, trend:  0 },
+  ],
+  platina: [
+    { name: 'Dr. Ricardo M.',   initials: 'RM', xp: 15420, level: 42, active: true,  trend:  0 },
+    { name: 'Dra. Luana S.',    initials: 'LS', xp: 14800, level: 39, active: false, trend:  0 },
+    { name: 'Dr. Felipe C.',    initials: 'FC', xp: 13240, level: 37, active: true,  trend:  0 },
+    { name: 'Dr. Você',         initials: 'DA', xp: 12800, level: 38, active: true,  trend:  2, currentUser: true },
+    { name: 'Dra. Ana S.',      initials: 'AS', xp: 11950, level: 35, active: true,  trend: -1 },
+    { name: 'Dr. Marcos B.',    initials: 'MB', xp: 11200, level: 33, active: false, trend:  3 },
+    { name: 'Dra. Julia C.',    initials: 'JC', xp: 10400, level: 31, active: true,  trend:  0 },
+    { name: 'Dr. Pedro L.',     initials: 'PL', xp:  9800, level: 29, active: false, trend: -2 },
+  ],
+  diamante: [
+    { name: 'Dra. Isabela F.',  initials: 'IF', xp: 24800, level: 68, active: true,  trend:  1 },
+    { name: 'Dr. Gabriel M.',   initials: 'GM', xp: 23500, level: 65, active: true,  trend:  0 },
+    { name: 'Dra. Sofia K.',    initials: 'SK', xp: 21200, level: 60, active: false, trend: -1 },
+    { name: 'Dr. Leonardo R.',  initials: 'LR', xp: 20800, level: 58, active: true,  trend:  2 },
+    { name: 'Dra. Beatriz A.',  initials: 'BA', xp: 19500, level: 55, active: true,  trend:  0 },
+    { name: 'Dr. Mateus C.',    initials: 'MC', xp: 18900, level: 53, active: false, trend: -2 },
+    { name: 'Dra. Valentina S.',initials: 'VS', xp: 18200, level: 51, active: true,  trend:  1 },
+    { name: 'Dr. Rafael B.',    initials: 'RB', xp: 17600, level: 49, active: false, trend:  0 },
+  ],
+};
+
+const CHART_DATA: Record<string, Array<{name: string; value: number}>> = {
+  '7d': [
+    { name: 'Seg', value: 72 }, { name: 'Ter', value: 68 }, { name: 'Qua', value: 75 },
+    { name: 'Qui', value: 80 }, { name: 'Sex', value: 74 }, { name: 'Sáb', value: 70 }, { name: 'Dom', value: 74 }
+  ],
+  '30d': [
+    { name: 'Sem 1', value: 58 }, { name: 'Sem 2', value: 65 },
+    { name: 'Sem 3', value: 70 }, { name: 'Sem 4', value: 74 }
+  ],
+  'total': [
+    { name: 'Jan', value: 50 }, { name: 'Fev', value: 55 }, { name: 'Mar', value: 61 },
+    { name: 'Abr', value: 68 }, { name: 'Mai', value: 74 }
+  ]
+};
+
+// --- Components ---
+
+// Update SUBJECT_ICONS keys to match
+const SUBJECT_ICONS: Record<string, any> = {
+  // Básicos
+  'Anatomia': { image: 'https://cdn-icons-png.flaticon.com/512/2867/2867197.png', icon: Skull, color: 'bg-emerald-500', ringColor: '#10B981', textColor: 'text-white', shadow: 'shadow-emerald-500/40' },
+  'Fisiologia': { image: 'https://cdn-icons-png.flaticon.com/512/4964/4964056.png', icon: Heart, color: 'bg-rose-500', ringColor: '#F43F5E', textColor: 'text-white', shadow: 'shadow-rose-500/40' },
+  'Bioquímica': { image: 'https://cdn-icons-png.flaticon.com/512/4507/4507090.png', icon: FlaskConical, color: 'bg-blue-500', ringColor: '#3B82F6', textColor: 'text-white', shadow: 'shadow-blue-500/40' },
+  'Histologia': { image: 'https://cdn-icons-png.flaticon.com/512/4068/4068596.png', icon: Microscope, color: 'bg-indigo-500', ringColor: '#6366F1', textColor: 'text-white', shadow: 'shadow-indigo-500/40' },
+  'Embriologia': { image: 'https://cdn-icons-png.flaticon.com/512/9091/9091638.png', icon: Baby, color: 'bg-pink-500', ringColor: '#EC4899', textColor: 'text-white', shadow: 'shadow-pink-500/40' },
+  'Microbiologia': { image: 'https://cdn-icons-png.flaticon.com/512/8986/8986435.png', icon: Bug, color: 'bg-amber-500', ringColor: '#F59E0B', textColor: 'text-white', shadow: 'shadow-amber-500/40' },
+  'Imunologia': { image: 'https://cdn-icons-png.flaticon.com/512/15192/15192824.png', icon: Shield, color: 'bg-indigo-600', ringColor: '#4F46E5', textColor: 'text-white', shadow: 'shadow-indigo-600/40' },
+  'Farmacologia': { image: 'https://cdn-icons-png.flaticon.com/512/18383/18383210.png', icon: Pill, color: 'bg-purple-500', ringColor: '#8B5CF6', textColor: 'text-white', shadow: 'shadow-purple-500/40' },
+  'Patologia Geral': { icon: Microscope, color: 'bg-slate-500/20', ringColor: '#64748B', textColor: 'text-slate-500', shadow: 'shadow-slate-500/20' },
+  'Genética': { image: 'https://cdn-icons-png.flaticon.com/512/8986/8986421.png', icon: Dna, color: 'bg-teal-500', ringColor: '#14B8A6', textColor: 'text-white', shadow: 'shadow-teal-500/40' },
+
+  // Clínicos e Especialidades - Duolingo Aesthetics
+  'Cardiologia Clínica': { image: '/6176500.png', icon: Heart, color: 'bg-rose-500', ringColor: '#F43F5E', textColor: 'text-white', shadow: 'shadow-rose-500/40' },
+  'Cardiologia': { image: '/6176500.png', icon: Heart, color: 'bg-rose-500', ringColor: '#F43F5E', textColor: 'text-white', shadow: 'shadow-rose-500/40' },
+  'Neurologia': { image: '/11666655.png', icon: Brain, color: 'bg-indigo-500', ringColor: '#6366F1', textColor: 'text-white', shadow: 'shadow-indigo-500/40' },
+  'Pediatria': { image: '/10154448.png', icon: Baby, color: 'bg-emerald-500', ringColor: '#10B981', textColor: 'text-white', shadow: 'shadow-emerald-500/40' },
+  'Ginecologia & Obstetrícia': { image: '/2885280.png', icon: Baby, color: 'bg-pink-500', ringColor: '#EC4899', textColor: 'text-white', shadow: 'shadow-pink-500/40' },
+  'Cirurgia Geral': { image: '/10154417.png', icon: Scissors, color: 'bg-orange-500', ringColor: '#F59E0B', textColor: 'text-white', shadow: 'shadow-orange-500/40' },
+  'Clínica Cirúrgica': { image: '/10154417.png', icon: Scissors, color: 'bg-orange-500', ringColor: '#F59E0B', textColor: 'text-white', shadow: 'shadow-orange-500/40' },
+  'Clínica Médica': { image: '/3028573.png', icon: Heart, color: 'bg-rose-500', ringColor: '#F43F5E', textColor: 'text-white', shadow: 'shadow-rose-500/40' },
+  'Medicina de Família/SUS': { image: '/12370055.png', icon: Users, color: 'bg-cyan-500', ringColor: '#06B6D4', textColor: 'text-white', shadow: 'shadow-cyan-500/40' },
+  'Psiquiatria': { image: '/12024688.png', icon: Brain, color: 'bg-purple-500', ringColor: '#8B5CF6', textColor: 'text-white', shadow: 'shadow-purple-500/40' },
+  'Dermatologia': { image: '/10154433.png', icon: Droplet, color: 'bg-amber-400', ringColor: '#F59E0B', textColor: 'text-white', shadow: 'shadow-amber-500/40' },
+  'Oftalmologia': { image: '/2007207.png', icon: Eye, color: 'bg-teal-500', ringColor: '#14B8A6', textColor: 'text-white', shadow: 'shadow-teal-500/40' },
+  'Otorrinolaringologia': { image: '/9340044.png', icon: Ear, color: 'bg-violet-500', ringColor: '#8B5CF6', textColor: 'text-white', shadow: 'shadow-violet-500/40' },
+  'Pneumologia': { image: '/10154419.png', icon: Wind, color: 'bg-sky-500', ringColor: '#0EA5E9', textColor: 'text-white', shadow: 'shadow-sky-500/40' },
+  'Gastroenterologia': { image: '/6490965.png', icon: Activity, color: 'bg-green-600', ringColor: '#16A34A', textColor: 'text-white', shadow: 'shadow-green-500/40' },
+  'Endocrinologia': { image: '/15192810.png', icon: Pill, color: 'bg-yellow-500', ringColor: '#EAB308', textColor: 'text-white', shadow: 'shadow-yellow-500/40' },
+  'Nefrologia': { image: '/12024712.png', icon: Stethoscope, color: 'bg-blue-600', ringColor: '#2563EB', textColor: 'text-white', shadow: 'shadow-blue-500/40' },
+  'Reumatologia': { image: '/12024718.png', icon: Bone, color: 'bg-slate-500', ringColor: '#64748B', textColor: 'text-white', shadow: 'shadow-slate-500/40' },
+  'Hematologia': { image: '/6176756.png', icon: Droplet, color: 'bg-red-700', ringColor: '#B91C1C', textColor: 'text-white', shadow: 'shadow-red-500/40' },
+  'Infectologia': { image: '/10154483.png', icon: Bug, color: 'bg-lime-600', ringColor: '#65A30D', textColor: 'text-white', shadow: 'shadow-lime-500/40' },
+  'Urgência e Emergência': { image: 'https://cdn-icons-png.flaticon.com/512/3914/3914688.png', icon: AlertTriangle, color: 'bg-red-600', ringColor: '#DC2626', textColor: 'text-white', shadow: 'shadow-red-600/40' },
+  'Medicina Intensiva': { image: 'https://cdn-icons-png.flaticon.com/512/978/978957.png', icon: Activity, color: 'bg-slate-700', ringColor: '#334155', textColor: 'text-white', shadow: 'shadow-slate-700/40' },
+  'Ortopedia': { image: '/ORTOP.png', icon: Bone, color: 'bg-stone-500', ringColor: '#78716C', textColor: 'text-white', shadow: 'shadow-stone-500/40' },
+  'Neonatologia': { image: 'https://cdn-icons-png.flaticon.com/512/14365/14365115.png', icon: Baby, color: 'bg-sky-400', ringColor: '#38BDF8', textColor: 'text-white', shadow: 'shadow-sky-400/40' },
+  'Anestesiologia': { image: 'https://cdn-icons-png.flaticon.com/512/5793/5793712.png', icon: Thermometer, color: 'bg-gray-500', ringColor: '#6B7280', textColor: 'text-white', shadow: 'shadow-gray-500/40' },
+  'Traumatologia-Ortopedia': { image: 'https://cdn-icons-png.flaticon.com/512/11071/11071552.png', icon: Bone, color: 'bg-amber-700', ringColor: '#B45309', textColor: 'text-white', shadow: 'shadow-amber-700/40' },
+  'Patologia': { image: 'https://cdn-icons-png.flaticon.com/512/9340/9340149.png', icon: Microscope, color: 'bg-slate-600', ringColor: '#475569', textColor: 'text-white', shadow: 'shadow-slate-600/40' },
+  'Parasitologia': { image: 'https://cdn-icons-png.flaticon.com/512/8099/8099004.png', icon: Bug, color: 'bg-green-700', ringColor: '#15803D', textColor: 'text-white', shadow: 'shadow-green-700/40' },
+  'Semiologia': { image: 'https://cdn-icons-png.flaticon.com/512/2666/2666112.png', icon: Stethoscope, color: 'bg-cyan-500', ringColor: '#06B6D4', textColor: 'text-white', shadow: 'shadow-cyan-500/40' },
+  'Epidemiologia': { image: 'https://cdn-icons-png.flaticon.com/512/1753/1753380.png', icon: BarChart2, color: 'bg-blue-500', ringColor: '#3B82F6', textColor: 'text-white', shadow: 'shadow-blue-500/40' },
+  'Urologia': { image: 'https://cdn-icons-png.flaticon.com/512/4006/4006204.png', icon: Droplets, color: 'bg-yellow-600', ringColor: '#CA8A04', textColor: 'text-white', shadow: 'shadow-yellow-600/40' },
+  'Geriatria': { image: 'https://cdn-icons-png.flaticon.com/512/978/978915.png', icon: Users, color: 'bg-orange-500', ringColor: '#F97316', textColor: 'text-white', shadow: 'shadow-orange-500/40' },
+  'Radiologia': { image: '/RADIOLOIA.png', icon: Search, color: 'bg-gray-600', ringColor: '#4B5563', textColor: 'text-white', shadow: 'shadow-gray-600/40' },
+  'Cirurgia Vascular': { image: 'https://cdn-icons-png.flaticon.com/512/8670/8670744.png', icon: Activity, color: 'bg-red-800', ringColor: '#991B1B', textColor: 'text-white', shadow: 'shadow-red-800/40' },
+  'Neurocirurgia': { image: 'https://cdn-icons-png.flaticon.com/512/9710/9710955.png', icon: Brain, color: 'bg-violet-700', ringColor: '#6D28D9', textColor: 'text-white', shadow: 'shadow-violet-700/40' }
+};
+
+// ── MEDQUEST LOGO COMPONENT ──────────────────────────────────────────
+function MedQuestLogoIcon({ size = 40 }: { size?: number }) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="mq-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stopColor="#040B1A"/>
+          <stop offset="100%" stopColor="#0E1D4A"/>
+        </linearGradient>
+        <radialGradient id="mq-ambient" cx="50%" cy="42%" r="56%">
+          <stop offset="0%" stopColor="#2563EB" stopOpacity="0.38"/>
+          <stop offset="100%" stopColor="#2563EB" stopOpacity="0"/>
+        </radialGradient>
+        <linearGradient id="mq-qmark" x1="20%" y1="0%" x2="80%" y2="100%">
+          <stop offset="0%" stopColor="#FFFFFF"/>
+          <stop offset="100%" stopColor="#7DD3FC"/>
+        </linearGradient>
+        <radialGradient id="mq-dot" cx="35%" cy="30%" r="70%">
+          <stop offset="0%" stopColor="#60A5FA"/>
+          <stop offset="100%" stopColor="#1D4ED8"/>
+        </radialGradient>
+        <filter id="mq-qglow" x="-55%" y="-55%" width="210%" height="210%">
+          <feGaussianBlur stdDeviation="3" result="b"/>
+          <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+        </filter>
+        <filter id="mq-dotglow" x="-90%" y="-90%" width="280%" height="280%">
+          <feGaussianBlur stdDeviation="4.5" result="b"/>
+          <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+        </filter>
+      </defs>
+
+      {/* Background */}
+      <rect width="100" height="100" rx="22" fill="url(#mq-bg)"/>
+      <rect width="100" height="100" rx="22" fill="url(#mq-ambient)"/>
+      <rect x="1" y="1" width="98" height="98" rx="21.5"
+            fill="none" stroke="rgba(255,255,255,0.10)" strokeWidth="1.5"/>
+
+      {/* ECG line — subtle medical accent */}
+      <path d="M 6,76 L 18,76 L 21,66 L 24,86 L 27,58 L 30,93 L 34,76 L 66,76 L 69,66 L 72,86 L 75,58 L 78,93 L 82,76 L 94,76"
+            fill="none" stroke="#3B82F6" strokeWidth="1.3"
+            strokeLinecap="round" strokeLinejoin="round" opacity="0.13"/>
+
+      {/* ? soft glow */}
+      <path d="M 36,52 C 36,22 64,22 64,43 C 64,59 51,65 50,70"
+            fill="none" stroke="#3B82F6" strokeWidth="15"
+            strokeLinecap="round" strokeLinejoin="round" opacity="0.28"/>
+
+      {/* ? main stroke */}
+      <path d="M 36,52 C 36,22 64,22 64,43 C 64,59 51,65 50,70"
+            fill="none" stroke="url(#mq-qmark)" strokeWidth="7.5"
+            strokeLinecap="round" strokeLinejoin="round"
+            filter="url(#mq-qglow)"/>
+
+      {/* Dot outer glow */}
+      <circle cx="50" cy="84" r="12" fill="#2563EB" opacity="0.22" filter="url(#mq-dotglow)"/>
+      {/* Dot body */}
+      <circle cx="50" cy="84" r="7" fill="url(#mq-dot)" filter="url(#mq-qglow)"/>
+      <circle cx="50" cy="84" r="7" fill="none" stroke="rgba(255,255,255,0.22)" strokeWidth="1"/>
+      {/* Medical cross */}
+      <line x1="50" y1="79.8" x2="50" y2="88.2" stroke="white" strokeWidth="2.2" strokeLinecap="round"/>
+      <line x1="45.8" y1="84" x2="54.2" y2="84" stroke="white" strokeWidth="2.2" strokeLinecap="round"/>
+      {/* Shine */}
+      <circle cx="47.5" cy="81.5" r="1.4" fill="white" opacity="0.5"/>
+    </svg>
+  );
+}
+
+function MedQuestLogo({ collapsed = false }: { collapsed?: boolean }) {
+  return (
+    <div style={{ display: 'flex', alignItems: 'center', gap: collapsed ? 0 : 10 }}>
+      <MedQuestLogoIcon size={38} />
+      {!collapsed && (
+        <div style={{ lineHeight: 1, userSelect: 'none' }}>
+          <span style={{
+            fontFamily: 'system-ui, -apple-system, sans-serif',
+            fontWeight: 300,
+            fontSize: 18,
+            letterSpacing: '-0.03em',
+            color: '#1E293B',
+          }}>Med</span>
+          <span style={{
+            fontFamily: 'system-ui, -apple-system, sans-serif',
+            fontWeight: 900,
+            fontSize: 18,
+            letterSpacing: '-0.04em',
+            color: '#2563EB',
+          }}>Quest</span>
+        </div>
+      )}
+    </div>
+  );
+}
+// ─────────────────────────────────────────────────────────────────────
+
+interface GamePathNodeProps {
+  subject: string;
+  progress: number;
+  index: number;
+  isSelected: boolean;
+  onClick: () => void;
+  questionCount?: number;
+  key?: string | number;
+}
+
+const GamePathNode = ({
+  subject,
+  progress,
+  index,
+  isSelected,
+  onClick,
+  questionCount = 0,
+}: GamePathNodeProps) => {
+  const iconData = SUBJECT_ICONS[subject] || { icon: BookOpen, color: 'bg-slate-400', ringColor: '#CBD5E1' };
+  const Icon = iconData.icon;
+
+  return (
+    <motion.div 
+      initial={{ opacity: 0, scale: 0.9 }}
+      whileInView={{ opacity: 1, scale: 1 }}
+      viewport={{ once: true }}
+      transition={{ delay: index * 0.05, duration: 0.4 }}
+      className="flex flex-col items-center gap-3 relative py-4 group cursor-pointer"
+      onClick={onClick}
+    >
+      <div className="relative">
+        {/* Progress outer ring - Duolingo Style */}
+        <div className={`relative w-24 h-24 rounded-full flex items-center justify-center p-2 transition-all duration-300 ${
+          isSelected ? 'bg-slate-200 shadow-lg' : 'bg-slate-100 hover:bg-slate-200'
+        }`}>
+          {/* Progress Circular Stroke */}
+          <svg className="absolute inset-0 w-full h-full -rotate-90 z-10">
+            <circle
+              cx="48"
+              cy="48"
+              r="44"
+              fill="transparent"
+              stroke="#E2E8F0"
+              strokeWidth="8"
+            />
+            <motion.circle
+              cx="48"
+              cy="48"
+              r="44"
+              fill="transparent"
+              stroke={iconData.ringColor || "#10B981"}
+              strokeWidth="8"
+              strokeDasharray="276.46"
+              initial={{ strokeDashoffset: 276.46 }}
+              animate={{ strokeDashoffset: 276.46 - (276.46 * progress) / 100 }}
+              transition={{ duration: 1.5, ease: "easeOut" }}
+              strokeLinecap="round"
+            />
+          </svg>
+
+          {/* Icon Bubble */}
+          <div className={`relative z-20 w-16 h-16 rounded-full flex items-center justify-center transition-all duration-300 overflow-hidden ${
+            isSelected 
+              ? `scale-110 shadow-lg border-b-4 border-black/10` 
+              : `hover:scale-105 border-b-4 border-black/20`
+          } ${iconData.color || 'bg-brand-primary'}`}>
+             {iconData.image ? (
+               <img 
+                 src={iconData.image} 
+                 alt={subject} 
+                 className={`w-12 h-12 object-contain aspect-square ${subject === 'Anatomia' ? '-translate-y-1' : ''}`} 
+                 referrerPolicy="no-referrer"
+               />
+             ) : (
+               <Icon size={26} className="text-white" strokeWidth={3} />
+             )}
+          </div>
+
+          {/* Level Crown Badge - Duolingo Style */}
+          {(() => {
+            const lv = Math.floor(progress / 20); // 0–5 conforme mastery
+            const badgeBg  = lv === 0 ? '#94A3B8' : lv < 3 ? '#F59E0B' : lv < 5 ? '#3B82F6' : '#8B5CF6';
+            const badgePip = lv === 0 ? '#64748B' : lv < 3 ? '#D97706' : lv < 5 ? '#2563EB' : '#7C3AED';
+            return (
+              <div
+                className="absolute bottom-0 right-0 z-30 w-8 h-8 rounded-xl flex items-center justify-center shadow-lg border-2 border-white transform rotate-12 group-hover:rotate-0 transition-transform"
+                style={{ background: badgeBg }}
+              >
+                <Trophy size={14} className="text-white" fill="currentColor" />
+                <span
+                  className="absolute -top-3 -right-1 text-white text-[8px] font-black px-1.5 rounded-full border border-white"
+                  style={{ background: badgePip }}
+                >
+                  LV.{lv}
+                </span>
+              </div>
+            );
+          })()}
+        </div>
+      </div>
+      
+      {/* Label - Below the icon */}
+      <div className="text-center flex flex-col items-center gap-1">
+        <h4 className={`text-[10px] sm:text-[11px] font-black uppercase tracking-tight leading-tight max-w-[110px] break-words ${
+          isSelected ? 'text-slate-900 scale-105' : 'text-slate-500'
+        } transition-all`}>
+          {subject}
+        </h4>
+        {questionCount > 0 ? (
+          <span className="text-[9px] font-black px-2 py-0.5 rounded-full bg-brand-primary/10 text-brand-primary border border-brand-primary/20">
+            {questionCount} {questionCount === 1 ? 'questão' : 'questões'}
+          </span>
+        ) : (
+          <span className="text-[9px] font-bold px-2 py-0.5 rounded-full bg-slate-100 text-slate-400 border border-slate-200">
+            em breve
+          </span>
+        )}
+      </div>
+    </motion.div>
+  );
+};
+
+const MascotHeart = ({ mood = 'happy', size = 110 }: { mood?: 'happy' | 'sad' | 'excited'; size?: number }) => {
+  const [isBlinking, setIsBlinking] = useState(false);
+  useEffect(() => {
+    let t: ReturnType<typeof setTimeout>;
+    const schedule = () => {
+      t = setTimeout(() => {
+        setIsBlinking(true);
+        setTimeout(() => setIsBlinking(false), 130);
+        schedule();
+      }, 2400 + Math.floor(Math.random() * 2600));
+    };
+    schedule();
+    return () => clearTimeout(t);
+  }, []);
+
+  return (
+    <motion.div
+      style={{ width: size, height: size * 1.22, flexShrink: 0 }}
+      animate={{ y: [0, -5, 0] }}
+      transition={{ duration: 3, repeat: Infinity, ease: 'easeInOut' }}
+    >
+      <svg viewBox="0 0 200 244" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ width: '100%', height: '100%' }}>
+
+        {/* ── SHADOW ── */}
+        <ellipse cx="100" cy="238" rx="46" ry="6" fill="rgba(0,0,0,0.13)" />
+
+        {/* ── SHOES ── */}
+        <ellipse cx="80"  cy="226" rx="29" ry="14" fill="#C4782A" />
+        <ellipse cx="120" cy="226" rx="29" ry="14" fill="#C4782A" />
+        <ellipse cx="71"  cy="220" rx="12" ry="5" fill="rgba(255,255,255,0.28)" transform="rotate(-8 71 220)" />
+        <ellipse cx="111" cy="220" rx="12" ry="5" fill="rgba(255,255,255,0.28)" transform="rotate(-8 111 220)" />
+        {/* Shoe outline */}
+        <ellipse cx="80"  cy="226" rx="29" ry="14" fill="none" stroke="#A05E1A" strokeWidth="1.5" opacity="0.5" />
+        <ellipse cx="120" cy="226" rx="29" ry="14" fill="none" stroke="#A05E1A" strokeWidth="1.5" opacity="0.5" />
+
+        {/* ── LEGS ── */}
+        <rect x="68"  y="184" width="24" height="46" rx="12" fill="#6290B8" />
+        <rect x="108" y="184" width="24" height="46" rx="12" fill="#6290B8" />
+        <rect x="68"  y="184" width="24" height="46" rx="12" fill="none" stroke="#3A5A7A" strokeWidth="1.5" opacity="0.35" />
+        <rect x="108" y="184" width="24" height="46" rx="12" fill="none" stroke="#3A5A7A" strokeWidth="1.5" opacity="0.35" />
+
+        {/* ── LEFT COAT PANEL (behind heart) ── */}
+        <path d="M 40,82 C 32,96 6,118 2,140 L 2,208 C 2,210 4,212 6,212 L 46,212 C 44,194 42,168 40,138 C 39,116 39,98 40,82 Z"
+          fill="white" stroke="#4A6886" strokeWidth="2.5" strokeLinejoin="round" />
+        {/* Left coat fold / inner shadow */}
+        <path d="M 40,82 C 34,96 10,118 4,140 L 4,168 L 22,156 C 28,138 34,116 40,98 Z"
+          fill="#CCDFF0" opacity="0.9" />
+        {/* Left lapel crease line */}
+        <path d="M 40,82 C 40,100 40,122 42,144"
+          stroke="#4A6886" strokeWidth="1.5" fill="none" strokeLinecap="round" opacity="0.6" />
+
+        {/* ── RIGHT COAT PANEL (behind heart, mirror) ── */}
+        <path d="M 160,82 C 168,96 194,118 198,140 L 198,208 C 198,210 196,212 194,212 L 154,212 C 156,194 158,168 160,138 C 161,116 161,98 160,82 Z"
+          fill="white" stroke="#4A6886" strokeWidth="2.5" strokeLinejoin="round" />
+        {/* Right coat fold */}
+        <path d="M 160,82 C 166,96 190,118 196,140 L 196,168 L 178,156 C 172,138 166,116 160,98 Z"
+          fill="#CCDFF0" opacity="0.9" />
+        {/* Right lapel crease */}
+        <path d="M 160,82 C 160,100 160,122 158,144"
+          stroke="#4A6886" strokeWidth="1.5" fill="none" strokeLinecap="round" opacity="0.6" />
+
+        {/* ── LEFT ARM — junto ao corpo, pendurado verticalmente ── */}
+        <path d="M 22,138 Q 16,156 18,174 Q 20,186 30,186 Q 38,186 38,174 Q 38,158 32,140 Z"
+          fill="#6290B8" stroke="#3A5A7A" strokeWidth="1.5" strokeLinejoin="round" />
+        <ellipse cx="28" cy="188" rx="11" ry="8" fill="#6290B8" stroke="#3A5A7A" strokeWidth="1.5" transform="rotate(-8 28 188)" />
+        <path d="M 20,182 Q 18,175 23,173" stroke="#3A5A7A" strokeWidth="1.2" fill="none" strokeLinecap="round" />
+        <path d="M 25,185 Q 23,178 28,176" stroke="#3A5A7A" strokeWidth="1.2" fill="none" strokeLinecap="round" />
+        <path d="M 31,185 Q 29,178 34,176" stroke="#3A5A7A" strokeWidth="1.2" fill="none" strokeLinecap="round" />
+
+        {/* ── RIGHT ARM — mirror ── */}
+        <path d="M 178,138 Q 184,156 182,174 Q 180,186 170,186 Q 162,186 162,174 Q 162,158 168,140 Z"
+          fill="#6290B8" stroke="#3A5A7A" strokeWidth="1.5" strokeLinejoin="round" />
+        <ellipse cx="172" cy="188" rx="11" ry="8" fill="#6290B8" stroke="#3A5A7A" strokeWidth="1.5" transform="rotate(8 172 188)" />
+        <path d="M 180,182 Q 182,175 177,173" stroke="#3A5A7A" strokeWidth="1.2" fill="none" strokeLinecap="round" />
+        <path d="M 175,185 Q 177,178 172,176" stroke="#3A5A7A" strokeWidth="1.2" fill="none" strokeLinecap="round" />
+        <path d="M 169,185 Q 171,178 166,176" stroke="#3A5A7A" strokeWidth="1.2" fill="none" strokeLinecap="round" />
+
+        {/* ── STETHOSCOPE — tubo curto do pescoço ao peito ── */}
+        <line x1="60" y1="94" x2="56" y2="83" stroke="#1C2E45" strokeWidth="2.8" strokeLinecap="round" />
+        <line x1="60" y1="94" x2="50" y2="88" stroke="#1C2E45" strokeWidth="2.8" strokeLinecap="round" />
+
+        {/* ── HEART BODY ── */}
+        <path d="M 100,36 C 100,26 91,14 78,14 C 54,14 38,38 38,64 C 38,100 100,192 100,192 C 100,192 162,100 162,64 C 162,38 146,14 122,14 C 109,14 100,26 100,36 Z"
+          fill="#6290B8" />
+        <path d="M 100,36 C 100,26 91,14 78,14 C 54,14 38,38 38,64 C 38,100 100,192 100,192 C 100,192 162,100 162,64 C 162,38 146,14 122,14 C 109,14 100,26 100,36 Z"
+          fill="none" stroke="#3A5A7A" strokeWidth="2.5" />
+
+        {/* Heart glossy highlight (3 layers) */}
+        <ellipse cx="72" cy="44" rx="24" ry="15" fill="rgba(255,255,255,0.22)" transform="rotate(-25 72 44)" />
+        <ellipse cx="68" cy="40" rx="11" ry="6.5" fill="rgba(255,255,255,0.38)" transform="rotate(-25 68 40)" />
+        <circle  cx="60" cy="29" r="5" fill="rgba(255,255,255,0.50)" />
+
+        {/* ── STETHOSCOPE on chest (loop visible over heart) ── */}
+        <path d="M 60,94 Q 52,110 56,126 Q 60,142 74,146 Q 90,150 96,136 Q 100,124 90,118"
+          stroke="#1C2E45" strokeWidth="3.5" fill="none" strokeLinecap="round" />
+        <circle cx="91" cy="116" r="7.5" fill="#1C2E45" />
+        <circle cx="91" cy="116" r="4.5" fill="#7AAAD4" />
+
+        {/* ── EYES ── */}
+        <circle cx="80"  cy="78" r="23" fill="white" stroke="#3A5070" strokeWidth="1.8" />
+        <circle cx="120" cy="78" r="23" fill="white" stroke="#3A5070" strokeWidth="1.8" />
+        <circle cx="82"  cy="80" r="14.5" fill="#4478A8" />
+        <circle cx="122" cy="80" r="14.5" fill="#4478A8" />
+        <circle cx="83"  cy="81" r="9"  fill="#192A3E" />
+        <circle cx="123" cy="81" r="9"  fill="#192A3E" />
+        {/* Shine */}
+        <circle cx="89"  cy="74" r="5.5" fill="white" />
+        <circle cx="129" cy="74" r="5.5" fill="white" />
+        <circle cx="77"  cy="87" r="2.8" fill="rgba(255,255,255,0.55)" />
+        <circle cx="117" cy="87" r="2.8" fill="rgba(255,255,255,0.55)" />
+
+        {/* ── EYEBROWS ── */}
+        <path d={mood === 'sad' ? "M 62,57 Q 76,53 90,57" : "M 63,54 Q 76,46 90,50"}
+          stroke="#1C2E45" strokeWidth="3.2" fill="none" strokeLinecap="round" />
+        <path d={mood === 'sad' ? "M 110,57 Q 124,53 138,57" : "M 110,50 Q 124,46 137,54"}
+          stroke="#1C2E45" strokeWidth="3.2" fill="none" strokeLinecap="round" />
+
+        {/* ── MOUTH ── */}
+        {mood === 'sad' ? (
+          <path d="M 85,117 Q 100,107 115,117" stroke="#1C2E45" strokeWidth="3" fill="none" strokeLinecap="round" />
+        ) : (
+          <>
+            <path d="M 85,115 Q 100,131 115,115" stroke="#1C2E45" strokeWidth="3" fill="none" strokeLinecap="round" />
+            <path d="M 87,117 Q 100,131 113,117 L 111,121 Q 100,133 89,121 Z" fill="#D46060" />
+            <path d="M 91,119 Q 100,124 109,119 Q 107,117 100,117 Q 93,117 91,119 Z" fill="white" />
+          </>
+        )}
+
+        {/* ── MEDICAL CROSS ── */}
+        <rect x="93" y="152" width="14" height="5"  rx="2.5" fill="#3A5A7A" opacity="0.82" />
+        <rect x="97" y="148" width="6"  height="13" rx="3"   fill="#3A5A7A" opacity="0.82" />
+
+        {/* ── SPARKLES ── */}
+        <path d="M 120,143 L 121.5,139 L 123,143 L 127,144.5 L 123,146 L 121.5,150 L 120,146 L 116,144.5 Z" fill="rgba(255,255,255,0.92)" />
+        <path d="M  74,158 L  75,155.5 L  76,158 L 78.5,159 L  76,160 L  75,162.5 L  74,160 L 71.5,159 Z" fill="rgba(255,255,255,0.72)" />
+        <path d="M 128,162 L 129,160 L 130,162 L 132,163 L 130,164 L 129,166 L 128,164 L 126,163 Z" fill="rgba(255,255,255,0.62)" />
+
+        {/* ── BLINK ── */}
+        {isBlinking && (
+          <g>
+            <ellipse cx="80"  cy="78" rx="24" ry="10" fill="#6290B8" />
+            <ellipse cx="120" cy="78" rx="24" ry="10" fill="#6290B8" />
+          </g>
+        )}
+      </svg>
+    </motion.div>
+  );
+};
+
+const BANCAS = [
+  { id: 'enare',       short: 'ENARE',          name: 'Exame Nacional de Residência Médica',               uf: 'BR' },
+  { id: 'usp',         short: 'USP',             name: 'Universidade de São Paulo',                        uf: 'SP' },
+  { id: 'unifesp',     short: 'UNIFESP',         name: 'Universidade Federal de São Paulo',                uf: 'SP' },
+  { id: 'einstein',    short: 'Einstein',        name: 'Hospital Israelita Albert Einstein',               uf: 'SP' },
+  { id: 'hcor',        short: 'HCor',            name: 'Hospital do Coração',                              uf: 'SP' },
+  { id: 'siriolib',    short: 'Sírio-Libanês',   name: 'Hospital Sírio-Libanês',                          uf: 'SP' },
+  { id: 'sussp',       short: 'SUS-SP',          name: 'Secretaria Estadual de Saúde de São Paulo',       uf: 'SP' },
+  { id: 'santacasa',   short: 'Santa Casa SP',   name: 'Santa Casa de Misericórdia de São Paulo',         uf: 'SP' },
+  { id: 'unicamp',     short: 'UNICAMP',         name: 'Universidade Estadual de Campinas',                uf: 'SP' },
+  { id: 'unesp',       short: 'UNESP',           name: 'Universidade Estadual Paulista',                   uf: 'SP' },
+  { id: 'hcfmusp',     short: 'HC-FMUSP',        name: 'Hospital das Clínicas da FMUSP',                  uf: 'SP' },
+  { id: 'barretos',    short: 'Barretos',        name: 'Hospital de Câncer de Barretos',                  uf: 'SP' },
+  { id: 'claretiano',  short: 'Claretiano',      name: 'Centro Universitário de Rio Claro',               uf: 'SP' },
+  { id: 'ufrj',        short: 'UFRJ',            name: 'Universidade Federal do Rio de Janeiro',          uf: 'RJ' },
+  { id: 'uerj',        short: 'UERJ',            name: 'Universidade Estadual do Rio de Janeiro',         uf: 'RJ' },
+  { id: 'inca',        short: 'INCA',            name: 'Instituto Nacional do Câncer',                    uf: 'RJ' },
+  { id: 'afamci',      short: 'AFAMCI',          name: 'Hospital dos Plantadores de Cana',                uf: 'RJ' },
+  { id: 'chn',         short: 'CHN',             name: 'Complexo Hospitalar de Niterói',                  uf: 'RJ' },
+  { id: 'ufrgs',       short: 'UFRGS',           name: 'Universidade Federal do Rio Grande do Sul',       uf: 'RS' },
+  { id: 'amrigs',      short: 'AMRIGS',          name: 'Associação Médica do Rio Grande do Sul',          uf: 'RS' },
+  { id: 'hcpa',        short: 'HCPA',            name: 'Hospital de Clínicas de Porto Alegre',            uf: 'RS' },
+  { id: 'moinhos',     short: 'Moinhos',         name: 'Hospital Moinhos de Vento',                       uf: 'RS' },
+  { id: 'ufpr',        short: 'UFPR',            name: 'Universidade Federal do Paraná',                  uf: 'PR' },
+  { id: 'amp',         short: 'AMP',             name: 'Associação Médica do Paraná',                     uf: 'PR' },
+  { id: 'ams',         short: 'AMS',             name: 'Autarquia Municipal de Saúde de Apucarana',       uf: 'PR' },
+  { id: 'ufmg',        short: 'UFMG',            name: 'Universidade Federal de Minas Gerais',            uf: 'MG' },
+  { id: 'hcufmg',      short: 'HC-UFMG',         name: 'Hospital das Clínicas da UFMG',                  uf: 'MG' },
+  { id: 'ufsc',        short: 'UFSC',            name: 'Universidade Federal de Santa Catarina',          uf: 'SC' },
+  { id: 'ufba',        short: 'UFBA',            name: 'Universidade Federal da Bahia',                   uf: 'BA' },
+  { id: 'saorafael',   short: 'São Rafael',      name: 'Hospital São Rafael',                             uf: 'BA' },
+  { id: 'ufc',         short: 'UFC',             name: 'Universidade Federal do Ceará',                   uf: 'CE' },
+  { id: 'ufpe',        short: 'UFPE',            name: 'Universidade Federal de Pernambuco',              uf: 'PE' },
+  { id: 'ufpb',        short: 'UFPB',            name: 'Universidade Federal da Paraíba',                 uf: 'PB' },
+  { id: 'unb',         short: 'UnB',             name: 'Universidade de Brasília',                        uf: 'DF' },
+  { id: 'ufg',         short: 'UFG',             name: 'Universidade Federal de Goiás',                   uf: 'GO' },
+  { id: 'ufms',        short: 'UFMS',            name: 'Universidade Federal de Mato Grosso do Sul',      uf: 'MS' },
+  { id: 'cerem',       short: 'CEREM-MS',        name: 'Comissão Estadual de Residência Médica do MS',   uf: 'MS' },
+  { id: 'cermam',      short: 'CERMAM',          name: 'Comissão Estadual de Residência Médica do AM',   uf: 'AM' },
+  { id: 'ufam',        short: 'UFAM',            name: 'Universidade Federal do Amazonas',               uf: 'AM' },
+  { id: 'ufpa',        short: 'UFPA',            name: 'Universidade Federal do Pará',                    uf: 'PA' },
+  { id: 'cesupa',      short: 'CESUPA',          name: 'Centro Universitário do Estado do Pará',          uf: 'PA' },
+  { id: 'ufmt',        short: 'UFMT',            name: 'Universidade Federal do Mato Grosso',             uf: 'MT' },
+];
+
+const BANCAS_PER_PAGE = 6;
+
+const MEDICAL_AVATARS = [
+  { id: 'stethoscope', emoji: '🩺', label: 'Clínica Geral',    bg: '#EFF6FF', ring: '#3B82F6' },
+  { id: 'heart',       emoji: '🫀', label: 'Cardiologia',      bg: '#FEE2E2', ring: '#DC2626' },
+  { id: 'brain',       emoji: '🧠', label: 'Neurologia',       bg: '#EDE9FE', ring: '#7C3AED' },
+  { id: 'lungs',       emoji: '🫁', label: 'Pneumologia',      bg: '#DBEAFE', ring: '#2563EB' },
+  { id: 'bone',        emoji: '🦴', label: 'Ortopedia',        bg: '#FEF3C7', ring: '#D97706' },
+  { id: 'eye',         emoji: '👁️', label: 'Oftalmologia',    bg: '#DCFCE7', ring: '#16A34A' },
+  { id: 'baby',        emoji: '👶', label: 'Pediatria',        bg: '#FDF4FF', ring: '#A855F7' },
+  { id: 'pill',        emoji: '💊', label: 'Farmacologia',     bg: '#ECFDF5', ring: '#059669' },
+  { id: 'scope',       emoji: '🔬', label: 'Patologia',        bg: '#FFF7ED', ring: '#EA580C' },
+  { id: 'xray',        emoji: '🩻', label: 'Radiologia',       bg: '#F0F9FF', ring: '#0369A1' },
+  { id: 'syringe',     emoji: '💉', label: 'Anestesiologia',   bg: '#FFF1F2', ring: '#E11D48' },
+  { id: 'dna',         emoji: '🧬', label: 'Genética',         bg: '#F0FDF4', ring: '#22C55E' },
+  { id: 'tooth',       emoji: '🦷', label: 'Odontologia',      bg: '#F0F9FF', ring: '#0284C7' },
+  { id: 'flask',       emoji: '🧪', label: 'Pesquisa Clínica', bg: '#FDF2F8', ring: '#EC4899' },
+  { id: 'hospital',    emoji: '🏥', label: 'Saúde Pública',    bg: '#ECFDF5', ring: '#10B981' },
+  { id: 'scalpel',     emoji: '🩹', label: 'Cirurgia Geral',   bg: '#F8FAFC', ring: '#475569' },
+  { id: 'kidneys',     emoji: '🫘', label: 'Nefrologia',       bg: '#FFF7ED', ring: '#C2410C' },
+  { id: 'stomach',     emoji: '🫃', label: 'Gastroenterologia',bg: '#FEF9C3', ring: '#CA8A04' },
+  { id: 'skin',        emoji: '🌡️', label: 'Infectologia',    bg: '#FFF1F2', ring: '#BE123C' },
+  { id: 'psychiatry',  emoji: '🧘', label: 'Psiquiatria',      bg: '#FAF5FF', ring: '#9333EA' },
 ];
 
 export default function App() {
