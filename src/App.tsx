@@ -20026,6 +20026,508 @@ const QUESTIONS: Question[] = [
     correctIndex: 3,
     explanation: '',
   },
+
+  // ─── UNESP-SP 2010 — Acesso Direto (R1) — 100 questões. Gabarito definido por conhecimento médico (IA) — validar com gabarito oficial. ───
+  { id:'unesp_2010_001', banca:'UNESP', cycle:'Ciclo Clínico', subject:'Clínica Médica',
+    text:'Homem de 65 anos, 70 kg, AVE há 10 dias, pneumonia hospitalar há 5 dias em cefepime e clindamicina. Há 1 dia, diarreia pastosa sem produtos patológicos. Recebe 300 ml de dieta enteral a cada 3 horas (1900 kcal/dia; 15% proteínas, 30% lípides, 55% carboidratos). Conduta adequada:',
+    options:['Suspender dieta e iniciar soro glicosado 5% e eletrólitos.','Suspender dieta, iniciar soro glicosado, eletrólitos e antibiótico para anaeróbios e gram-negativos.','Adicionar fibras solúveis, reduzir a velocidade de infusão da dieta e descartar etiologia infecciosa.','Reduzir lípides, adicionar fibras insolúveis e aumentar carboidratos.','Suspender dieta por 24 horas e reiniciar com 1600 kcal, prescrevendo antibiótico de amplo espectro.'],
+    correctIndex:2, explanation:'Diarreia sem produtos patológicos em paciente com nutrição enteral costuma relacionar-se à osmolaridade/velocidade de infusão: ajusta-se a dieta (fibras solúveis, reduzir velocidade) e descarta-se causa infecciosa (ex.: C. difficile pelo uso de antibióticos).' },
+
+  { id:'unesp_2010_002', banca:'UNESP', cycle:'Ciclo Clínico', subject:'Nefrologia',
+    text:'Mulher de 50 anos com HAS, hipotireoidismo e diabetes. K 6,0 e creatinina 2,8. Usa enalapril, carvedilol, hidroclorotiazida, furosemida, espironolactona, levotiroxina, metformina e glibenclamida. As medicações que podem ser responsáveis pela hiperpotassemia são:',
+    options:['Hidroclorotiazida, metformina e glibenclamida.','Enalapril, carvedilol, espironolactona e metformina.','Hidroclorotiazida, enalapril, espironolactona, levotiroxina e glibenclamida.','Enalapril, espironolactona, levotiroxina e glibenclamida.','Enalapril, carvedilol, levotiroxina e glibenclamida.'],
+    correctIndex:1, explanation:'Elevam o potássio: iECA (enalapril), poupador de potássio (espironolactona) e betabloqueador (carvedilol, por reduzir a captação celular de K). Tiazídico e furosemida causam hipopotassemia.' },
+
+  { id:'unesp_2010_003', banca:'UNESP', cycle:'Internato', subject:'Medicina Intensiva',
+    text:'Mulher de 40 anos, diabética, com choque séptico de foco urinário. Após 3h de ressuscitação: PAM 70 mmHg, PVC 10 mmHg, hematócrito 32%, saturação venosa central 64% e glicemia 160. A próxima medida a ser realizada é:',
+    options:['Controle glicêmico.','Proteína C ativada recombinante humana.','Soro fisiológico 0,9%.','Hidrocortisona.','Dobutamina.'],
+    correctIndex:4, explanation:'Na terapia guiada por metas, com PVC e PAM já adequadas mas SvcO2 < 70% e hematócrito > 30%, o próximo passo é iniciar inotrópico (dobutamina). Transfusão seria indicada se Ht < 30%.' },
+
+  { id:'unesp_2010_004', banca:'UNESP', cycle:'Ciclo Clínico', subject:'Endocrinologia',
+    text:'Assinale a alternativa correta com relação ao diabetes mellitus:',
+    options:['O controle glicêmico rígido reduz as microangiopatias, mas não reduz a doença arterial periférica.','O objetivo do controle da dislipidemia é LDL < 70, triglicérides < 150 e HDL > 50 mg/dL.','A HAS associada deve ser tratada agressivamente a partir de níveis maiores que 125 x 75 mmHg.','A investigação de órgãos-alvo deve iniciar 5 anos após o diagnóstico nos tipos 1 e 2.','O uso de iECA e/ou bloqueador do receptor da angiotensina II deve ser instituído para lentificar a progressão da nefropatia.'],
+    correctIndex:4, explanation:'iECA/BRA reduzem a proteinúria e retardam a progressão da nefropatia diabética. No DM2 a pesquisa de órgãos-alvo começa ao diagnóstico, e a meta pressórica é < 130/80.' },
+
+  { id:'unesp_2010_005', banca:'UNESP', cycle:'Ciclo Clínico', subject:'Cardiologia',
+    text:'Homem de 64 anos com cardiopatia hipertensiva, dispneia progressiva há 8 anos, dispneia paroxística noturna e edema de MMII. PA 130x80, estase jugular, crepitações até ápices, ictus desviado, edema 1+/4+. Em uso de furosemida e captopril com melhora discreta. O próximo passo do tratamento é associar:',
+    options:['Antagonista do receptor da angiotensina II.','Betabloqueador.','Digital.','Nitrato endovenoso.','Dobutamina.'],
+    correctIndex:1, explanation:'Na IC com fração de ejeção reduzida, após iECA e diurético e uma vez compensado, associa-se betabloqueador (carvedilol, bisoprolol, metoprolol succinato), que reduz mortalidade.' },
+
+  { id:'unesp_2010_006', banca:'UNESP', cycle:'Internato', subject:'Urgência e Emergência',
+    text:'A administração de carvão ativado em pacientes com intoxicação exógena deve ser realizada:',
+    options:['Durante o atendimento pré-hospitalar.','Diante de intoxicação por metais pesados, organofosforados e tricíclicos.','Na primeira hora do atendimento de intoxicação por barbitúricos e tricíclicos.','Por meio de tubo nasoenteral seguido de catárticos.','Somente se houver grave alteração do nível de consciência (Glasgow < 6).'],
+    correctIndex:2, explanation:'O carvão ativado é mais eficaz na primeira hora após a ingestão e adsorve bem substâncias como barbitúricos e antidepressivos tricíclicos. Não adsorve metais, álcoois, lítio e hidrocarbonetos.' },
+
+  { id:'unesp_2010_007', banca:'UNESP', cycle:'Ciclo Clínico', subject:'Reumatologia',
+    text:'No lúpus eritematoso sistêmico, são considerados marcadores específicos:',
+    options:['Anti-DNA nativo, anti-Sm e anti-P.','Anti-DNA nativo, anti-Sm e anti-RNP.','Anti-DNA nativo, anti-Sm e anti-coagulante lúpico.','FAN, anti-DNA histona e anti-Sm.','Anti-DNA nativo, FAN e anti-Ro/La.'],
+    correctIndex:0, explanation:'São específicos do LES o anti-DNA de dupla hélice (nativo), o anti-Sm e o anti-P ribossomal. FAN e anti-RNP/Ro/La são sensíveis, porém pouco específicos.' },
+
+  { id:'unesp_2010_008', banca:'UNESP', cycle:'Ciclo Clínico', subject:'Pneumologia',
+    text:'Homem de 50 anos com pneumonia comunitária tem PaO2 de 40 mmHg em ar ambiente. Após 24h de ventilação mecânica com FiO2 de 50%, a PaO2 aumenta para 80 mmHg. Em relação à troca gasosa do paciente,',
+    options:['Houve melhora.','Mantém-se inalterada.','Houve piora.','Não se pode comparar as duas situações.','Depende dos valores da pressão parcial de gás carbônico.'],
+    correctIndex:2, explanation:'Comparando pela relação PaO2/FiO2: inicial 40/0,21 ≈ 190; depois 80/0,50 = 160. A queda da relação indica piora da troca gasosa, apesar da PaO2 absoluta ter subido.' },
+
+  { id:'unesp_2010_009', banca:'UNESP', cycle:'Ciclo Clínico', subject:'Cardiologia',
+    text:'Mulher de 65 anos, tabagista, diabética, com AVE há 2 meses, apresenta dor em queimação epigástrica, náusea e sudorese fria há 40 minutos. PA 140x90, ECG com supradesnivelamento de ST de 4 mm em V1 a V6. A melhor conduta é:',
+    options:['Angioplastia primária em centro terciário com hemodinâmica disponível, com tempo de transferência de até 3 horas.','Iniciar trombólise com estreptoquinase imediatamente.','Iniciar anticoagulação plena com enoxaparina imediatamente.','Não realizar terapia de reperfusão devido ao AVE.','Aguardar marcadores de necrose miocárdica para decidir a reperfusão.'],
+    correctIndex:0, explanation:'IAMCSST anterior extenso. Com AVE recente (2 meses), a trombólise é contraindicada; prefere-se a angioplastia primária, desde que o tempo porta-balão/transferência seja adequado.' },
+
+  { id:'unesp_2010_010', banca:'UNESP', cycle:'Ciclo Clínico', subject:'Nefrologia',
+    text:'Mulher de 75 anos, hipertensa há 30 anos, com irmão em diálise. PA 160x90. Rastreamento de DRC: urina I com proteinúria 2+ e creatinina elevada. Assinale o risco estimado, estágio, diagnóstico e conduta mais apropriados.',
+    options:['Baixo; DRC estágio I; retorno na UBS.','Médio; DRC estágio III; esclarecimento dos sinais e sintomas.','Médio; DRC estágio III; seguimento anual se estável.','Elevado; DRC; instituição de medidas para retardar a progressão da DRC.','Elevado; DRC estágio IV; internação e biópsia renal.'],
+    correctIndex:3, explanation:'Proteinúria, HAS de longa data e história familiar de DRC configuram alto risco; a conduta é instituir medidas para retardar a progressão (controle pressórico rigoroso, iECA/BRA, controle de fatores de risco).' },
+
+  { id:'unesp_2010_011', banca:'UNESP', cycle:'Ciclo Clínico', subject:'Gastroenterologia',
+    text:'Sobre a doença do refluxo gastroesofágico (DRGE), assinale a correta:',
+    options:['Ao contrário da rinossinusopatia, a otite média recorrente não integra suas manifestações extraesofágicas.','Para seu diagnóstico, é necessário o aparecimento de esofagite.','O pH esofágico normal durante a pHmetria de 24 horas descarta DRGE.','As manifestações extraesofágicas respondem melhor ao tratamento que as esofágicas.','O ganho de peso pode ser causa do início dos sintomas.'],
+    correctIndex:4, explanation:'O ganho de peso aumenta a pressão intra-abdominal e favorece o refluxo, podendo desencadear os sintomas. O diagnóstico não exige esofagite (existe DRGE não erosiva) e as manifestações extraesofágicas respondem pior ao tratamento.' },
+
+  { id:'unesp_2010_012', banca:'UNESP', cycle:'Ciclo Clínico', subject:'Endocrinologia',
+    text:'Mulher de 45 anos, assintomática, com T4-livre 0,6 ng/dL (VR 0,8-1,9), TSH 25 mUI/mL (VR 0,4-4,0) e anti-TPO 320 UI/L (VR < 35). Diagnóstico e conduta inicial:',
+    options:['Hipotireoidismo central e ressonância magnética de hipófise.','Hipotireoidismo primário por tireoidite de Hashimoto e levotiroxina.','Hipotireoidismo primário por tireoidite autoimune e tri-iodotironina.','Hipotireoidismo por tireoidite subaguda e glicocorticoide.','Hipotireoidismo primário por tireoidite de Riedel e ultrassonografia de tireoide.'],
+    correctIndex:1, explanation:'TSH elevado com T4-livre baixo define hipotireoidismo primário; o anti-TPO elevado indica etiologia autoimune (Hashimoto). Tratamento: reposição de levotiroxina.' },
+
+  { id:'unesp_2010_013', banca:'UNESP', cycle:'Ciclo Clínico', subject:'Hematologia',
+    text:'Homem de 74 anos com hemograma: hemácias 2.970.000/mm³; Hb 9,2; Ht 32%; plaquetas 445.000; leucócitos 2.800 [bastões 5%, segmentados 35%, linfócitos 40%, monócitos 20%]. Trata-se de:',
+    options:['Anemia normocítica, leucopenia e plaquetometria normal.','Anemia microcítica, neutropenia e plaquetometria normal.','Anemia macrocítica, neutropenia e plaquetose.','Anemia macrocítica, neutropenia e plaquetometria normal.','Anemia normocítica, monocitose e plaquetometria normal.'],
+    correctIndex:3, explanation:'VCM = Ht/hemácias ≈ 107 fl (macrocítica). Neutrófilos = 40% de 2.800 ≈ 1.120 (neutropenia). Plaquetas 445.000 estão na faixa normal.' },
+
+  { id:'unesp_2010_014', banca:'UNESP', cycle:'Ciclo Clínico', subject:'Nefrologia',
+    text:'Assinale a meta de controle da pressão arterial para nefropatas, segundo as V Diretrizes Brasileiras de Hipertensão.',
+    options:['Inferior a 120 x 75 mmHg, caso proteinúria superior a 1,0 grama.','Inferior a 130 x 80 mmHg em qualquer nefropatia.','Inferior a 120 x 75 mmHg em diabéticos, qualquer que seja a proteinúria.','Inferior a 140 x 90 mmHg desde que se utilizem drogas que atuem no sistema renina-angiotensina-aldosterona.','Inferior a 140 x 90 mmHg com qualquer anti-hipertensivo.'],
+    correctIndex:1, explanation:'A meta para nefropatas é PA < 130/80 mmHg; quando há proteinúria > 1 g/dia, recomenda-se meta mais rigorosa (< 125/75 mmHg).' },
+
+  { id:'unesp_2010_015', banca:'UNESP', cycle:'Ciclo Clínico', subject:'Pneumologia',
+    text:'Mulher de 74 anos, em pós-operatório de correção de fratura de colo de fêmur, apresenta quadro súbito de confusão, taquicardia e queda da saturação. PA 80x40, FC 126, FR 28, sopro sistólico em foco tricúspide, cicatriz cirúrgica e edema em membro inferior direito. Assinale a correta.',
+    options:['O escore de Wells sugere risco moderado para TEP, por isso deve-se solicitar tomografia para confirmação.','Deve-se instituir suporte com reposição volêmica agressiva até recuperar a pressão e depois investigar TEP.','Se confirmada TEP, devem ser administrados trombolíticos, na ausência de contraindicações.','A anticoagulação deve ser inicial com heparina não fracionada e substituída por warfarina em definitivo.','Inicialmente deve-se dosar dímero-D, realizar suporte e cintilografia pulmonar.'],
+    correctIndex:2, explanation:'Quadro de TEP com instabilidade hemodinâmica (choque) caracteriza TEP maciça, cuja terapêutica é a trombólise, na ausência de contraindicações. O dímero-D não se aplica na alta probabilidade.' },
+
+  { id:'unesp_2010_016', banca:'UNESP', cycle:'Ciclo Clínico', subject:'Geriatria',
+    text:'Para o diagnóstico de doença de Alzheimer, em conjunto com a perda de memória, é necessária a presença dos seguintes parâmetros, segundo o DSM-IV:',
+    options:['Afasia e transtorno de funções executivas.','Afasia e anedonia.','Agnosia e alteração do humor.','Anedonia e tremor.','Transtorno de função executiva e rigidez.'],
+    correctIndex:0, explanation:'Pelo DSM-IV, a demência exige déficit de memória associado a pelo menos um entre afasia, apraxia, agnosia ou distúrbio de função executiva. A alternativa que reúne dois desses critérios é afasia e transtorno de função executiva.' },
+
+  { id:'unesp_2010_017', banca:'UNESP', cycle:'Ciclo Clínico', subject:'Neurologia',
+    text:'Mulher de 60 anos com fraqueza progressiva e ascendente em MMII e mãos, paraparesia hipotônica simétrica, arreflexia global, redução da sensibilidade vibratória, sem nível sensitivo. Vacinada para gripe há 2 semanas. Líquor: 10 leucócitos (100% linfócitos), proteínas 100 mg%. Diagnóstico:',
+    options:['Síndrome de Guillain-Barré.','Polineuropatia diabética.','Influenza A H1N1.','Mielite transversa.','Polimiosite.'],
+    correctIndex:0, explanation:'Fraqueza ascendente simétrica, arreflexia e dissociação albuminocitológica no líquor (proteína alta com poucas células), após vacinação, caracterizam a síndrome de Guillain-Barré.' },
+
+  { id:'unesp_2010_018', banca:'UNESP', cycle:'Ciclo Clínico', subject:'Psiquiatria',
+    text:'Homem de 69 anos, hipertenso e diabético, sem antecedentes psiquiátricos, no 2º dia de internação por broncopneumonia apresenta inquietação, alucinações visuais, desorientação, discurso incoerente, déficit de memória e ideação delirante paranoide, com oscilação ao longo do dia e piora à noite. Diagnóstico:',
+    options:['Demência do tipo Alzheimer.','Delirium.','Psicose reativa breve.','Transtorno esquizofreniforme.','Transtorno delirante.'],
+    correctIndex:1, explanation:'Início agudo, flutuação do nível de consciência/atenção, alucinações visuais e piora noturna em paciente clínico (broncopneumonia) caracterizam delirium.' },
+
+  { id:'unesp_2010_019', banca:'UNESP', cycle:'Ciclo Clínico', subject:'Infectologia',
+    text:'Com relação à história natural da infecção pelo HIV, assinale a alternativa correta:',
+    options:['Três meses após o contágio todos apresentam síndrome retroviral aguda.','Durante a síndrome retroviral aguda a viremia é muito baixa.','O período de latência clínica dura em média 10 anos, apesar da queda lenta e progressiva de linfócitos T CD4+.','Infecções oportunistas mais graves são esperadas com CD4 entre 200 e 400 células/mm³.','As doenças definidoras de aids ocorrem, na maioria, cerca de dois anos após a síndrome retroviral aguda.'],
+    correctIndex:2, explanation:'A latência clínica do HIV dura, em média, cerca de 10 anos, com queda lenta e progressiva de CD4. As infecções oportunistas graves surgem com CD4 < 200.' },
+
+  { id:'unesp_2010_020', banca:'UNESP', cycle:'Ciclo Clínico', subject:'Clínica Médica',
+    text:'Mulher de 35 anos com placas edematosas pruriginosas no tronco e membros, efêmeras e migratórias, edema fixo na pálpebra esquerda ocluindo a visão e rouquidão há 1 hora. Usa contraceptivo oral e diclofenaco há 3 dias. Lúcida, FC 110, PA 110x60, FR 22, ausculta normal. A terapêutica medicamentosa inicial é:',
+    options:['Anti-histamínico intramuscular.','Corticosteroide endovenoso.','Soro fisiológico endovenoso.','Adrenalina subcutânea.','Diurético de alça endovenoso.'],
+    correctIndex:3, explanation:'Urticária e angioedema com acometimento de laringe (rouquidão) indicam risco de obstrução de via aérea; a adrenalina é a terapêutica inicial nesse cenário.' },
+
+  { id:'unesp_2010_021', banca:'UNESP', cycle:'Ciclo Clínico', subject:'Otorrinolaringologia',
+    text:'Com relação à estenose traqueal, assinale a alternativa correta:',
+    options:['A intubação prolongada não é fator predisponente.','A má higiene e as altas pressões nos balonetes das cânulas podem levar a inflamação, isquemia da mucosa e destruição da cartilagem traqueal.','Utilizam-se órteses traqueais somente para estabilização durante o processo inflamatório, antes da correção cirúrgica definitiva.','A traqueostomia, quando realizada precocemente, a evita.','Tem como causa mais comum processos infecciosos.'],
+    correctIndex:1, explanation:'A causa mais comum de estenose traqueal é iatrogênica (intubação/traqueostomia): a pressão elevada do balonete causa isquemia da mucosa, inflamação e destruição cartilaginosa, com cicatrização estenosante.' },
+
+  { id:'unesp_2010_022', banca:'UNESP', cycle:'Internato', subject:'Urgência e Emergência',
+    text:'Motociclista de 18 anos sofre trauma por corda na linha média do pescoço. Chega dispneico, com voz rouca, edema e enfisema subcutâneo cervical, edema de laringe, equimose submucosa e estreitamento da luz. A conduta é:',
+    options:['Traqueostomia.','Cricotireoidostomia.','Intubação orotraqueal.','Intubação nasotraqueal.','Observação.'],
+    correctIndex:0, explanation:'No trauma laringotraqueal com via aérea ameaçada, a intubação (oro/naso) pode criar falso trajeto e a cricotireoidostomia é arriscada por lesão local; indica-se traqueostomia para via aérea segura.' },
+
+  { id:'unesp_2010_023', banca:'UNESP', cycle:'Internato', subject:'Cirurgia Vascular',
+    text:'Em relação à hiperidrose localizada, assinale a alternativa correta.',
+    options:['Ocorre em 10% da população mundial e mais frequentemente em Israel e Brasil.','A ansiedade e a preocupação não pioram a sudorese da área comprometida.','O pneumotórax e a hiperidrose compensatória são complicações que podem ocorrer em cerca de 10% dos pacientes após a simpatectomia.','É um distúrbio do sistema nervoso simpático em que há sudorese excessiva em mãos e o único tratamento é a simpatectomia torácica.','Quanto mais alto for o nível da secção da cadeia simpática, maior é o risco de síndrome de Horner e de hiperidrose compensatória.'],
+    correctIndex:4, explanation:'A secção em níveis mais altos da cadeia simpática (próximo ao gânglio estrelado) aumenta o risco de síndrome de Horner, e ressecções mais extensas/altas associam-se a maior hiperidrose compensatória.' },
+
+  { id:'unesp_2010_024', banca:'UNESP', cycle:'Ciclo Clínico', subject:'Gastroenterologia',
+    text:'Com relação ao sangramento digestivo alto não varicoso, analise o esquema e assinale a alternativa que contém a sequência correta (ver imagem):',
+    options:['1, 2, 3, 4, 5 e 6.','1, 2, 4, 5 e 6, apenas.','1, 2, 4 e 6, apenas.','2, 1, 4, 5 e 6, apenas.','4, 1, 2, 3, 6 e 5.'],
+    correctIndex:1, explanation:'Questão baseada em fluxograma/esquema (imagem) sobre a abordagem da hemorragia digestiva alta não varicosa. Resposta sujeita à conferência com o gabarito oficial.' },
+
+  { id:'unesp_2010_025', banca:'UNESP', cycle:'Ciclo Clínico', subject:'Oftalmologia',
+    text:'A causa mais comum de exoftalmia unilateral de 0 a 18 anos é:',
+    options:['Rabdomiossarcoma.','Cisto dermoide.','Orbitopatia endócrina.','Celulite orbitária.','Glaucoma congênito.'],
+    correctIndex:3, explanation:'A celulite orbitária é a causa mais comum de proptose/exoftalmia na faixa pediátrica. O rabdomiossarcoma é o tumor maligno orbitário primário mais frequente da infância.' },
+
+  { id:'unesp_2010_026', banca:'UNESP', cycle:'Ciclo Clínico', subject:'Ortopedia',
+    text:'Em relação à fratura de Colles, o acometimento osteoarticular e a presença ou não de desvios são (ver imagem):',
+    options:['Opção A (ver imagem).','Opção B (ver imagem).','Opção C (ver imagem).','Opção D (ver imagem).','Opção E (ver imagem).'],
+    correctIndex:0, explanation:'A fratura de Colles é a fratura da extremidade distal do rádio com desvio dorsal do fragmento distal. Questão dependente de imagem — resposta sujeita à conferência com o gabarito oficial.' },
+
+  { id:'unesp_2010_027', banca:'UNESP', cycle:'Ciclo Clínico', subject:'Gastroenterologia',
+    text:'São consideradas lesões benignas gastroduodenais:',
+    options:['Gastrites erosiva crônica, autoimune e linfocitária e leiomiomas.','Síndrome de Mallory-Weiss, gastropatia hipertrófica, pólipos hiperplásicos e carcinoide duodenal.','Gastrites eosinofílica, áctínica e associada ao H. pylori e lesões estromais (GIST).','Cistos enterógenos gástricos, angiodisplasias, ectasias vasculares antrais e carcinoide gástrico.','Lesão de Dieulafoy, gastrite autoimune, pólipos hiperplásicos e linfomas.'],
+    correctIndex:0, explanation:'A alternativa que contém apenas lesões benignas reúne as gastrites (erosiva, autoimune e linfocitária) e os leiomiomas. As demais incluem lesões com potencial maligno (carcinoide, GIST, linfoma).' },
+
+  { id:'unesp_2010_028', banca:'UNESP', cycle:'Internato', subject:'Anestesiologia',
+    text:'O mecanismo responsável pelo início de ação mais rápido de um anestésico local é:',
+    options:['A alta característica lipofóbica.','A baixa característica hidrofóbica.','O pH mais ácido ao redor do nervo.','O valor baixo de pKa em pH neutro.','A presença de tecido conjuntivo ao redor do nervo.'],
+    correctIndex:3, explanation:'Quanto menor o pKa, maior a fração não ionizada do anestésico em pH fisiológico, o que aumenta a difusão pela membrana e acelera o início de ação.' },
+
+  { id:'unesp_2010_029', banca:'UNESP', cycle:'Internato', subject:'Anestesiologia',
+    text:'Calcule, em mL, o volume de soro fisiológico 0,9% e de adrenalina milesimal (1:1000) a serem acrescentados a um frasco intacto de 20 mL de lidocaína a 2% para obter solução de lidocaína a 0,5% com adrenalina 1:100.000.',
+    options:['80 e 0,2.','80 e 0,4.','80 e 0,8.','60 e 0,8.','60 e 0,4.'],
+    correctIndex:3, explanation:'Diluir lidocaína 2% para 0,5% exige volume final de 80 mL (20 x 2 / 0,5); acrescentam-se ~60 mL de diluente. Para adrenalina 1:100.000 em 80 mL são necessários 0,8 mg = 0,8 mL da solução 1:1000.' },
+
+  { id:'unesp_2010_030', banca:'UNESP', cycle:'Ciclo Clínico', subject:'Cirurgia Geral',
+    text:'Após infiltração adequada com solução de lidocaína com adrenalina, realiza-se imediatamente a incisão da pele, resultando em sangramento profuso. Esse fato explica-se por:',
+    options:['Envelhecimento da árvore arterial.','Desconhecimento farmacológico.','Uso pré-operatório de antiagregantes plaquetários.','Bloqueio enzimático degradando a adrenalina.','Ação preponderante vasodilatadora da lidocaína.'],
+    correctIndex:4, explanation:'A adrenalina leva alguns minutos para promover vasoconstrição; ao incisar imediatamente, predomina o efeito vasodilatador da própria lidocaína, resultando em sangramento.' },
+
+  { id:'unesp_2010_031', banca:'UNESP', cycle:'Ciclo Clínico', subject:'Pediatria',
+    text:'Lactente de 4 semanas com vômitos pós-alimentares, sem perda de apetite e com perda de peso, com nódulo palpável no andar superior do abdome. Assinale a alternativa correta.',
+    options:['Deve ser feito diagnóstico diferencial com atresia duodenal.','Os vômitos são biliosos, decorrentes de esofagite alcalina.','A tomografia do andar superior do abdome é o exame de imagem de escolha.','Essa doença é uma emergência cirúrgica.','A introdução da dieta no pós-operatório pode ser iniciada após 4 horas.'],
+    correctIndex:4, explanation:'Quadro de estenose hipertrófica do piloro: vômitos não biliosos, oliva palpável, diagnóstico por ultrassonografia. Não é emergência (corrige-se a alcalose antes); a dieta pode ser reiniciada poucas horas após a pilorotomia.' },
+
+  { id:'unesp_2010_032', banca:'UNESP', cycle:'Ciclo Clínico', subject:'Cardiologia',
+    text:'Em relação à comunicação interatrial (CIA), assinale a alternativa correta.',
+    options:['A de maior ocorrência é do tipo seio venoso, associada à drenagem anômala de veias pulmonares.','A de maior ocorrência é do tipo ostium primum, por defeito dos coxins endocárdicos.','A do tipo ostium secundum é localizada na lâmina da fossa oval.','A correção do ostium secundum deve ser feita exclusivamente por rafia simples.','É a única cardiopatia congênita acianótica que não leva à hipertensão pulmonar tardia.'],
+    correctIndex:2, explanation:'A CIA mais frequente é a do tipo ostium secundum, localizada na região da fossa oval. Pode levar à hipertensão pulmonar tardia e a correção pode ser cirúrgica (com retalho) ou percutânea.' },
+
+  { id:'unesp_2010_033', banca:'UNESP', cycle:'Ciclo Clínico', subject:'Cirurgia Geral',
+    text:'Mulher de 70 anos é atropelada por um carro que atinge seu abdome. A melhor maneira de diagnosticar uma ruptura de segunda porção duodenal é:',
+    options:['Exames físicos seriados.','Ultrassonografia.','Dosagens repetidas de amilase sérica.','Lavado peritoneal.','Tomografia computadorizada com contraste oral e endovenoso.'],
+    correctIndex:4, explanation:'A lesão duodenal é retroperitoneal e pode passar despercebida no lavado/USG; a tomografia com contraste oral e endovenoso é o melhor método para diagnosticá-la.' },
+
+  { id:'unesp_2010_034', banca:'UNESP', cycle:'Ciclo Clínico', subject:'Urologia',
+    text:'Homem de 43 anos, vítima de acidente automobilístico. Glasgow 14, pulso cheio 120 bpm, PA 140x90, dor no quadril, crepitação à palpação do ilíaco direito, incapacidade para deambular, massa palpável e dolorosa infra-umbilical com percussão submaciça e drenagem espontânea de sangue pelo meato uretral. Assinale a correta:',
+    options:['Trata-se de trauma de uretra bulbar e hematoma supra-púbico por fratura de pelve com necessidade de fixação.','A melhor conduta é a cistostomia suprapúbica e uretrografia anterógrada.','Trata-se de trauma renal e hematoma retroperitoneal extenso com necessidade de tomografia.','A melhor conduta é ressonância seguida de laparotomia e anastomose dos cotos uretrais.','Trata-se de trauma de uretra posterior com retenção urinária aguda e necessidade de uretrografia retrógrada.'],
+    correctIndex:4, explanation:'Fratura de pelve com sangue no meato e bexiga distendida (retenção) indica lesão de uretra posterior (membranosa); investiga-se com uretrografia retrógrada antes de qualquer sondagem.' },
+
+  { id:'unesp_2010_035', banca:'UNESP', cycle:'Ciclo Clínico', subject:'Urologia',
+    text:'Sobre o câncer de próstata, analise: I. Escore de Gleason, PSA e estadiamento são fatores prognósticos pré-operatórios importantes. II. Pouca exposição ao sol, dieta rica em gorduras e hereditariedade são fatores predisponentes. III. Lavado vesical, PSA e citologia aspirativa fazem parte do diagnóstico atual. IV. Em casos selecionados (comorbidades graves, expectativa < 10 anos, idade > 75 anos), o acompanhamento vigilante é boa alternativa nos tumores órgão-confinados. V. A obtenção de tecido é, em geral, transperineal guiada por ultrassom, com 12 fragmentos. Está correto, apenas, o que se afirma em:',
+    options:['I, II e V.','I, III e IV.','I, II e IV.','II, III e V.','III, IV e V.'],
+    correctIndex:2, explanation:'Corretas I (fatores prognósticos), II (fatores de risco) e IV (vigilância ativa em selecionados). O diagnóstico se faz por biópsia (não por lavado/citologia), em geral transretal guiada por ultrassom.' },
+
+  { id:'unesp_2010_036', banca:'UNESP', cycle:'Ciclo Clínico', subject:'Urologia',
+    text:'Em relação ao tratamento de infecção urinária, assinale a alternativa correta.',
+    options:['O uso do cateter duplo J com antibioticoprofilaxia não eleva a possibilidade de infecção urinária.','A nitrofurantoína pode levar, mesmo em doses baixas, à pneumonite intersticial, principalmente em idosos.','A cistite recorrente deve ser tratada com azitromicina antes das relações sexuais por no mínimo 3 meses.','A associação amoxicilina-clavulanato não é usada em ITU de rotina porque apresenta baixos níveis urinários.','Na pielonefrite enfisematosa por anaeróbios, os aminoglicosídeos são a droga de escolha.'],
+    correctIndex:1, explanation:'A nitrofurantoína pode causar toxicidade pulmonar (pneumonite intersticial), efeito mais relevante em idosos. A pielonefrite enfisematosa é causada por germes produtores de gás (E. coli/Klebsiella), não anaeróbios.' },
+
+  { id:'unesp_2010_037', banca:'UNESP', cycle:'Ciclo Clínico', subject:'Cirurgia Geral',
+    text:'Homem de 19 anos com dor na fossa ilíaca direita há 12 horas, inapetência e 1 episódio de febre de 38°C. Nega vômitos. Assinale a alternativa correta.',
+    options:['Se não houver descompressão brusca positiva, deve ser solicitado RX de abdome.','Se houver dúvida diagnóstica, deve ser solicitada ultrassonografia de abdome.','Na ausência de descompressão brusca, o paciente deve ser reavaliado posteriormente.','Independente do exame físico, deve-se complementar com hemograma, urina I e RX.','Deve-se solicitar urina I apenas se houver disúria.'],
+    correctIndex:1, explanation:'Na suspeita de apendicite com dúvida diagnóstica, a ultrassonografia abdominal auxilia, sobretudo para afastar diagnósticos diferenciais.' },
+
+  { id:'unesp_2010_038', banca:'UNESP', cycle:'Internato', subject:'Cirurgia Vascular',
+    text:'Homem de 61 anos, tabagista, dislipidêmico, com claudicação intermitente em MID e cianose fixa recente em 3º pododáctilo com dor em repouso. A conduta mais adequada, além do enfaixamento do membro, é:',
+    options:['Antiagregação, analgesia, orientação de deambulação e controle clínico.','Antiagregação, analgesia, controle de fatores de risco e amputação do artelho.','Antiagregação, controle dos fatores de risco, analgesia e programação de arteriografia.','Anticoagulação, analgesia e programação cirúrgica.','Antiagregação, anticoagulação, analgesia e programação de arteriografia.'],
+    correctIndex:2, explanation:'Dor em repouso e cianose fixa (perda tecidual) caracterizam isquemia crítica de membro: indica-se antiagregação, controle de fatores de risco, analgesia e arteriografia para programar revascularização.' },
+
+  { id:'unesp_2010_039', banca:'UNESP', cycle:'Ciclo Clínico', subject:'Neurologia',
+    text:'Mulher de 58 anos, diabética e hipertensa, há 48 horas apresentou afasia motora reversível com duração inferior a 24 horas. Pulsos carotídeos simétricos, sem sopros. ECG sinusal e ecocardiograma normal. A conduta, além do controle dos fatores de risco, é:',
+    options:['Antiagregante plaquetário e retorno em 30 dias para nova avaliação.','Anticoagulante e duplex de carótidas e vertebrais para procura de foco embolígeno.','Antiagregante e tomografia de crânio, visto tratar-se de AVC.','Antiagregante plaquetário e duplex de carótidas e vertebrais para pesquisa de foco embolígeno.','Antiagregante e anticoagulação com heparina e duplex.'],
+    correctIndex:3, explanation:'Quadro de ataque isquêmico transitório (reversível em menos de 24h). Sem fonte cardioembólica (ECG sinusal, eco normal), indica-se antiagregante e duplex de carótidas/vertebrais para investigar foco embolígeno.' },
+
+  { id:'unesp_2010_040', banca:'UNESP', cycle:'Internato', subject:'Cirurgia Vascular',
+    text:'Sobre aneurisma de aorta abdominal: I. É mais comum no segmento infrarrenal e o risco de rotura aumenta a partir de 5 cm. II. O melhor exame para triagem e programação cirúrgica é a ultrassonografia. III. Para o diagnóstico de rotura em estáveis, a tomografia é de pouca valia, sendo a ultrassonografia o exame de escolha. IV. A aortografia é o melhor método para o diagnóstico e para a programação endovascular. V. Há forte associação com aneurismas em outros segmentos, especialmente o de artéria poplítea, sendo mais comum no sexo masculino. A sequência correta é:',
+    options:['V, F, F, F, V.','V, V, V, F, V.','F, F, V, F, V.','F, V, F, V, F.','V, F, V, F, V.'],
+    correctIndex:0, explanation:'V (infrarrenal, rotura a partir de 5 cm); F (a US serve para triagem, mas a programação cirúrgica usa tomografia); F (no estável, a tomografia é o exame de escolha para rotura); F (o diagnóstico se faz por tomografia, não aortografia); V (associação com outros aneurismas, especialmente poplíteo, no sexo masculino).' },
+
+  { id:'unesp_2010_041', banca:'UNESP', cycle:'Ciclo Clínico', subject:'Cardiologia',
+    text:'Menina de 5 anos, nascida com 3,4 kg e 50 cm, com sopro cardíaco. PA 120/70, pulsos diminuídos no membro superior esquerdo e nos membros inferiores, pequena dobra de pele em cada lado do pescoço, sopro sistólico ejetivo (2+/6+) no mesocárdio com irradiação para o dorso e B2 hiperfonética. Essa criança é portadora de:',
+    options:['Coarctação de aorta e síndrome de Turner.','Coarctação de aorta e síndrome de Down.','Estenose aórtica supravalvar e síndrome de Down.','Estenose aórtica valvar e síndrome de Turner.','Coarctação de aorta e síndrome do X frágil.'],
+    correctIndex:0, explanation:'Pulsos diminuídos em membros inferiores com sopro irradiado para o dorso sugerem coarctação de aorta; o pescoço alado (pterygium colli) e a baixa estatura indicam síndrome de Turner, frequentemente associada à coarctação.' },
+
+  { id:'unesp_2010_042', banca:'UNESP', cycle:'Ciclo Clínico', subject:'Pediatria',
+    text:'Adolescente de 14 anos com cefaleia, tosse seca, mialgia e febre de 39°C há 4 dias e dispneia com chiado há 1 dia. Nega alergias, contato com doentes e ter saído do Brasil. Foi medicada com dipirona. Exame: 39,2°C, FC 80, FR 24 e discretos sibilos difusos. Diagnóstico e conduta:',
+    options:['Resfriado comum pelo influenza A/H1N1 e sintomáticos.','Pneumonia atípica e azitromicina, antitérmicos e reavaliação em 48 horas.','Crise de broncoespasmo leve, inalação com beta-2 e corticoide oral por 5 dias.','Pneumonia viral e sintomáticos com reavaliação em 48 horas.','Processo gripal, não se podendo descartar gripe pelo influenza A/H1N1; afastamento escolar por 7 dias, sintomáticos e retorno em caso de piora.'],
+    correctIndex:4, explanation:'Quadro de síndrome gripal em período de circulação do influenza A/H1N1: trata-se como processo gripal, com afastamento social, sintomáticos e orientação de retorno em caso de sinais de gravidade.' },
+
+  { id:'unesp_2010_043', banca:'UNESP', cycle:'Ciclo Clínico', subject:'Pediatria',
+    text:'A apresentação clínica mais comum da iridociclite crônica em crianças com artrite idiopática juvenil oligoarticular é:',
+    options:['Assintomática.','Redução da acuidade visual.','Hiperemia conjuntival.','Fotofobia.','Dor ocular.'],
+    correctIndex:0, explanation:'A uveíte (iridociclite) associada à AIJ oligoarticular é tipicamente assintomática e insidiosa, exigindo rastreamento oftalmológico periódico para evitar complicações.' },
+
+  { id:'unesp_2010_044', banca:'UNESP', cycle:'Internato', subject:'Neonatologia',
+    text:'Recém-nascido de 3800 g, filho de mãe com diabetes de difícil controle, apresenta na 2ª hora de vida hipoatividade, sucção débil e hipotonia global. O diagnóstico é:',
+    options:['Hipercalcemia.','Hipotermia.','Convulsão.','Hipoglicemia.','Sepse.'],
+    correctIndex:3, explanation:'Filho de mãe diabética cursa com hiperinsulinismo e hipoglicemia neonatal precoce, que se manifesta por hipoatividade, sucção débil e hipotonia.' },
+
+  { id:'unesp_2010_045', banca:'UNESP', cycle:'Internato', subject:'Neonatologia',
+    text:'Os eventos fisiológicos que fazem parte dos mecanismos de adaptação no início da vida de um recém-nascido saudável são:',
+    options:['Produção e liberação de surfactante, absorção do líquido pulmonar e diminuição da resistência vascular pulmonar.','Produção de surfactante, absorção do líquido pulmonar e aumento da resistência vascular pulmonar.','Aumento da produção do líquido pulmonar, vasodilatação sistêmica e vasoconstrição das arteríolas pulmonares.','Produção de surfactante, absorção do líquido pulmonar e aumento da resistência vascular periférica.','Aumento da resistência vascular pulmonar, liberação de surfactante e fechamento do canal arterial.'],
+    correctIndex:0, explanation:'Na transição ao nascer há liberação de surfactante, reabsorção do líquido pulmonar e queda da resistência vascular pulmonar, permitindo a expansão pulmonar e a circulação adequada.' },
+
+  { id:'unesp_2010_046', banca:'UNESP', cycle:'Internato', subject:'Neonatologia',
+    text:'As indicações de ventilação com pressão positiva durante as manobras de reanimação do recém-nascido na sala de parto são:',
+    options:['Tiragem intercostal persistente associada à cianose periférica.','Cianose periférica e frequência cardíaca menor que 120 bpm.','Apneia ou cianose persistente após oferta de oxigênio inalatório.','Boletim de Apgar igual a 3 no primeiro minuto de vida.','Hipotonia muscular e frequência cardíaca menor que 140 bpm.'],
+    correctIndex:2, explanation:'Indica-se ventilação com pressão positiva quando há apneia/respiração irregular ou frequência cardíaca baixa, ou cianose central persistente apesar da oferta de oxigênio.' },
+
+  { id:'unesp_2010_047', banca:'UNESP', cycle:'Internato', subject:'Neonatologia',
+    text:'São doenças crônicas frequentemente encontradas como sequelas típicas da prematuridade extrema:',
+    options:['Insuficiência renal crônica e hipocalcemia.','Displasia broncopulmonar e retinopatia da prematuridade.','Retinopatia da prematuridade e hipotireoidismo.','Imunodeficiências graves e policitemia.','Hipotireoidismo e insuficiência adrenal.'],
+    correctIndex:1, explanation:'A displasia broncopulmonar e a retinopatia da prematuridade são sequelas crônicas clássicas do prematuro extremo.' },
+
+  { id:'unesp_2010_048', banca:'UNESP', cycle:'Ciclo Clínico', subject:'Infectologia',
+    text:'Quando a bacterioscopia evidencia diplococos Gram-negativos, segundo o Manual de DST do Ministério da Saúde, sugere-se:',
+    options:['Persistir na busca da infecção sem tratar, pois o gram é inconclusivo.','Oferecer preservativos ao paciente para prevenir DST/aids.','Recomendar a busca ativa de parceiros dos últimos quatro meses.','Instituir tratamento imediato, lembrando que, apesar de o padrão-ouro ser a PCR, o tratamento se impõe.','Instituir tratamento imediato, lembrando que, apesar de o padrão-ouro ser a cultura da secreção, o tratamento se impõe.'],
+    correctIndex:4, explanation:'Diplococos Gram-negativos sugerem gonococo: institui-se tratamento imediato (abordagem sindrômica). O padrão-ouro diagnóstico é a cultura da secreção, que permite avaliar resistência.' },
+
+  { id:'unesp_2010_049', banca:'UNESP', cycle:'Ciclo Clínico', subject:'Pediatria',
+    text:'Menina de 9 anos com leucemia linfoide aguda, quimioterapia há 7 dias, chega com febre há 12 horas, prostração e pré-síncope. Palidez, PA 60/40, pulsos finos, sopro sistólico, hiperemia e dor em antebraço direito. Hb 6,7; plaquetas 12.000; leucócitos 100/mL. Exames e terapêutica:',
+    options:['Hemoculturas, RX de tórax, urina I, urocultura, amoxicilina-clavulanato e metronidazol.','Tomografia de tórax e ecocardiograma, cefepime e oxacilina.','Tomografia de abdome e hemoculturas, amoxicilina-clavulanato e ciprofloxacina.','Ecocardiograma, hemoculturas, urina I e urocultura, vancomicina e penicilina cristalina.','Tomografia de tórax, hemocultura e cintilografia óssea, cefepime e vancomicina.'],
+    correctIndex:4, explanation:'Neutropenia febril com sepse e infecção de partes moles: antibioticoterapia empírica de amplo espectro com cobertura antipseudomonas (cefepime) associada a vancomicina (cobertura de gram-positivos/MRSA), após coleta de culturas.' },
+
+  { id:'unesp_2010_050', banca:'UNESP', cycle:'Ciclo Clínico', subject:'Pediatria',
+    text:'Na síndrome nefrítica aguda pós-estreptocócica, a evolução esperada é:',
+    options:['HAS por 1 mês, normalização de C3 em 12 semanas, hematúria macroscópica por 3 meses e proteinúria normal em 6 meses.','HAS por 1 mês, normalização de C3 em 8 semanas, hematúria macro e microscópica por 1 a 2 anos e proteinúria até 6 meses.','HAS por 7 a 10 dias, normalização de C3 em 8 semanas, hematúria macroscópica por 3 semanas, microscópica por 1 a 2 anos e proteinúria até 6 meses.','HAS por 7 a 10 dias, normalização de C3 em 15 semanas, hematúria macroscópica por 3 semanas e microscópica por 1 a 2 anos.','HAS por 30 dias, normalização de C3 em 15 semanas, hematúria macroscópica por 1 a 2 anos e proteinúria persistente por até 6 meses.'],
+    correctIndex:2, explanation:'Na GNDA pós-estreptocócica a hipertensão e a hematúria macroscópica regridem em poucas semanas, o C3 normaliza em 6-8 semanas, a hematúria microscópica pode persistir por 1-2 anos e a proteinúria por até 6 meses.' },
+
+  { id:'unesp_2010_051', banca:'UNESP', cycle:'Ciclo Clínico', subject:'Pediatria',
+    text:'Pré-escolar com febre baixa e tosse com expectoração há mais de 2 semanas, RX com infiltrado alveolar em lobo superior direito persistente mesmo após antibioticoterapia adequada. O pai terminou tratamento para tuberculose pulmonar há 6 meses. Pelas diretrizes brasileiras, o diagnóstico de tuberculose dessa criança é:',
+    options:['Possível.','Afastado.','Confirmado.','Muito provável.','Pouco provável.'],
+    correctIndex:3, explanation:'No sistema de escore para tuberculose na criança, somam-se pontos por sintomas por mais de 2 semanas, achado radiológico persistente apesar de antibiótico e contato recente com adulto bacilífero, atingindo pontuação compatível com diagnóstico muito provável (indicação de tratamento).' },
+
+  { id:'unesp_2010_052', banca:'UNESP', cycle:'Ciclo Clínico', subject:'Pneumologia',
+    text:'Em relação à fisiopatologia da asma,',
+    options:['Os eosinófilos são os principais responsáveis pelo dano tecidual.','A produção de interleucinas e leucotrienos depende do tipo de estímulo.','Os linfócitos T somente estão presentes quando o estímulo é antigênico.','Nos pacientes assintomáticos não se encontra processo inflamatório.','Os mastócitos, neutrófilos e eosinófilos estão envolvidos apenas na fase imediata.'],
+    correctIndex:0, explanation:'Os eosinófilos são as células efetoras centrais na asma, liberando proteínas (MBP, ECP) que lesam o epitélio das vias aéreas. A inflamação persiste mesmo nos assintomáticos.' },
+
+  { id:'unesp_2010_053', banca:'UNESP', cycle:'Ciclo Clínico', subject:'Pediatria',
+    text:'Criança de 10 anos apresenta falta de ar, chiado, vômitos e eritema generalizado após ingestão de camarão. PA 70x30, pulsos fracos e perfusão diminuída com rash eritematoso difuso. O diagnóstico e tratamento são:',
+    options:['Reação vaso-vagal; vasopressores.','Angioedema hereditário; anti-histamínico.','Choque cardiogênico; corticoide nebulizado.','Urticária; epinefrina.','Anafilaxia; adrenalina.'],
+    correctIndex:4, explanation:'Reação alérgica a alimento com broncoespasmo, urticária e choque (hipotensão) caracteriza anafilaxia, cujo tratamento de primeira linha é a adrenalina intramuscular.' },
+
+  { id:'unesp_2010_054', banca:'UNESP', cycle:'Ciclo Clínico', subject:'Pediatria',
+    text:'Com relação à rinite alérgica nas crianças, assinale a alternativa correta.',
+    options:['Não há necessidade de investigar rinite alérgica em todos os pacientes asmáticos.','O processo inflamatório resulta em edema e congestão das conchas nasais.','A má oclusão dentária deve ser tratada inicialmente com correção ortodôntica.','Somente 3% a 5% dos portadores podem apresentar otite média.','O prurido nasal está relacionado a pior qualidade do sono.'],
+    correctIndex:1, explanation:'A inflamação alérgica leva a edema e congestão das conchas (cornetos) nasais, causando obstrução. Como vias aéreas únicas, recomenda-se investigar rinite nos asmáticos.' },
+
+  { id:'unesp_2010_055', banca:'UNESP', cycle:'Ciclo Clínico', subject:'Pediatria',
+    text:'No atendimento inicial do lactente jovem com choque séptico, além do ABC, é importante avaliar dois distúrbios hidroeletrolíticos/metabólicos que alteram a função cardiovascular e são muito frequentes nessa faixa etária:',
+    options:['Hipopotassemia e hipomagnesemia.','Hipoglicemia e hipocalcemia.','Alcalose respiratória e hipoglicemia.','Acidose metabólica e hipocalcemia.','Hipomagnesemia e uremia.'],
+    correctIndex:1, explanation:'No lactente em choque, a hipoglicemia e a hipocalcemia são comuns e comprometem a função cardiovascular, devendo ser pesquisadas e corrigidas precocemente.' },
+
+  { id:'unesp_2010_056', banca:'UNESP', cycle:'Ciclo Clínico', subject:'Pediatria',
+    text:'Criança de 4 meses com diarreia volumosa e vômitos há 3 dias, desidratação moderada e gasometria com pH 7,19, PaCO2 20, HCO3 8, BE -14 (acidose metabólica). Foi hidratada e, por persistir a acidose, recebeu bicarbonato de sódio, com melhora; horas depois passa a apresentar hipertonia, tremores e convulsão tônica. A causa mais provável da convulsão é:',
+    options:['Hipernatremia e hipomagnesemia.','Edema cerebral hiperosmolar e alcalose metabólica.','Hipocalcemia.','Edema cerebral por intoxicação hídrica e hiponatremia.','Hipocalemia.'],
+    correctIndex:2, explanation:'A correção com bicarbonato eleva o pH e reduz o cálcio ionizado, podendo precipitar tetania/convulsão por hipocalcemia.' },
+
+  { id:'unesp_2010_057', banca:'UNESP', cycle:'Ciclo Clínico', subject:'Pediatria',
+    text:'Criança de 2 anos com tosse e dificuldade respiratória progressiva há 2 dias. Mau estado geral, cianótica, apneica e com frequência cardíaca de 45 bpm. A primeira droga a ser administrada é:',
+    options:['Bicarbonato de sódio 8,4%, 1 mEq/kg.','Atropina 0,01 mg/kg.','Adrenalina 0,1 mL/kg da solução 1:1000 pura.','Adrenalina 0,1 mL/kg da solução 1:1000 diluída em 9 mL de água destilada.','Atropina 0,02 mg/kg.'],
+    correctIndex:3, explanation:'Bradicardia grave (45 bpm) com má perfusão e parada iminente em criança indica adrenalina 0,01 mg/kg — equivalente a 0,1 mL/kg da solução 1:10.000 (1:1000 diluída em 9 mL).' },
+
+  { id:'unesp_2010_058', banca:'UNESP', cycle:'Ciclo Clínico', subject:'Pediatria',
+    text:'A forma correta no oferecimento de oxigênio para crianças é:',
+    options:['Cateter nasal.','Máscara facial de venturi.','Máscara facial simples.','Máscara facial com reservatório.','Frações inspiradas de oxigênio maiores do que 80%.'],
+    correctIndex:0, explanation:'O cateter/cânula nasal costuma ser melhor tolerado pela criança, evitando agitação (que aumenta o consumo de O2) provocada por máscaras.' },
+
+  { id:'unesp_2010_059', banca:'UNESP', cycle:'Ciclo Clínico', subject:'Pediatria',
+    text:'Criança de 5 anos com febre alta, cefaleia e vômitos há 1 dia, petéquias em tronco e extremidades e torpor há 6 horas. A hipótese diagnóstica e a conduta são:',
+    options:['Meningite meningocócica com meningococcemia e hipertensão intracraniana; antibioticoterapia imediata sem punção liquórica.','Meningite meningocócica sem meningococcemia; punção liquórica e antibioticoterapia imediata.','Meningite meningocócica com provável meningococcemia; punção liquórica e antibioticoterapia imediata.','Meningite pneumocócica com plaquetopenia e hipertensão intracraniana; punção liquórica e antibioticoterapia.','Meningite por Haemophilus influenzae; punção liquórica e antibioticoterapia com corticosteroide.'],
+    correctIndex:0, explanation:'Petéquias indicam meningococcemia e o torpor sugere hipertensão intracraniana; nesse cenário a punção lombar é contraindicada inicialmente, devendo-se iniciar antibioticoterapia imediatamente.' },
+
+  { id:'unesp_2010_060', banca:'UNESP', cycle:'Ciclo Clínico', subject:'Pediatria',
+    text:'Lactente de 60 dias apresenta, desde a 2ª semana de vida, na pálpebra superior direita, nódulo de 1,5 cm eritematovioláceo com mácula vermelha escarlate, em crescimento, prejudicando a abertura da fenda palpebral. A conduta mais indicada é:',
+    options:['Expectante, pois a lesão involui espontaneamente.','Corticosteroide oral em doses altas.','Excisão cirúrgica com reparo palpebral.','Laserterapia com flash-pumped dye laser.','Embolização dos vasos principais da lesão.'],
+    correctIndex:1, explanation:'Hemangioma infantil periorbitário em crescimento que oclui o eixo visual é ambliogênico e exige tratamento sistêmico precoce (à época, corticoide oral em altas doses) para evitar ambliopia.' },
+
+  { id:'unesp_2010_061', banca:'UNESP', cycle:'Ciclo Clínico', subject:'Ginecologia & Obstetrícia',
+    text:'Mulher de 25 anos, nuligesta, com cólicas menstruais intensas e dispareunia profunda. USG transvaginal, histerossalpingografia e CA-125 normais. Analise: I. O melhor momento para dosar o CA-125 é entre o 3º e 5º dia do ciclo. II. Indicar fertilização in vitro imediata, caso deseje gestação. III. A paciente é portadora de endometriose pelo quadro típico. IV. Pode ser portadora de endometriose e a videolaparoscopia está indicada para estadiamento. V. Confirmada a endometriose, o melhor tratamento é hormonal com análogo do GnRH por 2 anos. Está correto, apenas, o que se afirma em:',
+    options:['I e III.','I, II e IV.','I, IV e V.','I e IV.','I, III e V.'],
+    correctIndex:3, explanation:'Corretas I (CA-125 dosado durante a menstruação) e IV (a videolaparoscopia é padrão-ouro para diagnóstico/estadiamento). Não se confirma endometriose só pela clínica, e o análogo de GnRH é limitado a cerca de 6 meses.' },
+
+  { id:'unesp_2010_062', banca:'UNESP', cycle:'Ciclo Clínico', subject:'Ginecologia & Obstetrícia',
+    text:'Mulher de 40 anos, obesa, hirsuta, com sangramento vaginal há 20 dias após 2 anos sem menstruar. Biópsia de endométrio: hiperplasia simples sem atipias. A explicação fisiopatológica desse achado é:',
+    options:['Secreção de estrogênios sem oposição da progesterona.','Secreção de androgênios pela adrenal.','Aumento das globulinas carreadoras dos hormônios sexuais.','Aumento do hormônio folículo-estimulante.','Secreção de 17-alfa-hidroxiprogesterona.'],
+    correctIndex:0, explanation:'A hiperplasia endometrial decorre de estímulo estrogênico sem oposição da progesterona (anovulação e conversão periférica de androgênios em estrogênios no tecido adiposo da obesa).' },
+
+  { id:'unesp_2010_063', banca:'UNESP', cycle:'Ciclo Clínico', subject:'Ginecologia & Obstetrícia',
+    text:'Mulher de 55 anos, pós-menopausa. Ultrassonografia de rotina: cisto ovariano de 30 mm, homogêneo, bem delimitado, sem septos ou áreas sólidas. A conduta é:',
+    options:['Observação.','Punção aspirativa.','Laparoscopia.','Laparotomia.','Terapia hormonal.'],
+    correctIndex:0, explanation:'Cisto ovariano simples, pequeno (< 5 cm) e sem características suspeitas na pós-menopausa pode ser apenas acompanhado (observação/seguimento ultrassonográfico).' },
+
+  { id:'unesp_2010_064', banca:'UNESP', cycle:'Ciclo Clínico', subject:'Ginecologia & Obstetrícia',
+    text:'Mulher de 16 anos com nódulo na mama esquerda há 6 meses, indolor, sem crescimento. Nódulo de 2 cm no quadrante superior interno, consistência firme, superfície lisa e móvel. O diagnóstico clínico é:',
+    options:['Lipoma.','Cisto.','Papiloma.','Fibroadenoma.','Tumor filoide.'],
+    correctIndex:3, explanation:'Nódulo mamário em adolescente, firme, de superfície lisa e bem móvel, é tipicamente um fibroadenoma, o tumor benigno mais comum nessa faixa etária.' },
+
+  { id:'unesp_2010_065', banca:'UNESP', cycle:'Ciclo Clínico', subject:'Ginecologia & Obstetrícia',
+    text:'Mulher de 32 anos com corrimento vaginal acinzentado e de odor fétido. Além do exame ginecológico, a propedêutica prática para auxiliar no diagnóstico é:',
+    options:['pH vaginal e cultura da secreção.','Whiff-test e colpocitologia.','pH vaginal, Whiff-test e exame a fresco.','Whiff-test e coloração pelo Gram.','pH vaginal, Whiff-test e colposcopia.'],
+    correctIndex:2, explanation:'O diagnóstico de vaginose bacteriana (critérios de Amsel) baseia-se em pH > 4,5, teste das aminas (Whiff-test) positivo e clue cells ao exame a fresco.' },
+
+  { id:'unesp_2010_066', banca:'UNESP', cycle:'Ciclo Clínico', subject:'Ginecologia & Obstetrícia',
+    text:'Mulher de 65 anos com câncer de mama de 1,5 cm no quadrante superior externo direito, axila clinicamente negativa, sem metástases, mamas grandes, sem comorbidades. O tratamento inicial de escolha é:',
+    options:['Quimioterapia neoadjuvante.','Cirurgia conservadora e biópsia do linfonodo sentinela.','Hormonioterapia neoadjuvante.','Mastectomia e esvaziamento axilar.','Cirurgia conservadora e esvaziamento axilar.'],
+    correctIndex:1, explanation:'Tumor pequeno em mama de bom volume e axila clinicamente negativa permite cirurgia conservadora associada à biópsia do linfonodo sentinela.' },
+
+  { id:'unesp_2010_067', banca:'UNESP', cycle:'Ciclo Clínico', subject:'Ginecologia & Obstetrícia',
+    text:'Mulher de 30 anos, sem prole constituída, com colpocitologia compatível com NIC III e biópsia dirigida por colposcopia mostrando carcinoma in situ de colo. A conduta é:',
+    options:['Eletrocauterização do colo.','Conização.','Histerectomia total abdominal.','Seguimento com colposcopia a cada três meses.','Cirurgia de Wertheim-Meigs.'],
+    correctIndex:1, explanation:'Carcinoma in situ (sem invasão) em paciente que deseja preservar a fertilidade tem na conização conduta diagnóstica e terapêutica, permitindo avaliar margens.' },
+
+  { id:'unesp_2010_068', banca:'UNESP', cycle:'Ciclo Clínico', subject:'Ginecologia & Obstetrícia',
+    text:'Mulher de 54 anos, menopausa aos 51, com fogachos, sudorese, insônia, dores ósseas, cefaleia intensa e ganho de 10 kg em 2 anos. Hipertensa em enalapril e com doença coronariana em propranolol, aspirina e estatina. Neste caso, a terapia hormonal está:',
+    options:['Indicada para o alívio dos sintomas climatéricos.','Indicada para tratamento da osteoporose.','Contraindicada pela doença cardíaca.','Contraindicada pela obesidade.','Contraindicada pela cefaleia.'],
+    correctIndex:2, explanation:'Doença coronariana estabelecida é contraindicação à terapia hormonal, que aumenta o risco de eventos cardiovasculares.' },
+
+  { id:'unesp_2010_069', banca:'UNESP', cycle:'Ciclo Clínico', subject:'Ginecologia & Obstetrícia',
+    text:'Mulher de 33 anos, G4P4, com dor pélvica crônica intensa e antecedente de DIP tratada há 4 anos. Massas anexiais bilaterais e USG com duas lesões císticas anexiais de 8,0 cm cada, compatíveis com hidrossalpinge bilateral. A conduta é:',
+    options:['Antibioticoterapia endovenosa.','Antibioticoterapia oral.','Anti-inflamatórios não hormonais.','Salpingectomia bilateral.','Salpingoplastia bilateral.'],
+    correctIndex:3, explanation:'Hidrossalpinge volumosa e sintomática (dor crônica), bilateral, com prole constituída, tem indicação de salpingectomia bilateral.' },
+
+  { id:'unesp_2010_070', banca:'UNESP', cycle:'Ciclo Clínico', subject:'Ginecologia & Obstetrícia',
+    text:'Durante o ciclo menstrual normal, os estrogênios:',
+    options:['São sintetizados pela teca ovariana.','Em níveis elevados na fase folicular tardia induzem o pico do hormônio luteinizante no meio do ciclo.','Diminuem os receptores de progesterona no endométrio.','São metabolizados pela 5-alfa-redutase.','São responsáveis pela descamação endometrial.'],
+    correctIndex:1, explanation:'Níveis elevados e sustentados de estradiol na fase folicular tardia exercem feedback positivo, desencadeando o pico de LH que leva à ovulação.' },
+
+  { id:'unesp_2010_071', banca:'UNESP', cycle:'Ciclo Clínico', subject:'Ginecologia & Obstetrícia',
+    text:'Multípara de 39 semanas em trabalho de parto com 8 cm de dilatação. Após a rotura de membranas, observa-se bradicardia fetal persistente e presença do cordão umbilical no canal vaginal. A conduta é:',
+    options:['Reduzir o cordão e aplicar fórcipe no período expulsivo.','Infundir ocitocina e estimular os puxos maternos.','Reduzir o cordão e aguardar parto vaginal.','Realizar cardiotocografia e administrar terbutalina.','Elevar a apresentação fetal e realizar cesárea.'],
+    correctIndex:4, explanation:'Prolapso de cordão com sofrimento fetal é emergência obstétrica: eleva-se a apresentação para aliviar a compressão do cordão e realiza-se cesárea imediata.' },
+
+  { id:'unesp_2010_072', banca:'UNESP', cycle:'Ciclo Clínico', subject:'Ginecologia & Obstetrícia',
+    text:'A hemólise na síndrome HELLP é caracterizada por:',
+    options:['Hemoglobinúria e aumento de fosfatase alcalina.','Esquizócitos e aumento de desidrogenase lática.','Anemia e aumento de enzimas hepáticas.','Hemoconcentração e queda da haptoglobina.','Hiperbilirrubinemia e trombocitopenia.'],
+    correctIndex:1, explanation:'A hemólise da síndrome HELLP é microangiopática: presença de esquizócitos no sangue periférico e elevação da desidrogenase lática (DHL).' },
+
+  { id:'unesp_2010_073', banca:'UNESP', cycle:'Ciclo Clínico', subject:'Ginecologia & Obstetrícia',
+    text:'Tercigesta de 35 anos com antecedente de macrossomia fetal, na 12ª semana, apresenta glicemia de jejum com valor de 128 mg/dL. A alternativa correta é:',
+    options:['Considerar diagnóstico confirmado de diabetes clínico (tipo 2).','Repetir a glicemia de jejum para confirmar diabetes gestacional.','Considerar diagnóstico confirmado de diabetes gestacional.','Repetir a glicemia de jejum para confirmar diabetes clínico (tipo 2).','Realizar teste de tolerância à glicose (100 g) entre a 24ª e 28ª semana.'],
+    correctIndex:3, explanation:'Glicemia de jejum elevada (≥ 126 mg/dL) no início da gestação sugere diabetes pré-gestacional (clínico); confirma-se com nova dosagem de glicemia de jejum.' },
+
+  { id:'unesp_2010_074', banca:'UNESP', cycle:'Ciclo Clínico', subject:'Ginecologia & Obstetrícia',
+    text:'Considerando o partograma a seguir, o diagnóstico e a possível causa da distocia são (ver imagem):',
+    options:['Fase ativa prolongada e desproporção cefalopélvica absoluta.','Período pélvico prolongado e desproporção cefalopélvica relativa.','Fase ativa prolongada e desproporção cefalopélvica relativa.','Período pélvico prolongado e distocia funcional.','Fase ativa prolongada e distocia funcional.'],
+    correctIndex:2, explanation:'Questão baseada na análise do partograma (imagem). O padrão de fase ativa prolongada associada a desproporção cefalopélvica relativa é o mais frequentemente cobrado — resposta sujeita à conferência com o gabarito oficial.' },
+
+  { id:'unesp_2010_075', banca:'UNESP', cycle:'Ciclo Clínico', subject:'Ginecologia & Obstetrícia',
+    text:'Puérpera no 5º dia pós-cesárea apresenta temperatura sublingual de 38,5°C, útero na cicatriz umbilical doloroso à mobilização, colo pérvio 4 cm e loquiação fétida. A antibioticoterapia adequada é:',
+    options:['Clindamicina e metronidazol.','Gentamicina e amicacina.','Gentamicina e clindamicina.','Ceftriaxone e ampicilina.','Penicilina cristalina e cefalotina.'],
+    correctIndex:2, explanation:'A endometrite puerperal é polimicrobiana; o esquema padrão-ouro é clindamicina associada a gentamicina.' },
+
+  { id:'unesp_2010_076', banca:'UNESP', cycle:'Ciclo Clínico', subject:'Ginecologia & Obstetrícia',
+    text:'Caracteriza a mola hidatiforme completa:',
+    options:['Cariótipo diploide.','Altura uterina menor que a esperada.','Presença de feto.','Transformação maligna.','Ausência de cistos de ovário.'],
+    correctIndex:0, explanation:'A mola completa é diploide (em geral 46,XX, de origem totalmente paterna), não apresenta feto, cursa com útero maior que o esperado e com cistos tecaluteínicos.' },
+
+  { id:'unesp_2010_077', banca:'UNESP', cycle:'Ciclo Clínico', subject:'Ginecologia & Obstetrícia',
+    text:'Gestante de 35 semanas com boa movimentação fetal. AU 34 cm, BCF 140. Escavação preenchida por polo liso, consistente e irredutível, com pequenas partes fetais à direita do abdome materno. O diagnóstico obstétrico quanto à apresentação e posição (feto único) é:',
+    options:['Cefálico, posição esquerda.','Pélvico, posição esquerda.','Pélvico, posição direita.','Cefálico, posição direita.','Córmico (transverso).'],
+    correctIndex:0, explanation:'Polo liso, consistente e irredutível na escava corresponde ao polo cefálico; pequenas partes à direita indicam dorso à esquerda (posição esquerda). Apresentação cefálica em posição esquerda.' },
+
+  { id:'unesp_2010_078', banca:'UNESP', cycle:'Ciclo Clínico', subject:'Ginecologia & Obstetrícia',
+    text:'Primigesta com 36 semanas. Dinâmica uterina presente, AU 28 cm, colo pérvio 4 cm, esvaecimento 80% e bolsa íntegra, com cardiotocografia tranquilizadora. A conduta é:',
+    options:['Aguardar parto espontâneo.','Conduzir o parto com ocitocina.','Inibir o trabalho de parto.','Realizar cesárea após ciclo de corticoide.','Realizar cesárea imediatamente.'],
+    correctIndex:0, explanation:'Com 36 semanas, trabalho de parto estabelecido e cardiotocografia tranquilizadora, não há indicação de inibição nem de cesárea; acompanha-se a evolução do parto.' },
+
+  { id:'unesp_2010_079', banca:'UNESP', cycle:'Ciclo Clínico', subject:'Ginecologia & Obstetrícia',
+    text:'De acordo com a curva de altura uterina, qual a hipótese diagnóstica e a conduta indicada (ver imagem)?',
+    options:['Crescimento fetal adequado - resolução da gestação.','Restrição de crescimento intrauterino - realização de ultrassonografia.','Crescimento fetal adequado - retorno em 1 semana.','Restrição de crescimento intrauterino - resolução da gestação.','Pequeno para a idade gestacional - resolução da gestação.'],
+    correctIndex:1, explanation:'Curva de altura uterina abaixo do esperado sugere restrição de crescimento intrauterino, que deve ser investigada/confirmada com ultrassonografia (biometria e dopplervelocimetria).' },
+
+  { id:'unesp_2010_080', banca:'UNESP', cycle:'Ciclo Clínico', subject:'Ginecologia & Obstetrícia',
+    text:'Gestante na 16ª semana com infecção assintomática pelo HIV há 2 anos, sem acompanhamento. A conduta a ser dada é:',
+    options:['Introdução imediata de TARV tríplice, com controle de CD4 e carga viral, mantendo a CV abaixo de 1000 cópias/mL até o parto.','Contagens de CD4 e CV e introdução de TARV apenas no 3º trimestre, com AZT injetável no parto.','Introdução e manutenção apenas de AZT até o final da gestação, AZT no parto e xarope para o bebê.','Introdução de TARV (mono ou tríplice) conforme CD4, mantendo CV < 1000 cópias até o parto.','Introdução imediata de TARV, com determinação da CV na 36ª semana para definir a via de parto, sem necessidade de AZT no bebê.'],
+    correctIndex:0, explanation:'Toda gestante HIV-positiva deve receber TARV tríplice (independentemente de CD4/CV), com monitorização da carga viral, visando suprimi-la até o parto para reduzir a transmissão vertical.' },
+
+  { id:'unesp_2010_081', banca:'UNESP', cycle:'Ciclo Clínico', subject:'Medicina de Família/SUS',
+    text:'Metanálise é uma revisão sistemática quantitativa que emprega métodos estatísticos para combinar e resumir os resultados de:',
+    options:['Estudos com amostras de tamanhos parecidos.','Estudos multicêntricos.','Estudos provenientes de revistas bem indexadas.','Bancos de artigos revisados por epidemiologistas.','Vários estudos.'],
+    correctIndex:4, explanation:'A metanálise combina estatisticamente os resultados de vários estudos independentes sobre uma mesma questão, aumentando o poder e a precisão das estimativas.' },
+
+  { id:'unesp_2010_082', banca:'UNESP', cycle:'Ciclo Clínico', subject:'Medicina de Família/SUS',
+    text:'A utilização da taxa de incidência como medida de ocorrência de uma doença depende dos seguintes critérios:',
+    options:['Contagem de casos; população geral; distribuição geográfica.','Prevalência; população sem a doença; número de óbitos no ano pela doença.','Contagem de casos; contagem da população sem a doença; tempo de seguimento.','Contagem de novos casos; estimativa da população em risco sem a doença; tempo de seguimento.','Prevalência; contagem de casos; população geral.'],
+    correctIndex:3, explanation:'A taxa/densidade de incidência relaciona os casos novos à população em risco (sem a doença) durante um determinado tempo de seguimento (pessoas-tempo).' },
+
+  { id:'unesp_2010_083', banca:'UNESP', cycle:'Ciclo Clínico', subject:'Medicina de Família/SUS',
+    text:'Para o rastreamento populacional de uma doença, o teste diagnóstico deve ter:',
+    options:['Alta sensibilidade.','Baixa especificidade.','Tempo de seguimento.','Alta especificidade.','Baixa sensibilidade.'],
+    correctIndex:0, explanation:'No rastreamento, prioriza-se alta sensibilidade para não deixar de identificar os doentes (poucos falso-negativos); a confirmação se faz depois com testes mais específicos.' },
+
+  { id:'unesp_2010_084', banca:'UNESP', cycle:'Ciclo Clínico', subject:'Medicina de Família/SUS',
+    text:'Duzentas e dez gestantes foram distribuídas por sorteio em três grupos para adequação da força muscular do assoalho pélvico (tratamento supervisionado, orientação única e grupo encaminhado ao tratamento padrão-ouro), acompanhadas por seis meses com registro em diário. Esse é um estudo:',
+    options:['Observacional.','De coortes.','Transversal cruzado.','Clínico aleatorizado pragmático.','Caso-controle.'],
+    correctIndex:3, explanation:'Intervenção alocada por sorteio (randomização) em condições próximas da prática clínica caracteriza um ensaio clínico aleatorizado pragmático.' },
+
+  { id:'unesp_2010_085', banca:'UNESP', cycle:'Ciclo Clínico', subject:'Medicina de Família/SUS',
+    text:'Os princípios do Sistema Único de Saúde garantem:',
+    options:['Centralização político-administrativa no nível federal.','Conjugação de recursos financeiros, tecnológicos, materiais e humanos da União, Estados e Municípios para a prestação de serviços de saúde à população.','Acesso universal aos serviços públicos condicionado ao pré-pagamento em folha salarial.','Assistência preventiva para o setor público e curativa para o setor privado conveniado.','Formação de rede hierarquizada, sob comando único, para planejamento e contenção de gastos.'],
+    correctIndex:1, explanation:'A organização do SUS pressupõe a conjugação de recursos das três esferas de governo (União, Estados e Municípios) para a prestação dos serviços de saúde à população (financiamento e gestão compartilhados).' },
+
+  { id:'unesp_2010_086', banca:'UNESP', cycle:'Ciclo Clínico', subject:'Medicina de Família/SUS',
+    text:'Admitindo-se que a população brasileira está envelhecendo, considera-se como sendo, respectivamente, a pirâmide brasileira em 1970, 1991 e 2010 (ver imagem):',
+    options:['Gráficos 1, 2 e 3.','Gráficos 2, 1 e 3.','Gráficos 2, 3 e 1.','Gráficos 1, 3 e 2.','Gráficos 3, 1 e 2.'],
+    correctIndex:0, explanation:'Com o envelhecimento, a pirâmide passa de base larga (alta natalidade, 1970) para base mais estreita e topo mais largo (2010). Questão dependente da imagem — resposta sujeita à conferência com o gabarito oficial.' },
+
+  { id:'unesp_2010_087', banca:'UNESP', cycle:'Ciclo Clínico', subject:'Medicina de Família/SUS',
+    text:'A introdução do nexo técnico-epidemiológico, por parte da Previdência Social brasileira:',
+    options:['Abriu as portas para perícias contrárias ao reconhecimento de doenças relacionadas ao trabalho.','Possibilitou que doenças comuns reconhecidas como causas de afastamento passassem a ser presumidamente relacionadas ao trabalho a partir do vínculo epidemiológico.','Corresponde a estratégia para redução de custos com a concessão de benefícios.','Visa apenas à melhoria das informações sobre acidentes típicos.','Visa apenas integrar sistemas de informação dos Ministérios.'],
+    correctIndex:1, explanation:'O nexo técnico-epidemiológico estabelece presunção de relação com o trabalho quando há associação estatística entre a doença (CID) e a atividade econômica (CNAE), invertendo o ônus da prova e ampliando o reconhecimento de doenças ocupacionais.' },
+
+  { id:'unesp_2010_088', banca:'UNESP', cycle:'Ciclo Clínico', subject:'Medicina de Família/SUS',
+    text:'Na investigação de um surto, as etapas que visam à elaboração e ao teste de hipóteses requerem:',
+    options:['Calcular as taxas de ataque e analisar quais hipóteses são mais pertinentes para justificar a distribuição dos casos.','Levantar todos os casos expostos e descartados, realizando testes estatísticos com todas as informações.','Analisar todas as hipóteses por meio dos casos mais graves.','Confirmar ou rejeitar hipóteses segundo dados laboratoriais.','Calcular todas as taxas de ataque e descartar os casos secundários.'],
+    correctIndex:0, explanation:'Na investigação de surto, o cálculo das taxas de ataque (entre expostos e não expostos) permite identificar e testar as hipóteses mais pertinentes sobre a fonte/veículo da infecção.' },
+
+  { id:'unesp_2010_089', banca:'UNESP', cycle:'Ciclo Clínico', subject:'Medicina de Família/SUS',
+    text:'Comparando medicamentos para o tratamento em Unidade Básica de Saúde, segundo o Uso Racional de Medicamentos, indique a melhor opção e a justificativa (ver imagem):',
+    options:['Medicamento 1, pela melhor eficácia e maior segurança.','Medicamento 3, pela maior segurança e menor custo.','Medicamento 2, pela melhor segurança e eficácia.','Medicamento 3, pela melhor eficácia e conveniência.','Medicamento 2, pela maior eficácia e melhor conveniência.'],
+    correctIndex:2, explanation:'O uso racional de medicamentos privilegia eficácia, segurança, conveniência e custo. Questão dependente da tabela (imagem) — resposta sujeita à conferência com o gabarito oficial.' },
+
+  { id:'unesp_2010_090', banca:'UNESP', cycle:'Ciclo Clínico', subject:'Medicina de Família/SUS',
+    text:'Na influenza A (H1N1), define-se como:',
+    options:['Caso confirmado: qualquer idade com doença respiratória aguda e febre, tosse ou dispneia.','Caso descartado: se suspeito, mas sem vínculo epidemiológico com casos confirmados.','Caso suspeito: indivíduo confirmado por laboratório.','Caso confirmado: doença respiratória aguda com febre, tosse e dispneia e vínculo epidemiológico com casos confirmados.','Caso suspeito: qualquer idade com doença respiratória aguda acompanhada de febre, tosse e dispneia.'],
+    correctIndex:4, explanation:'O caso suspeito de síndrome respiratória aguda grave era definido por doença respiratória aguda com febre, tosse e dispneia; a confirmação se dava por laboratório ou por vínculo epidemiológico.' },
+
+  { id:'unesp_2010_091', banca:'UNESP', cycle:'Ciclo Clínico', subject:'Medicina de Família/SUS',
+    text:'Sobre a deficiência de vitamina A em crianças menores de 5 anos (PNDS-2006), pode-se afirmar que:',
+    options:['A prevalência assemelha-se à de países desenvolvidos (em torno de 5%).','As causas mais importantes são o desmame precoce e o consumo insuficiente de alimentos fontes de vitamina A.','O custo social é elevado, com cegueira nutricional em cerca de 1/5000 crianças.','Há descaso das autoridades, pela falta de política pública.','A restrição de gorduras, motivada pelo combate à obesidade, explica a maior prevalência.'],
+    correctIndex:1, explanation:'As principais causas da alta prevalência de hipovitaminose A são o desmame precoce e a baixa ingestão de alimentos fontes de vitamina A.' },
+
+  { id:'unesp_2010_092', banca:'UNESP', cycle:'Ciclo Clínico', subject:'Medicina de Família/SUS',
+    text:'A Política Nacional de Alimentação e Nutrição, desenvolvida no Brasil após os anos 80, apresenta como característica marcante:',
+    options:['Ausência de participação de cientistas brasileiros.','Histórico de ações sem embasamento técnico e marcadas por corrupção.','Maior abrangência, recentemente, com a criação do Sistema Nacional de Segurança Alimentar e Nutricional, integrada a vários ministérios.','Ser restrita às ações de saúde, com orçamentos inexpressivos.','Realização de ações descoordenadas, sem mecanismos de controle.'],
+    correctIndex:2, explanation:'A política ampliou sua abrangência com a criação do Sistema Nacional de Segurança Alimentar e Nutricional (SISAN), de caráter intersetorial e integrada a vários ministérios.' },
+
+  { id:'unesp_2010_093', banca:'UNESP', cycle:'Ciclo Clínico', subject:'Medicina de Família/SUS',
+    text:'A política de saúde é uma atividade de proteção social na medida em que:',
+    options:['Se coloca na fronteira de diversas formas de relação social (gestores governamentais, empresas, grupos sociais).','É responsabilidade do Estado, cuja estratégia oficial é organizar ações de acordo com as regras do mercado.','A sociedade participa minimamente dos objetivos da organização das ações.','O mercado produz insumos e participa de modo restrito na oferta de serviços.','Privilegia resolver problemas econômicos dos setores produtivos.'],
+    correctIndex:0, explanation:'A política de saúde, como proteção social, situa-se na interface de diversas relações sociais, envolvendo gestores governamentais, empresas e grupos sociais.' },
+
+  { id:'unesp_2010_094', banca:'UNESP', cycle:'Ciclo Clínico', subject:'Medicina de Família/SUS',
+    text:'A integralidade da atenção à saúde, realizada no atendimento clínico no Programa de Saúde da Família, constitui-se de:',
+    options:['Exercício profissional responsável pelo diagnóstico e tratamento de maior complexidade.','Realização de exames complementares antecedendo a anamnese.','Busca de evidências científicas no nível terciário da atenção.','Exercício profissional responsável pela cura, cuidado e escuta dos pacientes.','Atendimento restrito às necessidades básicas de saúde das populações.'],
+    correctIndex:3, explanation:'A integralidade implica cuidado abrangente da pessoa, contemplando cura, cuidado e a escuta qualificada das necessidades do paciente.' },
+
+  { id:'unesp_2010_095', banca:'UNESP', cycle:'Ciclo Clínico', subject:'Medicina de Família/SUS',
+    text:'Entre as medidas de controle da tuberculose no Brasil, a busca ativa de casos:',
+    options:['Não é praticada no Brasil, pois os sintomas iniciais são inespecíficos.','Não é relevante, porque diagnostica apenas as formas bacilíferas.','Permite o diagnóstico e tratamento precoces dos bacilíferos, interrompendo a transmissão.','É a medida mais praticada no Brasil, mas não reduziu a incidência.','Não é indicada nas formas multirresistentes.'],
+    correctIndex:2, explanation:'A busca ativa de sintomáticos respiratórios permite identificar e tratar precocemente os casos bacilíferos, interrompendo a cadeia de transmissão da doença.' },
+
+  { id:'unesp_2010_096', banca:'UNESP', cycle:'Ciclo Clínico', subject:'Medicina de Família/SUS',
+    text:'Grávida cujo feto é portador de graves malformações congênitas solicita aborto; o médico realiza a intervenção e é acusado de crime de aborto. Segundo o Código Penal, assinale a afirmativa correta quanto à acusação:',
+    options:['O médico agiu dentro da lei por se tratar de aborto sentimental.','Trata-se de aborto terapêutico, permitido.','O médico infringiu apenas o Código de Ética, não violou norma penal.','Trata-se de aborto qualificado, punível com aumento de pena.','Trata-se de aborto eugênico, não permitido.'],
+    correctIndex:4, explanation:'À época, o Código Penal permitia o aborto apenas em risco de vida materno e em gestação por estupro; o aborto por malformação fetal (eugênico) não era permitido (a exceção da anencefalia só foi admitida posteriormente).' },
+
+  { id:'unesp_2010_097', banca:'UNESP', cycle:'Ciclo Clínico', subject:'Medicina de Família/SUS',
+    text:'Gestante de 30 semanas, 32 anos, com quadro febril agudo confirmado como influenza A (H1N1), evoluiu com pneumonia viral após 36 horas e faleceu no dia seguinte por insuficiência respiratória irreversível. A forma correta de preenchimento da Declaração de Óbito é:',
+    options:['Parte I: a) Gestação 30 semanas; b) Influenza A (H1N1); c) Pneumonia Viral; d) Insuficiência Respiratória.','Parte I: a) Influenza A (H1N1); b) Pneumonia Viral; c) Insuficiência Respiratória. Parte II: Gestação 30 semanas.','Parte I: a) Insuficiência Respiratória; b) Pneumonia Viral; c) Gestação 30 semanas. Parte II: Influenza A (H1N1).','Parte I: a) Insuficiência Respiratória; b) Pneumonia Viral; c) Influenza A (H1N1) + Gestação 30 semanas.','Parte I: a) Insuficiência Respiratória; b) Pneumonia Viral; c) Influenza A (H1N1). Parte II: Gestação de 30 semanas.'],
+    correctIndex:4, explanation:'Na Parte I, registra-se a sequência da causa imediata (a) até a causa básica (c): Insuficiência Respiratória, Pneumonia Viral e Influenza A (H1N1). A gestação, condição contribuinte, vai na Parte II.' },
+
+  { id:'unesp_2010_098', banca:'UNESP', cycle:'Ciclo Clínico', subject:'Medicina de Família/SUS',
+    text:'A quimioprofilaxia para tuberculose está indicada para:',
+    options:['Todos os contactantes de bacilífero, desde que descartada tuberculose em atividade.','Menores de 15 anos não vacinados com BCG, com PPD maior que 25 mm e sem atividade de tuberculose.','Indivíduos com viragem tuberculínica recente, desde que PPD maior que 25 mm.','Infectados pelo HIV com PPD maior que 5 mm, após descartar tuberculose em atividade.','Infectados pelo HIV, com cicatriz radiológica de tuberculose, desde que PPD maior que 10 mm.'],
+    correctIndex:3, explanation:'Nos infectados pelo HIV, o ponto de corte do PPD é 5 mm; com PPD ≥ 5 mm e após afastar tuberculose ativa, indica-se o tratamento da infecção latente (quimioprofilaxia).' },
+
+  { id:'unesp_2010_099', banca:'UNESP', cycle:'Ciclo Clínico', subject:'Medicina de Família/SUS',
+    text:'Em relação às neoplasias cutâneas malignas, assinale a alternativa correta.',
+    options:['O uso regular de filtros solares previne carcinomas basocelulares e melanomas, mas não espinocelulares.','Câmaras de bronzeamento com UVA não induzem neoplasias cutâneas malignas.','Os carcinomas basocelulares não vêm aumentando de incidência nas últimas décadas.','Há aumento na incidência dos melanomas nas últimas décadas, mas a mortalidade mantém taxas populacionais semelhantes.','Imunossuprimidos apresentam aumento de carcinomas espinocelulares, mas não de melanomas.'],
+    correctIndex:3, explanation:'A incidência do melanoma vem aumentando nas últimas décadas, enquanto a mortalidade tende a manter-se relativamente estável, em parte pelo diagnóstico mais precoce.' },
+
+  { id:'unesp_2010_100', banca:'UNESP', cycle:'Ciclo Clínico', subject:'Medicina de Família/SUS',
+    text:'Na padronização de condutas terapêuticas, do ponto de vista do desempenho de um fármaco, a hierarquia das evidências científicas privilegia estudos do tipo:',
+    options:['Experimental em animais.','Ensaio clínico randomizado e controlado.','Caso-controle.','Consenso de especialistas.','Transversal.'],
+    correctIndex:1, explanation:'Para avaliar a eficácia/desempenho terapêutico de um fármaco, o ensaio clínico randomizado e controlado é o desenho de maior nível de evidência (excetuando-se as revisões sistemáticas/metanálises desses ensaios).' },
+
 ];
 
 const RANKING = [
