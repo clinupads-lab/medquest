@@ -31,13 +31,13 @@
 - **Medicina Intensiva**: 1 questões
 - **Dermatologia**: 1 questões
 
-## ENARE (199 questões)
+## ENARE (385 questões)
 
-- **Ginecologia & Obstetrícia**: 38 questões
-- **Clínica Médica**: 35 questões
-- **Pediatria**: 30 questões
-- **Cirurgia Geral**: 27 questões
-- **Medicina de Família/SUS**: 16 questões
+- **Clínica Médica**: 74 questões
+- **Ginecologia & Obstetrícia**: 68 questões
+- **Cirurgia Geral**: 67 questões
+- **Pediatria**: 66 questões
+- **Medicina de Família/SUS**: 57 questões
 - **Pneumologia**: 11 questões
 - **Gastroenterologia**: 10 questões
 - **Cardiologia**: 7 questões
@@ -134,4 +134,4 @@
 - **Cardiologia**: 1 questões
 - **Gastroenterologia**: 1 questões
 
-**TOTAL: 1895 questões**
+**TOTAL: 2081 questões**
