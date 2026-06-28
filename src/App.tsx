@@ -24125,6 +24125,8 @@ export default function App() {
   const [firebaseUser, setFirebaseUser] = useState<CloudUser | null>(null);
   const [questions, setQuestions] = useState<Question[]>(QUESTIONS);
   const cloudLoadedRef = useRef(false);
+  // Tela de login aparece primeiro (só quando o Firebase está configurado).
+  const [authGate, setAuthGate] = useState<boolean>(isFirebaseConfigured);
 
   // Carrega as questões do Firestore (com fallback para o banco local).
   useEffect(() => {
@@ -24139,6 +24141,7 @@ export default function App() {
     return watchAuth(async (fbUser) => {
       setFirebaseUser(fbUser);
       if (!fbUser) { cloudLoadedRef.current = false; return; }
+      setAuthGate(false); // já logado: sai da tela de login
       const saved = await loadProgress<UserState>(fbUser.uid);
       cloudLoadedRef.current = true;
       setUser(prev => ({
@@ -24162,8 +24165,10 @@ export default function App() {
     try {
       const u = await signInWithGoogle();
       if (u) {
-        setUser(prev => ({ ...prev, name: prev.name || u.displayName || 'Você' }));
-        setLandingStep(1);
+        // Vai para a página do nome (pré-preenchida com o nome da conta Google).
+        setNameInput(prev => prev || u.displayName || '');
+        setAuthGate(false);
+        setLandingStep(0);
       }
     } catch (e) {
       console.warn('Login com Google falhou:', e);
@@ -24492,7 +24497,46 @@ export default function App() {
               exit={{ opacity: 0, scale: 0.9 }}
               className="flex flex-col gap-10 py-12 px-4"
             >
-              {landingStep === 0 ? (
+              {authGate ? (
+                /* ── TELA DE LOGIN (primeira tela) ── */
+                <div className="flex flex-col items-center gap-8 py-8">
+                  <div className="flex flex-col items-center gap-5 text-center">
+                    <div className="w-24 h-24 bg-blue-50 rounded-[2rem] flex items-center justify-center shadow-inner border border-blue-100">
+                      <Stethoscope size={44} className="text-brand-primary" />
+                    </div>
+                    <div>
+                      <h2 className="text-3xl font-black text-slate-900 tracking-tighter leading-tight">
+                        Bem-vindo ao <span className="text-brand-primary">MedQuest</span>!
+                      </h2>
+                      <p className="text-slate-500 font-medium mt-2 text-sm leading-snug max-w-xs">
+                        Entre para salvar e sincronizar seu progresso entre dispositivos.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="w-full flex flex-col gap-4">
+                    <motion.button
+                      whileTap={{ scale: 0.97 }}
+                      onClick={handleGoogleLogin}
+                      className="w-full py-4 rounded-2xl bg-white border-2 border-slate-200 text-slate-800 font-black text-sm flex items-center justify-center gap-3 hover:bg-slate-50 shadow-sm transition-all"
+                    >
+                      <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true">
+                        <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 0 1-2.2 3.32v2.77h3.57c2.08-1.92 3.27-4.74 3.27-8.1z"/>
+                        <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84A11 11 0 0 0 12 23z"/>
+                        <path fill="#FBBC05" d="M5.84 14.1a6.6 6.6 0 0 1 0-4.2V7.06H2.18a11 11 0 0 0 0 9.88l3.66-2.84z"/>
+                        <path fill="#EA4335" d="M12 4.75c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 1.46 14.97.5 12 .5A11 11 0 0 0 2.18 7.06l3.66 2.84C6.71 7.3 9.14 4.75 12 4.75z"/>
+                      </svg>
+                      Entrar com Google
+                    </motion.button>
+                    <button
+                      onClick={() => setAuthGate(false)}
+                      className="text-slate-400 font-bold uppercase text-[10px] tracking-widest hover:text-slate-600 transition-colors py-1"
+                    >
+                      Continuar sem entrar
+                    </button>
+                  </div>
+                </div>
+              ) : landingStep === 0 ? (
                 /* ── STEP 0: captura de nome ── */
                 <div className="flex flex-col items-center gap-8 py-4">
                   <div className="flex flex-col items-center gap-5 text-center">
@@ -24550,31 +24594,6 @@ export default function App() {
                     <span>Continuar</span>
                     {nameInput.trim() && <ChevronRight size={18} strokeWidth={3} />}
                   </motion.button>
-
-                  {isFirebaseConfigured && (
-                    <div className="w-full flex flex-col items-center gap-3">
-                      <div className="flex items-center gap-3 w-full">
-                        <div className="h-px flex-1 bg-slate-200" />
-                        <span className="text-[10px] font-black text-slate-400 uppercase tracking-widest">ou</span>
-                        <div className="h-px flex-1 bg-slate-200" />
-                      </div>
-                      <button
-                        onClick={handleGoogleLogin}
-                        className="w-full py-3.5 rounded-2xl border-2 border-slate-200 bg-white text-slate-700 font-black text-sm flex items-center justify-center gap-3 hover:bg-slate-50 transition-colors active:scale-[0.98]"
-                      >
-                        <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true">
-                          <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 0 1-2.2 3.32v2.77h3.57c2.08-1.92 3.27-4.74 3.27-8.1z"/>
-                          <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84A11 11 0 0 0 12 23z"/>
-                          <path fill="#FBBC05" d="M5.84 14.1a6.6 6.6 0 0 1 0-4.2V7.06H2.18a11 11 0 0 0 0 9.88l3.66-2.84z"/>
-                          <path fill="#EA4335" d="M12 4.75c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 1.46 14.97.5 12 .5A11 11 0 0 0 2.18 7.06l3.66 2.84C6.71 7.3 9.14 4.75 12 4.75z"/>
-                        </svg>
-                        Entrar com Google
-                      </button>
-                      <p className="text-[10px] text-slate-400 font-medium text-center leading-snug">
-                        Faça login para salvar e sincronizar seu progresso entre dispositivos.
-                      </p>
-                    </div>
-                  )}
                 </div>
               ) : (
                 /* ── STEP 1: seleção de trilha ── */
