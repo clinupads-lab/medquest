@@ -7,11 +7,12 @@ service cloud.firestore {
       allow read, write: if request.auth != null && request.auth.uid == userId;
     }
 
-    // Banco de questões: leitura para qualquer usuário autenticado.
+    // Banco de questões: leitura pública (as questões não são sensíveis e já
+    // são embarcadas no app), permitindo carregar mesmo antes do login.
     // Escrita bloqueada pelo cliente — o seed/edição é feito via script
     // com credencial de administrador (firebase-admin), que ignora estas regras.
     match /questions/{questionId} {
-      allow read: if request.auth != null;
+      allow read: if true;
       allow write: if false;
     }
   }
