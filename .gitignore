@@ -15,3 +15,8 @@ data/processed/*.ts
 
 # Local script outputs
 scripts/utils/scraper.log
+
+# Firebase
+scripts/serviceAccountKey.json
+.firebase/
+firebase-debug.log
