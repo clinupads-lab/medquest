@@ -4,6 +4,11 @@
  */
 
 import { useState, useEffect, useMemo, useRef } from 'react';
+import {
+  watchAuth, signInWithGoogle, signOutUser,
+  loadProgress, saveProgress, loadQuestionsFromCloud,
+  isFirebaseConfigured, type CloudUser,
+} from './cloud';
 import { 
   Trophy, 
   Flame, 
@@ -24116,6 +24121,56 @@ export default function App() {
   );
   const fileInputRef = useRef<HTMLInputElement>(null);
 
+  // ── Firebase: autenticação, questões da nuvem e sync de progresso ──
+  const [firebaseUser, setFirebaseUser] = useState<CloudUser | null>(null);
+  const [questions, setQuestions] = useState<Question[]>(QUESTIONS);
+  const cloudLoadedRef = useRef(false);
+
+  // Carrega as questões do Firestore (com fallback para o banco local).
+  useEffect(() => {
+    if (!isFirebaseConfigured) return;
+    loadQuestionsFromCloud().then(cloud => {
+      if (cloud && cloud.length > 0) setQuestions(cloud as Question[]);
+    });
+  }, []);
+
+  // Observa login/logout. Ao logar, puxa o nome e o progresso salvos.
+  useEffect(() => {
+    return watchAuth(async (fbUser) => {
+      setFirebaseUser(fbUser);
+      if (!fbUser) { cloudLoadedRef.current = false; return; }
+      const saved = await loadProgress<UserState>(fbUser.uid);
+      cloudLoadedRef.current = true;
+      setUser(prev => ({
+        ...prev,
+        ...(saved || {}),
+        name: (saved && saved.name) || prev.name || fbUser.displayName || 'Você',
+        profileImage: (saved && saved.profileImage) || fbUser.photoURL || prev.profileImage,
+      }));
+      if (saved) setLandingStep(1);
+    });
+  }, []);
+
+  // Salva o progresso na nuvem (debounce) sempre que o estado do usuário muda.
+  useEffect(() => {
+    if (!firebaseUser || !cloudLoadedRef.current) return;
+    const t = setTimeout(() => { saveProgress(firebaseUser.uid, user as any); }, 1200);
+    return () => clearTimeout(t);
+  }, [user, firebaseUser]);
+
+  const handleGoogleLogin = async () => {
+    try {
+      const u = await signInWithGoogle();
+      if (u) {
+        setUser(prev => ({ ...prev, name: prev.name || u.displayName || 'Você' }));
+        setLandingStep(1);
+      }
+    } catch (e) {
+      console.warn('Login com Google falhou:', e);
+    }
+  };
+  const handleLogout = async () => { await signOutUser(); };
+
   // Quiz timer
   useEffect(() => {
     if (view !== 'quiz') { setQuizTimer(0); return; }
@@ -24186,13 +24241,13 @@ export default function App() {
     const activeSubSubject = overrideSubSubject !== undefined ? overrideSubSubject : selectedSubSubject;
 
     // Select questions once at the start of the session
-    let filtered = [...QUESTIONS];
+    let filtered = [...questions];
     if (revision) {
-      filtered = QUESTIONS.filter(q => user.missedQuestionIds.includes(q.id));
-      if (filtered.length === 0) filtered = [...QUESTIONS].slice(0, 5);
+      filtered = questions.filter(q => user.missedQuestionIds.includes(q.id));
+      if (filtered.length === 0) filtered = [...questions].slice(0, 5);
     } else {
       // Filter by subject (subject names are unique per cycle, so no need to also filter cycle)
-      filtered = QUESTIONS.filter(q => q.subject === activeSubject);
+      filtered = questions.filter(q => q.subject === activeSubject);
       if (activeSubSubject) {
         filtered = filtered.filter(q => q.subSubject === activeSubSubject);
       }
@@ -24205,7 +24260,7 @@ export default function App() {
 
     const selected = filtered.length > 0
       ? filtered.sort(() => Math.random() - 0.5).slice(0, 10)
-      : [...QUESTIONS].filter(q => q.subject === activeSubject).sort(() => Math.random() - 0.5).slice(0, 10);
+      : [...questions].filter(q => q.subject === activeSubject).sort(() => Math.random() - 0.5).slice(0, 10);
 
     setTimeout(() => {
       setIsThinking(false);
@@ -24495,6 +24550,31 @@ export default function App() {
                     <span>Continuar</span>
                     {nameInput.trim() && <ChevronRight size={18} strokeWidth={3} />}
                   </motion.button>
+
+                  {isFirebaseConfigured && (
+                    <div className="w-full flex flex-col items-center gap-3">
+                      <div className="flex items-center gap-3 w-full">
+                        <div className="h-px flex-1 bg-slate-200" />
+                        <span className="text-[10px] font-black text-slate-400 uppercase tracking-widest">ou</span>
+                        <div className="h-px flex-1 bg-slate-200" />
+                      </div>
+                      <button
+                        onClick={handleGoogleLogin}
+                        className="w-full py-3.5 rounded-2xl border-2 border-slate-200 bg-white text-slate-700 font-black text-sm flex items-center justify-center gap-3 hover:bg-slate-50 transition-colors active:scale-[0.98]"
+                      >
+                        <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true">
+                          <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 0 1-2.2 3.32v2.77h3.57c2.08-1.92 3.27-4.74 3.27-8.1z"/>
+                          <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84A11 11 0 0 0 12 23z"/>
+                          <path fill="#FBBC05" d="M5.84 14.1a6.6 6.6 0 0 1 0-4.2V7.06H2.18a11 11 0 0 0 0 9.88l3.66-2.84z"/>
+                          <path fill="#EA4335" d="M12 4.75c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 1.46 14.97.5 12 .5A11 11 0 0 0 2.18 7.06l3.66 2.84C6.71 7.3 9.14 4.75 12 4.75z"/>
+                        </svg>
+                        Entrar com Google
+                      </button>
+                      <p className="text-[10px] text-slate-400 font-medium text-center leading-snug">
+                        Faça login para salvar e sincronizar seu progresso entre dispositivos.
+                      </p>
+                    </div>
+                  )}
                 </div>
               ) : (
                 /* ── STEP 1: seleção de trilha ── */
@@ -25119,7 +25199,7 @@ export default function App() {
                   <div className="py-10 px-6 flex flex-col items-center bg-white rounded-[3rem] border border-slate-200/80 shadow-xl overflow-visible">
                     <div className="w-full grid grid-cols-2 md:grid-cols-3 gap-y-10 gap-x-4">
                       {(Object.keys(HIERARCHY[selectedCycle]) as Subject[]).map((subj, idx) => {
-                        const allQs = QUESTIONS.filter(q => q.subject === subj);
+                        const allQs = questions.filter(q => q.subject === subj);
                         const bancaQs = quizBancaFilter ? allQs.filter(q => q.banca === quizBancaFilter) : allQs;
                         const pool = bancaQs.length > 0 ? bancaQs : allQs;
                         return (
@@ -25337,7 +25417,7 @@ export default function App() {
                         {/* Main CTA */}
                         <motion.button
                           whileTap={{ scale: 0.97 }}
-                          onClick={() => { const sb = BANCAS.find(b => b.id === selectedBanca)?.short; setQuizBancaFilter(sb && QUESTIONS.some(q => q.banca === sb) ? sb : null); startQuiz(false, selectedSubject, null); }}
+                          onClick={() => { const sb = BANCAS.find(b => b.id === selectedBanca)?.short; setQuizBancaFilter(sb && questions.some(q => q.banca === sb) ? sb : null); startQuiz(false, selectedSubject, null); }}
                           className="group w-full relative overflow-hidden rounded-2xl py-4 flex items-center justify-between px-5"
                           style={{ background: 'linear-gradient(135deg, #2563EB 0%, #1D4ED8 100%)', boxShadow: '0 8px 32px rgba(37,99,235,0.40)' }}
                         >
@@ -25392,7 +25472,7 @@ export default function App() {
                       <div className="py-8 px-5 flex flex-col items-center bg-white rounded-[2.5rem] border border-slate-200/80 shadow-xl overflow-visible">
                         <div className="w-full grid grid-cols-2 md:grid-cols-3 gap-y-8 gap-x-4">
                           {(Object.keys(HIERARCHY[selectedCycle as Cycle]) as Subject[]).map((subj, idx) => {
-                            const pool2 = QUESTIONS.filter(q => q.subject === subj);
+                            const pool2 = questions.filter(q => q.subject === subj);
                             return (
                               <GamePathNode
                                 key={`res-path-${subj}-${idx}`}
@@ -26055,10 +26135,10 @@ export default function App() {
                    </div>
                    <div className="space-y-4">
                      {sessionHistory.filter(h => {
-                       const q = QUESTIONS.find(qi => qi.id === h.questionId);
+                       const q = questions.find(qi => qi.id === h.questionId);
                        return q && q.correctIndex !== h.selectedIndex;
                      }).map((h, i) => {
-                       const q = QUESTIONS.find(qi => qi.id === h.questionId)!;
+                       const q = questions.find(qi => qi.id === h.questionId)!;
                        return (
                          <div key={h.questionId} className="bg-white rounded-[2.5rem] border border-slate-200 shadow-xl relative overflow-hidden group">
                            <div className="absolute top-0 left-0 w-1.5 h-full bg-brand-red" />
@@ -26269,7 +26349,7 @@ export default function App() {
             const weakAttempts = weakSubject ? (user.subjectAttempts[weakSubject] ?? 0) : 0;
 
             // Compute critical topics: subSubjects (or subjects) most present in missed questions
-            const missedQs = QUESTIONS.filter(q => user.missedQuestionIds.includes(q.id));
+            const missedQs = questions.filter(q => user.missedQuestionIds.includes(q.id));
             const topicMap: Record<string, { label: string; subject: string; count: number }> = {};
             missedQs.forEach(q => {
               const key = q.subSubject || q.subject;
@@ -27205,10 +27285,10 @@ export default function App() {
               </div>
 
               <button
-                onClick={() => setView('landing')}
+                onClick={async () => { if (firebaseUser) await handleLogout(); setView('landing'); }}
                 className="w-full bg-white border border-slate-100 py-8 rounded-[3rem] text-brand-red font-black uppercase tracking-widest hover:bg-brand-red/5 transition-all shadow-xl"
               >
-                Sair da Conta
+                {firebaseUser ? 'Sair da Conta (Google)' : 'Sair da Conta'}
               </button>
             </motion.div>
           )}
