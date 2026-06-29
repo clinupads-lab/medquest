@@ -111,8 +111,8 @@ type Subject =
 
 interface Question {
   id: string;
-  cycle: Cycle;
-  subject: Subject;
+  cycle: string;
+  subject: string;
   subSubject?: string;
   banca?: string;
   text: string;
@@ -204,8 +204,8 @@ const HIERARCHY: Record<Cycle, Partial<Record<Subject, string[]>>> = {
   }
 };
 
-const QUESTIONS: Question[] = [
-  {
+const QUESTIONS_PART1: any[] = [
+{
     id: 'q1',
     cycle: 'Ciclo Clínico',
     subject: 'Medicina de Família/SUS',
@@ -7932,7 +7932,10 @@ const QUESTIONS: Question[] = [
       'Os termos Atenção Primária à Saúde e Atenção Básica à Saúde (ABS) são equivalentes, passando a serem usados como sinônimos.',
     ],
     correctIndex: 3,
-  },
+  }
+];
+
+const QUESTIONS_PART2: any[] = [
   {
     id: 'cermam19_82',
     banca: 'CERMAM',
@@ -16554,7 +16557,10 @@ const QUESTIONS: Question[] = [
       `E. sofosbuvir/ribavirina por 24 semanas`,
     ],
     correctIndex: 2,
-  },
+  }
+];
+
+const QUESTIONS_PART3: any[] = [
   {
     id: 'enare_2025_002',
     banca: 'ENARE',
@@ -23368,6 +23374,12 @@ const QUESTIONS: Question[] = [
     correctIndex: 1,
     explanation: "O Delirium Tremens é uma manifestação clínica de abstinência alcoólica que cursa com instabilidade autonômica e agitação grave. O tratamento de suporte envolve o uso de benzodiazepínicos (antagonista GABAr) para acalmar a hiperestimulação dopaminérgica-serotoninérgica-noradrenérgica."
   }
+];
+
+const QUESTIONS: any[] = [
+  ...QUESTIONS_PART1,
+  ...QUESTIONS_PART2,
+  ...QUESTIONS_PART3
 ];
 
 const RANKING = [

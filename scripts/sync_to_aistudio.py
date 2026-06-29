@@ -43,17 +43,25 @@ def banca_normalize(b):
 # The array starts after "const questions: Question[] = [" and ends at "];"
 # We look for objects with id field.
 
-# Extract the questions array body
-arr_match = re.search(
-    r'const \w+:\s*Question\[\]\s*=\s*\[(.*?)\n\];',
+# Extract the questions array bodies (handling both single array and split arrays)
+bodies = re.findall(
+    r'const QUESTIONS_PART\d:\s*\w+\[\]\s*=\s*\[(.*?)\n\];',
     content, re.DOTALL
 )
-if not arr_match:
-    print("ERROR: questions array not found!")
-    sys.exit(1)
+if not bodies:
+    # Fallback to the original single array format
+    arr_match = re.search(
+        r'const QUESTIONS:\s*\w+\[\]\s*=\s*\[(.*?)\n\];',
+        content, re.DOTALL
+    )
+    if arr_match:
+        bodies = [arr_match.group(1)]
+    else:
+        print("ERROR: questions array not found!")
+        sys.exit(1)
 
-arr_body = arr_match.group(1)
-print(f"Questions array found ({len(arr_body):,} chars)")
+arr_body = ",\n".join(bodies)
+print(f"Questions array found ({len(arr_body):,} chars across {len(bodies)} parts)")
 
 questions = []
 # Split on individual question objects using id: field as anchor
