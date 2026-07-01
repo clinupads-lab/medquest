@@ -7,7 +7,7 @@ import { isFirebaseConfigured as firebaseConfigured } from './firebase';
 type Tab = 'login' | 'register';
 
 export default function LoginScreen() {
-  const { signInWithGoogle, signInWithEmail, createAccount, currentUser } = useAuth();
+  const { signInWithGoogle, signInWithEmail, createAccount, signInAsGuest } = useAuth();
 
   const [tab, setTab] = useState<Tab>('login');
   const [email, setEmail] = useState('');
@@ -16,10 +16,6 @@ export default function LoginScreen() {
   const [showPassword, setShowPassword] = useState(false);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
-
-  // Se Firebase não configurado mas temos guest user, não deveria chegar aqui
-  // Esse componente só aparece quando currentUser === null (Firebase configurado mas deslogado)
-  if (!firebaseConfigured && currentUser) return null;
 
   const clearError = () => setError('');
 
@@ -102,10 +98,7 @@ export default function LoginScreen() {
             </p>
             <motion.button
               whileTap={{ scale: 0.97 }}
-              onClick={() => {
-                // Força o AuthProvider a deixar o usuário entrar como guest
-                window.location.reload();
-              }}
+              onClick={signInAsGuest}
               className="w-full py-3.5 bg-blue-600 text-white font-black text-sm uppercase tracking-widest rounded-2xl shadow-lg shadow-blue-600/30 hover:bg-blue-500 transition-all"
             >
               Entrar como Convidado
@@ -230,6 +223,16 @@ export default function LoginScreen() {
               </motion.button>
             </div>
           </>
+        )}
+
+        {/* Botão convidado sempre visível */}
+        {firebaseConfigured && (
+          <button
+            onClick={signInAsGuest}
+            className="w-full mt-4 py-2.5 text-blue-400/50 text-xs font-bold uppercase tracking-widest hover:text-blue-300 transition-colors"
+          >
+            Continuar sem conta →
+          </button>
         )}
       </motion.div>
 

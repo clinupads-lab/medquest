@@ -28,6 +28,7 @@ interface AuthContextValue {
   signInWithGoogle: () => Promise<void>;
   signInWithEmail: (email: string, password: string) => Promise<void>;
   createAccount: (email: string, password: string, displayName: string) => Promise<void>;
+  signInAsGuest: () => void;
   signOut: () => Promise<void>;
   upgradeToPremium: () => Promise<void>;
   saveUserProgress: (data: Record<string, unknown>) => Promise<void>;
@@ -65,10 +66,8 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Se Firebase não está configurado, entra como convidado automaticamente
+    // Se Firebase não está configurado, não faz auto-login — mostra LoginScreen
     if (!firebaseConfigured || !auth) {
-      setCurrentUser(GUEST_USER);
-      setPlan('free');
       setLoading(false);
       return;
     }
@@ -108,6 +107,11 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     setPlan('free');
   };
 
+  const signInAsGuest = () => {
+    setCurrentUser(GUEST_USER);
+    setPlan('free');
+  };
+
   const signOut = async () => {
     if (auth && firebaseConfigured) {
       await firebaseSignOut(auth);
@@ -142,10 +146,11 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       currentUser,
       plan,
       loading,
-      isGuestMode: !firebaseConfigured,
+      isGuestMode: currentUser?.uid === 'guest',
       signInWithGoogle,
       signInWithEmail,
       createAccount,
+      signInAsGuest,
       signOut,
       upgradeToPremium,
       saveUserProgress,
