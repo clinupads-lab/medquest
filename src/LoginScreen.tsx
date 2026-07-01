@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Mail, Lock, User, Eye, EyeOff, Stethoscope, AlertCircle, AlertTriangle } from 'lucide-react';
 import { useAuth } from './AuthContext';
-import { firebaseConfigured } from './firebase';
+import { isFirebaseConfigured as firebaseConfigured } from './firebase';
 
 type Tab = 'login' | 'register';
 

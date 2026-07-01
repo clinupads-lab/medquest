@@ -9,7 +9,7 @@ import {
   signOut as firebaseSignOut,
 } from 'firebase/auth';
 import { doc, getDoc, setDoc, updateDoc } from 'firebase/firestore';
-import { auth, db, googleProvider, firebaseConfigured } from './firebase';
+import { auth, db, googleProvider, isFirebaseConfigured as firebaseConfigured } from './firebase';
 
 export type Plan = 'free' | 'premium';
 

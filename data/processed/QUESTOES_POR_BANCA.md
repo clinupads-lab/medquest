@@ -31,24 +31,31 @@
 - **Medicina Intensiva**: 1 questões
 - **Dermatologia**: 1 questões
 
-## ENARE (199 questões)
+## ENARE (4182 questões)
 
-- **Ginecologia & Obstetrícia**: 38 questões
-- **Clínica Médica**: 35 questões
-- **Pediatria**: 30 questões
-- **Cirurgia Geral**: 27 questões
-- **Medicina de Família/SUS**: 16 questões
-- **Pneumologia**: 11 questões
-- **Gastroenterologia**: 10 questões
-- **Cardiologia**: 7 questões
-- **Endocrinologia**: 6 questões
-- **Nefrologia**: 5 questões
-- **Infectologia**: 4 questões
-- **Neurologia**: 3 questões
-- **Reumatologia**: 2 questões
+- **Cirurgia Geral**: 698 questões
+- **Clínica Médica**: 488 questões
+- **Pediatria**: 473 questões
+- **Cardiologia**: 331 questões
+- **Neurologia**: 226 questões
+- **Nefrologia**: 218 questões
+- **Gastroenterologia**: 218 questões
+- **Hematologia**: 207 questões
+- **Psiquiatria**: 193 questões
+- **Pneumologia**: 148 questões
+- **Reumatologia**: 147 questões
+- **Ortopedia**: 129 questões
+- **Ginecologia & Obstetrícia**: 112 questões
+- **Medicina de Família/SUS**: 102 questões
+- **Endocrinologia**: 77 questões
+- **Infectologia**: 74 questões
+- **Geriatria**: 72 questões
+- **Clínica Cirúrgica**: 70 questões
+- **Cirurgia Vascular**: 67 questões
+- **Urologia**: 67 questões
+- **Patologia**: 45 questões
+- **Oftalmologia**: 18 questões
 - **Urgência e Emergência**: 2 questões
-- **Psiquiatria**: 2 questões
-- **Hematologia**: 1 questões
 
 ## IAMSPE (100 questões)
 
@@ -134,4 +141,4 @@
 - **Cardiologia**: 1 questões
 - **Gastroenterologia**: 1 questões
 
-**TOTAL: 1895 questões**
+**TOTAL: 5878 questões**
