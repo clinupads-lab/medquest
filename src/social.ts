@@ -3,7 +3,7 @@
 
 import {
   doc, getDoc, setDoc, updateDoc, collection, query, where,
-  getDocs, onSnapshot, serverTimestamp, arrayUnion,
+  getDocs, onSnapshot, serverTimestamp, arrayUnion, increment,
 } from 'firebase/firestore';
 import { db, isFirebaseConfigured } from './firebase';
 
@@ -195,6 +195,85 @@ export function watchBattles(uid: string, cb: (list: Battle[]) => void): () => v
   return onSnapshot(q, (snap) => {
     cb(snap.docs.map((d) => ({ id: d.id, ...(d.data() as Omit<Battle, 'id'>) })));
   }, () => cb([]));
+}
+
+// ── Salas em grupo (estilo Kahoot) ───────────────────────────────────────────
+
+export interface RoomPlayer { name: string; score: number; lastAnsweredIndex: number }
+export interface Room {
+  id: string;
+  code: string;
+  hostUid: string;
+  hostName: string;
+  subject: string;
+  questionIds: string[];
+  state: 'lobby' | 'question' | 'reveal' | 'finished';
+  currentIndex: number;
+  questionStartAt: number | null;
+  players: Record<string, RoomPlayer>;
+}
+
+function roomCode(): string {
+  let s = '';
+  for (let i = 0; i < 6; i++) s += Math.floor(Math.random() * 10);
+  return s;
+}
+
+export async function createRoom(
+  host: { uid: string; name: string }, subject: string, questionIds: string[]
+): Promise<{ id: string; code: string } | null> {
+  if (!ok()) return null;
+  const code = roomCode();
+  const ref = doc(collection(db!, 'rooms'));
+  await setDoc(ref, {
+    code, hostUid: host.uid, hostName: host.name, subject, questionIds,
+    state: 'lobby', currentIndex: -1, questionStartAt: null,
+    players: { [host.uid]: { name: host.name, score: 0, lastAnsweredIndex: -1 } },
+    createdAt: serverTimestamp(),
+  });
+  return { id: ref.id, code };
+}
+
+/** Procura uma sala aberta pelo código (sem índice composto). */
+export async function findRoomByCode(code: string): Promise<string | null> {
+  if (!ok()) return null;
+  const q = query(collection(db!, 'rooms'), where('code', '==', code.trim()));
+  const snap = await getDocs(q);
+  const openRoom = snap.docs.find((d) => (d.data() as Room).state !== 'finished');
+  return openRoom ? openRoom.id : (snap.docs[0]?.id ?? null);
+}
+
+export async function joinRoom(roomId: string, me: { uid: string; name: string }): Promise<boolean> {
+  if (!ok()) return false;
+  const ref = doc(db!, 'rooms', roomId);
+  const snap = await getDoc(ref);
+  if (!snap.exists()) return false;
+  await updateDoc(ref, {
+    [`players.${me.uid}`]: { name: me.name, score: 0, lastAnsweredIndex: -1 },
+  });
+  return true;
+}
+
+export function watchRoom(roomId: string, cb: (room: Room | null) => void): () => void {
+  if (!ok()) { cb(null); return () => {}; }
+  return onSnapshot(doc(db!, 'rooms', roomId), (snap) => {
+    cb(snap.exists() ? ({ id: snap.id, ...(snap.data() as Omit<Room, 'id'>) }) : null);
+  }, () => cb(null));
+}
+
+/** Controle do host: mudar estado/questão. */
+export async function updateRoom(roomId: string, patch: Partial<Pick<Room, 'state' | 'currentIndex' | 'questionStartAt'>>): Promise<void> {
+  if (!ok()) return;
+  await updateDoc(doc(db!, 'rooms', roomId), patch as Record<string, unknown>);
+}
+
+/** Jogador responde: soma pontos (increment) e marca o índice respondido. */
+export async function answerRoom(roomId: string, uid: string, index: number, points: number): Promise<void> {
+  if (!ok()) return;
+  await updateDoc(doc(db!, 'rooms', roomId), {
+    [`players.${uid}.score`]: increment(points),
+    [`players.${uid}.lastAnsweredIndex`]: index,
+  });
 }
 
 // Evita warning de import não usado (arrayUnion reservado p/ evolução futura).
