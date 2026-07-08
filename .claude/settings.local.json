@@ -102,7 +102,12 @@
       "Bash(awk 'NR==1{first=$1} NR==last{} END{print \"lines: \" first \" to \" $1}')",
       "WebFetch(domain:doctordle.org)",
       "Bash(git commit -m 'fix\\(filtro-banca\\): adiciona IAMSPE a lista de BANCAS para resolver filtro quebrado *)",
-      "Bash(git commit -m 'feat\\(questoes-iamspe\\): adiciona 65 questoes reais de IAMSPE para atingir 200+ por banca *)"
+      "Bash(git commit -m 'feat\\(questoes-iamspe\\): adiciona 65 questoes reais de IAMSPE para atingir 200+ por banca *)",
+      "Bash(grep -o \"import.*from '\\\\.\\\\/.*questions\" src/App.tsx)",
+      "Bash(grep \"^import.*from.*\\\\\\\\./\" src/App.tsx)",
+      "Bash(grep -i \"\\\\.ts$\")",
+      "Bash(grep -E \"\\\\.ts$\")",
+      "Bash(git commit -m 'fix\\(imports\\): adiciona enare_2024_questions que estava faltando no import *)"
     ]
   }
 }
