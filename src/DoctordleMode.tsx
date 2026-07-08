@@ -1,278 +1,280 @@
-import React, { useState, useEffect, useMemo } from 'react';
-import { Question } from './App';
-import { CheckCircle2, XCircle, RotateCcw, Lightbulb, X } from 'lucide-react';
+import { useState, useMemo, useEffect } from 'react';
+import { CLINICAL_CASES, ClinicalCase } from './clinicalCases';
+import { CheckCircle2, XCircle, RotateCcw, X, ChevronRight, Lightbulb } from 'lucide-react';
 
-interface DoctorddleModeProps {
-  questions: Question[];
+interface DoctordleModeProps {
   onExit: () => void;
 }
 
-export default function DoctordleMode({ questions, onExit }: DoctorddleModeProps) {
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const [guess, setGuess] = useState('');
-  const [revealed, setRevealed] = useState(false);
+const MAX_GUESSES = 6;
+
+// Normaliza texto: minúsculo, sem acento, sem pontuação extra.
+function normalize(s: string): string {
+  return s
+    .toLowerCase()
+    .normalize('NFD')
+    .replace(/[̀-ͯ]/g, '')
+    .replace(/[^a-z0-9\s]/g, '')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+function shuffle<T>(arr: T[]): T[] {
+  const a = [...arr];
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
+// Lista de todos os diagnósticos possíveis (para o autocomplete).
+const ALL_DIAGNOSES = Array.from(new Set(CLINICAL_CASES.map(c => c.diagnosis))).sort();
+
+export default function DoctordleMode({ onExit }: DoctordleModeProps) {
+  const [deck, setDeck] = useState<ClinicalCase[]>(() => shuffle(CLINICAL_CASES));
+  const [caseIndex, setCaseIndex] = useState(0);
+  const [guesses, setGuesses] = useState<string[]>([]); // tentativas erradas + a certa (se houver)
+  const [input, setInput] = useState('');
+  const [status, setStatus] = useState<'playing' | 'won' | 'lost'>('playing');
+  const [solved, setSolved] = useState(0);
   const [streak, setStreak] = useState(0);
-  const [score, setScore] = useState(0);
-  const [showHint, setShowHint] = useState(false);
-  const [suggestions, setSuggestions] = useState<string[]>([]);
+  const [showSuggestions, setShowSuggestions] = useState(false);
 
-  const question = questions[currentIndex];
-  if (!question) return null;
+  const current = deck[caseIndex];
 
-  const correctAnswer = question.options[question.correctIndex];
-  const allDiagnoses = question.options;
+  // Pistas reveladas = 1 (inicial) + número de tentativas erradas.
+  const revealedClues = Math.min(current.clues.length, 1 + guesses.length);
 
-  // Filtrar sugestões conforme o usuário digita
-  useMemo(() => {
-    if (!guess.trim()) {
-      setSuggestions([]);
-      return;
-    }
-    const input = guess.toLowerCase().trim();
-    const filtered = allDiagnoses.filter(opt =>
-      opt.toLowerCase().includes(input) && opt.toLowerCase() !== input
-    );
-    setSuggestions(filtered.slice(0, 5));
-  }, [guess, allDiagnoses]);
+  const suggestions = useMemo(() => {
+    if (!input.trim()) return [];
+    const n = normalize(input);
+    return ALL_DIAGNOSES.filter(d => normalize(d).includes(n)).slice(0, 6);
+  }, [input]);
 
-  const handleSubmit = () => {
-    if (!guess.trim()) return;
-    setRevealed(true);
+  const isMatch = (guess: string, c: ClinicalCase): boolean => {
+    const g = normalize(guess);
+    if (!g) return false;
+    const targets = [c.diagnosis, ...c.aliases].map(normalize);
+    return targets.some(t => t === g || t.includes(g) && g.length >= 4 || g.includes(t) && t.length >= 4);
+  };
 
-    const isCorrect = guess.toLowerCase().trim() === correctAnswer.toLowerCase().trim();
-    if (isCorrect) {
-      setScore(score + 1);
-      setStreak(streak + 1);
+  const submitGuess = () => {
+    if (status !== 'playing' || !input.trim()) return;
+    const guess = input.trim();
+    setShowSuggestions(false);
+
+    if (isMatch(guess, current)) {
+      setGuesses(prev => [...prev, guess]);
+      setStatus('won');
+      setSolved(s => s + 1);
+      setStreak(s => s + 1);
     } else {
-      setStreak(0);
+      const next = [...guesses, guess];
+      setGuesses(next);
+      if (next.length >= MAX_GUESSES) {
+        setStatus('lost');
+        setStreak(0);
+      }
     }
+    setInput('');
   };
 
-  const handleSuggestionClick = (suggestion: string) => {
-    setGuess(suggestion);
-    setSuggestions([]);
-  };
-
-  const handleNext = () => {
-    if (currentIndex < questions.length - 1) {
-      setCurrentIndex(currentIndex + 1);
-      setGuess('');
-      setRevealed(false);
-      setShowHint(false);
-      setSuggestions([]);
+  const nextCase = () => {
+    if (caseIndex < deck.length - 1) {
+      setCaseIndex(i => i + 1);
+      setGuesses([]);
+      setInput('');
+      setStatus('playing');
+      setShowSuggestions(false);
     } else {
-      alert(`Jogo finalizado!\nPontuação: ${score}/${questions.length}\nSequência: ${streak}🔥`);
-      onExit();
+      // Reembaralha e recomeça o baralho.
+      setDeck(shuffle(CLINICAL_CASES));
+      setCaseIndex(0);
+      setGuesses([]);
+      setInput('');
+      setStatus('playing');
     }
   };
 
-  const handleReset = () => {
-    setCurrentIndex(0);
-    setGuess('');
-    setRevealed(false);
+  const restart = () => {
+    setDeck(shuffle(CLINICAL_CASES));
+    setCaseIndex(0);
+    setGuesses([]);
+    setInput('');
+    setStatus('playing');
+    setSolved(0);
     setStreak(0);
-    setScore(0);
-    setShowHint(false);
-    setSuggestions([]);
   };
 
-  const isCorrect = revealed && guess.toLowerCase().trim() === correctAnswer.toLowerCase().trim();
+  // Reseta sugestões ao trocar de caso.
+  useEffect(() => { setShowSuggestions(false); }, [caseIndex]);
+
+  const finished = status !== 'playing';
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-teal-50 to-slate-100 p-6">
-      <div className="max-w-3xl mx-auto">
-        {/* Header */}
-        <div className="flex justify-between items-center mb-6">
-          <h1 className="text-3xl font-bold text-teal-700">🩺 Diagnóstico</h1>
-          <button
-            onClick={onExit}
-            className="p-2 hover:bg-slate-200 rounded-lg transition"
-          >
-            <X size={24} className="text-slate-600" />
-          </button>
-        </div>
-
-        {/* Stats */}
-        <div className="grid grid-cols-3 gap-3 mb-6">
-          <div className="bg-white rounded-lg shadow p-4 text-center">
-            <div className="text-2xl font-bold text-teal-600">{score}/{questions.length}</div>
-            <div className="text-xs text-slate-600">Acertos</div>
+    <div className="min-h-screen w-full flex flex-col items-center px-4 py-6" style={{ background: 'linear-gradient(180deg,#f0fdfa 0%,#f1f5f9 100%)' }}>
+      {/* Barra superior */}
+      <div className="w-full max-w-xl flex items-center justify-between mb-4">
+        <div className="flex items-center gap-4">
+          <div className="text-center">
+            <div className="text-lg font-black text-teal-700 leading-none">{solved}</div>
+            <div className="text-[9px] font-bold uppercase tracking-widest text-slate-400">Resolvidos</div>
           </div>
-          <div className="bg-white rounded-lg shadow p-4 text-center">
-            <div className="text-2xl font-bold text-amber-600">{streak}🔥</div>
-            <div className="text-xs text-slate-600">Sequência</div>
-          </div>
-          <div className="bg-white rounded-lg shadow p-4 text-center">
-            <div className="text-2xl font-bold text-slate-600">{currentIndex + 1}/{questions.length}</div>
-            <div className="text-xs text-slate-600">Caso</div>
+          <div className="text-center">
+            <div className="text-lg font-black text-amber-600 leading-none">{streak}🔥</div>
+            <div className="text-[9px] font-bold uppercase tracking-widest text-slate-400">Sequência</div>
           </div>
         </div>
+        <button onClick={onExit} className="p-2 rounded-xl hover:bg-slate-200 transition-colors">
+          <X size={22} className="text-slate-500" />
+        </button>
+      </div>
 
-        {/* Progress bar */}
-        <div className="mb-6 bg-white rounded-lg shadow p-3">
-          <div className="w-full h-2 bg-slate-200 rounded-full overflow-hidden">
+      {/* Cartão principal */}
+      <div className="w-full max-w-xl bg-white rounded-[2rem] shadow-xl border border-slate-100 p-6 sm:p-8">
+        {/* Título */}
+        <div className="text-center mb-6">
+          <h1 className="text-2xl sm:text-3xl font-black tracking-tight" style={{ color: '#134e4a' }}>
+            Qual é o diagnóstico?
+          </h1>
+          <div className="mx-auto mt-2 h-1 w-16 rounded-full" style={{ background: '#14b8a6' }} />
+        </div>
+
+        {/* Caixa do caso clínico (pistas progressivas) */}
+        <div className="space-y-2 mb-4">
+          <div className="rounded-2xl px-4 py-3.5 text-center font-bold text-slate-800 leading-snug" style={{ background: '#eff6ff', border: '1px solid #dbeafe' }}>
+            {current.clues[0]}
+          </div>
+          {current.clues.slice(1, revealedClues).map((clue, i) => (
             <div
-              className="h-full bg-gradient-to-r from-teal-500 to-teal-600 transition-all"
-              style={{ width: `${((currentIndex + 1) / questions.length) * 100}%` }}
-            />
-          </div>
+              key={i}
+              className="rounded-2xl px-4 py-3 text-center text-sm font-medium text-slate-700 leading-snug animate-[fadeIn_0.3s_ease]"
+              style={{ background: '#f8fafc', border: '1px solid #e2e8f0' }}
+            >
+              <span className="text-[10px] font-black uppercase tracking-widest text-teal-600 mr-2">Pista {i + 2}</span>
+              {clue}
+            </div>
+          ))}
         </div>
 
-        {/* Case Presentation */}
-        <div className="bg-white rounded-lg shadow-lg p-8 mb-6">
-          <div className="mb-8">
-            <h2 className="text-2xl font-bold text-slate-900 mb-4">Caso Clínico</h2>
-            <div className="prose prose-sm max-w-none">
-              <p className="text-slate-700 leading-relaxed whitespace-pre-line text-base font-medium">
-                {question.text}
+        {/* Caixas de tentativa (estilo Wordle) */}
+        <div className="space-y-2 mb-5">
+          {Array.from({ length: MAX_GUESSES }).map((_, i) => {
+            const guess = guesses[i];
+            const isCorrectGuess = finished && status === 'won' && i === guesses.length - 1;
+            const isEmpty = !guess;
+            return (
+              <div
+                key={i}
+                className="w-full rounded-2xl px-4 py-3 flex items-center gap-3 transition-all"
+                style={{
+                  background: isEmpty ? '#eef2ff' : isCorrectGuess ? '#dcfce7' : '#fee2e2',
+                  border: `1px solid ${isEmpty ? '#e0e7ff' : isCorrectGuess ? '#86efac' : '#fecaca'}`,
+                  minHeight: 48,
+                }}
+              >
+                {guess && (
+                  <>
+                    {isCorrectGuess
+                      ? <CheckCircle2 size={18} className="text-green-600 shrink-0" />
+                      : <XCircle size={18} className="text-red-500 shrink-0" />}
+                    <span className={`font-bold text-sm ${isCorrectGuess ? 'text-green-800' : 'text-red-700'}`}>{guess}</span>
+                  </>
+                )}
+              </div>
+            );
+          })}
+        </div>
+
+        {/* Resultado final */}
+        {finished && (
+          <div className="mb-5">
+            <div className={`rounded-2xl p-4 mb-3 ${status === 'won' ? 'bg-green-50 border border-green-200' : 'bg-red-50 border border-red-200'}`}>
+              <div className="flex items-center gap-2 mb-1">
+                {status === 'won'
+                  ? <><CheckCircle2 size={20} className="text-green-600" /><span className="font-black text-green-700">Acertou em {guesses.length} {guesses.length === 1 ? 'tentativa' : 'tentativas'}! 🎉</span></>
+                  : <><XCircle size={20} className="text-red-600" /><span className="font-black text-red-700">Não foi dessa vez</span></>}
+              </div>
+              <p className="text-sm text-slate-700">
+                <span className="font-bold">Diagnóstico:</span> {current.diagnosis}
               </p>
+              <p className="text-[11px] font-semibold uppercase tracking-wider text-slate-400 mt-1">{current.specialty}</p>
+            </div>
+            <div className="rounded-2xl p-4 bg-blue-50 border-l-4 border-blue-400">
+              <div className="flex items-center gap-1.5 mb-1.5">
+                <Lightbulb size={15} className="text-blue-600" />
+                <span className="text-xs font-black uppercase tracking-wider text-blue-800">Explicação</span>
+              </div>
+              <p className="text-sm text-blue-900 leading-relaxed">{current.explanation}</p>
             </div>
           </div>
+        )}
 
-          {/* Hint Button */}
-          {!revealed && (
-            <button
-              onClick={() => setShowHint(!showHint)}
-              className="flex items-center gap-2 text-amber-600 hover:text-amber-700 text-sm font-medium mb-4 transition"
-            >
-              <Lightbulb size={16} />
-              {showHint ? 'Ocultar' : 'Ver'} diagnósticos possíveis
-            </button>
-          )}
+        {/* Input + autocomplete */}
+        {!finished ? (
+          <div className="relative">
+            <div className="flex gap-2">
+              <div className="flex-1 relative">
+                <input
+                  value={input}
+                  onChange={e => { setInput(e.target.value); setShowSuggestions(true); }}
+                  onKeyDown={e => { if (e.key === 'Enter') submitGuess(); }}
+                  onFocus={() => setShowSuggestions(true)}
+                  placeholder="Digite seu diagnóstico..."
+                  className="w-full px-4 py-3 rounded-xl border-2 border-slate-200 focus:border-teal-500 outline-none font-medium text-slate-800 transition-colors"
+                  autoComplete="off"
+                  autoFocus
+                />
+                {input && (
+                  <button onClick={() => { setInput(''); setShowSuggestions(false); }} className="absolute right-3 top-1/2 -translate-y-1/2 text-slate-300 hover:text-slate-500">
+                    <X size={16} />
+                  </button>
+                )}
+              </div>
+              <button
+                onClick={submitGuess}
+                disabled={!input.trim()}
+                className="px-6 py-3 rounded-xl font-black text-white transition-all disabled:opacity-40 active:scale-95"
+                style={{ background: 'linear-gradient(135deg,#14b8a6 0%,#0d9488 100%)' }}
+              >
+                Enviar
+              </button>
+            </div>
 
-          {showHint && !revealed && (
-            <div className="bg-amber-50 border border-amber-200 rounded-lg p-4 mb-6">
-              <p className="text-xs text-amber-700 font-semibold mb-3">Diagnósticos possíveis:</p>
-              <div className="space-y-2">
-                {allDiagnoses.map((opt, idx) => (
-                  <div key={idx} className="text-sm text-amber-800 bg-white rounded p-2 pl-3 border-l-3 border-amber-400">
-                    {opt}
-                  </div>
+            {showSuggestions && suggestions.length > 0 && (
+              <div className="absolute z-50 w-full mt-1.5 bg-white rounded-xl border-2 border-teal-100 shadow-xl overflow-hidden">
+                {suggestions.map((s, i) => (
+                  <button
+                    key={i}
+                    onMouseDown={() => { setInput(s); setShowSuggestions(false); }}
+                    className="w-full text-left px-4 py-2.5 text-sm font-semibold text-slate-700 hover:bg-teal-50 border-b border-slate-50 last:border-0 transition-colors"
+                  >
+                    {s}
+                  </button>
                 ))}
               </div>
-            </div>
-          )}
+            )}
 
-          {/* Input Section */}
-          {!revealed ? (
-            <div className="relative">
-              <div className="flex gap-3 mb-2">
-                <div className="flex-1 relative">
-                  <input
-                    type="text"
-                    value={guess}
-                    onChange={(e) => setGuess(e.target.value)}
-                    onKeyPress={(e) => e.key === 'Enter' && handleSubmit()}
-                    placeholder="Digite seu diagnóstico..."
-                    className="w-full px-4 py-3 border-2 border-slate-300 rounded-lg focus:outline-none focus:border-teal-500 font-medium"
-                    autoFocus
-                    autoComplete="off"
-                  />
-                  {guess && (
-                    <button
-                      onClick={() => {
-                        setGuess('');
-                        setSuggestions([]);
-                      }}
-                      className="absolute right-3 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600"
-                    >
-                      <X size={18} />
-                    </button>
-                  )}
-                </div>
-                <button
-                  onClick={handleSubmit}
-                  disabled={!guess.trim()}
-                  className="px-8 py-3 bg-teal-600 text-white rounded-lg font-bold hover:bg-teal-700 disabled:bg-slate-300 disabled:cursor-not-allowed transition"
-                >
-                  Enviar
-                </button>
-              </div>
-
-              {/* Suggestions dropdown */}
-              {suggestions.length > 0 && (
-                <div className="absolute z-50 w-full top-full mt-1 bg-white border-2 border-teal-200 rounded-lg shadow-lg overflow-hidden">
-                  {suggestions.map((sugg, idx) => (
-                    <button
-                      key={idx}
-                      onClick={() => handleSuggestionClick(sugg)}
-                      className="w-full text-left px-4 py-2.5 hover:bg-teal-50 border-b border-slate-100 last:border-b-0 text-sm font-medium text-slate-700 transition"
-                    >
-                      {sugg}
-                    </button>
-                  ))}
-                </div>
-              )}
-            </div>
-          ) : (
-            <div className={`p-4 rounded-lg mb-4 border-2 ${isCorrect ? 'bg-green-50 border-green-500' : 'bg-red-50 border-red-500'}`}>
-              <div className="flex items-center gap-3 mb-3">
-                {isCorrect ? (
-                  <>
-                    <CheckCircle2 className="text-green-600 flex-shrink-0" size={28} />
-                    <span className="font-bold text-green-600 text-lg">Diagnóstico Correto! 🎉</span>
-                  </>
-                ) : (
-                  <>
-                    <XCircle className="text-red-600 flex-shrink-0" size={28} />
-                    <span className="font-bold text-red-600 text-lg">Diagnóstico Incorreto</span>
-                  </>
-                )}
-              </div>
-              <div className="space-y-2 text-sm">
-                <p className="text-slate-700">
-                  <span className="font-bold text-slate-900">Sua resposta:</span> {guess}
-                </p>
-                {!isCorrect && (
-                  <p className="text-slate-700">
-                    <span className="font-bold text-slate-900">Diagnóstico correto:</span> {correctAnswer}
-                  </p>
-                )}
-              </div>
-            </div>
-          )}
-
-          {/* Explanation */}
-          {revealed && question.explanation && (
-            <div className="bg-blue-50 border-l-4 border-blue-500 p-4 mt-6 rounded">
-              <h3 className="font-bold text-blue-900 mb-2 text-sm">Explicação:</h3>
-              <p className="text-blue-800 text-sm leading-relaxed">{question.explanation}</p>
-            </div>
-          )}
-        </div>
-
-        {/* Action Buttons */}
-        <div className="flex gap-3 justify-center flex-wrap">
-          {revealed && currentIndex < questions.length - 1 && (
+            <p className="text-[10px] text-slate-400 text-center mt-3 leading-relaxed">
+              A cada erro, uma nova pista é revelada. Você tem {MAX_GUESSES} tentativas.<br />
+              *Modo de estudo — não substitui avaliação médica real.
+            </p>
+          </div>
+        ) : (
+          <div className="flex gap-2">
             <button
-              onClick={handleNext}
-              className="px-8 py-3 bg-gradient-to-r from-teal-600 to-teal-700 text-white rounded-lg font-bold hover:shadow-lg transition flex items-center gap-2"
+              onClick={nextCase}
+              className="flex-1 px-6 py-3.5 rounded-xl font-black text-white flex items-center justify-center gap-2 active:scale-95 transition-transform"
+              style={{ background: 'linear-gradient(135deg,#14b8a6 0%,#0d9488 100%)' }}
             >
-              Próximo Caso →
+              Próximo caso <ChevronRight size={18} />
             </button>
-          )}
-          {revealed && currentIndex === questions.length - 1 && (
-            <button
-              onClick={handleNext}
-              className="px-8 py-3 bg-gradient-to-r from-green-600 to-green-700 text-white rounded-lg font-bold hover:shadow-lg transition"
-            >
-              Finalizar Jogo
+            <button onClick={restart} className="px-5 py-3.5 rounded-xl font-bold text-slate-600 bg-slate-100 hover:bg-slate-200 flex items-center gap-2 transition-colors">
+              <RotateCcw size={16} />
             </button>
-          )}
-          <button
-            onClick={handleReset}
-            className="px-6 py-3 bg-slate-500 text-white rounded-lg font-bold hover:bg-slate-600 transition flex items-center gap-2"
-          >
-            <RotateCcw size={18} />
-            Recomeçar
-          </button>
-          <button
-            onClick={onExit}
-            className="px-6 py-3 bg-slate-200 text-slate-700 rounded-lg font-bold hover:bg-slate-300 transition"
-          >
-            Sair
-          </button>
-        </div>
+          </div>
+        )}
       </div>
     </div>
   );
