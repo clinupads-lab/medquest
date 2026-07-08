@@ -57,12 +57,12 @@ export default function LoginScreen() {
         animate={{ opacity: 1, y: 0 }}
         className="flex flex-col items-center gap-4 mb-10"
       >
-        <div className="w-20 h-20 bg-gradient-to-br from-[#040B1A] to-[#0E1D4A] rounded-[1.8rem] flex items-center justify-center border border-blue-900/40 shadow-2xl shadow-blue-900/30">
-          <Stethoscope size={38} className="text-blue-400" />
+        <div className="w-20 h-20 bg-gradient-to-br from-[#040B1A] to-[#0E1D4A] rounded-[1.8rem] flex items-center justify-center border border-cyan-900/40 shadow-2xl shadow-cyan-900/30">
+          <Stethoscope size={38} className="text-cyan-400" />
         </div>
         <div className="text-center">
           <h1 className="text-3xl font-black text-white tracking-tighter">MedQuest</h1>
-          <p className="text-blue-400/60 text-xs font-bold uppercase tracking-widest mt-1">Residência Médica</p>
+          <p className="text-cyan-400/60 text-xs font-bold uppercase tracking-widest mt-1">Residência Médica</p>
         </div>
       </motion.div>
 
@@ -93,13 +93,13 @@ export default function LoginScreen() {
         {!firebaseConfigured ? (
           // Modo sem Firebase: mostrar só opção de entrar como convidado
           <div className="flex flex-col items-center gap-5 py-2">
-            <p className="text-blue-300/60 text-sm font-medium text-center leading-relaxed">
+            <p className="text-cyan-300/60 text-sm font-medium text-center leading-relaxed">
               Configure o Firebase para ativar login com Google e salvar seu progresso na nuvem.
             </p>
             <motion.button
               whileTap={{ scale: 0.97 }}
               onClick={signInAsGuest}
-              className="w-full py-3.5 bg-blue-600 text-white font-black text-sm uppercase tracking-widest rounded-2xl shadow-lg shadow-blue-600/30 hover:bg-blue-500 transition-all"
+              className="w-full py-3.5 bg-cyan-600 text-white font-black text-sm uppercase tracking-widest rounded-2xl shadow-lg shadow-cyan-600/30 hover:bg-cyan-500 transition-all"
             >
               Entrar como Convidado
             </motion.button>
@@ -114,8 +114,8 @@ export default function LoginScreen() {
                   onClick={() => { setTab(t); clearError(); }}
                   className={`flex-1 py-2.5 rounded-xl text-[11px] font-black uppercase tracking-widest transition-all ${
                     tab === t
-                      ? 'bg-blue-600 text-white shadow-lg shadow-blue-600/30'
-                      : 'text-blue-400/50 hover:text-blue-300'
+                      ? 'bg-cyan-600 text-white shadow-lg shadow-cyan-600/30'
+                      : 'text-cyan-400/50 hover:text-cyan-300'
                   }`}
                 >
                   {t === 'login' ? 'Entrar' : 'Criar Conta'}
@@ -141,7 +141,7 @@ export default function LoginScreen() {
             {/* Divider */}
             <div className="flex items-center gap-3 mb-5">
               <div className="flex-1 h-px bg-white/8" />
-              <span className="text-[10px] font-black text-blue-400/30 uppercase tracking-widest">ou</span>
+              <span className="text-[10px] font-black text-cyan-400/30 uppercase tracking-widest">ou</span>
               <div className="flex-1 h-px bg-white/8" />
             </div>
 
@@ -156,13 +156,13 @@ export default function LoginScreen() {
                     className="overflow-hidden"
                   >
                     <div className="relative">
-                      <User size={16} className="absolute left-4 top-1/2 -translate-y-1/2 text-blue-400/40" />
+                      <User size={16} className="absolute left-4 top-1/2 -translate-y-1/2 text-cyan-400/40" />
                       <input
                         type="text"
                         placeholder='Seu nome (ex: Dr. Silva)'
                         value={name}
                         onChange={e => { setName(e.target.value); clearError(); }}
-                        className="w-full pl-10 pr-4 py-3.5 bg-white/5 border border-white/8 rounded-xl text-white text-sm font-bold placeholder:text-blue-400/25 focus:border-blue-500/50 focus:outline-none transition-colors"
+                        className="w-full pl-10 pr-4 py-3.5 bg-white/5 border border-white/8 rounded-xl text-white text-sm font-bold placeholder:text-cyan-400/25 focus:border-cyan-500/50 focus:outline-none transition-colors"
                       />
                     </div>
                   </motion.div>
@@ -170,30 +170,30 @@ export default function LoginScreen() {
               </AnimatePresence>
 
               <div className="relative">
-                <Mail size={16} className="absolute left-4 top-1/2 -translate-y-1/2 text-blue-400/40" />
+                <Mail size={16} className="absolute left-4 top-1/2 -translate-y-1/2 text-cyan-400/40" />
                 <input
                   type="email"
                   placeholder="E-mail"
                   value={email}
                   onChange={e => { setEmail(e.target.value); clearError(); }}
-                  className="w-full pl-10 pr-4 py-3.5 bg-white/5 border border-white/8 rounded-xl text-white text-sm font-bold placeholder:text-blue-400/25 focus:border-blue-500/50 focus:outline-none transition-colors"
+                  className="w-full pl-10 pr-4 py-3.5 bg-white/5 border border-white/8 rounded-xl text-white text-sm font-bold placeholder:text-cyan-400/25 focus:border-cyan-500/50 focus:outline-none transition-colors"
                 />
               </div>
 
               <div className="relative">
-                <Lock size={16} className="absolute left-4 top-1/2 -translate-y-1/2 text-blue-400/40" />
+                <Lock size={16} className="absolute left-4 top-1/2 -translate-y-1/2 text-cyan-400/40" />
                 <input
                   type={showPassword ? 'text' : 'password'}
                   placeholder="Senha"
                   value={password}
                   onChange={e => { setPassword(e.target.value); clearError(); }}
                   onKeyDown={e => e.key === 'Enter' && handleEmail()}
-                  className="w-full pl-10 pr-12 py-3.5 bg-white/5 border border-white/8 rounded-xl text-white text-sm font-bold placeholder:text-blue-400/25 focus:border-blue-500/50 focus:outline-none transition-colors"
+                  className="w-full pl-10 pr-12 py-3.5 bg-white/5 border border-white/8 rounded-xl text-white text-sm font-bold placeholder:text-cyan-400/25 focus:border-cyan-500/50 focus:outline-none transition-colors"
                 />
                 <button
                   type="button"
                   onClick={() => setShowPassword(v => !v)}
-                  className="absolute right-4 top-1/2 -translate-y-1/2 text-blue-400/30 hover:text-blue-400/60 transition-colors"
+                  className="absolute right-4 top-1/2 -translate-y-1/2 text-cyan-400/30 hover:text-cyan-400/60 transition-colors"
                 >
                   {showPassword ? <EyeOff size={16} /> : <Eye size={16} />}
                 </button>
@@ -217,7 +217,7 @@ export default function LoginScreen() {
                 whileTap={{ scale: 0.97 }}
                 onClick={handleEmail}
                 disabled={loading}
-                className="w-full py-3.5 bg-blue-600 text-white font-black text-sm uppercase tracking-widest rounded-2xl shadow-lg shadow-blue-600/30 hover:bg-blue-500 active:bg-blue-700 transition-all disabled:opacity-60 mt-1"
+                className="w-full py-3.5 bg-cyan-600 text-white font-black text-sm uppercase tracking-widest rounded-2xl shadow-lg shadow-cyan-600/30 hover:bg-cyan-500 active:bg-cyan-700 transition-all disabled:opacity-60 mt-1"
               >
                 {loading ? 'Aguarde...' : tab === 'login' ? 'Entrar' : 'Criar Conta'}
               </motion.button>
@@ -229,14 +229,14 @@ export default function LoginScreen() {
         {firebaseConfigured && (
           <button
             onClick={signInAsGuest}
-            className="w-full mt-4 py-2.5 text-blue-400/50 text-xs font-bold uppercase tracking-widest hover:text-blue-300 transition-colors"
+            className="w-full mt-4 py-2.5 text-cyan-400/50 text-xs font-bold uppercase tracking-widest hover:text-cyan-300 transition-colors"
           >
             Continuar sem conta →
           </button>
         )}
       </motion.div>
 
-      <p className="text-blue-400/20 text-[10px] font-bold uppercase tracking-widest mt-8 text-center">
+      <p className="text-cyan-400/20 text-[10px] font-bold uppercase tracking-widest mt-8 text-center">
         Ao continuar você aceita os Termos de Uso
       </p>
     </div>
