@@ -113,12 +113,12 @@ export default function DoctordleMode({ onExit }: DoctordleModeProps) {
   const finished = status !== 'playing';
 
   return (
-    <div className="min-h-screen w-full flex flex-col items-center px-4 py-6" style={{ background: 'linear-gradient(180deg,#f0fdfa 0%,#f1f5f9 100%)' }}>
+    <div className="min-h-screen w-full flex flex-col items-center px-4 py-6" style={{ background: 'linear-gradient(180deg,#f0f9ff 0%,#f1f5f9 100%)' }}>
       {/* Barra superior */}
       <div className="w-full max-w-xl flex items-center justify-between mb-4">
         <div className="flex items-center gap-4">
           <div className="text-center">
-            <div className="text-lg font-black text-teal-700 leading-none">{solved}</div>
+            <div className="text-lg font-black leading-none" style={{ color: '#00658a' }}>{solved}</div>
             <div className="text-[9px] font-bold uppercase tracking-widest text-slate-400">Resolvidos</div>
           </div>
           <div className="text-center">
@@ -135,10 +135,10 @@ export default function DoctordleMode({ onExit }: DoctordleModeProps) {
       <div className="w-full max-w-xl bg-white rounded-[2rem] shadow-xl border border-slate-100 p-6 sm:p-8">
         {/* Título */}
         <div className="text-center mb-6">
-          <h1 className="text-2xl sm:text-3xl font-black tracking-tight" style={{ color: '#134e4a' }}>
+          <h1 className="text-2xl sm:text-3xl font-black tracking-tight" style={{ color: '#00658a' }}>
             Qual é o diagnóstico?
           </h1>
-          <div className="mx-auto mt-2 h-1 w-16 rounded-full" style={{ background: '#14b8a6' }} />
+          <div className="mx-auto mt-2 h-1 w-16 rounded-full" style={{ background: '#00a7e1' }} />
         </div>
 
         {/* Caixa do caso clínico (pistas progressivas) */}
@@ -152,7 +152,7 @@ export default function DoctordleMode({ onExit }: DoctordleModeProps) {
               className="rounded-2xl px-4 py-3 text-center text-sm font-medium text-slate-700 leading-snug animate-[fadeIn_0.3s_ease]"
               style={{ background: '#f8fafc', border: '1px solid #e2e8f0' }}
             >
-              <span className="text-[10px] font-black uppercase tracking-widest text-teal-600 mr-2">Pista {i + 2}</span>
+              <span className="text-[10px] font-black uppercase tracking-widest mr-2" style={{ color: '#00a7e1' }}>Pista {i + 2}</span>
               {clue}
             </div>
           ))}
@@ -222,7 +222,7 @@ export default function DoctordleMode({ onExit }: DoctordleModeProps) {
                   onKeyDown={e => { if (e.key === 'Enter') submitGuess(); }}
                   onFocus={() => setShowSuggestions(true)}
                   placeholder="Digite seu diagnóstico..."
-                  className="w-full px-4 py-3 rounded-xl border-2 border-slate-200 focus:border-teal-500 outline-none font-medium text-slate-800 transition-colors"
+                  className="w-full px-4 py-3 rounded-xl border-2 border-slate-200 focus:border-[#00a7e1] outline-none font-medium text-slate-800 transition-colors"
                   autoComplete="off"
                   autoFocus
                 />
@@ -236,19 +236,19 @@ export default function DoctordleMode({ onExit }: DoctordleModeProps) {
                 onClick={submitGuess}
                 disabled={!input.trim()}
                 className="px-6 py-3 rounded-xl font-black text-white transition-all disabled:opacity-40 active:scale-95"
-                style={{ background: 'linear-gradient(135deg,#14b8a6 0%,#0d9488 100%)' }}
+                style={{ background: 'linear-gradient(135deg,#00a7e1 0%,#00658a 100%)' }}
               >
                 Enviar
               </button>
             </div>
 
             {showSuggestions && suggestions.length > 0 && (
-              <div className="absolute z-50 w-full mt-1.5 bg-white rounded-xl border-2 border-teal-100 shadow-xl overflow-hidden">
+              <div className="absolute z-50 w-full mt-1.5 bg-white rounded-xl border-2 border-cyan-100 shadow-xl overflow-hidden">
                 {suggestions.map((s, i) => (
                   <button
                     key={i}
                     onMouseDown={() => { setInput(s); setShowSuggestions(false); }}
-                    className="w-full text-left px-4 py-2.5 text-sm font-semibold text-slate-700 hover:bg-teal-50 border-b border-slate-50 last:border-0 transition-colors"
+                    className="w-full text-left px-4 py-2.5 text-sm font-semibold text-slate-700 hover:bg-cyan-50 border-b border-slate-50 last:border-0 transition-colors"
                   >
                     {s}
                   </button>
@@ -266,7 +266,7 @@ export default function DoctordleMode({ onExit }: DoctordleModeProps) {
             <button
               onClick={nextCase}
               className="flex-1 px-6 py-3.5 rounded-xl font-black text-white flex items-center justify-center gap-2 active:scale-95 transition-transform"
-              style={{ background: 'linear-gradient(135deg,#14b8a6 0%,#0d9488 100%)' }}
+              style={{ background: 'linear-gradient(135deg,#00a7e1 0%,#00658a 100%)' }}
             >
               Próximo caso <ChevronRight size={18} />
             </button>
