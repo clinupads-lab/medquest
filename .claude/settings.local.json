@@ -101,7 +101,8 @@
       "Bash(awk -F: '{print $1}')",
       "Bash(awk 'NR==1{first=$1} NR==last{} END{print \"lines: \" first \" to \" $1}')",
       "WebFetch(domain:doctordle.org)",
-      "Bash(git commit -m 'fix\\(filtro-banca\\): adiciona IAMSPE a lista de BANCAS para resolver filtro quebrado *)"
+      "Bash(git commit -m 'fix\\(filtro-banca\\): adiciona IAMSPE a lista de BANCAS para resolver filtro quebrado *)",
+      "Bash(git commit -m 'feat\\(questoes-iamspe\\): adiciona 65 questoes reais de IAMSPE para atingir 200+ por banca *)"
     ]
   }
 }
