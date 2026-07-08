@@ -100,7 +100,8 @@
       "Bash(npx tsc *)",
       "Bash(awk -F: '{print $1}')",
       "Bash(awk 'NR==1{first=$1} NR==last{} END{print \"lines: \" first \" to \" $1}')",
-      "WebFetch(domain:doctordle.org)"
+      "WebFetch(domain:doctordle.org)",
+      "Bash(git commit -m 'fix\\(filtro-banca\\): adiciona IAMSPE a lista de BANCAS para resolver filtro quebrado *)"
     ]
   }
 }
