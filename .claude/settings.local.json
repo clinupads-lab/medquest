@@ -90,7 +90,17 @@
       "PowerShell(python \"C:\\\\Users\\\\Andrew Aguiar\\\\Downloads\\\\generate_psu_mg.py\")",
       "Bash(grep -iE \"\\\\.\\(pdf|html|txt\\)$\")",
       "PowerShell(python \"C:\\\\Users\\\\Andrew Aguiar\\\\Downloads\\\\generate_cermam_2026.py\")",
-      "PowerShell(python \"C:\\\\Users\\\\Andrew Aguiar\\\\Downloads\\\\insert_cermam_2026.py\")"
+      "PowerShell(python \"C:\\\\Users\\\\Andrew Aguiar\\\\Downloads\\\\insert_cermam_2026.py\")",
+      "Bash(git rebase *)",
+      "Bash(git ls-tree *)",
+      "Bash(git merge *)",
+      "Bash(git checkout *)",
+      "Bash(node -e ' *)",
+      "PowerShell(cd \"c:/Users/Andrew Aguiar/Downloads/medquest_-residência-médica \\(1\\)\"; $out = npx tsc --noEmit 2>&1; $out | Where-Object { $_ -match \"App\\\\.tsx\" })",
+      "Bash(npx tsc *)",
+      "Bash(awk -F: '{print $1}')",
+      "Bash(awk 'NR==1{first=$1} NR==last{} END{print \"lines: \" first \" to \" $1}')",
+      "WebFetch(domain:doctordle.org)"
     ]
   }
 }
