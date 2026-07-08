@@ -1,21 +1,27 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Montserrat:wght@500;600;700;800;900&display=swap');
 @import "tailwindcss";
 
+/* Design system: "Clinical Vitality" — Medical Teal + Streak Amber */
 @theme {
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
-  --color-brand-bg: #EDF1F5;
+  --font-display: "Montserrat", "Inter", ui-sans-serif, system-ui, sans-serif;
+  --color-brand-bg: #f9f9fe;
   --color-brand-card: #FFFFFF;
-  --color-brand-primary: #2563EB;
-  --color-brand-secondary: #3B82F6;
-  --color-brand-orange: #F59E0B;
-  --color-brand-green: #10B981;
-  --color-brand-red: #EF4444;
-  --color-brand-blue: #2563EB;
+  --color-brand-primary: #00658a;    /* Medical Teal */
+  --color-brand-secondary: #00a7e1;  /* Bright Teal */
+  --color-brand-orange: #f1c100;     /* Streak Amber (XP/streaks) */
+  --color-brand-green: #12b449;      /* Success Emerald */
+  --color-brand-red: #ba1a1a;        /* Soft Error Red */
+  --color-brand-blue: #00658a;
 }
 
 @layer base {
   body {
     @apply bg-brand-bg text-slate-900 font-sans antialiased;
+  }
+  /* Títulos em Montserrat (energia gamificada); corpo permanece Inter. */
+  h1, h2, h3 {
+    font-family: var(--font-display);
   }
 }
 
