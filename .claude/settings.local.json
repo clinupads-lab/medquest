@@ -107,7 +107,9 @@
       "Bash(grep \"^import.*from.*\\\\\\\\./\" src/App.tsx)",
       "Bash(grep -i \"\\\\.ts$\")",
       "Bash(grep -E \"\\\\.ts$\")",
-      "Bash(git commit -m 'fix\\(imports\\): adiciona enare_2024_questions que estava faltando no import *)"
+      "Bash(git commit -m 'fix\\(imports\\): adiciona enare_2024_questions que estava faltando no import *)",
+      "WebFetch(domain:www.qconcursos.com)",
+      "Bash(git commit -m 'feat\\(banca-comvest\\): adiciona 6 questoes de COMVEST-UNICAMP e cria nova banca *)"
     ]
   }
 }
