@@ -111,7 +111,11 @@
       "WebFetch(domain:www.qconcursos.com)",
       "Bash(git commit -m 'feat\\(banca-comvest\\): adiciona 6 questoes de COMVEST-UNICAMP e cria nova banca *)",
       "Bash(git reset *)",
-      "Bash(git commit *)"
+      "Bash(git commit *)",
+      "Bash(netstat -ano)",
+      "Bash(taskkill //F //PID 20648 //T)",
+      "Bash(taskkill //F //PID 20432 //T)",
+      "Bash(rm -rf node_modules/.vite)"
     ]
   }
 }
