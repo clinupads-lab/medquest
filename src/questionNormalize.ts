@@ -12,9 +12,92 @@ import GENERATED_EXPLANATIONS from './explanations.json';
 /** Forma mínima de uma questão — evita depender do tipo completo do App. */
 export interface NormalizableQuestion {
   id: string;
+  text?: string;
+  subject?: string;
+  cycle?: string;
   options: string[];
   correctIndex: number;
   explanation?: string;
+}
+
+// ── 0. Matéria e ciclo canônicos ──────────────────────────────────────────
+// Os bancos foram importados de fontes diferentes e a mesma matéria aparece
+// escrita de várias formas ("Clinica Medica" sem acento, "Ginecologia e
+// Obstetrícia" em vez de "Ginecologia & Obstetrícia", "Cirurgia" em vez de
+// "Cirurgia Geral"). Como os arrays entram no app com `as Question[]`, o
+// TypeScript não barrava nada — e essas questões acabavam sem ícone, fora dos
+// filtros por matéria e fora do cálculo de domínio.
+const SUBJECT_ALIASES: Record<string, string> = {
+  // acentuação / grafia
+  'clinica medica': 'Clínica Médica',
+  'clínica médica humana': 'Clínica Médica',
+  'clinica cirurgica': 'Clínica Cirúrgica',
+  // ginecologia e obstetrícia e suas partes
+  'ginecologia e obstetrícia': 'Ginecologia & Obstetrícia',
+  'ginecologia': 'Ginecologia & Obstetrícia',
+  'obstetrícia': 'Ginecologia & Obstetrícia',
+  'mastologia': 'Ginecologia & Obstetrícia',
+  // cirurgias sem bucket próprio
+  'cirurgia': 'Cirurgia Geral',
+  'cirurgia torácica': 'Cirurgia Geral',
+  'cirurgia pediátrica': 'Cirurgia Geral',
+  'cirurgia plástica': 'Cirurgia Geral',
+  'angiologia': 'Cirurgia Vascular',
+  // emergência
+  'medicina de emergência': 'Urgência e Emergência',
+  // saúde pública, ética e legislação → bucket de SUS do app
+  'saúde coletiva': 'Medicina de Família/SUS',
+  'medicina de família': 'Medicina de Família/SUS',
+  'medicina de família e comunidade': 'Medicina de Família/SUS',
+  'médico da família': 'Medicina de Família/SUS',
+  'medicina preventiva': 'Medicina de Família/SUS',
+  'políticas públicas, planejamento e gestão em saúde pública': 'Medicina de Família/SUS',
+  'direito sanitário': 'Medicina de Família/SUS',
+  'ética médica': 'Medicina de Família/SUS',
+  'bioética': 'Medicina de Família/SUS',
+  'medicina legal': 'Medicina de Família/SUS',
+  'medicina do trabalho': 'Medicina de Família/SUS',
+  'epidemiologia e saúde coletiva': 'Epidemiologia',
+  // nomes longos de banca
+  'doenças infecto-parasitárias': 'Infectologia',
+  'doenças reumatológicas e do sistema imunológico': 'Reumatologia',
+  'cardiologia e alterações vasculares': 'Cardiologia',
+  'pediatria e neonatologia': 'Pediatria',
+  'oncologia': 'Clínica Médica',
+};
+
+export function canonicalSubject(subject?: string): string | undefined {
+  if (!subject) return subject;
+  const full = subject.trim();
+  // Primeiro tenta a string inteira — há nomes de matéria que contêm vírgula
+  // ("Políticas Públicas, Planejamento e Gestão em Saúde Pública").
+  const exact = SUBJECT_ALIASES[full.toLowerCase()];
+  if (exact) return exact;
+  // Senão, algumas bancas listam várias matérias numa string ("Neurologia,
+  // Genética"): a primeira é a principal.
+  const primary = full.split(',')[0].trim();
+  return SUBJECT_ALIASES[primary.toLowerCase()] ?? primary;
+}
+
+export function canonicalCycle(cycle?: string): string | undefined {
+  if (!cycle) return cycle;
+  const c = cycle.trim().toLowerCase();
+  if (c === 'ciclo clinico' || c === 'ciclo clínico') return 'Ciclo Clínico';
+  if (c === 'ciclo basico' || c === 'ciclo básico') return 'Ciclo Básico';
+  if (c === 'internato') return 'Internato';
+  return cycle;
+}
+
+// ── Limpeza tipográfica ───────────────────────────────────────────────────
+// Sobras da extração de PDF: espaço duplo, espaço antes de pontuação, espaço
+// sem quebra (NBSP), sobras nas pontas.
+function cleanText(v: string): string {
+  return v
+    .replace(/ /g, ' ')          // NBSP → espaço normal
+    .replace(/[ \t]{2,}/g, ' ')       // espaços repetidos
+    .replace(/\s+([,;:!?])/g, '$1')   // "palavra ," → "palavra,"
+    .replace(/\s+\.(?!\.)/g, '.')     // "palavra ." → "palavra." (poupa "....")
+    .trim();
 }
 
 // ── 1. Prefixos de letra duplicados ───────────────────────────────────────
@@ -103,7 +186,47 @@ export function shuffleOptions<T extends NormalizableQuestion>(q: T): T {
   return { ...q, options: order.map(i => q.options[i]), correctIndex: newCorrect };
 }
 
-/** Pipeline completo: limpa prefixos → preenche explicação → embaralha. */
+// ── 4. Filtro de qualidade ────────────────────────────────────────────────
+// Barra questões que o usuário não teria como responder. Sem isso elas chegam
+// ao quiz, e ele erra e perde uma vida sem ter feito nada de errado.
+//
+// Casos reais encontrados no banco:
+//   · questões ANULADAS pela banca, importadas como placeholder
+//     ("Alternativa A;", "Alternativa B;") e correctIndex -1;
+//   · extração de PDF que truncou e duplicou alternativas (ufrj_2024_028);
+//   · alternativa em branco.
+const PLACEHOLDER_OPTION_RE = /^\s*alternativa\s+[a-e]\s*;?\s*$/i;
+
+export function isUsableQuestion(q: NormalizableQuestion): boolean {
+  if (!q.options || q.options.length < 2) return false;
+  // gabarito precisa apontar para uma alternativa existente
+  if (q.correctIndex < 0 || q.correctIndex >= q.options.length) return false;
+  // nenhuma alternativa vazia
+  if (q.options.some(o => !String(o).trim())) return false;
+  // nada de placeholder de questão anulada
+  if (q.options.some(o => PLACEHOLDER_OPTION_RE.test(String(o)))) return false;
+  // alternativas repetidas: não dá para escolher entre duas idênticas
+  const unicas = new Set(q.options.map(o => String(o).trim().toLowerCase()));
+  if (unicas.size !== q.options.length) return false;
+  return true;
+}
+
+/** Padroniza matéria, ciclo e tipografia. */
+function cleanFields<T extends NormalizableQuestion>(q: T): T {
+  return {
+    ...q,
+    ...(q.text ? { text: cleanText(q.text) } : {}),
+    ...(q.explanation ? { explanation: cleanText(q.explanation) } : {}),
+    ...(q.subject ? { subject: canonicalSubject(q.subject) } : {}),
+    ...(q.cycle ? { cycle: canonicalCycle(q.cycle) } : {}),
+    options: q.options.map(o => cleanText(String(o))),
+  };
+}
+
+/**
+ * Pipeline completo, aplicado uma vez ao montar o banco:
+ * padroniza campos → tira prefixos de letra → preenche explicação → embaralha.
+ */
 export function normalizeQuestion<T extends NormalizableQuestion>(q: T): T {
-  return shuffleOptions(withExplanation(stripOptionPrefixes(q)));
+  return shuffleOptions(withExplanation(stripOptionPrefixes(cleanFields(q))));
 }

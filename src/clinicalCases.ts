@@ -1425,7 +1425,7 @@ export const CLINICAL_CASES: ClinicalCase[] = [
   {
     id: 'case_095',
     diagnosis: 'Feocromocitoma',
-    aliases: ['feocromocitoma', 'feocromocitома'],
+    aliases: ['feocromocitoma', 'feocromocitomas'],
     specialty: 'Endocrinologia',
     clues: [
       'Mulher de 45 anos com crises de hipertensão paroxística.',
