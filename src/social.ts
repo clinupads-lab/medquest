@@ -220,6 +220,25 @@ export async function fetchWins(uids: string[]): Promise<Record<string, { name: 
   return out;
 }
 
+// Perfil público (nome/XP/nível) de usuários reais, para o ranking da Liga.
+// Lê os docs de 'users' (mesma coleção do progresso). Degrada em silêncio se
+// as regras bloquearem a leitura de outro usuário.
+export interface PublicProfile { name: string; xp: number; level: number }
+export async function fetchProfiles(uids: string[]): Promise<Record<string, PublicProfile>> {
+  if (!ok() || uids.length === 0) return {};
+  const out: Record<string, PublicProfile> = {};
+  await Promise.all(uids.map(async (u) => {
+    try {
+      const s = await getDoc(doc(db!, 'users', u));
+      if (s.exists()) {
+        const d = s.data();
+        out[u] = { name: (d.name as string) || '', xp: (d.xp as number) || 0, level: (d.level as number) || 1 };
+      }
+    } catch { /* leitura bloqueada: amigo simplesmente não entra no ranking */ }
+  }));
+  return out;
+}
+
 // ── Salas em grupo (estilo Kahoot) ───────────────────────────────────────────
 
 export interface RoomPlayer { name: string; score: number; lastAnsweredIndex: number }
