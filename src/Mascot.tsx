@@ -208,43 +208,116 @@ export function Mascot({
 }
 
 /**
- * Frases do Dr. Quest durante o quiz. A escolha é determinística por questão
- * (via pickPhrase) para não trocar de frase a cada re-render.
+ * Personalidades do Dr. Quest. Cada uma tem um jeito próprio de reagir aos
+ * acertos, combos, erros e tempo esgotado. O usuário escolhe no perfil.
  */
-export const MASCOT_PHRASES = {
-  correct: [
-    'Diagnóstico certeiro! 🎯',
-    'Conduta perfeita!',
-    'Raciocínio clínico afiado!',
-    'É isso! Anota no prontuário ✅',
-    'Acertou em cheio!',
-    'Excelente! Caso resolvido.',
-    'Essa cai na prova — e você já sabe!',
-    'Mandou muito bem!',
-  ],
-  combo: [
-    'Combo clínico! Você tá on 🔥',
-    'Sequência impecável!',
-    'Imparável! Plantão dominado.',
-    'Que sequência, hein! Continua!',
-  ],
-  wrong: [
-    'Calma — errar faz parte do diagnóstico.',
-    'Anota essa: agora você não erra mais.',
-    'Quase! Lê a explicação, é ouro.',
-    'Essa foi difícil. Bora revisar juntos?',
-    'Respira. Na prova você acerta.',
-    'Erro hoje, acerto na prova.',
-    'Faz parte do treino, doc.',
-    'Não desanima — ela volta no reforço!',
-  ],
-  timeout: [
-    'O tempo voou! ⏱️',
-    'Ficou no relógio! Na próxima vale chutar.',
-    'Tempo esgotado — mas a explicação fica.',
-    'O cronômetro venceu essa. Revanche?',
-  ],
+export type MascotPersonality = 'motivador' | 'paciente' | 'engracado' | 'durao';
+
+export interface PhraseSet {
+  correct: string[];
+  combo: string[];
+  wrong: string[];
+  timeout: string[];
+}
+
+export const MASCOT_PERSONALITIES: { id: MascotPersonality; label: string; emoji: string; desc: string }[] = [
+  { id: 'motivador', label: 'Motivador', emoji: '💪', desc: 'Mentor entusiasmado que te incentiva a cada questão.' },
+  { id: 'paciente',  label: 'Paciente',  emoji: '🧘', desc: 'Calmo e acolhedor, sem pressão — no seu ritmo.' },
+  { id: 'engracado', label: 'Engraçado', emoji: '😄', desc: 'Bem-humorado, solta piadas de plantão.' },
+  { id: 'durao',     label: 'Durão',     emoji: '🔥', desc: 'Exigente e provocador, te cobra de verdade.' },
+];
+
+export const MASCOT_PHRASES_BY_PERSONALITY: Record<MascotPersonality, PhraseSet> = {
+  motivador: {
+    correct: [
+      'Diagnóstico certeiro! 🎯', 'Conduta perfeita!', 'Raciocínio clínico afiado!',
+      'É isso! Anota no prontuário ✅', 'Acertou em cheio!', 'Excelente! Caso resolvido.',
+      'Essa cai na prova — e você já sabe!', 'Mandou muito bem!',
+    ],
+    combo: [
+      'Combo clínico! Você tá on 🔥', 'Sequência impecável!',
+      'Imparável! Plantão dominado.', 'Que sequência, hein! Continua!',
+    ],
+    wrong: [
+      'Calma — errar faz parte do diagnóstico.', 'Anota essa: agora você não erra mais.',
+      'Quase! Lê a explicação, é ouro.', 'Essa foi difícil. Bora revisar juntos?',
+      'Respira. Na prova você acerta.', 'Erro hoje, acerto na prova.',
+      'Faz parte do treino, doc.', 'Não desanima — ela volta no reforço!',
+    ],
+    timeout: [
+      'O tempo voou! ⏱️', 'Ficou no relógio! Na próxima vale chutar.',
+      'Tempo esgotado — mas a explicação fica.', 'O cronômetro venceu essa. Revanche?',
+    ],
+  },
+  paciente: {
+    correct: [
+      'Muito bem. Você está no caminho certo.', 'Isso mesmo, sem pressa e com precisão.',
+      'Perfeito. Um passo de cada vez.', 'Ótimo raciocínio. Continue assim, com calma.',
+      'Certinho. Você entendeu o conceito.', 'Boa! Respire e siga no seu ritmo.',
+    ],
+    combo: [
+      'Que constância bonita. Siga tranquilo.', 'Você está fluindo, sem pressa.',
+      'Uma de cada vez, e olha o resultado.', 'Ritmo sereno, acertos firmes.',
+    ],
+    wrong: [
+      'Tudo bem. Errar também é aprender.', 'Sem problema, vamos entender juntos.',
+      'Respire. Leia a explicação com calma.', 'Faz parte. Você acerta a próxima.',
+      'Calma, ninguém acerta tudo de primeira.', 'Está tudo bem — um erro não define nada.',
+    ],
+    timeout: [
+      'O tempo passou, mas sem estresse.', 'Tudo certo. Leia a explicação com calma.',
+      'Sem pressa — o importante é entender.', 'O relógio venceu, mas o aprendizado fica.',
+    ],
+  },
+  engracado: {
+    correct: [
+      'Acertou! Nem o Dr. House discordaria 🩺', 'Isso! Pode passar a visita, doutor(a) 😎',
+      'Diagnóstico na veia! 💉', 'Uau, acertou sem colar! 📚',
+      'Certeiro! Seu cérebro tá em dia 🧠', 'Mandou bem! Anota no prontuário 📝',
+    ],
+    combo: [
+      'Sequência de mestre! Tá pegando fogo 🔥', 'Combo! Já pode abrir consultório 🏥',
+      'Imparável! O CRM que se cuide 😏', 'Uma atrás da outra! Tá roubando? 👀',
+    ],
+    wrong: [
+      'Errou! Mas relaxa, o paciente é fictício 😅', 'Ops! Essa foi pro brejo 🐸',
+      'Quase! Faltou um cafezinho, né? ☕', 'Essa doeu mais em mim 😬 lê a explicação!',
+      'Foi mal, a questão jogou sujo 🃏', 'Errrr... bora de novo, doutor(a)!',
+    ],
+    timeout: [
+      'O tempo fugiu igual paciente de agulha! ⏱️', 'Zzz... acabou o tempo, dorminhoco 😴',
+      'O relógio ganhou essa corrida 🏃', 'Tempo esgotado! Mas a explicação fica 😄',
+    ],
+  },
+  durao: {
+    correct: [
+      'Acertou. Era o mínimo esperado.', 'Correto. Agora não relaxa.',
+      'Isso. Mas eu quero consistência.', 'Certo. Prova que não foi sorte.',
+      'Bom. Agora aumenta o ritmo.', 'Acertou. Não quero ver vacilo na próxima.',
+    ],
+    combo: [
+      'Sequência? Bom. Não pare agora.', 'Combo. É isso que eu cobro de você.',
+      'Tá acertando. Agora não amolece.', 'Isso é foco. Mantém ou perde tudo.',
+    ],
+    wrong: [
+      'Errou. Estuda isso agora.', 'Não. Essa você tinha obrigação de saber.',
+      'Errado. Lê a explicação e não repete.', 'Vacilou. Na prova real isso custa caro.',
+      'Não foi dessa vez. Foco, doutor(a).', 'Erro feio. Bora consertar isso.',
+    ],
+    timeout: [
+      'Tempo esgotado. Lentidão não passa na prova.', 'Devagar demais. Acelera.',
+      'O relógio não espera — nem a banca.', 'Perdeu no tempo. Isso não pode virar hábito.',
+    ],
+  },
 };
+
+/** Conjunto de falas da personalidade escolhida (cai no Motivador por padrão). */
+export function mascotPhrasesFor(p?: MascotPersonality): PhraseSet {
+  return MASCOT_PHRASES_BY_PERSONALITY[p ?? 'motivador'] ?? MASCOT_PHRASES_BY_PERSONALITY.motivador;
+}
+
+// Compat: usado onde a personalidade não importa.
+export const MASCOT_PHRASES = MASCOT_PHRASES_BY_PERSONALITY.motivador;
 
 export function pickPhrase(list: string[], seed: string): string {
   let h = 0;
