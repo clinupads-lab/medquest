@@ -17,7 +17,9 @@ const C = {
   glowMouth: '#9ff0ff',
   blush: '#3fc6f2',
   coat: '#ffffff',
-  coatLine: '#cfe0ea',
+  // Contorno do jaleco: escuro o bastante pra separar o branco do jaleco
+  // de um fundo branco (o tom antigo #cfe0ea sumia em cards claros).
+  coatLine: '#7ea6bd',
   innerShirt: '#bfe9f8',
   glove: '#00a7e1',
   amber: '#f1c100',
@@ -56,6 +58,15 @@ export function Mascot({
       role="img"
       aria-label="Dr. Quest, mascote do MedQuest"
     >
+      {/* Sombra difusa em todo o robô: garante contraste do jaleco branco
+          mesmo sobre fundos brancos/claros (o mesmo id repetido em várias
+          instâncias é ok — o conteúdo do filtro é idêntico). */}
+      <defs>
+        <filter id="dq-pop" x="-25%" y="-25%" width="150%" height="150%">
+          <feDropShadow dx="0" dy="3" stdDeviation="5" floodColor="#0f3a52" floodOpacity="0.28" />
+        </filter>
+      </defs>
+      <g filter="url(#dq-pop)">
       {crop === 'full' && <ellipse cx={210} cy={362} rx={88} ry={11} fill={C.shellDark} opacity={0.14} />}
 
       {/* pernas */}
@@ -104,7 +115,7 @@ export function Mascot({
       )}
 
       {/* corpo / jaleco */}
-      <rect x={138} y={206} width={144} height={126} rx={40} fill={C.coat} stroke={C.coatLine} strokeWidth={3} />
+      <rect x={138} y={206} width={144} height={126} rx={40} fill={C.coat} stroke={C.coatLine} strokeWidth={4} />
       <path d="M184 208 L210 240 L236 208 Z" fill={C.innerShirt} />
 
       {/* estetoscópio em forma de Q */}
@@ -203,6 +214,7 @@ export function Mascot({
           </text>
         </g>
       )}
+      </g>
     </svg>
   );
 }
@@ -233,20 +245,32 @@ export const MASCOT_PHRASES_BY_PERSONALITY: Record<MascotPersonality, PhraseSet>
       'Diagnóstico certeiro! 🎯', 'Conduta perfeita!', 'Raciocínio clínico afiado!',
       'É isso! Anota no prontuário ✅', 'Acertou em cheio!', 'Excelente! Caso resolvido.',
       'Essa cai na prova — e você já sabe!', 'Mandou muito bem!',
+      'Aula! Você tá cada vez mais perto da vaga.', 'É desse jeito que se passa na residência!',
+      'Alta médica pra essa questão! 🏥', 'Seu futuro paciente agradece esse acerto.',
+      'Visão de especialista! 👁️', 'A banca que te aguarde!',
+      'Mais uma pro seu caderno de vitórias!', 'Você estudou e tá aparecendo. Continua!',
     ],
     combo: [
       'Combo clínico! Você tá on 🔥', 'Sequência impecável!',
       'Imparável! Plantão dominado.', 'Que sequência, hein! Continua!',
+      'Modo aprovação: ATIVADO 🚀', 'Isso não é sorte, é preparo!',
+      'A vaga tá cada vez mais sua!', 'Sequência de residente-chefe! 👨‍⚕️',
+      'Ninguém segura você hoje!', 'Tá voando! Aproveita a maré boa.',
     ],
     wrong: [
       'Calma — errar faz parte do diagnóstico.', 'Anota essa: agora você não erra mais.',
       'Quase! Lê a explicação, é ouro.', 'Essa foi difícil. Bora revisar juntos?',
       'Respira. Na prova você acerta.', 'Erro hoje, acerto na prova.',
       'Faz parte do treino, doc.', 'Não desanima — ela volta no reforço!',
+      'Todo especialista já errou essa um dia.', 'Errar aqui é de graça. Na prova é que custa!',
+      'Guarda essa raiva pra estudar o tema 😤📚', 'Um erro é só um degrau. Sobe nele!',
+      'Essa banca pega todo mundo aí. Agora você sabe.', 'Levanta, sacode a poeira e vem pra próxima!',
     ],
     timeout: [
       'O tempo voou! ⏱️', 'Ficou no relógio! Na próxima vale chutar.',
       'Tempo esgotado — mas a explicação fica.', 'O cronômetro venceu essa. Revanche?',
+      'Na prova, chute! Questão em branco é ponto perdido.', 'Ritmo é treino também. Bora de novo!',
+      'O relógio jogou contra. Mas você tá aprendendo a jogar com ele.',
     ],
   },
   paciente: {
@@ -254,19 +278,29 @@ export const MASCOT_PHRASES_BY_PERSONALITY: Record<MascotPersonality, PhraseSet>
       'Muito bem. Você está no caminho certo.', 'Isso mesmo, sem pressa e com precisão.',
       'Perfeito. Um passo de cada vez.', 'Ótimo raciocínio. Continue assim, com calma.',
       'Certinho. Você entendeu o conceito.', 'Boa! Respire e siga no seu ritmo.',
+      'Viu? O conhecimento está aí dentro.', 'Acertou com tranquilidade. É assim que fixa.',
+      'Cada acerto desses é uma semente plantada.', 'Sereno e certeiro. Muito bom.',
+      'O estudo silencioso aparece nessas horas.', 'Sem alarde, só consistência. Lindo de ver.',
     ],
     combo: [
       'Que constância bonita. Siga tranquilo.', 'Você está fluindo, sem pressa.',
       'Uma de cada vez, e olha o resultado.', 'Ritmo sereno, acertos firmes.',
+      'A calma constrói sequências assim.', 'Repare: sem ansiedade, você rende mais.',
+      'Passo a passo virou uma bela caminhada.', 'Confiança tranquila. Continue.',
     ],
     wrong: [
       'Tudo bem. Errar também é aprender.', 'Sem problema, vamos entender juntos.',
       'Respire. Leia a explicação com calma.', 'Faz parte. Você acerta a próxima.',
       'Calma, ninguém acerta tudo de primeira.', 'Está tudo bem — um erro não define nada.',
+      'Acolhe esse erro. Ele veio te ensinar.', 'Sem se cobrar demais. Amanhã você olha de novo.',
+      'Um erro de cada vez, um aprendizado de cada vez.', 'Isso não muda o seu caminho. Segue.',
+      'Até os professores erram essa. Fica em paz.', 'Deixa o erro passar como uma nuvem. E aprende dele.',
     ],
     timeout: [
       'O tempo passou, mas sem estresse.', 'Tudo certo. Leia a explicação com calma.',
       'Sem pressa — o importante é entender.', 'O relógio venceu, mas o aprendizado fica.',
+      'Respire fundo. A próxima é sua.', 'Tempo é treino. Vai encaixando aos poucos.',
+      'Sem culpa. Ler com atenção também é estudar.',
     ],
   },
   engracado: {
@@ -274,19 +308,30 @@ export const MASCOT_PHRASES_BY_PERSONALITY: Record<MascotPersonality, PhraseSet>
       'Acertou! Nem o Dr. House discordaria 🩺', 'Isso! Pode passar a visita, doutor(a) 😎',
       'Diagnóstico na veia! 💉', 'Uau, acertou sem colar! 📚',
       'Certeiro! Seu cérebro tá em dia 🧠', 'Mandou bem! Anota no prontuário 📝',
+      'Acertou! Já pode assinar atestado... quase 🖊️', 'Boa! Nem precisou pedir exame 🔬',
+      'Plantão tranquilo com você de plantão 😴', 'Diagnóstico mais rápido que triagem de sexta 🏃‍♂️',
+      'Acertou! Google Médico tá tremendo 🤖', 'Essa até o interno do primeiro dia... não, essa não 😅',
+      'Aprovadíssimo! Cadê o jaleco? 🥼', 'Isso! O SUS precisa de você 🇧🇷',
     ],
     combo: [
       'Sequência de mestre! Tá pegando fogo 🔥', 'Combo! Já pode abrir consultório 🏥',
       'Imparável! O CRM que se cuide 😏', 'Uma atrás da outra! Tá roubando? 👀',
+      'Combo! Isso é surto de acertos, notifica! 📋', 'Tá inspirado! Comeu o quê no café? ☕',
+      'Sequência linda! Nem residente de plantão dobrado 💪', 'Alguém chama a banca, tem um(a) aprovado(a) aqui! 📣',
     ],
     wrong: [
       'Errou! Mas relaxa, o paciente é fictício 😅', 'Ops! Essa foi pro brejo 🐸',
       'Quase! Faltou um cafezinho, né? ☕', 'Essa doeu mais em mim 😬 lê a explicação!',
       'Foi mal, a questão jogou sujo 🃏', 'Errrr... bora de novo, doutor(a)!',
+      'Eita! Foi engano de prontuário 📁', 'Errou, mas o plano de saúde cobre 😜',
+      'Essa alternativa era pegadinha nível banca raiz 🎣', 'Xiii... pede um parecer e tenta de novo 📞',
+      'Calma, ninguém viu. Só eu. E eu conto pra geral 🤭', 'Erro comum! (tô falando isso pra te consolar) 🤗',
     ],
     timeout: [
       'O tempo fugiu igual paciente de agulha! ⏱️', 'Zzz... acabou o tempo, dorminhoco 😴',
       'O relógio ganhou essa corrida 🏃', 'Tempo esgotado! Mas a explicação fica 😄',
+      'Demorou mais que fila do SUS 🙈', 'O cronômetro te deu alta antes da hora ⏰',
+      'Tempo? Foi embora sem pagar a consulta 💸',
     ],
   },
   durao: {
@@ -294,19 +339,29 @@ export const MASCOT_PHRASES_BY_PERSONALITY: Record<MascotPersonality, PhraseSet>
       'Acertou. Era o mínimo esperado.', 'Correto. Agora não relaxa.',
       'Isso. Mas eu quero consistência.', 'Certo. Prova que não foi sorte.',
       'Bom. Agora aumenta o ritmo.', 'Acertou. Não quero ver vacilo na próxima.',
+      'Ok. Seu concorrente também acertou essa.', 'Certo. Mas aprovação se constrói no volume.',
+      'Acertou uma fácil. Cadê as difíceis?', 'É isso. Repete amanhã, e depois, e depois.',
+      'Correto. A vaga não cai do céu — continua.', 'Bom sinal. Não deixa virar exceção.',
     ],
     combo: [
       'Sequência? Bom. Não pare agora.', 'Combo. É isso que eu cobro de você.',
       'Tá acertando. Agora não amolece.', 'Isso é foco. Mantém ou perde tudo.',
+      'Sequência boa. O corte da sua banca agradece.', 'Continua assim e a gente conversa sobre aprovação.',
+      'Ritmo de prova. Era isso que eu queria ver.', 'Não comemora ainda. Comemora na matrícula.',
     ],
     wrong: [
       'Errou. Estuda isso agora.', 'Não. Essa você tinha obrigação de saber.',
       'Errado. Lê a explicação e não repete.', 'Vacilou. Na prova real isso custa caro.',
       'Não foi dessa vez. Foco, doutor(a).', 'Erro feio. Bora consertar isso.',
+      'Esse erro te separa da vaga. Resolve.', 'A banca adora quem não revisa. Não seja essa pessoa.',
+      'Errou por desatenção ou por não saber? Descobre.', 'Anota, revisa, e nunca mais.',
+      'Seu concorrente acertou essa. Pensa nisso.', 'Sem drama. Erro se corrige estudando.',
     ],
     timeout: [
       'Tempo esgotado. Lentidão não passa na prova.', 'Devagar demais. Acelera.',
       'O relógio não espera — nem a banca.', 'Perdeu no tempo. Isso não pode virar hábito.',
+      'Na prova são ~3 minutos por questão. Treina isso.', 'Tempo é critério de aprovação. Leva a sério.',
+      'Questão sem resposta é ponto de graça pro concorrente.',
     ],
   },
 };
