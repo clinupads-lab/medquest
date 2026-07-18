@@ -19,12 +19,14 @@ const { defineSecret } = require('firebase-functions/params');
 const { initializeApp } = require('firebase-admin/app');
 const { getFirestore, FieldValue } = require('firebase-admin/firestore');
 const crypto = require('crypto');
+const Anthropic = require('@anthropic-ai/sdk');
 
 initializeApp();
 const db = getFirestore();
 
 const MP_ACCESS_TOKEN = defineSecret('MP_ACCESS_TOKEN');
 const MP_WEBHOOK_SECRET = defineSecret('MP_WEBHOOK_SECRET');
+const ANTHROPIC_API_KEY = defineSecret('ANTHROPIC_API_KEY');
 
 // Mesma região do Firestore do projeto (southamerica-east1 = São Paulo).
 const REGION = 'southamerica-east1';
@@ -240,5 +242,103 @@ exports.mercadoPagoWebhook = onRequest(
 
     console.log(`[webhook] ${uid} → ${grant.plan}/${grant.planTier} (sub ${sub.id}, status ${status})`);
     res.status(200).send('ok');
+  }
+);
+
+// ── explainQuestion — Dr. Quest IA ───────────────────────────────────
+// Gera a explicação de uma questão que não tem gabarito comentado.
+// Cache agressivo no Firestore: cada questão é explicada UMA vez na vida
+// (explanations/{questionId}); depois disso todo mundo lê do cache e o
+// custo de IA daquela questão é zero para sempre.
+
+// Limite diário de GERAÇÕES por usuário (leituras do cache não contam).
+// Protege contra abuso do endpoint como "LLM grátis".
+const AI_DAILY_LIMIT = 30;
+
+const EXPLAIN_SYSTEM = `Você é o Dr. Quest, tutor de medicina do app MedQuest (questões de provas de residência médica brasileiras).
+Sua tarefa: explicar o gabarito da questão em português do Brasil, em até 120 palavras, texto corrido (sem markdown, sem cabeçalhos), em 1 ou 2 parágrafos:
+1) Por que a alternativa correta está correta — o raciocínio clínico central.
+2) Brevemente por que as demais estão erradas (agrupe quando fizer sentido).
+Tom didático, nível de prova de residência. Baseie-se apenas no enunciado; não invente dados clínicos. Se a questão for ambígua, explique a interpretação mais aceita em prova.`;
+
+exports.explainQuestion = onCall(
+  { region: REGION, secrets: [ANTHROPIC_API_KEY], timeoutSeconds: 120 },
+  async (request) => {
+    const auth = request.auth;
+    if (!auth) {
+      throw new HttpsError('unauthenticated', 'Faça login para pedir explicações.');
+    }
+
+    // Validação estrita do payload — este endpoint nunca pode virar um
+    // proxy de LLM genérico.
+    const { questionId, text, options, correctIndex } = request.data || {};
+    if (
+      typeof questionId !== 'string' || !/^[\w-]{1,80}$/.test(questionId) ||
+      typeof text !== 'string' || text.length < 10 || text.length > 4000 ||
+      !Array.isArray(options) || options.length < 2 || options.length > 6 ||
+      options.some((o) => typeof o !== 'string' || o.length === 0 || o.length > 600) ||
+      !Number.isInteger(correctIndex) || correctIndex < 0 || correctIndex >= options.length
+    ) {
+      throw new HttpsError('invalid-argument', 'Questão inválida.');
+    }
+
+    // 1. Cache: já explicada? Devolve sem gastar IA.
+    const cacheRef = db.collection('explanations').doc(questionId);
+    const cached = await cacheRef.get();
+    if (cached.exists) {
+      return { explanation: cached.data().text, cached: true };
+    }
+
+    // 2. Limite diário de gerações por usuário.
+    const today = new Date().toISOString().slice(0, 10);
+    const usageRef = db.collection('aiUsage').doc(auth.uid);
+    const usage = await usageRef.get();
+    const usageData = usage.exists ? usage.data() : {};
+    const usedToday = usageData.date === today ? usageData.count || 0 : 0;
+    if (usedToday >= AI_DAILY_LIMIT) {
+      throw new HttpsError('resource-exhausted', 'Limite diário de explicações atingido. Volta amanhã!');
+    }
+
+    // 3. Gera com o Claude.
+    const anthropic = new Anthropic({ apiKey: ANTHROPIC_API_KEY.value() });
+    const letters = ['A', 'B', 'C', 'D', 'E', 'F'];
+    const userPrompt = [
+      `Questão: ${text}`,
+      '',
+      ...options.map((o, i) => `${letters[i]}) ${o}`),
+      '',
+      `Gabarito oficial: ${letters[correctIndex]}`,
+    ].join('\n');
+
+    let explanation;
+    try {
+      const response = await anthropic.messages.create({
+        model: 'claude-opus-4-8',
+        max_tokens: 16000,
+        thinking: { type: 'adaptive' },
+        system: EXPLAIN_SYSTEM,
+        messages: [{ role: 'user', content: userPrompt }],
+      });
+      const textBlock = response.content.find((b) => b.type === 'text');
+      explanation = textBlock?.text?.trim();
+    } catch (e) {
+      console.error('[explainQuestion] falha na API:', e?.status, e?.message);
+      throw new HttpsError('internal', 'O Dr. Quest não conseguiu analisar agora. Tenta de novo.');
+    }
+    if (!explanation) {
+      throw new HttpsError('internal', 'O Dr. Quest não conseguiu analisar agora. Tenta de novo.');
+    }
+
+    // 4. Salva no cache global + contabiliza o uso.
+    await cacheRef.set({
+      text: explanation,
+      questionId,
+      model: 'claude-opus-4-8',
+      generatedBy: auth.uid,
+      createdAt: FieldValue.serverTimestamp(),
+    });
+    await usageRef.set({ date: today, count: usedToday + 1 }, { merge: true });
+
+    return { explanation, cached: false };
   }
 );
