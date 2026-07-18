@@ -10,6 +10,7 @@
 import { initializeApp, type FirebaseApp } from 'firebase/app';
 import { getAuth, GoogleAuthProvider, type Auth } from 'firebase/auth';
 import { getFirestore, type Firestore } from 'firebase/firestore';
+import { getFunctions, type Functions } from 'firebase/functions';
 
 // Config pública do projeto medquest-fb341 (fallback embutido).
 const DEFAULTS = {
@@ -38,11 +39,14 @@ export const isFirebaseConfigured = Boolean(cfg.apiKey && cfg.projectId && cfg.a
 let app: FirebaseApp | null = null;
 let authInstance: Auth | null = null;
 let dbInstance: Firestore | null = null;
+let functionsInstance: Functions | null = null;
 
 if (isFirebaseConfigured) {
   app = initializeApp(cfg);
   authInstance = getAuth(app);
   dbInstance = getFirestore(app);
+  // Mesma região das Cloud Functions (functions/index.js).
+  functionsInstance = getFunctions(app, 'southamerica-east1');
 } else if (import.meta.env.DEV) {
   // Aviso apenas em desenvolvimento, para não poluir o console em produção.
   console.warn(
@@ -52,4 +56,5 @@ if (isFirebaseConfigured) {
 
 export const auth = authInstance;
 export const db = dbInstance;
+export const functions = functionsInstance;
 export const googleProvider = new GoogleAuthProvider();
