@@ -25,3 +25,8 @@ firebase-debug.log
 # stack, not synced across machines (see feedback_verify_third_party_skills memory)
 .claude/skills/nvidia/
 .claude/NVIDIA-SKILLS-LICENSE.md
+
+# Claude cookbooks (anthropics/claude-cookbooks) — referência local, ~355MB,
+# auditado (hooks benignos, só material educacional). Pra ter em outra máquina:
+# git -c core.longpaths=true clone --depth 1 https://github.com/anthropics/claude-cookbooks.git .claude/references/claude-cookbooks
+.claude/references/claude-cookbooks/
