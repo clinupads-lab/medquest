@@ -38,6 +38,10 @@ interface AuthContextValue {
   signOut: () => Promise<void>;
   /** Cria a assinatura no Mercado Pago e devolve a URL de checkout. */
   startCheckout: (planId: 'estudante' | 'residencia') => Promise<string>;
+  /** Confirma o status de uma assinatura na hora, sem esperar o webhook. */
+  reconcileSubscription: (preapprovalId: string) => Promise<void>;
+  /** Troca de trilha na assinatura já ativa, sem passar pelo checkout de novo. */
+  changePlan: (planId: 'estudante' | 'residencia') => Promise<void>;
   saveUserProgress: (data: Record<string, unknown>) => Promise<void>;
   loadUserProgress: () => Promise<Record<string, unknown> | null>;
 }
@@ -189,6 +193,30 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     return result.data.initPoint;
   };
 
+  // Confirma uma assinatura na hora, assim que o usuário volta do checkout
+  // do Mercado Pago — não espera o webhook (que pode atrasar ou, em sandbox,
+  // às vezes não chega). O servidor busca o status real na API do MP antes
+  // de liberar qualquer coisa; o cliente nunca decide o próprio plano.
+  const reconcileSubscription = async (preapprovalId: string): Promise<void> => {
+    if (!functions) return;
+    const call = httpsCallable<{ preapprovalId: string }, { plan: string; planTier: string; status: string }>(
+      functions,
+      'reconcileSubscription'
+    );
+    await call({ preapprovalId });
+  };
+
+  // Troca de trilha (Estudante ↔ Residência) sem novo checkout — atualiza o
+  // valor cobrado na mesma assinatura já autorizada no Mercado Pago.
+  const changePlan = async (planId: 'estudante' | 'residencia'): Promise<void> => {
+    if (!functions) throw new Error('Pagamentos indisponíveis no modo offline.');
+    const call = httpsCallable<{ planId: string }, { plan: string; planTier: string; status: string }>(
+      functions,
+      'changePlan'
+    );
+    await call({ planId });
+  };
+
   const saveUserProgress = async (data: Record<string, unknown>) => {
     if (isFakeGuest(currentUser) || !db) return;
     const ref = doc(db, 'users', currentUser!.uid);
@@ -216,6 +244,8 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       signInAsGuest,
       signOut,
       startCheckout,
+      reconcileSubscription,
+      changePlan,
       saveUserProgress,
       loadUserProgress,
     }}>

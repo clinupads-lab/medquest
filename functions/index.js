@@ -151,10 +151,74 @@ function planForStatus(status, planId) {
   return { plan: 'free', planTier: 'free' };
 }
 
+// ── Sincronização de uma assinatura (fonte única de verdade) ─────────
+// Busca o preapproval na API do MP com o NOSSO token (nunca confia em
+// payload externo) e grava o plano no Firestore. Usada tanto pelo webhook
+// quanto pela reconciliação no retorno do checkout — o Mercado Pago pode
+// atrasar ou, no sandbox, às vezes nem entregar a notificação assíncrona,
+// então o app não pode depender só dela para o usuário virar Premium.
+//
+// `expectedUid`, quando informado, é conferido contra o external_reference
+// antes de gravar nada — impede um usuário reconciliar a assinatura de outra
+// pessoa forjando um preapproval_id que não é seu.
+async function syncSubscription(dataId, accessToken, eventType, expectedUid) {
+  const resp = await fetch(`https://api.mercadopago.com/preapproval/${dataId}`, {
+    headers: { Authorization: `Bearer ${accessToken}` },
+  });
+  if (!resp.ok) {
+    return { ok: false, reason: 'not_found' };
+  }
+  const sub = await resp.json();
+
+  const [uid, planId] = String(sub.external_reference || '').split('|');
+  const plan = PLANS[planId];
+  if (!uid || !plan) {
+    return { ok: false, reason: 'bad_reference' };
+  }
+  if (expectedUid && uid !== expectedUid) {
+    return { ok: false, reason: 'uid_mismatch' };
+  }
+
+  // Cinto de segurança: o valor cobrado tem que ser o do plano.
+  const amount = sub.auto_recurring?.transaction_amount;
+  if (typeof amount === 'number' && amount < plan.amount) {
+    return { ok: false, reason: 'amount_mismatch' };
+  }
+
+  const status = sub.status;
+  const grant = planForStatus(status, planId);
+
+  await db.collection('users').doc(uid).set(
+    {
+      plan: grant.plan,
+      planTier: grant.planTier,
+      subscription: {
+        id: String(sub.id),
+        planId,
+        status,
+        updatedAt: new Date().toISOString(),
+      },
+    },
+    { merge: true }
+  );
+
+  await db.collection('subscriptions').doc(String(sub.id)).set(
+    {
+      uid,
+      planId,
+      status,
+      amount: amount ?? plan.amount,
+      updatedAt: FieldValue.serverTimestamp(),
+      lastEvent: { type: String(eventType), at: FieldValue.serverTimestamp() },
+    },
+    { merge: true }
+  );
+
+  return { ok: true, uid, plan: grant.plan, planTier: grant.planTier, status };
+}
+
 // ── mercadoPagoWebhook ───────────────────────────────────────────────
 // Endpoint público que o MP chama quando a assinatura muda de estado.
-// Nunca confia no payload: busca o preapproval na API do MP (com o nosso
-// access token) e usa ESSA resposta como fonte da verdade.
 exports.mercadoPagoWebhook = onRequest(
   { region: REGION, secrets: [MP_ACCESS_TOKEN, MP_WEBHOOK_SECRET] },
   async (req, res) => {
@@ -180,65 +244,101 @@ exports.mercadoPagoWebhook = onRequest(
       return;
     }
 
-    // Fonte da verdade: o preapproval buscado com o NOSSO token. Um id de
-    // outra conta de vendedor não resolve aqui (404) — impossível forjar.
-    const resp = await fetch(`https://api.mercadopago.com/preapproval/${dataId}`, {
-      headers: { Authorization: `Bearer ${MP_ACCESS_TOKEN.value()}` },
+    const result = await syncSubscription(dataId, MP_ACCESS_TOKEN.value(), type);
+    if (!result.ok) {
+      console.warn('[webhook]', result.reason, dataId);
+      // 200 mesmo assim: não é um erro nosso que o retry do MP resolveria.
+      res.status(200).send(result.reason);
+      return;
+    }
+
+    console.log(`[webhook] ${result.uid} → ${result.plan}/${result.planTier} (sub ${dataId}, status ${result.status})`);
+    res.status(200).send('ok');
+  }
+);
+
+// ── reconcileSubscription ────────────────────────────────────────────
+// Callable chamada pelo APP assim que o usuário volta do checkout do MP
+// (tela de retorno com ?preapproval_id=...). Não espera o webhook — busca
+// o status na hora e libera o Premium imediatamente se já estiver
+// aprovado. O webhook continua ativo por trás para eventos futuros
+// (renovação mensal, cancelamento) que não têm uma "volta ao site".
+exports.reconcileSubscription = onCall(
+  { region: REGION, secrets: [MP_ACCESS_TOKEN] },
+  async (request) => {
+    const auth = request.auth;
+    if (!auth) {
+      throw new HttpsError('unauthenticated', 'Faça login para continuar.');
+    }
+    const preapprovalId = request.data?.preapprovalId;
+    if (typeof preapprovalId !== 'string' || !/^[\w-]{1,64}$/.test(preapprovalId)) {
+      throw new HttpsError('invalid-argument', 'ID de assinatura inválido.');
+    }
+
+    const result = await syncSubscription(preapprovalId, MP_ACCESS_TOKEN.value(), 'reconcile', auth.uid);
+    if (!result.ok) {
+      console.warn('[reconcile]', auth.uid, result.reason, preapprovalId);
+      throw new HttpsError('not-found', 'Não encontramos essa assinatura.');
+    }
+
+    console.log(`[reconcile] ${result.uid} → ${result.plan}/${result.planTier} (sub ${preapprovalId}, status ${result.status})`);
+    return { plan: result.plan, planTier: result.planTier, status: result.status };
+  }
+);
+
+// ── changePlan ────────────────────────────────────────────────────────
+// Callable pra trocar de trilha (Estudante ↔ Residência) sem passar pelo
+// checkout de novo — o cartão já está autorizado, só atualiza o valor e a
+// referência da cobrança recorrente na MESMA assinatura (PUT /preapproval).
+exports.changePlan = onCall(
+  { region: REGION, secrets: [MP_ACCESS_TOKEN] },
+  async (request) => {
+    const auth = request.auth;
+    if (!auth) {
+      throw new HttpsError('unauthenticated', 'Faça login para continuar.');
+    }
+    const newPlanId = request.data?.planId;
+    const newPlan = PLANS[newPlanId];
+    if (!newPlan) {
+      throw new HttpsError('invalid-argument', 'Plano inválido.');
+    }
+
+    const userSnap = await db.collection('users').doc(auth.uid).get();
+    const sub = userSnap.data()?.subscription;
+    if (!sub?.id || sub.status !== 'authorized') {
+      throw new HttpsError('failed-precondition', 'Você não tem uma assinatura ativa pra trocar.');
+    }
+    if (sub.planId === newPlanId) {
+      throw new HttpsError('failed-precondition', 'Você já está nesse plano.');
+    }
+
+    const resp = await fetch(`https://api.mercadopago.com/preapproval/${sub.id}`, {
+      method: 'PUT',
+      headers: {
+        'Content-Type': 'application/json',
+        Authorization: `Bearer ${MP_ACCESS_TOKEN.value()}`,
+      },
+      body: JSON.stringify({
+        reason: newPlan.title,
+        external_reference: `${auth.uid}|${newPlanId}`,
+        auto_recurring: { transaction_amount: newPlan.amount, currency_id: 'BRL' },
+      }),
     });
     if (!resp.ok) {
-      console.warn('[webhook] preapproval não encontrado:', dataId, resp.status);
-      // 200 mesmo assim: não é um erro nosso que o retry do MP resolveria.
-      res.status(200).send('not found');
-      return;
-    }
-    const sub = await resp.json();
-
-    const [uid, planId] = String(sub.external_reference || '').split('|');
-    const plan = PLANS[planId];
-    if (!uid || !plan) {
-      console.warn('[webhook] external_reference inesperado:', sub.external_reference);
-      res.status(200).send('bad reference');
-      return;
+      const errText = await resp.text();
+      console.error('[changePlan] MP recusou:', resp.status, errText);
+      throw new HttpsError('internal', 'Não foi possível trocar de plano agora. Tente de novo.');
     }
 
-    // Cinto de segurança: o valor cobrado tem que ser o do plano.
-    const amount = sub.auto_recurring?.transaction_amount;
-    if (typeof amount === 'number' && amount < plan.amount) {
-      console.error('[webhook] valor abaixo do plano — ignorando:', dataId, amount);
-      res.status(200).send('amount mismatch');
-      return;
+    // Relê a assinatura já atualizada no MP e sincroniza o Firestore —
+    // mesma função usada pelo webhook e pela reconciliação, fonte única.
+    const result = await syncSubscription(sub.id, MP_ACCESS_TOKEN.value(), 'change_plan', auth.uid);
+    if (!result.ok) {
+      console.error('[changePlan] sync falhou após PUT bem-sucedido:', result.reason, sub.id);
+      throw new HttpsError('internal', 'Plano trocado no Mercado Pago, mas houve um erro ao atualizar aqui. Recarregue a página em instantes.');
     }
 
-    const status = sub.status;
-    const grant = planForStatus(status, planId);
-
-    await db.collection('users').doc(uid).set(
-      {
-        plan: grant.plan,
-        planTier: grant.planTier,
-        subscription: {
-          id: String(sub.id),
-          planId,
-          status,
-          updatedAt: new Date().toISOString(),
-        },
-      },
-      { merge: true }
-    );
-
-    await db.collection('subscriptions').doc(String(sub.id)).set(
-      {
-        uid,
-        planId,
-        status,
-        amount: amount ?? plan.amount,
-        updatedAt: FieldValue.serverTimestamp(),
-        lastEvent: { type: String(type), at: FieldValue.serverTimestamp() },
-      },
-      { merge: true }
-    );
-
-    console.log(`[webhook] ${uid} → ${grant.plan}/${grant.planTier} (sub ${sub.id}, status ${status})`);
-    res.status(200).send('ok');
+    console.log(`[changePlan] ${auth.uid}: ${sub.planId} → ${result.planTier} (sub ${sub.id})`);
+    return { plan: result.plan, planTier: result.planTier, status: result.status };
   }
 );
