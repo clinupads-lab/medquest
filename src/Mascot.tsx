@@ -230,6 +230,20 @@ export interface PhraseSet {
   combo: string[];
   wrong: string[];
   timeout: string[];
+  /** Mensagem de saudação ao abrir a home. */
+  greeting: string[];
+  /** Comemoração ao subir de nível. */
+  levelUp: string[];
+  /** Streak protegido por um congelamento (Streak Freeze). */
+  streakSaved: string[];
+  /** Streak perdido (não havia congelamento disponível). */
+  streakLost: string[];
+  /** Corações zerados — pausa forçada no estudo. */
+  noHearts: string[];
+  /** Dicas/incentivos aleatórios ao tocar no mascote (interação livre). */
+  tip: string[];
+  /** Conquista desbloqueada em tempo real. */
+  achievementUnlocked: string[];
 }
 
 export const MASCOT_PERSONALITIES: { id: MascotPersonality; label: string; emoji: string; desc: string }[] = [
@@ -272,6 +286,50 @@ export const MASCOT_PHRASES_BY_PERSONALITY: Record<MascotPersonality, PhraseSet>
       'Na prova, chute! Questão em branco é ponto perdido.', 'Ritmo é treino também. Bora de novo!',
       'O relógio jogou contra. Mas você tá aprendendo a jogar com ele.',
     ],
+    greeting: [
+      'Bora começar? Cada questão te aproxima da vaga!', 'Novo dia, nova chance de evoluir. Vamos!',
+      'Seu futuro te espera na próxima questão.', 'Hoje é dia de somar mais uma vitória!',
+      'Pronto pra treinar? Eu tô aqui com você.', 'Bora estudar — o esforço de hoje é a aprovação de amanhã!',
+    ],
+    levelUp: [
+      'Subiu de nível! Isso é evolução de verdade! 🚀', 'Novo nível desbloqueado — você tá voando!',
+      'Level up! Seu esforço tá valendo cada minuto.', 'Isso! Mais um degrau rumo à aprovação!',
+      'Você subiu de nível. Orgulho daqui, viu?',
+    ],
+    streakSaved: [
+      'Seu streak foi salvo pelo congelamento! Bora manter viva a sequência.',
+      'Ufa! O congelamento te cobriu dessa vez. Aproveita e retoma hoje.',
+      'Sequência protegida! Ainda dá tempo de virar hábito de novo.',
+      'O congelamento segurou sua sequência. Valeu a pena guardar!',
+      'Streak salvo! Agora é hora de voltar com força.',
+    ],
+    streakLost: [
+      'Perdeu a sequência, mas não perdeu o progresso. Bora recomeçar!',
+      'O streak zerou, só isso. O conhecimento continua com você.',
+      'Sequência quebrou — hora de começar uma ainda melhor.',
+      'Não desanima! Toda sequência boa começa de novo em algum dia.',
+      'O número zerou, sua evolução não. Vamos de novo?',
+    ],
+    noHearts: [
+      'Seus corações acabaram por hoje, mas seu esforço não some!',
+      'Sem corações agora, mas volta logo mais com tudo!',
+      'Pausa forçada — aproveita pra revisar o que já estudou.',
+      'Corações zerados! Descansa um pouco e retoma depois.',
+      'Fim dos corações por agora. Sua dedicação continua contando.',
+    ],
+    tip: [
+      'Sabia que revisar um erro vale mais que acertar 3 fáceis?',
+      'Constância vence intensidade. Um pouco todo dia já ajuda muito!',
+      'Você já respondeu várias questões — olha esse progresso!',
+      'Dica: revise seus erros na aba "Revisão" pra fixar de vez.',
+      'Toca aqui de novo quando precisar de um empurrãozinho!',
+      'Cada questão é um treino pra prova real. Valoriza isso.',
+    ],
+    achievementUnlocked: [
+      'Conquista desbloqueada! Seu esforço virou troféu. 🏆', 'Mais uma conquista na coleção — você merece!',
+      'Isso! Conquista nova, prova viva do seu progresso.', 'Desbloqueou mais uma! Continue construindo essa jornada.',
+      'Conquista na conta! Seu empenho não passa despercebido.',
+    ],
   },
   paciente: {
     correct: [
@@ -301,6 +359,54 @@ export const MASCOT_PHRASES_BY_PERSONALITY: Record<MascotPersonality, PhraseSet>
       'Sem pressa — o importante é entender.', 'O relógio venceu, mas o aprendizado fica.',
       'Respire fundo. A próxima é sua.', 'Tempo é treino. Vai encaixando aos poucos.',
       'Sem culpa. Ler com atenção também é estudar.',
+    ],
+    greeting: [
+      'Oi! Vamos com calma, no seu ritmo de hoje?', 'Que bom te ver. Um passo de cada vez, tá bem?',
+      'Sem pressa. Vamos estudar juntos um pouco?', 'Respire fundo. Toda constância conta.',
+      'Aqui estou, pronto pra te acompanhar hoje.', 'Cada dia de estudo, por menor que seja, importa.',
+    ],
+    levelUp: [
+      'Você subiu de nível. Veja como a constância dá frutos.',
+      'Mais um nível. Devagar e sempre, olha aonde chegou.',
+      'Que orgulho — cada estudo somado virou esse avanço.',
+      'Level up, com calma e no seu tempo. Lindo.',
+      'Um novo nível. Respire e celebre esse momento.',
+    ],
+    streakSaved: [
+      'Tudo bem, o congelamento cuidou do seu streak. Sem culpa.',
+      'Sua sequência está protegida. Volte quando estiver pronto(a).',
+      'O congelamento existe pra isso — pra você não se cobrar demais.',
+      'Streak salvo com calma. Retome no seu tempo.',
+      'Respire — sua sequência segue intacta graças ao congelamento.',
+    ],
+    streakLost: [
+      'Tudo bem perder o streak. O que importa é continuar.',
+      'Sem culpa. A vida acontece. Retome quando puder.',
+      'O streak é só um número. Seu aprendizado ficou.',
+      'Respire. Amanhã é uma nova sequência começando.',
+      'Não se cobre por isso. Você volta quando estiver pronto(a).',
+    ],
+    noHearts: [
+      'Seus corações acabaram. Que tal um descanso agora?',
+      'Tudo bem parar por aqui. O corpo e a mente também precisam de pausa.',
+      'Sem corações no momento — aproveite pra respirar um pouco.',
+      'Está tudo certo. Volte quando se sentir pronto(a) de novo.',
+      'Um intervalo também faz parte do processo de aprender.',
+    ],
+    tip: [
+      'Uma dica: pausas curtas entre estudos ajudam a fixar melhor.',
+      'Você não precisa fazer tudo hoje. Só precisa continuar.',
+      'Toque em mim sempre que precisar de um respiro.',
+      'Progresso nem sempre é visível, mas está acontecendo.',
+      'Beba água, alongue-se... o estudo também agradece o corpo descansado.',
+      'Aqui estou, sempre que quiser uma palavra tranquila.',
+    ],
+    achievementUnlocked: [
+      'Uma nova conquista, fruto da sua constância. Parabéns.',
+      'Veja só — cada esforço silencioso virou essa conquista.',
+      'Conquista desbloqueada, com calma e no seu tempo.',
+      'Isso merece uma pausa pra celebrar, com tranquilidade.',
+      'Mais uma conquista. Reconheça o quanto você caminhou.',
     ],
   },
   engracado: {
@@ -333,6 +439,52 @@ export const MASCOT_PHRASES_BY_PERSONALITY: Record<MascotPersonality, PhraseSet>
       'Demorou mais que fila do SUS 🙈', 'O cronômetro te deu alta antes da hora ⏰',
       'Tempo? Foi embora sem pagar a consulta 💸',
     ],
+    greeting: [
+      'Bora lá, futuro(a) residente! Café tomado? ☕', 'Oi! Preparei umas pegadinhas pra você hoje 😏',
+      'De volta! Seu cérebro tá com fome de questões 🧠', 'Chegou o plantão de estudos! Bora? 🩺',
+      'Hoje tem questão pra todo lado, cuidado! 😄', 'Bem-vindo(a) de volta ao consultório dos estudos!',
+    ],
+    levelUp: [
+      'Subiu de nível! Já pode pedir aumento no plantão 😄', 'Level up! Seu cérebro ganhou um upgrade 🧠⚡',
+      'Novo nível! Chama a coroa, agora é chefe de plantão 👑', 'Isso! Virou residente sênior dos estudos 😎',
+      'Subiu de nível... e o ego também, admite 😏',
+    ],
+    streakSaved: [
+      'Seu streak tirou o dia de folga e sobreviveu graças ao congelamento 🧊',
+      'Congelamento salvou a pátria! Sequência intacta 🥶',
+      'Uma folguinha e o gelo te cobriu. Sortudo(a)! ❄️',
+      'Streak em coma induzido, mas vivo — valeu, congelamento 🧊😅',
+      'Passou perto! O congelamento chegou igual plantonista de última hora 🏃',
+    ],
+    streakLost: [
+      'Seu streak foi de férias e não voltou mais 😅 bora criar outro!',
+      'RIP sequência 🪦 mas o conhecimento sobreviveu, relaxa.',
+      'O streak zerou igual meu café de segunda-feira ☕💀',
+      'Perdeu a sequência! Momento de silêncio... e agora bora de novo 😄',
+      'A sequência acabou, mas a saga do(a) doutor(a) continua 🎬',
+    ],
+    noHearts: [
+      'Seus corações bateram em retirada! Hora do intervalo 💔😅',
+      'Zero corações — nem no SUS tem fila assim 😂 volta depois!',
+      'Ficou sem corações... plantão puxado, hein 😴',
+      'Corações esgotados! Vai lá tomar uma água, doutor(a) 💧',
+      'Acabaram os corações. Nem cardiologista salva esses aqui 😜',
+    ],
+    tip: [
+      'Toca de novo! Eu tenho mais piadas de plantão guardadas 😄',
+      'Dica: café ajuda, mas sono ajuda mais. Durma, doutor(a)! 😴',
+      'Fun fact: eu sou movido a XP e cafeína imaginária ☕🤖',
+      'Clica em mim quantas vezes quiser, eu não canso — sou robô 🤖',
+      'Dica de plantão: estudar rindo rende mais! 😂',
+      'Segredo do sucesso: questão por questão, sem desistir 🕵️',
+    ],
+    achievementUnlocked: [
+      'Conquista desbloqueada! Já pode colocar no currículo 😎🏆',
+      'Novo troféu! Sua prateleira de conquistas tá lotando 😄',
+      'Achievement unlocked, doutor(a)! Nível: lendário 🎮',
+      'Mais uma conquista! Confete imaginário pra você 🎉',
+      'Conquistou! Agora só falta a conquista "Dormir 8h" 😴',
+    ],
   },
   durao: {
     correct: [
@@ -362,6 +514,52 @@ export const MASCOT_PHRASES_BY_PERSONALITY: Record<MascotPersonality, PhraseSet>
       'O relógio não espera — nem a banca.', 'Perdeu no tempo. Isso não pode virar hábito.',
       'Na prova são ~3 minutos por questão. Treina isso.', 'Tempo é critério de aprovação. Leva a sério.',
       'Questão sem resposta é ponto de graça pro concorrente.',
+    ],
+    greeting: [
+      'Chegou. Ótimo. Agora trabalha.', 'Sem enrolação — vamos pra próxima questão.',
+      'A vaga não espera. Bora começar.', 'Hoje é dia de treino. Sem desculpa.',
+      'Seu concorrente já começou. E você?', 'Foco. O tempo que passa não volta.',
+    ],
+    levelUp: [
+      'Subiu de nível. Não é motivo pra desacelerar.', 'Level up. Prova que dá pra ir mais longe ainda.',
+      'Novo nível. Agora eleva o padrão de novo.', 'Isso é resultado de trabalho. Repete.',
+      'Subiu. Bom. Próximo nível já começou.',
+    ],
+    streakSaved: [
+      'O congelamento salvou você dessa vez. Não conte com sorte sempre.',
+      'Streak salvo. Mas foi por pouco — não relaxa.',
+      'Congelamento gasto. Agora volta a estudar todo dia, sério.',
+      'Sequência protegida. Não vira desculpa pra faltar de novo.',
+      'Sobreviveu por causa do congelamento. Não abusa dessa sorte.',
+    ],
+    streakLost: [
+      'Perdeu a sequência. Isso não pode virar rotina.',
+      'Streak zerado. Disciplina é o que separa quem passa de quem não passa.',
+      'Acabou o streak. Analisa o motivo e não repete.',
+      'Sequência quebrada. Hora de provar que foi só um deslize.',
+      'Zerou. Agora constrói de novo, e sem falhar dessa vez.',
+    ],
+    noHearts: [
+      'Sem corações. Motivo pra descansar, não pra desistir.',
+      'Corações no zero. Volta com energia total depois.',
+      'Acabou por agora. Usa esse tempo pra revisar, não pra procrastinar.',
+      'Zerou. Isso é sinal pra ajustar o ritmo, não pra parar de vez.',
+      'Sem corações. Recarrega e volta ainda mais forte.',
+    ],
+    tip: [
+      'Toca de novo se quiser mais um empurrão. Eu não amoleço.',
+      'Dica: quem revisa erro não repete erro. Simples assim.',
+      'Não fica só tocando em mim, vai estudar.',
+      'Progresso se mede em questões feitas, não em intenção.',
+      'Se tem tempo pra me tocar, tem tempo pra mais uma questão.',
+      'Foco é escolha. Faz essa escolha de novo agora.',
+    ],
+    achievementUnlocked: [
+      'Conquista desbloqueada. Prova que consistência funciona.',
+      'Mais uma. Não é sorte, é trabalho acumulado.',
+      'Conquista na conta. Agora mira na próxima.',
+      'Isso é resultado, não coincidência. Continua.',
+      'Desbloqueou. Bom. Não é hora de desacelerar.',
     ],
   },
 };
