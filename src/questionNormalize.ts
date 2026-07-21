@@ -211,6 +211,33 @@ export function isUsableQuestion(q: NormalizableQuestion): boolean {
   return true;
 }
 
+// ── 5. Deduplicação ───────────────────────────────────────────────────────
+// O banco foi montado a partir de dezenas de arquivos de prova/gerados
+// separadamente, e um número relevante de questões saiu duplicada — mesmo
+// texto, IDs diferentes (inclusive um bug de geração que repetiu a mesma
+// pergunta várias vezes sob IDs diferentes em "Medicina de Família/SUS").
+// Sem isso, o sorteio de uma sessão pode escolher duas "questões diferentes"
+// que são, na prática, a mesma pergunta reescrita — o shuffle não tem como
+// saber que dois objetos com texto idêntico são "a mesma" questão.
+//
+// Deduplicamos por MATÉRIA, não pelo banco inteiro: uma sessão só sorteia
+// dentro de uma matéria, então esse é o escopo que importa; a mesma pergunta
+// duplicada em duas matérias diferentes (miscategorização) não crava
+// repetição dentro de uma sessão e fica de fora deste filtro de propósito.
+// Mantém sempre a PRIMEIRA ocorrência de cada texto.
+export function dedupeQuestions<T extends NormalizableQuestion>(qs: T[]): T[] {
+  const seenBySubject = new Map<string, Set<string>>();
+  return qs.filter(q => {
+    const subjectKey = q.subject ?? '';
+    const textKey = (q.text ?? '').toLowerCase().replace(/\s+/g, ' ').trim();
+    let seen = seenBySubject.get(subjectKey);
+    if (!seen) { seen = new Set(); seenBySubject.set(subjectKey, seen); }
+    if (seen.has(textKey)) return false;
+    seen.add(textKey);
+    return true;
+  });
+}
+
 /** Padroniza matéria, ciclo e tipografia. */
 function cleanFields<T extends NormalizableQuestion>(q: T): T {
   return {
