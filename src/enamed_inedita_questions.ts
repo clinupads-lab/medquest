@@ -10,10 +10,10 @@ export const ENAMED_INEDITA_QUESTIONS: any[] = [
     banca: 'ENAMED (inédita)',
     text: 'Gestante de 26 anos, 26 semanas, obesa (IMC pré-gestacional 32 kg/m²), realiza teste oral de tolerância à glicose de 75g conforme protocolo do pré-natal. Resultados: glicemia de jejum 88 mg/dL; glicemia de 1 hora 185 mg/dL; glicemia de 2 horas 145 mg/dL.\n\nCom base nos critérios diagnósticos vigentes, a interpretação correta é',
     options: [
-      'resultado normal, não configura diabetes gestacional.',
+      'resultado normal, não configura diabetes gestacional, pois os demais valores permanecem dentro da faixa de referência.',
       'diabetes gestacional confirmado, pois basta um valor alterado atingir o ponto de corte.',
-      'necessário repetir o exame em 4 semanas para confirmação.',
-      'diagnóstico de diabetes mellitus prévio à gestação, não gestacional.'
+      'necessário repetir o exame em 4 semanas, pois um único valor alterado no TOTG não fecha o diagnóstico isoladamente.',
+      'diagnóstico de diabetes mellitus prévio à gestação, não gestacional, pois a glicemia de jejum já estaria alterada.'
     ],
     correctIndex: 1,
     explanation: 'No TOTG 75g, o diagnóstico de diabetes gestacional é confirmado quando pelo menos um valor atinge ou ultrapassa os pontos de corte (jejum ≥92, 1h ≥180, 2h ≥153 mg/dL); nesse caso, a glicemia de 1 hora (185) já confirma o diagnóstico.'
@@ -25,10 +25,10 @@ export const ENAMED_INEDITA_QUESTIONS: any[] = [
     banca: 'ENAMED (inédita)',
     text: 'Mulher de 24 anos, com atraso menstrual de 10 semanas, procura atendimento por sangramento vaginal intermitente e náuseas intensas. Ao exame, altura uterina compatível com 16 semanas de gestação, ausência de batimentos cardíacos fetais à sonar Doppler. Beta-hCG sérico de 850.000 mUI/mL. Ultrassonografia transvaginal evidencia útero com conteúdo heterogêneo, com múltiplas vesículas anecoicas, sem identificação de embrião ou saco gestacional.\n\nQual é o diagnóstico mais provável e a conduta inicial?',
     options: [
-      'Aborto retido; curetagem uterina de urgência.',
+      'Aborto retido; curetagem uterina de urgência, sem necessidade de exames adicionais antes do esvaziamento.',
       'Mola hidatiforme completa; esvaziamento uterino por aspiração a vácuo e seguimento com beta-hCG seriado.',
-      'Gravidez ectópica cornual; laparotomia exploradora.',
-      'Gestação múltipla com óbito de um dos fetos; conduta expectante.'
+      'Gravidez ectópica cornual; laparotomia exploradora imediata, dada a alta probabilidade de rotura uterina nesse contexto.',
+      'Gestação múltipla com óbito de um dos fetos; conduta expectante, com acompanhamento ultrassonográfico seriado até o parto.'
     ],
     correctIndex: 1,
     explanation: 'Útero maior que o esperado para a idade gestacional, beta-hCG muito elevado e imagem ultrassonográfica heterogênea com múltiplas vesículas, sem embrião, são achados clássicos de mola hidatiforme completa; o tratamento é o esvaziamento uterino por aspiração, com seguimento de beta-hCG seriado para descartar neoplasia trofoblástica gestacional persistente.'
@@ -100,10 +100,10 @@ export const ENAMED_INEDITA_QUESTIONS: any[] = [
     banca: 'ENAMED (inédita)',
     text: 'Durante discussão de caso em uma Unidade Básica de Saúde, a equipe debate a solicitação de exames de rotina para um paciente assintomático, sem fatores de risco, que insiste em realizar um extenso "check-up" anual com dezenas de exames sem indicação baseada em evidências, temendo doenças não diagnosticadas.\n\nA conduta da equipe, orientada pelo princípio da prevenção quaternária, deve ser',
     options: [
-      'atender integralmente à solicitação do paciente, respeitando sua autonomia sobre o próprio corpo.',
-      'solicitar todos os exames, pois o excesso de informação clínica nunca traz malefícios ao paciente.',
+      'atender integralmente à solicitação do paciente, respeitando sua autonomia sobre o próprio corpo, mesmo sem indicação clínica estabelecida para os exames solicitados.',
+      'solicitar todos os exames, pois o excesso de informação clínica nunca traz malefícios ao paciente, ainda que não haja evidência científica que sustente essa investigação.',
       'explicar os riscos do sobrediagnóstico e sobretratamento, oferecendo apenas os exames com recomendação baseada em evidência para seu perfil de risco.',
-      'encaminhar o paciente a um especialista para que ele decida quais exames solicitar.'
+      'encaminhar o paciente a um especialista para que ele decida quais exames solicitar, sem que a equipe da atenção básica se envolva na decisão.'
     ],
     correctIndex: 2,
     explanation: 'A prevenção quaternária consiste em evitar ou minimizar os danos do excesso de intervenções médicas (sobrediagnóstico, sobretratamento, iatrogenia); a conduta adequada é orientar o paciente sobre os riscos de exames sem indicação e oferecer apenas o rastreamento recomendado pelas evidências para seu perfil.'
@@ -115,10 +115,10 @@ export const ENAMED_INEDITA_QUESTIONS: any[] = [
     banca: 'ENAMED (inédita)',
     text: 'Médico de Unidade Básica de Saúde atende paciente com quadro clínico compatível com meningite meningocócica, confirmado por punção lombar com cultura positiva para Neisseria meningitidis.\n\nConsiderando as normas de vigilância epidemiológica brasileira, a notificação desse caso deve ser feita',
     options: [
-      'em até 7 dias, por se tratar de doença de notificação semanal.',
+      'em até 7 dias, por se tratar de doença de notificação semanal e não de notificação imediata.',
       'de forma imediata, em até 24 horas, por se tratar de doença de notificação compulsória imediata.',
-      'apenas se houver um segundo caso na mesma comunidade, caracterizando surto.',
-      'mensalmente, de forma consolidada, junto ao boletim epidemiológico da unidade.'
+      'apenas se houver um segundo caso na mesma comunidade, caracterizando surto, e não a partir do caso isolado.',
+      'mensalmente, de forma consolidada, junto ao boletim epidemiológico da unidade, sem necessidade de notificação individual imediata.'
     ],
     correctIndex: 1,
     explanation: 'A doença meningocócica é de notificação compulsória imediata (até 24 horas), dado seu potencial de gravidade e de causar surtos, exigindo investigação e medidas de controle rápidas, como quimioprofilaxia dos contactantes.'
@@ -130,10 +130,10 @@ export const ENAMED_INEDITA_QUESTIONS: any[] = [
     banca: 'ENAMED (inédita)',
     text: 'Gestante de 32 semanas realiza VDRL de rotina no terceiro trimestre, com resultado reagente em titulação 1:32 (o primeiro exame do pré-natal, no primeiro trimestre, havia sido não reagente). Recebe tratamento com 3 doses de penicilina G benzatina 2,4 milhões UI, com intervalo semanal, mas o parceiro sexual não foi tratado.\n\nEm relação ao recém-nascido, a conduta adequada ao nascimento é',
     options: [
-      'considerar o tratamento materno adequado e não realizar nenhuma investigação adicional no recém-nascido.',
+      'considerar o tratamento materno adequado, já que a gestante recebeu as três doses corretas de penicilina benzatina, não sendo necessária investigação adicional no recém-nascido.',
       'considerar o tratamento materno inadequado, pelo parceiro não tratado, e investigar o recém-nascido para sífilis congênita, independentemente de sintomas.',
-      'aguardar o aparecimento de sintomas clínicos no recém-nascido antes de iniciar qualquer investigação.',
-      'tratar o recém-nascido apenas se o VDRL do sangue periférico for maior que o materno em duas diluições.'
+      'aguardar o aparecimento de sintomas clínicos no recém-nascido antes de iniciar qualquer investigação, já que a maioria dos casos de sífilis congênita é sintomática ao nascimento.',
+      'tratar o recém-nascido apenas se o VDRL do sangue periférico for maior que o materno em duas diluições, sendo dispensável a investigação caso essa condição não se confirme.'
     ],
     correctIndex: 1,
     explanation: 'O tratamento materno da sífilis é considerado inadequado quando o parceiro sexual não é tratado concomitantemente, mesmo com esquema penicilínico materno completo; nesses casos, todo recém-nascido deve ser investigado para sífilis congênita, independentemente da presença de sintomas.'
@@ -160,10 +160,10 @@ export const ENAMED_INEDITA_QUESTIONS: any[] = [
     banca: 'ENAMED (inédita)',
     text: 'Homem de 27 anos é levado por familiares à emergência psiquiátrica por apresentar, há 5 dias, humor eufórico persistente, diminuição da necessidade de sono (dorme cerca de 2 horas por noite sem cansaço), fala acelerada e difícil de interromper, grandiosidade (afirma ter "planos para mudar o mundo") e envolvimento em gastos financeiros excessivos e impulsivos. Nega uso de substâncias psicoativas. Exame físico e neurológico sem alterações.\n\nQual é o diagnóstico mais provável?',
     options: [
-      'Transtorno depressivo maior com sintomas psicóticos.',
+      'Transtorno depressivo maior com sintomas psicóticos, dado o conteúdo de grandiosidade relatado pelo paciente.',
       'Episódio maníaco, compatível com transtorno afetivo bipolar tipo I.',
-      'Transtorno esquizoafetivo.',
-      'Transtorno de personalidade histriônica em crise.'
+      'Transtorno esquizoafetivo, pela associação de sintomas de humor com alterações do pensamento na ausência de uso de substâncias.',
+      'Transtorno de personalidade histriônica em crise, com exacerbação aguda de traços de personalidade previamente existentes.'
     ],
     correctIndex: 1,
     explanation: 'Humor eufórico ou expansivo persistente por mais de 1 semana, associado a diminuição da necessidade de sono, grandiosidade, fala acelerada e envolvimento em atividades de risco, configura episódio maníaco, característico do transtorno afetivo bipolar tipo I.'
@@ -205,10 +205,10 @@ export const ENAMED_INEDITA_QUESTIONS: any[] = [
     banca: 'ENAMED (inédita)',
     text: 'Homem de 68 anos, com antecedente de duas cirurgias abdominais prévias, procura pronto-socorro com dor abdominal difusa em cólica, distensão abdominal progressiva, parada de eliminação de gases e fezes há 2 dias, e vômitos biliosos. Ao exame, abdome distendido, timpânico, com ruídos hidroaéreos aumentados em "salva". Radiografia de abdome em pé mostra alças intestinais distendidas com múltiplos níveis hidroaéreos escalonados.\n\nQual é a principal hipótese diagnóstica e a causa mais provável nesse contexto?',
     options: [
-      'Íleo paralítico; causa provavelmente metabólica.',
+      'Íleo paralítico; causa provavelmente metabólica ou secundária a distúrbio hidroeletrolítico, sem obstrução mecânica associada.',
       'Obstrução intestinal mecânica; causa provavelmente por bridas/aderências de cirurgias prévias.',
-      'Pseudo-obstrução colônica aguda (síndrome de Ogilvie); causa idiopática.',
-      'Isquemia mesentérica aguda; causa embólica.'
+      'Pseudo-obstrução colônica aguda (síndrome de Ogilvie); causa idiopática, geralmente associada a imobilização e distúrbios metabólicos.',
+      'Isquemia mesentérica aguda; causa embólica, geralmente secundária a fibrilação atrial ou outra fonte cardioembólica.'
     ],
     correctIndex: 1,
     explanation: 'Dor em cólica, distensão progressiva, parada de eliminação de gases e fezes, vômitos e níveis hidroaéreos escalonados na radiografia caracterizam obstrução intestinal mecânica; em paciente com cirurgias abdominais prévias, a causa mais comum é a formação de bridas/aderências peritoneais.'
@@ -275,10 +275,10 @@ export const ENAMED_INEDITA_QUESTIONS: any[] = [
     banca: 'ENAMED (inédita)',
     text: 'Homem de 72 anos, hipertenso e diabético, é diagnosticado com fibrilação atrial persistente em consulta de rotina, assintomática, identificada ao acaso no eletrocardiograma.\n\nConsiderando o escore CHA2DS2-VASc para esse paciente (hipertensão, diabetes e idade ≥ 75 seriam pontos adicionais; aqui ele tem 72 anos, hipertensão e diabetes, totalizando pontuação de risco intermediário-alto para homem), a conduta referente à profilaxia de eventos tromboembólicos deve ser',
     options: [
-      'não indicar anticoagulação, pois o paciente está assintomático.',
-      'indicar apenas ácido acetilsalicílico em dose antiagregante, como alternativa à anticoagulação.',
+      'não indicar anticoagulação, pois o paciente está assintomático e a fibrilação atrial silenciosa teria menor risco embólico.',
+      'indicar apenas ácido acetilsalicílico em dose antiagregante, como alternativa à anticoagulação oral, por apresentar menor risco de sangramento.',
       'indicar anticoagulação oral, já que o escore de risco tromboembólico é significativo mesmo em pacientes assintomáticos.',
-      'indicar cardioversão elétrica imediata como única medida necessária, sem anticoagulação associada.'
+      'indicar cardioversão elétrica imediata como única medida necessária, sem anticoagulação associada, já que a reversão do ritmo eliminaria o risco embólico.'
     ],
     correctIndex: 2,
     explanation: 'Na fibrilação atrial, a decisão de anticoagular não depende da presença de sintomas, mas do risco tromboembólico estimado pelo escore CHA2DS2-VASc; homens com pontuação ≥2 (como hipertensão, diabetes e idade avançada) têm indicação de anticoagulação oral para prevenção de acidente vascular cerebral cardioembólico.'
@@ -305,10 +305,10 @@ export const ENAMED_INEDITA_QUESTIONS: any[] = [
     banca: 'ENAMED (inédita)',
     text: 'Mulher de 26 anos apresenta, nos últimos 4 meses, artralgia migratória em pequenas articulações das mãos, lesão eritematosa em "asa de borboleta" na face que piora com exposição solar, úlceras orais indolores recorrentes e episódios de queda de cabelo. Exames: anticorpo antinuclear (FAN) positivo, título 1:640, padrão homogêneo; anti-DNA dupla hélice positivo; complemento (C3 e C4) reduzido; proteinúria de 24 horas de 800 mg.\n\nQual é o diagnóstico mais provável?',
     options: [
-      'Dermatomiosite juvenil.',
+      'Dermatomiosite juvenil, pela presença de lesões cutâneas fotossensíveis associadas a fraqueza muscular proximal.',
       'Lúpus eritematoso sistêmico, com provável acometimento renal.',
-      'Síndrome de Sjögren primária.',
-      'Doença mista do tecido conjuntivo.'
+      'Síndrome de Sjögren primária, com queixas de xerostomia e xeroftalmia associadas ao quadro articular.',
+      'Doença mista do tecido conjuntivo, pela sobreposição de achados clínicos e presença de anticorpo anti-RNP.'
     ],
     correctIndex: 1,
     explanation: 'A associação de artrite, eritema malar fotossensível, úlceras orais, alopecia, FAN e anti-DNA dupla hélice positivos, consumo de complemento e proteinúria preenche critérios clínicos e laboratoriais para lúpus eritematoso sistêmico, com a proteinúria sugerindo possível nefrite lúpica associada.'
@@ -376,9 +376,9 @@ export const ENAMED_INEDITA_QUESTIONS: any[] = [
     text: 'Durante parto vaginal de recém-nascido macrossômico, após o desprendimento da cabeça fetal, observa-se retração da cabeça contra o períneo ("sinal da tartaruga") e dificuldade na saída dos ombros, sem progressão com a tração habitual.\n\nQual é a manobra inicial recomendada para a resolução dessa distocia?',
     options: [
       'Manobra de McRoberts, com hiperflexão das coxas maternas sobre o abdome, associada à pressão suprapúbica.',
-      'Manobra de Kristeller, com pressão vigorosa no fundo uterino.',
-      'Cesárea de emergência com o feto já parcialmente desprendido.',
-      'Episiotomia ampla isolada, sem outras manobras associadas.'
+      'Manobra de Kristeller, com pressão vigorosa no fundo uterino, manobra contraindicada nessa situação por risco de piorar o impacto dos ombros.',
+      'Cesárea de emergência com o feto já parcialmente desprendido, procedimento inviável e sem indicação nesse momento do parto.',
+      'Episiotomia ampla isolada, sem outras manobras associadas, medida insuficiente para resolver a impactação dos ombros fetais.'
     ],
     correctIndex: 0,
     explanation: 'O sinal da tartaruga indica distocia de ombro; a manobra de McRoberts (hiperflexão das coxas maternas) associada à pressão suprapúbica é a primeira conduta recomendada, pois aumenta o diâmetro pélvico e ajuda a liberar o ombro impactado, sem o risco de piora associado à manobra de Kristeller (contraindicada nessa situação).'
@@ -420,10 +420,10 @@ export const ENAMED_INEDITA_QUESTIONS: any[] = [
     banca: 'ENAMED (inédita)',
     text: 'Lactente de 5 meses, previamente hígido, é levado à emergência com quadro de coriza e tosse há 3 dias, seguido de piora com sibilância, taquipneia e retração intercostal nas últimas 24 horas. Frequenta creche, onde há relato de colegas com sintomas respiratórios semelhantes. Ao exame, sibilos difusos e estertores finos bilaterais, saturação de O2 de 93% em ar ambiente.\n\nQual é o diagnóstico mais provável e a conduta inicial recomendada?',
     options: [
-      'Pneumonia bacteriana; iniciar antibioticoterapia empírica imediatamente.',
+      'Pneumonia bacteriana; iniciar antibioticoterapia empírica imediatamente, mesmo na ausência de consolidação radiológica e de sinais de toxemia bacteriana.',
       'Bronquiolite viral aguda; suporte com oxigenoterapia se necessário, hidratação e observação, sem indicação rotineira de broncodilatador ou corticoide.',
-      'Crise de asma; iniciar corticoide sistêmico e broncodilatador em altas doses.',
-      'Coqueluche; iniciar azitromicina e notificar imediatamente.'
+      'Crise de asma; iniciar corticoide sistêmico e broncodilatador em altas doses, apesar da idade do lactente ser incomum para esse diagnóstico.',
+      'Coqueluche; iniciar azitromicina e notificar imediatamente, mesmo sem o padrão de tosse paroxística característico dessa doença.'
     ],
     correctIndex: 1,
     explanation: 'Quadro de infecção respiratória alta seguido de sibilância e desconforto respiratório em lactente pequeno, geralmente sazonal e associado a surtos em creches, é típico de bronquiolite viral aguda (frequentemente por vírus sincicial respiratório); o tratamento é de suporte, sem benefício comprovado rotineiro de broncodilatadores ou corticoides.'
@@ -465,10 +465,10 @@ export const ENAMED_INEDITA_QUESTIONS: any[] = [
     banca: 'ENAMED (inédita)',
     text: 'Homem de 24 anos é trazido à emergência após apresentar episódio de perda súbita de consciência, com queda, rigidez generalizada seguida de abalos musculares rítmicos em membros, mordedura de língua e liberação esfincteriana, com duração de cerca de 2 minutos, seguido de período de confusão mental (estado pós-ictal) por 20 minutos. Trata-se do segundo episódio semelhante em 6 meses, sem fator desencadeante identificável.\n\nApós estabilização clínica e exclusão de causas secundárias agudas, qual é a conduta apropriada?',
     options: [
-      'Não é necessário eletroencefalograma nem tratamento, pois crises isoladas não requerem investigação.',
+      'Não é necessário eletroencefalograma nem tratamento, pois crises isoladas não requerem investigação, mesmo havendo recorrência dos episódios.',
       'Solicitar eletroencefalograma e considerar o diagnóstico de epilepsia, dado o caráter recorrente e não provocado das crises.',
-      'Iniciar diazepam de uso contínuo diário como profilaxia de novas crises.',
-      'Indicar cirurgia de ressecção do foco epileptogênico imediatamente, sem investigação prévia.'
+      'Iniciar diazepam de uso contínuo diário como profilaxia de novas crises, sem necessidade de eletroencefalograma para confirmação diagnóstica.',
+      'Indicar cirurgia de ressecção do foco epileptogênico imediatamente, sem investigação prévia nem tentativa de tratamento medicamentoso.'
     ],
     correctIndex: 1,
     explanation: 'Duas ou mais crises epilépticas não provocadas, com intervalo maior que 24 horas entre elas, permitem o diagnóstico clínico de epilepsia; o eletroencefalograma auxilia na classificação do tipo de crise e na decisão terapêutica com fármaco anticonvulsivante apropriado.'
@@ -480,10 +480,10 @@ export const ENAMED_INEDITA_QUESTIONS: any[] = [
     banca: 'ENAMED (inédita)',
     text: 'Homem de 45 anos procura atendimento por fraqueza progressiva e simétrica em membros inferiores, iniciada há 4 dias, com ascensão para os membros superiores nas últimas 24 horas, associada a parestesias distais e arreflexia global. Relata episódio de diarreia aguda há 2 semanas. Punção lombar evidencia proteína elevada no líquor, com celularidade normal (dissociação albumino-citológica).\n\nQual é o diagnóstico mais provável e a principal complicação a ser monitorada?',
     options: [
-      'Esclerose múltipla; complicação visual (neurite óptica).',
+      'Esclerose múltipla; complicação visual (neurite óptica), decorrente de desmielinização do nervo óptico associada ao quadro.',
       'Síndrome de Guillain-Barré; insuficiência respiratória por fraqueza da musculatura respiratória.',
-      'Miastenia gravis; crise miastênica desencadeada por infecção.',
-      'Acidente vascular encefálico de tronco; disfagia e broncoaspiração.'
+      'Miastenia gravis; crise miastênica desencadeada por infecção, com risco de insuficiência respiratória associada.',
+      'Acidente vascular encefálico de tronco; disfagia e broncoaspiração, como principais complicações a serem monitoradas.'
     ],
     correctIndex: 1,
     explanation: 'Fraqueza ascendente simétrica, arreflexia, precedida por quadro infeccioso (frequentemente gastrointestinal, associado a Campylobacter jejuni), com dissociação albumino-citológica no líquor, é o quadro clássico da síndrome de Guillain-Barré; a principal complicação a ser monitorada é a insuficiência respiratória por acometimento da musculatura respiratória, exigindo monitorização da capacidade vital.'
@@ -495,10 +495,10 @@ export const ENAMED_INEDITA_QUESTIONS: any[] = [
     banca: 'ENAMED (inédita)',
     text: 'Recém-nascido pré-termo de 34 semanas, filho de mãe com febre intraparto (38,2 °C), rotura de membranas há 20 horas antes do parto e líquido amniótico fétido, nasce hipoativo, com desconforto respiratório e temperatura instável nas primeiras horas de vida.\n\nConsiderando os fatores de risco maternos apresentados, qual é a principal hipótese diagnóstica a ser investigada e a conduta inicial?',
     options: [
-      'Taquipneia transitória do recém-nascido; conduta apenas observacional, sem necessidade de exames.',
+      'Taquipneia transitória do recém-nascido; conduta apenas observacional, sem necessidade de exames, mesmo diante dos fatores de risco infecciosos maternos.',
       'Sepse neonatal precoce (corioamnionite materna como fator de risco); coletar hemocultura e iniciar antibioticoterapia empírica.',
-      'Síndrome de aspiração meconial; lavagem gástrica imediata como conduta prioritária.',
-      'Cardiopatia congênita cianótica; ecocardiograma é a única conduta necessária nesse momento.'
+      'Síndrome de aspiração meconial; lavagem gástrica imediata como conduta prioritária, dispensando investigação de fatores de risco infecciosos.',
+      'Cardiopatia congênita cianótica; ecocardiograma é a única conduta necessária nesse momento, sem indicação de investigação infecciosa associada.'
     ],
     correctIndex: 1,
     explanation: 'Febre materna intraparto, rotura prolongada de membranas e líquido fétido são fatores de risco clássicos para corioamnionite e sepse neonatal precoce; diante de recém-nascido sintomático nesse contexto, deve-se coletar hemocultura e iniciar antibioticoterapia empírica sem aguardar confirmação laboratorial.'
@@ -511,9 +511,9 @@ export const ENAMED_INEDITA_QUESTIONS: any[] = [
     text: 'Homem de 19 anos, com diagnóstico conhecido de anemia falciforme, procura emergência com dor óssea intensa em membros e região lombar, de início súbito, associada a febre baixa, após exposição a frio intenso. Nega sintomas respiratórios. Exame físico sem achados focais além da dor à palpação óssea.\n\nQual é a conduta prioritária no manejo dessa crise?',
     options: [
       'Analgesia adequada e agressiva, hidratação venosa e investigação de fatores desencadeantes ou complicações associadas.',
-      'Transfusão de concentrado de hemácias imediata, independentemente dos níveis de hemoglobina.',
-      'Antibioticoterapia empírica de amplo espectro, mesmo sem sinais de infecção documentada.',
-      'Exsanguineotransfusão de urgência como primeira conduta.'
+      'Transfusão de concentrado de hemácias imediata, independentemente dos níveis de hemoglobina, como primeira medida antes da analgesia.',
+      'Antibioticoterapia empírica de amplo espectro, mesmo sem sinais de infecção documentada, como conduta prioritária na crise álgica.',
+      'Exsanguineotransfusão de urgência como primeira conduta, antes de qualquer tentativa de analgesia e hidratação venosa.'
     ],
     correctIndex: 0,
     explanation: 'A crise vaso-oclusiva óssea é a manifestação mais comum da anemia falciforme, geralmente desencadeada por frio, desidratação ou infecção; o manejo prioritário é analgesia adequada (frequentemente com opioides), hidratação venosa e investigação de fatores desencadeantes, reservando-se transfusão para casos com queda significativa de hemoglobina ou complicações graves.'
@@ -580,10 +580,10 @@ export const ENAMED_INEDITA_QUESTIONS: any[] = [
     banca: 'ENAMED (inédita)',
     text: 'Homem de 50 anos, etilista de longa data, é internado para cirurgia eletiva. No terceiro dia de internação, sem consumo de álcool desde a admissão, desenvolve agitação psicomotora intensa, tremores grosseiros de extremidades, sudorese profusa, taquicardia, hipertensão, febre baixa e alucinações visuais vívidas (relata ver "insetos" na parede).\n\nQual é o diagnóstico e a conduta medicamentosa de escolha?',
     options: [
-      'Encefalopatia de Wernicke; reposição isolada de tiamina, sem outras medidas.',
+      'Encefalopatia de Wernicke; reposição isolada de tiamina, sem outras medidas, mesmo diante de sinais claros de hiperatividade adrenérgica.',
       'Delirium tremens (síndrome de abstinência alcoólica grave); benzodiazepínicos em doses ajustadas à resposta clínica.',
-      'Surto psicótico agudo; antipsicótico típico em dose plena, isoladamente.',
-      'Intoxicação aguda por álcool; apenas suporte clínico e observação, sem medicação específica.'
+      'Surto psicótico agudo; antipsicótico típico em dose plena, isoladamente, sem necessidade de sedação com benzodiazepínicos.',
+      'Intoxicação aguda por álcool; apenas suporte clínico e observação, sem medicação específica, mesmo com o quadro iniciado após dias de abstinência.'
     ],
     correctIndex: 1,
     explanation: 'Agitação, tremores, hiperatividade autonômica, febre e alucinações visuais surgindo 48-96 horas após a última ingestão de álcool em etilista crônico caracterizam delirium tremens, forma grave da síndrome de abstinência alcoólica; o tratamento de escolha são os benzodiazepínicos, titulados conforme a resposta clínica, associados a reposição de tiamina.'
@@ -595,10 +595,10 @@ export const ENAMED_INEDITA_QUESTIONS: any[] = [
     banca: 'ENAMED (inédita)',
     text: 'Homem de 28 anos apresenta quadro de mal-estar, náuseas, dor em hipocôndrio direito, colúria e icterícia há 5 dias. Exames sorológicos: HBsAg reagente; anti-HBc IgM reagente; anti-HBs não reagente; HBeAg reagente.\n\nCom base no perfil sorológico apresentado, a interpretação correta é',
     options: [
-      'infecção crônica pelo vírus da hepatite B, sem replicação viral ativa.',
+      'infecção crônica pelo vírus da hepatite B, sem replicação viral ativa, já que o anti-HBc IgM seria negativo nesse cenário.',
       'infecção aguda pelo vírus da hepatite B, com replicação viral ativa (alta infectividade).',
-      'imunidade vacinal contra hepatite B, sem infecção atual.',
-      'infecção resolvida no passado, com imunidade natural estabelecida.'
+      'imunidade vacinal contra hepatite B, sem infecção atual, padrão que seria caracterizado por anti-HBs isolado reagente.',
+      'infecção resolvida no passado, com imunidade natural estabelecida, perfil que dispensaria a presença de HBsAg reagente.'
     ],
     correctIndex: 1,
     explanation: 'HBsAg reagente indica infecção presente; anti-HBc IgM reagente indica infecção aguda recente; HBeAg reagente indica replicação viral ativa e alta infectividade; a ausência de anti-HBs confirma que ainda não houve resolução/imunização, sendo esse o perfil típico da hepatite B aguda em fase replicativa.'
@@ -625,10 +625,10 @@ export const ENAMED_INEDITA_QUESTIONS: any[] = [
     banca: 'ENAMED (inédita)',
     text: 'Adolescente de 14 anos procura emergência com dor testicular direita súbita e intensa, iniciada durante a madrugada, associada a náuseas e vômitos. Ao exame, testículo direito elevado, com posição horizontalizada, extremamente doloroso à palpação, sem alívio da dor à elevação manual do testículo (sinal de Prehn negativo). Ausência de febre.\n\nQual é o diagnóstico mais provável e a conduta imediata?',
     options: [
-      'Epididimite aguda; iniciar antibioticoterapia e reavaliar em 48 horas.',
-      'Torção de apêndice testicular; analgesia e observação ambulatorial.',
+      'Epididimite aguda; iniciar antibioticoterapia e reavaliar em 48 horas, já que o sinal de Prehn seria positivo nesse quadro.',
+      'Torção de apêndice testicular; analgesia e observação ambulatorial, sem necessidade de exploração cirúrgica de urgência.',
       'Torção testicular; exploração cirúrgica de urgência, idealmente em até 6 horas do início dos sintomas.',
-      'Hérnia inguinoescrotal encarcerada; redução manual seguida de correção eletiva.'
+      'Hérnia inguinoescrotal encarcerada; redução manual seguida de correção eletiva, sem necessidade de exploração cirúrgica imediata.'
     ],
     correctIndex: 2,
     explanation: 'Dor testicular súbita e intensa, testículo elevado e horizontalizado, e sinal de Prehn negativo (a dor não alivia com a elevação do testículo) são sugestivos de torção testicular, uma emergência urológica; a exploração cirúrgica deve ser realizada o mais rápido possível, idealmente em até 6 horas, para preservar a viabilidade testicular.'
@@ -640,10 +640,10 @@ export const ENAMED_INEDITA_QUESTIONS: any[] = [
     banca: 'ENAMED (inédita)',
     text: 'Homem de 70 anos, previamente hígido, é levado à emergência com tosse produtiva, febre e dispneia há 3 dias. Ao exame, confuso quanto ao tempo (desorientado), frequência respiratória de 32 irpm, pressão arterial de 88 x 58 mmHg, e ureia sérica de 60 mg/dL. Radiografia de tórax evidencia consolidação em lobo inferior direito.\n\nCom base no escore CURB-65, qual é a conduta mais adequada?',
     options: [
-      'Escore de baixo risco; tratamento ambulatorial com antibiótico oral.',
-      'Escore de risco intermediário; considerar internação em enfermaria.',
+      'Escore de baixo risco; tratamento ambulatorial com antibiótico oral, mesmo diante da confusão mental e da hipotensão apresentadas.',
+      'Escore de risco intermediário; considerar internação em enfermaria, sem necessidade de avaliação para terapia intensiva.',
       'Escore de alto risco (CURB-65 = 4); internação, com consideração de admissão em unidade de terapia intensiva.',
-      'O escore CURB-65 não se aplica a pacientes acima de 65 anos.'
+      'O escore CURB-65 não se aplica a pacientes acima de 65 anos, devendo-se utilizar outro critério de gravidade nesse caso.'
     ],
     correctIndex: 2,
     explanation: 'O escore CURB-65 soma 1 ponto para cada critério presente: Confusão mental, Ureia >50 mg/dL, frequência Respiratória ≥30 irpm, pressão arterial Baixa (PAS<90 ou PAD≤60) e idade ≥65 anos; esse paciente pontua 4 (confusão, ureia elevada, taquipneia, hipotensão, mais idade), caracterizando alto risco e indicação de internação, com avaliação para UTI.'
@@ -670,10 +670,10 @@ export const ENAMED_INEDITA_QUESTIONS: any[] = [
     banca: 'ENAMED (inédita)',
     text: 'Homem de 55 anos, obeso, apresenta abaulamento em região umbilical há 2 anos, redutível e indolor, que aumentava aos esforços. Há 6 horas, nota que a protrusão não retorna mais espontaneamente ou à manobra manual, associada a dor local progressiva, náuseas e distensão abdominal.\n\nQual é a principal complicação suspeitada e a conduta adequada?',
     options: [
-      'Hérnia umbilical não complicada; conduta expectante e reavaliação eletiva em 30 dias.',
+      'Hérnia umbilical não complicada; conduta expectante e reavaliação eletiva em 30 dias, mesmo diante da irredutibilidade atual.',
       'Hérnia umbilical encarcerada, com risco de estrangulamento; indicação de correção cirúrgica de urgência.',
-      'Diástase de retos abdominais; apenas orientação de fisioterapia abdominal.',
-      'Lipoma de parede abdominal; exérese eletiva ambulatorial, sem urgência.'
+      'Diástase de retos abdominais; apenas orientação de fisioterapia abdominal, sem necessidade de avaliação cirúrgica de urgência.',
+      'Lipoma de parede abdominal; exérese eletiva ambulatorial, sem urgência, mesmo diante de dor progressiva e distensão abdominal.'
     ],
     correctIndex: 1,
     explanation: 'Uma hérnia previamente redutível que se torna irredutível, dolorosa e associada a sinais de obstrução (náuseas, distensão) caracteriza encarceramento, com risco iminente de estrangulamento e isquemia do conteúdo herniário; a conduta é a correção cirúrgica de urgência.'
@@ -685,10 +685,10 @@ export const ENAMED_INEDITA_QUESTIONS: any[] = [
     banca: 'ENAMED (inédita)',
     text: 'Mulher de 62 anos procura emergência com dor ocular intensa unilateral de início súbito, associada a cefaleia, náuseas, vômitos e visão de halos coloridos ao redor de luzes. Ao exame, olho direito hiperemiado, córnea com aspecto turvo/edemaciado, pupila em midríase média fixa e não reagente à luz. Pressão intraocular acentuadamente elevada à palpação.\n\nQual é o diagnóstico e a conduta imediata?',
     options: [
-      'Conjuntivite viral aguda; colírio lubrificante e compressas frias.',
-      'Uveíte anterior; colírio de corticoide isolado, sem necessidade de encaminhamento urgente.',
+      'Conjuntivite viral aguda; colírio lubrificante e compressas frias, sem necessidade de avaliação da pressão intraocular.',
+      'Uveíte anterior; colírio de corticoide isolado, sem necessidade de encaminhamento urgente, mesmo com pressão intraocular elevada.',
       'Glaucoma agudo de ângulo fechado; encaminhamento oftalmológico imediato para redução emergencial da pressão intraocular.',
-      'Descolamento de retina; observação, pois não há tratamento imediato disponível.'
+      'Descolamento de retina; observação, pois não há tratamento imediato disponível, mesmo diante da dor ocular intensa e da midríase fixa.'
     ],
     correctIndex: 2,
     explanation: 'Dor ocular súbita intensa, hiperemia, córnea turva, pupila em midríase média fixa e pressão intraocular muito elevada são o quadro clássico de glaucoma agudo de ângulo fechado, uma emergência oftalmológica que exige redução imediata da pressão intraocular (medicamentosa e, posteriormente, iridotomia a laser) para evitar perda visual permanente.'
@@ -715,10 +715,10 @@ export const ENAMED_INEDITA_QUESTIONS: any[] = [
     banca: 'ENAMED (inédita)',
     text: 'Menino de 9 anos apresenta espirros em salva, coriza hialina, obstrução nasal e prurido nasal e ocular, de padrão sazonal, mais intensos na primavera. Ao exame, mucosa nasal pálida e edemaciada, com presença de "saudação alérgica" (prega horizontal no dorso nasal). Nega febre.\n\nQual é o diagnóstico mais provável e o tratamento de primeira linha?',
     options: [
-      'Rinossinusite bacteriana aguda; amoxicilina com clavulanato.',
+      'Rinossinusite bacteriana aguda; amoxicilina com clavulanato, mesmo na ausência de febre e de secreção purulenta.',
       'Rinite alérgica; corticoide intranasal e anti-histamínico oral de segunda geração.',
-      'Rinite vasomotora; descongestionante nasal tópico de uso contínuo.',
-      'Desvio de septo nasal; correção cirúrgica como primeira conduta.'
+      'Rinite vasomotora; descongestionante nasal tópico de uso contínuo, apesar do padrão sazonal e do prurido ocular associado.',
+      'Desvio de septo nasal; correção cirúrgica como primeira conduta, sem tentativa prévia de tratamento clínico.'
     ],
     correctIndex: 1,
     explanation: 'Padrão sazonal de espirros, coriza hialina, prurido nasal e ocular, e a "saudação alérgica" (prega nasal transversa por atrito repetido) são característicos de rinite alérgica; o tratamento de primeira linha é o corticoide intranasal, associado a anti-histamínico oral de segunda geração se necessário.'
@@ -885,10 +885,10 @@ export const ENAMED_INEDITA_QUESTIONS: any[] = [
     banca: 'ENAMED (inédita)',
     text: 'Mulher de 26 anos, sexualmente ativa desde os 17 anos, nunca realizou exame preventivo (citologia oncótica).\n\nSegundo as diretrizes brasileiras de rastreamento do câncer de colo do útero, qual é a conduta adequada?',
     options: [
-      'Iniciar o rastreamento com citologia oncótica, repetindo anualmente até os 25 anos.',
+      'Iniciar o rastreamento com citologia oncótica, repetindo anualmente até os 25 anos, independentemente do tempo de início da vida sexual.',
       'Iniciar o rastreamento aos 25 anos, com citologia oncótica repetida a cada 3 anos após dois exames anuais consecutivos normais.',
-      'Iniciar o rastreamento apenas aos 30 anos, independentemente da idade de início da vida sexual.',
-      'Não há indicação de rastreamento antes dos 35 anos em mulheres sem fatores de risco.'
+      'Iniciar o rastreamento apenas aos 30 anos, independentemente da idade de início da vida sexual, sem repetição anual prévia.',
+      'Não há indicação de rastreamento antes dos 35 anos em mulheres sem fatores de risco, mesmo com vida sexual iniciada precocemente.'
     ],
     correctIndex: 1,
     explanation: 'O rastreamento do câncer de colo do útero no Brasil é recomendado a partir dos 25 anos (não conforme a idade de início da vida sexual), com citologia oncótica repetida anualmente e, após dois exames consecutivos normais, o intervalo passa a ser de 3 anos.'
@@ -930,10 +930,10 @@ export const ENAMED_INEDITA_QUESTIONS: any[] = [
     banca: 'ENAMED (inédita)',
     text: 'Mãe de recém-nascido de 20 dias, em aleitamento materno exclusivo, questiona na consulta de puericultura sobre a necessidade de iniciar água, chás ou outros líquidos, pois considera que o leite materno "pode não ser suficiente" durante os dias mais quentes.\n\nSegundo as recomendações do Ministério da Saúde para lactentes saudáveis, a orientação adequada é',
     options: [
-      'orientar a introdução de água nos intervalos das mamadas, especialmente em dias quentes.',
+      'orientar a introdução de água nos intervalos das mamadas, especialmente em dias quentes, para evitar desidratação do lactente.',
       'orientar aleitamento materno exclusivo até os 6 meses, sem necessidade de água, chás ou outros líquidos, mesmo em climas quentes.',
-      'orientar a introdução de fórmula infantil complementar já a partir dessa idade, como medida de segurança.',
-      'orientar suco de frutas diluído como complemento, a partir do primeiro mês de vida.'
+      'orientar a introdução de fórmula infantil complementar já a partir dessa idade, como medida de segurança contra suposta insuficiência do leite materno.',
+      'orientar suco de frutas diluído como complemento, a partir do primeiro mês de vida, para reforçar a hidratação nos dias quentes.'
     ],
     correctIndex: 1,
     explanation: 'O leite materno contém água suficiente para suprir as necessidades hídricas do lactente, mesmo em climas quentes; a recomendação é de aleitamento materno exclusivo até os 6 meses de vida, sem necessidade de água, chás, sucos ou outros alimentos complementares nesse período.'
@@ -971,9 +971,9 @@ export const ENAMED_INEDITA_QUESTIONS: any[] = [
     text: 'Homem de 52 anos, com cirrose hepática conhecida por hepatite C não tratada, é levado à emergência após episódio de vômitos com sangue vivo em grande quantidade, associado a tontura e palidez. Ao exame, hipotensão (PA 82 x 50 mmHg), taquicardia, ascite volumosa e circulação colateral visível no abdome.\n\nAlém da estabilização hemodinâmica, qual é a conduta específica mais indicada para o provável sangramento?',
     options: [
       'Endoscopia digestiva alta precoce, com ligadura elástica de varizes esofágicas, associada a droga vasoativa (terlipressina ou octreotida).',
-      'Cirurgia de urgência para ressecção gástrica, sem necessidade de endoscopia prévia.',
-      'Apenas inibidor de bomba de prótons endovenoso, sem necessidade de endoscopia.',
-      'Antiácidos orais e observação clínica, sem outras intervenções.'
+      'Cirurgia de urgência para ressecção gástrica, sem necessidade de endoscopia prévia, mesmo diante de instabilidade hemodinâmica ainda não corrigida.',
+      'Apenas inibidor de bomba de prótons endovenoso, sem necessidade de endoscopia, mesmo diante do sangramento maciço e da suspeita de varizes.',
+      'Antiácidos orais e observação clínica, sem outras intervenções, mesmo diante da instabilidade hemodinâmica e do sangramento ativo.'
     ],
     correctIndex: 0,
     explanation: 'Em paciente cirrótico com hematêmese, a principal hipótese é hemorragia digestiva alta varicosa; além da estabilização hemodinâmica, a conduta específica inclui droga vasoativa (terlipressina ou octreotida) e endoscopia digestiva alta precoce com ligadura elástica das varizes esofágicas.'
@@ -995,10 +995,10 @@ export const ENAMED_INEDITA_QUESTIONS: any[] = [
     banca: 'ENAMED (inédita)',
     text: 'Homem de 45 anos, usuário de drogas injetáveis, apresenta febre persistente há 3 semanas, associada a mal-estar, perda de peso e sopro cardíaco novo em foco tricúspide. Ao exame, lesões purpúricas dolorosas em polpas digitais (nódulos de Osler) e hemorragias subungueais em estilhaço. Hemoculturas seriadas positivas para Staphylococcus aureus em três amostras distintas. Ecocardiograma transesofágico evidencia vegetação em valva tricúspide.\n\nCom base nos critérios de Duke, qual é o diagnóstico desse paciente?',
     options: [
-      'Endocardite infecciosa rejeitada, pois faltam critérios suficientes.',
-      'Endocardite infecciosa possível, necessitando de mais exames para confirmação.',
+      'Endocardite infecciosa rejeitada, pois faltam critérios suficientes, já que apenas achados clínicos isolados não fecham o diagnóstico.',
+      'Endocardite infecciosa possível, necessitando de mais exames para confirmação, apesar das hemoculturas e do achado ecocardiográfico já apresentados.',
       'Endocardite infecciosa definitiva, pela presença de critérios maiores (hemoculturas positivas e evidência ecocardiográfica de vegetação).',
-      'Febre reumática ativa, diagnóstico que dispensa a necessidade de hemoculturas.'
+      'Febre reumática ativa, diagnóstico que dispensa a necessidade de hemoculturas, mesmo diante de vegetação valvar identificada ao ecocardiograma.'
     ],
     correctIndex: 2,
     explanation: 'Os critérios de Duke maiores incluem hemoculturas positivas para microrganismo típico em amostras distintas e evidência ecocardiográfica de envolvimento endocárdico (como vegetação); a presença de dois critérios maiores já confirma o diagnóstico de endocardite infecciosa definitiva, reforçado pelos achados clínicos periféricos (nódulos de Osler, hemorragias em estilhaço).'
@@ -1085,10 +1085,10 @@ export const ENAMED_INEDITA_QUESTIONS: any[] = [
     banca: 'ENAMED (inédita)',
     text: 'Equipe de Saúde da Família organiza, mensalmente, um grupo de educação em saúde para pacientes hipertensos e diabéticos da área adstrita, com atividades de orientação nutricional, prática de exercícios físicos supervisionados e espaço de escuta coletiva sobre dificuldades no controle das doenças crônicas.\n\nEssa estratégia de cuidado coletivo, que complementa o atendimento individual, caracteriza qual modelo de atenção?',
     options: [
-      'Modelo biomédico tradicional, centrado exclusivamente na consulta individual.',
-      'Modelo de vigilância em saúde, focado apenas na notificação de agravos.',
+      'Modelo biomédico tradicional, centrado exclusivamente na consulta individual, sem espaço para atividades coletivas de educação em saúde.',
+      'Modelo de vigilância em saúde, focado apenas na notificação de agravos, sem componente educativo ou de acompanhamento longitudinal.',
       'Modelo de atenção baseado em ações programáticas e educação em saúde, com abordagem coletiva e longitudinal do cuidado.',
-      'Modelo hospitalocêntrico, priorizando a internação para o controle de doenças crônicas.'
+      'Modelo hospitalocêntrico, priorizando a internação para o controle de doenças crônicas, em detrimento de ações educativas na atenção básica.'
     ],
     correctIndex: 2,
     explanation: 'As ações programáticas em grupo, como os grupos de hipertensos e diabéticos, fazem parte do modelo de atenção da Estratégia Saúde da Família, que combina cuidado individual e coletivo, com foco em educação em saúde, promoção e prevenção, complementando a abordagem clínica tradicional.'
@@ -1100,10 +1100,10 @@ export const ENAMED_INEDITA_QUESTIONS: any[] = [
     banca: 'ENAMED (inédita)',
     text: 'Homem de 45 anos comparece à Unidade Básica de Saúde apenas quando apresenta sintomas agudos, relatando dificuldade de conciliar consultas de rotina com o horário de trabalho. A equipe percebe baixa adesão dos homens da comunidade às ações preventivas oferecidas pela unidade.\n\nQual estratégia é mais coerente com a Política Nacional de Atenção Integral à Saúde do Homem para ampliar essa adesão?',
     options: [
-      'Manter o funcionamento da unidade apenas em horário comercial, sem alterações na oferta de serviços.',
+      'Manter o funcionamento da unidade apenas em horário comercial, sem alterações na oferta de serviços, mesmo com a baixa adesão masculina relatada.',
       'Flexibilizar horários de atendimento (incluindo períodos noturnos ou aos sábados) e adequar as abordagens às especificidades da população masculina.',
-      'Restringir o atendimento de rotina apenas às mulheres, direcionando os homens exclusivamente para atendimentos de urgência.',
-      'Exigir que os homens da comunidade comprovem sintomas graves para serem atendidos na unidade.'
+      'Restringir o atendimento de rotina apenas às mulheres, direcionando os homens exclusivamente para atendimentos de urgência, sem ações preventivas específicas.',
+      'Exigir que os homens da comunidade comprovem sintomas graves para serem atendidos na unidade, dificultando ainda mais o acesso aos cuidados preventivos.'
     ],
     correctIndex: 1,
     explanation: 'A Política Nacional de Atenção Integral à Saúde do Homem preconiza a adequação da oferta de serviços às especificidades da população masculina, incluindo flexibilização de horários de atendimento, como forma de reduzir barreiras de acesso e ampliar a adesão às ações de prevenção e promoção da saúde.'
@@ -1145,10 +1145,10 @@ export const ENAMED_INEDITA_QUESTIONS: any[] = [
     banca: 'ENAMED (inédita)',
     text: 'Homem de 24 anos procura Unidade Básica de Saúde com secreção uretral purulenta abundante e disúria intensa, iniciadas há 3 dias, após relação sexual desprotegida. Nega outros sintomas.\n\nConsiderando o manejo sindrômico das infecções sexualmente transmissíveis preconizado pelo Ministério da Saúde, a conduta terapêutica deve cobrir empiricamente quais agentes, e qual esquema é indicado?',
     options: [
-      'Apenas Neisseria gonorrhoeae; ceftriaxona intramuscular em dose única, isoladamente.',
+      'Apenas Neisseria gonorrhoeae; ceftriaxona intramuscular em dose única, isoladamente, sem cobertura empírica para outros agentes associados.',
       'Neisseria gonorrhoeae e Chlamydia trachomatis; ceftriaxona intramuscular associada a azitromicina oral, ambas em dose única.',
-      'Apenas Treponema pallidum; penicilina G benzatina intramuscular em dose única.',
-      'Trichomonas vaginalis isoladamente; metronidazol oral em dose única.'
+      'Apenas Treponema pallidum; penicilina G benzatina intramuscular em dose única, sem cobertura para os agentes causadores de uretrite.',
+      'Trichomonas vaginalis isoladamente; metronidazol oral em dose única, sem necessidade de cobertura para outros patógenos uretrais.'
     ],
     correctIndex: 1,
     explanation: 'O corrimento uretral é abordado de forma sindrômica, cobrindo empiricamente os dois principais agentes causadores (Neisseria gonorrhoeae e Chlamydia trachomatis), com ceftriaxona intramuscular associada a azitromicina oral, ambas em dose única, dada a frequente coinfecção entre os dois patógenos.'
@@ -1215,10 +1215,10 @@ export const ENAMED_INEDITA_QUESTIONS: any[] = [
     banca: 'ENAMED (inédita)',
     text: 'Lactente de 3 meses, em aleitamento materno exclusivo, apresenta episódios recorrentes de regurgitação, cólicas intensas, fezes com raias de sangue e muco, além de dermatite eczematosa persistente. Após exclusão de proteína do leite de vaca da dieta materna, houve melhora significativa dos sintomas em 2 semanas.\n\nQual é o diagnóstico mais provável?',
     options: [
-      'Refluxo gastroesofágico fisiológico do lactente.',
+      'Refluxo gastroesofágico fisiológico do lactente, sem relação com a exclusão de proteína do leite de vaca da dieta materna.',
       'Alergia à proteína do leite de vaca (APLV), com manifestação mediada por mecanismo não IgE ou misto.',
-      'Fibrose cística, com manifestação digestiva isolada.',
-      'Doença de Hirschsprung, com manifestação neonatal tardia.'
+      'Fibrose cística, com manifestação digestiva isolada, sem melhora esperada apenas com a retirada de proteína do leite de vaca.',
+      'Doença de Hirschsprung, com manifestação neonatal tardia, quadro que não responderia à exclusão dietética materna.'
     ],
     correctIndex: 1,
     explanation: 'Sintomas gastrointestinais (regurgitação, cólicas, sangue e muco nas fezes) e cutâneos (dermatite) em lactente amamentado, com melhora após exclusão de proteína do leite de vaca da dieta materna, são sugestivos de alergia à proteína do leite de vaca, uma das alergias alimentares mais comuns na infância.'
@@ -1230,10 +1230,10 @@ export const ENAMED_INEDITA_QUESTIONS: any[] = [
     banca: 'ENAMED (inédita)',
     text: 'Adolescente de 13 anos, sexo feminino, é avaliada em consulta de rotina. Ao exame físico, com a paciente flexionando o tronco para frente (teste de Adams), observa-se assimetria na altura das costelas de um lado em relação ao outro, sugerindo giba costal.\n\nQual é a principal hipótese diagnóstica e a conduta subsequente mais apropriada?',
     options: [
-      'Cifose postural simples; apenas orientações posturais, sem necessidade de exames.',
+      'Cifose postural simples; apenas orientações posturais, sem necessidade de exames, mesmo diante da giba costal identificada no teste de Adams.',
       'Escoliose idiopática do adolescente; solicitar radiografia de coluna em pé para avaliar o grau da curvatura (ângulo de Cobb).',
-      'Espondilólise; ressonância magnética de coluna lombar como exame inicial obrigatório.',
-      'Hérnia de disco lombar; encaminhamento direto para avaliação neurocirúrgica.'
+      'Espondilólise; ressonância magnética de coluna lombar como exame inicial obrigatório, mesmo sem dor lombar associada ao quadro.',
+      'Hérnia de disco lombar; encaminhamento direto para avaliação neurocirúrgica, sem investigação radiográfica inicial da coluna.'
     ],
     correctIndex: 1,
     explanation: 'O teste de Adams positivo (assimetria/giba costal ao flexionar o tronco) é sugestivo de escoliose, mais comumente idiopática nessa faixa etária; a radiografia de coluna em pé é indicada para confirmar o diagnóstico e mensurar o ângulo de Cobb, orientando a conduta (observação, órtese ou cirurgia, conforme o grau).'
@@ -1260,10 +1260,10 @@ export const ENAMED_INEDITA_QUESTIONS: any[] = [
     banca: 'ENAMED (inédita)',
     text: 'Homem de 68 anos, hipertenso, procura atendimento com dor em queimação intensa em hemitórax direito, seguida, 2 dias depois, pelo aparecimento de vesículas agrupadas sobre base eritematosa, distribuídas em faixa unilateral, respeitando um dermátomo torácico. Procurou atendimento no terceiro dia de lesões.\n\nQual é o diagnóstico e a conduta terapêutica mais adequada nesse momento?',
     options: [
-      'Herpes simples recorrente; aciclovir tópico apenas, sem necessidade de tratamento sistêmico.',
+      'Herpes simples recorrente; aciclovir tópico apenas, sem necessidade de tratamento sistêmico, mesmo com a distribuição em faixa unilateral pelo dermátomo.',
       'Herpes-zoster; aciclovir (ou valaciclovir) oral, idealmente iniciado nas primeiras 72 horas do início das lesões, para reduzir o risco de neuralgia pós-herpética.',
-      'Impetigo bolhoso; antibioticoterapia sistêmica com cefalexina.',
-      'Dermatite de contato; corticoide tópico potente, sem necessidade de antiviral.'
+      'Impetigo bolhoso; antibioticoterapia sistêmica com cefalexina, sem necessidade de terapia antiviral, mesmo diante da distribuição dermatomal das lesões.',
+      'Dermatite de contato; corticoide tópico potente, sem necessidade de antiviral, apesar da dor em queimação que precedeu o aparecimento das vesículas.'
     ],
     correctIndex: 1,
     explanation: 'Dor em queimação seguida de vesículas agrupadas em distribuição dermatomal unilateral é característica do herpes-zoster (reativação do vírus varicela-zoster); o tratamento antiviral oral (aciclovir ou valaciclovir), iniciado idealmente nas primeiras 72 horas, reduz a duração e a gravidade do quadro e o risco de neuralgia pós-herpética.'
@@ -1276,9 +1276,9 @@ export const ENAMED_INEDITA_QUESTIONS: any[] = [
     text: 'Homem de 45 anos, assintomático, sem antecedentes pessoais ou familiares de câncer colorretal ou doença inflamatória intestinal, procura Unidade Básica de Saúde para orientação sobre rastreamento de câncer colorretal.\n\nSegundo as recomendações vigentes para população de risco habitual, a conduta adequada é',
     options: [
       'iniciar o rastreamento com colonoscopia (ou pesquisa de sangue oculto nas fezes anual) a partir dos 45-50 anos.',
-      'iniciar o rastreamento apenas aos 60 anos, independentemente do método utilizado.',
-      'não há indicação de rastreamento populacional para câncer colorretal no Brasil.',
-      'iniciar colonoscopia anual a partir dos 30 anos, mesmo sem fatores de risco.'
+      'iniciar o rastreamento apenas aos 60 anos, independentemente do método utilizado, retardando desnecessariamente a investigação nessa faixa etária.',
+      'não há indicação de rastreamento populacional para câncer colorretal no Brasil, mesmo para pacientes assintomáticos de risco habitual.',
+      'iniciar colonoscopia anual a partir dos 30 anos, mesmo sem fatores de risco, com periodicidade mais frequente que a recomendada.'
     ],
     correctIndex: 0,
     explanation: 'Para indivíduos de risco habitual, sem fatores de risco adicionais, o rastreamento de câncer colorretal é recomendado a partir dos 45-50 anos, podendo ser realizado por colonoscopia (a cada 10 anos) ou pesquisa de sangue oculto nas fezes (anual), entre outras estratégias.'
@@ -1305,10 +1305,10 @@ export const ENAMED_INEDITA_QUESTIONS: any[] = [
     banca: 'ENAMED (inédita)',
     text: 'Mulher de 48 anos apresenta cefaleia súbita, de intensidade máxima já no início ("a pior dor de cabeça da vida"), associada a rigidez de nuca, náuseas, vômitos e fotofobia. Nega trauma. Ao exame, sem déficits motores focais, mas com sonolência leve.\n\nQual é a principal hipótese diagnóstica e a conduta inicial mais apropriada?',
     options: [
-      'Enxaqueca com aura; analgesia e alta com retorno ambulatorial.',
+      'Enxaqueca com aura; analgesia e alta com retorno ambulatorial, mesmo diante do caráter súbito e da intensidade máxima já no início da dor referida.',
       'Hemorragia subaracnóidea (provavelmente por ruptura de aneurisma cerebral); tomografia de crânio sem contraste de urgência, seguida de punção lombar se a TC for negativa e a suspeita persistir.',
-      'Cefaleia tensional crônica agudizada; anti-inflamatório oral e repouso domiciliar.',
-      'Meningite viral; aguardar evolução espontânea por 48 horas antes de investigar.'
+      'Cefaleia tensional crônica agudizada; anti-inflamatório oral e repouso domiciliar, sem necessidade de exame de imagem mesmo com rigidez de nuca associada.',
+      'Meningite viral; aguardar evolução espontânea por 48 horas antes de investigar, mesmo diante do início súbito e da sonolência apresentada.'
     ],
     correctIndex: 1,
     explanation: 'Cefaleia súbita e de intensidade máxima já no início ("thunderclap headache"), associada a rigidez de nuca, é altamente sugestiva de hemorragia subaracnóidea, frequentemente por ruptura de aneurisma cerebral; a tomografia de crânio sem contraste é o exame inicial de urgência, e a punção lombar (buscando xantocromia) deve ser realizada se a TC for negativa e a suspeita clínica permanecer alta.'
@@ -1350,10 +1350,10 @@ export const ENAMED_INEDITA_QUESTIONS: any[] = [
     banca: 'ENAMED (inédita)',
     text: 'Puérpera de 6 semanas, em consulta de puericultura do bebê, relata à enfermeira da UBS tristeza persistente, choro fácil, dificuldade de sentir prazer em atividades que antes gostava, sensação de estar "sobrecarregada" e culpa por não conseguir cuidar bem do filho, sintomas presentes há cerca de 1 mês.\n\nQual é a conduta mais adequada da equipe de Atenção Primária diante desse relato?',
     options: [
-      'Considerar normal o "baby blues" e orientar apenas que os sintomas passarão espontaneamente em poucos dias.',
+      'Considerar normal o "baby blues" e orientar apenas que os sintomas passarão espontaneamente em poucos dias, mesmo já estando presentes há cerca de um mês.',
       'Aplicar instrumento de rastreio para depressão pós-parto (como a Escala de Depressão Pós-Natal de Edimburgo) e, conforme o resultado, iniciar ou encaminhar para tratamento adequado.',
-      'Encaminhar imediatamente para internação psiquiátrica, independentemente da gravidade dos sintomas relatados.',
-      'Não investigar sintomas emocionais na consulta de puericultura, por não ser o foco desse atendimento.'
+      'Encaminhar imediatamente para internação psiquiátrica, independentemente da gravidade dos sintomas relatados, sem aplicação prévia de instrumento de rastreio.',
+      'Não investigar sintomas emocionais na consulta de puericultura, por não ser o foco desse atendimento, mesmo diante do relato espontâneo da puérpera.'
     ],
     correctIndex: 1,
     explanation: 'Sintomas depressivos persistentes por mais de 2 semanas no puerpério (diferente do "baby blues", que é autolimitado e dura poucos dias) devem ser ativamente rastreados na Atenção Primária, inclusive durante consultas de puericultura, com instrumentos como a Escala de Edimburgo, para identificar e tratar precocemente a depressão pós-parto.'
@@ -1395,10 +1395,10 @@ export const ENAMED_INEDITA_QUESTIONS: any[] = [
     banca: 'ENAMED (inédita)',
     text: 'Criança de 4 anos apresenta crise convulsiva em vigência de febre de 39 °C, com características focais (desvio do olhar e abalos restritos ao membro superior direito), duração de 20 minutos, e um segundo episódio dentro do mesmo dia febril. Exame neurológico pós-ictal com leve assimetria de força, que se resolve em algumas horas.\n\nDiferentemente da crise febril simples, esse quadro caracteriza uma crise febril complexa, e a conduta adequada inclui',
     options: [
-      'tranquilizar a família e liberar sem qualquer investigação adicional, como na crise febril simples.',
+      'tranquilizar a família e liberar sem qualquer investigação adicional, como na crise febril simples, mesmo diante da duração prolongada e do caráter focal da crise.',
       'investigação adicional (incluindo avaliação da causa da febre e consideração de exames neurológicos e/ou punção lombar conforme o contexto clínico), dada a presença de características de complexidade.',
-      'iniciar profilaxia anticonvulsivante contínua imediatamente, independentemente de novos episódios.',
-      'indicar internação exclusivamente para observação, sem necessidade de qualquer investigação complementar.'
+      'iniciar profilaxia anticonvulsivante contínua imediatamente, independentemente de novos episódios, sem investigação prévia da causa da febre.',
+      'indicar internação exclusivamente para observação, sem necessidade de qualquer investigação complementar, mesmo diante da assimetria de força pós-ictal.'
     ],
     correctIndex: 1,
     explanation: 'Crises febris complexas (focais, prolongadas acima de 15 minutos, ou recorrentes no mesmo episódio febril) diferem da crise febril simples e exigem investigação adicional mais cuidadosa, incluindo avaliação da causa da febre e, conforme o contexto clínico (sinais de alarme, idade, estado geral), consideração de exames complementares como punção lombar para afastar meningite.'
@@ -1425,10 +1425,10 @@ export const ENAMED_INEDITA_QUESTIONS: any[] = [
     banca: 'ENAMED (inédita)',
     text: 'Técnica de enfermagem sofre acidente perfurocortante com agulha utilizada em paciente-fonte com sorologia desconhecida, durante coleta de sangue. A lesão foi profunda, com sangramento visível, e a agulha continha sangue visível no momento do acidente.\n\nConsiderando a profilaxia pós-exposição ocupacional a material biológico, a conduta imediata mais adequada é',
     options: [
-      'aguardar o resultado da sorologia do paciente-fonte, que pode levar dias, antes de iniciar qualquer conduta profilática.',
+      'aguardar o resultado da sorologia do paciente-fonte, que pode levar dias, antes de iniciar qualquer conduta profilática, mesmo diante da lesão profunda e do sangramento visível no acidente.',
       'lavar o local com água e sabão, notificar o acidente, testar rapidamente a profissional e o paciente-fonte (quando possível) e considerar profilaxia antirretroviral o mais precocemente possível, idealmente nas primeiras 2 horas.',
-      'não é necessária nenhuma conduta específica, pois acidentes com agulha raramente transmitem infecções.',
-      'iniciar profilaxia antirretroviral apenas se a técnica de enfermagem apresentar sintomas nos dias seguintes ao acidente.'
+      'não é necessária nenhuma conduta específica, pois acidentes com agulha raramente transmitem infecções, mesmo com sangue visível na agulha e lesão profunda.',
+      'iniciar profilaxia antirretroviral apenas se a técnica de enfermagem apresentar sintomas nos dias seguintes ao acidente, e não de forma imediata e preventiva.'
     ],
     correctIndex: 1,
     explanation: 'Acidentes perfurocortantes com risco biológico (lesão profunda, sangramento, agulha com sangue visível, fonte de sorologia desconhecida) exigem conduta imediata: lavagem do local, notificação do acidente, testagem rápida do profissional e, quando possível, do paciente-fonte, e início precoce (idealmente nas primeiras 2 horas, no máximo até 72 horas) da profilaxia antirretroviral pós-exposição quando indicada.'

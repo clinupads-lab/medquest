@@ -154,10 +154,10 @@ export const SIRIOLIBANES_GERADO_2026_QUESTIONS: any[] = [
     text: 'Paciente em uso de heparina há 6 dias apresenta queda de plaquetas maior que 50% do valor basal, associada a trombose venosa nova. Qual é o diagnóstico e a conduta?',
     options: [
       'Trombocitopenia induzida por heparina; suspensão da heparina e uso de anticoagulante alternativo não heparínico',
-      'Púrpura trombocitopênica idiopática; corticoide isolado, mantendo a heparina',
-      'CIVD; apenas transfusão de plaquetas, sem suspender a heparina',
-      'Anemia aplásica; observação isolada',
-      'Deficiência de vitamina K; reposição isolada, sem suspender a heparina'
+      'Púrpura trombocitopênica idiopática; iniciar corticoide isolado, mantendo a heparina em uso sem investigar a causa medicamentosa',
+      'Coagulação intravascular disseminada; transfusão isolada de plaquetas, sem suspender a heparina nem investigar outra causa',
+      'Anemia aplásica induzida por fármaco; apenas observação clínica isolada, sem suspensão da heparina em uso',
+      'Deficiência de vitamina K; reposição isolada de vitamina K, sem suspender a heparina nem investigar plaquetopenia'
     ],
     correctIndex: 0,
     explanation: 'Queda de plaquetas associada a trombose após uso de heparina sugere trombocitopenia induzida por heparina, exigindo suspensão imediata da droga e uso de anticoagulante alternativo não heparínico.'
@@ -231,9 +231,9 @@ export const SIRIOLIBANES_GERADO_2026_QUESTIONS: any[] = [
     text: 'Paciente apresenta icterícia, colúria e transaminases muito elevadas, com IgM anti-HAV negativo e HBsAg positivo, IgM anti-HBc positivo. Qual é o diagnóstico e a conduta?',
     options: [
       'Hepatite B aguda; suporte clínico, já que a maioria dos casos em adultos resolve espontaneamente',
-      'Hepatite A aguda; suporte clínico isolado',
-      'Hepatite B crônica; antiviral isolado, sem necessidade de suporte',
-      'Hepatite autoimune; corticoide isolado'
+      'Hepatite A aguda; suporte clínico isolado, mesmo com marcador IgM anti-HAV negativo no exame',
+      'Hepatite B crônica; iniciar antiviral isolado, sem necessidade de suporte clínico ou reavaliação sorológica',
+      'Hepatite autoimune; iniciar corticoide isolado, sem valorizar os marcadores sorológicos virais positivos'
     ],
     correctIndex: 0,
     explanation: 'HBsAg e IgM anti-HBc positivos confirmam hepatite B aguda; a maioria dos adultos imunocompetentes resolve espontaneamente, sendo o suporte clínico a conduta principal, com monitorização de progressão para forma fulminante.'
@@ -397,9 +397,9 @@ export const SIRIOLIBANES_GERADO_2026_QUESTIONS: any[] = [
     text: 'Paciente apresenta massa em intestino delgado identificada em tomografia por dor abdominal recorrente. Biópsia por imunohistoquímica mostra positividade para c-KIT (CD117). Qual é o diagnóstico mais provável e o tratamento definitivo?',
     options: [
       'Tumor estromal gastrointestinal (GIST); ressecção cirúrgica, com imatinibe conforme risco',
-      'Adenocarcinoma de intestino delgado; quimioterapia isolada, sem cirurgia',
-      'Linfoma intestinal; radioterapia isolada',
-      'Tumor carcinoide; apenas observação clínica'
+      'Adenocarcinoma de intestino delgado; quimioterapia isolada, sem indicação de ressecção cirúrgica',
+      'Linfoma intestinal; radioterapia isolada, sem necessidade de biópsia por imunohistoquímica',
+      'Tumor carcinoide; apenas observação clínica, sem necessidade de investigação cirúrgica'
     ],
     correctIndex: 0,
     explanation: 'Positividade para c-KIT confirma tumor estromal gastrointestinal (GIST); o tratamento definitivo é a ressecção cirúrgica, com imatinibe adjuvante conforme risco de recidiva.'
@@ -427,9 +427,9 @@ export const SIRIOLIBANES_GERADO_2026_QUESTIONS: any[] = [
     text: 'Paciente com história de pancreatite aguda há 6 semanas apresenta massa abdominal palpável, dor e saciedade precoce. Tomografia mostra coleção líquida encapsulada de 7 cm adjacente ao pâncreas. Qual é o diagnóstico e a conduta?',
     options: [
       'Pseudocisto pancreático; drenagem se sintomático ou complicado, observação se assintomático e estável',
-      'Necrose pancreática infectada; antibioticoterapia isolada, sem drenagem',
-      'Câncer de pâncreas; cirurgia de Whipple imediata',
-      'Abscesso hepático; drenagem percutânea guiada'
+      'Necrose pancreática infectada; antibioticoterapia isolada, sem necessidade de drenagem ou intervenção',
+      'Câncer de pâncreas; indicação de cirurgia de Whipple imediata, sem necessidade de estadiamento prévio',
+      'Abscesso hepático; drenagem percutânea guiada, sem relação com o quadro de pancreatite prévia'
     ],
     correctIndex: 0,
     explanation: 'Coleção encapsulada tardia após pancreatite aguda é característica de pseudocisto pancreático; a conduta depende de sintomas e complicações, podendo ser expectante ou intervencionista.'
@@ -442,9 +442,9 @@ export const SIRIOLIBANES_GERADO_2026_QUESTIONS: any[] = [
     text: 'Paciente com pancreatite necrosante grave apresenta piora clínica, febre e gás em tecido peripancreático à tomografia após 3 semanas de evolução. Qual é a hipótese diagnóstica e a conduta?',
     options: [
       'Necrose pancreática infectada; antibioticoterapia e drenagem/necrosectomia conforme evolução',
-      'Pseudocisto simples; apenas observação clínica',
-      'Abscesso hepático amebiano; metronidazol isolado',
-      'Fístula pancreática simples; apenas dieta zero, sem outra intervenção'
+      'Pseudocisto simples; apenas observação clínica, sem necessidade de antibioticoterapia ou drenagem',
+      'Abscesso hepático amebiano; metronidazol isolado, sem relação com a pancreatite necrosante prévia',
+      'Fístula pancreática simples; apenas dieta zero, sem necessidade de antibioticoterapia ou drenagem'
     ],
     correctIndex: 0,
     explanation: 'Gás em tecido peripancreático em paciente com piora clínica após pancreatite necrosante sugere infecção da necrose, exigindo antibioticoterapia e drenagem ou necrosectomia conforme evolução.'
@@ -457,9 +457,9 @@ export const SIRIOLIBANES_GERADO_2026_QUESTIONS: any[] = [
     text: 'Paciente apresenta febre, dor em hipocôndrio direito e icterícia (tríade de Charcot), com leucocitose importante e dilatação de vias biliares à ultrassonografia. Qual é o diagnóstico e a conduta inicial?',
     options: [
       'Colangite aguda; antibioticoterapia e drenagem biliar (endoscópica ou percutânea) conforme gravidade',
-      'Colecistite aguda simples; apenas antibiótico oral',
-      'Hepatite viral aguda; suporte clínico isolado, sem drenagem biliar',
-      'Pancreatite biliar leve; apenas jejum, sem drenagem'
+      'Colecistite aguda simples; apenas antibiótico oral, sem necessidade de drenagem biliar de urgência',
+      'Hepatite viral aguda; suporte clínico isolado, sem necessidade de antibioticoterapia ou drenagem biliar',
+      'Pancreatite biliar leve; apenas jejum e hidratação, sem necessidade de drenagem biliar de urgência'
     ],
     correctIndex: 0,
     explanation: 'A tríade de Charcot com dilatação de vias biliares confirma colangite aguda, que exige antibioticoterapia e drenagem biliar de urgência conforme a gravidade do quadro.'
@@ -502,9 +502,9 @@ export const SIRIOLIBANES_GERADO_2026_QUESTIONS: any[] = [
     text: 'Mulher jovem, em uso prolongado de contraceptivo hormonal oral, apresenta lesão hepática única de 5 cm, hipervascular, sem cicatriz central, com risco de sangramento espontâneo. Qual é o diagnóstico mais provável e a conduta?',
     options: [
       'Adenoma hepatocelular; suspensão do contraceptivo e considerar ressecção conforme tamanho e risco',
-      'Hiperplasia nodular focal; observação isolada, sem qualquer conduta adicional',
-      'Hemangioma hepático; apenas seguimento anual',
-      'Cisto hepático simples; punção aspirativa isolada'
+      'Hiperplasia nodular focal; observação isolada, sem necessidade de suspensão do contraceptivo hormonal',
+      'Hemangioma hepático; apenas seguimento anual por imagem, sem relação com o uso de contraceptivo',
+      'Cisto hepático simples; punção aspirativa isolada, sem necessidade de avaliação do risco de sangramento'
     ],
     correctIndex: 0,
     explanation: 'Adenoma hepatocelular está associado ao uso de contraceptivos hormonais e apresenta risco de sangramento espontâneo e malignização; a suspensão hormonal e consideração de ressecção são condutas apropriadas conforme tamanho.'
@@ -517,9 +517,9 @@ export const SIRIOLIBANES_GERADO_2026_QUESTIONS: any[] = [
     text: 'Paciente apresenta lesão renal cística incidental à tomografia, classificada como Bosniak III (septos espessos e realce). Qual é a conduta mais apropriada?',
     options: [
       'Considerar ressecção cirúrgica, dado o risco significativo de malignidade dessa categoria',
-      'Apenas observação anual, sem qualquer intervenção',
-      'Punção aspirativa isolada como conduta definitiva',
-      'Nefrectomia radical bilateral profilática'
+      'Apenas observação anual por imagem, sem qualquer intervenção cirúrgica nessa categoria de risco',
+      'Punção aspirativa isolada como conduta definitiva, sem necessidade de avaliação cirúrgica complementar',
+      'Nefrectomia radical bilateral profilática, independentemente do tamanho e da categoria da lesão'
     ],
     correctIndex: 0,
     explanation: 'Lesões renais císticas Bosniak III têm risco significativo de malignidade (próximo de 50%), justificando consideração de ressecção cirúrgica.'
@@ -562,9 +562,9 @@ export const SIRIOLIBANES_GERADO_2026_QUESTIONS: any[] = [
     text: 'Paciente apresenta icterícia progressiva indolor, tomografia mostra massa na confluência dos ductos hepáticos direito e esquerdo, sem lesão parenquimatosa hepática associada. Qual é o diagnóstico mais provável?',
     options: [
       'Tumor de Klatskin (colangiocarcinoma hilar)',
-      'Câncer de cabeça de pâncreas',
-      'Coledocolitíase isolada',
-      'Cisto de colédoco'
+      'Câncer de cabeça de pâncreas (adenocarcinoma ductal)',
+      'Coledocolitíase isolada, sem massa tumoral associada',
+      'Cisto de colédoco, sem massa tumoral associada'
     ],
     correctIndex: 0,
     explanation: 'Massa na confluência dos ductos hepáticos, causando icterícia obstrutiva, é característica do tumor de Klatskin, colangiocarcinoma de localização hilar.'
@@ -592,9 +592,9 @@ export const SIRIOLIBANES_GERADO_2026_QUESTIONS: any[] = [
     text: 'Paciente no 6º dia de pós-operatório de colectomia apresenta dor abdominal em piora, febre e saída de secreção fecaloide pela incisão. Qual é a hipótese diagnóstica e a conduta inicial?',
     options: [
       'Deiscência de anastomose; tomografia para avaliar extensão e considerar reoperação conforme gravidade',
-      'Infecção de sítio cirúrgico superficial isolada; apenas curativo local',
-      'Íleo pós-operatório simples; apenas observação, sem investigação',
-      'Alergia a fio de sutura; anti-histamínico isolado'
+      'Infecção de sítio cirúrgico superficial isolada; apenas curativo local, sem necessidade de tomografia',
+      'Íleo pós-operatório simples; apenas observação clínica, sem necessidade de investigação por imagem',
+      'Alergia a fio de sutura; uso isolado de anti-histamínico, sem necessidade de investigação adicional'
     ],
     correctIndex: 0,
     explanation: 'Saída de secreção fecaloide pela incisão associada a febre e piora clínica sugere deiscência de anastomose, exigindo investigação por imagem e reoperação conforme gravidade e sinais de peritonite.'
@@ -607,9 +607,9 @@ export const SIRIOLIBANES_GERADO_2026_QUESTIONS: any[] = [
     text: 'Paciente no 8º dia de pós-operatório de cirurgia abdominal apresenta febre persistente, dor em hipocôndrio associada a soluço e tomografia mostrando coleção líquida subdiafragmática. Qual é a conduta?',
     options: [
       'Drenagem percutânea guiada por imagem associada a antibioticoterapia',
-      'Apenas antibioticoterapia isolada, sem drenagem',
-      'Reoperação ampla imediata como primeira escolha',
-      'Observação clínica sem qualquer intervenção'
+      'Apenas antibioticoterapia isolada, sem necessidade de drenagem da coleção',
+      'Reoperação ampla imediata como primeira escolha, sem tentativa de drenagem percutânea',
+      'Observação clínica isolada, sem qualquer intervenção sobre a coleção subdiafragmática'
     ],
     correctIndex: 0,
     explanation: 'Abscesso subfrênico pós-operatório é geralmente tratado com drenagem percutânea guiada por imagem associada a antibioticoterapia, reservando reoperação para casos não acessíveis ou refratários.'
@@ -622,9 +622,9 @@ export const SIRIOLIBANES_GERADO_2026_QUESTIONS: any[] = [
     text: 'Vítima de trauma abdominal contuso apresenta dor em andar superior do abdome e amilase elevada, tomografia sugere lesão pancreática com possível transecção ductal. Qual é a conduta mais apropriada?',
     options: [
       'Avaliação cirúrgica especializada para definir ressecção conforme integridade ductal',
-      'Apenas observação clínica isolada, independente da integridade ductal',
-      'Antibioticoterapia isolada, sem avaliação cirúrgica',
-      'Alta hospitalar sem investigação adicional'
+      'Apenas observação clínica isolada, independentemente da integridade do ducto pancreático',
+      'Antibioticoterapia isolada, sem necessidade de avaliação cirúrgica especializada',
+      'Alta hospitalar sem investigação adicional, mesmo com suspeita de lesão ductal'
     ],
     correctIndex: 0,
     explanation: 'Trauma pancreático com suspeita de lesão ductal exige avaliação cirúrgica especializada, já que a conduta (conservadora versus ressecção) depende da integridade do ducto pancreático principal.'
@@ -682,9 +682,9 @@ export const SIRIOLIBANES_GERADO_2026_QUESTIONS: any[] = [
     text: 'Paciente apresenta nódulo tireoidiano com citologia indeterminada (Bethesda III) em punção aspirativa. Qual é a conduta mais apropriada?',
     options: [
       'Repetir a punção ou considerar teste molecular complementar antes de decidir sobre cirurgia',
-      'Tireoidectomia total imediata, sem qualquer investigação adicional',
-      'Observação isolada por 5 anos, sem nova investigação',
-      'Radioterapia isolada, sem punção adicional'
+      'Tireoidectomia total imediata, sem repetir a punção ou considerar teste molecular',
+      'Observação isolada por 5 anos, sem repetir a punção ou considerar nova investigação',
+      'Radioterapia isolada, sem punção adicional ou avaliação cirúrgica complementar'
     ],
     correctIndex: 0,
     explanation: 'Citologia indeterminada (Bethesda III) exige nova punção ou teste molecular complementar antes de definir conduta cirúrgica, evitando cirurgia desnecessária ou observação inadequada.'
@@ -803,9 +803,9 @@ export const SIRIOLIBANES_GERADO_2026_QUESTIONS: any[] = [
     text: 'Recém-nascido com diagnóstico de síndrome de Down é avaliado na maternidade. Qual é a investigação obrigatória a ser realizada antes da alta, independente de sopro cardíaco ao exame físico?',
     options: [
       'Ecocardiograma, pela alta prevalência de cardiopatia congênita associada mesmo sem sopro audível',
-      'Nenhuma investigação cardíaca é necessária na ausência de sopro',
-      'Apenas radiografia de tórax, sem ecocardiograma',
-      'Cateterismo cardíaco de rotina em todos os casos'
+      'Nenhuma investigação cardíaca é necessária na ausência de sopro audível ao exame físico',
+      'Apenas radiografia de tórax, sem necessidade de ecocardiograma antes da alta hospitalar',
+      'Cateterismo cardíaco de rotina em todos os casos, independente de sopro ou sintomas'
     ],
     correctIndex: 0,
     explanation: 'Na síndrome de Down, o ecocardiograma é recomendado rotineiramente mesmo sem sopro audível, pela alta prevalência de cardiopatias congênitas associadas.'
@@ -818,9 +818,9 @@ export const SIRIOLIBANES_GERADO_2026_QUESTIONS: any[] = [
     text: 'Recém-nascido apresenta fenda labial e palatina diagnosticada ainda na maternidade. Qual é a principal dificuldade inicial a ser abordada pela equipe multiprofissional?',
     options: [
       'Dificuldade de sucção/alimentação, exigindo adaptações e acompanhamento multiprofissional precoce',
-      'Necessidade de cirurgia corretiva imediata nas primeiras 24 horas de vida',
-      'Contraindicação absoluta ao aleitamento materno em qualquer circunstância',
-      'Nenhuma intervenção é necessária antes da adolescência'
+      'Necessidade de cirurgia corretiva imediata nas primeiras 24 horas de vida, antes de qualquer alimentação',
+      'Contraindicação absoluta ao aleitamento materno em qualquer circunstância, mesmo com adaptações',
+      'Nenhuma intervenção é necessária antes da adolescência, mesmo com dificuldade alimentar presente'
     ],
     correctIndex: 0,
     explanation: 'Fenda labiopalatina frequentemente dificulta a sucção e alimentação do recém-nascido, exigindo adaptações (bicos especiais, técnicas de posicionamento) e acompanhamento multiprofissional precoce antes da correção cirúrgica definitiva.'
@@ -893,9 +893,9 @@ export const SIRIOLIBANES_GERADO_2026_QUESTIONS: any[] = [
     text: 'Recém-nascido apresenta inclinação lateral persistente da cabeça, com massa fibrosa palpável no músculo esternocleidomastóideo. Qual é o diagnóstico e o tratamento inicial?',
     options: [
       'Torcicolo muscular congênito; fisioterapia com alongamento, iniciada precocemente',
-      'Torcicolo espasmódico; toxina botulínica imediata em recém-nascido',
-      'Tumor cervical maligno; biópsia excisional de urgência',
-      'Luxação cervical congênita; imobilização rígida prolongada'
+      'Torcicolo espasmódico; aplicação de toxina botulínica imediata em recém-nascido',
+      'Tumor cervical maligno; biópsia excisional de urgência, sem tentativa de fisioterapia',
+      'Luxação cervical congênita; imobilização rígida prolongada, sem indicação de fisioterapia'
     ],
     correctIndex: 0,
     explanation: 'Torcicolo muscular congênito, com massa fibrosa no esternocleidomastóideo, responde bem à fisioterapia com alongamento iniciada precocemente, reservando cirurgia para casos refratários.'
@@ -923,9 +923,9 @@ export const SIRIOLIBANES_GERADO_2026_QUESTIONS: any[] = [
     text: 'Criança de 2 anos, não rastreada previamente, apresenta claudicação e assimetria de pregas cutâneas em membros inferiores. Radiografia confirma displasia do desenvolvimento do quadril não tratada. Qual é a conduta considerando a idade tardia do diagnóstico?',
     options: [
       'Avaliação ortopédica especializada, já que o tratamento nessa idade tardia frequentemente exige redução cirúrgica',
-      'Apenas observação clínica, sem qualquer intervenção nessa idade',
-      'Uso isolado de suspensório de Pavlik, como em recém-nascidos',
-      'Amputação preventiva do membro'
+      'Apenas observação clínica, sem qualquer intervenção, já que o quadro tenderia à resolução espontânea',
+      'Uso isolado de suspensório de Pavlik, como se fosse recém-nascido, sem avaliação ortopédica',
+      'Amputação preventiva do membro acometido, independentemente do grau de displasia encontrado'
     ],
     correctIndex: 0,
     explanation: 'Diagnóstico tardio de displasia do quadril geralmente exige abordagem ortopédica mais complexa, frequentemente incluindo redução cirúrgica, diferente do tratamento com suspensório usado em diagnósticos precoces.'
@@ -983,9 +983,9 @@ export const SIRIOLIBANES_GERADO_2026_QUESTIONS: any[] = [
     text: 'Criança de 2 anos é trazida ao PS após ingestão acidental de grande quantidade de comprimidos de ferro encontrados em casa. Qual é a conduta inicial mais apropriada?',
     options: [
       'Avaliação de gravidade, dosagem de ferro sérico e considerar quelante (deferoxamina) conforme gravidade',
-      'Indução de vômito com xarope de ipeca em casa antes de qualquer avaliação médica',
-      'Observação domiciliar isolada, sem avaliação médica',
-      'Carvão ativado, já que é eficaz para intoxicação por ferro'
+      'Indução de vômito com xarope de ipeca em casa, antes de qualquer avaliação médica hospitalar',
+      'Observação domiciliar isolada, sem avaliação médica ou dosagem do ferro sérico',
+      'Carvão ativado, já que seria eficaz para adsorver o ferro ingerido em grande quantidade'
     ],
     correctIndex: 0,
     explanation: 'Intoxicação por ferro exige avaliação de gravidade e dosagem sérica, considerando quelante específico (deferoxamina) em casos graves; o carvão ativado não é eficaz para ferro, e a indução de vômito em casa não é recomendada.'
@@ -1029,9 +1029,9 @@ export const SIRIOLIBANES_GERADO_2026_QUESTIONS: any[] = [
     text: 'Recém-nascida apresenta genitália ambígua, com hiperpigmentação e desidratação grave na primeira semana de vida. Qual é a hipótese diagnóstica mais provável e a conduta emergencial?',
     options: [
       'Hiperplasia adrenal congênita; reposição de corticoide e correção hidroeletrolítica de urgência',
-      'Síndrome de insensibilidade androgênica; observação isolada, sem urgência',
-      'Disgenesia gonadal mista; cirurgia genital imediata sem avaliação hormonal',
-      'Hermafroditismo verdadeiro; apenas acompanhamento ambulatorial'
+      'Síndrome de insensibilidade androgênica; observação isolada, sem urgência hidroeletrolítica',
+      'Disgenesia gonadal mista; cirurgia genital imediata, sem avaliação hormonal prévia',
+      'Hermafroditismo verdadeiro; apenas acompanhamento ambulatorial, sem urgência clínica'
     ],
     correctIndex: 0,
     explanation: 'A forma perdedora de sal da hiperplasia adrenal congênita causa crise adrenal com desidratação grave, exigindo reposição de corticoide e correção hidroeletrolítica de urgência, além de investigação da genitália ambígua.'
@@ -1059,9 +1059,9 @@ export const SIRIOLIBANES_GERADO_2026_QUESTIONS: any[] = [
     text: 'Mulher idosa apresenta lesão ulcerada pruriginosa em vulva há meses, biópsia confirma carcinoma epidermoide vulvar. Qual é a conduta inicial mais apropriada?',
     options: [
       'Estadiamento e avaliação cirúrgica especializada conforme extensão da lesão',
-      'Quimioterapia isolada sem avaliação cirúrgica',
-      'Apenas corticoide tópico, sem tratamento oncológico',
-      'Observação clínica sem qualquer intervenção'
+      'Quimioterapia isolada, sem estadiamento ou avaliação cirúrgica especializada',
+      'Apenas corticoide tópico, sem estadiamento ou tratamento oncológico especializado',
+      'Observação clínica isolada, sem estadiamento ou qualquer intervenção oncológica'
     ],
     correctIndex: 0,
     explanation: 'Câncer de vulva confirmado exige estadiamento e avaliação cirúrgica especializada para definir a extensão do tratamento (vulvectomia parcial ou radical, linfadenectomia).'
@@ -1104,9 +1104,9 @@ export const SIRIOLIBANES_GERADO_2026_QUESTIONS: any[] = [
     text: 'Mulher, 55 anos, refere perda involuntária de urina aos esforços (tosse, espirro), sem urgência miccional associada. Qual é o diagnóstico e o tratamento inicial mais apropriado?',
     options: [
       'Incontinência urinária de esforço; fisioterapia do assoalho pélvico como primeira linha',
-      'Bexiga hiperativa; anticolinérgico como primeira linha',
-      'Infecção urinária crônica; antibiótico contínuo',
-      'Fístula vesicovaginal; cirurgia imediata sem tentativa conservadora'
+      'Bexiga hiperativa; uso de anticolinérgico como primeira linha de tratamento',
+      'Infecção urinária crônica; antibiótico contínuo como primeira linha de tratamento',
+      'Fístula vesicovaginal; indicação de cirurgia imediata, sem tentativa conservadora prévia'
     ],
     correctIndex: 0,
     explanation: 'Perda urinária aos esforços sem urgência associada caracteriza incontinência urinária de esforço, cujo tratamento inicial é a fisioterapia do assoalho pélvico.'
@@ -1194,9 +1194,9 @@ export const SIRIOLIBANES_GERADO_2026_QUESTIONS: any[] = [
     text: 'Gestante apresenta índice de líquido amniótico muito elevado (polidrâmnio importante) em ultrassom de rotina. Qual é uma das principais causas a serem investigadas?',
     options: [
       'Diabetes gestacional e malformações fetais (obstrutivas do trato digestivo, entre outras)',
-      'Rotura prematura de membranas isolada, sem outra investigação',
-      'Insuficiência placentária isolada, sem relação com polidrâmnio',
-      'Hipertensão gestacional isolada, sem relação com o volume de líquido'
+      'Rotura prematura de membranas isolada, sem necessidade de outra investigação complementar',
+      'Insuficiência placentária isolada, sem qualquer relação com o polidrâmnio identificado',
+      'Hipertensão gestacional isolada, sem qualquer relação com o volume de líquido amniótico'
     ],
     correctIndex: 0,
     explanation: 'Polidrâmnio importante deve motivar investigação de diabetes gestacional e malformações fetais (como obstruções do trato digestivo), entre outras causas.'
@@ -1224,9 +1224,9 @@ export const SIRIOLIBANES_GERADO_2026_QUESTIONS: any[] = [
     text: 'Gestação gemelar dicoriônica diamniótica de 10 semanas evolui com perda espontânea de um dos sacos gestacionais, sem sangramento significativo, mantendo-se o outro feto viável. Qual é o termo utilizado para esse fenômeno e a conduta em relação ao feto remanescente?',
     options: [
       'Síndrome do gêmeo evanescente; manter acompanhamento pré-natal do feto viável remanescente',
-      'Óbito fetal duplo; interrupção da gestação restante',
-      'Mola parcial; esvaziamento uterino imediato, mesmo com feto viável',
-      'Aborto retido completo; curetagem obrigatória imediata'
+      'Óbito fetal duplo; indicação de interrupção da gestação restante, sem outra conduta',
+      'Mola parcial; esvaziamento uterino imediato, mesmo com feto remanescente viável',
+      'Aborto retido completo; curetagem obrigatória imediata do conteúdo uterino'
     ],
     correctIndex: 0,
     explanation: 'A perda espontânea precoce de um dos fetos em gestação múltipla, com reabsorção do saco gestacional, é chamada síndrome do gêmeo evanescente; o acompanhamento pré-natal do feto remanescente viável deve continuar normalmente.'
@@ -1239,9 +1239,9 @@ export const SIRIOLIBANES_GERADO_2026_QUESTIONS: any[] = [
     text: 'Gestante com duas cesarianas prévias apresenta ultrassom mostrando placenta prévia recobrindo totalmente o orifício interno, com sinais sugestivos de invasão miometrial (perda da linha hipoecoica retroplacentária, lacunas vasculares). Qual é a hipótese diagnóstica e a relevância para o planejamento do parto?',
     options: [
       'Placenta acreta (espectro do acretismo placentário); planejamento multiprofissional para o parto em centro de referência, pelo risco de hemorragia grave',
-      'Placenta prévia simples sem acretismo; parto vaginal pode ser tentado normalmente',
-      'Descolamento prematuro de placenta; interrupção imediata sem planejamento multiprofissional',
-      'Corioangioma placentário; sem relevância para a via de parto'
+      'Placenta prévia simples, sem sinais de acretismo; parto vaginal pode ser tentado normalmente, sem necessidade de centro de referência',
+      'Descolamento prematuro de placenta; interrupção imediata da gestação, sem necessidade de planejamento multiprofissional prévio',
+      'Corioangioma placentário; achado sem relevância para a via de parto ou necessidade de planejamento multiprofissional'
     ],
     correctIndex: 0,
     explanation: 'Sinais ultrassonográficos de invasão miometrial em gestante com cesarianas prévias e placenta prévia sugerem espectro do acretismo placentário, condição de altíssimo risco hemorrágico que exige planejamento multiprofissional em centro de referência.'
@@ -1254,9 +1254,9 @@ export const SIRIOLIBANES_GERADO_2026_QUESTIONS: any[] = [
     text: 'Gestante de 22 semanas apresenta rotura espontânea de membranas, idade gestacional considerada pré-viável. Qual é a abordagem mais apropriada, considerando a discussão com a família?',
     options: [
       'Discussão individualizada e multiprofissional sobre conduta expectante versus interrupção, dados os riscos maternos e o prognóstico neonatal extremamente reservado nessa idade gestacional',
-      'Indução do parto obrigatória imediatamente, sem qualquer discussão com a família',
-      'Conduta expectante obrigatória até 37 semanas, independente de sinais de infecção',
-      'Cesariana de urgência imediata, independente da idade gestacional'
+      'Indução do parto obrigatória imediatamente após o diagnóstico, sem qualquer discussão individualizada com a família sobre riscos e prognóstico',
+      'Conduta expectante obrigatória até 37 semanas em qualquer situação clínica, independentemente de sinais de infecção, sofrimento materno ou desejo da família quanto à interrupção',
+      'Cesariana de urgência imediata após o diagnóstico, independentemente da idade gestacional, do prognóstico neonatal esperado ou da discussão prévia com a família'
     ],
     correctIndex: 0,
     explanation: 'Rotura de membranas em idade pré-viável exige discussão individualizada e multiprofissional com a família sobre riscos maternos (infecção, sepse) e prognóstico neonatal extremamente reservado, ponderando conduta expectante ou interrupção.'
@@ -1300,9 +1300,9 @@ export const SIRIOLIBANES_GERADO_2026_QUESTIONS: any[] = [
     text: 'Paciente é atendido em pronto-socorro após picada de serpente com sinais de envenenamento moderado (edema progressivo, dor importante). Qual é a conduta imediata mais importante além do soro específico?',
     options: [
       'Notificação compulsória do acidente e observação da evolução do envenenamento',
-      'Torniquete apertado no membro afetado como primeira medida',
-      'Sucção da ferida para remover o veneno',
-      'Incisão local no ponto da picada'
+      'Torniquete apertado no membro afetado como primeira medida, antes do soro específico',
+      'Sucção da ferida para tentar remover o veneno, antes de qualquer soro específico',
+      'Incisão local no ponto da picada para facilitar a drenagem do veneno inoculado'
     ],
     correctIndex: 0,
     explanation: 'Acidentes com animais peçonhentos são de notificação compulsória; medidas como torniquete, sucção e incisão local são contraindicadas, sendo o soroterapia específica e a observação clínica as condutas corretas.'
@@ -1330,9 +1330,9 @@ export const SIRIOLIBANES_GERADO_2026_QUESTIONS: any[] = [
     text: 'Criança apresenta paralisia flácida aguda de início súbito em membro inferior. Qual é a conduta obrigatória em relação à vigilância epidemiológica, no contexto da erradicação da poliomielite?',
     options: [
       'Notificação compulsória imediata como caso suspeito de paralisia flácida aguda, com coleta de amostras',
-      'Nenhuma notificação é necessária se a criança estiver vacinada',
-      'Notificação apenas após confirmação laboratorial de poliovírus',
-      'Observação clínica isolada, sem notificação'
+      'Nenhuma notificação é necessária se a criança estiver com esquema vacinal completo',
+      'Notificação apenas após confirmação laboratorial de poliovírus, sem caráter de urgência',
+      'Observação clínica isolada, sem notificação nem coleta de amostras para investigação'
     ],
     correctIndex: 0,
     explanation: 'Todo caso de paralisia flácida aguda em menores de 15 anos deve ser notificado compulsória e imediatamente, com coleta de amostras, como parte da vigilância para manutenção da erradicação da poliomielite.'
@@ -1345,9 +1345,9 @@ export const SIRIOLIBANES_GERADO_2026_QUESTIONS: any[] = [
     text: 'Paciente apresenta febre, mialgia intensa, icterícia e hemorragia conjuntival, com história de contato com água de enchente. Qual é a hipótese diagnóstica e a conduta em relação à notificação?',
     options: [
       'Leptospirose; notificação compulsória e tratamento com antibiótico específico',
-      'Dengue; apenas hidratação, sem notificação obrigatória',
-      'Hepatite A; isolamento domiciliar sem notificação',
-      'Malária; apenas gota espessa, sem notificação'
+      'Dengue; apenas hidratação e antitérmico, sem necessidade de notificação obrigatória',
+      'Hepatite A; isolamento domiciliar isolado, sem necessidade de notificação compulsória',
+      'Malária; apenas solicitação de gota espessa, sem necessidade de notificação compulsória'
     ],
     correctIndex: 0,
     explanation: 'Febre, mialgia intensa, icterícia e sufusão hemorrágica conjuntival após contato com água de enchente sugerem leptospirose, doença de notificação compulsória tratada com antibioticoterapia específica.'
@@ -1360,9 +1360,9 @@ export const SIRIOLIBANES_GERADO_2026_QUESTIONS: any[] = [
     text: 'Médico diagnostica caso novo de hanseníase multibacilar. Qual é a conduta obrigatória em relação aos contatos domiciliares?',
     options: [
       'Notificação compulsória do caso e exame dermatoneurológico dos contatos domiciliares',
-      'Nenhuma conduta adicional além do tratamento do paciente índice',
-      'Isolamento domiciliar obrigatório do paciente por tempo indeterminado',
-      'Notificação apenas se houver deformidade física visível'
+      'Nenhuma conduta adicional é necessária além do tratamento medicamentoso do paciente índice',
+      'Isolamento domiciliar obrigatório do paciente por tempo indeterminado, sem exame dos contatos',
+      'Notificação apenas se houver deformidade física visível nos contatos domiciliares examinados'
     ],
     correctIndex: 0,
     explanation: 'Hanseníase é doença de notificação compulsória; contatos domiciliares devem ser examinados e orientados, além de vacinação com BCG quando indicado.'
@@ -1375,9 +1375,9 @@ export const SIRIOLIBANES_GERADO_2026_QUESTIONS: any[] = [
     text: 'Trabalhador de fábrica exposto a ruído intenso por anos apresenta perda auditiva neurossensorial bilateral progressiva. Qual é a classificação e a conduta em relação à notificação?',
     options: [
       'Perda auditiva induzida por ruído ocupacional (PAIR); notificação como doença relacionada ao trabalho',
-      'Presbiacusia isolada; nenhuma notificação necessária',
-      'Otosclerose; apenas tratamento cirúrgico, sem notificação',
-      'Doença de Ménière; apenas dieta hipossódica, sem notificação'
+      'Presbiacusia isolada relacionada à idade; nenhuma notificação como doença ocupacional é necessária',
+      'Otosclerose; indicação de tratamento cirúrgico isolado, sem notificação como doença ocupacional',
+      'Doença de Ménière; apenas dieta hipossódica isolada, sem notificação como doença ocupacional'
     ],
     correctIndex: 0,
     explanation: 'Perda auditiva relacionada à exposição ocupacional crônica a ruído (PAIR) deve ser notificada como doença relacionada ao trabalho, com medidas de proteção auditiva e afastamento quando indicado.'
@@ -1465,9 +1465,9 @@ export const SIRIOLIBANES_GERADO_2026_QUESTIONS: any[] = [
     text: 'Trabalhador de linha de produção industrial apresenta dermatite de contato recorrente relacionada a substância química manuseada no trabalho. Qual é a conduta em relação à notificação?',
     options: [
       'Notificação como doença relacionada ao trabalho, com investigação das condições de exposição',
-      'Nenhuma notificação é necessária para dermatite de contato',
-      'Notificação apenas se houver afastamento superior a 30 dias',
-      'Comunicação exclusiva ao empregador, sem notificação ao sistema de saúde'
+      'Nenhuma notificação é necessária para dermatite de contato, mesmo com exposição ocupacional',
+      'Notificação apenas se houver afastamento superior a 30 dias, independentemente da exposição',
+      'Comunicação exclusiva ao empregador, sem notificação formal ao sistema de saúde'
     ],
     correctIndex: 0,
     explanation: 'Dermatites de contato relacionadas à exposição ocupacional devem ser notificadas como doença relacionada ao trabalho, com investigação das condições de exposição para prevenção de novos casos.'
@@ -1495,9 +1495,9 @@ export const SIRIOLIBANES_GERADO_2026_QUESTIONS: any[] = [
     text: 'Paciente planeja viagem internacional para país com transmissão ativa de febre amarela. Qual é a orientação apropriada quanto à vacinação?',
     options: [
       'Vacinação contra febre amarela com antecedência mínima recomendada antes da viagem, conforme situação vacinal prévia',
-      'Nenhuma vacinação é necessária, independentemente do destino',
-      'Vacinação no aeroporto, no momento do embarque, sem antecedência',
-      'Vacinação contraindicada para qualquer viajante adulto'
+      'Nenhuma vacinação é necessária, independentemente do destino ou da situação vacinal prévia',
+      'Vacinação no aeroporto, no momento do embarque, sem qualquer antecedência mínima recomendada',
+      'Vacinação contraindicada para qualquer viajante adulto, independentemente da situação vacinal'
     ],
     correctIndex: 0,
     explanation: 'Viajantes para áreas com transmissão ativa de febre amarela devem ser orientados a vacinar-se com antecedência mínima recomendada, garantindo tempo adequado para desenvolvimento de imunidade.'

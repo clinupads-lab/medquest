@@ -12,10 +12,10 @@ export const USP_GERADO_2026_QUESTIONS: any[] = [
     text: 'Paciente de 68 anos, hipertenso, apresenta dispneia súbita, ortopneia e estertores crepitantes bilaterais difusos. PA 210x120 mmHg, saturação 84% em ar ambiente. Radiografia mostra infiltrado alveolar bilateral em asa de borboleta. Qual a conduta imediata prioritária?',
     options: [
       'Ventilação não invasiva, vasodilatador e diurético intravenoso para redução rápida da pós-carga e congestão',
-      'Reposição volêmica agressiva com cristaloide',
-      'Betabloqueador intravenoso em bolus como primeira medida',
-      'Antibioticoterapia empírica isolada, sem tratar a congestão',
-      'Observação clínica sem intervenção medicamentosa imediata'
+      'Reposição volêmica agressiva com cristaloide, priorizando o aumento da pré-carga antes de qualquer vasodilatador',
+      'Betabloqueador intravenoso em bolus, buscando apenas o controle isolado da frequência cardíaca elevada',
+      'Antibioticoterapia empírica isolada, sem qualquer tratamento da congestão pulmonar associada ao quadro',
+      'Observação clínica sem intervenção medicamentosa imediata, aguardando queda espontânea da pressão arterial'
     ],
     correctIndex: 0,
     explanation: 'No edema agudo de pulmão hipertensivo, a prioridade é reduzir rapidamente a pós-carga (vasodilatador) associada a diurético e suporte ventilatório não invasivo, evitando expansão volêmica.'
@@ -28,10 +28,10 @@ export const USP_GERADO_2026_QUESTIONS: any[] = [
     text: 'Paciente pós-IAM extenso de parede anterior evolui com hipotensão refratária a volume, extremidades frias e oligúria, mesmo após reperfusão. Qual o diagnóstico e a conduta farmacológica inicial?',
     options: [
       'Choque cardiogênico; inotrópico (dobutamina) associado a suporte hemodinâmico',
-      'Choque hipovolêmico; expansão volêmica agressiva contínua',
-      'Choque distributivo; apenas vasopressor sem inotrópico',
-      'Choque obstrutivo; anticoagulação plena isolada',
-      'Choque neurogênico; atropina isolada'
+      'Choque hipovolêmico; expansão volêmica agressiva contínua, sem necessidade de suporte inotrópico',
+      'Choque distributivo; vasopressor isolado, sem associação a inotrópico ou suporte adicional',
+      'Choque obstrutivo; anticoagulação plena isolada, sem investigar causa mecânica associada',
+      'Choque neurogênico; atropina isolada, sem necessidade de suporte hemodinâmico adicional'
     ],
     correctIndex: 0,
     explanation: 'Choque cardiogênico pós-IAM, com sinais de baixo débito e extremidades frias, é tratado com suporte inotrópico para melhorar a contratilidade, associado a monitorização hemodinâmica.'
@@ -76,10 +76,10 @@ export const USP_GERADO_2026_QUESTIONS: any[] = [
     text: 'Paciente apresenta dispneia súbita intensa e edema agudo de pulmão. Ausculta revela sopro holossistólico novo em foco mitral com irradiação axilar. Ecocardiograma mostra folheto mitral flácido com refluxo importante. Contexto de IAM recente inferior. Qual a complicação mecânica mais provável?',
     options: [
       'Rotura de músculo papilar com insuficiência mitral aguda',
-      'Comunicação interventricular pós-infarto',
-      'Rotura de parede livre do ventrículo',
-      'Aneurisma ventricular crônico',
-      'Trombo mural ventricular'
+      'Comunicação interventricular pós-infarto, com sopro holossistólico em borda esternal',
+      'Rotura de parede livre do ventrículo, geralmente com tamponamento cardíaco fatal',
+      'Aneurisma ventricular crônico, sem sopro valvar agudo associado ao quadro',
+      'Trombo mural ventricular, sem sopro valvar agudo relacionado ao evento'
     ],
     correctIndex: 0,
     explanation: 'Sopro mitral agudo novo com edema pulmonar após IAM inferior sugere rotura de músculo papilar, complicação mecânica grave que exige correção cirúrgica de urgência.'
@@ -92,10 +92,10 @@ export const USP_GERADO_2026_QUESTIONS: any[] = [
     text: 'Paciente jovem apresenta dor torácica pleurítica que piora ao deitar e melhora ao inclinar-se para frente, após quadro gripal recente. ECG mostra supradesnivelamento difuso do segmento ST com concavidade para cima. Qual o diagnóstico e a conduta?',
     options: [
       'Pericardite aguda; anti-inflamatório não esteroidal em altas doses associado a colchicina',
-      'IAM com supra de ST; trombólise imediata',
-      'Dissecção de aorta; cirurgia de urgência',
-      'Embolia pulmonar maciça; anticoagulação plena',
-      'Angina instável; dupla antiagregação isolada'
+      'IAM com supra de ST; trombólise imediata, sem investigar dor postural nem quadro viral prévio',
+      'Dissecção de aorta; cirurgia de urgência, apesar da ausência de dor irradiada e assimetria de pulsos',
+      'Embolia pulmonar maciça; anticoagulação plena, mesmo sem fatores de risco ou dispneia súbita associada',
+      'Angina instável; dupla antiagregação isolada, sem considerar o padrão difuso do supradesnível'
     ],
     correctIndex: 0,
     explanation: 'Dor pleurítica postural após infecção viral com supra de ST difuso côncavo é típica de pericardite aguda, tratada com anti-inflamatório associado a colchicina para reduzir recorrência.'
@@ -156,10 +156,10 @@ export const USP_GERADO_2026_QUESTIONS: any[] = [
     text: 'Paciente crítico em sepse grave evolui com hipoxemia refratária, infiltrado bilateral difuso e relação PaO2/FiO2 de 120, sem sinais de sobrecarga hídrica cardiogênica. Qual o diagnóstico e a estratégia ventilatória protetora indicada?',
     options: [
       'SARA moderada; ventilação com baixo volume corrente (cerca de 6 mL/kg de peso predito)',
-      'Edema cardiogênico; diurético isolado como tratamento respiratório',
-      'Pneumonia simples; antibiótico isolado, sem ajuste ventilatório',
-      'TEP maciço; trombólise imediata',
-      'Atelectasia simples; apenas fisioterapia respiratória'
+      'Edema cardiogênico; diurético isolado como tratamento respiratório, sem necessidade de ventilação protetora',
+      'Pneumonia simples; antibiótico isolado, sem qualquer ajuste da estratégia ventilatória protetora',
+      'TEP maciço; trombólise imediata, sem relação com a relação PaO2/FiO2 reduzida apresentada',
+      'Atelectasia simples; apenas fisioterapia respiratória, sem necessidade de ventilação protetora'
     ],
     correctIndex: 0,
     explanation: 'Relação PaO2/FiO2 entre 100-200 com infiltrado bilateral não cardiogênico define SARA moderada; a ventilação protetora com baixo volume corrente reduz lesão pulmonar induzida pela ventilação.'
@@ -204,10 +204,10 @@ export const USP_GERADO_2026_QUESTIONS: any[] = [
     text: 'Paciente em uso crônico de corticoide suspende a medicação abruptamente e desenvolve hipotensão refratária, náuseas, dor abdominal e hiponatremia com hipercalemia. Qual o diagnóstico e a conduta imediata?',
     options: [
       'Insuficiência adrenal aguda; hidrocortisona intravenosa e reposição volêmica',
-      'Choque séptico; apenas antibiótico de amplo espectro',
-      'Crise tireotóxica; tionamida isolada',
-      'Cetoacidose diabética; insulina isolada',
-      'Intoxicação digitálica; anticorpo antidigoxina'
+      'Choque séptico; apenas antibiótico de amplo espectro, sem repor corticoide mesmo após suspensão abrupta',
+      'Crise tireotóxica; tionamida isolada, sem relação com a suspensão do corticoide crônico',
+      'Cetoacidose diabética; insulina isolada, sem explicar a hipotensão refratária ao volume',
+      'Intoxicação digitálica; anticorpo antidigoxina, sem relação com o uso crônico de corticoide'
     ],
     correctIndex: 0,
     explanation: 'Suspensão abrupta de corticoide crônico pode causar insuficiência adrenal aguda, com hipotensão refratária e distúrbio eletrolítico característico, tratada com hidrocortisona intravenosa e hidratação.'
@@ -252,10 +252,10 @@ export const USP_GERADO_2026_QUESTIONS: any[] = [
     text: 'Paciente apresenta constipação, fadiga, poliúria leve e cálculo renal recorrente. Cálcio sérico elevado, PTH elevado inapropriadamente. Qual o diagnóstico mais provável e a conduta definitiva quando indicada?',
     options: [
       'Hiperparatireoidismo primário; paratireoidectomia nos casos com critérios de tratamento cirúrgico',
-      'Hipoparatireoidismo; reposição de cálcio isolada',
-      'Intoxicação por vitamina D; apenas suspensão de suplementos',
-      'Mieloma múltiplo; quimioterapia isolada sem avaliar paratireoides',
-      'Sarcoidose; corticoide isolado sem investigar PTH'
+      'Hipoparatireoidismo; reposição de cálcio isolada, incompatível com o PTH elevado apresentado',
+      'Intoxicação por vitamina D; apenas suspensão de suplementos, sem justificar o PTH elevado',
+      'Mieloma múltiplo; quimioterapia isolada sem avaliar paratireoides, ignorando o PTH elevado',
+      'Sarcoidose; corticoide isolado sem investigar PTH, apesar do quadro compatível com hipercalcemia'
     ],
     correctIndex: 0,
     explanation: 'Hipercalcemia com PTH elevado ou inapropriadamente normal confirma hiperparatireoidismo primário; a paratireoidectomia é indicada em pacientes sintomáticos ou com critérios específicos.'
@@ -284,10 +284,10 @@ export const USP_GERADO_2026_QUESTIONS: any[] = [
     text: 'Paciente apresenta fadiga, sangramentos gengivais e petéquias. Hemograma mostra pancitopenia com blastos circulantes. Mielograma confirma mais de 20% de blastos mieloides. Qual o diagnóstico e a urgência de manejo de uma possível complicação hemorrágica grave?',
     options: [
       'Leucemia mieloide aguda; atenção especial ao subtipo promielocítico pelo risco de coagulopatia grave',
-      'Leucemia linfocítica crônica; observação sem urgência',
-      'Anemia aplásica; apenas suporte transfusional, sem investigação adicional',
-      'Mielofibrose primária; esplenectomia como primeira conduta',
-      'Linfoma não Hodgkin; radioterapia isolada imediata'
+      'Leucemia linfocítica crônica; observação sem urgência, incompatível com blastose e pancitopenia',
+      'Anemia aplásica; apenas suporte transfusional, sem investigação adicional, apesar de blastos circulantes',
+      'Mielofibrose primária; esplenectomia como primeira conduta, sem relação com o quadro hemorrágico agudo',
+      'Linfoma não Hodgkin; radioterapia isolada imediata, sem justificativa pelos blastos no mielograma'
     ],
     correctIndex: 0,
     explanation: 'Leucemia mieloide aguda, especialmente o subtipo promielocítico, cursa com risco de coagulação intravascular disseminada grave, exigindo reconhecimento e manejo hemostático precoce.'
@@ -332,10 +332,10 @@ export const USP_GERADO_2026_QUESTIONS: any[] = [
     text: 'Paciente apresenta sinusite crônica, hemoptise e insuficiência renal rapidamente progressiva. ANCA-c positivo com padrão anti-proteinase 3. Qual o diagnóstico mais provável?',
     options: [
       'Granulomatose com poliangiite (antiga granulomatose de Wegener)',
-      'Lúpus eritematoso sistêmico',
-      'Síndrome de Goodpasture isolada sem ANCA',
-      'Poliarterite nodosa clássica',
-      'Arterite de Takayasu'
+      'Lúpus eritematoso sistêmico, geralmente associado a FAN positivo e sem relação com ANCA-c',
+      'Síndrome de Goodpasture isolada sem ANCA, com acometimento predominantemente pulmonar e renal',
+      'Poliarterite nodosa clássica, tipicamente sem acometimento de vias aéreas superiores',
+      'Arterite de Takayasu, com acometimento predominante de grandes vasos em mulheres jovens'
     ],
     correctIndex: 0,
     explanation: 'O acometimento de vias respiratórias superiores, pulmão e rim associado a ANCA-c/anti-PR3 positivo é característico da granulomatose com poliangiite.'
@@ -364,10 +364,10 @@ export const USP_GERADO_2026_QUESTIONS: any[] = [
     text: 'Paciente idosa apresenta cefaleia temporal, claudicação mandibular e VHS muito elevado. Refere também dor e rigidez em cintura escapular. Qual o diagnóstico mais provável e a principal complicação a ser prevenida com tratamento imediato?',
     options: [
       'Arterite de células gigantes associada à polimialgia reumática; cegueira por neuropatia óptica isquêmica',
-      'Enxaqueca crônica; sem risco de complicação grave',
-      'Cefaleia tensional; apenas analgesia comum',
-      'Neuralgia do trigêmeo; carbamazepina isolada',
-      'Sinusite crônica; antibiótico isolado'
+      'Enxaqueca crônica; sem risco de complicação grave, incompatível com claudicação mandibular e VHS elevado',
+      'Cefaleia tensional; apenas analgesia comum, sem relação com rigidez de cintura escapular',
+      'Neuralgia do trigêmeo; carbamazepina isolada, sem explicar claudicação mandibular e VHS elevado',
+      'Sinusite crônica; antibiótico isolado, sem justificar a dor em cintura escapular associada'
     ],
     correctIndex: 0,
     explanation: 'Cefaleia temporal, claudicação mandibular e VHS elevado em idosa com polimialgia associada sugerem arterite de células gigantes; corticoide deve ser iniciado prontamente para prevenir cegueira irreversível.'
@@ -446,10 +446,10 @@ export const USP_GERADO_2026_QUESTIONS: any[] = [
     text: 'Paciente idoso, constipado crônico, apresenta distensão abdominal maciça e dor em cólica. Radiografia simples de abdome mostra alça em formato de "grão de café" no quadrante inferior esquerdo. Qual o diagnóstico e a conduta inicial?',
     options: [
       'Volvo de sigmoide; descompressão endoscópica quando sem sinais de sofrimento',
-      'Câncer colorretal obstrutivo; quimioterapia isolada',
-      'Diverticulite aguda; apenas antibiótico oral',
-      'Pseudo-obstrução colônica aguda; colonoscopia contraindicada',
-      'Íleo paralítico simples; apenas jejum e observação'
+      'Câncer colorretal obstrutivo; quimioterapia isolada, sem relação com o sinal do grão de café',
+      'Diverticulite aguda; apenas antibiótico oral, sem explicar a distensão maciça observada',
+      'Pseudo-obstrução colônica aguda; colonoscopia contraindicada mesmo diante de sinal radiológico típico',
+      'Íleo paralítico simples; apenas jejum e observação, sem investigar a alça em grão de café'
     ],
     correctIndex: 0,
     explanation: 'O sinal radiológico do "grão de café" em quadrante inferior esquerdo é clássico do volvo de sigmoide; sem sinais de sofrimento de alça, a descompressão endoscópica é a conduta inicial.'
@@ -462,10 +462,10 @@ export const USP_GERADO_2026_QUESTIONS: any[] = [
     text: 'Paciente com retocolite ulcerativa grave apresenta distensão abdominal importante, febre alta e toxemia, com dilatação colônica maior que 6 cm à radiografia. Qual o diagnóstico e a conduta?',
     options: [
       'Megacólon tóxico; suporte intensivo com avaliação cirúrgica precoce se sem melhora',
-      'Constipação intestinal simples; laxante isolado',
-      'Apendicite aguda; apendicectomia',
-      'Colite isquêmica leve; apenas hidratação oral',
-      'Síndrome do intestino irritável; antiespasmódico isolado'
+      'Constipação intestinal simples; laxante isolado, sem explicar toxemia e dilatação colônica',
+      'Apendicite aguda; apendicectomia, sem relação com a dilatação colônica e retocolite prévia',
+      'Colite isquêmica leve; apenas hidratação oral, sem justificar a toxemia e febre alta',
+      'Síndrome do intestino irritável; antiespasmódico isolado, incompatível com dilatação de 6 cm'
     ],
     correctIndex: 0,
     explanation: 'Dilatação colônica importante com toxemia sistêmica em paciente com colite grave caracteriza megacólon tóxico, emergência que exige suporte intensivo e avaliação cirúrgica precoce.'
@@ -510,10 +510,10 @@ export const USP_GERADO_2026_QUESTIONS: any[] = [
     text: 'Paciente com perda de peso, saciedade precoce e anemia ferropriva é investigado. Endoscopia digestiva alta revela lesão ulcerada infiltrativa em antro gástrico, biópsia confirma adenocarcinoma. Qual a próxima etapa antes de definir a cirurgia?',
     options: [
       'Estadiamento com tomografia de tórax e abdome, e eventual ultrassonografia endoscópica',
-      'Gastrectomia total imediata sem qualquer estadiamento',
-      'Quimioterapia isolada sem avaliação cirúrgica',
-      'Apenas seguimento clínico sem intervenção',
-      'Radioterapia exclusiva como tratamento definitivo'
+      'Gastrectomia total imediata sem qualquer estadiamento prévio da extensão da doença',
+      'Quimioterapia isolada sem avaliação cirúrgica, ignorando a possibilidade de ressecção',
+      'Apenas seguimento clínico sem intervenção, mesmo diante de biópsia confirmando adenocarcinoma',
+      'Radioterapia exclusiva como tratamento definitivo, sem estadiamento ou avaliação cirúrgica'
     ],
     correctIndex: 0,
     explanation: 'Após confirmação histológica de câncer gástrico, o estadiamento correto é essencial para definir a extensão da doença e a estratégia cirúrgica ou neoadjuvante mais adequada.'
@@ -558,10 +558,10 @@ export const USP_GERADO_2026_QUESTIONS: any[] = [
     text: 'Paciente apresenta icterícia indolor progressiva, colúria, acolia fecal e perda de peso. Tomografia mostra massa em cabeça de pâncreas com dilatação de vias biliares. Qual a conduta inicial de investigação antes do planejamento terapêutico?',
     options: [
       'Avaliação da ressecabilidade por imagem detalhada e biópsia/marcadores conforme protocolo',
-      'Cirurgia de Whipple imediata sem qualquer estadiamento',
-      'Quimioterapia isolada sem avaliação de ressecabilidade',
-      'Apenas observação clínica sem investigação adicional',
-      'Colocação de prótese biliar como único tratamento definitivo'
+      'Cirurgia de Whipple imediata sem qualquer estadiamento prévio da extensão tumoral',
+      'Quimioterapia isolada sem avaliação de ressecabilidade, antes de qualquer estadiamento',
+      'Apenas observação clínica sem investigação adicional, apesar da massa pancreática identificada',
+      'Colocação de prótese biliar como único tratamento definitivo, sem avaliar ressecabilidade'
     ],
     correctIndex: 0,
     explanation: 'Diante de suspeita de câncer de pâncreas, avaliar a ressecabilidade por imagem detalhada é essencial antes de definir se o paciente é candidato à cirurgia de Whipple ou a tratamento neoadjuvante.'
@@ -575,9 +575,9 @@ export const USP_GERADO_2026_QUESTIONS: any[] = [
     options: [
       'Investigação adicional com ressonância/ultrassom endoscópico e considerar ressecção cirúrgica conforme critérios de risco',
       'Observação isolada sem qualquer investigação adicional, independentemente das características',
-      'Drenagem percutânea simples como tratamento definitivo',
-      'Quimioterapia isolada sem avaliação cirúrgica',
-      'Apenas repetir exame de imagem em 5 anos'
+      'Drenagem percutânea simples como tratamento definitivo, sem investigar septos ou componente sólido',
+      'Quimioterapia isolada sem avaliação cirúrgica, mesmo diante de lesão cística com septos suspeitos',
+      'Apenas repetir exame de imagem em 5 anos, sem investigar a comunicação ductal e componente sólido'
     ],
     correctIndex: 0,
     explanation: 'Neoplasias císticas pancreáticas com características suspeitas (septos, componente sólido, comunicação ductal) exigem investigação adicional detalhada e avaliação de ressecção conforme critérios de risco de malignidade.'
@@ -590,10 +590,10 @@ export const USP_GERADO_2026_QUESTIONS: any[] = [
     text: 'Criança ingeriu substância cáustica acidentalmente. Após estabilização inicial, desenvolve disfagia progressiva semanas depois. Esofagografia mostra estenose longa do esôfago médio. Qual a conduta terapêutica inicial?',
     options: [
       'Dilatações esofágicas seriadas, com cirurgia reservada para casos refratários',
-      'Esofagectomia imediata como primeira conduta',
-      'Apenas dieta líquida prolongada, sem qualquer intervenção',
-      'Gastrostomia isolada como tratamento definitivo da estenose',
-      'Observação clínica sem qualquer intervenção'
+      'Esofagectomia imediata como primeira conduta, sem tentativa prévia de dilatação esofágica',
+      'Apenas dieta líquida prolongada, sem qualquer intervenção sobre a estenose esofágica',
+      'Gastrostomia isolada como tratamento definitivo da estenose, sem dilatações esofágicas',
+      'Observação clínica sem qualquer intervenção, mesmo com disfagia progressiva e estenose longa'
     ],
     correctIndex: 0,
     explanation: 'Estenoses esofágicas cáusticas são inicialmente tratadas com dilatações seriadas, reservando cirurgia (como esofagectomia com reconstrução) para estenoses refratárias.'
@@ -670,10 +670,10 @@ export const USP_GERADO_2026_QUESTIONS: any[] = [
     text: 'Vítima de acidente com máquina industrial sofre amputação traumática parcial de dedos da mão. Qual a conduta imediata com o segmento amputado para viabilizar possível reimplante?',
     options: [
       'Envolver em gaze limpa umedecida, colocar em saco plástico e este dentro de outro recipiente com gelo, evitando contato direto',
-      'Colocar o segmento diretamente em contato com gelo, sem qualquer proteção',
-      'Lavar o segmento com álcool e deixar em temperatura ambiente',
-      'Descartar o segmento se o transporte demorar mais de 30 minutos',
-      'Congelar o segmento diretamente no freezer'
+      'Colocar o segmento diretamente em contato com gelo, sem qualquer proteção, arriscando lesão térmica adicional ao tecido',
+      'Lavar o segmento com álcool e deixar em temperatura ambiente, sem qualquer refrigeração ou proteção adequada',
+      'Descartar o segmento se o transporte demorar mais de 30 minutos, sem tentar viabilizar o reimplante',
+      'Congelar o segmento diretamente no freezer, o que causa lesão celular irreversível ao tecido amputado'
     ],
     correctIndex: 0,
     explanation: 'O segmento amputado deve ser protegido em gaze limpa e umedecida, acondicionado em saco plástico e resfriado indiretamente (sem contato direto com gelo), maximizando a viabilidade para reimplante.'
@@ -686,10 +686,10 @@ export const USP_GERADO_2026_QUESTIONS: any[] = [
     text: 'Paciente com litíase biliar recorrente apresenta icterícia flutuante, colúria e dor em hipocôndrio direito, com dilatação de via biliar comum à ultrassonografia. Qual a conduta mais apropriada para o cálculo coledociano antes da colecistectomia?',
     options: [
       'Colangiopancreatografia retrógrada endoscópica (CPRE) para retirada do cálculo, seguida de colecistectomia',
-      'Colecistectomia isolada sem qualquer abordagem da via biliar',
-      'Apenas antibioticoterapia prolongada, sem remover o cálculo',
-      'Observação clínica isolada sem qualquer intervenção',
-      'Hepatectomia parcial como tratamento do cálculo coledociano'
+      'Colecistectomia isolada sem qualquer abordagem da via biliar, mantendo o cálculo coledociano',
+      'Apenas antibioticoterapia prolongada, sem remover o cálculo coledociano nem tratar a colelitíase',
+      'Observação clínica isolada sem qualquer intervenção, apesar da icterícia flutuante e dilatação biliar',
+      'Hepatectomia parcial como tratamento do cálculo coledociano, procedimento desproporcional ao caso'
     ],
     correctIndex: 0,
     explanation: 'Coledocolitíase associada à colelitíase é tratada com CPRE para retirada do cálculo da via biliar principal, seguida de colecistectomia para tratamento definitivo da vesícula.'
@@ -702,10 +702,10 @@ export const USP_GERADO_2026_QUESTIONS: any[] = [
     text: 'Paciente jovem apresenta massa testicular indolor de crescimento progressivo, sem sinais inflamatórios. Ultrassom confirma lesão sólida intratesticular. Qual a conduta inicial mais apropriada?',
     options: [
       'Orquiectomia radical inguinal para diagnóstico e tratamento, evitando biópsia transescrotal',
-      'Biópsia transescrotal diagnóstica como primeira conduta',
-      'Apenas observação clínica por 6 meses antes de qualquer intervenção',
-      'Antibioticoterapia empírica prolongada, sem avaliação cirúrgica',
-      'Quimioterapia empírica sem confirmação histológica'
+      'Biópsia transescrotal diagnóstica como primeira conduta, com risco de disseminação tumoral local',
+      'Apenas observação clínica por 6 meses antes de qualquer intervenção, retardando o diagnóstico',
+      'Antibioticoterapia empírica prolongada, sem avaliação cirúrgica, mesmo sem sinais inflamatórios',
+      'Quimioterapia empírica sem confirmação histológica, antes de qualquer abordagem cirúrgica'
     ],
     correctIndex: 0,
     explanation: 'Massa testicular sólida suspeita de neoplasia deve ser abordada por orquiectomia radical via inguinal, evitando biópsia transescrotal pelo risco de disseminação tumoral pela via linfática alterada.'
@@ -718,10 +718,10 @@ export const USP_GERADO_2026_QUESTIONS: any[] = [
     text: 'Paciente apresenta dor lombar em cólica intensa, hematúria microscópica e náuseas. Tomografia sem contraste confirma cálculo ureteral de 4 mm no terço distal, sem sinais de infecção. Qual a conduta inicial?',
     options: [
       'Tratamento conservador com analgesia, hidratação e terapia expulsiva medicamentosa',
-      'Nefrolitotomia percutânea imediata para cálculo dessa dimensão',
-      'Ureterolitotomia aberta como primeira escolha',
-      'Nefrectomia como tratamento definitivo',
-      'Apenas observação sem qualquer analgesia ou terapia expulsiva'
+      'Nefrolitotomia percutânea imediata para cálculo dessa dimensão, procedimento desproporcional ao caso',
+      'Ureterolitotomia aberta como primeira escolha, abordagem invasiva desnecessária para esse cálculo',
+      'Nefrectomia como tratamento definitivo, conduta desproporcional para um cálculo ureteral pequeno',
+      'Apenas observação sem qualquer analgesia ou terapia expulsiva, negligenciando o alívio da dor'
     ],
     correctIndex: 0,
     explanation: 'Cálculos ureterais pequenos, sem sinais de infecção ou obstrução grave, podem ser tratados conservadoramente com analgesia, hidratação e terapia expulsiva medicamentosa, com boa taxa de eliminação espontânea.'
@@ -736,10 +736,10 @@ export const USP_GERADO_2026_QUESTIONS: any[] = [
     text: 'Criança de 2 anos apresenta tosse metálica, estridor inspiratório e rouquidão após quadro catarral, piorando à noite. Sem sinais de toxemia importante. Qual o diagnóstico mais provável e a conduta inicial?',
     options: [
       'Laringotraqueíte viral aguda (crupe); corticoide e, se necessário, adrenalina inalatória',
-      'Epiglotite aguda; intubação imediata obrigatória em todos os casos',
-      'Corpo estranho de via aérea; broncoscopia de urgência',
-      'Traqueíte bacteriana; antibiótico isolado, sem corticoide',
-      'Asma brônquica; broncodilatador isolado, sem corticoide'
+      'Epiglotite aguda; intubação imediata obrigatória em todos os casos, mesmo sem toxemia importante',
+      'Corpo estranho de via aérea; broncoscopia de urgência, sem relação com pródromo catarral',
+      'Traqueíte bacteriana; antibiótico isolado, sem corticoide, apesar do quadro viral leve',
+      'Asma brônquica; broncodilatador isolado, sem corticoide, incompatível com estridor e rouquidão'
     ],
     correctIndex: 0,
     explanation: 'Tosse metálica, estridor e rouquidão de início gradual após catarro são clássicos de crupe viral, tratado com corticoide sistêmico e adrenalina inalatória em casos moderados a graves.'
@@ -753,9 +753,9 @@ export const USP_GERADO_2026_QUESTIONS: any[] = [
     options: [
       'Manter a criança calma e proceder à via aérea avançada em ambiente controlado; evitar exame de orofaringe com espátula',
       'Examinar a orofaringe com espátula para confirmar o diagnóstico antes de qualquer conduta',
-      'Aguardar radiografia cervical antes de qualquer intervenção na via aérea',
-      'Nebulização isolada sem preparo para via aérea avançada',
-      'Alta com antitérmico e retorno se piora'
+      'Aguardar radiografia cervical antes de qualquer intervenção na via aérea, mesmo com toxemia importante',
+      'Nebulização isolada sem preparo para via aérea avançada, apesar do estridor progressivo',
+      'Alta com antitérmico e retorno se piora, sem reconhecer sinais de obstrução grave da via aérea'
     ],
     correctIndex: 0,
     explanation: 'Na suspeita de epiglotite aguda, deve-se evitar manipular a orofaringe (risco de laringoespasmo total) e priorizar via aérea avançada em ambiente controlado, mantendo a criança calma.'
@@ -784,10 +784,10 @@ export const USP_GERADO_2026_QUESTIONS: any[] = [
     text: 'Recém-nascido pré-termo de 32 semanas apresenta desconforto respiratório progressivo logo após o nascimento, com gemência, tiragem e radiografia mostrando padrão reticulogranular difuso com broncogramas aéreos. Qual o diagnóstico e a conduta?',
     options: [
       'Síndrome do desconforto respiratório do recém-nascido (deficiência de surfactante); surfactante exógeno e suporte ventilatório',
-      'Taquipneia transitória do recém-nascido; apenas observação sem surfactante',
-      'Pneumonia congênita; antibiótico isolado, sem surfactante',
-      'Hérnia diafragmática congênita; cirurgia imediata sem suporte ventilatório prévio',
-      'Cardiopatia congênita cianótica; prostaglandina isolada'
+      'Taquipneia transitória do recém-nascido; apenas observação sem surfactante, incompatível com o padrão reticulogranular',
+      'Pneumonia congênita; antibiótico isolado, sem surfactante, apesar do padrão radiológico difuso típico',
+      'Hérnia diafragmática congênita; cirurgia imediata sem suporte ventilatório prévio, sem achado de abdome escavado',
+      'Cardiopatia congênita cianótica; prostaglandina isolada, sem explicar o padrão radiológico apresentado'
     ],
     correctIndex: 0,
     explanation: 'Prematuridade com desconforto respiratório progressivo e padrão reticulogranular com broncogramas aéreos é característico da síndrome do desconforto respiratório por deficiência de surfactante, tratada com reposição de surfactante exógeno.'
@@ -800,10 +800,10 @@ export const USP_GERADO_2026_QUESTIONS: any[] = [
     text: 'Recém-nascido a termo, parto cesáreo eletivo, apresenta taquipneia leve nas primeiras horas de vida, sem outros sinais de gravidade, com radiografia mostrando líquido em cisuras. Qual o diagnóstico mais provável e a conduta?',
     options: [
       'Taquipneia transitória do recém-nascido; suporte de oxigênio e observação, com resolução em até 72 horas',
-      'Síndrome do desconforto respiratório; surfactante exógeno imediato',
-      'Pneumonia congênita grave; antibioticoterapia prolongada obrigatória',
-      'Cardiopatia congênita; cateterismo cardíaco imediato',
-      'Hipertensão pulmonar persistente; óxido nítrico inalatório imediato'
+      'Síndrome do desconforto respiratório; surfactante exógeno imediato, incomum em recém-nascido a termo',
+      'Pneumonia congênita grave; antibioticoterapia prolongada obrigatória, sem sinais de gravidade ou infecção',
+      'Cardiopatia congênita; cateterismo cardíaco imediato, sem sinais de cianose ou sopro associado',
+      'Hipertensão pulmonar persistente; óxido nítrico inalatório imediato, sem quadro grave associado'
     ],
     correctIndex: 0,
     explanation: 'Taquipneia leve e autolimitada após cesárea eletiva, com líquido em cisuras na radiografia, é típica da taquipneia transitória do recém-nascido, com resolução espontânea em poucos dias.'
@@ -864,10 +864,10 @@ export const USP_GERADO_2026_QUESTIONS: any[] = [
     text: 'Criança de 8 anos, 2 semanas após faringoamigdalite não tratada, apresenta poliartrite migratória, cardite e nódulos subcutâneos. Qual o diagnóstico mais provável e a conduta terapêutica principal?',
     options: [
       'Febre reumática; penicilina benzatina e anti-inflamatório, com profilaxia secundária prolongada',
-      'Artrite reumatoide juvenil; metotrexato isolado, sem antibiótico',
-      'Lúpus eritematoso sistêmico; corticoide isolado, sem profilaxia antibiótica',
-      'Doença de Kawasaki; imunoglobulina isolada, sem penicilina',
-      'Artrite séptica; drenagem cirúrgica isolada'
+      'Artrite reumatoide juvenil; metotrexato isolado, sem antibiótico, incompatível com faringite prévia',
+      'Lúpus eritematoso sistêmico; corticoide isolado, sem profilaxia antibiótica para o quadro pós-estreptocócico',
+      'Doença de Kawasaki; imunoglobulina isolada, sem penicilina, incompatível com poliartrite migratória',
+      'Artrite séptica; drenagem cirúrgica isolada, sem explicar cardite e nódulos subcutâneos associados'
     ],
     correctIndex: 0,
     explanation: 'Poliartrite migratória, cardite e nódulos subcutâneos após faringite estreptocócica não tratada confirmam febre reumática, exigindo tratamento da infecção residual e profilaxia secundária prolongada para prevenir recorrências e dano valvar.'
@@ -880,10 +880,10 @@ export const USP_GERADO_2026_QUESTIONS: any[] = [
     text: 'Criança de 6 anos apresenta edema periorbitário, hematúria macroscópica (urina "cor de coca-cola") e hipertensão arterial, 10 dias após faringite. Complemento C3 baixo. Qual o diagnóstico mais provável e a conduta?',
     options: [
       'Glomerulonefrite difusa aguda pós-estreptocócica; suporte clínico, controle da pressão arterial e do volume',
-      'Síndrome nefrótica de lesão mínima; corticoterapia isolada',
-      'Síndrome hemolítico-urêmica; plasmaférese imediata',
-      'Púrpura de Henoch-Schönlein; anti-histamínico isolado',
-      'Pielonefrite aguda; antibiótico isolado, sem controle pressórico'
+      'Síndrome nefrótica de lesão mínima; corticoterapia isolada, incompatível com hematúria macroscópica e C3 baixo',
+      'Síndrome hemolítico-urêmica; plasmaférese imediata, sem relação típica com faringite recente',
+      'Púrpura de Henoch-Schönlein; anti-histamínico isolado, sem explicar o complemento C3 baixo',
+      'Pielonefrite aguda; antibiótico isolado, sem controle pressórico, incompatível com C3 baixo'
     ],
     correctIndex: 0,
     explanation: 'Hematúria, edema, hipertensão e hipocomplementenemia após faringite são clássicos da glomerulonefrite pós-estreptocócica, geralmente autolimitada, com tratamento de suporte e controle da pressão arterial e volemia.'
@@ -912,10 +912,10 @@ export const USP_GERADO_2026_QUESTIONS: any[] = [
     text: 'Criança apresenta infecções urinárias febris de repetição. Cistografia miccional confirma refluxo do contraste até a pelve renal com dilatação ureteral. Qual o grau de refluxo vesicoureteral mais provável e a conduta inicial?',
     options: [
       'Refluxo de alto grau; considerar profilaxia antibiótica e acompanhamento especializado, com cirurgia em casos selecionados',
-      'Refluxo grau I; cirurgia imediata obrigatória',
-      'Ausência de refluxo; nenhuma conduta necessária',
-      'Refluxo fisiológico do lactente; alta sem seguimento',
-      'Válvula de uretra posterior; circuncisão como tratamento definitivo'
+      'Refluxo grau I; cirurgia imediata obrigatória, desproporcional para um grau leve de refluxo',
+      'Ausência de refluxo; nenhuma conduta necessária, incompatível com a dilatação pielocalicinal descrita',
+      'Refluxo fisiológico do lactente; alta sem seguimento, apesar da dilatação ureteral identificada',
+      'Válvula de uretra posterior; circuncisão como tratamento definitivo, sem relação com o achado ureteral'
     ],
     correctIndex: 0,
     explanation: 'Refluxo vesicoureteral de alto grau, com dilatação e risco de dano renal, exige acompanhamento especializado, considerando profilaxia antibiótica e intervenção cirúrgica em casos selecionados.'
@@ -976,10 +976,10 @@ export const USP_GERADO_2026_QUESTIONS: any[] = [
     text: 'Criança com história de asfixia perinatal grave apresenta atraso no desenvolvimento motor, espasticidade e alteração de tônus muscular não progressiva. Qual o diagnóstico mais provável e a base do manejo?',
     options: [
       'Paralisia cerebral; abordagem multiprofissional com fisioterapia, terapia ocupacional e fonoaudiologia',
-      'Distrofia muscular progressiva; apenas corticoide isolado',
-      'Doença metabólica degenerativa; apenas dieta especial, sem reabilitação',
-      'Meningite bacteriana em fase aguda; antibioticoterapia isolada',
-      'Convulsão febril simples; anticonvulsivante contínuo isolado'
+      'Distrofia muscular progressiva; apenas corticoide isolado, incompatível com quadro não progressivo',
+      'Doença metabólica degenerativa; apenas dieta especial, sem reabilitação, incompatível com quadro estático',
+      'Meningite bacteriana em fase aguda; antibioticoterapia isolada, sem relação com asfixia perinatal prévia',
+      'Convulsão febril simples; anticonvulsivante contínuo isolado, sem explicar a espasticidade crônica'
     ],
     correctIndex: 0,
     explanation: 'Lesão cerebral não progressiva associada a asfixia perinatal, com espasticidade e atraso motor, caracteriza paralisia cerebral, cujo manejo é multiprofissional e voltado à reabilitação funcional.'
@@ -992,10 +992,10 @@ export const USP_GERADO_2026_QUESTIONS: any[] = [
     text: 'Criança de 4 anos apresenta febre, cefaleia, vômitos e rigidez de nuca leve, com bom estado geral entre os episódios. Líquor mostra pleocitose linfocitária, glicose normal e proteína discretamente elevada. Qual a hipótese diagnóstica mais provável e a conduta?',
     options: [
       'Meningite viral; tratamento de suporte, sem necessidade de antibioticoterapia prolongada',
-      'Meningite bacteriana; antibioticoterapia prolongada obrigatória',
-      'Meningite tuberculosa; esquema RIPE imediato sem confirmação',
-      'Encefalite herpética; aciclovir contraindicado nesse quadro',
-      'Abscesso cerebral; drenagem cirúrgica de urgência'
+      'Meningite bacteriana; antibioticoterapia prolongada obrigatória, apesar da glicose liquórica normal',
+      'Meningite tuberculosa; esquema RIPE imediato sem confirmação, apesar do bom estado geral entre episódios',
+      'Encefalite herpética; aciclovir contraindicado nesse quadro, apesar de febre e alteração liquórica',
+      'Abscesso cerebral; drenagem cirúrgica de urgência, sem indicação por neuroimagem compatível'
     ],
     correctIndex: 0,
     explanation: 'Líquor com predomínio linfocitário, glicose normal e proteína pouco alterada, associado a bom estado geral, sugere meningite viral, tratada com suporte clínico, sem necessidade de antibioticoterapia prolongada.'
@@ -1008,10 +1008,10 @@ export const USP_GERADO_2026_QUESTIONS: any[] = [
     text: 'Criança de 2 anos apresenta febre, irritabilidade e choro, com otoscopia mostrando membrana timpânica abaulada, hiperemiada e opaca. Qual o diagnóstico e a conduta apropriada considerando a idade?',
     options: [
       'Otite média aguda; antibioticoterapia indicada pela idade menor que 2 anos com sintomas moderados a graves',
-      'Otite externa; antibiótico tópico isolado',
-      'Otite média serosa; apenas observação, sem antibiótico',
-      'Mastoidite aguda; cirurgia de urgência sem tentativa clínica',
-      'Colesteatoma; cirurgia eletiva isolada'
+      'Otite externa; antibiótico tópico isolado, incompatível com membrana timpânica abaulada e opaca',
+      'Otite média serosa; apenas observação, sem antibiótico, incompatível com hiperemia e abaulamento',
+      'Mastoidite aguda; cirurgia de urgência sem tentativa clínica, sem sinais de complicação mastóidea',
+      'Colesteatoma; cirurgia eletiva isolada, incompatível com quadro agudo febril de início recente'
     ],
     correctIndex: 0,
     explanation: 'Otite média aguda em crianças menores de 2 anos com sintomas moderados a graves tem indicação de antibioticoterapia, diferente de casos leves em crianças maiores que podem ser observados inicialmente.'
@@ -1058,10 +1058,10 @@ export const USP_GERADO_2026_QUESTIONS: any[] = [
     text: 'Gestante de 30 semanas apresenta altura uterina menor que o esperado para a idade gestacional. Ultrassom confirma peso fetal estimado abaixo do percentil 3, com Doppler de artéria umbilical alterado. Qual o diagnóstico e a conduta?',
     options: [
       'Restrição de crescimento fetal; vigilância intensiva com Doppler seriado e definição do momento do parto conforme gravidade',
-      'Variação normal da biometria fetal; alta sem seguimento adicional',
-      'Macrossomia fetal; conduta expectante sem monitorização adicional',
-      'Erro de datação gestacional; repetir ultrassom em 3 meses',
-      'Óbito fetal iminente; interrupção imediata independentemente da idade gestacional'
+      'Variação normal da biometria fetal; alta sem seguimento adicional, apesar do Doppler alterado',
+      'Macrossomia fetal; conduta expectante sem monitorização adicional, incompatível com peso abaixo do percentil 3',
+      'Erro de datação gestacional; repetir ultrassom em 3 meses, ignorando o Doppler umbilical alterado',
+      'Óbito fetal iminente; interrupção imediata independentemente da idade gestacional, sem vigilância prévia'
     ],
     correctIndex: 0,
     explanation: 'Peso fetal abaixo do percentil 3 com Doppler umbilical alterado confirma restrição de crescimento fetal de origem placentária, exigindo vigilância intensiva e definição individualizada do momento do parto.'
@@ -1074,10 +1074,10 @@ export const USP_GERADO_2026_QUESTIONS: any[] = [
     text: 'Gestação gemelar monocoriônica diamniótica de 22 semanas apresenta discrepância importante de líquido amniótico entre os sacos, com um feto em oligoidrâmnio e outro em polidrâmnio. Qual a hipótese diagnóstica e a conduta?',
     options: [
       'Síndrome da transfusão feto-fetal; encaminhamento para centro de referência em medicina fetal para avaliação de terapia a laser',
-      'Restrição de crescimento seletiva sem outra intervenção necessária',
-      'Gestação gemelar normal; apenas seguimento de rotina sem encaminhamento',
-      'Malformação fetal isolada; interrupção imediata da gestação',
-      'Anemia fetal isolada; transfusão intrauterina sem avaliação especializada'
+      'Restrição de crescimento seletiva sem outra intervenção necessária, ignorando a discrepância de líquido amniótico',
+      'Gestação gemelar normal; apenas seguimento de rotina sem encaminhamento, apesar da discrepância volumétrica',
+      'Malformação fetal isolada; interrupção imediata da gestação, sem relação com a monocorionicidade',
+      'Anemia fetal isolada; transfusão intrauterina sem avaliação especializada, sem confirmar Doppler de cerebral média'
     ],
     correctIndex: 0,
     explanation: 'Discrepância importante de líquido amniótico entre gemelares monocoriônicos sugere síndrome da transfusão feto-fetal, que exige encaminhamento a centro especializado para avaliação de terapia a laser das anastomoses placentárias.'
@@ -1090,10 +1090,10 @@ export const USP_GERADO_2026_QUESTIONS: any[] = [
     text: 'Gestante a termo em trabalho de parto apresenta feto em apresentação pélvica completa, confirmada por ultrassom, sem outras contraindicações. Qual conduta é considerada na definição da via de parto?',
     options: [
       'Avaliação individualizada por equipe experiente, podendo-se considerar parto vaginal em critérios específicos ou cesariana conforme protocolo do serviço',
-      'Cesariana obrigatória em absolutamente todos os casos, sem exceção',
-      'Parto vaginal obrigatório independentemente de qualquer critério',
-      'Versão cefálica externa contraindicada em qualquer situação',
-      'Indução do parto com ocitocina sem qualquer avaliação da apresentação'
+      'Cesariana obrigatória em absolutamente todos os casos de apresentação pélvica, sem exceção ou avaliação individualizada',
+      'Parto vaginal obrigatório independentemente de qualquer critério de seleção ou experiência da equipe assistente',
+      'Versão cefálica externa contraindicada em qualquer situação, mesmo antes do início do trabalho de parto',
+      'Indução do parto com ocitocina sem qualquer avaliação da apresentação fetal ou critérios de segurança'
     ],
     correctIndex: 0,
     explanation: 'A via de parto na apresentação pélvica depende de avaliação individualizada, experiência da equipe e protocolo institucional, podendo-se considerar tentativa de parto vaginal em casos selecionados.'
@@ -1122,10 +1122,10 @@ export const USP_GERADO_2026_QUESTIONS: any[] = [
     text: 'Gestante em trabalho de parto apresenta rotura espontânea de membranas seguida de desaceleração fetal grave e súbita. Ao exame, palpa-se estrutura pulsátil no canal vaginal. Qual o diagnóstico e a conduta imediata?',
     options: [
       'Prolapso de cordão umbilical; elevação da apresentação fetal manualmente e cesariana de urgência',
-      'Descolamento de placenta; apenas observação até resolução espontânea',
-      'Distócia de ombro; manobra de McRoberts isolada',
-      'Rotura uterina; expectante até estabilização espontânea',
-      'Vasa prévia sem repercussão; seguimento ambulatorial de rotina'
+      'Descolamento de placenta; apenas observação até resolução espontânea, sem relação com estrutura pulsátil',
+      'Distócia de ombro; manobra de McRoberts isolada, sem relação com rotura de membranas ou desaceleração',
+      'Rotura uterina; expectante até estabilização espontânea, incompatível com estrutura pulsátil ao exame',
+      'Vasa prévia sem repercussão; seguimento ambulatorial de rotina, apesar da desaceleração fetal grave'
     ],
     correctIndex: 0,
     explanation: 'Estrutura pulsátil no canal vaginal com desaceleração fetal grave após rotura de membranas caracteriza prolapso de cordão, emergência obstétrica que exige elevação manual da apresentação e cesariana imediata.'
@@ -1170,10 +1170,10 @@ export const USP_GERADO_2026_QUESTIONS: any[] = [
     text: 'Puérpera no 10º dia de pós-parto apresenta dor e edema unilateral em membro inferior, com sinal de Homans positivo. Qual a hipótese diagnóstica e a conduta?',
     options: [
       'Trombose venosa profunda puerperal; investigação por ultrassom Doppler e anticoagulação se confirmada',
-      'Erisipela; apenas antibiótico oral, sem investigação vascular',
-      'Linfedema pós-parto; apenas elevação do membro, sem investigação',
-      'Celulite superficial; antibiótico tópico isolado',
-      'Varizes fisiológicas da gestação; apenas meia elástica, sem outra investigação'
+      'Erisipela; apenas antibiótico oral, sem investigação vascular, apesar do sinal de Homans positivo',
+      'Linfedema pós-parto; apenas elevação do membro, sem investigação, ignorando risco tromboembólico puerperal',
+      'Celulite superficial; antibiótico tópico isolado, sem investigar risco trombótico associado ao puerpério',
+      'Varizes fisiológicas da gestação; apenas meia elástica, sem outra investigação do edema unilateral'
     ],
     correctIndex: 0,
     explanation: 'O puerpério é período de maior risco trombótico; dor e edema unilateral com sinal de Homans positivo exigem investigação por Doppler para TVP e anticoagulação se confirmada.'
@@ -1186,10 +1186,10 @@ export const USP_GERADO_2026_QUESTIONS: any[] = [
     text: 'Mulher de 55 anos, na pós-menopausa, apresenta sangramento vaginal e massa anexial complexa sólido-cística ao ultrassom, com CA-125 elevado. Qual a conduta mais apropriada?',
     options: [
       'Encaminhamento para avaliação oncológica e cirurgia estadiadora conforme suspeita de malignidade',
-      'Apenas seguimento ultrassonográfico anual, sem qualquer intervenção',
-      'Punção da massa anexial por via transvaginal como conduta inicial',
-      'Anticoncepcional hormonal combinado isolado como tratamento',
-      'Observação clínica isolada, sem qualquer investigação adicional'
+      'Apenas seguimento ultrassonográfico anual, sem qualquer intervenção, apesar do CA-125 elevado',
+      'Punção da massa anexial por via transvaginal como conduta inicial, com risco de disseminação tumoral',
+      'Anticoncepcional hormonal combinado isolado como tratamento, sem investigar a massa anexial complexa',
+      'Observação clínica isolada, sem qualquer investigação adicional, apesar do sangramento na pós-menopausa'
     ],
     correctIndex: 0,
     explanation: 'Massa anexial complexa na pós-menopausa com CA-125 elevado é altamente suspeita de malignidade ovariana, exigindo avaliação oncológica e cirurgia estadiadora apropriada.'
@@ -1218,10 +1218,10 @@ export const USP_GERADO_2026_QUESTIONS: any[] = [
     text: 'Mulher jovem apresenta atraso menstrual, náuseas intensas e sangramento vaginal com eliminação de vesículas em "cacho de uva". Beta-hCG muito elevado para a idade gestacional, ultrassom mostra padrão em "flocos de neve" sem embrião. Qual o diagnóstico e a conduta?',
     options: [
       'Mola hidatiforme completa; esvaziamento uterino e seguimento com beta-hCG seriado',
-      'Gravidez ectópica; laparoscopia de urgência',
-      'Abortamento incompleto; curetagem isolada, sem seguimento hormonal',
-      'Gravidez múltipla normal; apenas seguimento pré-natal de rotina',
-      'Corioamnionite; antibioticoterapia isolada, sem esvaziamento'
+      'Gravidez ectópica; laparoscopia de urgência, incompatível com padrão em flocos de neve ao ultrassom',
+      'Abortamento incompleto; curetagem isolada, sem seguimento hormonal, apesar do beta-hCG muito elevado',
+      'Gravidez múltipla normal; apenas seguimento pré-natal de rotina, ignorando a ausência de embrião',
+      'Corioamnionite; antibioticoterapia isolada, sem esvaziamento, sem explicar as vesículas eliminadas'
     ],
     correctIndex: 0,
     explanation: 'Vesículas em "cacho de uva", beta-hCG muito elevado e padrão em "flocos de neve" sem embrião confirmam mola hidatiforme completa, tratada com esvaziamento uterino e seguimento rigoroso do beta-hCG para detectar malignização.'
@@ -1266,10 +1266,10 @@ export const USP_GERADO_2026_QUESTIONS: any[] = [
     text: 'Gestante no primeiro trimestre apresenta vômitos incoercíveis, perda de peso maior que 5% e sinais de desidratação, sem resposta a antieméticos orais. Qual a conduta apropriada?',
     options: [
       'Internação hospitalar para hidratação venosa, correção de distúrbios eletrolíticos e antieméticos parenterais',
-      'Apenas orientação dietética ambulatorial, sem necessidade de internação',
-      'Interrupção da gestação como única conduta eficaz',
-      'Jejum absoluto prolongado sem qualquer reposição venosa',
-      'Alta com apenas antiemético oral, mesmo sem resposta prévia'
+      'Apenas orientação dietética ambulatorial, sem necessidade de internação, apesar da desidratação e perda de peso',
+      'Interrupção da gestação como única conduta eficaz, desproporcional a um quadro tratável clinicamente',
+      'Jejum absoluto prolongado sem qualquer reposição venosa, agravando o distúrbio eletrolítico',
+      'Alta com apenas antiemético oral, mesmo sem resposta prévia, sem corrigir a desidratação já instalada'
     ],
     correctIndex: 0,
     explanation: 'Hiperêmese gravídica com desidratação e perda de peso significativa exige internação para hidratação venosa, correção eletrolítica e antieméticos por via parenteral.'
@@ -1282,10 +1282,10 @@ export const USP_GERADO_2026_QUESTIONS: any[] = [
     text: 'Gestante no terceiro trimestre apresenta prurido generalizado intenso, predominando em palmas e plantas, sem lesões cutâneas primárias, com elevação de ácidos biliares séricos. Qual o diagnóstico e o principal risco fetal associado?',
     options: [
       'Colestase intra-hepática da gestação; risco de óbito fetal súbito, justificando antecipação do parto',
-      'Escabiose; tratamento tópico isolado, sem risco fetal aumentado',
-      'Dermatite atópica gestacional; corticoide tópico isolado, sem risco fetal',
-      'Herpes gestacional; aciclovir isolado, sem necessidade de antecipar o parto',
-      'Alergia alimentar; apenas dieta de exclusão, sem risco fetal'
+      'Escabiose; tratamento tópico isolado, sem risco fetal aumentado, incompatível com ácidos biliares elevados',
+      'Dermatite atópica gestacional; corticoide tópico isolado, sem risco fetal, apesar da elevação de ácidos biliares',
+      'Herpes gestacional; aciclovir isolado, sem necessidade de antecipar o parto, sem lesões vesiculares presentes',
+      'Alergia alimentar; apenas dieta de exclusão, sem risco fetal, sem justificar a elevação de ácidos biliares'
     ],
     correctIndex: 0,
     explanation: 'Prurido palmoplantar com ácidos biliares elevados no terceiro trimestre é característico de colestase intra-hepática da gestação, associada a risco de óbito fetal súbito, o que frequentemente justifica antecipação do parto.'
@@ -1380,10 +1380,10 @@ export const USP_GERADO_2026_QUESTIONS: any[] = [
     text: 'Profissional de saúde sofre acidente perfurocortante com material biológico de paciente com sorologia desconhecida durante procedimento hospitalar. Qual a conduta imediata mais apropriada?',
     options: [
       'Lavagem do local com água e sabão, notificação do acidente e avaliação para profilaxia pós-exposição conforme protocolo',
-      'Aplicar álcool concentrado diretamente no ferimento como primeira medida',
-      'Aguardar sintomas antes de notificar ou iniciar qualquer avaliação',
-      'Espremer o local intensamente para eliminar o material biológico',
-      'Notificar apenas se o paciente-fonte for confirmadamente soropositivo'
+      'Aplicar álcool concentrado diretamente no ferimento como primeira medida, substituindo a lavagem com água e sabão',
+      'Aguardar sintomas antes de notificar ou iniciar qualquer avaliação, atrasando a profilaxia pós-exposição',
+      'Espremer o local intensamente para eliminar o material biológico, prática sem respaldo e potencialmente lesiva',
+      'Notificar apenas se o paciente-fonte for confirmadamente soropositivo, ignorando o protocolo padrão'
     ],
     correctIndex: 0,
     explanation: 'Acidentes com material biológico exigem lavagem adequada do local, notificação compulsória do acidente de trabalho e avaliação para profilaxia pós-exposição conforme protocolo institucional.'
@@ -1508,10 +1508,10 @@ export const USP_GERADO_2026_QUESTIONS: any[] = [
     text: 'Médico é procurado pela polícia solicitando informações do prontuário de um paciente para investigação criminal, sem autorização judicial específica nem consentimento do paciente. Qual a conduta ética apropriada?',
     options: [
       'Recusar a quebra de sigilo sem autorização judicial ou consentimento, salvo exceções legais específicas',
-      'Fornecer todas as informações imediatamente, por se tratar de autoridade policial',
-      'Fornecer apenas informações administrativas, sem qualquer critério ético',
-      'Solicitar pagamento para liberar as informações do prontuário',
-      'Destruir o prontuário para evitar qualquer questionamento futuro'
+      'Fornecer todas as informações imediatamente, por se tratar de autoridade policial, sem exigir ordem judicial',
+      'Fornecer apenas informações administrativas, sem qualquer critério ético sobre o sigilo profissional',
+      'Solicitar pagamento para liberar as informações do prontuário, conduta antiética e ilegal',
+      'Destruir o prontuário para evitar qualquer questionamento futuro, violação grave da ética médica'
     ],
     correctIndex: 0,
     explanation: 'O sigilo médico deve ser mantido salvo exceções legais específicas (como justa causa, dever legal ou autorização do paciente/judicial), não bastando solicitação policial isolada sem base legal.'
@@ -1556,10 +1556,10 @@ export const USP_GERADO_2026_QUESTIONS: any[] = [
     text: 'Comunidade indígena busca atendimento de saúde respeitando suas práticas tradicionais, articulado com a rede do SUS. Qual estrutura organizacional do sistema de saúde brasileiro é responsável por essa articulação?',
     options: [
       'Subsistema de Atenção à Saúde Indígena, com os Distritos Sanitários Especiais Indígenas',
-      'Programa Saúde da Família convencional, sem estrutura específica',
-      'Vigilância sanitária estadual isolada',
-      'Rede de Atenção Psicossocial exclusivamente',
-      'Consórcio intermunicipal de saúde genérico'
+      'Programa Saúde da Família convencional, sem estrutura específica para populações indígenas',
+      'Vigilância sanitária estadual isolada, sem relação com a organização da atenção à saúde indígena',
+      'Rede de Atenção Psicossocial exclusivamente, sem articulação com práticas tradicionais indígenas',
+      'Consórcio intermunicipal de saúde genérico, sem estrutura dedicada às comunidades indígenas'
     ],
     correctIndex: 0,
     explanation: 'O Subsistema de Atenção à Saúde Indígena, organizado em Distritos Sanitários Especiais Indígenas, articula o cuidado respeitando práticas tradicionais junto à rede geral do SUS.'
@@ -1572,10 +1572,10 @@ export const USP_GERADO_2026_QUESTIONS: any[] = [
     text: 'Durante epidemia de Zika vírus, observa-se aumento de casos de microcefalia em recém-nascidos de gestantes infectadas no primeiro trimestre. Qual a principal medida de vigilância a ser reforçada diante desse cenário?',
     options: [
       'Vigilância de gestantes com exantema e notificação de casos de microcefalia associados à infecção congênita',
-      'Vacinação em massa contra Zika vírus, já disponível e amplamente utilizada',
-      'Isolamento hospitalar obrigatório de todas as gestantes da região',
-      'Suspensão do pré-natal de rotina até o fim da epidemia',
-      'Interrupção de toda gestação em área de transmissão ativa'
+      'Vacinação em massa contra Zika vírus, já disponível e amplamente utilizada, medida ainda inexistente na prática',
+      'Isolamento hospitalar obrigatório de todas as gestantes da região, medida desproporcional e sem eficácia comprovada',
+      'Suspensão do pré-natal de rotina até o fim da epidemia, o que prejudicaria a vigilância necessária',
+      'Interrupção de toda gestação em área de transmissão ativa, conduta sem respaldo ético ou técnico'
     ],
     correctIndex: 0,
     explanation: 'Diante do risco de síndrome congênita pelo Zika vírus, a vigilância de gestantes sintomáticas e a notificação de microcefalia são estratégias centrais, já que não há vacina disponível para essa arbovirose.'

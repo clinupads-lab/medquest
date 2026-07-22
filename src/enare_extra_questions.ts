@@ -15,11 +15,11 @@ export const ENARE_EXTRA_QUESTIONS: any[] = [
     subject: 'Clínica Médica',
     text: 'Um paciente de 55 anos, tabagista (40 maços-ano), apresenta-se com fadiga, perda ponderal de 8kg em 2 meses, tosse produtiva crônica e hemoptise esporádica. No exame laboratorial, observa-se hiponatremia persistente (Na: 122 mEq/L) com osmolalidade urinária elevada. O diagnóstico mais provável para essa síndrome paraneoplásica é:',
     options: [
-      'Carcinoma de células escamosas com secreção de PTHrp.',
+      'Carcinoma de células escamosas com secreção ectópica de PTHrp, geralmente associado a hipercalcemia e não a hiponatremia.',
       'Carcinoma pulmonar de pequenas células com Síndrome de Secreção Inapropriada de ADH (SIADH).',
-      'Adenocarcinoma pulmonar com secreção de ACTH ectópico.',
-      'Carcinoma de grandes células com produção de gonadotrofina.',
-      'Tumor carcinoide com crise carcinoide ativa.'
+      'Adenocarcinoma pulmonar com secreção ectópica de ACTH, cursando com quadro de Cushing e hipocalemia associada.',
+      'Carcinoma de grandes células com produção ectópica de gonadotrofina coriônica, associado a ginecomastia.',
+      'Tumor carcinoide brônquico com crise carcinoide ativa, cursando com rubor facial e diarreia secretora.'
     ],
     correctIndex: 1,
     explanation: 'O carcinoma de pequenas células de pulmão (mielocítico) é o tumor mais fortemente associado com a Síndrome de Secreção Inapropriada de ADH (SIADH), levando a hiponatremia hipoosmolar euvolêmica.'
@@ -47,11 +47,11 @@ export const ENARE_EXTRA_QUESTIONS: any[] = [
     subject: 'Clínica Médica',
     text: 'Uma paciente de 35 anos apresenta rash malar, fotossensibilidade, artrite não erosiva em mãos e proteinúria de 24h de 1.2 g. A biópsia renal revela nefrite lúpica classe IV (proliferativa difusa). O tratamento de indução inicial padrão envolve:',
     options: [
-      'Apenas hidroxicloroquina oral isolada.',
+      'Hidroxicloroquina oral isolada, sem associação com corticoide sistêmico ou imunossupressor citotóxico.',
       'Glicocorticoide sistêmico associado a micofenolato de mofetila ou ciclofosfamida endovenosa.',
       'Ciclosporina associada a anti-inflamatório não esteroidal de longa duração.',
-      'Metotrexato associado a pulsoterapia de metilprednisolona anual.',
-      'Plasmaférese diária por 3 meses sem imunossupressor.'
+      'Metotrexato oral associado a pulsoterapia de metilprednisolona realizada uma vez ao ano apenas.',
+      'Plasmaférese diária durante 3 meses consecutivos, sem associação de corticoide ou imunossupressor.'
     ],
     correctIndex: 1,
     explanation: 'Para a nefrite lúpica classe IV (proliferativa difusa), o tratamento de indução padrão estabelecido pelas diretrizes internacionais consiste em corticoides associados a micofenolato de mofetila (MMF) ou ciclofosfamida endovenosa.'
@@ -79,11 +79,11 @@ export const ENARE_EXTRA_QUESTIONS: any[] = [
     subject: 'Clínica Médica',
     text: 'Sobre a asma brônquica crônica, o uso de corticoide inalatório associado a formoterol como terapia de alívio e manutenção (estratégia SMART) tem como principal objetivo:',
     options: [
-      'Evitar a resistência bacteriana associada a infecções de vias aéreas.',
-      'Substituir completamente a necessidade de vacinação contra influenza.',
+      'Evitar a resistência bacteriana associada a infecções recorrentes de vias aéreas superiores e inferiores.',
+      'Substituir completamente a necessidade de vacinação anual contra influenza e outros vírus respiratórios.',
       'Reduzir significativamente o risco de exacerbações graves comparado ao uso isolado de SABA no alívio.',
-      'Prevenir a manifestação de diabetes mellitus secundário na infância.',
-      'Garantir a remissão completa e definitiva do fenótipo alérgico.'
+      'Prevenir a manifestação de diabetes mellitus secundário ao uso crônico de broncodilatadores na infância.',
+      'Garantir a remissão completa e definitiva do fenótipo alérgico e da hiper-responsividade brônquica.'
     ],
     correctIndex: 2,
     explanation: 'O tratamento com corticoide inalatório associado a formoterol (LABA de rápido início de ação) no alívio reduz drasticamente as exacerbações asmáticas graves em comparação ao uso isolado de broncodilatadores de curta ação (SABA).'
@@ -95,11 +95,11 @@ export const ENARE_EXTRA_QUESTIONS: any[] = [
     subject: 'Clínica Médica',
     text: 'Homem de 67 anos queixa-se de cansaço extremo e constipação. Exames laboratoriais revelam hemoglobina de 8.8 g/dL, cálcio sérico de 11.5 mg/dL, creatinina de 2.1 mg/dL e presença de pico monoclonal na eletroforese de proteínas sugerindo mieloma múltiplo. Qual exame é fundamental para confirmar o diagnóstico?',
     options: [
-      'Biópsia esplênica por agulha grossa.',
-      'Arteriografia renal bilateral com contraste.',
+      'Biópsia esplênica por agulha grossa guiada por ultrassonografia para investigação neoplásica.',
+      'Arteriografia renal bilateral com contraste, indicada para investigação de estenose de artéria renal.',
       'Mielograma ou biópsia de medula óssea demonstrando infiltração por plasmócitos ≥ 10%.',
-      'Ultrassonografia de vias biliares e pâncreas de alta resolução.',
-      'Dosagem seriada de amilase e lipase urinária nas 24h.'
+      'Ultrassonografia de vias biliares e pâncreas de alta resolução para afastar neoplasia biliopancreática.',
+      'Dosagem seriada de amilase e lipase urinária nas 24h para investigação de pancreatite associada.'
     ],
     correctIndex: 2,
     explanation: 'O Mieloma Múltiplo é caracterizado clinicamente por anemia, hipercalcemia, disfunção renal e lesões lóticas (mnemônico CRAB). O critério diagnóstico central é a presença de plasmócitos clonais na medula óssea ≥ 10% ou plasmocitoma provado por biópsia, associado a biomarcadores ou lesão de órgão-alvo.'
@@ -144,10 +144,10 @@ export const ENARE_EXTRA_QUESTIONS: any[] = [
     text: 'Um idoso de 78 anos apresenta perda progressiva de memória de curto prazo e desorientação espacial há 3 anos. O diagnóstico de Doença de Alzheimer é sugerido. Qual das alternativas apresenta medicamentos indicados para o tratamento sintomático cognitivo?',
     options: [
       'Donepezila (inibidor da acetilcolinesterase) e Memantina (antagonista do receptor NMDA).',
-      'Levodopa/Carbidopa associada a Pramipexol.',
-      'Haloperidol associado a Risperidona diária.',
-      'Fluoxetina parenteral combinada com Diazepam.',
-      'Estrogênio sistêmico conjugado e AAS.'
+      'Levodopa/Carbidopa associada a Pramipexol, esquema utilizado no tratamento motor da Doença de Parkinson.',
+      'Haloperidol associado a Risperidona diária, antipsicóticos indicados para sintomas comportamentais graves.',
+      'Fluoxetina parenteral combinada com Diazepam, esquema sem indicação para o tratamento cognitivo do Alzheimer.',
+      'Estrogênio sistêmico conjugado associado a AAS em baixa dose, sem eficácia comprovada na cognição.'
     ],
     correctIndex: 0,
     explanation: 'Os inibidores da acetilcolinesterase (como Donepezila, Galantamina, Rivastigmina) para quadros leves a moderados, e o antagonista de receptores NMDA (Memantina) para quadros moderados a graves, constituem o arsenal terapêutico central para progressão de Alzheimer.'
@@ -192,10 +192,10 @@ export const ENARE_EXTRA_QUESTIONS: any[] = [
     text: 'Um paciente de 48 anos com hepatite B crônica ativa desenvolve quadro de hipertensão arterial sistêmica, mononeuropatia múltipla e dor abdominal pós-prandial por isquemia mesentérica. Suspeita-se de poliarterite nodosa (PAN). Qual o exame padrão ouro para confirmar o diagnóstico?',
     options: [
       'Biópsia renal ou de nervo periférico acometido, ou arteriografia demonstrando múltiplos microaneurismas em vasos viscerais.',
-      'Ressonância magnética de crânio com contraste.',
-      'Pesquisa de anticorpo anti-DNA dupla hélice.',
-      'Eco-Doppler cardíaco transesofágico de repetição.',
-      'Dosagem sérica de complemento C3 e C4 elevados.'
+      'Ressonância magnética de crânio com contraste, exame direcionado para investigação de doenças do sistema nervoso central.',
+      'Pesquisa de anticorpo anti-DNA dupla hélice, marcador característico de lúpus eritematoso sistêmico e não de vasculite.',
+      'Eco-Doppler cardíaco transesofágico de repetição, utilizado na investigação de fontes embólicas cardíacas.',
+      'Dosagem sérica de complemento C3 e C4 elevados, achado inespecífico e não confirmatório de vasculite sistêmica.'
     ],
     correctIndex: 0,
     explanation: 'A poliarterite nodosa (PAN) é uma vasculite necrotizante de médios vasos fortemente associada à infecção pelo vírus da hepatite B (HBV). O diagnóstico é demonstrado histologicamente (biópsia de pele, músculo ou nervo) ou por arteriografia visceral demonstrando microaneurismas e estenoses.'
@@ -207,11 +207,11 @@ export const ENARE_EXTRA_QUESTIONS: any[] = [
     subject: 'Clínica Médica',
     text: 'Paciente de 40 anos apresenta poliartrite simétrica de mãos e rigidez matinal de 2 horas de duração. Testes revelam Fator Reumatoide positivo e Anti-CCP (anticorpo antiproteína citrulinada cíclica) reagente. Qual o papel do Anti-CCP nessa patologia?',
     options: [
-      'Indica alta probabilidade de cura espontânea sem tratamento.',
+      'Indica alta probabilidade de cura espontânea da poliartrite sem necessidade de qualquer tratamento medicamentoso.',
       'É altamente específico para o diagnóstico e prediz evolução para doença articular destrutiva e erosiva.',
-      'Exclui completamente o envolvimento de artrite reumatoide.',
-      'Serve unicamente para monitorar depósitos hepáticos de ferro.',
-      'Indica associação obrigatória com osteoartrose primária das mãos.'
+      'Exclui completamente o envolvimento articular por artrite reumatoide nesse quadro clínico.',
+      'Serve unicamente para monitorar depósitos hepáticos de ferro em doenças de sobrecarga como a hemocromatose.',
+      'Indica associação obrigatória com osteoartrose primária degenerativa das articulações das mãos.'
     ],
     correctIndex: 1,
     explanation: 'O anticorpo anti-CCP possui especificidade superior a 95% para Artrite Reumatoide e é um forte marcador de pior prognóstico, correlacionando-se com doença articular destrutiva e erosões radiológicas.'
@@ -223,11 +223,11 @@ export const ENARE_EXTRA_QUESTIONS: any[] = [
     subject: 'Clínica Médica',
     text: 'Uma paciente de 28 anos queixa-se de fadiga extrema, perda ponderal de 6kg, náuseas e vômitos frequentes. Ao exame físico: hipotensão postural e hiperpigmentação de mucosas e cicatrizes cutâneas. Exames revelam hiponatremia e hipercalemia séricas. A principal suspeita e o teste diagnóstico de escolha são:',
     options: [
-      'Feocromocitoma; dosagem de metanefrinas urinárias.',
+      'Feocromocitoma; dosagem de metanefrinas e catecolaminas fracionadas em urina de 24 horas.',
       'Insuficiência adrenal primária (Doença de Addison); dosagem de cortisol basal ou após teste de estímulo com ACTH.',
-      'Síndrome de Conn (hiperaldosteronismo); ressonância magnética de abdômen.',
-      'Glomerulonefrite aguda; dosagem de ASLO e C3 sérico.',
-      'Diabetes insípido central; teste de privação de água.'
+      'Síndrome de Conn (hiperaldosteronismo primário); ressonância magnética de abdômen com contraste.',
+      'Glomerulonefrite aguda pós-infecciosa; dosagem de ASLO e complemento C3 sérico reduzido.',
+      'Diabetes insípido central; teste de privação hídrica com resposta à desmopressina.'
     ],
     correctIndex: 1,
     explanation: 'A hiperpigmentação de pele/mucosas associada à hipotensão, hiponatremia, hipercalemia e perda ponderal é patognomônica de hipoadrenalismo primário (insuficiência adrenal crônica - Doença de Addison). O diagnóstico é corroborado por dosagem de cortisol e teste de estímulo com ACTH sintético (Cosintropina).'
@@ -255,11 +255,11 @@ export const ENARE_EXTRA_QUESTIONS: any[] = [
     subject: 'Clínica Médica',
     text: 'Qual distúrbio metabólico-eletrolítico é o principal fator precipitante para toxicidade por digitálicos (digoxina) em pacientes com insuficiência cardíaca crônica?',
     options: [
-      'Hipernatremia acentuada.',
+      'Hipernatremia acentuada, sem relação com toxicidade digitálica.',
       'Hipocalemia (baixas concentrações de potássio).',
-      'Hipercalcemia grave isolada.',
-      'Hipomagnesemia crônica isolada.',
-      'Acidose lática compensada.'
+      'Hipercalcemia grave isolada, sem relação com toxicidade digitálica.',
+      'Hipomagnesemia crônica isolada, sem relação direta com toxicidade digitálica.',
+      'Acidose lática compensada, sem relação com toxicidade digitálica.'
     ],
     correctIndex: 1,
     explanation: 'A hipocalemia aumenta significativamente a ligação da digoxina à bomba Na+/K+ ATPase cardíaca, potencializando a toxicidade digitálica que se manifesta clinicamente por náuseas, vômitos, xantopsia (visão amarelada) e arritmias cardíacas (como extrassístoles ventriculares e taquicardia atrial com bloqueio).'
@@ -303,11 +303,11 @@ export const ENARE_EXTRA_QUESTIONS: any[] = [
     subject: 'Clínica Médica',
     text: 'Em relação ao rastreamento e diagnóstico do Diabetes Mellitus, qual das alternativas representa critérios diagnósticos estabelecidos para diabetes em indivíduos assintomáticos?',
     options: [
-      'Glicemia de jejum ≥ 100 mg/dL ou hemoglobina glicada ≥ 5.7%.',
+      'Glicemia de jejum ≥ 100 mg/dL e < 126 mg/dL ou hemoglobina glicada entre 5.7% e 6.4%, critérios que definem apenas pré-diabetes e não diabetes estabelecido.',
       'Glicemia de jejum ≥ 126 mg/dL ou teste oral de tolerância à glicose (TOTG) 2h pós-carga ≥ 200 mg/dL ou HbA1c ≥ 6.5%, confirmados em duas ocasiões distintas.',
-      'Apenas glicemia casual ≥ 140 mg/dL colhida de forma aleatória sem necessidade de jejum.',
-      'Eletroforese de hemoglobina positiva com anemia microcítica associada.',
-      'Cetonúria positiva isolada acompanhada de glicosúria transitória.'
+      'Apenas glicemia casual ≥ 140 mg/dL colhida de forma aleatória sem necessidade de jejum, sem confirmação em segunda dosagem ou sintomas clássicos associados.',
+      'Eletroforese de hemoglobina positiva com anemia microcítica associada, achado relacionado a hemoglobinopatias e não ao diagnóstico de diabetes mellitus.',
+      'Cetonúria positiva isolada acompanhada de glicosúria transitória, achado inespecífico que não fecha isoladamente o diagnóstico de diabetes mellitus.'
     ],
     correctIndex: 1,
     explanation: 'Os critérios diagnósticos tradicionais para o Diabetes Mellitus exigem: glicemia de jejum ≥ 126 mg/dL; TOTG (75g) de 2 horas ≥ 200 mg/dL; ou Hemoglobina Glicada (HbA1c) ≥ 6.5%. Tais exames devem ser repetidos e confirmados para selar o diagnóstico clínico.'
@@ -321,11 +321,11 @@ export const ENARE_EXTRA_QUESTIONS: any[] = [
     subject: 'Cirurgia Geral',
     text: 'Paciente vítima de acidente automobilístico de alta energia (colisão frontal) chega ao pronto-socorro agitado, com turgência jugular bilateral, murmúrio vesicular abolido no hemitórax esquerdo e hipotensão refratária (PA: 70/40 mmHg). Qual o diagnóstico e a conduta imediata regulamentada pelo ATLS?',
     options: [
-      'Tamponamento cardíaco; pericardiocentese imediata.',
+      'Tamponamento cardíaco; pericardiocentese imediata guiada por punção subxifoide, indicada quando há tríade de Beck com bulhas abafadas e ausência de murmúrio vesicular alterado unilateralmente.',
       'Pneumotórax hipertensivo à esquerda; descompressão torácica imediata com agulha no 5º espaço intercostal (ou toracocentese de alívio por punção) seguida de drenagem torácica em selo d’água.',
-      'Hemotórax maciço à esquerda; intubação orotraqueal imediata.',
-      'Contusão pulmonar grave; traqueostomia de urgência no leito.',
-      'Choque cardiogênico residual; infusão rápida de amiodarona endovenosa.'
+      'Hemotórax maciço à esquerda; intubação orotraqueal imediata seguida de reposição volêmica agressiva e toracotomia de urgência se drenagem inicial ultrapassar 1500 mL.',
+      'Contusão pulmonar grave; traqueostomia de urgência no leito associada a suporte ventilatório mecânico prolongado e monitorização gasométrica seriada.',
+      'Choque cardiogênico residual; infusão rápida de amiodarona endovenosa associada a suporte inotrópico e monitorização hemodinâmica invasiva contínua.'
     ],
     correctIndex: 1,
     explanation: 'O quadro clínico descreve Classicidade do Pneumotórax Hipertensivo. A conduta imediata mandatória é a descompressão por agulha ou por via digital intercostal para alívio da pressão intratorácica que está impedindo o retorno venoso, seguida por inserção formal de dreno torácico.'
@@ -337,11 +337,11 @@ export const ENARE_EXTRA_QUESTIONS: any[] = [
     subject: 'Cirurgia Geral',
     text: 'Um homem de 58 anos apresenta-se com quadro de dor abdominal intensa de início súbito que irradia para o dorso, acompanhada de hipotensão refratária e massa abdominal pulsátil palpável no epigástrio. A principal hipótese diagnóstica e a conduta são:',
     options: [
-      'Pancreatite aguda necrotizante; laparotomia exploradora imediata.',
+      'Pancreatite aguda necrotizante; laparotomia exploradora imediata com necrosectomia e drenagem ampla da loja pancreática infectada.',
       'Aneurisma de aorta abdominal (AAA) roto; estabilização hemodinâmica e encaminhamento emergencial para reparo cirúrgico ou endovascular imediato.',
-      'Úlcera péptica perfurada; endoscopia digestiva alta terapêutica urgente.',
-      'Diverticulite aguda complicada; antibioticoterapia isolada de amplo espectro.',
-      'Isquemia mesentérica arterial; colonoscopia descompressiva precoce.'
+      'Úlcera péptica perfurada; endoscopia digestiva alta terapêutica urgente para hemostasia e fechamento endoscópico da perfuração.',
+      'Diverticulite aguda complicada; antibioticoterapia isolada de amplo espectro sem necessidade de drenagem ou abordagem cirúrgica.',
+      'Isquemia mesentérica arterial; colonoscopia descompressiva precoce para avaliação da mucosa colônica isquêmica.'
     ],
     correctIndex: 1,
     explanation: 'A tríade clássica de dor abdominal/lombar súbita intensa, choque/hipotensão e massa abdominal pulsátil é altamente sugestiva de Ruptura de Aneurisma de Aorta Abdominal (AAA). O tratamento emergencial cirúrgico convencional ou endovascular imediato é mandatório devido à extrema gravidade.'
@@ -369,11 +369,11 @@ export const ENARE_EXTRA_QUESTIONS: any[] = [
     subject: 'Cirurgia Geral',
     text: 'Durante o atendimento ao trauma, qual das seguintes manobras é contraindicada na suspeita de fratura de bacia/pelve pela possibilidade de agravamento de hemorragia retroperitoneal grave?',
     options: [
-      'Compressão lateral contínua externa.',
+      'Compressão lateral externa contínua da bacia, sem confirmação radiográfica prévia da instabilidade do anel pélvico.',
       'Compressão e manipulação repetitiva das cristas ilíacas em busca de mobilidade na bacia.',
-      'Aplicação de cinta pélvica de estabilização pélvica imediata.',
-      'Radiografia de bacia simples no leito.',
-      'Sutura primária de lacerações em pele pélvica adjacente.'
+      'Aplicação de cinta pélvica de estabilização pélvica imediata, medida recomendada para reduzir o volume da cavidade pélvica.',
+      'Radiografia de bacia simples no leito, exame de imagem que não compromete a estabilidade do anel pélvico.',
+      'Sutura primária de lacerações em pele pélvica adjacente, procedimento local que não interfere na hemorragia retroperitoneal profunda.'
     ],
     correctIndex: 1,
     explanation: 'A palpação ou movimentação repetitiva e busca ativa por mobilidade de bacia pressionando as cristas ilíacas deve ser estritamente evitada no trauma de pelve, pois pode romper coágulos formados no plexo venoso ou arterial retroperitoneal, perpetuando sangramentos massivos.'
@@ -385,11 +385,11 @@ export const ENARE_EXTRA_QUESTIONS: any[] = [
     subject: 'Cirurgia Geral',
     text: 'Um homem de 72 anos é submetido a cirurgia de colectomia esquerda por neoplasia de cólon. No 5º pós-operatório, evolui com taquicardia, febre (38.5ºC) e dor abdominal difusa com defesa. Observa-se saída de secreção entérica pelo dreno abdominal. Qual a principal suspeita clínica e a conduta?',
     options: [
-      'Íleo paralítico fisiológico; acompanhamento clínico expectante.',
+      'Íleo paralítico fisiológico pós-operatório; acompanhamento clínico expectante sem necessidade de reoperação ou antibioticoterapia.',
       'Fístula de anastomose colorretal com peritonite secundária; reoperação imediata e lavagem da cavidade abdominal.',
-      'Abscesso de parede abdominal isolado; troca de antibiótico ambulatorial.',
-      'Metástase hepática fulminante silenciosa; quimioterapia paliativa no leito.',
-      'Evisceração subaponeurótica isolada; colocação de cinta pélvica de suporte.'
+      'Abscesso de parede abdominal isolado, sem sinais de peritonite difusa; troca de antibiótico em regime ambulatorial.',
+      'Metástase hepática fulminante silenciosa; indicação de quimioterapia paliativa exclusiva no leito, sem abordagem cirúrgica.',
+      'Evisceração subaponeurótica isolada; colocação de cinta pélvica de suporte, sem necessidade de reabordagem cirúrgica.'
     ],
     correctIndex: 1,
     explanation: 'A dor abdominal difusa acompanhada de febre, taquicardia e saída de conteúdo entérico pelo dreno no 5º PO é indicativo de deiscência de anastomose com fístula ativa e peritonite. Exige reabordagem cirúrgica imediata para controle do foco infeccioso e proteção da anastomose (frequentemente estomia de desvio).'
@@ -433,11 +433,11 @@ export const ENARE_EXTRA_QUESTIONS: any[] = [
     subject: 'Cirurgia Geral',
     text: 'Durante uma colecistectomia videolaparoscópica de rotina, para garantir a segurança cirúrgica e evitar lesão iatrogênica da via biliar principal, o cirurgião deve identificar com clareza a "Visão de Segurança de Strassberg" (Critical View of Safety). Quais são as estruturas que devem ser expostas para tal visualização?',
     options: [
-      'Coledoco, duto hepático comum e artéria hepática direita livres.',
+      'Dissecção ampla expondo o colédoco, o ducto hepático comum e a artéria hepática direita, estruturas que não deveriam ser rotineiramente dissecadas nessa técnica.',
       'Liberação do terço inferior da vesícula biliar do leito hepático, isolando apenas duas estruturas que entram na vesícula: o duto cístico e a artéria cística.',
-      'Veia porta, artéria gástrica esquerda e duto biliar principal completamente expostos.',
-      'Apenas o ligamento falciforme e a transição hepatoduodenal dissecados.',
-      'Artéria hepática comum e gânglio cístico de Mascagni isolados isoladamente.'
+      'Exposição completa da veia porta, da artéria gástrica esquerda e do ducto biliar principal, estruturas do hilo hepático não relacionadas à visão de segurança.',
+      'Dissecção isolada do ligamento falciforme e da transição hepatoduodenal, sem qualquer exposição das estruturas do trígono cístico.',
+      'Isolamento da artéria hepática comum e do gânglio cístico de Mascagni, estruturas acessórias não exigidas pela técnica de Strasberg.'
     ],
     correctIndex: 1,
     explanation: 'A Visão Crítica de Segurança de Strassberg para colecistectomia laparoscópica segura consiste em: 1) limpar o triângulo hepatocístico de gordura e tecido fibroso, 2) liberar a porção inferior da vesícula de seu leito hepático, 3) identificar apenas duas (e não mais) estruturas penetrando na vesícula: o duto cístico e a artéria cística.'
@@ -449,11 +449,11 @@ export const ENARE_EXTRA_QUESTIONS: any[] = [
     subject: 'Cirurgia Geral',
     text: 'O que define a classificação do trauma em "período de ouro" (Golden Hour)?',
     options: [
-      'O tempo necessário para que a dor desapareça por completo após analgesia.',
+      'O tempo necessário para que a dor desapareça por completo após a administração de analgesia potente, independentemente da gravidade da lesão inicial.',
       'A primeira hora após o acidente traumático, na qual o atendimento médico interdisciplinar ágil e padronizado reduz dramaticamente a mortalidade por choque ou hipóxia.',
-      'O tempo médio entre a admissão na UTI e a alta em pacientes idosos.',
-      'O período em que o dreno de tórax deve ser mantido obrigatoriamente sem oscilar.',
-      'A janela imunológica de 24 horas estabelecida para administração de vacina antirrábica.'
+      'O tempo médio entre a admissão na unidade de terapia intensiva e a alta hospitalar em pacientes idosos vítimas de trauma de baixa energia.',
+      'O período em que o dreno de tórax deve ser mantido obrigatoriamente sem oscilar, independentemente da reexpansão pulmonar completa observada.',
+      'A janela imunológica de 24 horas estabelecida para administração de vacina antirrábica em pacientes vítimas de mordedura por animais suspeitos.'
     ],
     correctIndex: 1,
     explanation: 'A "Golden Hour" ou hora de ouro representa a primeira hora subsequente ao trauma em que o atendimento sistematizado inicial (ABCD do trauma) implementado com precisão e rapidez previne mortes precoces evitáveis.'
@@ -481,11 +481,11 @@ export const ENARE_EXTRA_QUESTIONS: any[] = [
     subject: 'Cirurgia Geral',
     text: 'Sobre apendicite aguda no adulto, qual o primeiro sintoma clássico sugerido pela cronologia de Murphy em cerca de 60-70% dos casos?',
     options: [
-      'Náusea persistente com diarreia abundante.',
-      'Febre alta de início repentino associada a calafrios.',
+      'Náusea persistente com diarreia abundante, sintomas que precedem tipicamente o quadro álgico clássico da apendicite aguda.',
+      'Febre alta de início repentino associada a calafrios, presente antes mesmo do surgimento de qualquer dor abdominal localizada.',
       'Dor abdominal difusa ou localizada na região periumbilical/epigástrio, que posteriormente migra para a fossa ilíaca direita.',
-      'Disúria persistente com urgência urinária severa.',
-      'Icterícia leve com fezes acólicas.'
+      'Disúria persistente com urgência urinária severa, sugerindo processo infeccioso do trato urinário e não apendicite aguda.',
+      'Icterícia leve com fezes acólicas, achados sugestivos de obstrução biliar e não de processo apendicular agudo.'
     ],
     correctIndex: 2,
     explanation: 'A cronologia clássica de Murphy para apendicite aguda cursa com: dor abdominal epigástrica ou periumbilical de caráter vago (vias aferentes viscerais), que decorridas poucas horas sofre migração típica e localiza-se na fossa ilíaca direita no ponto de McBurney (comprometimento do peritônio parietal).'
@@ -497,11 +497,11 @@ export const ENARE_EXTRA_QUESTIONS: any[] = [
     subject: 'Cirurgia Geral',
     text: 'Um paciente masculino de 25 anos é trazido ao pronto-socorro vítima de trauma cranioencefálico (TCE) fechado após queda de motocicleta. Abre os olhos ao chamado verbal, emite sons incompreensíveis e localiza estímulos dolorosos ao exame físico. Qual o escore correto na Escala de Coma de Glasgow-P modificada?',
     options: [
-      'Glasgow 15.',
+      'Glasgow 15 (Abertura ocular espontânea = 4; Resposta verbal orientada = 5; Resposta motora obedece a comandos = 6).',
       'Glasgow 11 (Abertura ocular ao som = 3; Resposta verbal sons incompreensíveis = 2; Resposta motora de localizar dor = 5).',
-      'Glasgow 8.',
-      'Glasgow 6.',
-      'Glasgow 13.'
+      'Glasgow 8 (Abertura ocular à dor = 2; Resposta verbal apenas sons incompreensíveis = 2; Resposta motora em flexão anormal = 4).',
+      'Glasgow 6 (Abertura ocular ausente = 1; Resposta verbal ausente = 1; Resposta motora em extensão anormal = 4).',
+      'Glasgow 13 (Abertura ocular ao chamado = 3; Resposta verbal confusa = 4; Resposta motora obedece a comandos = 6).'
     ],
     correctIndex: 1,
     explanation: 'A pontuação detalhada resulta em 10 (Abertura ocular ao som = 3; Resposta verbal = 2 por sons incompreensíveis; Resposta motora = 5 por localizar dor). De acordo com a tabela padrão, 3 + 2 + 5 = 10.'
@@ -513,11 +513,11 @@ export const ENARE_EXTRA_QUESTIONS: any[] = [
     subject: 'Cirurgia Geral',
     text: 'Qual das alternativas representa indicações formais adicionais para exploração cirúrgica imediata no trauma abdominal penetrante por arma de fogo?',
     options: [
-      'Apenas desejo pessoal expresso por familiares de forma legal.',
+      'Apenas desejo pessoal expresso por familiares de forma legal, sem qualquer sinal objetivo de instabilidade clínica ou peritonite associada.',
       'Quadro de choque/instabilidade hemodinâmica, irritação peritoneal (peritonite), fístula digestiva ativa ou evisceração óbvia.',
-      'Presença isolada de escoriações cutâneas superficiais em flanco esquerdo.',
-      'Suspeita de ingestão prévia concomitante de álcool e alimentos gordurosos.',
-      'Presença de hematúria microscópica transitória com exames laboratoriais normais.'
+      'Presença isolada de escoriações cutâneas superficiais em flanco esquerdo, sem sinais de penetração da cavidade peritoneal.',
+      'Suspeita de ingestão prévia concomitante de álcool e alimentos gordurosos, sem qualquer repercussão hemodinâmica ou abdominal associada.',
+      'Presença de hematúria microscópica transitória com exames laboratoriais normais e ausência de sinais de irritação peritoneal.'
     ],
     correctIndex: 1,
     explanation: 'No trauma abdominal penetrante por arma branca ou PAF, as indicações consagradas de laparotomia imediata incluem instabilidade hemodinâmica, peritonite manifesta, saída visível de fezes/bile por ferida e evisceração de alças viscerais.'
@@ -529,11 +529,11 @@ export const ENARE_EXTRA_QUESTIONS: any[] = [
     subject: 'Cirurgia Geral',
     text: 'No pós-operatório imediato de cirurgia de tireoidectomia total, qual complicação respiratória imediata pode ser desencadeada por sangramento local compressivo com hematoma progressivo cervical, e qual a conduta salvadora imediata sugerida?',
     options: [
-      'Pneumonia aspirativa mecânica crônica; fisioterapia torácica intermitente.',
+      'Pneumonia aspirativa mecânica crônica; fisioterapia respiratória torácica intermitente, sem relação com o hematoma cervical compressivo.',
       'Hematoma cervical compressivo sufocante; abertura imediata dos pontos da sutura cirúrgica da ferida no próprio leito para descompressão e drenagem urgente do acúmulo de sangue.',
-      'Espasmo laríngeo severo secundário a resfriamento labial; colocação de máscara de oxigênio de alto fluxo isolada.',
-      'Embolia gasosa coronariana; colocação em posição de Trendelenburg contínua.',
-      'Fístula quilosa cervical massiva; dieta hiperlipídica forçada imediata.'
+      'Espasmo laríngeo severo secundário a resfriamento labial; colocação isolada de máscara de oxigênio de alto fluxo, sem drenagem do hematoma.',
+      'Embolia gasosa coronariana; colocação em posição de Trendelenburg contínua, sem qualquer abordagem da ferida operatória cervical.',
+      'Fístula quilosa cervical massiva; instituição de dieta hiperlipídica forçada imediata, sem indicação de reabertura da incisão.'
     ],
     correctIndex: 1,
     explanation: 'O sangramento com consequente hematoma cervical expansivo imediato compressivo pós-tireoidectomia total é uma emergência asfixiante mecânica grave. A abertura imediata das suturas cirúrgicas na própria enfermaria/leito destrói a compressão mecânica na traqueia salvando o paciente da asfixia fatal imediata subsequente.'
@@ -561,11 +561,11 @@ export const ENARE_EXTRA_QUESTIONS: any[] = [
     subject: 'Cirurgia Geral',
     text: 'Um paciente de 45 anos queixa-se de azia e queimação retroesternal crônica grave, refratária ao tratamento farmacológico prolongado com IBP. A Phmetria confirma esofagite por refluxo patológico. Qual a cirurgia antirefluxo padrão recomendada para reversão dessa patologia se preenchido critérios?',
     options: [
-      'Gastrectomia parcial com reconstrução a Billroth I.',
+      'Gastrectomia parcial com reconstrução a Billroth I, procedimento indicado para úlcera péptica gástrica e não para refluxo isolado.',
       'Fundoplicatura de Nissen (válvula total de 360 graus por videolaparoscopia) envolvendo a transição esôfago-gástrica.',
-      'Esofagectomia subtotal de reconstrução por tubo gástrico.',
-      'Miotomia de Heller com fundoplicatura anterior parcial simulada.',
-      'Derivação gástrica em Y de Roux isolada.'
+      'Esofagectomia subtotal com reconstrução por tubo gástrico, procedimento reservado a neoplasias esofágicas e não à DRGE benigna.',
+      'Miotomia de Heller com fundoplicatura anterior parcial, técnica indicada para acalasia e não para doença do refluxo gastroesofágico.',
+      'Derivação gástrica em Y de Roux isolada, procedimento bariátrico sem indicação primária para tratamento cirúrgico do refluxo.'
     ],
     correctIndex: 1,
     explanation: 'A cirurgia anti-refluxo de escolha consagrada no manejo do DRGE refratária de padrão anatômico é a Fundoplicatura de Nissen por videolaparoscopia, em que o fundo gástrico envolve completamente o esôfago distal em 360-graus.'
@@ -577,11 +577,11 @@ export const ENARE_EXTRA_QUESTIONS: any[] = [
     subject: 'Cirurgia Geral',
     text: 'Um homem de 35 anos apresenta quadro clínico de dor súbita severa em região perianal acompanhada de febre e calafrios. No exame anal detalhado, observa-se área endurecida, hiperemiada, tensa, flutuante e extremamente dolorosa na nádega direita. O diagnóstico e o manejo cirúrgico preconizados são:',
     options: [
-      'Fissura anal aguda; pomada de diltiazem tópica diária.',
+      'Fissura anal aguda; pomada de diltiazem tópica diária, sem indicação de qualquer abordagem cirúrgica de drenagem.',
       'Abscesso anorretal isquiorretal; incisão cirúrgica e drenagem imediata de urgência, sem necessidade de aguardar flutuação plena.',
-      'Hemorroida interna grau IV trombosada; banhos de assento quentes expectantes apenas.',
-      'Fístula anorretal complexa; colocação de sedenho de algodão ambulatorial.',
-      'Cisto pilonidal infectado crônico; antibioticoterapia venosa exclusiva isolada.'
+      'Hemorroida interna grau IV trombosada; banhos de assento quentes expectantes apenas, sem necessidade de drenagem cirúrgica.',
+      'Fístula anorretal complexa; colocação ambulatorial de sedenho de algodão, sem indicação de drenagem cirúrgica de urgência.',
+      'Cisto pilonidal infectado crônico; antibioticoterapia venosa exclusiva isolada, sem necessidade de drenagem cirúrgica local.'
     ],
     correctIndex: 1,
     explanation: 'Qualquer abscesso perianal ou isquiorretal exige incisão e drenagem imediata tão logo o diagnóstico clínico seja suspeitado ou estabelecido. Postergar a drenagem cirúrgica cursa com risco elevado de sepse grave avançada ou destruição tecidual no períneo (Síndrome de Fournier).'
@@ -609,11 +609,11 @@ export const ENARE_EXTRA_QUESTIONS: any[] = [
     subject: 'Cirurgia Geral',
     text: 'Qual a conduta para um abscesso hepático de padrão amebiano (decorrente de infecção por Entamoeba histolytica) que se apresenta solitário e menor que 5 cm sem sinais iminentes de rotura?',
     options: [
-      'Laparotomia exploradora reconstrutiva de urgência com lavagem peritoneal.',
+      'Laparotomia exploradora reconstrutiva de urgência com lavagem peritoneal ampla, reservada para casos de rotura franca da cavidade abdominal.',
       'Tratamento farmacológico inicial preferencial com Metronidazol oral por 10 dias de forma isolada, associado a suporte conservador.',
       'Punção por aspiração percutânea diária até desaparecimento completo da cavidade no ultrassom.',
-      'Hemicolectomia parcial retroperitoneal profilática.',
-      'Ressecção cirúrgica segmentar hepática emergencial imediata.'
+      'Hemicolectomia parcial retroperitoneal profilática, procedimento sem qualquer indicação para abscesso hepático amebiano não complicado.',
+      'Ressecção cirúrgica segmentar hepática emergencial imediata, conduta desproporcional para abscesso pequeno sem sinais de rotura iminente.'
     ],
     correctIndex: 1,
     explanation: 'O abscesso hepático amebiano de tamanho moderado sem sinais complicados (risco de roturas ou infecção secundária purulenta bacteriana óbvia) deve ser manejado com corticoterapia/antibioticoterapia empírica direcionada com Metronidazol, obtendo-se elevadíssima taxa de cura sem procedimentos invasivos redundantes.'
@@ -625,11 +625,11 @@ export const ENARE_EXTRA_QUESTIONS: any[] = [
     subject: 'Cirurgia Geral',
     text: 'Sobre nutrição em pós-operatório cirúrgico abdominal, qual a estratégia de primeira escolha para administração calórico-proteica em paciente hemodinamicamente estável, na ausência de disfunção mecânica entérica obstrutiva evidente?',
     options: [
-      'Nutrição parenteral total central iniciada de forma precoce em 24h.',
+      'Nutrição parenteral total central iniciada de forma precoce em 24h, indicada mesmo sem disfunção entérica obstrutiva evidente.',
       'Nutrição enteral por sonda nasogástrica/enteral ou via oral precoce, que preserva a barreira mucosa entérica.',
       'Manter jejum absoluto contínuo até reaparecimento espontâneo de ruídos hidroaéreos.',
-      'Infusão alternada diária de glicose isotônica e soro fisiológico apenas.',
-      'Nenhum suporte nutricional indicado até completada 12 dias de cirurgia.'
+      'Infusão alternada diária de glicose isotônica e soro fisiológico apenas, sem qualquer aporte proteico ou calórico adequado.',
+      'Nenhum suporte nutricional indicado até completada 12 dias de cirurgia, independentemente da condição hemodinâmica do paciente.'
     ],
     correctIndex: 1,
     explanation: 'Sempre que possível, a nutrição por via enteral/oral precoce deve ser preferida no pós-operatório (mesmo de grandes cirurgias abdominais estáveis) porque ela evita translocação bacteriana intestinal pela atrofia mucosal e preserva a barreira imunológica de placa de Peyer, reduzindo complicações sépticas sistêmicas.'
@@ -643,11 +643,11 @@ export const ENARE_EXTRA_QUESTIONS: any[] = [
     subject: 'Pediatria',
     text: 'Prematuro de 32 semanas de idade gestacional evolui poucas horas após o parto com desconforto respiratório marcado por taquipneia, gemido expiratório evidente, batimento de asas nasais e retrações intercostais associadas a infiltrado reticulogranular com broncogramas aéreos na radiografia torácica. Qual a etiologia e o tratamento padrão ouro?',
     options: [
-      'Síndrome de aspiração meconial intensa; suporte com ventilação mecânica invasiva e dexametasona.',
+      'Síndrome de aspiração meconial intensa em recém-nascido a termo pós-datismo; suporte com ventilação mecânica invasiva, surfactante e dexametasona sistêmica precoce.',
       'Síndrome do Desconforto Respiratório (doença da membrana hialina) por deficiência de surfactante pulmonar; uso de surfactante exógeno endotraqueal precoce associado a suporte pressórico não invasivo (CPAP) e oxigenoterapia.',
-      'Taquipneia transitória do recém-nascido por retenção de fluido amniótico; diurético vigoroso endovenoso imediato.',
-      'Hérnia diafragmática congênita asfixiante de Morgagni; intubação imediata e sutura laparoscópica de emergência.',
-      'Persistência do canal arterial complicada; cirurgia de fechamento endovascular imediata.'
+      'Taquipneia transitória do recém-nascido por retenção de líquido amniótico pulmonar, comum em partos cesáreos eletivos; diurético vigoroso endovenoso associado a oxigenoterapia de curta duração.',
+      'Hérnia diafragmática congênita asfixiante de Morgagni ou de Bochdalek; intubação orotraqueal imediata evitando ventilação com máscara e sutura cirúrgica de emergência.',
+      'Persistência do canal arterial hemodinamicamente significativa e complicada; correção cirúrgica por ligadura ou fechamento endovascular de urgência imediata.'
     ],
     correctIndex: 1,
     explanation: 'A doença da membrana hialina afeta recém-nascidos prematuros devido à imaturidade celular com consequente deficiência de surfactante pelos pneumócitos tipo II. Apresenta-se com padrão radiográfico reticulogranular difuso e o tratamento salvador envolve fornecimento traqueal de surfactante exógeno e CPAP precoce.'
@@ -659,11 +659,11 @@ export const ENARE_EXTRA_QUESTIONS: any[] = [
     subject: 'Pediatria',
     text: 'Um lactente de 10 meses apresentando cansaço persistente revela-se sopro holossistólico rude de grau IV em borda esternal esquerda média acompanhado de frêmito palpável. O ecocardiograma sela defeito de fechamento de septo interventricular (DSV). Qual a principal complicação hemodinâmica progressiva crônica decorrente de desvios significativos esquerda-direita de fluxo se não corrigidos no momento oportuno?',
     options: [
-      'Desenvolvimento de estenose aórtica senil precoce.',
+      'Desenvolvimento de estenose aórtica senil precoce, degeneração valvar sem relação fisiopatológica com o shunt esquerda-direita crônico.',
       'Doença vascular pulmonar obstrutiva progressiva, levando a reversão do shunt para direita-esquerda com cianose inexplicada (Síndrome de Eisenmenger).',
-      'Atrofia total do ventrículo esquerdo.',
-      'Insuficiência renal crônica precoce.',
-      'Estenose mitral por espessamento cicatricial.'
+      'Atrofia total do ventrículo esquerdo secundária à sobrecarga crônica de volume, sem relação com hipertensão pulmonar reativa.',
+      'Insuficiência renal crônica precoce, complicação sem relação fisiopatológica direta com o defeito septal ventricular não corrigido.',
+      'Estenose mitral por espessamento cicatricial valvar, achado não relacionado à evolução hemodinâmica do shunt esquerda-direita.'
     ],
     correctIndex: 1,
     explanation: 'Cardiopatias congênitas acianóticas com desvios esquerda-direita (como DSV, CIA ou PCA) expõem o leito arterial pulmonar a hiperfluxo severo de alta pressão. Com o tempo, desenvolve-se remodelamento vascular pulmonar obstrutivo progressivo levando à inversão do gradiente de pressões (shunt passa de direita-esquerda), definindo a temida e grave Síndrome de Eisenmenger.'
@@ -691,11 +691,11 @@ export const ENARE_EXTRA_QUESTIONS: any[] = [
     subject: 'Pediatria',
     text: 'Lactente de 14 meses apresenta-se com febre alta e irritabilidade há 3 dias. Hoje, no momento da defervescência térmica completa (queda abrupta da febre), surge de forma repentina exantema maculopapular eritematoso fino, não pruriginoso, distribuído preferencialmente no tronco, que reverte espontaneamente em 48 horas. Qual o agente etiológico clássico dessa doença exantemática?',
     options: [
-      'Parvovírus B19.',
+      'Parvovírus B19, causador do eritema infeccioso (quinta doença) e não do exantema súbito.',
       'Herpesvírus humano tipo 6 ou 7 (Roséola infantil ou Exantema Súbito).',
-      'Estreptococo beta-hemolítico do grupo A.',
-      'Vírus varicela-zóster recombinante.',
-      'Toxoplasma gondii.'
+      'Estreptococo beta-hemolítico do grupo A, agente da escarlatina, e não do exantema súbito.',
+      'Vírus varicela-zóster, causador da catapora, com exantema vesicular e não maculopapular fugaz.',
+      'Toxoplasma gondii, agente de infecção congênita, sem relação com o quadro exantemático febril descrito.'
     ],
     correctIndex: 1,
     explanation: 'O Exantema Súbito ou Roséola é causado classicamente pelo Herpesvírus humano tipo 6 (HHV-6) ou tipo 7 (HHV-7). Caracteriza-se clinicamente pela queda da febre alta coincidente com o aparecimento súbito de exantema maculopapular predominantemente centripetado no lactente.'
@@ -707,11 +707,11 @@ export const ENARE_EXTRA_QUESTIONS: any[] = [
     subject: 'Pediatria',
     text: 'Sobre nutrição e introdução alimentar no lactente, qual a recomendação unânime da Organização Mundial da Saúde (OMS) e Ministério da Saúde do Brasil?',
     options: [
-      'Introdução alimentar precoce aos 4 meses combinada com suco de frutas natural.',
+      'Introdução alimentar precoce aos 4 meses de vida combinada com oferta de suco de frutas natural, substituindo parcialmente o aleitamento materno exclusivo.',
       'Aleitamento materno exclusivo e livre demanda até os 6 meses de idade vida, com manutenção do aleitamento materno de forma complementar até os 2 anos ou mais.',
-      'Introdução obrigatória de sucos de uva concentrados e gema de ovo frita na terceira semana.',
-      'Substituição do leite materno por fórmulas de soja com mel aos 2 meses de vida.',
-      'Excluir qualquer aleitamento materno após introduzido a primeira papa salgada.'
+      'Introdução obrigatória de sucos de uva concentrados e gema de ovo frita já na terceira semana de vida, antes mesmo do período preconizado para introdução alimentar.',
+      'Substituição do leite materno por fórmulas de soja adicionadas de mel aos 2 meses de vida, prática contraindicada pelo risco de botulismo infantil.',
+      'Excluir qualquer aleitamento materno assim que introduzida a primeira papa salgada, interrompendo precocemente o aleitamento complementar recomendado.'
     ],
     correctIndex: 1,
     explanation: 'A orientação oficial é manter aleitamento materno exclusivo até os 6 meses, momento em que se inicia a introdução da alimentação complementar oportuna mantendo o seio materno em conjunto por dois anos adicionais.'
@@ -723,11 +723,11 @@ export const ENARE_EXTRA_QUESTIONS: any[] = [
     subject: 'Pediatria',
     text: 'Um menino de 5 anos apresenta-se com quadro de tosse persistente ruidosa (tosse "de cachorro"), rouquidão marcante, estridor inspiratório de repouso e desconforto respiratório leve. Qual o diagnóstico e o tratamento padrão de escolha indicado para reverter o estridor agudo?',
     options: [
-      'Asma aguda refratária; inalação contínua de salbutamol e aminofilina venosa.',
+      'Asma aguda refratária; inalação contínua de salbutamol associada a aminofilina venosa, sem relação com estridor inspiratório de repouso.',
       'Laringotraqueíte viral aguda (crupe); inalação com adrenalina nebulizada associada a dose parenteral de dexametasona.',
-      'Traqueíte bacteriana necrosante; penicilina cristalina endovenosa isolada diária.',
-      'Amigdalite pultácea obstrutiva; antibiótico por via oral expectante por 10 dias.',
-      'Corpo estranho aspirado tardio; biópsia de brônquio de urgência imediata.'
+      'Traqueíte bacteriana necrosante; penicilina cristalina endovenosa isolada diária, sem adrenalina nebulizada ou corticoide sistêmico.',
+      'Amigdalite pultácea obstrutiva; antibiótico por via oral expectante por 10 dias, sem necessidade de nebulização ou corticoide de urgência.',
+      'Corpo estranho aspirado tardio; biópsia de brônquio de urgência imediata, sem indicação de adrenalina nebulizada ou corticoide.'
     ],
     correctIndex: 1,
     explanation: 'O Crupe viral agudo ou Laringotraqueíte apresenta-se caracteristicamente com tosse metálica ruidosa, rouquidão e estridor de repouso. Nebulização com adrenalina líquida (L ou racêmica) proporciona vasoconstrição imediata por receptores alfa, acalmando o edema subglótico de forma rápida, complementada por corticoterapia com Dexametasona.'
@@ -755,11 +755,11 @@ export const ENARE_EXTRA_QUESTIONS: any[] = [
     subject: 'Pediatria',
     text: 'Um escolar de 8 anos apresenta edema bipalpebral marcado que piora pela manhã, urina escura do tipo "coca-cola" (hematúria macroscópica) e elevação de aferição pressórica (140/90 mmHg). Refere história de tratamento escasso para infecção de pele por piodermite há 2 semanas. Qual o provável diagnóstico e qual anticorpo apoia o contexto em conjunto com queda Transitória de C3?',
     options: [
-      'Insuficiência renal crônica por bócio endêmico; anti-tireoperoxidase.',
+      'Insuficiência renal crônica por bócio endêmico; dosagem de anti-tireoperoxidase, sem relação com quadro pós-infecção estreptocócica de pele.',
       'Glomerulonefrite Difusa Aguda (GNPE) estreptocócica; exames de antiestreptolisina O (ASLO) ou anticorpos contra DNase B.',
       'Síndrome nefrótica puramente de lesões mínimas; anticorpo anti-receptor de fosfolipase A2.',
-      'Lúpus eritematoso sistêmico infantil de início agudo; anticorpo anti-DNA hélice simples.',
-      'Doença de Berger renal clássica; anticorpo anti-imunoglobulina A de refluxo.'
+      'Lúpus eritematoso sistêmico infantil de início agudo; pesquisa de anticorpo anti-DNA de dupla hélice, sem antecedente de piodermite.',
+      'Doença de Berger renal clássica (nefropatia por IgA); dosagem de anticorpo anti-imunoglobulina A, sem relação com infecção cutânea prévia.'
     ],
     correctIndex: 1,
     explanation: 'A GNPE apresenta-se classicamente com síndrome nefrítica associada (hematúria glomerular ruidosa, edema, hipertensão) após infecção de garganta ou pele por estreptococo beta-hemolítico do grupo A. Confirmar através da queda do complemento sérico C3 e exames de confirmação de infecção estreptocócica prévia.'
@@ -819,11 +819,11 @@ export const ENARE_EXTRA_QUESTIONS: any[] = [
     subject: 'Pediatria',
     text: 'Um lactente de 3 meses apresenta vômitos pós-prandiais frequentes (sem esforço marcado ou náuseas), mas apresenta excelente desenvolvimento pondero-estatural, ganho de peso regular e sono adequado. Qual a principal conduta recomendada para este lactente de refluxo gastroesofágico fisiológico?',
     options: [
-      'Iniciar pHmetria de 24h e indicar laparoscopia anti-refluxo de Nissen.',
-      'Iniciar tratamento com inibidores da bomba de prótons oral em dose máxima.',
+      'Iniciar investigação invasiva com pHmetria esofágica de 24h e encaminhar precocemente para laparoscopia anti-refluxo de Nissen, condutas desproporcionais em lactente com bom ganho ponderal.',
+      'Iniciar tratamento empírico com inibidores da bomba de prótons por via oral em dose máxima, mesmo na ausência de sinais de esofagite ou má evolução pondero-estatural.',
       'Orientação familiar quanto à benignidade do quadro, medidas posturais (manter após mamada elevado em posição vertical por 20 minutos) e espessamento progressivo leve se necessário, sem iniciar medicação diurética ou prótons.',
-      'Suspender o aleitamento materno trocando por fórmulas infantis de aminoácidos livres.',
-      'Prescrição obrigatória de metoclopramida combinada com benzodiazepina.'
+      'Suspender o aleitamento materno trocando por fórmulas infantis de aminoácidos livres, medida reservada a casos de alergia à proteína do leite de vaca refratária.',
+      'Prescrição obrigatória de metoclopramida combinada com benzodiazepina, esquema com risco de efeitos extrapiramidais e sedação em lactentes.'
     ],
     correctIndex: 2,
     explanation: 'O lactente "golfador feliz" que apresenta regurgitação crônica saudável, sem sinais de irritabilidade, hemorragia ou queda no ganho de peso, tem Refluxo Gastroesofágico Fisiológico. A conduta é reassegurar os pais, fornecer apoio educacional de manutenção e orientar medidas comportamentais simples higiênico-posturais.'
@@ -835,11 +835,11 @@ export const ENARE_EXTRA_QUESTIONS: any[] = [
     subject: 'Pediatria',
     text: 'Sobre o Teste do Pezinho básico de triagem neonatal oferecido pelo SUS do Brasil, quais doenças são identificadas no programa padrão básico de rastreamento com coleta ideal no 3º ao 5º dia de vida?',
     options: [
-      'Somente Diabetes e Hipertensão congênitas.',
+      'Somente Diabetes mellitus tipo 1 e Hipertensão arterial congênitas, condições não incluídas no protocolo básico de triagem neonatal do Teste do Pezinho.',
       'Fenilcetonúria, Hipotireoidismo congênito, Doenças Falciformes e hemoglobinopatias, Fibrose Cística, Hiperplasia Adrenal Congênita e Deficiência de Biotinidase.',
-      'Glautonometria neonatal e anemia aplásica mecânica.',
-      'Autismo severo infantil de início precoce somente.',
-      'Síndrome de Down e outras trissomias complexas.'
+      'Glautonometria neonatal isolada e anemia aplásica mecânica, exames sem qualquer previsão no protocolo oficial de triagem neonatal do SUS.',
+      'Autismo severo infantil de início precoce somente, condição não rastreável por dosagens bioquímicas em papel filtro.',
+      'Síndrome de Down e outras trissomias complexas, alterações cromossômicas não incluídas no rastreamento bioquímico do Teste do Pezinho.'
     ],
     correctIndex: 1,
     explanation: 'O teste do pezinho do Programa Nacional de Triagem Neonatal padrão brasileiro tria precocemente para graves defeitos metabólicos que, se não contidos de imediato com tratamento adequado, cursam com danos sistêmicos irreversíveis (incluindo déficit cognitivo profundo na fenilcetonúria e hipotireoidismo).'
@@ -867,11 +867,11 @@ export const ENARE_EXTRA_QUESTIONS: any[] = [
     subject: 'Pediatria',
     text: 'Um lactente de 18 meses com história de resfriado comum desenvolve crises convulsivas tônico-clônicas generalizadas de curta duração (menos de 3 minutos) coincidente com picos térmicos agudos de 39.5ºC. O lactente recupera o nível de consciência basal rapidamente, sem déficits focais aparentes pós-crise. Qual a principal suspeita clínica e a conduta recomendada?',
     options: [
-      'Epilepsia refratária de início infante; necessidade de anticonvulsivante de uso contínuo.',
-      'Infeção por tétano neonatal; soroterapia imediata.',
+      'Epilepsia refratária de início infantil; necessidade de anticonvulsivante de uso contínuo e investigação neurológica ampliada com eletroencefalograma seriado.',
+      'Infecção por tétano neonatal; soroterapia antitetânica imediata associada a sedação e suporte ventilatório em ambiente de terapia intensiva.',
       'Convulsão febril simples; tratamento de suporte sintomático da febre e orientação familiar quanto à benignidade e autolimitabilidade do processo, sem necessidade de anticonvulsivante de manutenção profilática diária.',
-      'Meningoencefalite viral assintomática; punção lombar de urgência mandatória diária.',
-      'Hipertensão intracraniana isolada; laparotomia de descompressão cirúrgica.'
+      'Meningoencefalite viral assintomática; punção lombar de urgência mandatória diária, independentemente da ausência de sinais meníngeos ou rebaixamento do sensório.',
+      'Hipertensão intracraniana isolada; indicação de laparotomia de descompressão cirúrgica, procedimento sem qualquer relação com o quadro neurológico febril.'
     ],
     correctIndex: 2,
     explanation: 'As crises convulsivas febris simples são benignas e constituem o distúrbio convulsivo mais incidente na infância (entre 6 meses e 5 anos). Não geram lesão estrutural ou cognitiva posterior, e a conduta preconiza controle térmico adequado da febre com antipiréticos na vigência de processos infecciosos corriqueiros.'
@@ -883,11 +883,11 @@ export const ENARE_EXTRA_QUESTIONS: any[] = [
     subject: 'Pediatria',
     text: 'A persistência de qual duto vascular fetal que conecta a artéria pulmonar com a aorta descendente, quando hemodinamicamente reversível em prematuros, pode requerer intervenção medicamentosa inicial com inibidores da síntese de prostaglandinas (como Ibuprofeno ou Indometacina)?',
     options: [
-      'Duto venoso hepático.',
+      'Duto venoso hepático, que conecta a veia umbilical à veia cava inferior.',
       'Duto arterial (Persistência do Canal Arterial - PCA).',
-      'Forame oval interatrial.',
-      'Duto linfático torácico principal.',
-      'Artéria umbilical esquerda fibrótica.'
+      'Forame oval interatrial, comunicação entre os átrios de fechamento espontâneo habitual.',
+      'Duto linfático torácico principal, estrutura sem relação com o shunt fetal aortopulmonar.',
+      'Artéria umbilical esquerda fibrótica, remanescente vascular sem relevância hemodinâmica pós-natal.'
     ],
     correctIndex: 1,
     explanation: 'Na presença de Persistência do Canal Arterial (PCA) em recém-nascidos prematuros levando a shunt hemodinamicamente pesado com insuficiência cardiopulmonar, o fechamento farmacológico do canal arterial pode ser induzido pelo uso de inibidores da ciclooxigenase (indometacina ou ibuprofeno), bloqueando prostaglandinas dilatadoras.'
@@ -901,11 +901,11 @@ export const ENARE_EXTRA_QUESTIONS: any[] = [
     subject: 'Ginecologia & Obstetrícia',
     text: 'Uma gestante na 34ª semana de idade gestacional apresenta quadro súbito de dor abdominal intensa e contínua acompanhada de sangramento vaginal escuro de moderada quantidade. No exame obstétrico obstétrico: útero extremamente doloroso e tenso (hipertonia uterina marcante) acompanhado de sofrimento fetal agudo na cardiotocografia. Qual o principal diagnóstico clínico e qual a via de nascimento prioritária diante de feto vivo com sofrimento?',
     options: [
-      'Placenta prévia sangrante; parto fórceps de alívio vaginal imediato.',
+      'Placenta prévia sangrante; parto fórceps de alívio vaginal imediato, contraindicado diante de sangramento ativo e placenta de inserção baixa.',
       'Descolamento Prematuro de Placenta (DPP); cesárea de urgência imediata pela via mais rápida visando salvamento de vida materno-fetal.',
-      'Rotura de vasos prévios (vasa previa); indução farmacológica com ocitocina.',
-      'Atonia uterina primária precoce; massagem bimanual intrauterina expectante.',
-      'Rotura uterina franca em útero cicatrizado; colocação de balão de Bakri com feto in situ.'
+      'Rotura de vasos prévios (vasa previa); indução farmacológica com ocitocina, conduta inadequada diante de sofrimento fetal agudo instalado.',
+      'Atonia uterina primária precoce; massagem bimanual intrauterina expectante, conduta pós-parto sem relação com hipertonia uterina anteparto.',
+      'Rotura uterina franca em útero cicatrizado; colocação de balão de Bakri com feto ainda in situ, conduta insuficiente diante de rotura estabelecida.'
     ],
     correctIndex: 1,
     explanation: 'O Descolamento Prematuro de Placenta (DPP) é uma complicação obstétrica associada a dor intensa, sangramento genital e hipertonia (útero lenhoso/tábua) acompanhada de rápida asfixia fetal intrauterina por anóxia. Em feto vivo com desconforto, a cesárea imediata é a via recomendada na imensa maioria dos serviços obstétricos.'
@@ -917,11 +917,11 @@ export const ENARE_EXTRA_QUESTIONS: any[] = [
     subject: 'Ginecologia & Obstetrícia',
     text: 'Uma gestante de 32 semanas de termo apresenta queixas persistentes de cefaleia intensa retro-orbital, turvação visual importante e epigastralgia em barra. Ao aferir PA: 165/110 mmHg confirmada repetidamente, com depuração de proteinúria de fita reagente de +++ urinária. Qual o principal diagnóstico estabelecido e a conduta imediata para prevenção de crises convulsivas maternas?',
     options: [
-      'Hipertensão gestacional transitória leve; acompanhamento expectante ambulatorial.',
+      'Hipertensão gestacional transitória leve; acompanhamento expectante ambulatorial, sem indicação de internação ou profilaxia anticonvulsivante.',
       'Pré-eclâmpsia grave com iminência de eclâmpsia; hospitalização imediata e administração de Sulfato de Magnésio pelas vias de infusão padrão (esquema de Pritchard ou Zuspan).',
-      'Diagnóstico de Enxaqueca clássica descompensada; sumatriptano oral precoce.',
-      'Síndrome de Mallory-Weiss aguda; dreno gástrico despressurizador de cólon.',
-      'Diabetes gestacional descontrolada; insulina de ação rápida e diuréticos.'
+      'Diagnóstico de enxaqueca clássica descompensada; uso de sumatriptano oral precoce, sem qualquer relação com os níveis pressóricos e proteinúria.',
+      'Síndrome de Mallory-Weiss aguda; dreno gástrico despressurizador de cólon, conduta sem relação com o quadro hipertensivo gestacional grave.',
+      'Diabetes gestacional descontrolada; insulina de ação rápida associada a diuréticos, sem indicação de sulfato de magnésio profilático.'
     ],
     correctIndex: 1,
     explanation: 'A pré-eclâmpsia grave com sinais de irritação cerebral (cefaleia, alterações visuais, hiperreflexia) representa iminência de eclâmpsia (crises convulsivas generalizadas). A prevenção de crises deve ser iniciada com o uso de Sulfato de Magnésio (droga de primeira linha de escolha de segurança comprovada), regulada por monitorização rigorosa de reflexo patelar, frequência respiratória e débito urinário.'
@@ -933,11 +933,11 @@ export const ENARE_EXTRA_QUESTIONS: any[] = [
     subject: 'Ginecologia & Obstetrícia',
     text: 'Paciente de 48 anos com queixa de corrimento vaginal branco amarelado de odor fétido (semelhante a peixe podre), que se acentua após coito ou menstruação. Exame ginecológico revela corrimento fluido acinzentado fino e homogêneo em parede vaginal. Teste de pH vaginal de 5.2 (elevado) e teste das aminas (KOH 10%) positivo. Qual a principal hipótese clínica diagnóstica e a presença das células clássicas no esfregaço?',
     options: [
-      'Candidíase vaginal; presença de pseudo-hifas inflamadas.',
+      'Candidíase vaginal; presença de pseudo-hifas inflamadas ao exame a fresco, com corrimento branco grumoso e prurido intenso associado.',
       'Vaginose Bacteriana (causada por Gardnerella vaginalis e anaeróbios); presença típica de células-alvo (Clue cells) ou células guia no exame a fresco.',
-      'Tricomoníase vaginal herpética; visualização de trofozoítas flagelados móveis.',
-      'Vaginite atrófica senil primária; células basais desprovidas de glicogênio.',
-      'Infecção por Chlamydia trachomatis cervical; corpos de inclusão intracitoplasmáticos.'
+      'Tricomoníase vaginal; visualização de trofozoítas flagelados móveis ao exame a fresco, com corrimento amarelo-esverdeado espumoso.',
+      'Vaginite atrófica senil primária; células basais desprovidas de glicogênio, achado típico do hipoestrogenismo da menopausa.',
+      'Infecção cervical por Chlamydia trachomatis; corpos de inclusão intracitoplasmáticos, sem odor fétido ou alteração do pH vaginal.'
     ],
     correctIndex: 1,
     explanation: 'A vaginose bacteriana é o corrimento mais comum em mulheres de idade reprodutiva. O diagnóstico é baseado nos critérios de Amsel: corrimento branco-acinzentado fluido e homogêneo; pH vaginal > 4.5; teste de KOH a 10% positivo (odor de aminas); e presença de "clue cells" (células epiteliais recobertas por bactérias) no exame a fresco.'
@@ -949,11 +949,11 @@ export const ENARE_EXTRA_QUESTIONS: any[] = [
     subject: 'Ginecologia & Obstetrícia',
     text: 'Uma mulher de 62 anos, menopausada há 11 anos, procura consulta por apresentar sangramento vaginal indolor de início recente. Qual a principal hipótese diagnóstica que deve ser obrigatoriamente investigada por biópsia e qual o exame inicial de triagem de escolha?',
     options: [
-      'Miomatose uterina submucosa crônica; dosagem de CA-125.',
+      'Miomatose uterina submucosa crônica; dosagem sérica de CA-125, marcador inespecífico que não substitui a avaliação da espessura endometrial.',
       'Câncer de Endométrio (Adenocarcinoma endometrioide); ultrassonografia transvaginal para medição e avaliação da espessura endometrial (se > 4-5mm requer investigação invasiva por histopatológico).',
-      'Atrofia vaginal senil benigna estritamente; colposcopia de repetição mensal.',
-      'Cisto anexial benigno roto; biópsia de ovário de urgência imediata.',
-      'Sarcoma uterino metastático silencioso; ressonância de pelve de alta resolução.'
+      'Atrofia vaginal senil benigna estritamente; colposcopia de repetição mensal, exame direcionado ao colo uterino e não à cavidade endometrial.',
+      'Cisto anexial benigno roto; biópsia de ovário de urgência imediata, conduta sem relação com sangramento de origem endometrial pós-menopausa.',
+      'Sarcoma uterino metastático silencioso; ressonância de pelve de alta resolução, exame de segunda linha após triagem ultrassonográfica inicial.'
     ],
     correctIndex: 1,
     explanation: 'O sangramento uterino anormal na pós-menopausa é considerado indicador clássico de malignidade endometrial até que se prove o contrário. A ultrassonografia transvaginal é o exame inicial de triagem ideal: uma espessura endometrial menor que 4mm em mulheres sem reposição hormonal apresenta alto valor preditivo negativo para câncer de endométrio.'
@@ -965,11 +965,11 @@ export const ENARE_EXTRA_QUESTIONS: any[] = [
     subject: 'Ginecologia & Obstetrícia',
     text: 'Paciente de 25 anos, primigesta na 40ª semana de gestação com dilatação cervical de 6 cm e contrações úteis (3 contrações de 40 segundos em 10 minutos). Apresenta partograma regular. O que caracteriza o início do período pélvico ou expulsivo durante o trabalho de parto convencional?',
     options: [
-      'As primeiras contrações dolorosas rítmicas com apagamento cervical.',
+      'As primeiras contrações dolorosas rítmicas com apagamento cervical progressivo, características do início da fase ativa do trabalho de parto.',
       'Cervicodilatação completa (10 cm) associada com a descida do polo cefálico fetal pelo trajeto pélvico até o desprendimento.',
-      'Rotura espontânea de bolsa das águas sem contrações úteis.',
-      'Início de infusão de ocitocina profilática.',
-      'Saída imediata da placenta no terceiro estágio do parto.'
+      'Rotura espontânea de bolsa das águas sem contrações uterinas efetivas associadas, achado isolado que não define o período expulsivo.',
+      'Início de infusão de ocitocina profilática logo após a dilatação cervical completa, independentemente da posição do polo cefálico fetal.',
+      'Saída imediata da placenta no terceiro estágio do parto, evento posterior ao nascimento que não caracteriza o período expulsivo.'
     ],
     correctIndex: 1,
     explanation: 'O segundo estágio ou período expulsivo do trabalho de parto se inicia formalmente com a dilatação cervical completa (10 cm) e termina espontaneamente no nascimento do concepto, caracterizando o trajeto e expulsão.'
@@ -981,11 +981,11 @@ export const ENARE_EXTRA_QUESTIONS: any[] = [
     subject: 'Ginecologia & Obstetrícia',
     text: 'Gestante na 12ª semana de gravidez procura emergência obstétrica por apresentar sangramento vaginal moderado acompanhado de cólicas pélvicas intensas. No exame físico detalhado: colo uterino pérvio, pérvio à palpação profunda, com visualização e eliminação de restos ovulares pela vagina. Qual o provável diagnóstico e a conduta recomendada?',
     options: [
-      'Ameaça de abortamento; repouso físico absoluto associado a progesterona.',
+      'Ameaça de abortamento; repouso físico absoluto associado a progesterona, conduta incompatível com colo pérvio e eliminação de restos ovulares.',
       'Abortamento incompleto; esvaziamento uterino por aspiração manual intrauterina (AMIU) ou curetagem uterina se clinicamente indicada.',
-      'Abortamento retido estável; expectação armada por até 6 meses.',
-      'Incompetência istmocervical congênita; cerclagem uterina emergencial imediata.',
-      'Gravidez ectópica íntegra; metotrexato sistêmico por via endovenosa.'
+      'Abortamento retido estável; expectação armada por até 6 meses, conduta incompatível com colo pérvio e sangramento ativo moderado.',
+      'Incompetência istmocervical congênita; cerclagem uterina emergencial imediata, procedimento contraindicado na vigência de abortamento em curso.',
+      'Gravidez ectópica íntegra; metotrexato sistêmico por via endovenosa, conduta incompatível com eliminação de restos ovulares pela vagina.'
     ],
     correctIndex: 1,
     explanation: 'A eliminação parcial de material ovular pelo colo uterino permeável sela abortamento incompleto. Para evitar complicações hemorrágicas severas ou infecciosas, está indicado o esvaziamento cirúrgico uterino imediato (AMIU ou curetagem) sob analgesia.'
@@ -997,11 +997,11 @@ export const ENARE_EXTRA_QUESTIONS: any[] = [
     subject: 'Ginecologia & Obstetrícia',
     text: 'Mulher de 26 anos queixa-se de dor pélvica cíclica severa (frequentemente piorando no período pré-menstrual), dismenorréia secundária incapacitante e dispareunia profunda, acompanhada de infertilidade primária há 2 anos. Qual a principal suspeita clínica diagnóstica diagnóstica?',
     options: [
-      'Síndrome dos ovários policísticos congênita.',
+      'Síndrome dos ovários policísticos, condição endócrina sem relação direta com dismenorreia cíclica progressiva e dispareunia profunda.',
       'Endometriose (implantação ectópica de estroma e glândulas endometriais fora da cavidade uterina).',
-      'Doença inflamatória pélvica crônica inespecífica.',
-      'Miomatose uterina subserosa gigante.',
-      'Malformação mulleriana obstrutiva uterina.'
+      'Doença inflamatória pélvica crônica inespecífica, geralmente associada a corrimento vaginal e antecedente de infecção sexualmente transmissível.',
+      'Miomatose uterina subserosa gigante, geralmente associada a sangramento aumentado e efeito compressivo, sem relação com dor cíclica pré-menstrual.',
+      'Malformação mulleriana obstrutiva uterina, geralmente diagnosticada na menarca por dor cíclica associada a hematocolpo.'
     ],
     correctIndex: 1,
     explanation: 'A endometriose é caracterizada clinicamente por dor pélvica severa crônica, dismenorreia severa secundária, dor nas relações de penetração profunda (dispareunia) e infertilidade por distorções tubárias inflamatórias crônicas.'
@@ -1013,11 +1013,11 @@ export const ENARE_EXTRA_QUESTIONS: any[] = [
     subject: 'Ginecologia & Obstetrícia',
     text: 'Uma primigesta na 10ª semana de gestação procura unidade básica de saúde para início de pré-natal de rotina. Qual o esquema profilático consagrado para prevenção de defeitos do tubo neural (como anencefalia ou espinha bífida) e qual o período fisiológico ideal para administração recomendada pelas diretrizes?',
     options: [
-      'Reposição de Ferro elementar e Cálcio exclusivamente após 20 semanas.',
+      'Reposição de Ferro elementar e Cálcio exclusivamente após 20 semanas de gestação, sem qualquer suplementação prévia de ácido fólico periconcepcional.',
       'Suplementação com Ácido Fólico na dose de 400 mcg ao dia, idealmente iniciada ao menos 30 dias antes da concepção (período periconcepcional) e mantida até o final do primeiro trimestre.',
-      'Megadoses de Vitamina A iniciada de forma intermitente no segundo trimestre.',
-      'Uso de piridoxina profilática semanal somente.',
-      'Sulfato de sulfadiazina contínua nos 9 meses.'
+      'Megadoses de Vitamina A iniciadas de forma intermitente no segundo trimestre, esquema teratogênico e sem relação com a prevenção de defeitos do tubo neural.',
+      'Uso de piridoxina profilática semanal somente, sem qualquer efeito comprovado na prevenção de defeitos do tubo neural fetal.',
+      'Sulfato de sulfadiazina em uso contínuo durante os 9 meses de gestação, esquema sem indicação para profilaxia de malformações neurais.'
     ],
     correctIndex: 1,
     explanation: 'A suplementação preventiva com ácido fólico antes da gestação e no primeiro trimestre do desenvolvimento reduz em cerca de 70% a chance de defeitos abertos congênitos de fechamento de tubo neural na embriogênese precoce.'
@@ -1045,11 +1045,11 @@ export const ENARE_EXTRA_QUESTIONS: any[] = [
     subject: 'Ginecologia & Obstetrícia',
     text: 'O que define a ocorrência de rotura prematura de membranas ovulares (Amniorrexe Prematura)?',
     options: [
-      'A saída de líquido amniótico residual de forma involuntária apenas após as 42 semanas.',
+      'A saída de líquido amniótico residual de forma involuntária apenas após as 42 semanas de gestação pós-termo, sem relação com o início do parto.',
       'A rotura de membranas corioamnióticas que ocorre espontaneamente antes do início efetivo do trabalho de parto, independente da idade gestacional.',
-      'A eliminação do tampão mucoso sanguinolento na 38ª semana.',
-      'A necessidade de realização de amniorrexe artificial com agulha dupla na dilatação completa.',
-      'A herniação uterina espontânea transvaginal com liquido íntegro.'
+      'A eliminação do tampão mucoso sanguinolento na 38ª semana, sinal premonitório de trabalho de parto e não de rotura de membranas.',
+      'A necessidade de realização de amniorrexe artificial com agulha dupla na dilatação cervical completa, procedimento eletivo e não espontâneo.',
+      'A herniação uterina espontânea transvaginal com líquido amniótico íntegro, condição sem correlato clínico reconhecido na obstetrícia.'
     ],
     correctIndex: 1,
     explanation: 'A amniorrexe prematura (RPM) é definida pela ruptura das membranas ovulares e saída de líquido amniótico antes que as contrações rítmicas e modificações cervicais que caracterizam o trabalho de parto se manifestem de fato.'
@@ -1127,11 +1127,11 @@ export const ENARE_EXTRA_QUESTIONS: any[] = [
     subject: 'Medicina de Família/SUS',
     text: 'O que caracteriza a diretriz da Equidade, considerada um dos pilares de atuação integrados do SUS?',
     options: [
-      'Tratar todos os pacientes exatamente da mesma maneira, distribuindo recursos idênticos a qualquer estrato.',
+      'Tratar todos os pacientes exatamente da mesma maneira, distribuindo recursos idênticos a qualquer estrato social, sem considerar as diferenças de vulnerabilidade e necessidade entre os grupos populacionais.',
       'Oferecer mais assistência e focalizar proporcionalmente recursos em saúde naquelas populações e pessoas que apresentam maiores vulnerabilidades, necessidades acumuladas e carências sociais específicas, buscando corrigir desigualdades históricas.',
-      'Cobrança de taxas de coparticipação proporcionais à faixa de renda mensal do indivíduo assistido.',
-      'Reduzir as ações curativas focando integralmente as verbas e esforços da pasta em campanhas vacinais estáticas.',
-      'Permitir que apenas planos privados executem atendimento em regiões de periferia periféricas.'
+      'Cobrança de taxas de coparticipação proporcionais à faixa de renda mensal do indivíduo assistido, prática incompatível com o princípio da gratuidade e universalidade do SUS.',
+      'Reduzir as ações curativas focando integralmente as verbas e esforços da pasta em campanhas vacinais estáticas, negligenciando a atenção diferenciada às populações mais vulneráveis.',
+      'Permitir que apenas planos privados executem atendimento em regiões de periferia periféricas, transferindo ao mercado a responsabilidade estatal pela equidade em saúde.'
     ],
     correctIndex: 1,
     explanation: 'A equidade visa mitigar disparidades em saúde distribuindo proporcionalmente mais recursos aos que sofrem de maiores fragilidades clínicas ou sociais, pautado na premissa de tratar desigualmente os desiguais.'
@@ -1161,9 +1161,9 @@ export const ENARE_EXTRA_QUESTIONS: any[] = [
     options: [
       'O número de novos casos diagnosticados da doença em um período de tempo determinado sobre a população exposta ao risco inicial.',
       'O número total de casos existentes (soma de casos novos e antigos acumulados) num determinado ponto no tempo dividido pela população total em risco no mesmo local e instante.',
-      'O número de óbitos secundários à patologia dividido pela morbidade total acumulada.',
-      'O somatório de internações hospitalares devidas a essa causa apenas nas capitais dos estados.',
-      'A taxa de transmissão secundária entre familiares conviventes.'
+      'O número de óbitos secundários à patologia dividido pela morbidade total acumulada no mesmo período, definindo na verdade a letalidade e não a prevalência.',
+      'O somatório de internações hospitalares devidas a essa causa apenas nas capitais dos estados, indicador de morbidade hospitalar e não de prevalência populacional.',
+      'A taxa de transmissão secundária entre familiares conviventes, medida de contagiosidade intradomiciliar e não de prevalência da doença.'
     ],
     correctIndex: 1,
     explanation: 'A prevalência mede a proporção de casos consolidados (existentes totais) da patologia em um corte temporal específico na população estudada, diferenciando-se da incidência (que mede apenas novos casos no intervalo de tempo).'
@@ -1191,11 +1191,11 @@ export const ENARE_EXTRA_QUESTIONS: any[] = [
     subject: 'Medicina de Família/SUS',
     text: 'Qual das alternativas apresenta um indicador sensível e representativo das condições de saneamento básico e saúde ambiental em uma área populacional específica?',
     options: [
-      'Taxa de incidência de hipertensão refratária senil.',
+      'Taxa de incidência de hipertensão arterial refratária senil, indicador cardiovascular sem relação com saneamento básico.',
       'Taxa de internação hospitalar por diarreia aguda infecciosa em menores de 5 anos de idade.',
-      'Coeficiente de prevalência de asma alérgica infantil no inverno.',
-      'Mortalidade proporcional por lesões decorrentes de acidentes de trânsito.',
-      'Surgimento isolado de casos de catarata bilateral senil.'
+      'Coeficiente de prevalência de asma alérgica infantil no inverno, indicador respiratório sazonal sem relação direta com saneamento.',
+      'Mortalidade proporcional por lesões decorrentes de acidentes de trânsito, indicador de segurança viária e não de saneamento básico.',
+      'Surgimento isolado de casos de catarata bilateral senil, achado oftalmológico sem relação com condições sanitárias ambientais.'
     ],
     correctIndex: 1,
     explanation: 'Doenças de veiculação hídrica e diarreias agudas em crianças pequenas são causadas predominantemente pela carência de rede de esgoto e águas tratadas adequadas, sendo considerados indicadores de vulnerabilidade de saúde ambiental.'
@@ -1223,11 +1223,11 @@ export const ENARE_EXTRA_QUESTIONS: any[] = [
     subject: 'Medicina de Família/SUS',
     text: 'Qual das ações a seguir faz parte constitucionalmente das atribuições privativas de controle da Vigilância Sanitária (VISA) governamental conformada pela Lei Orgânica de Saúde?',
     options: [
-      'Monitorar epidemias de dengue e desenhar borrifamento territorial apenas de forma isolada.',
+      'Monitorar epidemias de dengue e desenhar cronogramas de borrifamento territorial de forma isolada, atribuição típica da vigilância epidemiológica e não da vigilância sanitária.',
       'Controlar e fiscalizar a produção, transporte, estocagem, comercialização e qualidade de produtos consumíveis em geral (alimentos, cosméticos, insumos industriais de saúde, saneantes, água de consumo e prestação direta de serviços de relevância para a saúde).',
-      'Garantir contratação prioritária de consórcios médicos multilaterais privados.',
-      'Suturar ferimentos em via pública em conjunto com equipes aeromédicas de emergência.',
-      'Atribuições puramente pedagógicas em escolas de nível fundamental estaduais.'
+      'Garantir contratação prioritária de consórcios médicos multilaterais privados, atribuição de gestão administrativa alheia ao controle sanitário de produtos e serviços.',
+      'Suturar ferimentos em via pública em conjunto com equipes aeromédicas de emergência, atividade assistencial de urgência e não de fiscalização sanitária.',
+      'Atribuições puramente pedagógicas em escolas de nível fundamental estaduais, competência educacional sem relação com o controle sanitário de produtos e serviços.'
     ],
     correctIndex: 1,
     explanation: 'A Vigilância Sanitária se destina a eliminar ou mitigar riscos sanitários decorrentes da circulação e qualidade de bens e serviços consumíveis indireta ou diretamente pelo mercado populacional.'
@@ -1255,11 +1255,11 @@ export const ENARE_EXTRA_QUESTIONS: any[] = [
     subject: 'Medicina de Família/SUS',
     text: 'A lista oficial do Ministério da Saúde que elenca todas as agravos, doenças e acidentes que exigem relato formal e imediato (em até 24 horas) ou semanal às instâncias públicas de vigilância epidemiológica do SUS para deflagrar controle sanitário é a:',
     options: [
-      'Relação Nacional de Medicamentos Essenciais (RENAME).',
-      'Relação Nacional de Ações e Serviços de Saúde (RENASES).',
+      'Relação Nacional de Medicamentos Essenciais (RENAME), lista de fármacos padronizados pelo SUS.',
+      'Relação Nacional de Ações e Serviços de Saúde (RENASES), rol de procedimentos assistenciais do SUS.',
       'Lista de Notificação Compulsória de Doenças, Agravos e Eventos de Saúde Pública.',
-      'Tabela unificada de procedimentos do DATASUS.',
-      'Tabela do Instituto Médico Legal de perícias civis.'
+      'Tabela unificada de procedimentos do DATASUS, usada para faturamento e não para vigilância epidemiológica.',
+      'Tabela do Instituto Médico Legal de perícias civis, documento pericial sem relação com notificação epidemiológica.'
     ],
     correctIndex: 2,
     explanation: 'A lista de Notificação Compulsória regulamenta os prazos e fluxos legais de relatos obrigatórios para doenças transmissíveis, acidentes de trabalho e violências em geral em território de atuação médica.'
@@ -1271,11 +1271,11 @@ export const ENARE_EXTRA_QUESTIONS: any[] = [
     subject: 'Medicina de Família/SUS',
     text: 'Qual das seguintes condutas exemplifica um dos preceitos do Método Clínico Centrado na Pessoa (MCCP) no manejo ambulatorial de um doente de diabetes crônico de difícil controle?',
     options: [
-      'Prescrição punitiva isolada contínua com tom de exacerbação de riscos.',
+      'Prescrição punitiva isolada e contínua, com tom de exacerbação de riscos, sem qualquer espaço para escuta das dificuldades do paciente no manejo da doença.',
       'Explorar a experiência de adoecimento do paciente (o que ele pensa, sente, espera e como a doença afeta seu dia a dia) compartilhando decisões e metas de tratamento em conjunto com o usuário na consulta.',
-      'Proibir o doente de se manifestar ou dar opiniões relegando sua assistência ao silêncio.',
-      'Delegar a orientação integral a folhetos genéricos e encaminhar expectante ao especialista de imediato.',
-      'Cancelar permanentemente seu cadastro perante a UBS por insubordinação de dieta.'
+      'Proibir o doente de se manifestar ou dar opiniões, relegando sua assistência ao silêncio e ignorando suas percepções sobre o próprio adoecimento.',
+      'Delegar a orientação integral a folhetos genéricos impressos e encaminhar de forma expectante ao especialista, sem qualquer diálogo compartilhado na consulta.',
+      'Cancelar permanentemente seu cadastro perante a UBS por insubordinação alimentar, medida punitiva incompatível com o cuidado centrado na pessoa.'
     ],
     correctIndex: 1,
     explanation: 'O MCCP defende humanizar o raciocínio clínico pautando-se nas perspectivas, valores, contextos de vida reais e anseios do próprio indivíduo, coconstruindo decisões compartilhadas na terapia.'
@@ -1287,11 +1287,11 @@ export const ENARE_EXTRA_QUESTIONS: any[] = [
     subject: 'Medicina de Família/SUS',
     text: 'A articulação de diferentes saberes e a produção coletiva de projetos terapêuticos integradores desenhados para necessidades atípicas de alta complexidade em saúde de um território, compartilhando a responsabilidade do cuidado, é referenciada como:',
     options: [
-      'Auditoria Fiscal em Redes Públicas.',
+      'Auditoria Fiscal em Redes Públicas, atividade de controle financeiro-contábil.',
       'Matriciamento interdisciplinar com Apoio Matricial técnico-pedagógico.',
-      'Regulação Hospitalar unificada transitória.',
-      'Comitê de Ética médica municipal punitivo.',
-      'Consórcio financeiro compartilhados.'
+      'Regulação Hospitalar unificada e transitória de leitos disponíveis.',
+      'Comitê de Ética médica municipal de caráter punitivo e disciplinar.',
+      'Consórcio financeiro compartilhado entre municípios para custeio assistencial.'
     ],
     correctIndex: 1,
     explanation: 'O matriciamento promove retaguarda especializada e troca interdisciplinar técnico-pedagógica visando co-tratar as necessidades sanitárias pautadas pela integralidade.'
@@ -1303,11 +1303,11 @@ export const ENARE_EXTRA_QUESTIONS: any[] = [
     subject: 'Medicina de Família/SUS',
     text: 'A notificação compulsória imediata perante agressões por animais peçonhentos (como picada por serpente Bothrops ou escorpião Tityus serrulatus) deve ser emitida a quem e em quanto tempo para garantir o fornecimento gratuito de soros específicos?',
     options: [
-      'Ao Ministério Público do Estado em até 12 dias consecutivos.',
+      'Ao Ministério Público do Estado em até 12 dias consecutivos após o atendimento, prazo incompatível com a urgência da soroterapia específica.',
       'À Secretaria Municipal de Saúde ou autoridade sanitária local em até 24 horas subsequentes ao atendimento inicial.',
-      'À gerência executiva nacional da ANVISA em até 48 horas de forma indireta.',
-      'Exclusivamente à Ouvidoria Nacional dos Direitos Humanos até um mês.',
-      'Não há necessidade de qualquer notificação para agravos de picada de acidentes animais.'
+      'À gerência executiva nacional da ANVISA em até 48 horas de forma indireta, instância sem competência para notificação compulsória local.',
+      'Exclusivamente à Ouvidoria Nacional dos Direitos Humanos até um mês, órgão sem atribuição de vigilância epidemiológica sanitária.',
+      'Não há necessidade de qualquer notificação para agravos de picada de animais peçonhentos, mesmo diante de risco de óbito e envenenamento grave.'
     ],
     correctIndex: 1,
     explanation: 'Acidentes por animais peçonhentos exigem relato/notificação compulsória imediata para monitorar os estoques públicos nacionais regulados de imunofatores/soros para tratamento de urgência.'
@@ -1340,10 +1340,10 @@ export const ENARE_EXTRA_QUESTIONS: any[] = [
     text: 'O Pacto de Gestão do SUS estabelece a criação do termo regulado que representa o instrumento formal de cooperação e mútua responsabilidade sanitária firmado e celebrado voluntariamente entre os entes de governo das esferas federativas para descentralização das atividades organizacionais de saúde. Trata-se do:',
     options: [
       'Contrato Organizativo de Ação Pública da Saúde (COAP) ou Termo de Compromisso de Gestão.',
-      'Consórcio Bancário Público multilateral.',
-      'Dossiê de fiscalização contábil compartilhada.',
-      'Contrato de terceirização e gestão hospitalar privativa.',
-      'Formulário unificado de internação compulsória intermunicipal.'
+      'Consórcio Bancário Público multilateral, instrumento financeiro sem relação com a pactuação de gestão sanitária interfederativa.',
+      'Dossiê de fiscalização contábil compartilhada, documento de auditoria e não de pactuação organizativa entre entes federados.',
+      'Contrato de terceirização e gestão hospitalar privativa, instrumento de direito privado e não de cooperação interfederativa pública.',
+      'Formulário unificado de internação compulsória intermunicipal, documento assistencial sem relação com pactuação de gestão do SUS.'
     ],
     correctIndex: 0,
     explanation: 'O COAP (pelo decreto 7508) ou termos pactuados de cooperação selam a mútua e solidária responsabilidade federativa frente ao suporte às redes unificadas de saúde.'
@@ -1355,11 +1355,11 @@ export const ENARE_EXTRA_QUESTIONS: any[] = [
     subject: 'Medicina de Família/SUS',
     text: 'Uma UBS apresenta alto índice de internações por complicações crônicas microvasculares de diabetes mellitus do tipo 2. Qual das seguintes estratégias reflete o princípio da longitudinalidade do cuidado para reversão desses eventos adversos no território?',
     options: [
-      'Encaminhar sumariamente todos os usuários cadastrados de diabetes a ambulatórios secundários e exames de fita em hospitais.',
+      'Encaminhar sumariamente todos os usuários cadastrados de diabetes a ambulatórios secundários e serviços de referência hospitalar, desarticulando o acompanhamento pela própria equipe da atenção básica.',
       'Implementar equipe de acompanhamento multiprofissional contínuo com consultas regulares planejadas, visitas domiciliares, grupos educativos terapêuticos e contato longitudinal precoce de acolhimento para prevenir intercorrências de longo prazo.',
-      'Oferecer vales-dieta impressos na recepção da clínica e encaminhá-los para autoprevenção familiar expectante.',
-      'Substituir toda a farmacoterapia oral por suplementos herbais protetores.',
-      'Suspender as consultas na UBS focando a equipe somente na vacinação da área.'
+      'Oferecer vales-dieta impressos na recepção da clínica e encaminhá-los para autoprevenção familiar expectante, sem qualquer estruturação de acompanhamento contínuo pela equipe.',
+      'Substituir toda a farmacoterapia oral por suplementos herbais protetores, sem evidência de eficácia comprovada no controle glicêmico crônico do paciente.',
+      'Suspender as consultas regulares na UBS, focando a equipe somente na vacinação da área e negligenciando o acompanhamento longitudinal dos casos crônicos.'
     ],
     correctIndex: 1,
     explanation: 'A longitudinalidade foca na responsabilidade continuada e do vínculo ao longo de grandes faixas temporais da vida do doente (longo termo), otimizando a adesão aos tratamentos preventivos e o controle clínico de afecções severas.'
@@ -1371,11 +1371,11 @@ export const ENARE_EXTRA_QUESTIONS: any[] = [
     subject: 'Medicina de Família/SUS',
     text: 'Segundo a Política Nacional de Atenção Básica (PNAB), qual a estimativa máxima recomendada de população adscrita (número total de pessoas sob os cuidados) por cada equipe de Saúde da Família (eSF) em geral?',
     options: [
-      'Entre 1.000 e 2.000 pessoas unicamente.',
+      'Entre 1.000 e 2.000 pessoas unicamente, limite considerado insuficiente para a cobertura territorial preconizada pela PNAB.',
       'Entre 2.000 e 3.500 pessoas, podendo variar conforme dados de vulnerabilidade socioeconômica locais.',
-      'Até 5.000 pessoas obrigatoriamente.',
+      'Até 5.000 pessoas obrigatoriamente, valor muito superior ao teto recomendado pela Política Nacional de Atenção Básica.',
       'Livre de limites de cadastramento, pautando-se em livre admissão trans-territorial.',
-      'Restrito a menos de 500 famílias no território do sul.'
+      'Restrito a menos de 500 famílias no território, parâmetro sem correspondência com os critérios oficiais da PNAB.'
     ],
     correctIndex: 1,
     explanation: 'A PNAB preconiza a adstrição de 2000 a 3500 pessoas de clientela adscrita de referência por eSF, visando assegurar a cobertura clínica, resolutividade do cuidado e viabilidade de longitudinalidade do atendimento continuado.'
@@ -1387,11 +1387,11 @@ export const ENARE_EXTRA_QUESTIONS: any[] = [
     subject: 'Medicina de Família/SUS',
     text: 'Um paciente masculino com antecedente de dependência alcoólica queixa-se de tremores severos de extremidades, sudorese, alucinações auditivas e picos de agressividade graves nas primeiras 48h sem consumo de álcool. Qual o provável quadro de abstinência estabelecido e o tratamento empírico de primeira escolha?',
     options: [
-      'Síndrome de abstinência moderada; paracetamol expectante.',
+      'Síndrome de abstinência moderada; uso isolado de paracetamol expectante, sem cobertura para o risco de convulsões ou alucinações graves.',
       'Delirium Tremens agudo; uso de benzodiazepínicos de meia-vida longa (como diazepam ou clordiazepóxido) sob monitorização clínica contínua em ambiente hospitalar.',
-      'Coma alcoólico terminal; diurese forçada ácida precoce.',
-      'Encefalopatia metabólica de refluxo; reposição forçada calórica parenteral tardia.',
-      'Psicose de Parkinson secundária; Levodopa em dose terapêutica máxima.'
+      'Coma alcoólico terminal; diurese forçada ácida precoce, conduta sem qualquer benefício comprovado e com risco de piora metabólica.',
+      'Encefalopatia metabólica de refluxo; reposição calórica parenteral forçada e tardia, sem cobertura sedativa para o quadro de abstinência.',
+      'Psicose de Parkinson secundária; Levodopa em dose terapêutica máxima, tratamento sem qualquer relação com a síndrome de abstinência alcoólica.'
     ],
     correctIndex: 1,
     explanation: 'O Delirium Tremens é uma manifestação clínica de abstinência alcoólica que cursa com instabilidade autonômica e agitação grave. O tratamento de suporte envolve o uso de benzodiazepínicos (antagonista GABAr) para acalmar a hiperestimulação dopaminérgica-serotoninérgica-noradrenérgica.'

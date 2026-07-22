@@ -92,10 +92,10 @@ export const ENARE_GERADO_2026_QUESTIONS: any[] = [
     text: 'Mulher, 45 anos, hipertensa em uso irregular de medicação, apresenta cefaleia intensa, visão turva e PA 220x130 mmHg. Fundoscopia revela papiledema e hemorragias retinianas. Está confusa. Qual o diagnóstico e a conduta imediata?',
     options: [
       'Encefalopatia hipertensiva; redução gradual da PA com anti-hipertensivo intravenoso',
-      'Cefaleia tensional; analgesia comum e alta',
-      'Enxaqueca com aura; triptano e repouso',
-      'Meningite bacteriana; punção lombar antes de qualquer tratamento',
-      'Crise convulsiva; apenas anticonvulsivante, sem tratar a PA'
+      'Cefaleia tensional; analgésico comum por via oral e reavaliação clínica em poucos dias',
+      'Enxaqueca com aura; triptano oral associado a repouso em ambiente calmo e escuro',
+      'Meningite bacteriana; punção lombar diagnóstica antes de iniciar qualquer antibioticoterapia',
+      'Crise convulsiva isolada; anticonvulsivante endovenoso, sem necessidade de tratar a PA'
     ],
     correctIndex: 0,
     explanation: 'Encefalopatia hipertensiva exige redução controlada e gradual da pressão arterial (cerca de 25% nas primeiras horas) com droga intravenosa titulável, evitando queda abrupta que cause hipoperfusão.'
@@ -124,10 +124,10 @@ export const ENARE_GERADO_2026_QUESTIONS: any[] = [
     text: 'Mulher, 30 anos, refere fadiga e palidez progressivas. Hemograma mostra Hb 9,2 g/dL, VCM 68 fL, RDW aumentado, ferritina baixa. Nega sangramento menstrual excessivo. Qual investigação adicional é prioritária nesse contexto?',
     options: [
       'Pesquisa de sangue oculto nas fezes e avaliação do trato gastrointestinal',
-      'Eletroforese de hemoglobina isoladamente',
-      'Dosagem de vitamina B12 apenas',
-      'Mielograma como primeira investigação',
-      'Repetir hemograma em 6 meses sem investigar'
+      'Eletroforese de hemoglobina isolada, sem investigação de perda sanguínea digestiva',
+      'Dosagem isolada de vitamina B12, sem avaliação do estoque de ferro corporal',
+      'Mielograma como primeira investigação, antes de excluir causas mais comuns',
+      'Repetir o hemograma em 6 meses, sem qualquer investigação adicional da causa'
     ],
     correctIndex: 0,
     explanation: 'Anemia ferropriva em adulto sem causa ginecológica evidente exige investigação de perda sanguínea gastrointestinal oculta, incluindo endoscopia e colonoscopia conforme idade e fatores de risco.'
@@ -220,10 +220,10 @@ export const ENARE_GERADO_2026_QUESTIONS: any[] = [
     text: 'Paciente de 68 anos com fibrilação atrial crônica, hipertensão, diabetes e história prévia de AVC é avaliado quanto à necessidade de anticoagulação. Qual conduta é a mais adequada?',
     options: [
       'Anticoagulação oral, pois o escore CHA2DS2-VASc indica alto risco tromboembólico',
-      'Apenas AAS em dose antiagregante',
-      'Nenhuma terapia antitrombótica, apenas controle de frequência',
-      'Anticoagulação por tempo determinado de 30 dias apenas',
-      'Cardioversão elétrica imediata sem anticoagulação prévia'
+      'Apenas AAS em dose antiagregante, sem associação a anticoagulante oral',
+      'Nenhuma terapia antitrombótica, apenas controle da frequência cardíaca',
+      'Anticoagulação por tempo determinado de apenas 30 dias, sem manutenção',
+      'Cardioversão elétrica imediata, sem anticoagulação prévia adequada'
     ],
     correctIndex: 0,
     explanation: 'Com AVC prévio, hipertensão e diabetes, o CHA2DS2-VASc é claramente alto, indicando anticoagulação oral contínua para prevenção de novo evento embólico.'
@@ -252,10 +252,10 @@ export const ENARE_GERADO_2026_QUESTIONS: any[] = [
     text: 'Paciente com tosse produtiva há 4 semanas, febre vespertina, sudorese noturna e emagrecimento. Baciloscopia de escarro positiva para BAAR. Qual o esquema terapêutico padrão para o caso, sem histórico de tratamento prévio?',
     options: [
       'Rifampicina, isoniazida, pirazinamida e etambutol por 2 meses, seguidos de rifampicina e isoniazida por 4 meses',
-      'Apenas isoniazida isolada por 6 meses',
-      'Rifampicina isolada por 12 meses',
-      'Esquema com apenas etambutol e pirazinamida por 6 meses',
-      'Corticoide sistêmico associado a repouso, sem antibiótico específico'
+      'Isoniazida isolada em monoterapia contínua por 6 meses, sem associação aos demais fármacos do esquema padrão',
+      'Rifampicina isolada em monoterapia por 12 meses, sem associação aos demais tuberculostáticos do esquema',
+      'Esquema alternativo com apenas etambutol e pirazinamida por 6 meses, sem rifampicina nem isoniazida associadas',
+      'Corticoide sistêmico associado a repouso prolongado, sem qualquer tuberculostático específico'
     ],
     correctIndex: 0,
     explanation: 'O esquema básico (RIPE) para tuberculose virgem de tratamento no Brasil é de 2 meses de quatro drogas seguidos de 4 meses de rifampicina e isoniazida.'
@@ -364,10 +364,10 @@ export const ENARE_GERADO_2026_QUESTIONS: any[] = [
     text: 'Paciente com hipertireoidismo prévio mal controlado desenvolve febre alta, taquicardia importante, agitação e diarreia após infecção respiratória. Suspeita-se de tempestade tireotóxica. Além de betabloqueador, qual outra classe medicamentosa deve ser iniciada com urgência?',
     options: [
       'Tionamida antitireoidiana (propiltiouracila ou metimazol)',
-      'Insulina regular intravenosa',
-      'Anticonvulsivante profilático',
-      'Antifúngico de amplo espectro',
-      'Bifosfonato intravenoso'
+      'Insulina regular intravenosa, sem efeito sobre a tireotoxicose',
+      'Anticonvulsivante profilático, sem indicação nesse quadro',
+      'Antifúngico sistêmico de amplo espectro, sem ação antitireoidiana',
+      'Bifosfonato por via intravenosa, indicado para hipercalcemia'
     ],
     correctIndex: 0,
     explanation: 'Na crise tireotóxica, além de betabloqueador para controle adrenérgico, deve-se iniciar tionamida para bloquear a síntese hormonal, associada a corticoide e iodo em sequência apropriada.'
@@ -396,10 +396,10 @@ export const ENARE_GERADO_2026_QUESTIONS: any[] = [
     text: 'Paciente retorna de área endêmica com febre alta, mialgia intensa, dor retro-orbitária e surge exantema no 4º dia. Apresenta dor abdominal intensa persistente e sangramento de mucosa. Qual classificação de gravidade e conduta são adequadas?',
     options: [
       'Dengue com sinais de alarme; internação para hidratação venosa e monitorização',
-      'Dengue sem sinais de alarme; alta com hidratação oral apenas',
-      'Febre amarela; vacinação imediata como tratamento',
-      'Zika vírus; apenas sintomáticos e alta',
-      'Chikungunya; anti-inflamatório e alta'
+      'Dengue sem sinais de alarme; alta hospitalar com hidratação oral e retorno se piora',
+      'Febre amarela; vacinação imediata como conduta terapêutica na fase aguda',
+      'Zika vírus; tratamento apenas sintomático e alta hospitalar imediata',
+      'Chikungunya; anti-inflamatório não hormonal e alta hospitalar imediata'
     ],
     correctIndex: 0,
     explanation: 'Dor abdominal intensa e sangramento de mucosa são sinais de alarme na dengue, exigindo internação para hidratação venosa e monitorização rigorosa da evolução.'
@@ -462,10 +462,10 @@ export const ENARE_GERADO_2026_QUESTIONS: any[] = [
     text: 'Paciente idoso apresenta abaulamento inguinal doloroso, não redutível, com náuseas e parada de eliminação de gases. Qual a hipótese diagnóstica e a conduta?',
     options: [
       'Hérnia inguinal encarcerada com risco de estrangulamento; correção cirúrgica de urgência',
-      'Hérnia inguinal redutível; correção eletiva ambulatorial',
-      'Hidrocele; apenas observação',
-      'Varicocele; encaminhamento eletivo à urologia',
-      'Linfadenopatia inguinal reacional; antibiótico oral'
+      'Hérnia inguinal redutível, sem sinais de encarceramento; correção cirúrgica eletiva ambulatorial',
+      'Hidrocele comunicante; conduta expectante com observação clínica periódica',
+      'Varicocele; encaminhamento eletivo ao urologista para avaliação ambulatorial',
+      'Linfadenopatia inguinal reacional; antibioticoterapia oral empírica ambulatorial'
     ],
     correctIndex: 0,
     explanation: 'Hérnia não redutível com sinais obstrutivos configura encarceramento com risco de estrangulamento, exigindo correção cirúrgica de urgência para evitar necrose intestinal.'
@@ -478,10 +478,10 @@ export const ENARE_GERADO_2026_QUESTIONS: any[] = [
     text: 'Paciente com cirurgia abdominal prévia apresenta distensão abdominal progressiva, vômitos biliosos e parada de eliminação de flatos. Radiografia mostra níveis hidroaéreos e distensão de alças delgadas. Qual a causa mais provável e a conduta inicial?',
     options: [
       'Obstrução intestinal por bridas; sondagem nasogástrica e hidratação venosa inicialmente',
-      'Volvo de sigmoide; colonoscopia descompressiva imediata',
-      'Doença de Crohn ativa; corticoide isolado',
-      'Íleo biliar; CPRE de urgência',
-      'Câncer colorretal; quimioterapia neoadjuvante isolada'
+      'Volvo de sigmoide; colonoscopia descompressiva de urgência como conduta inicial',
+      'Doença de Crohn em atividade; corticoterapia isolada, sem investigação cirúrgica',
+      'Íleo biliar; colangiopancreatografia retrógrada endoscópica de urgência',
+      'Câncer colorretal; quimioterapia neoadjuvante isolada, sem investigação cirúrgica'
     ],
     correctIndex: 0,
     explanation: 'Obstrução por bridas é a causa mais comum de obstrução de delgado em paciente com cirurgia prévia; o manejo inicial é conservador com descompressão e hidratação, reservando cirurgia para casos refratários ou com sinais de sofrimento.'
@@ -526,10 +526,10 @@ export const ENARE_GERADO_2026_QUESTIONS: any[] = [
     text: 'Paciente de 55 anos, assintomático, realiza colonoscopia de rastreamento que identifica pólipo adenomatoso de 1,5 cm no cólon sigmoide. Qual a conduta mais adequada?',
     options: [
       'Polipectomia endoscópica com posterior vigilância colonoscópica',
-      'Colectomia total profilática imediata',
-      'Apenas observação sem qualquer intervenção',
-      'Quimioterapia adjuvante sem ressecção prévia',
-      'Radioterapia pélvica isolada'
+      'Colectomia total profilática imediata, sem tentar ressecção endoscópica',
+      'Apenas observação clínica, sem qualquer intervenção endoscópica',
+      'Quimioterapia adjuvante isolada, sem ressecção endoscópica prévia',
+      'Radioterapia pélvica isolada, sem ressecção prévia do pólipo'
     ],
     correctIndex: 0,
     explanation: 'Pólipos adenomatosos identificados em colonoscopia devem ser removidos por polipectomia endoscópica, com vigilância subsequente conforme risco histológico, prevenindo progressão para câncer colorretal.'
@@ -622,10 +622,10 @@ export const ENARE_GERADO_2026_QUESTIONS: any[] = [
     text: 'Mulher, 50 anos, apresenta nódulo mamário palpável de 3 cm, aderido a planos profundos, com linfonodo axilar palpável ipsilateral. Biópsia confirma carcinoma ductal invasivo. Qual a próxima etapa mais importante antes de definir o tratamento cirúrgico?',
     options: [
       'Estadiamento com exames de imagem para avaliar doença locorregional e à distância',
-      'Mastectomia bilateral profilática imediata sem estadiamento',
-      'Quimioterapia isolada sem confirmação histológica adicional',
-      'Radioterapia exclusiva sem cirurgia',
-      'Apenas seguimento clínico semestral'
+      'Mastectomia bilateral profilática imediata, sem estadiamento prévio da doença',
+      'Quimioterapia isolada, sem estadiamento por imagem previamente realizado',
+      'Radioterapia exclusiva, sem estadiamento ou definição cirúrgica prévia',
+      'Apenas seguimento clínico semestral, sem investigação complementar'
     ],
     correctIndex: 0,
     explanation: 'Após confirmação histológica, o estadiamento correto (avaliação axilar e de metástases à distância) é essencial para definir a estratégia terapêutica mais adequada.'
@@ -638,10 +638,10 @@ export const ENARE_GERADO_2026_QUESTIONS: any[] = [
     text: 'Vítima de acidente motociclístico chega ao PS. Qual a sequência correta de avaliação inicial segundo o protocolo ATLS?',
     options: [
       'Via aérea com proteção cervical, respiração, circulação, estado neurológico, exposição',
-      'Circulação, via aérea, respiração, exposição, estado neurológico',
-      'Exposição, estado neurológico, circulação, respiração, via aérea',
-      'Respiração, circulação, via aérea, exposição, estado neurológico',
-      'Estado neurológico, via aérea, exposição, circulação, respiração'
+      'Circulação, via aérea sem proteção cervical, respiração, exposição, estado neurológico',
+      'Exposição, estado neurológico, circulação, respiração, via aérea sem proteção cervical',
+      'Respiração, circulação, via aérea sem proteção cervical, exposição, estado neurológico',
+      'Estado neurológico, via aérea sem proteção cervical, exposição, circulação, respiração'
     ],
     correctIndex: 0,
     explanation: 'O ATLS segue a sequência ABCDE: via aérea com proteção da coluna cervical, boa ventilação/respiração, circulação com controle de hemorragia, disfunção neurológica e exposição com controle de hipotermia.'
@@ -702,10 +702,10 @@ export const ENARE_GERADO_2026_QUESTIONS: any[] = [
     text: 'Paciente apresenta veias tortuosas e dilatadas em membros inferiores, com sensação de peso ao final do dia, sem úlceras ou complicações tróficas. Qual a conduta inicial mais apropriada?',
     options: [
       'Medidas conservadoras: meias de compressão elástica e elevação dos membros',
-      'Cirurgia de safenectomia imediata em todos os casos',
-      'Anticoagulação plena contínua',
-      'Amputação preventiva do membro',
-      'Antibioticoterapia profilática prolongada'
+      'Cirurgia de safenectomia imediata em todos os casos, mesmo sem sintomas relevantes',
+      'Anticoagulação plena contínua, sem indicação nesse quadro varicoso simples',
+      'Amputação preventiva do membro, sem qualquer indicação clínica para tal',
+      'Antibioticoterapia profilática prolongada, sem foco infeccioso identificado'
     ],
     correctIndex: 0,
     explanation: 'Varizes sem complicações são inicialmente tratadas de forma conservadora, com meias de compressão e medidas posturais, reservando cirurgia para casos refratários ou complicados.'
@@ -718,10 +718,10 @@ export const ENARE_GERADO_2026_QUESTIONS: any[] = [
     text: 'Paciente idoso com fibrilação atrial apresenta dor abdominal desproporcional ao exame físico, acidose metabólica e lactato elevado. Angiotomografia sugere oclusão de artéria mesentérica superior. Qual a conduta?',
     options: [
       'Laparotomia de urgência com revascularização e avaliação de viabilidade intestinal',
-      'Tratamento clínico exclusivo com antibiótico oral',
-      'Alta com anti-inflamatório e retorno se piora',
-      'Observação por 48 horas antes de qualquer intervenção',
-      'Colonoscopia terapêutica isolada'
+      'Tratamento clínico exclusivo com antibiótico oral, sem intervenção cirúrgica',
+      'Alta com anti-inflamatório oral e orientação de retorno se houver piora',
+      'Observação clínica por 48 horas antes de qualquer intervenção cirúrgica',
+      'Colonoscopia terapêutica isolada, sem avaliação da artéria mesentérica'
     ],
     correctIndex: 0,
     explanation: 'Isquemia mesentérica aguda é emergência cirúrgica; dor desproporcional ao exame associada a acidose e lactato elevado exige laparotomia de urgência para revascularização e ressecção de segmentos inviáveis.'
@@ -736,10 +736,10 @@ export const ENARE_GERADO_2026_QUESTIONS: any[] = [
     text: 'Lactente de 4 meses apresenta coriza, tosse e, após 2 dias, sibilância difusa e tiragem subcostal leve, mantendo-se ativo e alimentando-se bem. Qual o diagnóstico mais provável e a conduta?',
     options: [
       'Bronquiolite viral aguda; manejo de suporte com hidratação e observação',
-      'Asma brônquica; corticoide sistêmico imediato',
-      'Pneumonia bacteriana; antibiótico intravenoso',
-      'Coqueluche; macrolídeo isolado como tratamento único',
-      'Corpo estranho de via aérea; broncoscopia de urgência'
+      'Asma brônquica; corticoide sistêmico imediato associado a broncodilatador',
+      'Pneumonia bacteriana; antibioticoterapia intravenosa de amplo espectro',
+      'Coqueluche; macrolídeo isolado como único tratamento indicado no caso',
+      'Corpo estranho de via aérea; broncoscopia rígida de urgência imediata'
     ],
     correctIndex: 0,
     explanation: 'Em lactentes, quadro de infecção respiratória viral com sibilância e sinais leves de desconforto respiratório é típico de bronquiolite, cujo tratamento é essencialmente de suporte.'
@@ -800,10 +800,10 @@ export const ENARE_GERADO_2026_QUESTIONS: any[] = [
     text: 'Criança asmática conhecida apresenta piora aguda da dispneia, sibilância difusa e uso de musculatura acessória, saturação de 91%. Qual a conduta inicial imediata?',
     options: [
       'Beta-2 agonista de curta ação inalatório associado a corticoide sistêmico',
-      'Antibiótico intravenoso isolado',
-      'Apenas observação sem broncodilatador',
-      'Sedação para reduzir o desconforto respiratório',
-      'Fisioterapia respiratória isolada sem medicação'
+      'Antibiótico intravenoso isolado, sem broncodilatador nem corticoide associado',
+      'Apenas observação clínica, sem qualquer broncodilatador nem corticoide',
+      'Sedação para reduzir o desconforto respiratório, sem uso de broncodilatador',
+      'Fisioterapia respiratória isolada, sem qualquer medicação broncodilatadora'
     ],
     correctIndex: 0,
     explanation: 'Na crise asmática moderada a grave, o tratamento inicial combina broncodilatador beta-2 agonista de curta ação com corticoide sistêmico para reduzir a inflamação e reverter a broncoconstrição.'
@@ -864,10 +864,10 @@ export const ENARE_GERADO_2026_QUESTIONS: any[] = [
     text: 'Criança de 2 anos com diarreia aquosa há 2 dias, sem sinais de desidratação, ativa e brincando normalmente. Qual a orientação mais apropriada quanto à hidratação?',
     options: [
       'Terapia de reidratação oral (TRO) domiciliar e manutenção da alimentação habitual',
-      'Antibiótico empírico de amplo espectro',
-      'Internação hospitalar obrigatória para todos os casos de diarreia',
-      'Suspensão total da alimentação por 48 horas',
-      'Antidiarreico opioide para reduzir o número de evacuações'
+      'Antibiótico empírico de amplo espectro, sem indicação nesse quadro benigno',
+      'Internação hospitalar obrigatória para todos os casos de diarreia aguda',
+      'Suspensão total da alimentação por 48 horas, contra as recomendações atuais',
+      'Antidiarreico opioide para reduzir o número de evacuações, contraindicado'
     ],
     correctIndex: 0,
     explanation: 'Diarreia aguda sem sinais de desidratação é tratada com terapia de reidratação oral e manutenção da dieta habitual, sem necessidade de antibiótico ou internação de rotina.'
@@ -880,10 +880,10 @@ export const ENARE_GERADO_2026_QUESTIONS: any[] = [
     text: 'Menina de 7 anos apresenta desenvolvimento de broto mamário e pelos pubianos. Idade óssea avançada em relação à cronológica. Qual a principal investigação a ser realizada?',
     options: [
       'Dosagem de LH, FSH e estradiol, além de ressonância de crânio se indicado',
-      'Cariótipo isolado sem dosagens hormonais',
-      'Apenas observação, sem qualquer investigação',
-      'Ultrassom abdominal total, sem avaliação hormonal',
-      'Radiografia de tórax como exame inicial'
+      'Cariótipo isolado, sem dosagem de gonadotrofinas ou estradiol associada',
+      'Apenas observação clínica, sem qualquer investigação laboratorial complementar',
+      'Ultrassom abdominal total isolado, sem dosagens hormonais associadas',
+      'Radiografia de tórax isolada como exame inicial de investigação'
     ],
     correctIndex: 0,
     explanation: 'Puberdade precoce exige avaliação do eixo hipotálamo-hipófise-gonadal (LH, FSH, estradiol) e investigação de causas centrais, incluindo imagem do sistema nervoso central quando indicado.'
@@ -896,10 +896,10 @@ export const ENARE_GERADO_2026_QUESTIONS: any[] = [
     text: 'Mãe leva filho de 2 meses à consulta de puericultura. Segundo o calendário vacinal do Programa Nacional de Imunizações, quais vacinas são indicadas nessa idade?',
     options: [
       'Pentavalente, VIP, pneumocócica 10-valente e rotavírus (primeira dose)',
-      'Apenas BCG e hepatite B',
-      'Tríplice viral e febre amarela',
-      'HPV e meningocócica ACWY',
-      'Apenas reforço de DTP'
+      'Apenas BCG e hepatite B, sem as demais vacinas previstas para os 2 meses',
+      'Tríplice viral e febre amarela, vacinas indicadas apenas após 1 ano',
+      'HPV e meningocócica ACWY, vacinas não indicadas nessa faixa etária',
+      'Apenas reforço de DTP, vacina não prevista nessa idade do calendário'
     ],
     correctIndex: 0,
     explanation: 'Aos 2 meses de idade, o calendário nacional preconiza a primeira dose de pentavalente, VIP, pneumocócica 10-valente e rotavírus, além de reforçar o esquema iniciado ao nascer.'
@@ -912,10 +912,10 @@ export const ENARE_GERADO_2026_QUESTIONS: any[] = [
     text: 'Lactente de 3 meses apresenta regurgitações frequentes após as mamadas, sem sinais de baixo ganho ponderal, irritabilidade importante ou recusa alimentar. Qual a conduta mais apropriada?',
     options: [
       'Orientação de medidas posturais e fracionamento das mamadas, sem necessidade de medicação',
-      'Iniciar inibidor de bomba de prótons imediatamente',
-      'Solicitar endoscopia digestiva alta de urgência',
-      'Suspender o aleitamento materno',
-      'Indicar cirurgia antirrefluxo precoce'
+      'Iniciar inibidor de bomba de prótons imediatamente, sem indicação nesse quadro benigno',
+      'Solicitar endoscopia digestiva alta de urgência, sem sinais de alarme presentes',
+      'Suspender o aleitamento materno, conduta sem respaldo nesse quadro fisiológico',
+      'Indicar cirurgia antirrefluxo precoce, sem falha do tratamento conservador prévio'
     ],
     correctIndex: 0,
     explanation: 'Refluxo gastroesofágico fisiológico do lactente, sem sinais de alarme, é tratado com medidas comportamentais e posturais, sem necessidade de medicação ou investigação invasiva.'
@@ -1024,10 +1024,10 @@ export const ENARE_GERADO_2026_QUESTIONS: any[] = [
     text: 'Criança de 8 anos apresenta dificuldade de concentração, desatenção em sala de aula, agitação motora e impulsividade há mais de 6 meses, em múltiplos ambientes. Qual a abordagem terapêutica inicial mais indicada?',
     options: [
       'Intervenções comportamentais associadas, quando indicado, a tratamento farmacológico específico',
-      'Antipsicótico em altas doses como primeira linha',
-      'Apenas observação sem qualquer intervenção',
-      'Anticonvulsivante profilático',
-      'Internação psiquiátrica compulsória'
+      'Antipsicótico em altas doses como primeira linha, sem indicação nesse transtorno',
+      'Apenas observação clínica, sem qualquer intervenção comportamental ou farmacológica',
+      'Anticonvulsivante profilático isolado, sem indicação nesse quadro comportamental',
+      'Internação psiquiátrica compulsória, desproporcional à gravidade do quadro atual'
     ],
     correctIndex: 0,
     explanation: 'O manejo do TDAH combina intervenções comportamentais e, quando necessário, tratamento farmacológico específico (como estimulantes), conforme gravidade e impacto funcional.'
@@ -1058,10 +1058,10 @@ export const ENARE_GERADO_2026_QUESTIONS: any[] = [
     text: 'Gestante de 34 semanas apresenta PA 160x110 mmHg, proteinúria significativa, cefaleia persistente e dor em hipocôndrio direito. Qual a classificação e a conduta imediata?',
     options: [
       'Pré-eclâmpsia com critérios de gravidade; sulfato de magnésio e avaliação para resolução da gestação',
-      'Hipertensão gestacional leve; apenas repouso domiciliar',
-      'Hipertensão arterial crônica; manter anti-hipertensivo oral ambulatorial',
-      'Eclâmpsia confirmada; aguardar convulsão para tratar',
-      'Síndrome HELLP descartada sem necessidade de exames'
+      'Hipertensão gestacional leve; apenas repouso domiciliar e reavaliação ambulatorial',
+      'Hipertensão arterial crônica; manter o anti-hipertensivo oral de uso ambulatorial habitual',
+      'Eclâmpsia confirmada; aguardar nova convulsão antes de iniciar qualquer tratamento',
+      'Síndrome HELLP descartada, sem necessidade de qualquer exame laboratorial complementar'
     ],
     correctIndex: 0,
     explanation: 'PA muito elevada associada a sintomas premonitórios (cefaleia, dor em hipocôndrio direito) caracteriza pré-eclâmpsia grave, exigindo sulfato de magnésio para profilaxia de convulsões e avaliação da via de parto.'
@@ -1106,10 +1106,10 @@ export const ENARE_GERADO_2026_QUESTIONS: any[] = [
     text: 'Puérpera apresenta sangramento vaginal abundante após dequitação, útero hipotônico à palpação. Qual a primeira medida terapêutica?',
     options: [
       'Massagem uterina e ocitocina, associadas a medidas de suporte hemodinâmico',
-      'Histerectomia imediata como primeira conduta',
-      'Apenas observação, aguardando resolução espontânea',
-      'Transfusão isolada, sem tratar a causa da hemorragia',
-      'Curetagem uterina imediata sem avaliar tônus uterino'
+      'Histerectomia imediata como primeira conduta, sem medidas conservadoras prévias',
+      'Apenas observação clínica, aguardando resolução espontânea do sangramento',
+      'Transfusão isolada, sem tratar a causa da hemorragia ou o tônus uterino',
+      'Curetagem uterina imediata, sem avaliar previamente o tônus uterino'
     ],
     correctIndex: 0,
     explanation: 'Atonia uterina é a causa mais comum de hemorragia pós-parto; a primeira conduta é massagem uterina bimanual associada a uterotônicos como ocitocina, junto ao suporte hemodinâmico.'
@@ -1202,10 +1202,10 @@ export const ENARE_GERADO_2026_QUESTIONS: any[] = [
     text: 'Mulher de 42 anos apresenta sangramento uterino aumentado e prolongado, sensação de peso pélvico, sem desejo reprodutivo futuro. Ultrassom mostra útero aumentado com múltiplos nódulos miomatosos, o maior submucoso de 4 cm. Qual conduta é adequada quando o tratamento clínico falha?',
     options: [
       'Histerectomia ou miomectomia, conforme desejo reprodutivo e perfil da paciente',
-      'Apenas observação clínica sem qualquer intervenção',
-      'Quimioterapia sistêmica',
-      'Radioterapia pélvica',
-      'Uso isolado de anti-inflamatório sem qualquer outra conduta'
+      'Apenas observação clínica prolongada, sem qualquer intervenção cirúrgica',
+      'Quimioterapia sistêmica isolada, sem indicação nesse quadro ginecológico benigno',
+      'Radioterapia pélvica isolada, sem indicação nessa condição ginecológica',
+      'Uso isolado de anti-inflamatório, sem qualquer outra conduta complementar'
     ],
     correctIndex: 0,
     explanation: 'Na miomatose sintomática refratária ao tratamento clínico, a conduta cirúrgica (histerectomia ou miomectomia) é indicada conforme desejo reprodutivo e características do caso.'
@@ -1234,10 +1234,10 @@ export const ENARE_GERADO_2026_QUESTIONS: any[] = [
     text: 'Gestante no pré-natal apresenta VDRL reagente com título 1:32 e FTA-ABS positivo, sem tratamento prévio documentado. Qual o tratamento indicado e o critério de adequação?',
     options: [
       'Penicilina benzatina, com esquema conforme estágio, sendo o parceiro também tratado',
-      'Doxiciclina isolada durante toda a gestação',
-      'Apenas seguimento sorológico, sem tratamento medicamentoso',
-      'Azitromicina em dose única como primeira escolha',
-      'Aguardar o parto para iniciar tratamento'
+      'Doxiciclina isolada durante toda a gestação, contraindicada nesse período',
+      'Apenas seguimento sorológico, sem qualquer tratamento medicamentoso indicado',
+      'Azitromicina em dose única como primeira escolha, sem tratar o parceiro',
+      'Aguardar o parto para iniciar o tratamento antibiótico adequado ao caso'
     ],
     correctIndex: 0,
     explanation: 'A penicilina benzatina é o único tratamento comprovadamente eficaz para prevenir sífilis congênita, devendo o parceiro também ser tratado para tratamento considerado adequado.'
@@ -1330,10 +1330,10 @@ export const ENARE_GERADO_2026_QUESTIONS: any[] = [
     text: 'Durante o trabalho de parto, a cardiotocografia mostra desacelerações tardias recorrentes associadas à contração uterina, com variabilidade reduzida. Qual a interpretação e a conduta?',
     options: [
       'Padrão sugestivo de sofrimento fetal; reanimação intrauterina e avaliação para parto imediato',
-      'Padrão normal; manter conduta expectante sem intervenção',
-      'Desacelerações precoces fisiológicas; nenhuma conduta necessária',
-      'Taquissistolia isolada sem repercussão fetal; apenas observação',
-      'Padrão categoria I; alta hospitalar imediata'
+      'Padrão normal; manter conduta expectante, sem qualquer intervenção adicional',
+      'Desacelerações precoces fisiológicas; nenhuma conduta adicional é necessária agora',
+      'Taquissistolia isolada sem repercussão fetal; apenas observação clínica continuada',
+      'Padrão categoria I, tranquilizador; alta hospitalar imediata sem seguimento'
     ],
     correctIndex: 0,
     explanation: 'Desacelerações tardias recorrentes com variabilidade reduzida sugerem insuficiência uteroplacentária e sofrimento fetal, exigindo medidas de reanimação intrauterina e avaliação para resolução do parto.'
@@ -1412,10 +1412,10 @@ export const ENARE_GERADO_2026_QUESTIONS: any[] = [
     text: 'Município apresenta redução persistente da taxa de mortalidade infantil ao longo de 10 anos. Qual indicador é comumente utilizado para monitorar esse desfecho e quais componentes o compõem?',
     options: [
       'Taxa de mortalidade infantil, composta por mortalidade neonatal e pós-neonatal',
-      'Taxa de mortalidade materna isoladamente',
-      'Taxa de fecundidade total',
-      'Coeficiente de natalidade bruta',
-      'Razão de mortalidade proporcional por causas externas'
+      'Taxa de mortalidade materna isolada, sem relação direta com esse desfecho',
+      'Taxa de fecundidade total, indicador reprodutivo sem relação direta com o desfecho',
+      'Coeficiente de natalidade bruta, indicador demográfico sem relação direta',
+      'Razão de mortalidade proporcional por causas externas, sem relação direta'
     ],
     correctIndex: 0,
     explanation: 'A taxa de mortalidade infantil, subdividida em componente neonatal (precoce e tardio) e pós-neonatal, é indicador clássico de saúde materno-infantil e desenvolvimento socioeconômico.'
@@ -1524,10 +1524,10 @@ export const ENARE_GERADO_2026_QUESTIONS: any[] = [
     text: 'Durante consulta de rotina, profissional de saúde identifica sinais sugestivos de violência doméstica em paciente adulta. Qual a conduta legal e ética apropriada?',
     options: [
       'Notificação compulsória do caso aos órgãos competentes, garantindo acolhimento e segurança da paciente',
-      'Silêncio absoluto por se tratar de assunto privado do casal',
-      'Comunicação apenas ao cônjuge agressor para mediação',
-      'Encaminhamento exclusivo para tratamento psiquiátrico sem notificação',
-      'Alta sem qualquer registro em prontuário'
+      'Silêncio absoluto, por considerar se tratar de assunto privado exclusivo do casal envolvido',
+      'Comunicação apenas ao cônjuge agressor, buscando mediação amigável do conflito familiar',
+      'Encaminhamento exclusivo para tratamento psiquiátrico, sem qualquer notificação aos órgãos competentes',
+      'Alta imediata, sem qualquer registro do achado em prontuário médico da paciente atendida'
     ],
     correctIndex: 0,
     explanation: 'Casos de violência doméstica identificados em atendimento de saúde exigem notificação compulsória, com acolhimento adequado e articulação com a rede de proteção.'
@@ -1540,10 +1540,10 @@ export const ENARE_GERADO_2026_QUESTIONS: any[] = [
     text: 'Trabalhador de linha de produção industrial apresenta dor crônica em punhos e cotovelos relacionada a movimentos repetitivos no trabalho. Qual a classificação e a conduta adequada em saúde do trabalhador?',
     options: [
       'LER/DORT; notificação como doença relacionada ao trabalho e afastamento/adequação ergonômica quando indicado',
-      'Doença degenerativa isolada sem relação ocupacional; nenhuma notificação necessária',
-      'Fibromialgia; apenas tratamento medicamentoso sem investigação ocupacional',
-      'Osteoporose primária; reposição hormonal isolada',
-      'Doença autoimune sistêmica; corticoterapia isolada sem afastamento'
+      'Doença degenerativa isolada, sem relação ocupacional identificada; nenhuma notificação necessária',
+      'Fibromialgia; apenas tratamento medicamentoso sintomático, sem investigação ocupacional associada',
+      'Osteoporose primária; reposição hormonal isolada, sem qualquer relação com a atividade laboral',
+      'Doença autoimune sistêmica; corticoterapia isolada, sem afastamento do trabalho indicado'
     ],
     correctIndex: 0,
     explanation: 'Quadros de LER/DORT relacionados a movimentos repetitivos no trabalho devem ser notificados como doença ocupacional, com medidas de afastamento e adequação ergonômica quando necessário.'
@@ -1572,10 +1572,10 @@ export const ENARE_GERADO_2026_QUESTIONS: any[] = [
     text: 'Município identifica aumento de casos de dengue em determinado bairro durante período chuvoso. Qual é a principal medida de vigilância e controle a ser priorizada pela equipe de saúde?',
     options: [
       'Eliminação de criadouros do mosquito Aedes aegypti e notificação compulsória dos casos suspeitos',
-      'Vacinação de toda a população do bairro como única medida',
-      'Isolamento domiciliar obrigatório de todos os moradores',
-      'Fechamento total das unidades de saúde da região',
-      'Uso exclusivo de repelente sem controle ambiental do vetor'
+      'Vacinação de toda a população do bairro como única medida de controle do surto',
+      'Isolamento domiciliar obrigatório de todos os moradores do bairro afetado pelo surto',
+      'Fechamento total das unidades de saúde da região durante todo o período do surto',
+      'Uso exclusivo de repelente pessoal, sem qualquer controle ambiental do vetor transmissor'
     ],
     correctIndex: 0,
     explanation: 'O controle da dengue prioriza a eliminação de criadouros do vetor associada à notificação compulsória e monitoramento epidemiológico dos casos suspeitos, medidas centrais da vigilância em saúde.'
@@ -1588,10 +1588,10 @@ export const ENARE_GERADO_2026_QUESTIONS: any[] = [
     text: 'Serviço de saúde atende usuário de drogas injetáveis buscando apoio, sem desejo imediato de abstinência total. Qual abordagem de saúde pública é mais alinhada às diretrizes atuais para esse contexto?',
     options: [
       'Estratégia de redução de danos, com oferta de insumos seguros e vínculo com a rede de cuidado',
-      'Recusa de atendimento até que o paciente aceite abstinência completa',
-      'Internação compulsória imediata como única alternativa',
-      'Encaminhamento exclusivo para tratamento jurídico-penal',
-      'Alta sem qualquer orientação ou vínculo com serviços de saúde'
+      'Recusa de atendimento até que o paciente aceite a abstinência completa das drogas',
+      'Internação compulsória imediata, como única alternativa terapêutica oferecida',
+      'Encaminhamento exclusivo para tratamento jurídico-penal, sem abordagem em saúde',
+      'Alta sem qualquer orientação ou vínculo com os serviços de saúde disponíveis'
     ],
     correctIndex: 0,
     explanation: 'A redução de danos é estratégia de saúde pública que busca minimizar riscos associados ao uso de substâncias, mantendo vínculo com o serviço mesmo sem abstinência imediata.'

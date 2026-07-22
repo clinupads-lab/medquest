@@ -44,10 +44,10 @@ export const HCOR_GERADO_2026_QUESTIONS: any[] = [
     text: 'Mulher, 55 anos, apresenta palpitações e ao Holter de 24 horas é identificada taquicardia ventricular não sustentada assintomática, em coração estruturalmente normal ao ecocardiograma. Qual é a conduta mais apropriada?',
     options: [
       'Investigação adicional e tranquilização, sem necessidade de tratamento antiarrítmico imediato na maioria dos casos',
-      'Implante de cardiodesfibrilador imediato',
-      'Ablação por cateter de urgência, independente de sintomas',
-      'Amiodarona em altas doses por tempo indeterminado',
-      'Transplante cardíaco preventivo'
+      'Implante de cardiodesfibrilador imediato, independente da ausência de cardiopatia estrutural ou de sintomas associados',
+      'Ablação por cateter de urgência, independente da ausência de sintomas ou de repercussão hemodinâmica documentada',
+      'Amiodarona em altas doses por tempo indeterminado, mesmo sem repercussão clínica ou hemodinâmica documentada',
+      'Transplante cardíaco preventivo, indicado mesmo na ausência de disfunção ventricular ou de sintomas relevantes'
     ],
     correctIndex: 0,
     explanation: 'Taquicardia ventricular não sustentada assintomática em coração estruturalmente normal geralmente tem prognóstico benigno, não exigindo tratamento antiarrítmico agressivo imediato.'
@@ -76,10 +76,10 @@ export const HCOR_GERADO_2026_QUESTIONS: any[] = [
     text: 'Paciente com prótese valvar mecânica em uso de varfarina apresenta RNI de 1,4 (alvo entre 2,5 e 3,5). Qual é a conduta mais apropriada?',
     options: [
       'Ajuste da dose de varfarina com reavaliação frequente do RNI até atingir a faixa terapêutica',
-      'Suspensão da varfarina até normalização espontânea',
-      'Manter a mesma dose, sem qualquer ajuste',
-      'Troca imediata para anticoagulante oral direto',
-      'Apenas observação, sem qualquer ajuste medicamentoso'
+      'Suspensão da varfarina até normalização espontânea do RNI, sem retorno programado da anticoagulação',
+      'Manter a mesma dose de varfarina, aguardando elevação espontânea do RNI sem qualquer intervenção',
+      'Troca imediata para anticoagulante oral direto, contraindicado em prótese valvar mecânica',
+      'Apenas observação clínica, sem qualquer ajuste medicamentoso ou reavaliação laboratorial precoce'
     ],
     correctIndex: 0,
     explanation: 'RNI subterapêutico em paciente com prótese valvar mecânica exige ajuste de dose e monitorização frequente, pelo alto risco de trombose valvar quando fora da faixa alvo.'
@@ -92,10 +92,10 @@ export const HCOR_GERADO_2026_QUESTIONS: any[] = [
     text: 'Homem, 58 anos, apresenta dor torácica em repouso, de curta duração, recorrente nas últimas 48 horas, com ECG mostrando infradesnivelamento transitório do segmento ST durante os episódios e troponina discretamente elevada. Qual é a classificação da síndrome coronariana e a conduta inicial?',
     options: [
       'Infarto sem supradesnivelamento do ST; dupla antiagregação e estratificação invasiva conforme risco',
-      'Angina estável; apenas ajuste de medicação oral ambulatorial',
-      'Infarto com supradesnivelamento do ST; trombólise imediata',
-      'Pericardite aguda; anti-inflamatório isolado',
-      'Dissecção de aorta; cirurgia de urgência'
+      'Angina estável; apenas ajuste de medicação oral ambulatorial, sem necessidade de internação hospitalar',
+      'Infarto com supradesnivelamento do ST; trombólise imediata ou angioplastia primária de urgência',
+      'Pericardite aguda; anti-inflamatório isolado, sem necessidade de estratificação invasiva',
+      'Dissecção de aorta; cirurgia de urgência, sem necessidade de dupla antiagregação plaquetária'
     ],
     correctIndex: 0,
     explanation: 'Dor torácica recorrente com alteração dinâmica do ST e troponina elevada caracteriza infarto sem supra de ST, tratado com dupla antiagregação e estratificação invasiva conforme escore de risco.'
@@ -108,10 +108,10 @@ export const HCOR_GERADO_2026_QUESTIONS: any[] = [
     text: 'Paciente hipertenso de difícil controle, em uso de 4 classes de anti-hipertensivos em doses otimizadas, mantém PA elevada. Investigação identifica estenose significativa de artéria renal bilateral. Qual classe de anti-hipertensivo deve ser evitada nesse contexto?',
     options: [
       'Inibidores da enzima conversora de angiotensina ou bloqueadores do receptor de angiotensina',
-      'Bloqueadores de canal de cálcio',
-      'Diuréticos tiazídicos',
-      'Betabloqueadores',
-      'Alfabloqueadores'
+      'Bloqueadores de canal de cálcio, seguros mesmo em estenose bilateral de artéria renal',
+      'Diuréticos tiazídicos, considerados seguros e sem risco renal na estenose bilateral',
+      'Betabloqueadores, isentos de risco de piora da função renal na estenose bilateral',
+      'Alfabloqueadores, considerados seguros mesmo em casos de estenose renal bilateral grave'
     ],
     correctIndex: 0,
     explanation: 'Na estenose bilateral de artéria renal, IECA/BRA podem precipitar insuficiência renal aguda por reduzirem a pressão de perfusão glomerular dependente de angiotensina II, devendo ser evitados ou usados com extrema cautela.'
@@ -204,10 +204,10 @@ export const HCOR_GERADO_2026_QUESTIONS: any[] = [
     text: 'Paciente com aneurisma de aorta torácica descendente de 6,5 cm, assintomático, é avaliado quanto à indicação cirúrgica. Qual é a conduta mais apropriada?',
     options: [
       'Correção cirúrgica ou endovascular eletiva, dado o diâmetro acima do limiar de intervenção',
-      'Acompanhamento seriado indefinido, independente do diâmetro',
-      'Apenas controle rigoroso da pressão arterial, sem qualquer intervenção',
-      'Anticoagulação plena isolada, sem cirurgia',
-      'Observação até que se torne sintomático, mesmo com diâmetro elevado'
+      'Acompanhamento seriado indefinido por imagem, independente da evolução do diâmetro aórtico',
+      'Apenas controle rigoroso da pressão arterial, sem qualquer intervenção cirúrgica ou endovascular',
+      'Anticoagulação plena isolada, sem indicação de correção cirúrgica ou endovascular',
+      'Observação clínica até que se torne sintomático, mesmo com diâmetro acima do limiar cirúrgico'
     ],
     correctIndex: 0,
     explanation: 'Aneurismas de aorta torácica descendente acima de aproximadamente 6 cm têm indicação de correção eletiva pelo risco progressivo de rotura.'
@@ -220,10 +220,10 @@ export const HCOR_GERADO_2026_QUESTIONS: any[] = [
     text: 'Paciente vítima de trauma torácico contuso apresenta hipotensão refratária, turgência jugular e sons cardíacos abafados. FAST estendido mostra líquido pericárdico. Qual é a conduta imediata?',
     options: [
       'Pericardiocentese ou janela pericárdica de urgência conforme disponibilidade',
-      'Observação com reavaliação em 6 horas',
-      'Apenas reposição volêmica agressiva, sem drenar o pericárdio',
-      'Alta com anti-inflamatório, sem qualquer intervenção',
-      'Trombólise química imediata'
+      'Observação com reavaliação em 6 horas, sem drenagem pericárdica imediata',
+      'Apenas reposição volêmica agressiva, sem drenar o pericárdio mesmo com sinais de tamponamento',
+      'Alta com anti-inflamatório oral, sem qualquer intervenção sobre o derrame pericárdico',
+      'Trombólise química imediata, sem indicação nesse contexto de tamponamento cardíaco'
     ],
     correctIndex: 0,
     explanation: 'Tamponamento cardíaco pós-traumático com instabilidade hemodinâmica exige drenagem pericárdica de urgência, seja por pericardiocentese ou janela cirúrgica.'
@@ -236,10 +236,10 @@ export const HCOR_GERADO_2026_QUESTIONS: any[] = [
     text: 'Paciente idoso, com fibrilação atrial de longa data, apresenta dor abdominal súbita intensa desproporcional ao exame físico, acidose metabólica e lactato elevado. Angiotomografia mostra êmbolo em artéria mesentérica superior. Qual é a conduta?',
     options: [
       'Laparotomia de urgência com embolectomia e avaliação de viabilidade intestinal',
-      'Tratamento clínico exclusivo com antibiótico, sem cirurgia',
-      'Anticoagulação isolada, sem intervenção cirúrgica',
-      'Observação por 24 horas antes de qualquer decisão',
-      'Colonoscopia terapêutica isolada'
+      'Tratamento clínico exclusivo com antibiótico, sem qualquer intervenção cirúrgica de urgência',
+      'Anticoagulação isolada, sem intervenção cirúrgica mesmo com sinais de isquemia intestinal',
+      'Observação por 24 horas antes de qualquer decisão cirúrgica, mesmo com acidose progressiva',
+      'Colonoscopia terapêutica isolada, sem avaliação da viabilidade do intestino delgado'
     ],
     correctIndex: 0,
     explanation: 'Embolia mesentérica aguda com sinais de isquemia é emergência cirúrgica, exigindo embolectomia e avaliação de ressecção de segmentos intestinais inviáveis.'
@@ -252,10 +252,10 @@ export const HCOR_GERADO_2026_QUESTIONS: any[] = [
     text: 'Paciente apresenta claudicação intermitente incapacitante em membro inferior, refratária a tratamento clínico otimizado e exercício supervisionado, com lesão estenótica focal em artéria femoral superficial confirmada por angiografia. Qual é a conduta mais apropriada?',
     options: [
       'Revascularização (angioplastia ou cirurgia) conforme características da lesão',
-      'Amputação primária do membro',
-      'Apenas aumentar a dose de antiagregante, sem outra conduta',
-      'Anticoagulação plena isolada, sem revascularização',
-      'Observação indefinida, mesmo incapacitante'
+      'Amputação primária do membro, sem tentativa prévia de revascularização da lesão',
+      'Apenas aumentar a dose de antiagregante, sem indicação de revascularização da lesão',
+      'Anticoagulação plena isolada, sem revascularização mesmo com claudicação incapacitante',
+      'Observação indefinida, mesmo com claudicação incapacitante refratária ao tratamento clínico'
     ],
     correctIndex: 0,
     explanation: 'Claudicação incapacitante refratária ao tratamento conservador, com lesão focal passível de correção, tem indicação de revascularização.'
@@ -301,9 +301,9 @@ export const HCOR_GERADO_2026_QUESTIONS: any[] = [
     options: [
       'Dissecção/lesão traumática de aorta; angiotomografia de urgência e correção cirúrgica ou endovascular',
       'Contusão pulmonar isolada; apenas suporte ventilatório, sem investigação vascular',
-      'Fratura de esterno isolada; apenas analgesia',
-      'Pneumotórax simples; observação clínica',
-      'Tamponamento cardíaco; apenas pericardiocentese, sem avaliar a aorta'
+      'Fratura de esterno isolada; apenas analgesia, sem necessidade de investigação vascular adicional',
+      'Pneumotórax simples; observação clínica, sem necessidade de angiotomografia de urgência',
+      'Tamponamento cardíaco; apenas pericardiocentese de urgência, sem avaliar a aorta torácica'
     ],
     correctIndex: 0,
     explanation: 'Alargamento de mediastino após trauma torácico com diferença pressórica entre membros sugere lesão traumática de aorta, exigindo investigação urgente por angiotomografia e correção definitiva.'
@@ -332,10 +332,10 @@ export const HCOR_GERADO_2026_QUESTIONS: any[] = [
     text: 'Recém-nascido apresenta cianose central desde as primeiras horas de vida, sem melhora significativa com oferta de oxigênio a 100%. Ecocardiograma mostra aorta emergindo do ventrículo direito e artéria pulmonar do ventrículo esquerdo. Qual é o diagnóstico e a conduta inicial para manter a circulação até a cirurgia?',
     options: [
       'Transposição das grandes artérias; infusão de prostaglandina E1 para manter o canal arterial pérvio',
-      'Tetralogia de Fallot; betabloqueador isolado, sem prostaglandina',
-      'Atresia pulmonar; apenas oxigenoterapia, sem prostaglandina',
-      'Persistência do canal arterial isolada; indometacina para fechar o canal',
-      'Comunicação interatrial isolada; apenas observação'
+      'Tetralogia de Fallot; uso isolado de betabloqueador, sem necessidade de prostaglandina E1',
+      'Atresia pulmonar; apenas oxigenoterapia contínua, sem infusão de prostaglandina E1',
+      'Persistência do canal arterial isolada; indometacina para fechar o canal arterial pérvio',
+      'Comunicação interatrial isolada; apenas observação clínica, sem necessidade de prostaglandina'
     ],
     correctIndex: 0,
     explanation: 'Na transposição das grandes artérias, a sobrevida inicial depende da mistura de sangue através de comunicações, por isso a prostaglandina E1 mantém o canal arterial pérvio até a correção cirúrgica.'
@@ -380,10 +380,10 @@ export const HCOR_GERADO_2026_QUESTIONS: any[] = [
     text: 'Recém-nascido prematuro extremo, 26 semanas, apresenta sopro sistólico contínuo e sinais de insuficiência cardíaca com hiperfluxo pulmonar, confirmado como persistência do canal arterial hemodinamicamente significativo. Qual é a primeira linha terapêutica antes de considerar fechamento cirúrgico?',
     options: [
       'Inibidor da ciclo-oxigenase (indometacina ou ibuprofeno) para fechamento farmacológico',
-      'Cirurgia imediata como primeira escolha em todos os casos',
-      'Prostaglandina E1 para manter o canal aberto',
+      'Cirurgia imediata como primeira escolha, sem tentativa prévia de fechamento farmacológico',
+      'Prostaglandina E1 para manter o canal arterial aberto, contraindicada nesse contexto',
       'Apenas diurético isolado, sem tentativa de fechamento farmacológico',
-      'Observação sem qualquer tratamento em prematuros extremos'
+      'Observação sem qualquer tratamento, mesmo com repercussão hemodinâmica significativa'
     ],
     correctIndex: 0,
     explanation: 'O fechamento farmacológico com inibidores da ciclo-oxigenase é a primeira linha para PCA hemodinamicamente significativa em prematuros, reservando cirurgia para falha do tratamento clínico.'
@@ -411,10 +411,10 @@ export const HCOR_GERADO_2026_QUESTIONS: any[] = [
     text: 'Gestante, 32 anos, com cardiopatia congênita cianótica complexa não corrigida, deseja engravidar. Qual é a principal orientação quanto ao risco materno dessa gestação?',
     options: [
       'Gestação de altíssimo risco materno, exigindo aconselhamento pré-concepcional especializado e acompanhamento em centro de referência',
-      'Gestação de risco habitual, sem necessidade de cuidados especiais',
-      'Contraindicação absoluta a qualquer forma de contracepção',
-      'Recomendação de parto domiciliar por ser mais fisiológico',
-      'Nenhuma orientação especial é necessária além do pré-natal de rotina'
+      'Gestação considerada de risco habitual, sem necessidade de aconselhamento especializado prévio ou acompanhamento em centro de referência',
+      'Contraindicação absoluta a qualquer método contraceptivo, mesmo diante do altíssimo risco cardiovascular da gestação',
+      'Recomendação de parto domiciliar por ser mais fisiológico, dispensando acompanhamento especializado do risco materno',
+      'Nenhuma orientação especial é necessária além do pré-natal de rotina, mesmo com cardiopatia cianótica complexa'
     ],
     correctIndex: 0,
     explanation: 'Cardiopatias congênitas cianóticas complexas conferem alto risco materno na gestação, exigindo aconselhamento pré-concepcional e acompanhamento multiprofissional especializado.'
@@ -427,10 +427,10 @@ export const HCOR_GERADO_2026_QUESTIONS: any[] = [
     text: 'Gestante, 29 anos, com prótese valvar mecânica em uso de varfarina, é atendida no primeiro trimestre. Qual é a principal preocupação quanto à manutenção da varfarina nesse período?',
     options: [
       'Risco de embriopatia por varfarina, exigindo discussão sobre troca por heparina no primeiro trimestre',
-      'Nenhum risco adicional na gestação, mantendo a varfarina sem qualquer ajuste',
-      'Risco exclusivo de sangramento materno, sem relação com o feto',
+      'Nenhum risco adicional na gestação, podendo manter a varfarina sem qualquer ajuste de conduta',
+      'Risco exclusivo de sangramento materno, sem qualquer relação com malformações ou risco fetal',
       'Contraindicação absoluta a qualquer anticoagulação durante toda a gestação',
-      'Necessidade de suspender toda anticoagulação até o parto'
+      'Necessidade de suspender toda anticoagulação até o parto, mesmo em prótese valvar mecânica'
     ],
     correctIndex: 0,
     explanation: 'A varfarina no primeiro trimestre está associada a risco de embriopatia, sendo frequentemente discutida a troca por heparina nesse período, com decisão individualizada conforme risco trombótico da prótese.'
@@ -475,10 +475,10 @@ export const HCOR_GERADO_2026_QUESTIONS: any[] = [
     text: 'Mulher, 42 anos, com estenose mitral reumática moderada, planeja engravidar. Qual é a orientação mais apropriada quanto ao momento ideal para correção valvar, se indicada?',
     options: [
       'Idealmente antes da gestação, pelo aumento da sobrecarga volêmica e risco de descompensação gestacional',
-      'Apenas durante a gestação, nunca antes',
-      'Somente no puerpério tardio, independente da gravidade',
-      'Não há necessidade de considerar correção valvar em nenhum momento',
-      'Apenas se surgir fibrilação atrial durante a gestação'
+      'Apenas durante a gestação, nunca antes, independente do grau de sobrecarga volêmica esperada',
+      'Somente no puerpério tardio, independente da gravidade da estenose ou do risco de descompensação',
+      'Não há necessidade de considerar correção valvar em nenhum momento, mesmo com estenose moderada',
+      'Apenas se surgir fibrilação atrial durante a gestação, sem considerar correção valvar antes'
     ],
     correctIndex: 0,
     explanation: 'Valvopatias significativas devem, idealmente, ser corrigidas antes da gestação, já que o aumento fisiológico de volume sanguíneo pode descompensar lesões moderadas a graves durante a gravidez.'
@@ -491,10 +491,10 @@ export const HCOR_GERADO_2026_QUESTIONS: any[] = [
     text: 'Programa de saúde pública realiza rastreamento de fatores de risco cardiovascular (pressão arterial, glicemia, perfil lipídico) em população adulta assintomática da atenção básica. Qual é o principal objetivo dessa estratégia?',
     options: [
       'Prevenção primária de eventos cardiovasculares por meio da identificação e controle precoce de fatores de risco',
-      'Tratamento de doença cardiovascular já estabelecida',
-      'Reabilitação cardíaca pós-evento agudo',
-      'Substituição do diagnóstico clínico de infarto agudo',
-      'Cuidados paliativos em insuficiência cardíaca terminal'
+      'Tratamento de doença cardiovascular já estabelecida, e não identificação precoce de fatores de risco',
+      'Reabilitação cardíaca pós-evento agudo, voltada a pacientes que já sofreram evento cardiovascular',
+      'Substituição do diagnóstico clínico de infarto agudo por um exame de rastreamento populacional',
+      'Cuidados paliativos em insuficiência cardíaca terminal, sem relação com prevenção de fatores de risco'
     ],
     correctIndex: 0,
     explanation: 'O rastreamento populacional de fatores de risco cardiovascular na atenção básica é estratégia de prevenção primária, buscando reduzir a incidência de eventos futuros.'
@@ -507,10 +507,10 @@ export const HCOR_GERADO_2026_QUESTIONS: any[] = [
     text: 'Hospital de referência cardiológica implementa programa de reabilitação cardíaca multiprofissional para pacientes pós-infarto, com exercício supervisionado, orientação nutricional e apoio psicológico. Qual é o principal benefício esperado dessa abordagem?',
     options: [
       'Redução de mortalidade e reinternações, além de melhora da qualidade de vida',
-      'Cura definitiva da doença arterial coronariana subjacente',
-      'Substituição da necessidade de medicação secundária',
-      'Eliminação total do risco de novo evento cardiovascular',
-      'Nenhum benefício comprovado além do efeito psicológico'
+      'Cura definitiva da doença arterial coronariana subjacente, sem necessidade de seguimento',
+      'Substituição da necessidade de medicação secundária de prevenção cardiovascular',
+      'Eliminação total do risco de novo evento cardiovascular, independente de outros fatores',
+      'Nenhum benefício comprovado além do efeito psicológico transitório sobre o paciente'
     ],
     correctIndex: 0,
     explanation: 'A reabilitação cardíaca multiprofissional após infarto tem evidência robusta de redução de mortalidade, reinternações e melhora funcional e de qualidade de vida.'
@@ -539,10 +539,10 @@ export const HCOR_GERADO_2026_QUESTIONS: any[] = [
     text: 'Paciente com insuficiência cardíaca avançada, refratária a tratamento otimizado e não candidato a transplante, é encaminhado para discussão de cuidados paliativos. Qual é o principal objetivo dessa abordagem nesse contexto?',
     options: [
       'Controle de sintomas e melhora da qualidade de vida, sem necessariamente abreviar ou prolongar a vida',
-      'Suspensão de todo acompanhamento cardiológico',
-      'Aceleração do processo de óbito',
+      'Suspensão de todo acompanhamento cardiológico, mesmo diante de sintomas refratários importantes',
+      'Aceleração do processo de óbito, contrariando o objetivo real dos cuidados paliativos',
       'Substituição definitiva de qualquer tratamento medicamentoso cardiológico',
-      'Indicação obrigatória de sedação contínua em todos os casos'
+      'Indicação obrigatória de sedação contínua em todos os casos, independente dos sintomas'
     ],
     correctIndex: 0,
     explanation: 'Cuidados paliativos em insuficiência cardíaca avançada visam ao controle de sintomas e qualidade de vida, podendo coexistir com tratamento cardiológico direcionado ao conforto, sem intenção de acelerar ou postergar a morte.'
@@ -651,10 +651,10 @@ export const HCOR_GERADO_2026_QUESTIONS: any[] = [
     text: 'Paciente apresenta dor torácica intensa, súbita, com irradiação para o dorso, descrita como "rasgando", com diferença de pressão arterial maior que 20 mmHg entre os braços. Qual é a hipótese diagnóstica e a conduta imediata?',
     options: [
       'Dissecção aguda de aorta; controle rigoroso da frequência cardíaca e pressão arterial, com angiotomografia de urgência',
-      'Infarto agudo do miocárdio; trombólise imediata sem outra investigação',
-      'Pericardite aguda; anti-inflamatório isolado',
-      'Embolia pulmonar; anticoagulação plena imediata sem outra investigação',
-      'Espasmo esofágico; antiespasmódico isolado'
+      'Infarto agudo do miocárdio; trombólise imediata, sem investigação adicional da assimetria de pulsos',
+      'Pericardite aguda; anti-inflamatório isolado, sem necessidade de investigação de imagem da aorta',
+      'Embolia pulmonar; anticoagulação plena imediata, sem investigação adicional da aorta torácica',
+      'Espasmo esofágico; antiespasmódico isolado, sem necessidade de exame de imagem da aorta'
     ],
     correctIndex: 0,
     explanation: 'Dor torácica súbita "em rasgação" com assimetria pressórica entre os membros sugere dissecção de aorta; o controle inicial de frequência e pressão arterial (betabloqueador) antecede a confirmação por imagem.'
@@ -667,10 +667,10 @@ export const HCOR_GERADO_2026_QUESTIONS: any[] = [
     text: 'Paciente com estenose aórtica moderada, assintomática, é acompanhado ambulatorialmente. Qual é a conduta mais apropriada quanto à periodicidade de reavaliação ecocardiográfica?',
     options: [
       'Reavaliação ecocardiográfica periódica (geralmente anual) para monitorar progressão',
-      'Nenhuma reavaliação é necessária até o surgimento de sintomas',
-      'Cirurgia valvar imediata, independente de sintomas',
-      'Reavaliação apenas a cada 10 anos',
-      'Suspensão de qualquer acompanhamento após o diagnóstico inicial'
+      'Nenhuma reavaliação é necessária até o surgimento de sintomas, mesmo com estenose moderada',
+      'Cirurgia valvar imediata, independente de sintomas ou de gravidade ecocardiográfica',
+      'Reavaliação apenas a cada 10 anos, intervalo insuficiente para monitorar a progressão',
+      'Suspensão de qualquer acompanhamento após o diagnóstico inicial da estenose moderada'
     ],
     correctIndex: 0,
     explanation: 'Estenose aórtica assintomática exige acompanhamento ecocardiográfico periódico para detectar progressão e surgimento de sintomas, que mudariam a indicação terapêutica.'
@@ -683,10 +683,10 @@ export const HCOR_GERADO_2026_QUESTIONS: any[] = [
     text: 'Paciente apresenta choque cardiogênico refratário a inotrópicos após infarto extenso, aguardando definição de estratégia de revascularização. Qual dispositivo de suporte circulatório temporário pode ser considerado como ponte terapêutica?',
     options: [
       'Balão intra-aórtico ou dispositivo de assistência circulatória de curta duração',
-      'Marca-passo definitivo isolado, sem suporte circulatório',
+      'Marca-passo definitivo isolado, sem qualquer suporte circulatório mecânico associado',
       'Apenas aumento da dose de vasopressor, sem dispositivo mecânico',
-      'Cardioversão elétrica isolada, sem suporte circulatório',
-      'Diálise isolada, sem suporte hemodinâmico'
+      'Cardioversão elétrica isolada, sem qualquer suporte circulatório mecânico associado',
+      'Diálise isolada, sem qualquer suporte circulatório mecânico como ponte terapêutica'
     ],
     correctIndex: 0,
     explanation: 'No choque cardiogênico refratário, dispositivos de suporte circulatório mecânico temporário (como balão intra-aórtico ou ECMO) podem servir de ponte até a definição terapêutica definitiva.'
@@ -699,10 +699,10 @@ export const HCOR_GERADO_2026_QUESTIONS: any[] = [
     text: 'Paciente jovem, sem fatores de risco cardiovascular clássicos, apresenta infarto agudo do miocárdio. Angiografia coronariana não mostra lesões ateroscleróticas obstrutivas. Qual é a hipótese diagnóstica a ser considerada?',
     options: [
       'Infarto com coronárias não obstrutivas (MINOCA), incluindo dissecção coronariana espontânea como possível causa',
-      'Angina estável típica, sem necessidade de investigação adicional',
-      'Pericardite aguda isolada, sem elevação de troponina',
+      'Angina estável típica, achado que dispensaria qualquer investigação adicional após angiografia normal',
+      'Pericardite aguda isolada, quadro que não seria compatível com elevação de troponina',
       'Síndrome de Takotsubo excluída automaticamente pela angiografia normal',
-      'Erro laboratorial na dosagem de troponina, sem outra investigação'
+      'Erro laboratorial na dosagem de troponina, dispensando qualquer investigação cardiológica adicional'
     ],
     correctIndex: 0,
     explanation: 'Infarto com coronárias angiograficamente não obstrutivas (MINOCA) tem diversas causas possíveis, incluindo dissecção coronariana espontânea, especialmente em mulheres jovens, exigindo investigação adicional direcionada.'
@@ -715,10 +715,10 @@ export const HCOR_GERADO_2026_QUESTIONS: any[] = [
     text: 'Paciente com fibrilação atrial persistente, sintomática apesar de controle adequado de frequência cardíaca, opta por estratégia de controle de ritmo. Qual é a conduta antes de uma cardioversão eletiva, considerando duração da arritmia maior que 48 horas?',
     options: [
       'Anticoagulação por pelo menos 3 semanas antes da cardioversão, ou ecocardiograma transesofágico para excluir trombo atrial',
-      'Cardioversão imediata sem qualquer anticoagulação prévia',
-      'Apenas AAS em dose antiagregante antes da cardioversão',
-      'Cardioversão contraindicada permanentemente após 48 horas de arritmia',
-      'Anticoagulação apenas após a cardioversão, nunca antes'
+      'Cardioversão imediata sem qualquer anticoagulação prévia, mesmo com arritmia de mais de 48 horas de duração',
+      'Apenas AAS em dose antiagregante antes da cardioversão, sem necessidade de anticoagulação plena',
+      'Cardioversão contraindicada permanentemente após 48 horas de arritmia, mesmo com anticoagulação adequada',
+      'Anticoagulação apenas após a cardioversão, nunca antes do procedimento, independente do risco de trombo'
     ],
     correctIndex: 0,
     explanation: 'Fibrilação atrial com mais de 48 horas de duração exige anticoagulação adequada por pelo menos 3 semanas antes da cardioversão eletiva, ou exclusão de trombo atrial por ecocardiograma transesofágico, pelo risco embólico.'
@@ -764,9 +764,9 @@ export const HCOR_GERADO_2026_QUESTIONS: any[] = [
     options: [
       'Controle de frequência cardíaca e correção de distúrbios eletrolíticos, com avaliação de anticoagulação conforme risco',
       'Cardioversão elétrica imediata em todos os casos, independente da estabilidade',
-      'Apenas observação, sem qualquer intervenção',
-      'Reoperação cardíaca de urgência',
-      'Suspensão de todo suporte hemodinâmico'
+      'Apenas observação clínica, sem qualquer controle de frequência cardíaca ou avaliação eletrolítica',
+      'Reoperação cardíaca de urgência, indicada mesmo em fibrilação atrial hemodinamicamente estável',
+      'Suspensão de todo suporte hemodinâmico, sem controle de frequência ou de distúrbios eletrolíticos'
     ],
     correctIndex: 0,
     explanation: 'Fibrilação atrial pós-operatória de cirurgia cardíaca, em paciente estável, é inicialmente manejada com controle de frequência e correção de distúrbios eletrolíticos, avaliando anticoagulação conforme risco tromboembólico.'
@@ -811,10 +811,10 @@ export const HCOR_GERADO_2026_QUESTIONS: any[] = [
     text: 'Paciente com varizes de membros inferiores sintomáticas, refluxo importante em veia safena magna confirmado por Doppler, sem melhora com medidas conservadoras por 6 meses. Qual é a conduta mais apropriada?',
     options: [
       'Tratamento cirúrgico ou endovascular da insuficiência safênica (ablação térmica ou química, ou cirurgia)',
-      'Apenas meias de compressão, indefinidamente, sem outra opção',
-      'Amputação preventiva do membro',
-      'Anticoagulação plena contínua como tratamento definitivo',
-      'Observação sem qualquer conduta adicional'
+      'Apenas meias de compressão elástica indefinidamente, sem qualquer indicação de ablação ou cirurgia',
+      'Amputação preventiva do membro, desproporcional à gravidade da insuficiência safênica',
+      'Anticoagulação plena contínua como tratamento definitivo, sem indicação de ablação da safena',
+      'Observação sem qualquer conduta adicional, mesmo após falha do tratamento conservador'
     ],
     correctIndex: 0,
     explanation: 'Varizes sintomáticas refratárias a tratamento conservador, com refluxo confirmado, têm indicação de tratamento intervencionista da veia insuficiente.'
@@ -827,9 +827,9 @@ export const HCOR_GERADO_2026_QUESTIONS: any[] = [
     text: 'Paciente com trombose venosa profunda extensa de membro inferior, com risco de síndrome pós-trombótica grave, é avaliado quanto a terapia trombolítica dirigida por cateter. Qual é um critério importante a favor dessa conduta em vez de apenas anticoagulação?',
     options: [
       'Trombo extenso e recente (iliofemoral) em paciente com baixo risco de sangramento e boa expectativa funcional',
-      'Trombose antiga, de mais de 6 meses de evolução',
+      'Trombose antiga, de mais de 6 meses de evolução, contexto que contraindica a trombólise dirigida',
       'Presença de contraindicação absoluta a qualquer terapia trombolítica',
-      'Trombose distal isolada e assintomática',
+      'Trombose distal isolada e assintomática, sem indicação de trombólise dirigida por cateter',
       'Idade avançada isoladamente, independente do risco de sangramento'
     ],
     correctIndex: 0,
@@ -843,10 +843,10 @@ export const HCOR_GERADO_2026_QUESTIONS: any[] = [
     text: 'Recém-nascido apresenta sopro sistólico suave, assintomático, sem repercussão hemodinâmica, com ecocardiograma mostrando comunicação interatrial pequena (ostium secundum de 4 mm). Qual é a conduta mais apropriada?',
     options: [
       'Acompanhamento clínico, já que defeitos pequenos frequentemente fecham espontaneamente',
-      'Correção cirúrgica imediata, independente do tamanho',
+      'Correção cirúrgica imediata, independente do tamanho ou da chance de fechamento espontâneo',
       'Cateterismo intervencionista de urgência nos primeiros dias de vida',
-      'Antibioticoterapia profilática contínua',
-      'Transplante cardíaco preventivo'
+      'Antibioticoterapia profilática contínua, sem relação com o fechamento do defeito septal',
+      'Transplante cardíaco preventivo, desproporcional a um defeito septal pequeno e assintomático'
     ],
     correctIndex: 0,
     explanation: 'Comunicações interatriais pequenas e assintomáticas frequentemente fecham espontaneamente, sendo o acompanhamento clínico a conduta inicial apropriada.'
@@ -859,9 +859,9 @@ export const HCOR_GERADO_2026_QUESTIONS: any[] = [
     text: 'Lactente apresenta cianose que piora com o choro e episódios de hipóxia com agitação, melhorando ao colocar os joelhos junto ao peito. Qual é a fisiopatologia dessa manobra postural na tetralogia de Fallot?',
     options: [
       'Aumento da resistência vascular sistêmica, reduzindo o shunt direita-esquerda e melhorando a oxigenação',
-      'Redução da resistência vascular sistêmica, piorando a cianose',
+      'Redução da resistência vascular sistêmica, aumentando o shunt direita-esquerda e piorando a cianose',
       'Aumento do retorno venoso pulmonar isolado, sem relação com o shunt',
-      'Efeito exclusivamente psicológico, sem base fisiológica',
+      'Efeito exclusivamente psicológico, sem qualquer base fisiológica sobre a resistência vascular',
       'Redução da frequência cardíaca isolada, sem relação com o shunt'
     ],
     correctIndex: 0,
@@ -875,10 +875,10 @@ export const HCOR_GERADO_2026_QUESTIONS: any[] = [
     text: 'Criança com cardiopatia congênita corrigida cirurgicamente na infância é levada ao dentista para procedimento invasivo. Qual é a orientação atual quanto à profilaxia antibiótica para endocardite nesse contexto?',
     options: [
       'Profilaxia reservada a situações de alto risco específicas, conforme diretrizes atuais, não sendo mais rotina universal para todo cardiopata',
-      'Profilaxia obrigatória para qualquer procedimento odontológico em qualquer cardiopata operado',
-      'Profilaxia desnecessária mesmo em cardiopatias de altíssimo risco',
-      'Profilaxia apenas com antifúngico, nunca antibiótico',
-      'Profilaxia deve ser mantida por toda a vida independente do tipo de defeito'
+      'Profilaxia obrigatória para qualquer procedimento odontológico invasivo, em qualquer cardiopata operado, independente do risco atual de endocardite',
+      'Profilaxia totalmente desnecessária, mesmo em cardiopatias congênitas complexas de altíssimo risco de endocardite infecciosa',
+      'Profilaxia apenas com antifúngico, nunca com antibiótico, independente do tipo de procedimento ou do risco de endocardite',
+      'Profilaxia deve ser mantida por toda a vida, independente do tipo de defeito, da correção realizada ou das diretrizes atuais'
     ],
     correctIndex: 0,
     explanation: 'As diretrizes atuais restringiram a indicação de profilaxia antibiótica para endocardite a grupos de altíssimo risco, não sendo mais recomendada de forma universal para todo paciente com cardiopatia congênita corrigida.'
@@ -891,9 +891,9 @@ export const HCOR_GERADO_2026_QUESTIONS: any[] = [
     text: 'Recém-nascido com coarctação de aorta grave apresenta piora súbita da perfusão periférica e pulsos femorais diminuídos após o fechamento espontâneo do canal arterial. Qual é a conduta imediata?',
     options: [
       'Reabertura farmacológica do canal arterial com prostaglandina E1, seguida de correção cirúrgica',
-      'Apenas suporte volêmico, sem considerar reabertura do canal',
-      'Diurético isolado, sem prostaglandina',
-      'Observação clínica sem qualquer intervenção medicamentosa',
+      'Apenas suporte volêmico, sem considerar a reabertura farmacológica do canal arterial',
+      'Diurético isolado, sem infusão de prostaglandina E1 para reabertura do canal arterial',
+      'Observação clínica sem qualquer intervenção medicamentosa, mesmo com pulsos femorais diminuídos',
       'Cirurgia imediata sem qualquer suporte prévio com prostaglandina'
     ],
     correctIndex: 0,
@@ -907,10 +907,10 @@ export const HCOR_GERADO_2026_QUESTIONS: any[] = [
     text: 'Criança, 8 anos, apresenta sopro cardíaco inocente detectado em exame de rotina, sem sintomas, sem irradiação significativa, que varia com a posição e desaparece em decúbito. Qual é a conduta mais apropriada?',
     options: [
       'Tranquilização dos pais, sem necessidade de restrição de atividades ou investigação adicional extensa',
-      'Ecocardiograma obrigatório em todos os casos antes de qualquer orientação',
-      'Restrição de atividade física até investigação completa',
-      'Encaminhamento imediato para cirurgia cardíaca',
-      'Início empírico de betabloqueador'
+      'Ecocardiograma obrigatório em todos os casos, mesmo diante de sopro claramente inocente',
+      'Restrição de atividade física até investigação completa, mesmo com características de sopro inocente',
+      'Encaminhamento imediato para cirurgia cardíaca, desproporcional a um sopro inocente assintomático',
+      'Início empírico de betabloqueador, sem qualquer indicação diante de um sopro claramente inocente'
     ],
     correctIndex: 0,
     explanation: 'Sopros inocentes têm características típicas (variam com posição, sem irradiação relevante, assintomáticos) e não exigem restrição ou investigação invasiva, apenas acompanhamento clínico.'
@@ -955,10 +955,10 @@ export const HCOR_GERADO_2026_QUESTIONS: any[] = [
     text: 'Mulher, 38 anos, com hipertensão pulmonar grave conhecida, engravida inadvertidamente. Qual é a orientação mais apropriada quanto ao risco dessa gestação?',
     options: [
       'Altíssimo risco de mortalidade materna, devendo ser discutida com a paciente, incluindo a opção de interrupção da gestação conforme legislação vigente',
-      'Gestação de risco habitual, sem necessidade de cuidados especiais',
-      'Nenhum risco relevante, podendo seguir pré-natal de rotina',
-      'Indicação obrigatória de parto vaginal sem qualquer preparo especial',
-      'Contraindicação apenas para amamentação, sem risco gestacional'
+      'Gestação considerada de risco habitual, dispensando discussão sobre interrupção da gestação ou cuidados especiais em centro de referência',
+      'Nenhum risco relevante à vida materna, podendo seguir apenas o pré-natal de rotina, sem necessidade de acompanhamento em centro de referência',
+      'Indicação obrigatória de parto vaginal sem qualquer preparo especial, mesmo diante do altíssimo risco de mortalidade materna',
+      'Contraindicação apenas para amamentação, sem qualquer risco gestacional associado à hipertensão pulmonar grave'
     ],
     correctIndex: 0,
     explanation: 'Hipertensão pulmonar grave é uma das condições de maior risco de mortalidade materna na gestação, exigindo discussão cuidadosa e individualizada sobre a continuidade da gestação.'
@@ -971,10 +971,10 @@ export const HCOR_GERADO_2026_QUESTIONS: any[] = [
     text: 'Programa de telemonitoramento acompanha pacientes com insuficiência cardíaca crônica após alta hospitalar, com aferição diária de peso e sintomas transmitidos remotamente à equipe. Qual é o principal benefício esperado dessa estratégia?',
     options: [
       'Detecção precoce de descompensação, permitindo intervenção antes de nova internação',
-      'Substituição completa das consultas presenciais de rotina',
-      'Eliminação total da necessidade de medicação',
-      'Nenhum impacto comprovado sobre reinternações',
-      'Redução exclusiva de custos, sem benefício clínico'
+      'Substituição completa das consultas presenciais de rotina pela monitorização remota exclusiva',
+      'Eliminação total da necessidade de medicação para insuficiência cardíaca crônica',
+      'Nenhum impacto comprovado sobre reinternações ou sobre a detecção precoce de descompensação',
+      'Redução exclusiva de custos assistenciais, sem qualquer benefício clínico documentado'
     ],
     correctIndex: 0,
     explanation: 'O telemonitoramento permite identificar sinais precoces de descompensação (como ganho de peso rápido), possibilitando intervenção antecipada e potencial redução de reinternações.'
@@ -987,10 +987,10 @@ export const HCOR_GERADO_2026_QUESTIONS: any[] = [
     text: 'Instituição de saúde realiza auditoria de prontuários para verificar adesão a diretrizes de prescrição de dupla antiagregação após implante de stent coronariano. Qual é o principal objetivo dessa auditoria?',
     options: [
       'Garantir adesão a práticas baseadas em evidência, reduzindo risco de trombose de stent',
-      'Aumentar o faturamento hospitalar sem relação com desfecho clínico',
+      'Aumentar o faturamento hospitalar, sem qualquer relação com o desfecho clínico do paciente',
       'Substituir a autonomia médica na decisão terapêutica individual',
       'Servir apenas para fins de certificação, sem impacto assistencial',
-      'Reduzir o tempo de consulta médica'
+      'Reduzir o tempo de consulta médica, sem relação com a adesão a diretrizes de prescrição'
     ],
     correctIndex: 0,
     explanation: 'Auditorias de adesão a diretrizes clínicas (como duração adequada da dupla antiagregação) visam garantir prática baseada em evidência e reduzir desfechos adversos como trombose de stent.'
@@ -1003,10 +1003,10 @@ export const HCOR_GERADO_2026_QUESTIONS: any[] = [
     text: 'Equipe de um centro cardiológico de referência realiza discussão em conjunto (heart team) envolvendo cardiologista clínico, cirurgião cardíaco e hemodinamicista para definir a melhor estratégia de revascularização em caso complexo. Qual é o principal benefício dessa abordagem multidisciplinar?',
     options: [
       'Decisão terapêutica mais equilibrada, considerando riscos e benefícios de diferentes abordagens por especialistas complementares',
-      'Aumento do tempo de decisão sem qualquer benefício clínico adicional',
-      'Substituição da vontade do paciente na decisão final',
-      'Redução da responsabilidade individual de cada profissional, sem benefício ao paciente',
-      'Nenhuma vantagem comprovada em relação à decisão de um único especialista'
+      'Aumento do tempo de decisão terapêutica, sem qualquer benefício clínico adicional demonstrado na literatura',
+      'Substituição da vontade do paciente na decisão final, retirando sua autonomia sobre a escolha terapêutica',
+      'Redução da responsabilidade individual de cada profissional, sem qualquer benefício real ao paciente',
+      'Nenhuma vantagem comprovada em relação à decisão isolada tomada por um único especialista'
     ],
     correctIndex: 0,
     explanation: 'A discussão em heart team integra diferentes perspectivas especializadas, produzindo decisões mais equilibradas em casos complexos de doença coronariana ou valvar, com evidência de melhores desfechos.'
@@ -1019,9 +1019,9 @@ export const HCOR_GERADO_2026_QUESTIONS: any[] = [
     text: 'Equipe de segurança do paciente de um hospital cardiológico implementa sistema de dupla checagem para prescrição e administração de anticoagulantes, medicação de alto risco. Qual é a principal justificativa para essa prática?',
     options: [
       'Anticoagulantes são medicações de alto risco de dano em caso de erro de dose, exigindo barreiras adicionais de segurança',
-      'Trata-se de exigência sem qualquer base em evidência de segurança do paciente',
-      'A dupla checagem é necessária apenas para medicações de baixo custo',
-      'O objetivo é exclusivamente reduzir o tempo de administração da medicação',
+      'Trata-se de exigência burocrática sem qualquer base em evidência de segurança do paciente',
+      'A dupla checagem é necessária apenas para medicações de baixo custo, sem relação com o risco de dano',
+      'O objetivo é exclusivamente reduzir o tempo de administração, sem relação com a segurança do paciente',
       'A prática visa apenas ao cumprimento de metas administrativas, sem relação com segurança'
     ],
     correctIndex: 0,
@@ -1035,10 +1035,10 @@ export const HCOR_GERADO_2026_QUESTIONS: any[] = [
     text: 'Paciente apresenta dor torácica atípica e escore de cálcio coronariano (Agatston) de 450, sem sintomas anginosos típicos. Qual é a interpretação mais apropriada desse resultado?',
     options: [
       'Alta carga de aterosclerose coronariana subclínica, associada a risco cardiovascular aumentado, mesmo sem sintomas típicos',
-      'Resultado sem qualquer relevância clínica, pois o paciente é assintomático',
-      'Exclusão definitiva de doença arterial coronariana',
+      'Resultado sem qualquer relevância clínica, pois o paciente é assintomático e sem fatores de risco',
+      'Exclusão definitiva de doença arterial coronariana, independente do valor do escore de cálcio',
       'Indicação obrigatória de cirurgia de revascularização imediata, independente de outros dados',
-      'Necessidade de repetir o exame em 10 anos, sem qualquer conduta adicional'
+      'Necessidade de repetir o exame em 10 anos, sem qualquer investigação ou conduta preventiva adicional'
     ],
     correctIndex: 0,
     explanation: 'Escore de cálcio coronariano elevado indica carga aterosclerótica significativa e maior risco cardiovascular, mesmo em pacientes assintomáticos, orientando intensificação de prevenção e possível investigação funcional adicional.'
@@ -1099,9 +1099,9 @@ export const HCOR_GERADO_2026_QUESTIONS: any[] = [
     text: 'Paciente com diagnóstico recente de fibrilação atrial não valvar, CHA2DS2-VASc de 3, é avaliado quanto à escolha do anticoagulante. Qual classe é geralmente preferida em relação à varfarina, na ausência de contraindicações específicas?',
     options: [
       'Anticoagulantes orais diretos (como inibidores do fator Xa ou da trombina)',
-      'Ácido acetilsalicílico isolado, sem anticoagulante',
-      'Heparina não fracionada contínua por via oral',
-      'Nenhuma anticoagulação é necessária com esse escore',
+      'Ácido acetilsalicílico isolado, sem qualquer anticoagulante oral associado',
+      'Heparina não fracionada contínua por via oral, via inadequada para anticoagulação crônica',
+      'Nenhuma anticoagulação é necessária com esse escore de risco tromboembólico',
       'Clopidogrel isolado como substituto de anticoagulação plena'
     ],
     correctIndex: 0,
@@ -1116,9 +1116,9 @@ export const HCOR_GERADO_2026_QUESTIONS: any[] = [
     options: [
       'Lesão miocárdica não isquêmica associada à doença crítica, devendo ser interpretada no contexto clínico geral',
       'Infarto agudo do miocárdio com supradesnivelamento do ST, exigindo trombólise imediata',
-      'Erro laboratorial, devendo ser ignorado sem qualquer investigação',
+      'Erro laboratorial, devendo ser ignorado sem qualquer investigação do contexto clínico associado',
       'Indicação obrigatória de cateterismo de urgência, independente do quadro clínico',
-      'Pericardite aguda isolada, sem outra investigação necessária'
+      'Pericardite aguda isolada, sem necessidade de qualquer investigação do quadro séptico associado'
     ],
     correctIndex: 0,
     explanation: 'Elevação de troponina pode ocorrer por lesão miocárdica não isquêmica em diversas condições críticas (sepse, por exemplo), devendo ser interpretada dentro do contexto clínico geral, não apenas como sinônimo de infarto coronariano.'
@@ -1134,7 +1134,7 @@ export const HCOR_GERADO_2026_QUESTIONS: any[] = [
       'Liberação imediata para esportes competitivos, sem qualquer restrição',
       'Nenhuma orientação especial é necessária além do tratamento medicamentoso',
       'Indicação obrigatória de exercício físico intenso para acelerar a recuperação',
-      'Restrição apenas de natação, sem outras limitações'
+      'Restrição apenas de natação, sem qualquer outra limitação de atividade física'
     ],
     correctIndex: 0,
     explanation: 'Miocardite aguda com arritmia e disfunção associadas exige restrição temporária de atividade física pelo risco de morte súbita induzida por exercício, com retorno gradual após reavaliação.'
@@ -1163,10 +1163,10 @@ export const HCOR_GERADO_2026_QUESTIONS: any[] = [
     text: 'Paciente com insuficiência cardíaca com fração de ejeção reduzida, já em uso otimizado de IECA, betabloqueador, antagonista mineralocorticoide e inibidor de SGLT2, permanece com congestão. Qual é a próxima classe a ser considerada conforme diretrizes atuais de terapia quádrupla?',
     options: [
       'Substituição do IECA por inibidor da neprilisina e do receptor de angiotensina (sacubitril-valsartana), se ainda não realizada',
-      'Suspensão de todas as medicações e reinício isolado de diurético',
-      'Apenas aumento da dose de diurético, sem qualquer ajuste das demais classes',
-      'Substituição do betabloqueador por bloqueador de canal de cálcio',
-      'Interrupção do antagonista mineralocorticoide, mantendo apenas o diurético'
+      'Suspensão de todas as medicações otimizadas e reinício isolado de diurético de alça em altas doses',
+      'Apenas aumento da dose de diurético de alça, sem qualquer ajuste das demais classes otimizadas',
+      'Substituição do betabloqueador por bloqueador de canal de cálcio não recomendado nessa insuficiência',
+      'Interrupção do antagonista mineralocorticoide, mantendo apenas o diurético e o betabloqueador'
     ],
     correctIndex: 0,
     explanation: 'A terapia quádrupla moderna da insuficiência cardíaca com fração reduzida inclui a substituição do IECA/BRA por sacubitril-valsartana quando ainda não realizada, associada a betabloqueador, antagonista mineralocorticoide e iSGLT2.'
@@ -1195,10 +1195,10 @@ export const HCOR_GERADO_2026_QUESTIONS: any[] = [
     text: 'Paciente apresenta bradicardia sinusal assintomática de 48 bpm durante sono, identificada em Holter de rotina, sem qualquer sintoma associado. Qual é a conduta mais apropriada?',
     options: [
       'Nenhuma intervenção específica é necessária, já que pode representar variante fisiológica, especialmente em atletas',
-      'Implante de marca-passo definitivo imediato',
-      'Atropina contínua por via oral',
-      'Suspensão de toda atividade física habitual',
-      'Internação hospitalar de urgência'
+      'Implante de marca-passo definitivo imediato, mesmo na ausência completa de sintomas ou repercussão',
+      'Atropina contínua por via oral, formulação e indicação inexistentes nesse contexto assintomático',
+      'Suspensão de toda atividade física habitual, mesmo sendo um achado fisiológico comum do sono',
+      'Internação hospitalar de urgência, desproporcional a um achado assintomático do Holter'
     ],
     correctIndex: 0,
     explanation: 'Bradicardia sinusal assintomática, especialmente durante o sono ou em pessoas fisicamente ativas, é frequentemente uma variante fisiológica que não exige intervenção específica.'
@@ -1211,10 +1211,10 @@ export const HCOR_GERADO_2026_QUESTIONS: any[] = [
     text: 'Paciente com angina refratária ao tratamento clínico máximo e à revascularização (não candidato a novo procedimento), com leito coronariano difuso não passível de nova intervenção. Qual terapia complementar pode ser considerada para alívio sintomático?',
     options: [
       'Neuroestimulação elétrica transcutânea ou contrapulsação externa aumentada, como terapias complementares para angina refratária',
-      'Transplante cardíaco imediato como única alternativa em qualquer caso',
-      'Nenhuma opção terapêutica adicional está disponível além de analgesia comum',
-      'Ablação por cateter do sistema de condução, sem relação com a angina',
-      'Suspensão de toda terapia antianginosa'
+      'Transplante cardíaco imediato como única alternativa, sem considerar terapias complementares menos invasivas',
+      'Nenhuma opção terapêutica adicional está disponível além de analgesia comum sem indicação específica',
+      'Ablação por cateter do sistema de condução, procedimento sem relação com o alívio da angina refratária',
+      'Suspensão de toda terapia antianginosa, mesmo com sintomas refratários já otimizados clinicamente'
     ],
     correctIndex: 0,
     explanation: 'Em angina refratária sem opção de revascularização adicional, terapias complementares como contrapulsação externa aumentada ou neuroestimulação podem proporcionar alívio sintomático.'
@@ -1259,10 +1259,10 @@ export const HCOR_GERADO_2026_QUESTIONS: any[] = [
     text: 'Criança com cardiopatia congênita cianótica corrigida apresenta policitemia compensatória crônica, com hematócrito de 65%, sem sintomas de hiperviscosidade. Qual é a conduta mais apropriada?',
     options: [
       'Observação clínica, evitando flebotomias desnecessárias na ausência de sintomas de hiperviscosidade',
-      'Sangria terapêutica semanal obrigatória, independente de sintomas',
-      'Transfusão de concentrado de hemácias para "diluir" a policitemia',
-      'Anticoagulação plena isolada, sem relação com a policitemia',
-      'Quimioterapia mieloablativa para reduzir a produção de hemácias'
+      'Sangria terapêutica semanal obrigatória, independente da presença de sintomas de hiperviscosidade',
+      'Transfusão de concentrado de hemácias para "diluir" a policitemia, mesmo sem sinais de anemia',
+      'Anticoagulação plena isolada, sem qualquer relação com o manejo da policitemia compensatória',
+      'Quimioterapia mieloablativa para reduzir a produção de hemácias, sem indicação nesse contexto'
     ],
     correctIndex: 0,
     explanation: 'Policitemia compensatória em cardiopatia cianótica sem sintomas de hiperviscosidade não deve ser tratada rotineiramente com flebotomia, que pode causar depleção de ferro e piora paradoxal dos sintomas.'
@@ -1275,10 +1275,10 @@ export const HCOR_GERADO_2026_QUESTIONS: any[] = [
     text: 'Serviço de cardiologia institui protocolo de conciliação medicamentosa na admissão e alta hospitalar, comparando medicações em uso domiciliar com as prescritas na internação. Qual é o principal objetivo dessa prática?',
     options: [
       'Reduzir erros de medicação e eventos adversos relacionados a discrepâncias na transição de cuidado',
-      'Aumentar o número de medicações prescritas por internação',
-      'Substituir a anamnese médica habitual',
+      'Aumentar o número de medicações prescritas por internação, sem relação com segurança do paciente',
+      'Substituir a anamnese médica habitual, sem relação com a transição segura do cuidado',
       'Reduzir exclusivamente o tempo de internação, sem relação com segurança',
-      'Cumprir exigência meramente administrativa sem impacto clínico'
+      'Cumprir exigência meramente administrativa, sem qualquer impacto sobre erros de medicação'
     ],
     correctIndex: 0,
     explanation: 'A conciliação medicamentosa é prática de segurança do paciente que visa reduzir erros e eventos adversos decorrentes de discrepâncias entre medicações usadas em casa e as prescritas durante a internação.'
@@ -1307,9 +1307,9 @@ export const HCOR_GERADO_2026_QUESTIONS: any[] = [
     text: 'Paciente apresenta infarto de parede inferior (supra em DII, DIII, aVF) e, ao exame, hipotensão que piora com nitrato sublingual. Qual é a conduta em relação ao uso de nitrato nesse contexto?',
     options: [
       'Evitar nitrato pelo risco de infarto de ventrículo direito associado, com dependência de pré-carga',
-      'Manter nitrato em altas doses, independente da resposta pressórica',
+      'Manter nitrato em altas doses, independente da resposta pressórica e do risco de choque',
       'Associar diurético de alça em altas doses para compensar a hipotensão',
-      'Aumentar a dose de nitrato para melhorar a perfusão coronariana',
+      'Aumentar a dose de nitrato para melhorar a perfusão coronariana, mesmo com hipotensão associada',
       'Substituir por outro vasodilatador de ação equivalente, sem outra precaução'
     ],
     correctIndex: 0,
@@ -1323,10 +1323,10 @@ export const HCOR_GERADO_2026_QUESTIONS: any[] = [
     text: 'Paciente em uso de estatina de alta potência apresenta mialgia importante e CPK elevada 8 vezes o valor de referência. Qual é a conduta mais apropriada?',
     options: [
       'Suspensão da estatina e reavaliação, considerando troca futura por outra opção terapêutica ou dose menor',
-      'Manter a mesma dose, pois a mialgia é sempre benigna e autolimitada',
-      'Aumentar a dose da estatina para compensar o efeito',
-      'Associar outra estatina de potência ainda maior imediatamente',
-      'Nenhuma conduta é necessária, independente do nível de CPK'
+      'Manter a mesma dose, pois a mialgia é sempre benigna e autolimitada, mesmo com CPK muito elevada',
+      'Aumentar a dose da estatina para compensar o efeito, mesmo com CPK 8 vezes o valor de referência',
+      'Associar outra estatina de potência ainda maior imediatamente, sem suspender a anterior',
+      'Nenhuma conduta é necessária, independente do nível de CPK ou da intensidade da mialgia'
     ],
     correctIndex: 0,
     explanation: 'Mialgia significativa com CPK muito elevada sugere miopatia induzida por estatina, exigindo suspensão da droga e reavaliação antes de considerar reintrodução em dose menor ou troca de classe.'
@@ -1339,10 +1339,10 @@ export const HCOR_GERADO_2026_QUESTIONS: any[] = [
     text: 'Paciente apresenta parada cardiorrespiratória em ritmo de assistolia. Qual é a conduta apropriada quanto à desfibrilação nesse ritmo?',
     options: [
       'Assistolia não é ritmo chocável; a conduta prioriza compressões de alta qualidade e adrenalina, sem desfibrilação',
-      'Desfibrilação imediata é indicada, como em qualquer parada cardiorrespiratória',
-      'Cardioversão sincronizada é a conduta correta para assistolia',
-      'Apenas observação sem qualquer manobra de reanimação',
-      'Marca-passo transcutâneo deve substituir as compressões torácicas'
+      'Desfibrilação imediata é indicada, como em qualquer ritmo de parada cardiorrespiratória',
+      'Cardioversão sincronizada é a conduta correta para assistolia, substituindo as compressões torácicas',
+      'Apenas observação sem qualquer manobra de reanimação, mesmo diante de ritmo de assistolia',
+      'Marca-passo transcutâneo deve substituir as compressões torácicas de alta qualidade'
     ],
     correctIndex: 0,
     explanation: 'Assistolia é ritmo não chocável; o tratamento se baseia em compressões torácicas de alta qualidade, ventilação adequada e adrenalina, sem indicação de desfibrilação.'
@@ -1355,8 +1355,8 @@ export const HCOR_GERADO_2026_QUESTIONS: any[] = [
     text: 'Paciente apresenta hipertensão arterial resistente, definida como pressão não controlada apesar do uso de 3 classes de anti-hipertensivos em doses otimizadas incluindo diurético. Qual é a conduta inicial mais apropriada antes de considerar terapias intervencionistas?',
     options: [
       'Investigar adesão ao tratamento e causas secundárias de hipertensão antes de intensificar ou considerar procedimentos invasivos',
-      'Denervação renal imediata, sem investigar adesão ou causas secundárias',
-      'Suspensão de todos os anti-hipertensivos para reavaliação do basal',
+      'Denervação renal imediata, sem qualquer investigação prévia de adesão ou de causas secundárias',
+      'Suspensão de todos os anti-hipertensivos para reavaliação do basal, sem investigar causas secundárias',
       'Aumentar indefinidamente o número de classes sem investigar causas secundárias',
       'Indicação cirúrgica de revascularização renal empírica, sem investigação prévia'
     ],
@@ -1387,9 +1387,9 @@ export const HCOR_GERADO_2026_QUESTIONS: any[] = [
     text: 'Paciente no pós-operatório de cirurgia de revascularização miocárdica apresenta dor e edema unilateral em membro inferior doador do enxerto de veia safena. Doppler confirma trombose venosa profunda. Qual é a conduta apropriada?',
     options: [
       'Anticoagulação terapêutica, conforme protocolo, ponderando o risco de sangramento pós-operatório recente',
-      'Nenhuma conduta específica, pois é esperado após retirada de safena',
-      'Amputação do membro como conduta definitiva',
-      'Apenas elevação do membro, sem qualquer anticoagulação',
+      'Nenhuma conduta específica, pois é esperado após retirada de safena, sem risco relevante',
+      'Amputação do membro como conduta definitiva, desproporcional a uma trombose venosa profunda',
+      'Apenas elevação do membro, sem qualquer anticoagulação, mesmo com trombose confirmada',
       'Trombólise sistêmica imediata, independente do risco de sangramento pós-operatório'
     ],
     correctIndex: 0,
@@ -1451,10 +1451,10 @@ export const HCOR_GERADO_2026_QUESTIONS: any[] = [
     text: 'Paciente apresenta elevação de pressão arterial isolada em consultório, com valores normais em medidas domiciliares e MAPA. Qual é o diagnóstico e a conduta mais apropriada?',
     options: [
       'Hipertensão do avental branco; seguimento clínico, evitando tratamento farmacológico excessivo baseado apenas na medida de consultório',
-      'Hipertensão mascarada; intensificar tratamento imediatamente',
-      'Hipertensão sustentada grave; associar 3 classes de anti-hipertensivos de imediato',
-      'Emergência hipertensiva; internação imediata',
-      'Erro de aferição a ser ignorado, sem qualquer conduta de acompanhamento'
+      'Hipertensão mascarada; intensificar tratamento imediatamente, mesmo com MAPA e medidas domiciliares normais',
+      'Hipertensão sustentada grave; associar 3 classes de anti-hipertensivos de imediato, mesmo com MAPA normal',
+      'Emergência hipertensiva; internação imediata, desproporcional a um achado isolado de consultório',
+      'Erro de aferição a ser ignorado, sem qualquer conduta de acompanhamento ou seguimento clínico'
     ],
     correctIndex: 0,
     explanation: 'Pressão elevada apenas em consultório, com MAPA e medidas domiciliares normais, caracteriza hipertensão do avental branco, que deve ser acompanhada sem necessariamente intensificar tratamento farmacológico baseado só na medida isolada de consultório.'
@@ -1468,9 +1468,9 @@ export const HCOR_GERADO_2026_QUESTIONS: any[] = [
     options: [
       'Cateterismo cardíaco direito para confirmação hemodinâmica e classificação da hipertensão pulmonar',
       'Angioplastia coronariana empírica, sem investigar a causa da hipertensão pulmonar',
-      'Apenas diurético isolado, sem investigação adicional',
-      'Marca-passo definitivo, sem relação com a hipertensão pulmonar',
-      'Observação sem qualquer investigação complementar'
+      'Apenas diurético isolado, sem qualquer investigação hemodinâmica adicional da hipertensão pulmonar',
+      'Marca-passo definitivo, procedimento sem relação com a investigação da hipertensão pulmonar',
+      'Observação sem qualquer investigação complementar, mesmo com pressão pulmonar muito elevada'
     ],
     correctIndex: 0,
     explanation: 'Suspeita de hipertensão pulmonar sem causa cardíaca ou pulmonar esquerda evidente exige confirmação por cateterismo cardíaco direito, exame padrão-ouro para classificação hemodinâmica.'
@@ -1486,7 +1486,7 @@ export const HCOR_GERADO_2026_QUESTIONS: any[] = [
       'Suspensão de todo tratamento para controle de frequência, mantendo apenas anticoagulação',
       'Cardioversão elétrica obrigatória, independente da duração da arritmia e anticoagulação prévia',
       'Ablação do nó atrioventricular como primeira conduta, sem tentar otimização farmacológica',
-      'Aumento isolado da dose de anticoagulante para controlar a frequência'
+      'Aumento isolado da dose de anticoagulante para controlar a frequência ventricular elevada'
     ],
     correctIndex: 0,
     explanation: 'No controle de frequência insuficiente com betabloqueador isolado, pode-se associar digoxina ou bloqueador de canal de cálcio não di-hidropiridínico, conforme função ventricular e perfil clínico do paciente.'
@@ -1499,10 +1499,10 @@ export const HCOR_GERADO_2026_QUESTIONS: any[] = [
     text: 'Paciente com insuficiência aórtica crônica grave, assintomática, apresenta diâmetro diastólico final do ventrículo esquerdo em progressão nos exames seriados, aproximando-se do limiar cirúrgico. Qual é a conduta mais apropriada?',
     options: [
       'Acompanhamento ecocardiográfico mais frequente, com indicação cirúrgica quando atingidos os critérios de dimensão ou disfunção ventricular',
-      'Cirurgia imediata, independente de sintomas ou critérios ecocardiográficos',
-      'Suspensão de qualquer acompanhamento até o surgimento de sintomas',
-      'Marca-passo definitivo como conduta para a insuficiência aórtica',
-      'Apenas diurético isolado, sem qualquer indicação cirúrgica futura'
+      'Cirurgia imediata, independente de sintomas, critérios ecocardiográficos ou estabilidade da progressão',
+      'Suspensão de qualquer acompanhamento até o surgimento de sintomas, mesmo com progressão documentada',
+      'Marca-passo definitivo como conduta para a insuficiência aórtica, sem relação com a indicação cirúrgica',
+      'Apenas diurético isolado, sem qualquer indicação cirúrgica futura, mesmo com progressão dos diâmetros'
     ],
     correctIndex: 0,
     explanation: 'Insuficiência aórtica crônica assintomática exige acompanhamento seriado, com indicação cirúrgica quando atingidos critérios de dilatação ou disfunção ventricular, mesmo antes do surgimento de sintomas.'
@@ -1532,8 +1532,8 @@ export const HCOR_GERADO_2026_QUESTIONS: any[] = [
     options: [
       'Suporte psicológico estruturado à família como parte integrante do cuidado, além do cuidado clínico do recém-nascido',
       'Focar exclusivamente nos aspectos clínicos do recém-nascido, sem qualquer suporte à família',
-      'Orientar a família a não visitar a criança para reduzir o estresse',
-      'Encaminhar a família para alta psiquiátrica compulsória, sem outra avaliação',
+      'Orientar a família a não visitar a criança para reduzir o estresse, sem oferecer suporte psicológico',
+      'Encaminhar a família para alta psiquiátrica compulsória, sem qualquer avaliação da equipe multiprofissional',
       'Ignorar os sinais de exaustão, por não ser atribuição da equipe de cardiologia'
     ],
     correctIndex: 0,
@@ -1547,10 +1547,10 @@ export const HCOR_GERADO_2026_QUESTIONS: any[] = [
     text: 'Gestante com prótese valvar biológica (sem necessidade de anticoagulação plena) e função valvar normal ao ecocardiograma é acompanhada no pré-natal. Qual é a principal diferença de manejo em relação a uma gestante com prótese mecânica?',
     options: [
       'Menor complexidade quanto à anticoagulação, já que próteses biológicas geralmente não exigem anticoagulação plena contínua',
-      'Necessidade idêntica de anticoagulação plena com varfarina durante toda a gestação',
-      'Contraindicação absoluta à gestação em qualquer caso de prótese biológica',
+      'Necessidade idêntica de anticoagulação plena com varfarina durante toda a gestação, como na prótese mecânica',
+      'Contraindicação absoluta à gestação em qualquer caso de prótese biológica, mesmo com função normal',
       'Necessidade de troca da prótese biológica por mecânica antes de engravidar, em todos os casos',
-      'Nenhuma diferença relevante de manejo entre os dois tipos de prótese'
+      'Nenhuma diferença relevante de manejo entre os dois tipos de prótese durante toda a gestação'
     ],
     correctIndex: 0,
     explanation: 'Próteses biológicas geralmente não exigem anticoagulação plena contínua, o que simplifica o manejo gestacional em comparação às próteses mecânicas, que trazem o dilema da escolha entre varfarina e heparina.'
@@ -1564,9 +1564,9 @@ export const HCOR_GERADO_2026_QUESTIONS: any[] = [
     options: [
       'Tempos menores estão associados a melhor prognóstico, com menor perda de miocárdio viável',
       'É um indicador puramente administrativo, sem relação com desfecho clínico',
-      'Tempos maiores são preferíveis para permitir melhor preparo da equipe',
-      'Não há relação estabelecida entre esse tempo e a mortalidade',
-      'É relevante apenas para fins de faturamento hospitalar'
+      'Tempos maiores são preferíveis para permitir melhor preparo da equipe, sem prejuízo miocárdico',
+      'Não há relação estabelecida entre esse tempo e a mortalidade ou o prognóstico do paciente',
+      'É relevante apenas para fins de faturamento hospitalar, sem relação com o prognóstico clínico'
     ],
     correctIndex: 0,
     explanation: 'O tempo porta-balão é indicador de qualidade assistencial diretamente relacionado ao prognóstico no infarto com supra de ST: quanto menor o tempo até a reperfusão, menor a perda de miocárdio viável.'
@@ -1595,10 +1595,10 @@ export const HCOR_GERADO_2026_QUESTIONS: any[] = [
     text: 'Serviço de cardiologia implementa registro estruturado de eventos adversos (near miss e eventos com dano) relacionados a procedimentos invasivos, com discussão em reuniões multiprofissionais periódicas. Qual é o principal objetivo dessa prática de segurança do paciente?',
     options: [
       'Identificar falhas sistêmicas e implementar medidas preventivas, promovendo cultura de segurança não punitiva',
-      'Punir individualmente o profissional envolvido no evento adverso',
-      'Ocultar os eventos de órgãos reguladores externos',
+      'Punir individualmente o profissional envolvido no evento adverso, sem analisar falhas sistêmicas',
+      'Ocultar os eventos de órgãos reguladores externos, sem qualquer discussão multiprofissional interna',
       'Aumentar o número de procedimentos realizados, sem relação com segurança',
-      'Servir apenas como registro burocrático sem qualquer ação corretiva'
+      'Servir apenas como registro burocrático, sem qualquer ação corretiva ou preventiva subsequente'
     ],
     correctIndex: 0,
     explanation: 'O registro e discussão estruturada de eventos adversos e near miss visa identificar falhas sistêmicas (não apenas individuais) e implementar medidas preventivas, dentro de uma cultura de segurança não punitiva.'

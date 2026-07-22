@@ -30,9 +30,9 @@ export const Q_BASICO_1: any[] = [
     text: 'O período refratário absoluto ocorre porque:',
     options: [
       'Os canais de Na⁺ estão inativados e não podem ser reabertos independentemente do estímulo',
-      'Os canais de K⁺ estão fechados',
-      'A bomba Na⁺/K⁺ está superativa',
-      'O potencial de membrana está acima do limiar'
+      'Os canais de K⁺ permanecem fechados durante toda a fase de despolarização, retardando a repolarização da membrana',
+      'A bomba Na⁺/K⁺-ATPase está hiperativada, restaurando rapidamente os gradientes iônicos de repouso',
+      'O potencial de membrana permanece acima do limiar, favorecendo a abertura de canais de cálcio dependentes de voltagem'
     ],
     correctIndex: 0,
     explanation: 'No período refratário absoluto, os canais de Na⁺ estão na conformação inativada (portão h fechado), sendo impossível gerar novo potencial de ação independente da intensidade do estímulo.'
@@ -67,9 +67,9 @@ export const Q_BASICO_1: any[] = [
     text: 'O mecanismo de contrapressão multiplicador na alça de Henle é responsável por:',
     options: [
       'Criar gradiente osmótico na medula renal para concentrar urina',
-      'Reabsorver glicose no túbulo proximal',
-      'Secretar K⁺ no túbulo distal',
-      'Regular a TFG pelo feedback tubuloglomerular'
+      'Reabsorver ativamente glicose e aminoácidos no túbulo proximal',
+      'Secretar potássio e hidrogênio no túbulo distal sob ação da aldosterona',
+      'Regular a TFG por meio do feedback tubuloglomerular na mácula densa'
     ],
     correctIndex: 0,
     explanation: 'O mecanismo de contrapressão multiplicador na alça de Henle cria um gradiente osmótico progressivo na medula renal (300 a 1200 mOsm/kg), essencial para a concentração da urina.'
@@ -95,9 +95,9 @@ export const Q_BASICO_1: any[] = [
     text: 'A Lei de Frank-Starling descreve que:',
     options: [
       'O coração bombeará mais sangue quanto mais for preenchido durante a diástole (dentro de limites fisiológicos)',
-      'A frequência cardíaca aumenta conforme o volume de ejeção diminui',
-      'A resistência vascular periférica determina diretamente o volume sistólico',
-      'O débito cardíaco independe do retorno venoso'
+      'A frequência cardíaca aumenta progressivamente conforme o volume de ejeção diminui, independente do enchimento diastólico',
+      'A resistência vascular periférica determina diretamente o volume sistólico, independentemente do retorno venoso ou da pré-carga',
+      'O débito cardíaco independe do retorno venoso, sendo determinado exclusivamente pela frequência cardíaca basal'
     ],
     correctIndex: 0,
     explanation: 'Pela Lei de Frank-Starling, o aumento do comprimento das fibras miocárdicas (maior pré-carga) aumenta a força de contração e o volume sistólico, adaptando o coração ao aumento do retorno venoso.'
@@ -109,9 +109,9 @@ export const Q_BASICO_1: any[] = [
     text: 'O principal tampão do líquido extracelular é:',
     options: [
       'Bicarbonato/ácido carbônico (HCO₃⁻/H₂CO₃)',
-      'Fosfato (HPO₄²⁻/H₂PO₄⁻)',
-      'Proteínas plasmáticas',
-      'Hemoglobina'
+      'Fosfato (HPO₄²⁻/H₂PO₄⁻), tampão intracelular',
+      'Proteínas plasmáticas, com menor capacidade tamponante',
+      'Hemoglobina, tampão intracelular das hemácias'
     ],
     correctIndex: 0,
     explanation: 'O sistema bicarbonato/ácido carbônico é o principal tampão do LEC, pois seus componentes são regulados separadamente pelo pulmão (CO₂) e rim (HCO₃⁻), conferindo capacidade tamponante eficiente.'
@@ -146,9 +146,9 @@ export const Q_BASICO_1: any[] = [
     text: 'O ADH (vasopressina) age principalmente para:',
     options: [
       'Aumentar a permeabilidade à água no ducto coletor renal',
-      'Aumentar a excreção de sódio',
-      'Estimular a produção de aldosterona',
-      'Reduzir a TFG'
+      'Aumentar a excreção urinária de sódio no túbulo distal',
+      'Estimular diretamente a produção de aldosterona pela suprarrenal',
+      'Reduzir a taxa de filtração glomerular por vasoconstrição aferente'
     ],
     correctIndex: 0,
     explanation: 'O ADH (hormônio antidiurético) liga-se a receptores V2 no ducto coletor, ativando adenilato ciclase e inserindo aquaporina-2 (AQP2) na membrana luminal, aumentando a reabsorção de água.'
@@ -230,9 +230,9 @@ export const Q_BASICO_1: any[] = [
     text: 'O receptor de estiramento muscular (fuso neuromuscular) detecta:',
     options: [
       'Comprimento e variação do comprimento do músculo',
-      'Tensão gerada pelo músculo',
-      'Velocidade de contração apenas',
-      'Temperatura muscular'
+      'Tensão gerada pelo músculo durante a contração ativa',
+      'Velocidade de contração muscular durante o movimento',
+      'Temperatura muscular local durante o exercício'
     ],
     correctIndex: 0,
     explanation: 'Os fusos neuromusculares (fibras intrafusais), inervados por fibras Ia e II, detectam o comprimento do músculo e a velocidade de mudança do comprimento, mediando o reflexo miotático (reflexo de estiramento).'
@@ -258,9 +258,9 @@ export const Q_BASICO_1: any[] = [
     text: 'O reflexo barorreceptor é ativado quando:',
     options: [
       'Há aumento da pressão arterial, levando à redução da FC e vasodilatação',
-      'Há queda da pressão arterial, levando à redução da FC',
-      'Há aumento da osmolaridade plasmática',
-      'Há hipoxemia'
+      'Há queda da pressão arterial, levando ao aumento da FC e à vasoconstrição periférica',
+      'Há aumento da osmolaridade plasmática, estimulando a liberação de ADH',
+      'Há hipoxemia, ativando os quimiorreceptores periféricos'
     ],
     correctIndex: 0,
     explanation: 'Os barorreceptores do seio carotídeo e arco aórtico respondem ao estiramento causado pela hipertensão: enviam sinais ao centro cardiovascular, resultando em aumento do tônus parassimpático (↓FC) e redução do simpático (vasodilatação, ↓força de contração).'
@@ -281,9 +281,9 @@ export const Q_BASICO_1: any[] = [
     text: 'O transporte ativo primário difere do transporte ativo secundário porque:',
     options: [
       'Usa diretamente energia do ATP para transportar substâncias contra gradiente',
-      'Usa o gradiente de Na⁺ gerado por outros transportadores',
-      'Não gasta energia celular',
-      'Ocorre apenas em células musculares'
+      'Usa o gradiente eletroquímico de Na⁺ gerado por outros transportadores ativos',
+      'Não consome energia celular, dependendo apenas de difusão simples',
+      'Ocorre exclusivamente em células musculares esqueléticas e cardíacas'
     ],
     correctIndex: 0,
     explanation: 'O transporte ativo primário usa diretamente a hidrólise do ATP (ex: bomba Na⁺/K⁺-ATPase), enquanto o secundário usa a energia do gradiente eletroquímico de Na⁺ gerado pela bomba primária (ex: cotransportador Na⁺-glicose).'
@@ -346,9 +346,9 @@ export const Q_BASICO_1: any[] = [
     text: 'O principal mecanismo de reabsorção de glicose nos rins ocorre no:',
     options: [
       'Túbulo proximal, por cotransporte Na⁺-glicose (SGLT)',
-      'Alça de Henle ascendente',
-      'Túbulo coletor',
-      'Cápsula de Bowman'
+      'Alça de Henle ascendente, por transporte ativo de cloreto',
+      'Túbulo coletor, sob ação da aldosterona e do ADH',
+      'Cápsula de Bowman, por filtração passiva simples'
     ],
     correctIndex: 0,
     explanation: 'Quase toda a glicose filtrada (≈180 g/dia) é reabsorvida no túbulo contorcido proximal pelo cotransportador SGLT2 (segmento S1, alta capacidade) e SGLT1 (segmento S3). O limiar renal de glicose é ~180 mg/dL.'
@@ -360,9 +360,9 @@ export const Q_BASICO_1: any[] = [
     text: 'O potencial de ação cardíaco das células do nó sinoatrial (SA) se diferencia do neuronal por:',
     options: [
       'Apresentar fase de despolarização espontânea (fase 4) e ser dependente de corrente If (corrente engraçada)',
-      'Ter fase de platô dependente de Na⁺',
-      'Não apresentar período refratário',
-      'Ter duração de apenas 1-2 ms'
+      'Ter fase de platô prolongada dependente do influxo constante de sódio pelos canais rápidos de membrana',
+      'Não apresentar período refratário, permitindo somação de estímulos e tétano muscular',
+      'Ter duração total de apenas 1 a 2 milissegundos, semelhante à dos neurônios motores'
     ],
     correctIndex: 0,
     explanation: 'O nodo SA apresenta automaticidade pela corrente If (corrente de marca-passo) que permite entrada de Na⁺/K⁺ durante a fase 4, despolarizando espontaneamente. A despolarização rápida depende de Ca²⁺ (não Na⁺).'
@@ -383,9 +383,9 @@ export const Q_BASICO_1: any[] = [
     text: 'A hemostasia primária envolve:',
     options: [
       'Vasoconstrição reflexa e formação do tampão plaquetário (plaquetas se aderem ao colágeno subendotelial)',
-      'Ativação da cascata de coagulação e formação de fibrina',
-      'Lise do coágulo pela plasmina',
-      'Produção de fatores de coagulação pelo fígado'
+      'Ativação da cascata de coagulação e formação da rede de fibrina que estabiliza definitivamente o coágulo',
+      'Lise do coágulo já formado pela ação da plasmina sobre a rede de fibrina estabilizada',
+      'Produção hepática dos fatores de coagulação dependentes de vitamina K (II, VII, IX, X)'
     ],
     correctIndex: 0,
     explanation: 'A hemostasia primária compreende vasoconstrição local e formação do tampão plaquetário (adesão via fator de von Willebrand e glicoproteína Ib, ativação, agregação via GPIIb/IIIa). A hemostasia secundária envolve a cascata de coagulação.'
@@ -440,9 +440,9 @@ export const Q_BASICO_1: any[] = [
     text: 'A beta-oxidação dos ácidos graxos resulta em:',
     options: [
       'Acetil-CoA + FADH₂ + NADH por ciclo de 2 carbonos',
-      'Glicose + NADH',
-      'Piruvato + ATP',
-      'Corpos cetônicos apenas'
+      'Glicose e NADH, liberados diretamente no citoplasma',
+      'Piruvato e ATP, formados diretamente no citosol',
+      'Corpos cetônicos exclusivamente, sem geração de acetil-CoA'
     ],
     correctIndex: 0,
     explanation: 'Cada ciclo de beta-oxidação remove 2 carbonos do ácido graxo na forma de acetil-CoA, produzindo também 1 FADH₂ e 1 NADH. O acetil-CoA entra no ciclo de Krebs para oxidação completa.'
@@ -463,9 +463,9 @@ export const Q_BASICO_1: any[] = [
     text: 'O nucleotídeo adenosina trifosfato (ATP) é considerado a "moeda energética" da célula porque:',
     options: [
       'Sua hidrólise libera energia livre que pode ser acoplada a reações endergônicas',
-      'É o principal carreador de elétrons na cadeia respiratória',
-      'Atua como coenzima em todas as reações enzimáticas',
-      'É o único combustível utilizado pelo cérebro'
+      'É o principal carreador de elétrons ao longo de toda a cadeia respiratória mitocondrial',
+      'Atua como coenzima obrigatória em todas as reações enzimáticas do metabolismo',
+      'É o único substrato energético que o cérebro é capaz de utilizar'
     ],
     correctIndex: 0,
     explanation: 'A hidrólise do ATP em ADP + Pi libera ~30,5 kJ/mol de energia livre (ΔG° = -30,5 kJ/mol), que pode ser acoplada a reações termodinamicamente desfavoráveis, tornando-as espontâneas.'
@@ -486,9 +486,9 @@ export const Q_BASICO_1: any[] = [
     text: 'A vitamina B12 (cobalamina) é cofator essencial para:',
     options: [
       'Metionina sintase (ciclo do folato/metilação) e metilmalonil-CoA mutase',
-      'Piruvato descarboxilase',
-      'Glicose-6-fosfato desidrogenase',
-      'HMG-CoA redutase'
+      'Piruvato descarboxilase, na conversão de piruvato em acetaldeído',
+      'Glicose-6-fosfato desidrogenase, na via das pentoses fosfato',
+      'HMG-CoA redutase, enzima limitante da síntese de colesterol'
     ],
     correctIndex: 0,
     explanation: 'A vitamina B12 é cofator de: (1) Metionina sintase — converte homocisteína em metionina (déficit acumula homocisteína e folato como 5-metilTHF); (2) Metilmalonil-CoA mutase — déficit causa acúmulo de ácido metilmalônico (marcador de deficiência).'
@@ -523,9 +523,9 @@ export const Q_BASICO_1: any[] = [
     text: 'A via das pentoses fosfato (vias das hexoses monofosfato) é importante principalmente para:',
     options: [
       'Produção de NADPH e ribose-5-fosfato (precursor de nucleotídeos)',
-      'Síntese de ATP aeróbica',
-      'Oxidação de ácidos graxos',
-      'Síntese de glicogênio'
+      'Síntese de ATP por fosforilação oxidativa aeróbica',
+      'Oxidação de ácidos graxos na matriz mitocondrial',
+      'Síntese de glicogênio a partir do excesso de glicose hepática'
     ],
     correctIndex: 0,
     explanation: 'A via das pentoses gera: NADPH (necessário para biossíntese de ácidos graxos, esteroides, e defesa antioxidante via glutationa redutase) e ribose-5-fosfato (esqueleto de nucleotídeos e ácidos nucleicos).'
@@ -537,9 +537,9 @@ export const Q_BASICO_1: any[] = [
     text: 'A deficiência de G6PD (glicose-6-fosfato desidrogenase) causa:',
     options: [
       'Anemia hemolítica em resposta a oxidantes (antimalariais, favas, infecções)',
-      'Doença de armazenamento de glicogênio',
-      'Hipoglicemia de jejum',
-      'Acidose láctica'
+      'Doença de armazenamento de glicogênio por deficiência enzimática hepática',
+      'Hipoglicemia grave de jejum por deficiência de glicogenólise',
+      'Acidose láctica por deficiência da piruvato desidrogenase'
     ],
     correctIndex: 0,
     explanation: 'Sem G6PD, as hemácias não produzem NADPH suficiente, não podendo regenerar glutationa reduzida. Na exposição a oxidantes, a hemoglobina oxida (corpúsculos de Heinz) e as hemácias são destruídas (anemia hemolítica episódica).'
@@ -551,9 +551,9 @@ export const Q_BASICO_1: any[] = [
     text: 'As enzimas alostéricas diferem das enzimas de cinética de Michaelis-Menten porque:',
     options: [
       'Apresentam curva de velocidade sigmoide (cooperatividade) e são reguladas por moduladores que atuam em sítios distintos do ativo',
-      'Têm somente um sítio de ligação ao substrato',
-      'Não são reguladas por produtos finais',
-      'Seguem sempre a equação de Michaelis-Menten com Km fixo'
+      'Têm somente um único sítio de ligação ao substrato, sem qualquer cooperatividade entre subunidades enzimáticas',
+      'Não são reguladas por produtos finais nem sofrem qualquer modulação alostérica por outras moléculas',
+      'Seguem sempre a equação clássica de Michaelis-Menten, mantendo Km e Vmáx constantes em qualquer concentração'
     ],
     correctIndex: 0,
     explanation: 'Enzimas alostéricas (ex: PFK-1, ATCase) possuem múltiplas subunidades com cooperatividade (curva sigmoide). Moduladores alostéricos positivos ou negativos ligam-se em sítios regulatórios, alterando a conformação (R↔T) e a atividade enzimática.'
@@ -602,9 +602,9 @@ export const Q_BASICO_1: any[] = [
     text: 'A fenilcetonúria (PKU) resulta da deficiência de:',
     options: [
       'Fenilalanina hidroxilase (que converte Phe em Tir)',
-      'Tirosinase',
-      'Homogentisato oxidase',
-      'Glutamato desidrogenase'
+      'Tirosinase, enzima que converte tirosina em melanina',
+      'Homogentisato oxidase, causando acúmulo de ácido homogentísico',
+      'Glutamato desidrogenase, envolvida na desaminação de aminoácidos'
     ],
     correctIndex: 0,
     explanation: 'Na PKU, a deficiência de fenilalanina hidroxilase (ou de seu cofator BH4) acumula fenilalanina, que é convertida a fenilpiruvato e fenilacetato. O acúmulo prejudica o desenvolvimento do SNC se não tratado com dieta pobre em Phe.'
@@ -616,9 +616,9 @@ export const Q_BASICO_1: any[] = [
     text: 'Os ácidos graxos essenciais incluem:',
     options: [
       'Ácido linoleico (ω-6) e ácido α-linolênico (ω-3)',
-      'Ácido palmítico e ácido esteárico',
-      'Ácido oleico e ácido araquidônico',
-      'Ácido mirístico e ácido láurico'
+      'Ácido palmítico e ácido esteárico, de síntese endógena',
+      'Ácido oleico e ácido araquidônico, não essenciais na dieta',
+      'Ácido mirístico e ácido láurico, saturados de cadeia curta'
     ],
     correctIndex: 0,
     explanation: 'Os ácidos graxos essenciais são os que o organismo não consegue sintetizar: ácido linoleico (C18:2, ω-6) e ácido α-linolênico (C18:3, ω-3). São precursores de ácido araquidônico (ω-6) e EPA/DHA (ω-3).'
@@ -648,9 +648,9 @@ export const Q_BASICO_1: any[] = [
     text: 'O ciclo da ureia tem função de:',
     options: [
       'Converter o nitrogênio tóxico (NH₄⁺) dos aminoácidos em ureia para excreção renal',
-      'Sintetizar arginina para a síntese de óxido nítrico apenas',
-      'Fornecer ATP para a gliconeogênese',
-      'Reciclar ácidos graxos de cadeia longa'
+      'Sintetizar arginina exclusivamente para a produção de óxido nítrico vascular',
+      'Fornecer ATP diretamente para as reações da gliconeogênese hepática',
+      'Reciclar ácidos graxos de cadeia longa para a beta-oxidação hepática'
     ],
     correctIndex: 0,
     explanation: 'O ciclo da ureia ocorre no fígado (parcialmente na mitocôndria, parcialmente no citoplasma) e é o principal mecanismo de destoxificação da amônia, convertendo NH₄⁺ + CO₂ + aspartato → ureia + fumarato + água.'
@@ -662,9 +662,9 @@ export const Q_BASICO_1: any[] = [
     text: 'O sinal de endereçamento de proteínas ao retículo endoplasmático rugoso é:',
     options: [
       'Sequência sinal hidrofóbica na porção N-terminal da proteína',
-      'Sequência de localização nuclear',
-      'Glicosilação na porção C-terminal',
-      'Fosforilação em resíduos de serina'
+      'Sequência de localização nuclear rica em resíduos básicos',
+      'Glicosilação de resíduos de asparagina na porção C-terminal',
+      'Fosforilação em resíduos de serina próximos à porção N-terminal'
     ],
     correctIndex: 0,
     explanation: 'Proteínas destinadas ao RER (secretadas ou para membranas) possuem sequência sinal no N-terminal reconhecida pelo SRP (partícula de reconhecimento de sinal), que direciona o ribossomo ao RER para tradução co-translacional.'
@@ -676,9 +676,9 @@ export const Q_BASICO_1: any[] = [
     text: 'A inibição competitiva de uma enzima pode ser superada:',
     options: [
       'Aumentando a concentração de substrato (a Vmáx permanece inalterada)',
-      'Aumentando a concentração do inibidor',
-      'Diminuindo o pH do meio',
-      'Adicionando cofatores metálicos'
+      'Aumentando ainda mais a concentração do inibidor competitivo',
+      'Diminuindo o pH do meio reacional abaixo do ótimo enzimático',
+      'Adicionando cofatores metálicos adicionais à reação enzimática'
     ],
     correctIndex: 0,
     explanation: 'Na inibição competitiva, o inibidor compete com o substrato pelo sítio ativo. O aumento da [substrato] pode deslocar o inibidor, restaurando a atividade. A Vmáx não se altera, mas o Km aparente aumenta (menor afinidade aparente pelo substrato).'
@@ -704,9 +704,9 @@ export const Q_BASICO_1: any[] = [
     text: 'A hemoglobina S (HbS) difere da HbA por uma mutação que substitui:',
     options: [
       'Ácido glutâmico por valina na posição 6 da cadeia beta (Glu→Val, GAG→GTG)',
-      'Valina por alanina na cadeia alfa',
-      'Lisina por arginina na posição 6',
-      'Glicina por ácido aspártico na cadeia beta'
+      'Valina por alanina na posição 6 da cadeia alfa da hemoglobina (Val→Ala)',
+      'Lisina por arginina na posição 6 da cadeia beta da hemoglobina (Lys→Arg)',
+      'Glicina por ácido aspártico na posição 6 da cadeia beta (Gly→Asp)'
     ],
     correctIndex: 0,
     explanation: 'Na anemia falciforme, a mutação pontual GTG→GAG no códon 6 do gene da globina β substitui Glu (hidrofílico) por Val (hidrofóbico), criando um sítio de polimerização em hipoxia que deforma as hemácias em foice.'
@@ -746,9 +746,9 @@ export const Q_BASICO_1: any[] = [
     text: 'A doença de Gaucher resulta do acúmulo de:',
     options: [
       'Glicocerebrosídeo por deficiência de beta-glicosidase ácida (glucocerebrosidase)',
-      'Esfingomielina por deficiência de esfingomielinase',
-      'GM2-gangliosídeo por deficiência de hexosaminidase A',
-      'Glicogênio por deficiência de alfa-1,4-glucosidase'
+      'Esfingomielina por deficiência da enzima esfingomielinase ácida (doença de Niemann-Pick)',
+      'GM2-gangliosídeo por deficiência de hexosaminidase A (doença de Tay-Sachs)',
+      'Glicogênio por deficiência de alfa-1,4-glucosidase lisossômica (doença de Pompe)'
     ],
     correctIndex: 0,
     explanation: 'Gaucher (mais comum das lipidoses): acúmulo de glicocerebrosídeo nos lisossomos de macrófagos (células de Gaucher). Manifesta-se com esplenomegalia massiva, hepatomegalia, pancitopenia e lesões ósseas. Tratamento: terapia de reposição enzimática.'
@@ -760,9 +760,9 @@ export const Q_BASICO_1: any[] = [
     text: 'O cAMP (AMP cíclico) é um segundo mensageiro que:',
     options: [
       'Ativa a proteína quinase A (PKA), que fosforila proteínas-alvo',
-      'Ativa diretamente os canais de cálcio',
-      'Inibe a adenilato ciclase',
-      'Ativa a proteína quinase C (PKC)'
+      'Ativa diretamente os canais de cálcio dependentes de voltagem na membrana',
+      'Inibe diretamente a enzima adenilato ciclase na membrana celular',
+      'Ativa a proteína quinase C (PKC) por via do diacilglicerol'
     ],
     correctIndex: 0,
     explanation: 'cAMP (gerado pela adenilato ciclase ativada por receptores Gs) ativa a PKA, que fosforila em serina/treonina diversas enzimas e fatores de transcrição (ex: CREB), mediando respostas a glucagon, adrenalina, TSH, FSH, LH.'
@@ -789,9 +789,9 @@ export const Q_BASICO_1: any[] = [
     text: 'O tecido epitelial de revestimento é caracterizado por:',
     options: [
       'Células justapostas com pouca substância intercelular e polaridade celular',
-      'Abundante matriz extracelular com fibras colágenas',
-      'Células isoladas em matriz fluida',
-      'Presença de ramificações dendríticas em todas as células'
+      'Abundante matriz extracelular com fibras colágenas e substância fundamental',
+      'Células isoladas e dispersas em matriz fluida, como ocorre no tecido sanguíneo',
+      'Presença de ramificações dendríticas longas em todas as células do tecido'
     ],
     correctIndex: 0,
     explanation: 'Tecido epitelial: células justapostas (mínima substância intercelular), polaridade (apical/basal), junções intercelulares (ocludentes, aderentes, desmossomos, comunicantes), assenta sobre membrana basal, avascular (nutrição por difusão).'
@@ -859,9 +859,9 @@ export const Q_BASICO_1: any[] = [
     text: 'Os mastócitos são células do tecido conjuntivo que:',
     options: [
       'Contêm grânulos com histamina e heparina, mediando reações de hipersensibilidade imediata (tipo I)',
-      'Fagocitam bactérias e restos celulares (função macrofágica)',
-      'Produzem fibras elásticas',
-      'Sintetizam imunoglobulinas (células secretoras de anticorpos)'
+      'Fagocitam ativamente bactérias e restos celulares, exercendo função macrofágica no tecido',
+      'Produzem e secretam fibras elásticas e colágenas na matriz extracelular do conjuntivo',
+      'Sintetizam e secretam imunoglobulinas, atuando como células produtoras de anticorpos'
     ],
     correctIndex: 0,
     explanation: 'Mastócitos derivam de precursores mieloides, residem em tecidos conjuntivos. Seus grânulos contêm histamina, heparina, triptase, quimase e fator quimiotático de eosinófilos. Na alergia (IgE ligada à superfície + antígeno), desgranulam mediando a hipersensibilidade tipo I (anafilaxia local/sistêmica).'
@@ -873,9 +873,9 @@ export const Q_BASICO_1: any[] = [
     text: 'A cartilagem hialina se diferencia da fibrocartilagem porque:',
     options: [
       'Contém fibras colágenas tipo II dispersas, sem fibras colágenas tipo I espessas visíveis ao MO',
-      'Possui pericôndrio bem desenvolvido com fibras colágenas tipo I',
-      'Tem fibras elásticas predominantes',
-      'É altamente vascularizada'
+      'Possui pericôndrio bem desenvolvido, rico em fibras colágenas tipo I organizadas',
+      'Tem fibras elásticas predominantes, como observado na cartilagem elástica do pavilhão auricular',
+      'É altamente vascularizada, ao contrário das demais cartilagens do corpo'
     ],
     correctIndex: 0,
     explanation: 'Cartilagem hialina: fibras colágenas tipo II finas (invisíveis ao MO em cortes corados com H&E), substância fundamental abundante, pericôndrio presente, avascular. Fibrocartilagem: colágeno tipo I grosso visível, sem pericôndrio (ex: menisco, anel fibroso do disco intervertebral, sínfise púbica).'
@@ -887,9 +887,9 @@ export const Q_BASICO_1: any[] = [
     text: 'Os osteoclastos são células responsáveis por:',
     options: [
       'Reabsorção óssea, sendo células multinucleadas derivadas de precursores monocíticos/macrofágicos',
-      'Síntese de matriz óssea (osteoide)',
-      'Maturação de osteoblastos',
-      'Produção de colágeno tipo I apenas'
+      'Síntese e deposição da matriz óssea orgânica (osteoide), antes da mineralização',
+      'Maturação de osteoblastos em osteócitos aprisionados na matriz mineralizada',
+      'Produção exclusiva de colágeno tipo I para a matriz óssea orgânica'
     ],
     correctIndex: 0,
     explanation: 'Osteoclastos: células gigantes multinucleadas (derivadas da fusão de monócitos/macrófagos), ativadas pelo RANKL. Acidificam a lacuna de reabsorção (bomba H⁺-ATPase) e secretam colagenase e catepsina K, reabsorvendo matriz mineral e orgânica.'
@@ -901,9 +901,9 @@ export const Q_BASICO_1: any[] = [
     text: 'O músculo cardíaco se diferencia do músculo esquelético pela presença de:',
     options: [
       'Discos intercalares (com junções comunicantes e desmossomos) e ramificações celulares',
-      'Ausência de estriações transversais',
-      'Controle totalmente voluntário',
-      'Células multinucleadas com núcleos periféricos'
+      'Ausência completa de estriações transversais visíveis à microscopia óptica',
+      'Controle totalmente voluntário pelo sistema nervoso somático',
+      'Células multinucleadas com núcleos periféricos, como no músculo esquelético'
     ],
     correctIndex: 0,
     explanation: 'Músculo cardíaco: células mononucleadas ramificadas, estriações presentes, núcleo central, discos intercalares (gap junctions para propagação elétrica sincício funcional + desmossomos para resistência mecânica), controle involuntário autonômico.'
@@ -915,9 +915,9 @@ export const Q_BASICO_1: any[] = [
     text: 'A unidade morfofuncional do fígado, o lóbulo hepático clássico, é centrada na:',
     options: [
       'Veia centrolobular, com hepatócitos irradiando até os espaços porta',
-      'Veia porta, com hepatócitos ao redor',
-      'Artéria hepática',
-      'Via biliar intrahepática (ducto de Hering)'
+      'Veia porta, com hepatócitos organizados radialmente ao seu redor',
+      'Artéria hepática, principal fonte de sangue oxigenado do fígado',
+      'Via biliar intrahepática, centrada no ducto de Hering'
     ],
     correctIndex: 0,
     explanation: 'O lóbulo hepático clássico (hexagonal) tem a veia centrolobular ao centro, com placas de hepatócitos (muralhas de Remak) irradiando para os ângulos (espaços porta). O sangue flui dos espaços porta → sinusoides → veia centrolobular. A bile flui em sentido oposto para os ductos biliares nos espaços porta.'
@@ -929,9 +929,9 @@ export const Q_BASICO_1: any[] = [
     text: 'As células de Sertoli estão localizadas no testículo e têm como função:',
     options: [
       'Suporte nutricional e formação da barreira hematotesticular para os espermatócitos',
-      'Síntese de testosterona',
-      'Fagocitar espermatozoides defeituosos apenas',
-      'Produzir espermatozoides diretamente'
+      'Síntese e secreção de testosterona sob estímulo do hormônio luteinizante (LH)',
+      'Fagocitar exclusivamente espermatozoides defeituosos ou malformados',
+      'Produzir espermatozoides diretamente a partir de divisões mitóticas'
     ],
     correctIndex: 0,
     explanation: 'Células de Sertoli (de suporte): no epitélio seminífero, ligadas por junções ocludentes formando a barreira hematotesticular (protege espermatócitos da imunidade). Secretam ABP (proteína ligadora de andrógenos), inibina e fatores de crescimento que nutrem células germinativas.'
@@ -943,9 +943,9 @@ export const Q_BASICO_1: any[] = [
     text: 'O glomérulo renal é constituído histologicamente por:',
     options: [
       'Capilares fenestrados, podócitos (com pedicelos), mesângio e membrana basal glomerular',
-      'Capilares contínuos, células epiteliais simples e matriz colagenosa',
-      'Arteríolas sem especialização',
-      'Lúmen grande com epitélio estratificado'
+      'Capilares contínuos, células epiteliais simples e abundante matriz colagenosa densa',
+      'Arteríolas aferentes e eferentes sem qualquer especialização estrutural',
+      'Lúmen amplo revestido por epitélio estratificado pavimentoso'
     ],
     correctIndex: 0,
     explanation: 'A barreira de filtração glomerular consiste em: endotélio capilar fenestrado (sem diafragma) → membrana basal glomerular (principal barreira de carga/tamanho) → podócitos com pedicelos e fendas de filtração diafragmadas (nefrina). O mesângio suporta os capilares e tem função fagocítica.'
@@ -957,9 +957,9 @@ export const Q_BASICO_1: any[] = [
     text: 'Os neurônios são células nervosas que se diferenciam dos demais tipos celulares por:',
     options: [
       'Ser pós-mitóticos (não se dividem na vida adulta) e possuir axônio e dendritos especializados',
-      'Nunca receber impulsos de outras células',
-      'Poder se dividir em resposta a lesões (após os 25 anos)',
-      'Não possuir organelas citoplasmáticas'
+      'Nunca receber impulsos elétricos ou químicos de outras células vizinhas',
+      'Poder se dividir amplamente em resposta a lesões, mesmo na vida adulta',
+      'Não possuir organelas citoplasmáticas típicas, como mitocôndrias e retículo'
     ],
     correctIndex: 0,
     explanation: 'Neurônios adultos são essencialmente pós-mitóticos (exceções: células granulares do hipocampo e bulbo olfatório). Possuem corpo celular (soma) com corpúsculos de Nissl (RER), axônio (conduz potencial de ação) e dendritos (recebem sinais).'
@@ -985,9 +985,9 @@ export const Q_BASICO_1: any[] = [
     text: 'A melanina é produzida pelos melanócitos na pele e transferida para:',
     options: [
       'Queratinócitos, onde protege o núcleo celular contra UV',
-      'Fibroblastos dérmicos',
-      'Macrófagos da epiderme',
-      'Vasos linfáticos dérmicos'
+      'Fibroblastos dérmicos, onde se deposita como pigmento de reserva',
+      'Macrófagos da epiderme, que fagocitam o excesso de pigmento',
+      'Vasos linfáticos dérmicos, por onde é drenada e eliminada'
     ],
     correctIndex: 0,
     explanation: 'Os melanócitos (na camada basal da epiderme) sintetizam melanina nos melanossomos. Via prolongamentos dendríticos, transferem melanossomos por citocrina aos queratinócitos vizinhos, que os posicionam como "guarda-sol" acima dos núcleos, absorvendo radiação UV.'

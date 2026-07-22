@@ -166,10 +166,10 @@ export const ENARE_2024_FULL: any[] = [
     subject: 'Clínica Médica',
     text: 'Um homem de 48 anos foi admitido no hospital com erupção cutânea generalizada, mal-estar geral e febre. Ele relatou ter iniciado recentemente alopurinol para controle de hiperuricemia. Nos últimos dias, ele notou o surgimento de uma erupção cutânea que começou no tronco e se espalhou para membros, região cervical e face. Além disso, queixava-se de náuseas e dor abdominal. No exame físico, foram observados erupção cutânea maculopapular generalizada, adenomegalia generalizada e edema em face, mãos e pés bilateralmente. Nos exames laboratoriais, foram encontradas leucocitose, eosinofilia e elevação das transaminases. A principal hipótese diagnóstica nesse caso é:',
     options: [
-      'eritema multiforme;',
-      'urticária medicamentosa;',
-      'síndrome de Stevens-Johnson (SSJ);',
-      'púrpura trombocitopênica idiopática (PTI);',
+      'eritema multiforme por herpes simples, com lesões em alvo típicas;',
+      'urticária medicamentosa aguda, com angioedema e sem febre;',
+      'síndrome de Stevens-Johnson (SSJ), com acometimento mucoso focal;',
+      'púrpura trombocitopênica idiopática (PTI), com plaquetopenia isolada;',
       'síndrome de hipersensibilidade induzida por drogas (DRESS).'
     ],
     correctIndex: 4,
@@ -791,11 +791,11 @@ export const ENARE_2024_FULL: any[] = [
     subject: 'Pediatria',
     text: 'Criança de 8 anos, asmática conhecida, dá entrada na emergência em crise de broncoespasmo grave. Apresenta-se sonolenta, com sibilos ausentes (silêncio respiratório) e SpO2 de 88%. A conduta inicial adequada consiste em:',
     options: [
-      'Inalação com salbutamol isolado e alta para casa;',
-      'Sedação com bezodiazepínicos e intubação imediata;',
+      'Inalação isolada com salbutamol em dose única, sem oxigenoterapia suplementar, liberando a criança para alta domiciliar imediata;',
+      'Sedação imediata com benzodiazepínicos endovenosos e intubação orotraqueal sem tentativa prévia de broncodilatador ou corticoide sistêmico;',
       'Oxigênio sob máscara de Hudson, corticoide sistêmico e beta-2 agonista + ipratrópio inalatório frequente / sulfato de magnésio endovenoso;',
-      'Uso de fisioterapia respiratória intensiva;',
-      'Fazer apenas radiografia de tórax e aguardar laboratório.'
+      'Fisioterapia respiratória intensiva com tapotagem e drenagem postural, postergando o início de oxigênio suplementar e corticoide sistêmico;',
+      'Solicitação isolada de radiografia de tórax, aguardando resultado laboratorial antes de iniciar oxigênio ou broncodilatador inalatório.'
     ],
     correctIndex: 2,
     explanation: 'Na exacerbação de asma grave/muito grave com hipoxemia e silêncio respiratório por fadiga muscular, o tratamento medicamentoso de resgate e estabilização inclui oxigenioterapia, corticoterapia sistêmica precoce, broncodilatadores (beta-2-agonistas e ipratrópio) associados ao sulfato de magnésio EV.'
@@ -935,10 +935,10 @@ export const ENARE_2024_FULL: any[] = [
     subject: 'Pediatria',
     text: 'Recém-nascido de mãe portadora crônica de hepatite B (HBsAg positivo). Qual a conduta correta na sala de parto do recém-nascido para prevenção de transmissão vertical?',
     options: [
-      'Fazer apenas a vacina contra hepatite B na primeira semana;',
-      'Fazer imunoglobulina específica contra hepatite B (IGHB) de forma isolada;',
-      'Isolar o recém-nascido e suspender o aleitamento materno;',
-      'Iniciar tratamento com tenofovir oral para o lactente nas primeiras 24h;',
+      'Administrar apenas a vacina contra hepatite B isoladamente, adiando a aplicação para a primeira semana de vida do recém-nascido;',
+      'Aplicar somente a imunoglobulina específica contra hepatite B (IGHB) isoladamente, sem associar o esquema vacinal de rotina;',
+      'Isolar o recém-nascido em berçário separado, suspender o aleitamento materno e aguardar resultado da sorologia materna antes de qualquer profilaxia adicional;',
+      'Iniciar tratamento profilático com tenofovir oral isoladamente para o lactente nas primeiras 24 horas de vida, sem associar vacina ou imunoglobulina específica;',
       'Administrar a vacina hepatite B e aplicar a imunoglobulina de forma imediata (idealmente nas primeiras 12h de vida em membros anatômicos diferentes).'
     ],
     correctIndex: 4,
@@ -967,11 +967,11 @@ export const ENARE_2024_FULL: any[] = [
     subject: 'Ginecologia & Obstetrícia',
     text: 'Primigesta de 32 semanas de gestação apresenta-se com cefaleia, distúrbios visuais (escotomas) e dor epigástrica importante. Ao exame físico, PA: 170 x 110 mmHg, com edema de membros inferiores +++/4. Qual a melhor conduta imediata para profilaxia de crises convulsivas e manejo?',
     options: [
-      'Iniciar diazepam em infusão contínua e realizar parto cirúrgico imediato;',
-      'Prescrever hidralazina e fenitoína endovenosas preventivas;',
+      'Iniciar diazepam endovenoso em infusão contínua como profilaxia anticonvulsivante e indicar parto cirúrgico imediato sem estabilização prévia;',
+      'Prescrever hidralazina endovenosa associada a fenitoína profilática, sem realizar monitorização de reflexos ou diurese durante a infusão;',
       'Administrar sulfato de magnésio endovenoso pelo esquema de Pritchard ou Zuspan, monitorando reflexo patelar, frequência respiratória e diurese;',
-      'Alta com repouso absoluto no domiciliar e alfametildopa oral;',
-      'Realizar parto fórcipe de urgência sem medicação antihipertensiva.'
+      'Prescrever alta hospitalar com repouso domiciliar absoluto e alfametildopa oral, sem controle pressórico ou vigilância dos sinais de iminência;',
+      'Realizar parto fórcipe de urgência imediatamente, sem qualquer medicação antihipertensiva ou profilaxia anticonvulsivante prévia.'
     ],
     correctIndex: 2,
     explanation: 'O sulfato de magnésio é a droga de escolha para prevenção e tratamento de convulsões na pré-eclampsia grave e eclampsia. Sua infusão exige monitoramento rigoroso do reflexo patelar (presente), FR (> 16 irpm) e diurese (> 25-30 mL/h).'
@@ -983,10 +983,10 @@ export const ENARE_2024_FULL: any[] = [
     subject: 'Ginecologia & Obstetrícia',
     text: 'Gestante segundigesta, Rh negativo, com parceiro Rh positivo, apresenta-se na consulta de pré-natal com 12 semanas. O resultado do teste do Coombs Indireto é negativo. De acordo com as diretrizes de assistência pré-natal para incompatibilidade sanguínea Rh, como deve ser o seguimento do Coombs Indireto?',
     options: [
-      'Não há necessidade de repetir o exame durante o pré-natal;',
-      'Repetir o Coombs Indireto a cada trimestre gestacional apenas e aplicar imunoglobulina se positivo;',
-      'Repetir o exame com 28 semanas sob profilaxia imediata se positivo;',
-      'Solicitar amniocentese com dosagem de bilirrubina a cada 4 semanas desde já;',
+      'Não há necessidade de repetir o exame durante toda a gestação, bastando o resultado negativo obtido na primeira consulta de pré-natal;',
+      'Repetir o Coombs Indireto apenas a cada trimestre gestacional e aplicar a imunoglobulina anti-D somente se o resultado se tornar positivo;',
+      'Repetir o exame único com 28 semanas de gestação e realizar profilaxia com imunoglobulina imediatamente, independente do resultado obtido;',
+      'Solicitar amniocentese seriada com dosagem de bilirrubina no líquido amniótico a cada 4 semanas a partir da consulta atual;',
       'Repetir o Coombs Indireto mensalmente a partir da 20-24ª semana e aplicar imunoglobulina anti-D na 28ª semana se persistir negativo.'
     ],
     correctIndex: 4,
@@ -1000,10 +1000,10 @@ export const ENARE_2024_FULL: any[] = [
     text: 'Multípara evolui com atonia uterina e sangramento vaginal maciço imediato após terceiro estágio de parto vaginal fisiológico. Qual o passo inicial prioritário no manejo dessa hemorragia pós-parto?',
     options: [
       'Massagem uterina bimanual compressiva externa (manobra de Hamilton) associada a infusão de ocitocina endovenosa;',
-      'Laparotomia exploradora urgente para histerectomia subtotal rápida;',
-      'Administração de ácido tranexâmico isolado por via intramuscular;',
-      'Cauterização de vasos uterinos por via histeroscópica aguda;',
-      'Tamponamento uterino persistente com compressas estéreis.'
+      'Indicar laparotomia exploradora de urgência para histerectomia subtotal, sem tentativa prévia de massagem uterina ou uterotônicos;',
+      'Administrar ácido tranexâmico isoladamente por via intramuscular, sem associar massagem uterina ou ocitocina endovenosa;',
+      'Realizar cauterização dos vasos uterinos por via histeroscópica de urgência, sem manobras compressivas prévias;',
+      'Realizar tamponamento uterino persistente com compressas estéreis, postergando o uso de uterotônicos endovenosos.'
     ],
     correctIndex: 0,
     explanation: 'A conduta inicial prioritária no manejo do sangramento decorrente de atonia uterina (o "T" do Tônus na hemorragia pós-parto) consiste na massagem uterina bimanual compressiva externa acompanhada de uterotônicos endovenosos (ocitocina).'
@@ -1031,11 +1031,11 @@ export const ENARE_2024_FULL: any[] = [
     subject: 'Ginecologia & Obstetrícia',
     text: 'Mulher lactante, em sua 3ª semana de pós-parto, queixa-se de dor, vermelhidão e inchaço na mama esquerda, além de febre de 38,5 °C. Ao exame: mama esquerda com área de eritema, calor e edema no quadrante superior externo, extremamente dolorosa. Qual o diagnóstico e manejo adequado?',
     options: [
-      'Ingurgitamento mamário simples; suspender amamentação na mama afetada;',
+      'Ingurgitamento mamário simples; suspender a amamentação na mama afetada e aguardar resolução espontânea sem antibiótico;',
       'Mastite puerperal; iniciar cefalexina oral e manter amamentação em ambas as mamas e esvaziamento adequado;',
-      'Abscesso mamário volumoso; internação hospitalar para punção guiada sob jejum;',
-      'Fissuras molares puerperais; suspender aleitamento materno temporariamente por 14 dias;',
-      'Galactocele puerperal crônica; compressas quentes úmidas prolongadas.'
+      'Abscesso mamário volumoso; indicar internação hospitalar para punção guiada por imagem em regime de jejum pré-operatório;',
+      'Fissuras mamilares puerperais; suspender temporariamente o aleitamento materno por 14 dias até cicatrização completa;',
+      'Galactocele puerperal crônica; aplicar compressas mornas prolongadas sem necessidade de antibioticoterapia.'
     ],
     correctIndex: 1,
     explanation: 'Mastite puerperal é uma infecção bacteriana do parênquima mamário, tratada com antibióticos (geralmente cefalosporinas/cefalexina) que cobrem S. aureus. Não se deve suspender o aleitamento, pois a ordenha e esvaziamento mamário contínuos previnem a formação de abscessos.'
@@ -1079,11 +1079,11 @@ export const ENARE_2024_FULL: any[] = [
     subject: 'Ginecologia & Obstetrícia',
     text: 'Paciente do sexo feminino queixa-se de corrimento vaginal esbranquiçado grumoso tipo "nata de leite", acompanhado de prurido intenso, edema vulvar e disúria que ocorre mais de 4 vezes ao ano. O pH vaginal é 4.0. Qual o diagnóstico e tratamento profilático de manutenção indicado?',
     options: [
-      'Vaginose bacteriana recorrente; metronidazol oral quinzenal;',
-      'Tricomoníase de repetição; metronidazol em dose única mensal;',
-      'Clamídia crônica; doxiclina diária contínua por 3 meses;',
+      'Vaginose bacteriana recorrente; manter metronidazol oral quinzenal por tempo indeterminado;',
+      'Tricomoníase vaginal de repetição; metronidazol em dose única mensal de manutenção;',
+      'Cervicite por clamídia crônica; doxiciclina oral contínua diária por 3 meses;',
       'Candidíase vulvovaginal recorrente; fluconazol 150 mg oral semanal por 6 meses;',
-      'Vaginite atrófica; estrogênio tópico vaginal por 10 anos.'
+      'Vaginite atrófica pós-menopausa; estrogênio tópico vaginal contínuo por 10 anos.'
     ],
     correctIndex: 3,
     explanation: 'A candidíase vaginal recorrente (definida como 4 ou mais episódios em 12 meses) tem como tratamento de manutenção profilática preconizado o uso de fluconazol 150 mg dose oral semanal por período continuado de 6 meses.'
@@ -1111,11 +1111,11 @@ export const ENARE_2024_FULL: any[] = [
     subject: 'Ginecologia & Obstetrícia',
     text: 'De acordo com as Diretrizes Brasileiras para o Rastreamento do Câncer do Colo do Útero, qual é a faixa etária e a periodicidade corretas para a coleta citológica cérvico-vaginal (Papanicolau)?',
     options: [
-      'A partir do início da atividade sexual, anualmente, sem interrupção;',
+      'A partir do início da atividade sexual em qualquer idade, repetindo anualmente sem interrupção ou critério de suspensão;',
       'Mulheres de 25 a 64 anos que já tiveram atividade sexual, anualmente; após dois exames consecutivos normais, a cada 3 anos;',
-      'Mulheres de 18 a 50 anos, a cada 2 anos, independentemente do início de atividade;',
-      'Mulheres de 30 a 70 anos de idade, a cada 5 anos com pesquisa conjunta de HPV;',
-      'Qualquer idade após a primeira gravidez, anualmente.'
+      'Mulheres de 18 a 50 anos, a cada 2 anos, independentemente do início da atividade sexual ou resultado dos exames anteriores;',
+      'Mulheres de 30 a 70 anos de idade, a cada 5 anos, sempre associada à pesquisa conjunta de HPV oncogênico;',
+      'Qualquer idade a partir da ocorrência da primeira gestação, repetindo o exame anualmente sem qualquer critério definido de interrupção.'
     ],
     correctIndex: 1,
     explanation: 'O rastreamento do câncer do colo de útero no Brasil é indicado para mulheres dos 25 aos 64 anos que já iniciaram vida sexual. A periodicidade inicial é anual; após dois exames anuais consecutivos negativos (normais), a rotina passa a ser realizada a cada 3 anos.'
@@ -1128,10 +1128,10 @@ export const ENARE_2024_FULL: any[] = [
     text: 'Gestante de 30 semanas de gestação apresenta-se com perda líquida vaginal fluida contínua. O exame especular confirma saída de líquido límpido com pH alcalino através do orifício cervical externo. Sem contrações e com vitalidade fetal preservada. A conduta adequada diante da amniorrexe prematura pré-termo isolada é:',
     options: [
       'Internação hospitalar, pesquisa de infecções, antibioticoterapia profilática para latência pulmonar e corticoterapia antenatal para maturação, acompanhando expectantemente até 34 semanas;',
-      'Realização imediata de cesariana eletiva;',
-      'Indução farmacológica do parto com ocitocina ou misoprostol no ato para evitar infecção;',
-      'Alta com ampicilina oral e repouso em casa;',
-      'Realização de cerclagem cervical de resgate de urgência.'
+      'Realização imediata de cesariana eletiva, sem tentativa de conduta expectante, corticoterapia antenatal ou avaliação de infecção materna, mesmo na ausência de sinais de sofrimento fetal;',
+      'Indução farmacológica imediata do trabalho de parto com ocitocina ou misoprostol, interrompendo a gestação precocemente sem aguardar maturação pulmonar fetal com corticoterapia;',
+      'Alta hospitalar precoce com ampicilina oral profilática isolada e repouso domiciliar, sem monitorização de sinais de infecção materna ou da vitalidade fetal seriada;',
+      'Realização de cerclagem cervical de resgate em caráter de urgência, procedimento contraindicado na vigência de bolsa rota e perda de líquido amniótico.'
     ],
     correctIndex: 0,
     explanation: 'Na ruptura prematura de membranas pré-termo (entre 24 e 34 semanas) sem sinais clínicos de corioamnionite ou sofrimento fetal, a conduta padrão é expectante: interna-se para vigiar infecções, faz-se maturação pulmonar com corticoide e antibioticoterapia de latência para postergar o parto até 34 semanas.'
@@ -1143,11 +1143,11 @@ export const ENARE_2024_FULL: any[] = [
     subject: 'Ginecologia & Obstetrícia',
     text: 'Gestante realiza teste de tolerância oral à glicose (TOTG 75g) com 26 semanas de gestação. Os resultados evidenciam glicemia de jejum de 94 mg/dL, glicemia de 1 hora de 182 mg/dL e glicemia de 2 horas de 155 mg/dL. O diagnóstico correto e conduta inicial são:',
     options: [
-      'Glicemia normal da gestante; manter orientações habituais;',
-      'Diabetes mellitus pré-existente; iniciar insulina NPH imediata;',
-      'Intolerância transitória a carboidratos; repetir exame com 32 semanas;',
+      'Glicemia normal da gestante para a idade gestacional atual; manter apenas as orientações nutricionais habituais do pré-natal de baixo risco, sem reavaliação;',
+      'Diabetes mellitus pré-existente à gestação, não diagnosticada previamente; iniciar insulina NPH em esquema fixo de imediato, sem tentativa de terapia dietética prévia;',
+      'Intolerância transitória a carboidratos sem significado patológico para a gestação; repetir o exame de tolerância oral à glicose apenas com 32 semanas;',
       'Diabetes mellitus gestacional (DMG); iniciar terapia dietética nutricional direcionada e atividade física supervisionada por 1 a 2 semanas antes de reavaliar farmacoterapia;',
-      'Diabetes gestacional grave; indicar cesariana na 37ª semana gestacional.'
+      'Diabetes mellitus gestacional grave e de difícil controle metabólico; indicar interrupção eletiva da gestação por cesariana já na 37ª semana gestacional.'
     ],
     correctIndex: 3,
     explanation: 'Os valores de referência para TOTG na gestação são: jejum ≥ 92, 1h ≥ 180 e 2h ≥ 153 mg/dL. O achado de qualquer valor alterado confirma o diagnóstico de Diabetes Gestacional. O tratamento inicial baseia-se em mudanças dietoreptoterápicas e atividade física direcionada.'
@@ -1175,11 +1175,11 @@ export const ENARE_2024_FULL: any[] = [
     subject: 'Ginecologia & Obstetrícia',
     text: 'Referente ao uso do levonorgestrel 1,5 mg dose única como contracepção de emergência (pílula do dia seguinte), qual o mecanismo de ação primário e até quantas horas após o coito desprotegido deve ser idealmente administrado?',
     options: [
-      'Provoca micro-abortos mecânicos de ovos fecundados; até 12 horas;',
-      'Espessamento citológico do endométrio impedindo a nidação física; até 48 horas;',
+      'Provoca micro-abortos mecânicos por descolamento de ovos já fecundados e implantados; deve ser usado em até 12 horas do coito;',
+      'Promove espessamento citológico do endométrio impedindo fisicamente a nidação do embrião; eficaz apenas em até 48 horas do coito desprotegido;',
       'Retardo ou inibição do pico de LH prevenindo a liberação do óvulo (ovulação); até 72 horas (podendo estender até 120 horas com menor eficácia);',
-      'Lise direta dos espermatozoides por acidez na cavidade uterina; até 24 horas;',
-      'Promove contração tubária e descamação endometrial prévia; até 36 horas.'
+      'Provoca lise direta dos espermatozoides por acidificação da cavidade uterina; deve ser administrado em até 24 horas do coito;',
+      'Promove contração tubária intensa com descamação endometrial prematura; eficácia garantida apenas em até 36 horas do coito.'
     ],
     correctIndex: 2,
     explanation: 'O mecanismo primário do levonorgestrel como pílula de emergência é o atraso ou supressão da ovulação por bloqueio do pico do LH. Deve ser administrado o mais precocemente possível, preferencialmente nas primeiras 72 horas pós-coito.'
@@ -1207,11 +1207,11 @@ export const ENARE_2024_FULL: any[] = [
     subject: 'Ginecologia & Obstetrícia',
     text: 'Paciente de 28 anos, portadora de dismenorreia secundária incapacitante que não melhora com uso contínuo de pílulas contraceptivas orais combinadas, queixa-se também de dor profunda à penetração sexual (dispareunia de profundidade) crônica e dor evacuatória durante o período menstrual. O exame com melhor sensibilidade diagnóstica para pesquisa do quadro suspeito é:',
     options: [
-      'Ultrassonografia pélvica transvaginal simples de rotina;',
-      'Histerossalpingografia tubária dinâmica;',
-      'Histeroscopia endometrial diagnóstica;',
+      'Ultrassonografia pélvica transvaginal simples de rotina, sem preparo intestinal específico para avaliação de endometriose profunda;',
+      'Histerossalpingografia tubária dinâmica, exame direcionado à avaliação de permeabilidade tubária e não ao diagnóstico de endometriose;',
+      'Histeroscopia endometrial diagnóstica isolada, com avaliação limitada à cavidade uterina e sem visualização do compartimento posterior;',
       'Mapeamento de endometriose profunda por ressonância magnética ou ultrassonografia transvaginal com preparo intestinal prévio;',
-      'Tomografia computadorizada de pelve simples sem contraste.'
+      'Tomografia computadorizada de pelve simples, sem contraste, com baixa sensibilidade para avaliação de implantes endometrióticos profundos.'
     ],
     correctIndex: 3,
     explanation: 'A dispareunia profunda, dismenorreia refratária e sintomas intestinais cíclicos sugerem endometriose profunda infiltrativa. Os exames de imagem padrão para triagem diagnóstica são o ultrassom transvaginal com preparo intestinal ou a RNM de pelve.'
@@ -1256,10 +1256,10 @@ export const ENARE_2024_FULL: any[] = [
     text: 'Mulher de 62 anos, menopáusica há 12 anos, queixa-se de sangramento vaginal escasso mas contínuo iniciado há 2 meses. É portadora de obesidade, hipertensão e diabetes tipo 2. Qual a principal hipótese diagnóstica inicial e conduta correspondente?',
     options: [
       'Suspeita de câncer de endométrio; realizar ultrassonografia transvaginal seguida de biópsia endometrial por pipelle ou histeroscopia comercial;',
-      'Fisiológico da senilidade vaginal; prescrever lubrificantes íntimos estéreis e alta;',
-      'Leiomiomatose submucosa calcificada; realizar cirurgia de histerectomia aberta de urgência;',
-      'Câncer de ovário epitelial; dosagem imediata de CA-125 exclusivo;',
-      'Vaginite atrófica severa; aplicar estrogênio transdérmico sistêmico oral diário.'
+      'Sangramento fisiológico da senilidade vaginal; prescrever apenas lubrificantes íntimos estéreis e liberar a paciente sem investigação complementar;',
+      'Leiomiomatose submucosa calcificada; indicar cirurgia de histerectomia aberta de urgência sem investigação endometrial prévia por imagem ou biópsia;',
+      'Câncer de ovário epitelial avançado; solicitar dosagem isolada de CA-125 sem exame de imagem pélvico ou biópsia endometrial complementar;',
+      'Vaginite atrófica severa da menopausa; aplicar estrogênio sistêmico por via oral diária, sem investigação da causa do sangramento.'
     ],
     correctIndex: 0,
     explanation: 'A principal e mais temida hipótese diagnóstica diante de sangramento uterino na pós-menopausa, especialmente em paciente com fatores de risco (obesidade, paridade zero, HAS, DM) é o câncer de endométrio, devendo ser investigada inicialmente por ultrassom de endométrio (endométrio espessado > 4-5 mm sob investigação citológica por biópsia).'
@@ -1271,11 +1271,11 @@ export const ENARE_2024_FULL: any[] = [
     subject: 'Ginecologia & Obstetrícia',
     text: 'Em relação à assistência pré-natal de baixo risco preconizada pelo Ministério da Saúde, assinale a recomendação correta quanto ao número mínimo de consultas pré-natal e exames recomendados na triagem:',
     options: [
-      'Mínimo de 3 consultas e exame de hemograma isolado;',
-      'No mínimo 10 consultas e triagem laboratorial apenas com sorologia para rubéola e toxoplasmose no primeiro trimestre;',
+      'Mínimo de 3 consultas de pré-natal ao longo de toda a gestação, realizadas apenas pelo médico, com solicitação exclusiva de hemograma isolado, sem triagem sorológica, glicêmica ou exame de urina de rotina;',
+      'No mínimo 10 consultas mensais ao longo da gestação, com triagem laboratorial restrita à sorologia para rubéola e toxoplasmose apenas no primeiro trimestre, sem repetição posterior;',
       'No mínimo 6 consultas médicas e/ou de enfermagem, idealmente mensais até 28 semanas, quinzenais até 36 semanas, e semanais até o parto; com exames triando HIV, sífilis, hepatite B, toxoplasmose, ferro, EAS e urocultura e TOTG;',
-      'Mínimo de 8 consultas realizadas todas exclusivamente pelo médico obstetra no CTI;',
-      'Mínimo de 4 consultas ao longo de toda a gestação.'
+      'Mínimo de 8 consultas, realizadas exclusivamente pelo médico obstetra em ambiente de terapia intensiva, sem participação da equipe de enfermagem nem exames complementares de triagem;',
+      'Mínimo de 4 consultas distribuídas ao longo de toda a gestação, sem periodicidade trimestral definida e sem qualquer exame laboratorial de triagem considerado obrigatório no seguimento.'
     ],
     correctIndex: 2,
     explanation: 'O protocolo básico de assistência pré-natal de baixo risco do Ministério da Saúde preconiza um número mínimo de 6 consultas de pré-natal agendadas de forma regular ao longo da gestação, acompanhadas da rotina de exames triando anemias, infecções renais e transmissíveis por via vertical.'
@@ -1319,11 +1319,11 @@ export const ENARE_2024_FULL: any[] = [
     subject: 'Medicina de Família/SUS',
     text: 'Um teste de triagem diagnóstica com alta sensibilidade é ideal para:',
     options: [
-      'Confirmar o diagnóstico de uma doença rara;',
-      'Evitar a ocorrência de resultados falso-positivos;',
-      'Rastreamento em populações com baixa prevalência;',
+      'Confirmar com certeza o diagnóstico definitivo de uma doença rara em indivíduos assintomáticos da população geral;',
+      'Evitar a ocorrência de resultados falso-positivos, priorizando a especificidade em detrimento da sensibilidade;',
+      'Rastreamento populacional em grupos de baixa prevalência da doença, priorizando o valor preditivo positivo do teste;',
       'Excluir a possibilidade de doença em indivíduos com resultado negativo (alto valor preditivo negativo);',
-      'Determinar a etiologia específica de uma patologia.'
+      'Determinar com precisão a etiologia específica de uma patologia já previamente diagnosticada.'
     ],
     correctIndex: 3,
     explanation: 'Testes altamente sensíveis apresentam poucos resultados falsos-negativos. Portanto, um resultado negativo em um teste altamente sensível é extremamente confiável para excluir a presença da enfermidade (alto valor preditivo negativo).'
@@ -1367,11 +1367,11 @@ export const ENARE_2024_FULL: any[] = [
     subject: 'Medicina de Família/SUS',
     text: 'Em relação às atividades atribuídas ao Agente Comunitário de Saúde (ACS) na Estratégia de Saúde da Família (ESF), segundo a Política Nacional de Atenção Básica (PNAB), assinale a correta:',
     options: [
-      'Prescrição de medicamentos analgésicos sob demanda da comunidade;',
-      'Realização de exames preventivos ginecológicos domiciliares;',
-      'Diagnóstico de patologias parasitárias na população infantil;',
+      'Prescrição de medicamentos analgésicos e antibióticos sob demanda espontânea da comunidade, sem necessidade de avaliação médica prévia ou registro em prontuário;',
+      'Realização isolada de exames preventivos ginecológicos em domicílio, incluindo coleta de citologia cérvico-vaginal sem supervisão da equipe de enfermagem;',
+      'Diagnóstico clínico e tratamento medicamentoso de patologias parasitárias na população infantil, sem encaminhamento à equipe médica ou de enfermagem da unidade;',
       'Realização de visitas domiciliares sistemáticas para cadastramento, acompanhamento de gestantes, crianças, hipertensos e diabéticos, e identificação de fatores de risco socioambientais;',
-      'Realização de suturas e pequenos procedimentos invasivos na UBS.'
+      'Realização de suturas, pequenas cirurgias e procedimentos invasivos na própria Unidade Básica de Saúde, sem necessidade de capacitação específica ou supervisão médica.'
     ],
     correctIndex: 3,
     explanation: 'A PNAB estabelece que o ACS tem papel chave no cadastramento, visitas domiciliares periódicas, vigilância à saúde, acompanhamento de grupos prioritários e educação em saúde na comunidade, sem atribuições clínico-prescritivas.'
@@ -1383,10 +1383,10 @@ export const ENARE_2024_FULL: any[] = [
     subject: 'Medicina de Família/SUS',
     text: 'Um paciente dá entrada com quadro de febre alta, cefaleia retrorbitária e dor nas articulações. O médico do pronto atendimento suspeita de Febre Amarela. De acordo com as normas de notificação compulsória de doenças do Ministério da Saúde, como deve ser feita a notificação desse caso suspeito de febre amarela?',
     options: [
-      'Notificação semanal por meio de relatório de consolidado;',
-      'Não há necessidade de notificação por ser caso apenas suspeito;',
-      'Notificação mensal ao final do programa sanitário regional;',
-      'Notificação de rotina em até 7 dias para a secretaria municipal de saúde;',
+      'Notificação semanal por meio de relatório consolidado enviado apenas à secretaria municipal de saúde;',
+      'Não há necessidade de notificação, por se tratar apenas de caso suspeito ainda não confirmado laboratorialmente;',
+      'Notificação mensal, ao final do fechamento do programa sanitário regional de vigilância epidemiológica;',
+      'Notificação de rotina em até 7 dias, encaminhada apenas à secretaria municipal de saúde do território;',
       'Notificação compulsória imediata à secretaria municipal, estadual e ao Ministério da Saúde em até 24 horas.'
     ],
     correctIndex: 4,
@@ -1399,11 +1399,11 @@ export const ENARE_2024_FULL: any[] = [
     subject: 'Medicina de Família/SUS',
     text: 'O Brasil vem passando por importantes transformações em sua estrutura populacional e no perfil de adoecimento de sua população. O aumento da expectativa de vida associado à queda nas taxas de natalidade caracteriza o processo de:',
     options: [
-      'Transição microbiológica rápida;',
-      'Transição de morbidade isolada;',
-      'Transição imunogênica complementar;',
+      'Transição microbiológica rápida, caracterizada pelo surgimento isolado de novos agentes infecciosos emergentes;',
+      'Transição de morbidade isolada, restrita ao aumento pontual de doenças infecciosas agudas na população jovem;',
+      'Transição imunogênica complementar, relacionada exclusivamente à ampliação da cobertura vacinal infantil;',
       'Transição demográfica e transição epidemiológica (com predomínio das doenças crônicas não transmissíveis);',
-      'Explosão demográfica juvenil persistente.'
+      'Explosão demográfica juvenil persistente, com aumento contínuo da natalidade e da população em idade escolar.'
     ],
     correctIndex: 3,
     explanation: 'A transição demográfica correlaciona-se com o envelhecimento populacional (queda de natalidade e mortalidade geral), impulsionando a transição epidemiológica, caracterizada pela substituição de doenças infectocontagiosas por doenças crônicas não transmissíveis como principal causa de morbimortalidade.'
@@ -1415,11 +1415,11 @@ export const ENARE_2024_FULL: any[] = [
     subject: 'Medicina de Família/SUS',
     text: 'Paciente idoso falece em seu domicílio de causas naturais (infarto agudo do miocárdio presumido), sem sinais de violência. Ele vinha sendo acompanhado regularmente pela equipe médica da Unidade Básica de Saúde devido a doença cardiovascular refratária. De quem é a responsabilidade legal pelo preenchimento da Declaração de Óbito (DO)?',
     options: [
-      'Do Instituto de Medicina Legal (IML) necessariamente;',
-      'Do Serviço de Verificação de Óbitos (SVO) do município de forma mandatória;',
-      'Unicamente do médico legista plantonista do pronto-socorro mais próximo;',
+      'Do Instituto de Medicina Legal (IML) necessariamente, por se tratar de óbito ocorrido fora de ambiente hospitalar;',
+      'Do Serviço de Verificação de Óbitos (SVO) do município, de forma mandatória, mesmo havendo médico assistente conhecido;',
+      'Unicamente do médico legista plantonista do pronto-socorro mais próximo ao domicílio do paciente falecido;',
       'Do médico assistente que vinha realizando o acompanhamento ambulatorial do paciente na UBS de referência;',
-      'De qualquer agente da polícia do território.'
+      'De qualquer agente da polícia do território, por se tratar de óbito domiciliar sem médico presente no momento.'
     ],
     correctIndex: 3,
     explanation: 'Conforme orientações do Conselho Federal de Medicina, em caso de óbito de causas naturais em domicílio de paciente sob acompanhamento regular, cabe ao médico assistente (ou substituto da unidade de saúde que o acompanhava) o preenchimento da Declaração de Óbito.'
@@ -1431,11 +1431,11 @@ export const ENARE_2024_FULL: any[] = [
     subject: 'Medicina de Família/SUS',
     text: 'Um operário de construção civil sofre queda de andaime durante seu expediente laborativo regular, resultando em fratura de membro inferior esquerdo. O médico do pronto-socorro o atende e o afasta das atividades profissionais. Em relação a esse acidente, qual documento legal e obrigatório deve ser emitido pela empresa para registro do acidente de trabalho, e qual o prazo para emissão?',
     options: [
-      'Atestado de óbito presumido; no mesmo dia;',
-      'Laudo pericial de invalidez civil; até 30 dias;',
+      'Atestado de óbito presumido emitido pela empresa; deve ser preenchido no mesmo dia da alta hospitalar do trabalhador;',
+      'Laudo pericial de invalidez civil emitido pelo INSS; prazo de até 30 dias após a alta do trabalhador acidentado;',
       'Comunicação de Acidente de Trabalho (CAT); até o primeiro dia útil seguinte ao da ocorrência (ou de imediato em caso de morte);',
-      'Apenas atestado de saúde ocupacional demissional; até 15 dias;',
-      'Registro oficial de alta voluntária; em até 3 dias.'
+      'Apenas o atestado de saúde ocupacional demissional; emitido pela empresa em até 15 dias após o acidente;',
+      'Registro oficial de alta voluntária do trabalhador; deve ser emitido pela empresa em até 3 dias úteis.'
     ],
     correctIndex: 2,
     explanation: 'A Comunicação de Acidente de Trabalho (CAT) é o instrumento obrigatório para registrar acidentes e doenças relacionadas ao trabalho, devendo ser emitida pela empresa à Previdência Social até o primeiro dia útil seguinte ao do acidente.'
@@ -1448,10 +1448,10 @@ export const ENARE_2024_FULL: any[] = [
     text: 'As transferências de recursos federais destinados ao financiamento das ações e serviços públicos de saúde no Sistema Único de Saúde (SUS) aos estados, Distrito Federal e municípios são realizadas ordinariamente na modalidade de transferência:',
     options: [
       'Fundo a fundo, diretamente do Fundo Nacional de Saúde aos respectivos fundos de saúde locais;',
-      'Por meio de convênio administrativo com contrapartidas bancárias comerciais;',
-      'Por repasse em conta pessoal do prefeito ou governador;',
-      'Na forma de empréstimos sob juros subvencionados pela União;',
-      'Somente se requerida via ação civil pública judicializada.'
+      'Por meio de convênio administrativo, exigindo contrapartida financeira bancária comercial privada;',
+      'Por repasse direto em conta bancária pessoal do prefeito ou governador do ente federativo recebedor;',
+      'Na forma de empréstimos financeiros sujeitos a juros subvencionados concedidos diretamente pela União;',
+      'Somente mediante requisição judicial, por meio de ação civil pública movida contra o ente federativo.'
     ],
     correctIndex: 0,
     explanation: 'A Lei nº 8.142/1990 regulamenta que os recursos federais para a saúde sejam repassados de forma regular e automática na modalidade fundo a fundo, otimizando a descentralização.'
@@ -1512,10 +1512,10 @@ export const ENARE_2024_FULL: any[] = [
     text: 'Segundo a Política Nacional de Atenção Básica (PNAB) vigente, qual é a composição mínima obrigatória de profissionais que integram uma equipe de Saúde da Família (eSF)?',
     options: [
       'Médico generalista ou de família, enfermeiro, técnico ou auxiliar de enfermagem e agentes comunitários de saúde (ACS);',
-      'Apenas médico e enfermeiro, sem necessidade de auxiliares de enfermagem;',
-      'Médico clínico geral, enfermeiro psiquiátrico e assistente social;',
-      'Médico pediatra, médico ginecologista, cirurgião dentista e psicólogo;',
-      'Enfermeiro padrão, fisioterapeuta ocupacional e ACS.'
+      'Apenas médico generalista e enfermeiro de nível superior, sem necessidade de técnico ou auxiliar de enfermagem na composição mínima;',
+      'Médico clínico geral, enfermeiro especialista em saúde mental e assistente social, sem previsão de agente comunitário;',
+      'Médico pediatra, médico ginecologista, cirurgião-dentista e psicólogo clínico, sem previsão de enfermeiro ou ACS;',
+      'Enfermeiro padrão isolado, fisioterapeuta ocupacional e agentes comunitários de saúde, sem médico na composição mínima.'
     ],
     correctIndex: 0,
     explanation: 'A equipe básica mínima recomendada da Estratégia de Saúde da Família consiste de: médico generalista/de família, enfermeiro, auxiliar de enfermagem e ACS.'
@@ -1591,11 +1591,11 @@ export const ENARE_2024_FULL: any[] = [
     subject: 'Medicina de Família/SUS',
     text: 'Dentre as diretrizes organizacionais do Sistema Único de Saúde (SUS), o processo de descentralização político-administrativa com direção única em cada esfera de governo visa assegurar:',
     options: [
-      'A centralização absoluta das decisões sanitárias em nível federal;',
+      'A centralização absoluta de todas as decisões sanitárias e orçamentárias exclusivamente em nível federal;',
       'A municipalização e a autonomia na gestão local dos serviços de saúde direcionadas às necessidades do território;',
-      'A exclusão do controle social nos municípios correspondentes;',
-      'A delegação de todas as redes hospitalares ao setor privado;',
-      'O repasse orçamentário centralizado exclusivamente via bancos estatais corporativos.'
+      'A exclusão total do controle social exercido pelos conselhos municipais de saúde correspondentes;',
+      'A delegação integral da gestão das redes hospitalares públicas ao setor privado empresarial;',
+      'O repasse orçamentário centralizado, realizado exclusivamente por meio de bancos estatais corporativos.'
     ],
     correctIndex: 1,
     explanation: 'A descentralização político-administrativa, com direção única em cada nível de governo, transfere poder de decisão, recursos e responsabilidades às instâncias locais (municipalização), respeitando as particularidades locais.'
