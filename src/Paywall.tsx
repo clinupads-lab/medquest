@@ -9,7 +9,7 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import {
-  X, Check, Crown, Zap, Lock, Sparkles, ShieldCheck, Loader2, PartyPopper,
+  X, Check, Crown, Zap, Sparkles, ShieldCheck, Loader2, PartyPopper,
 } from 'lucide-react';
 
 export type PaywallPlanId = 'estudante' | 'residencia';
@@ -82,9 +82,15 @@ export function PaywallModal({
   const [selected, setSelected] = useState<PaywallPlanId>(defaultPlan);
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  // Convidado: primeiro conhece os planos; só depois vê o botão de assinar.
+  const [guestSawPlans, setGuestSawPlans] = useState(false);
+  const showPlans = !isGuest || guestSawPlans;
 
   const handleSubscribe = async () => {
     if (busy) return;
+    // O checkout do Mercado Pago exige o e-mail do pagador; convidado não tem.
+    // Então, ao assinar, ele cria a conta antes — a assinatura fica no e-mail.
+    if (isGuest) { onCreateAccount(); return; }
     setBusy(true);
     setError(null);
     try {
@@ -176,25 +182,26 @@ export function PaywallModal({
             </div>
 
             <div className="p-5 flex flex-col gap-4">
-              {isGuest ? (
-                /* Convidado: precisa de conta com e-mail pro Mercado Pago */
+              {!showPlans ? (
+                /* Convidado: primeiro convida a conhecer os planos. */
                 <div className="flex flex-col gap-4 py-2">
                   <div className="bg-slate-50 border border-slate-100 rounded-2xl p-4 text-center">
-                    <Lock size={22} className="mx-auto mb-2 text-slate-400" />
+                    <Sparkles size={22} className="mx-auto mb-2" style={{ color: '#00a7e1' }} />
                     <p className="text-sm font-black text-slate-800 uppercase tracking-tight mb-1">
-                      Falta só criar sua conta
+                      Estude sem limites
                     </p>
                     <p className="text-[11px] text-slate-500 font-medium leading-snug">
-                      A assinatura fica vinculada ao seu e-mail — assim seu Premium te acompanha em qualquer aparelho.
+                      Veja os planos e escolha o ideal pra você. Pra assinar, é só criar sua conta —
+                      leva segundos e seu Premium te acompanha em qualquer aparelho.
                     </p>
                   </div>
                   <motion.button
                     whileTap={{ scale: 0.97 }}
-                    onClick={onCreateAccount}
+                    onClick={() => setGuestSawPlans(true)}
                     className="w-full rounded-2xl py-4 text-white font-black text-sm uppercase tracking-widest"
                     style={{ background: 'linear-gradient(135deg,#00a7e1 0%,#00658a 100%)', boxShadow: '0 8px 24px rgba(0,101,138,0.35)' }}
                   >
-                    Criar conta grátis
+                    Conheça os planos
                   </motion.button>
                 </div>
               ) : (
@@ -275,12 +282,16 @@ export function PaywallModal({
                     )}
                     {busy
                       ? (<><Loader2 size={18} className="animate-spin" /> Abrindo checkout…</>)
+                      : isGuest
+                      ? (<><Zap size={16} fill="currentColor" /> Criar conta e assinar</>)
                       : (<><Zap size={16} fill="currentColor" /> Assinar com Mercado Pago</>)}
                   </motion.button>
 
                   <p className="flex items-center justify-center gap-1.5 text-[10px] font-bold text-slate-400 text-center">
                     <ShieldCheck size={12} className="text-emerald-500" />
-                    Pagamento seguro via Mercado Pago · Cancele quando quiser
+                    {isGuest
+                      ? 'Você cria a conta e vai direto pro checkout · Cancele quando quiser'
+                      : 'Pagamento seguro via Mercado Pago · Cancele quando quiser'}
                   </p>
                 </>
               )}
