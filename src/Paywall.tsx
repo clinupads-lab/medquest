@@ -13,7 +13,7 @@ import {
 } from 'lucide-react';
 
 export type PaywallPlanId = 'estudante' | 'residencia';
-export type PaywallReason = 'limit' | 'simulado';
+export type PaywallReason = 'limit' | 'simulado' | 'flashcard' | 'doctordle';
 
 const PLAN_CARDS: Array<{
   id: PaywallPlanId;
@@ -155,6 +155,10 @@ export function PaywallModal({
               <p className="text-[12px] font-medium" style={{ color: 'rgba(255,255,255,0.8)' }}>
                 {reason === 'simulado'
                   ? 'Simulados completos de 100 questões são exclusivos do Premium.'
+                  : reason === 'flashcard'
+                  ? 'No plano grátis você revisa 2 flashcards por vez. Libere baralhos completos com o Premium.'
+                  : reason === 'doctordle'
+                  ? 'No plano grátis o Diagnóstico dá 2 tentativas por caso. Tenha 6 tentativas e casos ilimitados no Premium.'
                   : `Você usou ${Math.min(usedToday, dailyLimit)}/${dailyLimit} questões grátis de hoje.`}
               </p>
 

@@ -4,6 +4,11 @@ import { CheckCircle2, XCircle, RotateCcw, X, ChevronRight, Lightbulb } from 'lu
 
 interface DoctordleModeProps {
   onExit: () => void;
+  /** Tentativas por caso. Free = 2, Premium = 6 (padrão). */
+  maxGuesses?: number;
+  /** Chamado quando um caso termina (acerto ou erro) — usado pra abrir o
+   *  banner de planos no modo gratuito. */
+  onCaseFinished?: () => void;
 }
 
 const MAX_GUESSES = 6;
@@ -31,7 +36,7 @@ function shuffle<T>(arr: T[]): T[] {
 // Lista de todos os diagnósticos possíveis (para o autocomplete).
 const ALL_DIAGNOSES = Array.from(new Set(CLINICAL_CASES.map(c => c.diagnosis))).sort();
 
-export default function DoctordleMode({ onExit }: DoctordleModeProps) {
+export default function DoctordleMode({ onExit, maxGuesses = MAX_GUESSES, onCaseFinished }: DoctordleModeProps) {
   const [deck, setDeck] = useState<ClinicalCase[]>(() => shuffle(CLINICAL_CASES));
   const [caseIndex, setCaseIndex] = useState(0);
   const [guesses, setGuesses] = useState<string[]>([]); // tentativas erradas + a certa (se houver)
@@ -69,12 +74,14 @@ export default function DoctordleMode({ onExit }: DoctordleModeProps) {
       setStatus('won');
       setSolved(s => s + 1);
       setStreak(s => s + 1);
+      onCaseFinished?.();
     } else {
       const next = [...guesses, guess];
       setGuesses(next);
-      if (next.length >= MAX_GUESSES) {
+      if (next.length >= maxGuesses) {
         setStatus('lost');
         setStreak(0);
+        onCaseFinished?.();
       }
     }
     setInput('');
@@ -160,7 +167,7 @@ export default function DoctordleMode({ onExit }: DoctordleModeProps) {
 
         {/* Caixas de tentativa (estilo Wordle) */}
         <div className="space-y-2 mb-5">
-          {Array.from({ length: MAX_GUESSES }).map((_, i) => {
+          {Array.from({ length: maxGuesses }).map((_, i) => {
             const guess = guesses[i];
             const isCorrectGuess = finished && status === 'won' && i === guesses.length - 1;
             const isEmpty = !guess;
@@ -257,7 +264,7 @@ export default function DoctordleMode({ onExit }: DoctordleModeProps) {
             )}
 
             <p className="text-[10px] text-slate-400 text-center mt-3 leading-relaxed">
-              A cada erro, uma nova pista é revelada. Você tem {MAX_GUESSES} tentativas.<br />
+              A cada erro, uma nova pista é revelada. Você tem {maxGuesses} tentativas.<br />
               *Modo de estudo — não substitui avaliação médica real.
             </p>
           </div>
