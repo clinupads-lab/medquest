@@ -214,26 +214,107 @@ export function isUsableQuestion(q: NormalizableQuestion): boolean {
 // ── 5. Deduplicação ───────────────────────────────────────────────────────
 // O banco foi montado a partir de dezenas de arquivos de prova/gerados
 // separadamente, e um número relevante de questões saiu duplicada — mesmo
-// texto, IDs diferentes (inclusive um bug de geração que repetiu a mesma
-// pergunta várias vezes sob IDs diferentes em "Medicina de Família/SUS").
-// Sem isso, o sorteio de uma sessão pode escolher duas "questões diferentes"
-// que são, na prática, a mesma pergunta reescrita — o shuffle não tem como
-// saber que dois objetos com texto idêntico são "a mesma" questão.
+// texto, IDs diferentes. Casos reais encontrados:
+//   · um bug de geração que repetiu a mesma pergunta sob IDs diferentes;
+//   · o exame CERMAM importado DUAS VEZES no App.tsx (prefixos cermam25_* e
+//     cermam_2026_*): 87 questões idênticas com IDs distintos. Como o shuffle
+//     é semeado pelo ID, cada cópia embaralha as alternativas de um jeito, então
+//     na sessão a mesma pergunta aparecia "com a ordem das alternativas trocada".
+// Sem dedup, o sorteio de uma sessão pode escolher duas "questões diferentes"
+// que são, na prática, a mesma pergunta.
+//
+// A CHAVE é o texto do enunciado normalizado de forma AGRESSIVA: minúsculas,
+// sem acentos e sem pontuação. A chave antiga (só minúsculas + espaços) deixava
+// passar pares que diferiam só por um acento ou um espaço antes da pontuação
+// ("...CORRETA ?" vs "...CORRETA?"), que era justamente como as cópias do CERMAM
+// e várias questões extraídas de PDF escapavam. Dois enunciados longos que
+// colapsam para a mesma string sem acento/pontuação são, na prática, a mesma
+// questão — o risco de falso positivo é desprezível.
 //
 // Deduplicamos por MATÉRIA, não pelo banco inteiro: uma sessão só sorteia
 // dentro de uma matéria, então esse é o escopo que importa; a mesma pergunta
 // duplicada em duas matérias diferentes (miscategorização) não crava
 // repetição dentro de uma sessão e fica de fora deste filtro de propósito.
 // Mantém sempre a PRIMEIRA ocorrência de cada texto.
+export function dedupeKey(text?: string): string {
+  return (text ?? '')
+    .toLowerCase()
+    .normalize('NFD').replace(/[̀-ͯ]/g, '') // remove acentos (marcas combinantes)
+    .replace(/[^a-z0-9]+/g, ' ')                       // só alfanumérico
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+// Alternativas de enumeração ("Apenas I e II", "Todas estão corretas", "N.D.A.")
+// se repetem legitimamente entre questões DIFERENTES, então o conjunto delas não
+// serve como assinatura de duplicata. Ignoramos qualquer questão que tenha uma.
+const ENUM_OPTION_RE = /(?:^|\b)(?:todas|nenhuma|apenas|somente|n\.?\s?d\.?\s?a\.?)\b|\b[ivx]+\s*(?:,|e)\s*[ivx]+\b|^\s*[ivx]{1,4}\s*[.;:)]?\s*$/i;
+
+// Assinatura por CONJUNTO de alternativas (ordem-insensível), só para questões
+// com alternativas "substantivas": nenhuma de enumeração e todas razoavelmente
+// longas (>= 40 caracteres normalizados). Opções curtas e genéricas ("Prevenção
+// primária.", "Furosemida IV") aparecem em várias questões distintas e dariam
+// falso positivo; opções longas idênticas praticamente só coincidem quando é a
+// mesma questão reescrita. Retorna null quando a questão não se qualifica.
+function substantiveOptionSetKey(options: string[]): string | null {
+  if (!options || options.length < 2) return null;
+  const norm: string[] = [];
+  for (const o of options) {
+    const s = String(o);
+    if (ENUM_OPTION_RE.test(s.trim())) return null;
+    const n = dedupeKey(s);
+    if (n.length < 40) return null;
+    norm.push(n);
+  }
+  return norm.slice().sort().join('||');
+}
+
+function textTokens(text?: string): Set<string> {
+  return new Set(dedupeKey(text).split(' ').filter(w => w.length > 3));
+}
+function jaccard(a: Set<string>, b: Set<string>): number {
+  if (a.size === 0 || b.size === 0) return 0;
+  let inter = 0;
+  for (const w of a) if (b.has(w)) inter++;
+  return inter / (a.size + b.size - inter);
+}
+// Só tratamos "mesmo conjunto de alternativas" como duplicata quando os enunciados
+// também têm alguma sobreposição — assim uma série "mesmo paciente" (perguntas
+// diferentes que compartilham as mesmas opções de resposta) é preservada.
+const DEDUPE_TEXT_SIM_MIN = 0.3;
+
 export function dedupeQuestions<T extends NormalizableQuestion>(qs: T[]): T[] {
-  const seenBySubject = new Map<string, Set<string>>();
+  const seenTextBySubject = new Map<string, Set<string>>();
+  // matéria+conjunto-de-alternativas -> enunciados já mantidos com essa assinatura
+  const optionBuckets = new Map<string, Array<Set<string>>>();
+
   return qs.filter(q => {
     const subjectKey = q.subject ?? '';
-    const textKey = (q.text ?? '').toLowerCase().replace(/\s+/g, ' ').trim();
-    let seen = seenBySubject.get(subjectKey);
-    if (!seen) { seen = new Set(); seenBySubject.set(subjectKey, seen); }
-    if (seen.has(textKey)) return false;
-    seen.add(textKey);
+    const textKey = dedupeKey(q.text);
+
+    // 1) Duplicata por texto (sem acento/pontuação). Sem texto não dá pra comparar.
+    if (textKey) {
+      let seen = seenTextBySubject.get(subjectKey);
+      if (!seen) { seen = new Set(); seenTextBySubject.set(subjectKey, seen); }
+      if (seen.has(textKey)) return false;
+      seen.add(textKey);
+    }
+
+    // 2) Duplicata por conjunto de alternativas substantivas (mesma pergunta com
+    //    a ordem das alternativas trocada, ou reescrita mantendo as mesmas opções).
+    const optKey = substantiveOptionSetKey(q.options);
+    if (optKey) {
+      const bucketKey = `${subjectKey}|||${optKey}`;
+      const tokens = textTokens(q.text);
+      const bucket = optionBuckets.get(bucketKey);
+      if (bucket) {
+        if (bucket.some(prev => jaccard(prev, tokens) >= DEDUPE_TEXT_SIM_MIN)) return false;
+        bucket.push(tokens);
+      } else {
+        optionBuckets.set(bucketKey, [tokens]);
+      }
+    }
+
     return true;
   });
 }
