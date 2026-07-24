@@ -43,6 +43,8 @@ const SUBJECT_ALIASES: Record<string, string> = {
   'cirurgia pediátrica': 'Cirurgia Geral',
   'cirurgia plástica': 'Cirurgia Geral',
   'angiologia': 'Cirurgia Vascular',
+  // tag solta que deixava 1 questão órfã numa "matéria" própria
+  'traumatologia-ortopedia': 'Ortopedia',
   // emergência
   'medicina de emergência': 'Urgência e Emergência',
   // saúde pública, ética e legislação → bucket de SUS do app
