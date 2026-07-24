@@ -224,16 +224,6 @@ export default function LoginScreen() {
             </div>
           </>
         )}
-
-        {/* Botão convidado sempre visível */}
-        {firebaseConfigured && (
-          <button
-            onClick={signInAsGuest}
-            className="w-full mt-4 py-2.5 text-cyan-400/50 text-xs font-bold uppercase tracking-widest hover:text-cyan-300 transition-colors"
-          >
-            Continuar sem conta →
-          </button>
-        )}
       </motion.div>
 
       <p className="text-cyan-400/20 text-[10px] font-bold uppercase tracking-widest mt-8 text-center">

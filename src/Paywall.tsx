@@ -71,8 +71,9 @@ interface PaywallModalProps {
   onClose: () => void;
   /** Cria a assinatura e devolve a URL de checkout do Mercado Pago. */
   onSubscribe: (planId: PaywallPlanId) => Promise<string>;
-  /** Convidado precisa de conta com e-mail antes de assinar. */
-  onCreateAccount: () => void;
+  /** Convidado precisa de conta com e-mail antes de assinar. Recebe o plano
+   *  escolhido para retomar o checkout assim que a conta existir. */
+  onCreateAccount: (planId: PaywallPlanId) => void;
 }
 
 export function PaywallModal({
@@ -89,8 +90,9 @@ export function PaywallModal({
   const handleSubscribe = async () => {
     if (busy) return;
     // O checkout do Mercado Pago exige o e-mail do pagador; convidado não tem.
-    // Então, ao assinar, ele cria a conta antes — a assinatura fica no e-mail.
-    if (isGuest) { onCreateAccount(); return; }
+    // Então cria a conta antes, levando o plano escolhido — assim que a conta
+    // existir, o App abre o checkout desse plano sem pedir a escolha de novo.
+    if (isGuest) { onCreateAccount(selected); return; }
     setBusy(true);
     setError(null);
     try {
